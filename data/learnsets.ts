@@ -77657,6 +77657,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		],
 		eventOnly: true,
 	},
+    // Fundex
+    tentaquil: {
+        learnset: {
+            splash: ["8L99"],
+        }
+    },
 	tomohawk: {
 		learnset: {
 			acrobatics: ["8M", "7M", "5M"],
