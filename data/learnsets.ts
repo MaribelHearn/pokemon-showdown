@@ -77663,6 +77663,22 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             splash: ["8L99"],
         }
     },
+    flandre: {
+        learnset: {
+            scratch: ["8L1"],
+            bite: ["8L7"],
+            leechlife: ["8L15"],
+            bulletspray: ["8L21"]
+        }
+    },
+    marisa: {
+        learnset: {
+            thundershock: ["8L8"],
+            spark: ["8L23"],
+            masterspark: ["8L53"],
+            charge: ["8L28"]
+        }
+    },
 	tomohawk: {
 		learnset: {
 			acrobatics: ["8M", "7M", "5M"],
