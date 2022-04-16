@@ -5008,6 +5008,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 2025,
 	},
+    shorttempered: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (move.flags['contact']) {
+				target.formeChange('Wiggler-Angry');
+			}
+		},
+		name: "Short-Tempered",
+		rating: 4,
+		num: 2026,
+    },
 	squidkid: {
 		onBeforeMovePriority: 0.5,
 		onBeforeMove(attacker, defender, move) {
@@ -5018,7 +5029,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Squid Kid",
 		rating: 4,
-		num: 2026,
+		num: 2027,
 	},
     trance: {
 		onSourceAfterFaint(length, target, source, effect) {
@@ -5032,7 +5043,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Trance",
 		rating: 4,
-        num: 2027,
+        num: 2028,
     },
     esper: {
 		onModifyAtkPriority: 5,
@@ -5051,7 +5062,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Esper",
 		rating: 3.5,
-        num: 2028,
+        num: 2029,
     },
     runic: {
         onSourceModifyDamage(damage, source, target, move) {
@@ -5061,7 +5072,33 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Runic",
 		rating: 4,
-        num: 2029,
+        num: 2030,
+    },
+    trueresistance: {
+        onBoost(boost, target, source, effect) {
+            //if (source && target === source) return;
+            let showMsg = false;
+            let i: BoostID;
+            for (i in boost) {
+                if (boost[i]! < 0) {
+                    delete boost[i];
+                    showMsg = true;
+                }
+            }
+            if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+                this.add("-fail", target, "unboost", "[from] ability: True Resistance", "[of] " + target);
+            }
+        },
+		onDamage(damage, target, source, effect) {
+			if (effect.effectType !== 'Move') {
+				if (effect.effectType === 'Ability') this.add('-activate', source, 'ability: ' + effect.name);
+				return false;
+			}
+		},
+		isBreakable: true,
+        name: "True Resistance",
+		rating: 4,
+		num: 2031,
     },
     glacialforce: {
 		onBasePowerPriority: 21,
@@ -5078,6 +5115,39 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Glacial Force",
 		rating: 2,
-        num: 2030,
+        num: 2032,
     },
+    formshift: {
+        name: "Form Shift",
+        rating: 3,
+        num: 2033,
+    },
+    firmcarry: {
+        name: "Firm Carry",
+		onAfterUseItem(item, pokemon) {
+			if (pokemon !== this.effectState.target) return;
+			pokemon.removeVolatile('unburden');
+		},
+		onTakeItem(item, pokemon) {
+			pokemon.removeVolatile('unburden');
+		},
+        onStart(pokemon) {
+            pokemon.addVolatile('unburden');
+        },
+		condition: {
+			onModifySpe(spe, pokemon) {
+				if (pokemon.item && !pokemon.ignoringAbility()) {
+					return this.chainModify(2);
+				}
+			},
+		},
+		name: "Firm Carry",
+		rating: 4.5,
+		num: 2034,
+    },
+    dragonvein: {
+        name: "Dragon Vein",
+        rating: 3,
+        num: 2035,
+    }
 };

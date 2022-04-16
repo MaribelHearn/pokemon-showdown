@@ -1736,4 +1736,181 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+    // Fundex
+    boostpower: {
+		name: "Boost Power",
+        desc: "This Pokemon's Attack is raised by 1 stage at the end of each full turn it has been on the field.",
+		shortDesc: "This Pokemon's Attack is raised 1 stage at the end of each full turn on the field.",
+    },
+	insanity: {
+		name: "Insanity",
+        desc: "This Pokemon's Special Attack is multiplied by 1.5 and the accuracy of its special attacks is multiplied by 0.8.",
+		shortDesc: "This Pokemon's Special Attack is 1.5x and accuracy of its special attacks is 0.8x.",
+	},
+	imposing: {
+		name: "Imposing",
+		desc: "On switch-in, this Pokemon lowers the Special Attack of adjacent opposing Pokemon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokemon behind a substitute are immune.",
+		shortDesc: "On switch-in, this Pokemon lowers the Special Attack of adjacent opponents by 1 stage.",
+	},
+	corruption: {
+		name: "Corruption",
+		desc: "This Pokemon's Normal-type moves become ???-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become ??? type and have 1.2x power.",
+	},
+	elementalist: {
+		name: "Elementalist",
+		shortDesc: "This Pokemon's Fire-, Water-, Electric- and Ground-type attacks have 1.2x power.",
+	},
+    negativezone: {
+		name: "Negative Zone",
+		shortDesc: "On switch-in, this Pokemon summons Magic Room.",
+    },
+	springfragrance: {
+		name: "Spring Fragrance",
+		desc: "On switch-in, this Pokemon lowers the Evasion of adjacent opposing Pokemon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokemon behind a substitute are immune.",
+		shortDesc: "On switch-in, this Pokemon lowers the Evasion of adjacent opponents by 1 stage.",
+	},
+    laststand: {
+        name: "Last Stand",
+		shortDesc: "On switch-in, when no allies remain, this Pokemon's Attack and Defense are raised 1 stage.",
+    },
+    angsty: {
+		name: "Angsty",
+		desc: "This Pokemon has a random stat other than accuracy or evasion raised by 1 stage and another stat lowered by 2 stages at the end of each turn.",
+		shortDesc: "Boosts a random stat (except accuracy/evasion) +1 and another stat -2 every turn.",
+    },
+    sharpshooter: {
+		name: "Sharpshooter",
+		desc: "This Pokemon's arrow-based attacks have their power multiplied by 1.2.",
+		shortDesc: "This Pokemon's arrow-based attacks have 1.2x power.",
+    },
+    felinedeity: {
+		name: "Feline Deity",
+		shortDesc: "If this Pokemon is at full HP, damage taken from attacks is halved.",
+    },
+	cardboardbox: {
+		name: "Cardboard Box",
+		desc: "If this Pokemon is Snake, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise.",
+		shortDesc: "(Snake only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
+	},
+	armordamage: {
+		name: "Armor Damage",
+		desc: "If this Pokemon is Samus, she changes to her Zero Suit if it has 1/2 or less of its maximum HP, and changes to Samus if it has more than 1/2 its maximum HP. This check is done on switch-in and at the end of each turn. As Samus, she cannot become affected by non-volatile status conditions. Moongeist Beam, Sunsteel Strike, and the Mold Breaker, Teravolt, and Turboblaze Abilities cannot ignore this Ability.",
+		shortDesc: "If Samus, switch-in/end of turn she changes to Zero Suit Samus at 1/2 max HP or less, else Samus.",
+	},
+    research: {
+		name: "Research",
+		shortDesc: "On switch-in, this Pokemon identifies the Abilities of all opposing Pokemon.",
+    },
+    conflagrate: {
+		name: "Conflagrate",
+		desc: "This Pokemon's Normal-type moves become Fire-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Fire type and have 1.2x power.",
+    },
+    prosecutor: {
+        name: "Prosecutor",
+		shortDesc: "For each stat boost the opposing Pokemon has, boosts this Pokemon's critical hit ratio by 1 stage.",
+    },
+    wonderland: {
+		name: "Wonderland",
+		shortDesc: "On switch-in, this Pokemon summons Wonder Room.",
+    },
+	papercut: {
+		name: "Paper Cut",
+		desc: "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down.",
+		shortDesc: "Pokemon making contact with this Pokemon lose 1/8 of their max HP.",
+	},
+    gettogether: {
+		name: "Get Together",
+		desc: "On switch-in, if this Pokemon is a Boo that is level 20 or above and has more than 1/4 of its maximum HP left, it changes to Boolossus. If it is Boolussus and its HP drops to 1/4 of its maximum HP or less, it changes to Boo at the end of the turn. If it is Boo and its HP is greater than 1/4 its maximum HP at the end of the turn, it changes to Boolussus.",
+		shortDesc: "If user is Boo, changes to Boolussus if it has > 1/4 max HP, else Boo.",
+
+		transform: "[POKEMON] formed a group!",
+		transformEnd: "[POKEMON] split apart!",
+	},
+    webbrowser: {
+		name: "Web Browser",
+        desc: "This Pokemon's Accuracy is raised by 1 stage at the end of each full turn it has been on the field.",
+		shortDesc: "This Pokemon's Accuracy is raised 1 stage at the end of each full turn on the field.",
+    },
+	taxidermy: {
+		name: "Taxidermy",
+		desc: "If this Pokemon is Chuck Testa, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise.",
+		shortDesc: "(Chuck Testa only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
+	},
+	bloodbond: {
+		name: "Blood Bond",
+		desc: "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",
+		shortDesc: "This Pokemon's damaging moves hit twice. The second hit has its damage quartered.",
+	},
+	petrify: {
+		name: "Petrify",
+		desc: "On switch-in, this Pokemon lowers the Speed of adjacent opposing Pokemon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokemon behind a substitute are immune.",
+		shortDesc: "On switch-in, this Pokemon lowers the Speed of adjacent opponents by 1 stage.",
+	},
+	psychopath: {
+		name: "Psychopath",
+		shortDesc: "On switch-in, this Pokemon identifies the Natures of all opposing Pokemon.",
+	},
+	pureheart: {
+		name: "Pure Heart",
+		shortDesc: "This Pokemon is immune to Dark-type moves.",
+	},
+	hotblooded: {
+		name: "Hot Blooded",
+		desc: "If this Pokemon is burned, it restores 1/8 of its maximum HP, rounded down, at the end of each turn instead of losing HP.",
+		shortDesc: "This Pokemon is healed by 1/8 of its max HP each turn when burned; no HP loss.",
+	},
+    shorttempered: {
+		name: "Short-Tempered",
+		desc: "If this Pokemon is Wiggler, it changes to Wiggler-Angry when it is hit by a contact move.",
+		shortDesc: "If Wiggler, changes to Wiggler-Angry on contact.",
+
+		transform: "[POKEMON]] became enraged!",
+    },
+	squidkid: {
+		name: "Squid Kid",
+		desc: "If this Pokemon is Inkling, it changes to Kid before attempting to use an ink-based move, and changes to Squid before attempting to use a protection move.",
+		shortDesc: "If Inkling, changes to Kid before ink-based attacks and Squid before protection moves.",
+
+		transform: "Changed to Squid!",
+		transformEnd: "Changed to Kid!",
+	},
+    trance: {
+		name: "Trance",
+		desc: "If this Pokemon is Terra, it transforms into Terra-Esper after knocking out a Pokemon.",
+		shortDesc: "After KOing a Pokemon: becomes Terra-Esper.",
+
+		activate: "  [POKEMON] entered a trance!",
+		transform: "[POKEMON] became Terra-Esper!",
+    },
+    esper: {
+		name: "Esper",
+		shortDesc: "This Pokemon's attacking stat is multiplied by 1.5 while using a Psychic-type attack.",
+    },
+    runic: {
+		name: "Runic",
+		desc: "This Pokemon receives 1/2 damage from special moves.",
+		shortDesc: "This Pokemon takes 1/2 damage from special moves.",
+    },
+    trueresistance: {
+		desc: "This Pokemon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage. Additionally, other Pokemon cannot lower this Pokemon's stat stages.",
+		shortDesc: "This Pokemon is completely immune to any negative effects, bar direct attacks.",
+    },
+    glacialforce: {
+		name: "Glacial Force",
+		desc: "This Pokemon's Normal-type moves become Ice-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Ice type and have 1.2x power.",
+    },
+    formshift: {
+        name: "Form Shift",
+    },
+    firmcarry: {
+        name: "Firm Carry",
+		desc: "If this Pokemon is holding an item, its Speed is doubled. This boost is lost if it loses its item or Ability.",
+		shortDesc: "Speed is doubled with a held item; boost is lost if it loses its item/Ability.",
+    },
+    dragonvein: {
+        name: "Dragon Vein",
+    }
 };
