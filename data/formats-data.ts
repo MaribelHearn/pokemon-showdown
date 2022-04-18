@@ -6534,6 +6534,474 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
+    suika: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    letty: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    keine: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    keinehakutaku: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    sapenguin: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    advicegod: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    missingno: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    missingnoghost: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    missingnokabutops: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    missingnoaerodactyl: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    missingnoyellow: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    kirby: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    metaknight: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    kingdedede: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    snake: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    samus: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    zerosuitsamus: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    zeekyhbomb: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    yumemi: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    engineer: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    mokou: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    yuugi: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    komachi: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    eiki: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    phoenixwright: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    rickastley: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    darkmatter: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    zero: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    zerotwo: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    stella: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    stellanorris: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    yukari: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    yamame: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    iku: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    medicine: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    yuuka: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    hibachi: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    hibachi2: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    evaccaniadoom: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    minoriko: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    shizuha: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    alice: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    babybowser: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    bowser: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    drybowser: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    gigabowser: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    genjii: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    vivit: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    megavivit: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    maribel: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    maribel: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    kogasa: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    meiling: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    patchouli: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    suwako: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    tesla: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    shingyoku: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    shingyokupriestess: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    shingyokuorb: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    sariel: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    serpentofchaos: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    winner: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    satori: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    koishi: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    nitori: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    byakuren: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    nue: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    ichirin: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    nyancat: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    mario: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    papermario: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    malleo: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    boo: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    boolussus: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    kingboo: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    bouldergeist: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    glados: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    badegg: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    pearl: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    pearllee: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    sunnymilk: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    lunachild: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    starsapphire: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    sanae: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    kanako: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    ran: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    kanzou: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    hagumanoki: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    ruscus: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    ryuuguu: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    weepinmeleon: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    venudrio: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    bloodyjitterbug: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    bluescreenofdeath: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    internetexplorer: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    inoriaizawa: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    microsoftedge: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    mozillafirefox: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    googlechrome: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    recyclebin: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    hina: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    chen: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    reisen: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    parsee: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    rin: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    daiyousei: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    konngara: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    yumeko: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    rumia: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    koakuma: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    youmu: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    mystia: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    tewi: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    aya: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    kisume: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    chucktesta: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
+    uncledolan: {
+        isNonstandard: "Custom",
+        tier: "OU",
+    },
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
