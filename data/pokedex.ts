@@ -16592,9 +16592,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Mr. L", "Weegee"],
 		formeOrder: ["Luigi", "Mr. L", "Weegee"],
 	},
-	mrl: {
+	luigimrl: {
 		num: 2012,
-		name: "Mr. L",
+		name: "Luigi-Mr. L",
 		baseSpecies: "Luigi",
 		forme: "Mr. L",
 		types: ["Dark", "Electric"],
@@ -16604,9 +16604,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 45,
 		color: "Green",
 	},
-	weegee: {
+	luigiweegee: {
 		num: 2012,
-		name: "Weegee",
+		name: "Luigi-Weegee",
 		baseSpecies: "Luigi",
 		forme: "Weegee",
 		types: ["Grass"],
@@ -16772,9 +16772,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Super Saiyan Vegeta"],
 		formeOrder: ["Vegeta", "Super Saiyan Vegeta"],
 	},
-    vegeta: {
+    vegetasupersaiyan: {
 		num: 2026,
-		name: "Super Saiyan Vegeta",
+		name: "Vegeta-Super Saiyan",
 		baseSpecies: "Vegeta",
 		forme: "Super Saiyan Vegeta",
 		types: ["Dragon", "Psychic"],
@@ -16813,12 +16813,12 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Truant", H: "Angsty"},
 		weightkg: 90,
 		color: "Blue",
-		otherFormes: ["Officer DanZalgo"],
-		formeOrder: ["Daniel", "Officer DanZalgo"],
+		otherFormes: ["Daniel-Zalgo"],
+		formeOrder: ["Daniel", "Daniel-Zalgo"],
 	},
-    officerdanzalgo: {
+    danielzalgo: {
 		num: 2029,
-		name: "Officer DanZalgo",
+		name: "Daniel-Zalgo",
 		baseSpecies: "Daniel",
 		forme: "Zalgo",
 		types: ["Water", "???"],
@@ -16870,9 +16870,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Toon Link"],
 		formeOrder: ["Link", "Toon Link"],
 	},
-    toonlink: {
+    linktoon: {
 		num: 2033,
-		name: "Toon Link",
+		name: "Link-Toon",
 		baseSpecies: "Link",
 		forme: "Toon",
 		types: ["Fairy", "Fighting"],
@@ -16904,9 +16904,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Sheik"],
 		formeOrder: ["Zelda", "Sheik"],
 	},
-    sheik: {
+    zeldasheik: {
 		num: 2035,
-		name: "Sheik",
+		name: "Zelda-Sheik",
         baseSpecies: "Zelda",
         forme: "Sheik",
 		types: ["Dark", "Psychic"],
@@ -17916,9 +17916,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Paper Mario", "Malleo"],
 		formeOrder: ["Mario", "Paper Mario", "Malleo"],
     },
-    papermario: {
+    mariopaper: {
         num: 2116,
-		name: "Paper Mario",
+		name: "Mario-Paper",
         baseSpecies: "Mario",
         forme: "Paper",
 		types: ["Fire", "Normal"],
@@ -17928,9 +17928,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 0.1,
 		color: "Red",
     },
-    malleo: {
+    mariomalleo: {
         num: 2116,
-		name: "Malleo",
+		name: "Mario-Malleo",
         baseSpecies: "Mario",
         forme: "Malleo",
 		types: ["Fire"],

@@ -6310,11 +6310,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-	mrl: {
+	luigimrl: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-	weegee: {
+	luigiweegee: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
@@ -6378,7 +6378,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-    vegeta: {
+    vegetasupersaiyan: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
@@ -6394,7 +6394,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-    officerdanzalgo: {
+    danielzalgo: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
@@ -6414,7 +6414,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-    toonlink: {
+    linktoon: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
@@ -6426,7 +6426,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-    sheik: {
+    zeldasheik: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
@@ -6710,11 +6710,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
         isNonstandard: "Custom",
         tier: "OU",
     },
-    drybowser: {
+    bowserdry: {
         isNonstandard: "Custom",
         tier: "OU",
     },
-    gigabowser: {
+    bowsergiga: {
         isNonstandard: "Custom",
         tier: "OU",
     },
@@ -6726,7 +6726,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
         isNonstandard: "Custom",
         tier: "OU",
     },
-    megavivit: {
+    vivitmega: {
         isNonstandard: "Custom",
         tier: "OU",
     },
@@ -6734,7 +6734,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
         isNonstandard: "Custom",
         tier: "OU",
     },
-    maribel: {
+    maribelmega: {
         isNonstandard: "Custom",
         tier: "OU",
     },
@@ -6814,11 +6814,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
         isNonstandard: "Custom",
         tier: "OU",
     },
-    papermario: {
+    mariopaper: {
         isNonstandard: "Custom",
         tier: "OU",
     },
-    malleo: {
+    mariomalleo: {
         isNonstandard: "Custom",
         tier: "OU",
     },
@@ -6826,7 +6826,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
         isNonstandard: "Custom",
         tier: "OU",
     },
-    boolussus: {
+    booboolussus: {
         isNonstandard: "Custom",
         tier: "OU",
     },
