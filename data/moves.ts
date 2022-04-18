@@ -19733,4 +19733,107 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
+    // Fundex
+    apocalypse: {
+        num: 2000,
+        accuracy: 85,
+        basePower: 100,
+        category: "Physical",
+        isNonstandard: "Custom",
+        name: "Apocalypse",
+        pp: 5,
+        priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+        secondary: {
+            chance: 30,
+			onHit(target, source) {
+				const result = this.random(3);
+				if (result === 0) {
+					target.trySetStatus('brn', source);
+				} else if (result === 1) {
+					target.trySetStatus('par', source);
+				} else {
+					target.trySetStatus('frz', source);
+				}
+			},
+        },
+        target: "normal",
+        type: "???",
+    },
+	masterspark: {
+		num: 2001,
+		accuracy: 90,
+		basePower: 130,
+		category: "Special",
+		name: "Master Spark",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				spa: -2,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+	},
+	pukeblood: {
+		num: 2002,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Puke Blood",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, bullet: 1, mirror: 1},
+		self: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+	},
+	roundhousekick: {
+		num: 2003,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Round House Kick",
+		pp: 5,
+		priority: 2,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Fighting",
+	},
+	falconpunch: {
+		num: 2004,
+		accuracy: 100,
+		basePower: 150,
+		category: "Physical",
+		name: "Falcon Punch",
+		pp: 20,
+		priority: -3,
+		flags: {contact: 1, protect: 1, punch: 1, defrost: 1},
+		critRatio: 3,
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+	},
+	laevateinn: {
+		num: 2005,
+		accuracy: 90,
+		basePower: 120,
+		category: "Physical",
+		name: "Laevateinn",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, defrost: 1, mirror: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+	},
 };
