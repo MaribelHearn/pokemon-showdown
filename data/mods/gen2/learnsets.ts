@@ -1,5 +1,5 @@
 export const Learnsets: {[k: string]: ModdedLearnsetData} = {
-	missingno: {
+	missingnooriginal: {
 		learnset: {
 			blizzard: ["1M"],
 			bubblebeam: ["1M"],

@@ -774,7 +774,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		comboMoves: ["earthquake", "hyperbeam", "swordsdance"],
 		tier: "Uber",
 	},
-	missingno: {
+	missingnooriginal: {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
 	},
