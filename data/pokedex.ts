@@ -16688,11 +16688,11 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Achi Cirno"],
 		formeOrder: ["Cirno", "Achi Cirno"],
 	},
-    achicirno: {
+    cirnoachi: {
 		num: 2019,
-		name: "Achi Cirno",
+		name: "Cirno-Achi",
 		baseSpecies: "Cirno",
-		forme: "Achi Cirno",
+		forme: "Achi",
 		types: ["Fire", "Fairy"],
 		gender: "F",
 		baseStats: {hp: 71, atk: 119, def: 91, spa: 60, spd: 70, spe: 99},
@@ -16928,11 +16928,11 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
         otherFormes: ["Ganon"],
         formeOrder: ["Ganondorf", "Ganon"],
 	},
-    ganon: {
+    ganondorfmega: {
 		num: 2036,
-		name: "Ganon",
+		name: "Ganondorf-Mega",
         baseSpecies: "Ganondorf",
-        forme: "Ganon",
+        forme: "Mega",
 		types: ["Dark", "Dragon"],
         gender: "M",
 		baseStats: {hp: 100, atk: 150, def: 100, spa: 100, spd: 150, spe: 30},
@@ -17354,9 +17354,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
         otherFormes: ["Zero Suit Samus"],
         formeOrder: ["Samus", "Zero Suit Samus"],
     },
-    zerosuitsamus: {
+    samuszerosuit: {
         num: 2071,
-		name: "Samus",
+		name: "Samus-Zero Suit",
         baseSpecies: "Samus",
         forme: "Zero Suit",
 		types: ["Electric"],
@@ -17638,9 +17638,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Dry Bowser", "Giga Bowser"],
 		formeOrder: ["Bowser", "Dry Bowser", "Giga Bowser"],
     },
-    drybowser: {
+    bowserdry: {
         num: 2096,
-		name: "Dry Bowser",
+		name: "Bowser-Dry",
         baseSpecies: "Bowser",
         forme: "Dry",
 		types: ["Rock", "Dragon"],
@@ -17650,15 +17650,15 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 75,
 		color: "Yellow",
     },
-    gigabowser: {
+    bowsergiga: {
         num: 2096,
-		name: "Giga Bowser",
+		name: "Bowser-Giga",
         baseSpecies: "Bowser",
         forme: "Giga",
 		types: ["Dragon", "Fire"],
 		gender: "M",
 		baseStats: {hp: 90, atk: 150, def: 140, spa: 130, spd: 80, spe: 50},
-		abilities: {0: "Sheer Force", 1: "Sheer Force", H: "Sheer Force"},
+		abilities: {0: "Sheer Force"},
 		weightkg: 350,
 		color: "Green",
     },
@@ -17684,7 +17684,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["VIVIT-Mega"],
 		formeOrder: ["VIVIT", "VIVIT-Mega"],
     },
-    megavivit: {
+    vivitmega: {
         num: 2098,
 		name: "VIVIT-Mega",
         baseSpecies: "VIVIT",
@@ -17692,7 +17692,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Fire", "Flying"],
 		gender: "F",
 		baseStats: {hp: 90, atk: 95, def: 90, spa: 155, spd: 105, spe: 125},
-		abilities: {0: "Turboblaze", H: "Turboblaze"},
+		abilities: {0: "Turboblaze"},
 		weightkg: 45,
 		color: "White",
     },
@@ -17708,7 +17708,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Maribel-Mega"],
 		formeOrder: ["Maribel", "Maribel-Mega"],
     },
-    maribel: {
+    maribelmega: {
         num: 2099,
 		name: "Maribel-Mega",
         baseSpecies: "Maribel",
@@ -17716,7 +17716,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Psychic", "Dark"],
 		gender: "F",
 		baseStats: {hp: 60, atk: 90, def: 100, spa: 140, spd: 160, spe: 70},
-		abilities: {0: "Berserk", 1: "Berserk", H: "Berserk"},
+		abilities: {0: "Berserk"},
 		weightkg: 45,
 		color: "Purple",
     },
@@ -17952,9 +17952,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Boolussus"],
 		formeOrder: ["Boo", "Boolussus"],
     },
-    boolussus: {
+    booboolussus: {
         num: 2117,
-		name: "Boolussus",
+		name: "Boo-Boolussus",
         baseSpecies: "Boo",
         forme: "Boolussus",
 		types: ["Ghost"],
