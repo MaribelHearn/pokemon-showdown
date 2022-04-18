@@ -452,7 +452,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	mew: {
 		tier: "Uber",
 	},
-	missingno: {
+	missingnooriginal: {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
 	},
