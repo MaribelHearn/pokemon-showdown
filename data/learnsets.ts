@@ -77660,7 +77660,43 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
     // Fundex
     tentaquil: {
         learnset: {
+            tackle: ["8L1"],
+            leer: ["8L1"],
+            flail: ["8L5"],
+            rockthrow: ["8L7"],
+            aerialace: ["8L9"],
+            pukeblood: ["8L12"],
+            surf: ["8L15"],
+            gigadrain: ["8L25"],
+            scratch: ["8L30"],
+            furyswipes: ["8L31"],
+            falseswipe: ["8L34"],
+            earthquake: ["8L39"],
+            fly: ["8L46"],
+            waterfall: ["8L50"],
+            twineedle: ["8L55"],
+            fissure: ["8L75"],
             splash: ["8L99"],
+        }
+    },
+    chucknorris: {
+        learnset: {
+            leer: ["8L1"],
+            karatechop: ["8L1"],
+            rollingkick: ["8L6"],
+            focusenergy: ["8L11"],
+            jumpkick: ["8L17"],
+            highjumpkick: ["8L23"],
+            quickguard: ["8L28"],
+            wideguard: ["8L32"],
+            counter: ["8L38"],
+            apocalypse: ["8L44"],
+            machpunch: ["8L49"],
+            roundhousekick: ["8L55"],
+            dynamicpunch: ["8L61"],
+            detect: ["8L67"],
+            takedown: ["8L72"],
+            doubleedge: ["8L79"],
         }
     },
     flandre: {
@@ -77668,7 +77704,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             scratch: ["8L1"],
             bite: ["8L7"],
             leechlife: ["8L15"],
-            bulletspray: ["8L21"]
+            bulletspray: ["8L21"],
         }
     },
     marisa: {
@@ -77676,7 +77712,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             thundershock: ["8L8"],
             spark: ["8L23"],
             masterspark: ["8L53"],
-            charge: ["8L28"]
+            charge: ["8L28"],
         }
     },
 	tomohawk: {
