@@ -2387,7 +2387,7 @@ function runLearn(target: string, cmd: string, canAll: boolean, formatid: string
 	};
 	const all = (cmd === 'learnall');
 
-	if (!species.exists || species.id === 'missingno') {
+	if (!species.exists || species.id === 'missingnooriginal') {
 		return {error: `Pok\u00e9mon '${species.id}' not found.`};
 	}
 

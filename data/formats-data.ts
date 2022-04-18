@@ -7002,7 +7002,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
         isNonstandard: "Custom",
         tier: "OU",
     },
-	missingno: {
+	missingnooriginal: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
