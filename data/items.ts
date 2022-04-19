@@ -7091,6 +7091,364 @@ export const Items: {[itemid: string]: ItemData} = {
 		isNonstandard: "Past",
 	},
 
+    // Fundex items
+
+    trinitystone: {
+        name: "Trinity Stone",
+        spritenum: 2000,
+        onModifyAtkPriority: 5,
+        onModifyAtk(atk, attacker, defender, move) {
+            if (move.type === 'Fire' || move.type === 'Electric' || move.type === 'Ice') {
+                this.debug('Trinity Stone boost');
+                return this.chainModify(1.5);
+            }
+        },
+		num: 2000,
+		gen: 8,
+		isNonstandard: "Custom",
+    },
+    warpedmirror: {
+    },
+    handheldfan: {
+    },
+    natureengine: {
+        name: "Nature Engine",
+        spritenum: 2003,
+        fling: {
+            basePower: 100,
+        },
+        onBasePowerPriority: 15,
+        onBasePower(basePower, user, target, move) {
+            if (move && move.category === 'Special' && user.baseSpecies.name === 'Weepinmeleon') {
+                return this.chainModify(1.5);
+            }
+        },
+		onModifySpe(spe, pokemon) {
+            if (pokemon.baseSpecies.name === 'Weepinmeleon') {
+	             return this.chainModify(1.5);
+             }
+		},
+        itemUser: ["Weepinmeleon"],
+        num: 2003,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    magmaengine: {
+        name: "Magma Engine",
+        spritenum: 2004,
+        fling: {
+            basePower: 100,
+        },
+        onBasePowerPriority: 15,
+        onBasePower(basePower, user, target, move) {
+            if (move && move.category === 'Physical' && user.baseSpecies.name === 'Weepinmeleon') {
+                return this.chainModify(1.5);
+            }
+        },
+        onModifySpe(spe, pokemon) {
+            if (pokemon.baseSpecies.name === 'Weepinmeleon') {
+                 return this.chainModify(1.5);
+             }
+        },
+        itemUser: ["Weepinmeleon"],
+        num: 2004,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    basicengine: {
+        name: "Basic Engine",
+        spritenum: 2005,
+        fling: {
+            basePower: 100,
+        },
+		onModifyDefPriority: 2,
+		onModifyDef(def, pokemon) {
+			if (pokemon.baseSpecies.name === 'Venudrio') {
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpDPriority: 2,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.baseSpecies.name === 'Venudrio') {
+				return this.chainModify(1.5);
+			}
+		},
+        itemUser: ["Venudrio"],
+        num: 2005,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    venomengine: {
+        name: "Venom Engine",
+        spritenum: 2006,
+        fling: {
+            basePower: 100,
+        },
+        onBasePowerPriority: 15,
+        onBasePower(basePower, user, target, move) {
+            if (move && user.baseSpecies.num === 'Venudrio') {
+                return this.chainModify(1.5);
+            }
+        },
+        itemUser: ["Venudrio"],
+        num: 2006,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    redpill: {
+        name: "Red Pill",
+        spritenum: 2007,
+        fling: {
+            basePower: 20,
+        },
+        onBasePowerPriority: 15,
+        onBasePower(basePower, user, target, move) {
+            if (move && move.category === 'Physical' && user.baseSpecies.baseSpecies === 'Dr. Mario' && user.volatiles['redpill']) {
+                return this.chainModify(1.5);
+            }
+        },
+        onUpdate(pokemon) {
+            if (pokemon.hp <= pokemon.maxhp / 4) {
+                pokemon.eatItem();
+            }
+        },
+        onTryEatItem(item, pokemon) {
+            if (!this.runEvent('TryHeal', pokemon)) return false;
+        },
+        onEat(pokemon) {
+            this.heal(pokemon.baseMaxhp / 4);
+            pokemon.addVolatile('redpill');
+        },
+        num: 2007,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    bluepill: {
+        name: "Blue Pill",
+        spritenum: 2008,
+        fling: {
+            basePower: 20,
+        },
+		onModifyDefPriority: 2,
+		onModifyDef(spe, pokemon) {
+            if (pokemon.species.name === 'Dr. Mario' && user.volatiles['bluepill']) {
+				return this.chainModify(1.5);
+			}
+		},
+        onUpdate(pokemon) {
+            if (pokemon.hp <= pokemon.maxhp / 4) {
+                pokemon.eatItem();
+            }
+        },
+        onTryEatItem(item, pokemon) {
+            if (!this.runEvent('TryHeal', pokemon)) return false;
+        },
+        onEat(pokemon) {
+            this.heal(pokemon.baseMaxhp / 4);
+            pokemon.addVolatile('bluepill');
+        },
+        num: 2008,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    yellowpill: {
+        name: "Yellow Pill",
+        spritenum: 2009,
+        fling: {
+            basePower: 20,
+        },
+		onModifySpe(def, pokemon) {
+            if (pokemon.species.name === 'Dr. Mario' && user.volatiles['yellowpill']) {
+				return this.chainModify(1.5);
+			}
+		},
+        onUpdate(pokemon) {
+            if (pokemon.hp <= pokemon.maxhp / 4) {
+                pokemon.eatItem();
+            }
+        },
+        onTryEatItem(item, pokemon) {
+            if (!this.runEvent('TryHeal', pokemon)) return false;
+        },
+        onEat(pokemon) {
+            this.heal(pokemon.baseMaxhp / 4);
+            pokemon.addVolatile('yellowpill');
+        },
+        num: 2009,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    "???gem": {
+        name: "??? Gem",
+        spritenum: 2010,
+        isGem: true,
+        onSourceTryPrimaryHit(target, source, move) {
+            if (target === source || move.category === 'Status') return;
+            if (move.type === '???' && source.useItem()) {
+                source.addVolatile('gem');
+            }
+        },
+        num: 2010,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    mysteryplate: {
+        name: "Mystery Plate",
+        spritenum: 2011,
+        onPlate: '???',
+        onBasePowerPriority: 15,
+        onBasePower(basePower, user, target, move) {
+            if (move.type === '???') {
+                return this.chainModify([4915, 4096]);
+            }
+        },
+        onTakeItem(item, pokemon, source) {
+            if ((source && source.baseSpecies.num === 493) || pokemon.baseSpecies.num === 493) {
+                return false;
+            }
+            return true;
+        },
+        forcedForme: "Arceus-???",
+        num: 2011,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    moodring: {
+        name: "Mood Ring",
+        spritenum: 2012,
+        onStart(pokemon) {
+            const stats: BoostID[] = [];
+			let stat: BoostID;
+			for (stat in pokemon.boosts) {
+				if (stat !== 'accuracy' && stat !== 'evasion') {
+					stats.push(stat);
+				}
+			}
+			if (stats.length) {
+				let randomStat = this.sample(stats);
+				const boost: SparseBoostsTable = {};
+				boost[randomStat] = 1;
+				this.boost(boost);
+                randomStat = this.sample(stats);
+                boost[randomStat] = -1;
+                this.boost(boost);
+			}
+        },
+        num: 2012,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    plasmacane: {
+        name: "Triforce",
+        spritenum: 2013,
+        megaStone: "Dennis-Mega",
+        megaEvolves: "Dennis",
+        itemUser: ["Dennis"],
+        onTakeItem(item, source) {
+            if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+            return true;
+        },
+        num: 2013,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    triforce: {
+        name: "Triforce",
+        spritenum: 2014,
+        megaStone: "Ganondorf-Mega",
+        megaEvolves: "Ganondorf",
+        itemUser: ["Ganondorf"],
+        onTakeItem(item, source) {
+            if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+            return true;
+        },
+        num: 2014,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    vegetite: {
+        name: "Vegetite",
+        spritenum: 2015,
+        megaStone: "Vegeta-SuperSaiyan",
+        megaEvolves: "Vegeta",
+        itemUser: ["Vegeta"],
+        onTakeItem(item, source) {
+            if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+            return true;
+        },
+        num: 2015,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    gokuite: {
+        name: "Gokuite",
+        spritenum: 2016,
+        megaStone: "Goku-SuperSaiyan",
+        megaEvolves: "Goku",
+        itemUser: ["Goku"],
+        onTakeItem(item, source) {
+            if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+            return true;
+        },
+        num: 2016,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    smashball: {
+        name: "Smash Ball",
+        spritenum: 2017,
+        megaStone: "Bowser-Giga",
+        megaEvolves: "Bowser",
+        itemUser: ["Bowser"],
+        onTakeItem(item, source) {
+            if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+            return true;
+        },
+        num: 2017,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    sabotenbottle: {
+        name: "Saboten Bottle",
+        spritenum: 2018,
+        megaStone: "VIVIT-Mega",
+        megaEvolves: "VIVIT",
+        itemUser: ["VIVIT"],
+        onTakeItem(item, source) {
+            if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+            return true;
+        },
+        num: 2018,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    strangegap: {
+        name: "Strange Gap",
+        spritenum: 2019,
+        megaStone: "Maribel-Mega",
+        megaEvolves: "Maribel",
+        itemUser: ["Maribel"],
+        onTakeItem(item, source) {
+            if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+            return true;
+        },
+        num: 2019,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+    unknowniumz: {
+        name: "Unknownium Z",
+        spritenum: 2023,
+        onPlate: '???',
+        onTakeItem: false,
+        zMove: true,
+        zMoveType: "???",
+        forcedForme: "Arceus-???",
+        num: 2023,
+        gen: 8,
+        isNonstandard: "Custom",
+    },
+
 	// CAP items
 
 	crucibellite: {
