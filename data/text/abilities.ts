@@ -1809,7 +1809,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
     },
     prosecutor: {
         name: "Prosecutor",
-		shortDesc: "For each stat boost the opposing Pokemon has, boosts this Pokemon's critical hit ratio by 1 stage.",
+		shortDesc: "For each stat boost the opposing Pokemon has, boosts critical hit ratio by 1 stage.",
     },
     wonderland: {
 		name: "Wonderland",
