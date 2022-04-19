@@ -3452,6 +3452,568 @@ export const PokedexText: {[k: string]: PokedexText} = {
 	calyrexshadow: {
 		name: "Calyrex-Shadow",
 	},
+    // Fundex
+    tentaquil: {
+        name: "tentaquil",
+    },
+    chucknorris: {
+        name: "Chuck Norris",
+    },
+    captainfalcon: {
+        name: "Captain Falcon",
+    },
+    flandre: {
+        name: "Flandre",
+    },
+    cell: {
+        name: "Cell",
+    },
+    dennis: {
+        name: "Dennis",
+    },
+    dennismega: {
+        name: "Dennis-Mega",
+    },
+    zalgo: {
+        name: "Zalgo",
+    },
+    "2012": {
+        name: "2012",
+    },
+    roflcopter: {
+        name: "ROFLcopter",
+    },
+    andross: {
+        name: "Andross",
+    },
+    slenderman: {
+        name: "Slenderman",
+    },
+    marisa: {
+        name: "Marisa",
+    },
+    luigi: {
+        name: "Luigi",
+    },
+    luigimrl: {
+        name: "Mr. L",
+    },
+    luigiweegee: {
+        name: "Weegee",
+    },
+    giygas: {
+        name: "Giygas",
+    },
+    matrix: {
+        name: "Matrix",
+    },
+    sovietmudkip: {
+        name: "Soviet Mudkip",
+    },
+    satan: {
+        name: "Satan",
+    },
+    lilywhite: {
+        name: "Lily White",
+    },
+    lolwutpear: {
+        name: "Lolwut Pear",
+    },
+    cirno: {
+        name: "Cirno",
+    },
+    cirnoachi: {
+        name: "Cirno-Achi",
+    },
+    reimu: {
+        name: "Reimu",
+    },
+    drrobotnik: {
+        name: "Dr. Robotnik",
+    },
+    leonidas: {
+        name: "Leonidas",
+    },
+    kingharkinian: {
+        name: "King Harkinian",
+    },
+    yarrow: {
+        name: "Yarrow",
+    },
+    doomsday: {
+        name: "Doomsday",
+    },
+    vegeta: {
+        name: "Vegeta",
+    },
+    vegetasupersaiyan: {
+        name: "Vegeta-Super Saiyan",
+    },
+    droctogonapus: {
+        name: "Dr. Octogonapus",
+    },
+    essej: {
+        name: "Essej",
+    },
+    daniel: {
+        name: "Daniel",
+    },
+    danielzalgo: {
+        name: "Daniel-Zalgo",
+    },
+    utsuho: {
+        name: "Utsuho",
+    },
+    yuyuko: {
+        name: "Yuyuko",
+    },
+    younglink: {
+        name: "Young Link",
+    },
+    link: {
+        name: "Link",
+    },
+    linktoon: {
+        name: "Link-Toon",
+    },
+    youngzelda: {
+        name: "Young Zelda",
+    },
+    zelda: {
+        name: "Zelda",
+    },
+    zeldasheik: {
+        name: "Zelda-Sheik",
+    },
+    ganondorf: {
+        name: "Ganondorf",
+    },
+    ganondorfmega: {
+        name: "Ganondorf-Mega",
+    },
+    suiseiseki: {
+        name: "Suiseiseki",
+    },
+    admiralackbar: {
+        name: "Admiral Ackbar",
+    },
+    yoda: {
+        name: "Yoda",
+    },
+    darthvader: {
+        name: "Darth Vader",
+    },
+    longcat: {
+        name: "Longcat",
+    },
+    tacgnol: {
+        name: "tacgnoL",
+    },
+    olngact: {
+        name: "oLngact",
+    },
+    orlyowl: {
+        name: "Orly-Owl",
+    },
+    cats: {
+        name: "Cats",
+    },
+    raptorjesus: {
+        name: "Raptor Jesus",
+    },
+    leeroyjenkins: {
+        name: "Leeroy Jenkins",
+    },
+    remilia: {
+        name: "Remilia",
+    },
+    angrybird: {
+        name: "Angry Bird",
+    },
+    bigbrother: {
+        name: "Big Brother",
+    },
+    giantenemycrab: {
+        name: "Giant Enemy Crab",
+    },
+    achmed: {
+        name: "Achmed",
+    },
+    sakuya: {
+        name: "Sakuya",
+    },
+    swadner: {
+        name: "Swadner",
+    },
+    wriggle: {
+        name: "Wriggle",
+    },
+    leonpowalski: {
+        name: "Leon Powalski",
+    },
+    trollface: {
+        name: "Trollface",
+    },
+    eirin: {
+        name: "Eirin",
+    },
+    kaguya: {
+        name: "Kaguya",
+    },
+    tenshi: {
+        name: "Tenshi",
+    },
+    suika: {
+        name: "Suika",
+    },
+    letty: {
+        name: "Letty",
+    },
+    keine: {
+        name: "Keine",
+    },
+    keinehakutaku: {
+        name: "Keine-Hakutaku",
+    },
+    sapenguin: {
+        name: "S. A. Penguin",
+    },
+    advicegod: {
+        name: "Advice God",
+    },
+    missingno: {
+        name: "Missingno.",
+    },
+    missingnoghost: {
+        name: "Missingno.-Ghost",
+    },
+    missingnokabutops: {
+        name: "Missingno.-Kabutops",
+    },
+    missingnoaerodactyl: {
+        name: "Missingno.-Aerodactyl",
+    },
+    missingnoyellow: {
+        name: "Missingno.-Yellow",
+    },
+    kirby: {
+        name: "Kirby",
+    },
+    metaknight: {
+        name: "Meta Knight",
+    },
+    kingdedede: {
+        name: "King Dedede",
+    },
+    snake: {
+        name: "Snake",
+    },
+    samus: {
+        name: "Samus",
+    },
+    samuszerosuit: {
+        name: "Samus-Zero Suit",
+    },
+    zeekyhbomb: {
+        name: "Zeeky H. Bomb",
+    },
+    yumemi: {
+        name: "Yumemi",
+    },
+    engineer: {
+        name: "Engineer",
+    },
+    mokou: {
+        name: "Mokou",
+    },
+    yuugi: {
+        name: "Yuugi",
+    },
+    komachi: {
+        name: "Komachi",
+    },
+    eiki: {
+        name: "Eiki",
+    },
+    phoenixwright: {
+        name: "Phoenix Wright",
+    },
+    rickastley: {
+        name: "Rick Astley",
+    },
+    darkmatter: {
+        name: "Dark Matter",
+    },
+    zero: {
+        name: "Zero",
+    },
+    zerotwo: {
+        name: "Zero-Two",
+    },
+    stella: {
+        name: "Stella",
+    },
+    stellanorris: {
+        name: "Stella Norris",
+    },
+    yukari: {
+        name: "Yukari",
+    },
+    yamame: {
+        name: "Yamame",
+    },
+    iku: {
+        name: "Iku",
+    },
+    medicine: {
+        name: "Medicine",
+    },
+    yuuka: {
+        name: "Yuuka",
+    },
+    hibachi: {
+        name: "Hibachi",
+    },
+    hibachi2: {
+        name: "Hibachi 2",
+    },
+    evaccaniadoom: {
+        name: "Evaccania DOOM",
+    },
+    minoriko: {
+        name: "Minoriko",
+    },
+    shizuha: {
+        name: "Shizuha",
+    },
+    alice: {
+        name: "Alice",
+    },
+    babybowser: {
+        name: "Baby Bowser",
+    },
+    bowser: {
+        name: "Bowser",
+    },
+    bowserdry: {
+        name: "Bowser-Dry",
+    },
+    bowsergiga: {
+        name: "Bowser-Giga",
+    },
+    genjii: {
+        name: "Genjii",
+    },
+    vivit: {
+        name: "VIVIT",
+    },
+    vivitmega: {
+        name: "VIVIT-Mega",
+    },
+    maribel: {
+        name: "Maribel",
+    },
+    maribelmega: {
+        name: "Maribel-Mega",
+    },
+    kogasa: {
+        name: "Kogasa",
+    },
+    meiling: {
+        name: "Meiling",
+    },
+    patchouli: {
+        name: "Patchouli",
+    },
+    suwako: {
+        name: "Suwako",
+    },
+    tesla: {
+        name: "Tesla",
+    },
+    shingyoku: {
+        name: "Shingyoku",
+    },
+    shingyokupriestess: {
+        name: "Shingyoku-Priestess",
+    },
+    shingyokuorb: {
+        name: "Shingyoku-Orb",
+    },
+    sariel: {
+        name: "Sariel",
+    },
+    serpentofchaos: {
+        name: "Serpent of Chaos",
+    },
+    winner: {
+        name: "*** WINNER ***",
+    },
+    satori: {
+        name: "Satori",
+    },
+    koishi: {
+        name: "Koishi",
+    },
+    nitori: {
+        name: "Nitori",
+    },
+    byakuren: {
+        name: "Byakuren",
+    },
+    nue: {
+        name: "Nue",
+    },
+    ichirin: {
+        name: "Ichirin",
+    },
+    nyancat: {
+        name: "Nyan Cat",
+    },
+    mario: {
+        name: "Mario",
+    },
+    mariopaper: {
+        name: "Mario-Paper",
+    },
+    mariomalleo: {
+        name: "Mario-Malleo",
+    },
+    boo: {
+        name: "Boo",
+    },
+    booboolussus: {
+        name: "Boo-Boolussus",
+    },
+    kingboo: {
+        name: "King Boo",
+    },
+    bouldergeist: {
+        name: "Bouldergeist",
+    },
+    glados: {
+        name: "GLaDOS",
+    },
+    badegg: {
+        name: "Bad EGG",
+    },
+    pearl: {
+        name: "Pearl",
+    },
+    pearllee: {
+        name: "Pearl Lee",
+    },
+    sunnymilk: {
+        name: "Sunny Milk",
+    },
+    lunachild: {
+        name: "Luna Child",
+    },
+    starsapphire: {
+        name: "Star Sapphire",
+    },
+    sanae: {
+        name: "Sanae",
+    },
+    kanako: {
+        name: "Kanako",
+    },
+    ran: {
+        name: "Ran",
+    },
+    kanzou: {
+        name: "Kanzou",
+    },
+    hagumanoki: {
+        name: "Hagumanoki",
+    },
+    ruscus: {
+        name: "Ruscus",
+    },
+    ryuuguu: {
+        name: "Ryuuguu",
+    },
+    weepinmeleon: {
+        name: "Weepinmeleon",
+    },
+    venudrio: {
+        name: "Venudrio",
+    },
+    bloodyjitterbug: {
+        name: "Bloody Jitterbug",
+    },
+    bluescreenofdeath: {
+        name: "Blue Screen of Death",
+    },
+    internetexplorer: {
+        name: "Internet Explorer",
+    },
+    inoriaizawa: {
+        name: "Inori Aizawa",
+    },
+    microsoftedge: {
+        name: "Microsoft Edge",
+    },
+    mozillafirefox: {
+        name: "Mozilla Firefox",
+    },
+    googlechrome: {
+        name: "Google Chrome",
+    },
+    recyclebin: {
+        name: "Recycle Bin",
+    },
+    hina: {
+        name: "Hina",
+    },
+    chen: {
+        name: "Chen",
+    },
+    reisen: {
+        name: "Reisen",
+    },
+    parsee: {
+        name: "Parsee",
+    },
+    rin: {
+        name: "Rin",
+    },
+    daiyousei: {
+        name: "Daiyousei",
+    },
+    konngara: {
+        name: "Konngara",
+    },
+    yumeko: {
+        name: "Yumeko",
+    },
+    rumia: {
+        name: "Rumia",
+    },
+    koakuma: {
+        name: "Koakuma",
+    },
+    youmu: {
+        name: "Youmu",
+    },
+    mystia: {
+        name: "Mystia",
+    },
+    tewi: {
+        name: "Tewi",
+    },
+    aya: {
+        name: "Aya",
+    },
+    kisume: {
+        name: "Kisume",
+    },
+    chucktesta: {
+        name: "Chuck Testa",
+    },
+    uncledolan: {
+        name: "Uncle Dolan",
+    },
 	missingno: {
 		name: "MissingNo.",
 	},
