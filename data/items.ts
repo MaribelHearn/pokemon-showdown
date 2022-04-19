@@ -7278,8 +7278,8 @@ export const Items: {[itemid: string]: ItemData} = {
         gen: 8,
         isNonstandard: "Custom",
     },
-    "???gem": {
-        name: "??? Gem",
+    unknowngem: {
+        name: "Unknown Gem",
         spritenum: 2010,
         isGem: true,
         onSourceTryPrimaryHit(target, source, move) {
