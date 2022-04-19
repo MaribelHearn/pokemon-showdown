@@ -16937,7 +16937,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Dark", "Dragon"],
         gender: "M",
 		baseStats: {hp: 100, atk: 150, def: 100, spa: 100, spd: 150, spe: 30},
-		abilities: {0: "Beast Boost", H: "Beast Boost"},
+		abilities: {0: "Beast Boost"},
 		weightkg: 250,
 		color: "Black",
 	},
