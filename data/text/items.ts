@@ -2372,8 +2372,8 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Yellow Pill",
 		desc: "If held by Dr. Mario, restores 1/4 max HP and boosts Speed by 1 stage when at 1/4 max HP or less.",
     },
-    "???gem": {
-        name: "??? Gem",
+    unknowngem: {
+        name: "Unknown Gem",
 		desc: "Holder's first successful ???-type attack will have 1.3x power. Single use.",
     },
     mysteryplate: {
