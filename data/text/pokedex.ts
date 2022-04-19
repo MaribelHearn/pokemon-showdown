@@ -3523,7 +3523,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Cirno",
     },
     cirnoachi: {
-        name: "Cirno-Achi",
+        name: "Achi Cirno",
     },
     reimu: {
         name: "Reimu",
@@ -3547,7 +3547,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Vegeta",
     },
     vegetasupersaiyan: {
-        name: "Vegeta-Super Saiyan",
+        name: "Super Saiyan Vegeta",
     },
     droctogonapus: {
         name: "Dr. Octogonapus",
@@ -3559,7 +3559,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Daniel",
     },
     danielzalgo: {
-        name: "Daniel-Zalgo",
+        name: "Officer DanZalgo",
     },
     utsuho: {
         name: "Utsuho",
@@ -3574,7 +3574,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Link",
     },
     linktoon: {
-        name: "Link-Toon",
+        name: "Toon Link",
     },
     youngzelda: {
         name: "Young Zelda",
@@ -3583,13 +3583,13 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Zelda",
     },
     zeldasheik: {
-        name: "Zelda-Sheik",
+        name: "Sheik",
     },
     ganondorf: {
         name: "Ganondorf",
     },
     ganondorfmega: {
-        name: "Ganondorf-Mega",
+        name: "Ganon",
     },
     suiseiseki: {
         name: "Suiseiseki",
@@ -3712,7 +3712,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Samus",
     },
     samuszerosuit: {
-        name: "Samus-Zero Suit",
+        name: "Zero Suit Samus",
     },
     zeekyhbomb: {
         name: "Zeeky H. Bomb",
@@ -3796,10 +3796,10 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Bowser",
     },
     bowserdry: {
-        name: "Bowser-Dry",
+        name: "Dry Bowser",
     },
     bowsergiga: {
-        name: "Bowser-Giga",
+        name: "Giga Bowser",
     },
     genjii: {
         name: "Genjii",
@@ -3808,13 +3808,13 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "VIVIT",
     },
     vivitmega: {
-        name: "VIVIT-Mega",
+        name: "Mega VIVIT",
     },
     maribel: {
         name: "Maribel",
     },
     maribelmega: {
-        name: "Maribel-Mega",
+        name: "Mega Maribel",
     },
     kogasa: {
         name: "Kogasa",
@@ -3874,16 +3874,16 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Mario",
     },
     mariopaper: {
-        name: "Mario-Paper",
+        name: "Paper Mario",
     },
     mariomalleo: {
-        name: "Mario-Malleo",
+        name: "Malleo",
     },
     boo: {
         name: "Boo",
     },
     booboolussus: {
-        name: "Boo-Boolussus",
+        name: "Boolussus",
     },
     kingboo: {
         name: "King Boo",
@@ -4014,7 +4014,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     uncledolan: {
         name: "Uncle Dolan",
     },
-	missingno: {
+	missingnooriginal: {
 		name: "MissingNo.",
 	},
 	syclar: {
