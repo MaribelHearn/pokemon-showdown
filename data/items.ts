@@ -7107,10 +7107,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 8,
 		isNonstandard: "Custom",
     },
-    warpedmirror: {
-    },
-    handheldfan: {
-    },
     natureengine: {
         name: "Nature Engine",
         spritenum: 2003,
