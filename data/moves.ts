@@ -19739,7 +19739,6 @@ export const Moves: {[moveid: string]: MoveData} = {
         accuracy: 85,
         basePower: 100,
         category: "Physical",
-        isNonstandard: "Custom",
         name: "Apocalypse",
         pp: 5,
         priority: 0,
