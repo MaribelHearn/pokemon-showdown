@@ -77677,7 +77677,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             twineedle: ["8L55"],
             fissure: ["8L75"],
             splash: ["8L99"],
-        }
+        },
     },
     chucknorris: {
         learnset: {
@@ -77697,7 +77697,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             detect: ["8L67"],
             takedown: ["8L72"],
             doubleedge: ["8L79"],
-        }
+        },
     },
     captainfalcon: {
         learnset: {
@@ -77717,7 +77717,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             bulletpunch: ["8L1"],
             extremespeed: ["8L1"],
             quickattack: ["8L1"],
-        }
+        },
     },
     flandre: {
         learnset: {
@@ -77739,7 +77739,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             wingattack: ["8L1"],
             powergem: ["8L1"],
             moonlight: ["8L1"],
-        }
+        },
     },
     cell: {
         learnset: {
@@ -77754,7 +77754,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             meteorbeam: ["8L80"],
             laserbeam: ["8L90"],
             hyperbeam: ["8L100"],
-        }
+        },
     },
     dennis: {
         learnset: {
@@ -77779,7 +77779,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             spark: ["8L1"],
             discharge: ["8L1"],
             beatup: ["8L1"],
-        }
+        },
     },
     zalgo: {
         learnset: {
@@ -77799,7 +77799,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             poltergeist: ["8L1"],
             trickroom: ["8L1"],
             ancientpower: ["8L1"],
-        }
+        },
     },
     "2012": {
         learnset: {
@@ -77821,7 +77821,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             eruption: ["8L1"],
             fissure: ["8L1"],
             sheercold: ["8L1"],
-        }
+        },
     },
     roflcopter: {
         learnset: {
@@ -77847,7 +77847,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             slam: ["8L1"],
             airslash: ["8L1"],
             tailwind: ["8L1"],
-        }
+        },
     },
     andross: {
         learnset: {
@@ -77868,7 +77868,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             meteorbeam: ["8L1"],
             lockon: ["8L1"],
             selfdestruct: ["8L1"],
-        }
+        },
     },
     marisa: {
         learnset: {
@@ -77876,7 +77876,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             spark: ["8L23"],
             masterspark: ["8L53"],
             charge: ["8L28"],
-        }
+        },
     },
 	tomohawk: {
 		learnset: {
