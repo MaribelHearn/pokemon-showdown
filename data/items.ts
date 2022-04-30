@@ -7105,7 +7105,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
 		num: 2000,
 		gen: 8,
-		isNonstandard: "Custom",
     },
     natureengine: {
         name: "Nature Engine",
@@ -7127,7 +7126,6 @@ export const Items: {[itemid: string]: ItemData} = {
         itemUser: ["Weepinmeleon"],
         num: 2003,
         gen: 8,
-        isNonstandard: "Custom",
     },
     magmaengine: {
         name: "Magma Engine",
@@ -7149,7 +7147,6 @@ export const Items: {[itemid: string]: ItemData} = {
         itemUser: ["Weepinmeleon"],
         num: 2004,
         gen: 8,
-        isNonstandard: "Custom",
     },
     basicengine: {
         name: "Basic Engine",
@@ -7172,7 +7169,6 @@ export const Items: {[itemid: string]: ItemData} = {
         itemUser: ["Venudrio"],
         num: 2005,
         gen: 8,
-        isNonstandard: "Custom",
     },
     venomengine: {
         name: "Venom Engine",
@@ -7189,7 +7185,6 @@ export const Items: {[itemid: string]: ItemData} = {
         itemUser: ["Venudrio"],
         num: 2006,
         gen: 8,
-        isNonstandard: "Custom",
     },
     redpill: {
         name: "Red Pill",
@@ -7217,7 +7212,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2007,
         gen: 8,
-        isNonstandard: "Custom",
     },
     bluepill: {
         name: "Blue Pill",
@@ -7245,7 +7239,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2008,
         gen: 8,
-        isNonstandard: "Custom",
     },
     yellowpill: {
         name: "Yellow Pill",
@@ -7272,7 +7265,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2009,
         gen: 8,
-        isNonstandard: "Custom",
     },
     unknowngem: {
         name: "Unknown Gem",
@@ -7286,7 +7278,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2010,
         gen: 8,
-        isNonstandard: "Custom",
     },
     mysteryplate: {
         name: "Mystery Plate",
@@ -7307,7 +7298,6 @@ export const Items: {[itemid: string]: ItemData} = {
         forcedForme: "Arceus-???",
         num: 2011,
         gen: 8,
-        isNonstandard: "Custom",
     },
     moodring: {
         name: "Mood Ring",
@@ -7332,7 +7322,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2012,
         gen: 8,
-        isNonstandard: "Custom",
     },
     plasmacane: {
         name: "Triforce",
@@ -7346,7 +7335,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2013,
         gen: 8,
-        isNonstandard: "Custom",
     },
     triforce: {
         name: "Triforce",
@@ -7360,7 +7348,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2014,
         gen: 8,
-        isNonstandard: "Custom",
     },
     vegetite: {
         name: "Vegetite",
@@ -7374,7 +7361,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2015,
         gen: 8,
-        isNonstandard: "Custom",
     },
     gokuite: {
         name: "Gokuite",
@@ -7388,7 +7374,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2016,
         gen: 8,
-        isNonstandard: "Custom",
     },
     smashball: {
         name: "Smash Ball",
@@ -7402,7 +7387,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2017,
         gen: 8,
-        isNonstandard: "Custom",
     },
     sabotenbottle: {
         name: "Saboten Bottle",
@@ -7416,7 +7400,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2018,
         gen: 8,
-        isNonstandard: "Custom",
     },
     strangegap: {
         name: "Strange Gap",
@@ -7430,7 +7413,6 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2019,
         gen: 8,
-        isNonstandard: "Custom",
     },
     unknowniumz: {
         name: "Unknownium Z",
@@ -7442,7 +7424,6 @@ export const Items: {[itemid: string]: ItemData} = {
         forcedForme: "Arceus-???",
         num: 2023,
         gen: 8,
-        isNonstandard: "Custom",
     },
 
 	// CAP items
