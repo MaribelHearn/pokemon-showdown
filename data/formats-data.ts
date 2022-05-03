@@ -6254,7 +6254,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	enamorustherian: {
 		isNonstandard: "Future",
 		tier: "Illegal",
-	},tentaquil: {
+	},
+    tentaquil: {
 		isNonstandard: "Custom",
         tier: "OU",
     },
@@ -6266,7 +6267,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-	flandrescarlet: {
+	flandre: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
@@ -6346,7 +6347,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-    achicirno: {
+    cirnoachi: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
@@ -6434,7 +6435,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-    ganon: {
+    ganondorfmega: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
@@ -6442,7 +6443,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
-	ackbar: {
+	admiralackbar: {
 		isNonstandard: "Custom",
         tier: "OU",
 	},
@@ -6598,7 +6599,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
         isNonstandard: "Custom",
         tier: "OU",
     },
-    zerosuitsamus: {
+    samuszerosuit: {
         isNonstandard: "Custom",
         tier: "OU",
     },
