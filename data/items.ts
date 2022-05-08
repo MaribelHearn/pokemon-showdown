@@ -7335,6 +7335,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2013,
         gen: 8,
+		isNonstandard: "Past",
     },
     triforce: {
         name: "Triforce",
@@ -7361,6 +7362,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2015,
         gen: 8,
+		isNonstandard: "Past",
     },
     gokuite: {
         name: "Gokuite",
@@ -7374,6 +7376,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2016,
         gen: 8,
+		isNonstandard: "Past",
     },
     smashball: {
         name: "Smash Ball",
@@ -7387,6 +7390,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2017,
         gen: 8,
+		isNonstandard: "Past",
     },
     sabotenbottle: {
         name: "Saboten Bottle",
@@ -7400,6 +7404,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2018,
         gen: 8,
+		isNonstandard: "Past",
     },
     strangegap: {
         name: "Strange Gap",
@@ -7413,6 +7418,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2019,
         gen: 8,
+		isNonstandard: "Past",
     },
     unknowniumz: {
         name: "Unknownium Z",
