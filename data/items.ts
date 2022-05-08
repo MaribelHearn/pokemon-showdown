@@ -7364,7 +7364,7 @@ export const Items: {[itemid: string]: ItemData} = {
         gen: 8,
 		isNonstandard: "Past",
     },
-    gokuite: {
+    /*gokuite: {
         name: "Gokuite",
         spritenum: 2016,
         megaStone: "Goku-SuperSaiyan",
@@ -7377,7 +7377,7 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2016,
         gen: 8,
 		isNonstandard: "Past",
-    },
+    },*/
     smashball: {
         name: "Smash Ball",
         spritenum: 2017,
