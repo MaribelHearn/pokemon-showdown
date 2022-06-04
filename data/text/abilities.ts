@@ -1747,6 +1747,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
         desc: "This Pokemon's Special Attack is multiplied by 1.5 and the accuracy of its special attacks is multiplied by 0.8.",
 		shortDesc: "This Pokemon's Special Attack is 1.5x and accuracy of its special attacks is 0.8x.",
 	},
+    lasermouth: {
+        name: "Laser Mouth",
+		desc: "This Pokemon's beam moves have their power multiplied by 1.5.",
+		shortDesc: "This Pokemon's beam moves have 1.5x power.",
+    },
 	imposing: {
 		name: "Imposing",
 		desc: "On switch-in, this Pokemon lowers the Special Attack of adjacent opposing Pokemon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokemon behind a substitute are immune.",
