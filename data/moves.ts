@@ -1961,6 +1961,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 				newType = 'Fairy';
 			} else if (this.field.isTerrain('psychicterrain')) {
 				newType = 'Psychic';
+			} else if (this.field.isTerrain('glitchyterrain')) {
+				newType = '???';
 			}
 
 			if (target.getTypes().join() === newType || !target.setType(newType)) return false;
@@ -2490,7 +2492,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {},
 		onHit(pokemon) {
 			const noCopycat = [
-				'assist', 'banefulbunker', 'beakblast', 'behemothbash', 'behemothblade', 'belch', 'bestow', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'craftyshield', 'destinybond', 'detect', 'dragontail', 'dynamaxcannon', 'endure', 'feint', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'obstruct', 'protect', 'ragepowder', 'roar', 'shelltrap', 'sketch', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind',
+				'assist', 'banefulbunker', 'beakblast', 'behemothbash', 'behemothblade', 'belch', 'bestow', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'craftyshield', 'destinybond', 'detect', 'dragontail', 'dynamaxcannon', 'endure', 'feint', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'obstruct', 'protect', 'ragepowder', 'roar', 'shelltrap', 'sketch', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind', 'falconpunch',
 			];
 			let move: Move | ActiveMove | null = this.lastMove;
 			if (!move) return;
@@ -11804,6 +11806,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move = 'moonblast';
 			} else if (this.field.isTerrain('psychicterrain')) {
 				move = 'psychic';
+			} else if (this.field.isTerrain('glitchyterrain')) {
+				move = 'superglitch';
 			}
 			this.actions.useMove(move, pokemon, target);
 			return null;
@@ -14864,6 +14868,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 					boosts: {
 						spe: -1,
 					},
+				});
+			} else if (this.field.isTerrain('glitchyterrain')) {
+				move.secondaries.push({
+					chance: 30,
+        			volatileStatus: 'confusion',
 				});
 			}
 		},
@@ -17990,6 +17999,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'psychicterrain':
 				move.type = 'Psychic';
 				break;
+			case 'glitchyterrain':
+				move.type = '???';
+				break;
 			}
 		},
 		onModifyMove(move, pokemon) {
@@ -19928,6 +19940,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, bullet: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Steel') return 1;
+		},
 		secondary: {
 			chance: 10,
 			boosts: {
@@ -19946,7 +19961,7 @@ export const Moves: {[moveid: string]: MoveData} = {
         pp: 20,
         priority: 0,
         flags: {reflectable: 1},
-		sideCondition: 'stealthrock',
+		sideCondition: 'pixiedust',
 		condition: {
 			// this is a side condition
 			onSideStart(side) {
@@ -20073,7 +20088,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			onResidualOrder: 5,
 			onResidualSubOrder: 2,
 			onResidual(pokemon) {
-				if (pokemon.isGrounded() && !pokemon.isSemiInvulnerable() && pokemon.types.includes('???')) {
+				if (pokemon.isGrounded() && !pokemon.isSemiInvulnerable() && !pokemon.types.includes('???')) {
     				this.damage(pokemon.baseMaxhp / 16);
 				} else {
 					this.debug(`Pokemon semi-invuln or not grounded; Glitchy Terrain skipped`);

@@ -77995,6 +77995,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             wingattack: ["8L1"],
             powergem: ["8L1"],
             moonlight: ["8L1"],
+            nosferatu: ["8L1"],
             workup: ["8M"],
             hiddenpower: ["8M"],
             hyperbeam: ["8M"],
