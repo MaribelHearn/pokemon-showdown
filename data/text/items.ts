@@ -2380,10 +2380,10 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Mystery Plate",
 		desc: "Holder's ???-type attacks have 1.2x power. Judgment is ??? type.",
     },
-    moodring: {
+    /*moodring: {
         name: "Mood Ring",
 		desc: "On switch-in, boosts and decreases a random stat by 1 stage.",
-    },
+    },*/
     plasmacane: {
         name: "Plasma Cane",
 		desc: "If held by Dennis, this item allows him to Mega Evolve in battle.",

@@ -16568,7 +16568,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Andross",
 		types: ["Rock", "Poison"],
 		gender: "M",
-		baseStats: {hp: 100, atk: 120, def: 120, spa: 65, spd: 80, spe: 40},
+		baseStats: {hp: 100, atk: 120, def: 125, spa: 60, spd: 80, spe: 40},
 		abilities: {0: "Levitate", 1: "Iron Fist", H: "Sheer Force"},
 		weightkg: 1155,
 		color: "Brown",
