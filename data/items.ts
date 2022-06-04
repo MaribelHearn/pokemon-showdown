@@ -7299,7 +7299,7 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2011,
         gen: 8,
     },
-    moodring: {
+    /*moodring: {
         name: "Mood Ring",
         spritenum: 2012,
         onStart(pokemon) {
@@ -7322,7 +7322,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2012,
         gen: 8,
-    },
+    },*/
     plasmacane: {
         name: "Triforce",
         spritenum: 2013,
