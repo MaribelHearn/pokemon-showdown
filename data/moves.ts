@@ -548,7 +548,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {},
 		onHit(target) {
 			const noAssist = [
-				'assist', 'banefulbunker', 'beakblast', 'belch', 'bestow', 'bounce', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'destinybond', 'detect', 'dig', 'dive', 'dragontail', 'endure', 'feint', 'fly', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'phantomforce', 'protect', 'ragepowder', 'roar', 'shadowforce', 'shelltrap', 'sketch', 'skydrop', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind',
+				'assist', 'banefulbunker', 'beakblast', 'belch', 'bestow', 'bounce', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'destinybond', 'detect', 'dig', 'dive', 'dragontail', 'endure', 'feint', 'fly', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'phantomforce', 'protect', 'ragepowder', 'roar', 'shadowforce', 'shelltrap', 'sketch', 'skydrop', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind', 'falconpunch', 'electricalshield', 'firewall',
 			];
 
 			const moves = [];
@@ -19835,4 +19835,240 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fire",
 	},
+	corrupt: {
+		num: 2025,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Corrupt",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, reflectable: 1, allyanim: 1},
+		onHit(target) {
+			if (target.getTypes().join() === '???' || !target.setType('???')) {
+				// Soak should animate even when it fails.
+				// Returning false would suppress the animation.
+				this.add('-fail', target);
+				return null;
+			}
+			this.add('-start', target, 'typechange', '???');
+		},
+		secondary: null,
+		target: "normal",
+		type: "???",
+		zMove: {boost: {spa: 1}},
+	},
+    superglitch: {
+        num: 2067,
+        accuracy: 100,
+        basePower: 100,
+        category: "Physical",
+        name: "Super Glitch",
+        pp: 5,
+        priority: 0,
+        flags: {protect: 1, mirror: 1},
+        secondary: null,
+        target: "normal",
+        type: "???",
+    },
+	thousandcuts: {
+		num: 2112,
+		accuracy: 100,
+		basePower: 25,
+		category: "Physical",
+		name: "Thousand Cuts",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, defrost: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+	},
+	plasmaburst: {
+		num: 2120,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Plasma Burst",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, defrost: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Electric",
+	},
+	acidbomb: {
+		num: 2121,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Acid Bomb",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, bullet: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Poison",
+	},
+    pixiedust: {
+        num: 2122,
+		accuracy: true,
+        basePower: 0,
+        category: "Status",
+        name: "Pixie Dust",
+        pp: 20,
+        priority: 0,
+        flags: {reflectable: 1},
+		sideCondition: 'stealthrock',
+		condition: {
+			// this is a side condition
+			onSideStart(side) {
+				this.add('-sidestart', side, 'move: Pixie Dust');
+			},
+			onSwitchIn(pokemon) {
+                if (pokemon.hasType('Fairy')) {
+					this.add('-sideend', pokemon.side, 'move: Pixie Dust', '[of] ' + pokemon);
+					pokemon.side.removeSideCondition('pixiedust');
+				} else if (pokemon.hasItem('heavydutyboots')) {
+                    return;
+                }
+				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('pixiedust')), -6, 6);
+				this.boost({eva: -1}, pokemon);
+			},
+		},
+        secondary: null,
+        target: "foeSide",
+        type: "Fairy",
+    },
+    bulletspray: {
+		num: 2128,
+		accuracy: 100,
+		basePower: 25,
+		category: "Special",
+		name: "Bullet Spray",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, bullet: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+    },
+    nosferatu: {
+        num: 2130,
+        accuracy: 100,
+        basePower: 75,
+        category: "Special",
+        name: "Nosferatu",
+        pp: 10,
+        priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1},
+		drain: [1, 2],
+        secondary: null,
+        target: "normal",
+        type: "Dark",
+    },
+    shieldbash: {
+        num: 2133,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Shield Bash",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		overrideOffensiveStat: 'def',
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+    },
+    remotemissile: {
+        num: 2142,
+		accuracy: true,
+		basePower: 90,
+		category: "Physical",
+		name: "Remote Missile",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, bullet: 1, distance: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+    },
+    glitchyterrain: {
+        num: 2158,
+        accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Glitchy Terrain",
+		pp: 10,
+		priority: 0,
+		flags: {nonsky: 1},
+		terrain: 'glitchyterrain',
+		condition: {
+			duration: 5,
+			durationCallback(source, effect) {
+				if (source?.hasItem('terrainextender')) {
+					return 8;
+				}
+				return 5;
+			},
+			onTryHitPriority: 4,
+			onTryHit(target, source, effect) {
+				if (effect && (effect.priority <= 0.1 || effect.target === 'self')) {
+					return;
+				}
+				if (target.isSemiInvulnerable() || target.isAlly(source)) return;
+				if (!target.isGrounded()) {
+					const baseMove = this.dex.moves.get(effect.id);
+					if (baseMove.priority > 0) {
+						this.hint("Glitchy Terrain doesn't affect Pokémon immune to Ground.");
+					}
+					return;
+				}
+				this.add('-activate', target, 'move: Glitchy Terrain');
+				return null;
+			},
+			onBasePowerPriority: 6,
+			onBasePower(basePower, attacker, defender, move) {
+				if (move.type === '???' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
+					this.debug('glitchy terrain boost');
+					return this.chainModify([5325, 4096]);
+				}
+			},
+			onFieldStart(field, source, effect) {
+				if (effect?.effectType === 'Ability') {
+					this.add('-fieldstart', 'move: Glitchy Terrain', '[from] ability: ' + effect.name, '[of] ' + source);
+				} else {
+					this.add('-fieldstart', 'move: Glitchy Terrain');
+				}
+			},
+			onResidualOrder: 5,
+			onResidualSubOrder: 2,
+			onResidual(pokemon) {
+				if (pokemon.isGrounded() && !pokemon.isSemiInvulnerable() && pokemon.types.includes('???')) {
+    				this.damage(pokemon.baseMaxhp / 16);
+				} else {
+					this.debug(`Pokemon semi-invuln or not grounded; Glitchy Terrain skipped`);
+				}
+			},
+			onFieldResidualOrder: 27,
+			onFieldResidualSubOrder: 7,
+			onFieldEnd() {
+				this.add('-fieldend', 'move: Glitchy Terrain');
+			},
+		},
+		secondary: null,
+		target: "all",
+		type: "???",
+    },
 };
