@@ -3456,9 +3456,9 @@ export const PokedexText: {[k: string]: PokedexText} = {
     tentaquil: {
         name: "tentaquil",
     },
-    tentaquix: {
+    /*tentaquix: {
         name: "tentaquix",
-    },
+    },*/
     chucknorris: {
         name: "Chuck Norris",
     },

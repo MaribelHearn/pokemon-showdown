@@ -6258,9 +6258,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tentaquil: {
 		tier: "OU",
     },
-    tentaquix: {
+    /*tentaquix: {
 		tier: "OU",
-    },
+    },*/
 	chucknorris: {
 		tier: "OU",
 	},
