@@ -4520,6 +4520,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 2001,
 	},
+    lasermouth: {
+        onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['beam']) {
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Laser Mouth",
+		rating: 3,
+		num: 2002,
+    },
 	imposing: {
 		onStart(pokemon) {
 			let activated = false;
@@ -4538,7 +4549,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Imposing",
 		rating: 3.5,
-		num: 2002,
+		num: 2003,
 	},
 	corruption: {
 		onModifyTypePriority: -1,
@@ -4557,7 +4568,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Corruption",
 		rating: 4,
-		num: 2003,
+		num: 2004,
 	},
 	elementalist: {
 		onBasePowerPriority: 23,
@@ -4568,7 +4579,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Elementalist",
 		rating: 4,
-		num: 2004,
+		num: 2005,
 	},
     negativezone: {
 		onStart(source) {
@@ -4582,7 +4593,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         },
 		name: "Negative Zone",
 		rating: 4,
-        num: 2005,
+        num: 2006,
     },
 	springfragrance: {
 		onStart(pokemon) {
@@ -4602,7 +4613,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Spring Fragrance",
 		rating: 3.5,
-		num: 2006,
+		num: 2007,
 	},
     laststand: {
         onStart(pokemon) {
@@ -4612,7 +4623,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         },
         name: "Last Stand",
         rating: 3,
-        num: 2007,
+        num: 2008,
     },
     angsty: {
         onResidualOrder: 26,
@@ -4645,7 +4656,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Angsty",
 		rating: 5,
-		num: 2008,
+		num: 2009,
     },
     sharpshooter: {
         onBasePowerPriority: 23,
@@ -4657,7 +4668,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Sharpshooter",
 		rating: 3,
-		num: 2009,
+		num: 2010,
     },
     felinedeity: {
 		onSourceModifyDamage(damage, source, target, move) {
@@ -4668,7 +4679,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Feline Deity",
 		rating: 3.5,
-		num: 2010,
+		num: 2011,
     },
 	cardboardbox: {
 		onDamagePriority: 1,
@@ -4713,7 +4724,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Cardboard Box",
 		rating: 3.5,
-		num: 2011,
+		num: 2012,
 	},
 	armordamage: {
 		onStart(pokemon) {
@@ -4757,7 +4768,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isUnbreakable: true,
 		name: "Armor Damage",
 		rating: 3,
-		num: 2012,
+		num: 2013,
 	},
     research: {
 		onStart(pokemon) {
@@ -4770,7 +4781,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Research",
 		rating: 1.5,
-        num: 2013,
+        num: 2014,
     },
     conflagrate: {
         onModifyTypePriority: -1,
@@ -4789,7 +4800,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Conflagrate",
 		rating: 4,
-		num: 2014,
+		num: 2015,
     },
     prosecutor: {
         onModifyMove(move) {
@@ -4798,7 +4809,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
         name: "Prosecutor",
         rating: 4,
-        num: 2015,
+        num: 2016,
     },
     wonderland: {
 		onStart(source) {
@@ -4812,7 +4823,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         },
 		name: "Wonderland",
 		rating: 4,
-        num: 2016,
+        num: 2017,
     },
 	papercut: {
 		onDamagingHitOrder: 1,
@@ -4823,7 +4834,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Paper Cut",
 		rating: 2.5,
-		num: 2017,
+		num: 2018,
 	},
     gettogether: {
 		onStart(pokemon) {
@@ -4856,7 +4867,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Get Together",
 		rating: 3,
-		num: 2018,
+		num: 2019,
 	},
     webbrowser: {
         onResidualOrder: 26,
@@ -4868,7 +4879,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Web Browser",
 		rating: 4.5,
-		num: 2019,
+		num: 2020,
     },
 	taxidermy: {
 		onDamagePriority: 1,
@@ -4913,7 +4924,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Taxidermy",
 		rating: 3.5,
-		num: 2020,
+		num: 2021,
 	},
 	bloodbond: {
 		onPrepareHit(source, target, move) {
@@ -4936,7 +4947,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Blood Bond",
 		rating: 4.5,
-		num: 2021,
+		num: 2022,
 	},
 	petrify: {
 		onStart(pokemon) {
@@ -4956,7 +4967,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Petrify",
 		rating: 3.5,
-		num: 2022,
+		num: 2023,
 	},
 	psychopath: {
 		onStart(pokemon) {
@@ -4969,7 +4980,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Psychopath",
 		rating: 1.5,
-		num: 2023,
+		num: 2024,
 	},
 	pureheart: {
 		onTryHit(target, source, move) {
@@ -4994,7 +5005,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Pure Heart",
 		rating: 3.5,
-		num: 2024,
+		num: 2025,
 	},
 	hotblooded: {
 		onDamagePriority: 1,
@@ -5006,7 +5017,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Hot Blooded",
 		rating: 4,
-		num: 2025,
+		num: 2026,
 	},
     shorttempered: {
 		onDamagingHitOrder: 1,
@@ -5017,7 +5028,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Short-Tempered",
 		rating: 4,
-		num: 2026,
+		num: 2027,
     },
 	squidkid: {
 		onBeforeMovePriority: 0.5,
@@ -5029,7 +5040,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Squid Kid",
 		rating: 4,
-		num: 2027,
+		num: 2028,
 	},
     trance: {
 		onSourceAfterFaint(length, target, source, effect) {
@@ -5043,7 +5054,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Trance",
 		rating: 4,
-        num: 2028,
+        num: 2029,
     },
     esper: {
 		onModifyAtkPriority: 5,
@@ -5062,7 +5073,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Esper",
 		rating: 3.5,
-        num: 2029,
+        num: 2030,
     },
     runic: {
         onSourceModifyDamage(damage, source, target, move) {
@@ -5072,7 +5083,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Runic",
 		rating: 4,
-        num: 2030,
+        num: 2031,
     },
     trueresistance: {
         onBoost(boost, target, source, effect) {
@@ -5098,7 +5109,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
         name: "True Resistance",
 		rating: 4,
-		num: 2031,
+		num: 2032,
     },
     glacialforce: {
 		onBasePowerPriority: 21,
@@ -5115,12 +5126,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Glacial Force",
 		rating: 2,
-        num: 2032,
+        num: 2033,
     },
     formshift: {
         name: "Form Shift",
         rating: 3,
-        num: 2033,
+        num: 2034,
     },
     firmcarry: {
         name: "Firm Carry",
@@ -5143,11 +5154,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Firm Carry",
 		rating: 4.5,
-		num: 2034,
+		num: 2035,
     },
     dragonvein: {
         name: "Dragon Vein",
         rating: 3,
-        num: 2035,
+        num: 2036,
     }
 };
