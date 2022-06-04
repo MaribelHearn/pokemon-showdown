@@ -16457,7 +16457,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 90,
 		color: "Blue",
 	},
-    tentaquix: {
+    /*tentaquix: {
 		num: 2000,
 		name: "tentaquix",
 		baseSpecies: "tentaquil",
@@ -16468,7 +16468,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Limber", H: "Propeller Tail"},
 		weightkg: 90,
 		color: "Blue",
-	},
+	},*/
 	chucknorris: {
 		num: 2001,
 		name: "Chuck Norris",
