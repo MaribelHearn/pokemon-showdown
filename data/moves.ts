@@ -3477,7 +3477,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 					effectType: 'Move',
 					isFutureMove: true,
 					type: 'Steel',
-					recentForme: source.species,
 				},
 			});
 			this.add('-start', source, 'Doom Desire');
@@ -5919,7 +5918,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 					effectType: 'Move',
 					isFutureMove: true,
 					type: 'Psychic',
-					recentForme: source.species,
 				},
 			});
 			this.add('-start', source, 'move: Future Sight');
