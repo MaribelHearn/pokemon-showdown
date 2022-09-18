@@ -6851,4 +6851,97 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
 	},
+	// Fundex
+	apocalypse: {
+		name: "Apocalypse",
+		shortDesc: "No additional effect.",
+	},
+	masterspark: {
+        name: "Master Spark",
+		desc: "Lowers the user's Special Attack by 2 stages.",
+		shortDesc: "Lowers the user's Sp. Atk by 2.",
+	},
+	pukeblood: {
+        name: "Puke Blood",
+		desc: "Has a 30% chance to make the target flinch.",
+		shortDesc: "30% chance to make the target flinch.",
+	},
+	roundhousekick: {
+        name: "Round House Kick",
+		desc: "No additional effect.",
+		shortDesc: "Nearly always goes first.",
+	},
+	falconpunch: {
+        name: "Falcon Punch",
+		desc: "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move. Has a higher chance for a critical hit.",
+		shortDesc: "Fails if hit beforehand + high crit.",
+	},
+	laevateinn: {
+        name: "Laevateinn",
+		desc: "Has a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio.",
+	},
+	corrupt: {
+        name: "Corrupt",
+		desc: "Causes the target to become a ??? type. Fails if the target is an Arceus or a Silvally, or if the target is already purely ??? type.",
+		shortDesc: "Changes the target's type to ???.",
+	},
+    superglitch: {
+        name: "Super Glitch",
+		shortDesc: "No additional effect.",
+    },
+	thousandcuts: {
+        name: "Thousand Cuts",
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+		shortDesc: "Hits 2-5 times in one turn.",
+	},
+    plasmawhip: {
+        name: "Plasma Whip",
+		desc: "Has a 100% chance to lower the target's Defense by 1 stage.",
+		shortDesc: "100% chance to lower the target's Defense by 1.",
+    },
+	plasmaburst: {
+        name: "Plasma Burst",
+		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
+		shortDesc: "30% chance to burn the target. Thaws target.",
+	},
+	acidbomb: {
+        name: "Acid Bomb",
+		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "10% chance to lower the foe(s) Sp. Def by 1.",
+	},
+    pixiedust: {
+        name: "Pixie Dust",
+		desc: "Sets up a hazard on the opposing side of the field, lowering the Evasion by 1 stage of each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+		shortDesc: "Lowers Evasion by 1 on switch-in.",
+
+		start: "  A mystical dust filled the air around [TEAM]!",
+		end: "  The mystical dust around [TEAM] has dissipated!",
+		activate: "  [POKEMON] was illuminated by the mystical dust!",
+    },
+    bulletspray: {
+        name: "Bullet Spray",
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+		shortDesc: "Hits 2-5 times in one turn.",
+    },
+    nosferatu: {
+        name: "Nosferatu",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+    },
+    shieldbash: {
+        name: "Shield Bash",
+		desc: "Damage is calculated using the user's Defense stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+		shortDesc: "Uses user's Def stat as Atk in damage calculation.",
+    },
+    remotemissile: {
+        name: "Remote Missile",
+		desc: "This move does not check accuracy.",
+		shortDesc: "This move does not check accuracy. Hits foes.",
+    },
+    glitchyterrain: {
+        name: "Glitchy Terrain",
+		desc: "For 5 turns, the terrain becomes Glitchy Terrain. During the effect, the power of ???-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot fall asleep; Pokemon already asleep do not wake up. Grounded Pokemon cannot become affected by Yawn or fall asleep from its effect. Camouflage transforms the user into a ??? type, Nature Power becomes Super Glitch, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Glitchy Terrain.",
+		shortDesc: "5 turns. Grounded: +??? power, can't sleep.",
+    },
 };
