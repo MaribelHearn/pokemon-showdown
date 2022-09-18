@@ -19975,7 +19975,7 @@ export const Moves: {[moveid: string]: MoveData} = {
                     return;
                 }
 				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('pixiedust')), -6, 6);
-				this.boost({eva: -1}, pokemon);
+				//this.boost({eva: -1}, pokemon);
 			},
 		},
         secondary: null,
