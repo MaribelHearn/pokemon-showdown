@@ -78020,7 +78020,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             poisonjab: ["8M"],
             dig: ["8M"],
             shadowclaw: ["8M"],
-            stelwing: ["8M"],
+            steelwing: ["8M"],
             sunnyday: ["8M"],
             flamethrower: ["8M"],
             fireblast: ["8M"],
