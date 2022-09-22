@@ -4510,8 +4510,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	insanity: {
 		// This should be applied directly to the stat as opposed to chaining with the others
 		onModifyAtkPriority: 5,
-		onModifyAtk(atk) {
-			return this.modify(spa, 1.5);
+		onModifySpA(atk) {
+			return this.modify(atk, 1.5);
 		},
 		onSourceModifyAccuracyPriority: 7,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
@@ -4538,7 +4538,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			let activated = false;
 			for (const target of pokemon.side.foe.active) {
-				if (!target || !this.isAdjacent(target, pokemon)) continue;
+				if (!target || !target.isAdjacent(pokemon)) continue;
 				if (!activated) {
 					this.add('-ability', pokemon, 'Imposing', 'boost');
 					activated = true;
@@ -4584,7 +4584,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 2005,
 	},
-    negativezone: {
+    /*negativezone: {
 		onStart(source) {
 			this.add('-fieldstart', 'move: Magic Room', '[of] ' + source);
 		},
@@ -4597,12 +4597,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Negative Zone",
 		rating: 4,
         num: 2006,
-    },
+    },*/
 	springfragrance: {
 		onStart(pokemon) {
 			let activated = false;
 			for (const target of pokemon.side.foe.active) {
-				if (!target || !this.isAdjacent(target, pokemon)) continue;
+				if (!target || !target.isAdjacent(pokemon)) continue;
 				if (!activated) {
 					this.add('-ability', pokemon, 'Spring Fragrance', 'boost');
 					activated = true;
@@ -4632,20 +4632,20 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         onResidualOrder: 26,
 		onResidualSubOrder: 1,
 		onResidual(pokemon) {
-			let stats: BoostName[] = [];
+			let stats: BoostID[] = [];
 			const boost: SparseBoostsTable = {};
-			let statPlus: BoostName;
+			let statPlus: BoostID;
 			for (statPlus in pokemon.boosts) {
 				if (statPlus === 'accuracy' || statPlus === 'evasion') continue;
 				if (pokemon.boosts[statPlus] < 6) {
 					stats.push(statPlus);
 				}
 			}
-			let randomStat: BoostName | undefined = stats.length ? this.sample(stats) : undefined;
+			let randomStat: BoostID | undefined = stats.length ? this.sample(stats) : undefined;
 			if (randomStat) boost[randomStat] = 1;
 
 			stats = [];
-			let statMinus: BoostName;
+			let statMinus: BoostID;
 			for (statMinus in pokemon.boosts) {
 				if (statMinus === 'accuracy' || statMinus === 'evasion') continue;
 				if (pokemon.boosts[statMinus] > -6 && statMinus !== randomStat) {
@@ -4692,7 +4692,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				['snake'].includes(target.species.id) && !target.transformed
 			) {
 				this.add('-activate', target, 'ability: Cardboard Box');
-				this.effectData.busted = true;
+				this.effectState.busted = true;
 				return 0;
 			}
 		},
@@ -4719,10 +4719,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			return 0;
 		},
 		onUpdate(pokemon) {
-			if (['snake'].includes(pokemon.species.id) && this.effectData.busted) {
+			if (['snake'].includes(pokemon.species.id) && this.effectState.busted) {
 				const speciesid = 'Snake';
 				pokemon.formeChange(speciesid, this.effect, true);
-				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.getSpecies(speciesid));
+				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}
 		},
 		name: "Cardboard Box",
@@ -4768,7 +4768,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.add('-immune', target, '[from] ability: Armor Damage');
 			return null;
 		},
-		isUnbreakable: true,
+		isBreakable: false,
 		name: "Armor Damage",
 		rating: 3,
 		num: 2013,
@@ -4806,15 +4806,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 2015,
     },
     prosecutor: {
-        onModifyMove(move) {
-			if (!move || !move.target === 'self') return;
-			move.critRatio += Math.min(3, move.target.getPositiveBoosts());
+        onModifyCritRatio(critRatio, source, target) {
+			return Math.min(3, target.positiveBoosts());
 		},
         name: "Prosecutor",
         rating: 4,
         num: 2016,
     },
-    wonderland: {
+    /*wonderland: {
 		onStart(source) {
 			this.add('-fieldstart', 'move: Wonder Room', '[of] ' + source);
 		},
@@ -4827,7 +4826,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Wonderland",
 		rating: 4,
         num: 2017,
-    },
+    },*/
 	papercut: {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
@@ -4892,7 +4891,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				['chucktesta'].includes(target.species.id) && !target.transformed
 			) {
 				this.add('-activate', target, 'ability: Taxidermy');
-				this.effectData.busted = true;
+				this.effectState.busted = true;
 				return 0;
 			}
 		},
@@ -4919,10 +4918,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			return 0;
 		},
 		onUpdate(pokemon) {
-			if (['chucktesta'].includes(pokemon.species.id) && this.effectData.busted) {
+			if (['chucktesta'].includes(pokemon.species.id) && this.effectState.busted) {
 				const speciesid = 'Chuck Testa-Busted';
 				pokemon.formeChange(speciesid, this.effect, true);
-				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.getSpecies(speciesid));
+				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}
 		},
 		name: "Taxidermy",
@@ -4956,7 +4955,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			let activated = false;
 			for (const target of pokemon.side.foe.active) {
-				if (!target || !this.isAdjacent(target, pokemon)) continue;
+				if (!target || !target.isAdjacent(pokemon)) continue;
 				if (!activated) {
 					this.add('-ability', pokemon, 'Petrify', 'boost');
 					activated = true;
@@ -5137,7 +5136,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         num: 2034,
     },
     firmcarry: {
-        name: "Firm Carry",
 		onAfterUseItem(item, pokemon) {
 			if (pokemon !== this.effectState.target) return;
 			pokemon.removeVolatile('unburden');
