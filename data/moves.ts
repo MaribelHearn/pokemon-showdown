@@ -19940,14 +19940,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, bullet: 1, mirror: 1},
+		ignoreImmunity: true,
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Steel') return 1;
-		},
-		onModifyMove(move) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Steel'] = true;
-			}
 		},
 		secondary: {
 			chance: 10,
