@@ -4620,7 +4620,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
     laststand: {
         onStart(pokemon) {
-			if (pokemon.side.active.length === 1) {
+			if (pokemon.side.pokemonLeft === 1) {
                 this.boost({atk: 1, def: 1}, pokemon);
             }
         },
