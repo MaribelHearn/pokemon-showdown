@@ -4733,11 +4733,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Samus' || pokemon.transformed) return;
 			if (pokemon.hp > pokemon.maxhp / 2) {
-				if (pokemon.species.forme !== 'Zero Suit') {
-					pokemon.formeChange('Samus-Zero Suit');
+				if (pokemon.species.forme !== 'Armor') {
+					pokemon.formeChange('Samus-Armor');
 				}
 			} else {
-				if (pokemon.species.forme === 'Zero Suit') {
+				if (pokemon.species.forme === 'Armor') {
 					pokemon.formeChange(pokemon.set.species);
 				}
 			}
@@ -4746,24 +4746,24 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onResidual(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Samus' || pokemon.transformed || !pokemon.hp) return;
 			if (pokemon.hp > pokemon.maxhp / 2) {
-				if (pokemon.species.forme !== 'Zero Suit') {
-					pokemon.formeChange('Samus-Zero Suit');
+				if (pokemon.species.forme !== 'Armor') {
+					pokemon.formeChange('Samus-Armor');
 				}
 			} else {
-				if (pokemon.species.forme === 'Zero Suit') {
+				if (pokemon.species.forme === 'Armor') {
 					pokemon.formeChange(pokemon.set.species);
 				}
 			}
 		},
 		onSetStatus(status, target, source, effect) {
-			if (target.species.id !== 'samuszerosuit' || target.transformed) return;
+			if (target.species.id !== 'samusarmor' || target.transformed) return;
 			if ((effect as Move)?.status) {
 				this.add('-immune', target, '[from] ability: Armor Damage');
 			}
 			return false;
 		},
 		onTryAddVolatile(status, target) {
-			if (target.species.id !== 'samuszerosuit' || target.transformed) return;
+			if (target.species.id !== 'samusarmor' || target.transformed) return;
 			if (status.id !== 'yawn') return;
 			this.add('-immune', target, '[from] ability: Armor Damage');
 			return null;
