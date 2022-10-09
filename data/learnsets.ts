@@ -83753,6 +83753,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			powdersnow: ["8L1"],
 		}
 	},
+	longcat: {
+		learnset: {
+			scratch: ["8L1"],
+			tailwhip: ["8L1"],
+			slash: ["8L25"],
+			bodyslam: ["8L31"],
+		}
+	},
 	cats: {
 		learnset: {
 			thunderbolt: ["8M"],
@@ -83760,6 +83768,30 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			rest: ["8M"],
 			fling: ["8M"],
 		},
+	},
+	snake: {
+		learnset: {
+			earthquake: ["8M"],
+			dig: ["8M"],
+			return: ["8M"],
+			strength: ["8M"],
+		}
+	},
+	samus: {
+		learnset: {
+			thunderbolt: ["8M"],
+			chargebeam: ["8M"],
+			focusblast: ["8M"],
+			steelbeam: ["8M"],
+		}
+	},
+	samuszerosuit: {
+		learnset: {
+			thunderbolt: ["8M"],
+			chargebeam: ["8M"],
+			focusblast: ["8M"],
+			steelbeam: ["8M"],
+		}
 	},
 	yumemi: {
 		learnset: {
