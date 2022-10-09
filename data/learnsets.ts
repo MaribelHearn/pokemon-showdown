@@ -83745,6 +83745,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			lowkick: ["8M"],
 		},
 	},
+	daniel: {
+		learnset: {
+			tackle: ["8L1"],
+			bubble: ["8L1"],
+			hyperbeam: ["8L1"],
+			powdersnow: ["8L1"],
+		}
+	},
 	cats: {
 		learnset: {
 			thunderbolt: ["8M"],
