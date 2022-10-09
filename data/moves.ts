@@ -754,7 +754,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Aurora Beam",
 		pp: 20,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		secondary: {
 			chance: 10,
 			boosts: {
@@ -1733,7 +1733,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Bubble Beam",
 		pp: 20,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		secondary: {
 			chance: 10,
 			boosts: {
@@ -2073,7 +2073,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Charge Beam",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		secondary: {
 			chance: 70,
 			self: {
@@ -4452,7 +4452,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Eternabeam",
 		pp: 5,
 		priority: 0,
-		flags: {recharge: 1, protect: 1, mirror: 1},
+		flags: {recharge: 1, protect: 1, mirror: 1, beam: 1},
 		self: {
 			volatileStatus: 'mustrecharge',
 		},
@@ -8588,7 +8588,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Hyper Beam",
 		pp: 5,
 		priority: 0,
-		flags: {recharge: 1, protect: 1, mirror: 1},
+		flags: {recharge: 1, protect: 1, mirror: 1, beam: 1},
 		self: {
 			volatileStatus: 'mustrecharge',
 		},
@@ -8750,7 +8750,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Ice Beam",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		secondary: {
 			chance: 10,
 			status: 'frz',
@@ -11005,7 +11005,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Meteor Beam",
 		pp: 10,
 		priority: 0,
-		flags: {charge: 1, protect: 1, mirror: 1},
+		flags: {charge: 1, protect: 1, mirror: 1, beam: 1},
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
 				return;
@@ -11506,7 +11506,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Moongeist Beam",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		ignoreAbility: true,
 		secondary: null,
 		target: "normal",
@@ -13070,7 +13070,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Prismatic Laser",
 		pp: 10,
 		priority: 0,
-		flags: {recharge: 1, protect: 1, mirror: 1},
+		flags: {recharge: 1, protect: 1, mirror: 1, beam: 1},
 		self: {
 			volatileStatus: 'mustrecharge',
 		},
@@ -13137,7 +13137,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Psybeam",
 		pp: 20,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		secondary: {
 			chance: 10,
 			volatileStatus: 'confusion',
@@ -15318,7 +15318,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Signal Beam",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		secondary: {
 			chance: 10,
 			volatileStatus: 'confusion',
@@ -15361,7 +15361,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Simple Beam",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1, beam: 1},
 		onTryHit(target) {
 			if (target.getAbility().isPermanent || target.ability === 'simple' || target.ability === 'truant') {
 				return false;
@@ -15406,7 +15406,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Sinister Arrow Raid",
 		pp: 1,
 		priority: 0,
-		flags: {},
+		flags: {arrow: 1},
 		isZ: "decidiumz",
 		secondary: null,
 		target: "normal",
@@ -16134,7 +16134,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Solar Beam",
 		pp: 10,
 		priority: 0,
-		flags: {charge: 1, protect: 1, mirror: 1},
+		flags: {charge: 1, protect: 1, mirror: 1, beam: 1},
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
 				return;
@@ -16504,7 +16504,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Spirit Shackle",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, arrow: 1},
 		secondary: {
 			chance: 100,
 			onHit(target, source, move) {
@@ -16748,7 +16748,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Steel Beam",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		mindBlownRecoil: true,
 		onAfterMove(pokemon, target, move) {
 			if (move.mindBlownRecoil && !move.multihit) {
@@ -18053,7 +18053,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Thousand Arrows",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, nonsky: 1},
+		flags: {protect: 1, mirror: 1, nonsky: 1, arrow: 1},
 		onEffectiveness(typeMod, target, type, move) {
 			if (move.type !== 'Ground') return;
 			if (!target) return; // avoid crashing when called from a chat plugin
