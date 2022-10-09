@@ -83785,7 +83785,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			steelbeam: ["8M"],
 		}
 	},
-	samuszerosuit: {
+	samusarmor: {
 		learnset: {
 			thunderbolt: ["8M"],
 			chargebeam: ["8M"],
