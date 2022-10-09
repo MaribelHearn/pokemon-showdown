@@ -121,6 +121,16 @@ export const Tags: {[id: string]: TagData} = {
 		name: "G-Max Move",
 		moveFilter: move => typeof move.isMax === 'string',
 	},
+	arrow: {
+		name: "Arrow",
+		desc: "Boosted 1.5x by Sharpshooter.",
+		moveFilter: move => 'arrow' in move.flags,
+	},
+	beam: {
+		name: "Beam",
+		desc: "Boosted 1.5x by Laser Mouth.",
+		moveFilter: move => 'beam' in move.flags,
+	},
 
 	// Tiers
 	// -----
