@@ -4720,7 +4720,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		onUpdate(pokemon) {
 			if (['snake'].includes(pokemon.species.id) && this.effectState.busted) {
-				const speciesid = 'Snake';
+				const speciesid = 'Snake-Busted';
 				pokemon.formeChange(speciesid, this.effect, true);
 				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}
@@ -4830,7 +4830,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	papercut: {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
-			if (move.flags['contact']) {
+			if (this.checkMoveMakesContact(move, source, target, true)) {
 				this.damage(source.baseMaxhp / 8, source, target);
 			}
 		},
