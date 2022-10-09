@@ -4733,21 +4733,21 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Samus' || pokemon.transformed) return;
 			if (pokemon.hp > pokemon.maxhp / 2) {
-				if (pokemon.species.forme !== 'Meteor') {
-					pokemon.formeChange('Minior-Meteor');
+				if (pokemon.species.forme !== 'Zero Suit') {
+					pokemon.formeChange('Samus-Zero Suit');
 				}
 			} else {
-				if (pokemon.species.forme === 'Meteor') {
+				if (pokemon.species.forme === 'Zero Suit') {
 					pokemon.formeChange(pokemon.set.species);
 				}
 			}
 		},
-		onResidualOrder: 27,
+		onResidualOrder: 29,
 		onResidual(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Samus' || pokemon.transformed || !pokemon.hp) return;
 			if (pokemon.hp > pokemon.maxhp / 2) {
 				if (pokemon.species.forme !== 'Zero Suit') {
-					pokemon.formeChange('Zero Suit Samus');
+					pokemon.formeChange('Samus-Zero Suit');
 				}
 			} else {
 				if (pokemon.species.forme === 'Zero Suit') {
@@ -4756,19 +4756,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onSetStatus(status, target, source, effect) {
-			if (target.species.id !== 'zerosuitsamus' || target.transformed) return;
+			if (target.species.id !== 'samuszerosuit' || target.transformed) return;
 			if ((effect as Move)?.status) {
 				this.add('-immune', target, '[from] ability: Armor Damage');
 			}
 			return false;
 		},
 		onTryAddVolatile(status, target) {
-			if (target.species.id !== 'zerosuitsamus' || target.transformed) return;
+			if (target.species.id !== 'samuszerosuit' || target.transformed) return;
 			if (status.id !== 'yawn') return;
 			this.add('-immune', target, '[from] ability: Armor Damage');
 			return null;
 		},
-		isBreakable: false,
+		isPermanent: true,
 		name: "Armor Damage",
 		rating: 3,
 		num: 2013,
