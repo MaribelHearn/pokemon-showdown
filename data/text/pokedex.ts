@@ -3714,8 +3714,8 @@ export const PokedexText: {[k: string]: PokedexText} = {
     samus: {
         name: "Samus",
     },
-    samuszerosuit: {
-        name: "Zero Suit Samus",
+    samusarmor: {
+        name: "Armored Samus",
     },
     zeekyhbomb: {
         name: "Zeeky H. Bomb",
