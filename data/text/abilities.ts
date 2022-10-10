@@ -2081,6 +2081,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "This Pokemon takes 1/2 damage from special moves.",
     },
     trueresistance: {
+		name: "True Resistance",
 		desc: "This Pokemon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage. Additionally, other Pokemon cannot lower this Pokemon's stat stages.",
 		shortDesc: "This Pokemon is completely immune to any negative effects, bar direct attacks.",
     },
