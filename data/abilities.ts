@@ -4771,8 +4771,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
     research: {
 		onStart(pokemon) {
-			for (const target of pokemon.side.foe.active) {
-				if (!target || target.fainted) continue;
+			for (const target of pokemon.foes()) {
 				this.add('-ability', target, target.getAbility().name, '[from] ability: Research', '[of] ' + pokemon, '[identify]');
 			}
 		},
@@ -4967,9 +4966,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	psychopath: {
 		onStart(pokemon) {
-			for (const target of pokemon.side.foe.active) {
-				if (!target || target.fainted) continue;
-				this.add('-nature', target, target.getNature().name, '[from] ability: Psychopath', '[of] ' + pokemon, '[identify]');
+			for (const target of pokemon.foes()) {
+				this.add('-ability', target, target.getNature().name, '[from] ability: Psychopath', '[of] ' + pokemon, '[identify]');
 			}
 		},
 		name: "Psychopath",
