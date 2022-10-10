@@ -1988,6 +1988,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
     research: {
 		name: "Research",
 		shortDesc: "On switch-in, this Pokemon identifies the Abilities of all opposing Pokemon.",
+
+		activate: "  [POKEMON]'s research indicated [TARGET] has [ABILITY]!",
+		activateNoTarget: "  [POKEMON]'s research indicated [TARGET] has [ABILITY]!",
     },
     conflagrate: {
 		name: "Conflagrate",
@@ -2038,6 +2041,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	psychopath: {
 		name: "Psychopath",
 		shortDesc: "On switch-in, this Pokemon identifies the Natures of all opposing Pokemon.",
+
+		activate: "  [POKEMON] read [TARGET]'s mind and learned it is [NATURE]!",
+		activateNoTarget: "  [POKEMON] read [TARGET]'s mind and learned it is [NATURE]!",
 	},
 	pureheart: {
 		name: "Pure Heart",
