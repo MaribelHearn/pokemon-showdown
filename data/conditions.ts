@@ -788,4 +788,19 @@ export const Conditions: {[k: string]: ConditionData} = {
 			return [type];
 		},
 	},
+	advicegod: {
+		name: 'Advice God',
+		onTypePriority: 1,
+		onType(types, pokemon) {
+			if (pokemon.transformed || pokemon.ability !== 'multitype' && this.gen >= 8) return types;
+			let type: string | undefined = 'Normal';
+			if (pokemon.ability === 'multitype') {
+				type = pokemon.getItem().onPlate;
+				if (!type) {
+					type = 'Normal';
+				}
+			}
+			return [type];
+		}
+	}
 };
