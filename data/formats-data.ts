@@ -7314,10 +7314,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     snake: {
         tier: "OU",
     },
+	snakebusted: {
+		tier: "Illegal"
+	},
     samus: {
         tier: "OU",
     },
-    samuszerosuit: {
+    samusarmor: {
         tier: "OU",
     },
     zeekyhbomb: {
@@ -7617,6 +7620,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     chucktesta: {
         tier: "OU",
     },
+	chucktestabusted: {
+		tier: "Illegal",
+	},
     uncledolan: {
         tier: "OU",
     },
