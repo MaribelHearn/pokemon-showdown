@@ -4800,7 +4800,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
     },
     prosecutor: {
         onModifyCritRatio(critRatio, source, target) {
-			return Math.min(3, target.positiveBoosts());
+			return critRatio + Math.min(3, target.positiveBoosts());
 		},
         name: "Prosecutor",
         rating: 4,
