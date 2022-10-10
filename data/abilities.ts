@@ -4773,9 +4773,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			for (const target of pokemon.side.foe.active) {
 				if (!target || target.fainted) continue;
-				if (target.item) {
-					this.add('-ability', target, target.getAbility().name, '[from] ability: Research', '[of] ' + pokemon, '[identify]');
-				}
+				this.add('-ability', target, target.getAbility().name, '[from] ability: Research', '[of] ' + pokemon, '[identify]');
 			}
 		},
 		name: "Research",
@@ -4971,9 +4969,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			for (const target of pokemon.side.foe.active) {
 				if (!target || target.fainted) continue;
-				if (target.item) {
-					this.add('-nature', target, target.getNature().name, '[from] ability: Psychopath', '[of] ' + pokemon, '[identify]');
-				}
+				this.add('-nature', target, target.getNature().name, '[from] ability: Psychopath', '[of] ' + pokemon, '[identify]');
 			}
 		},
 		name: "Psychopath",
