@@ -1979,6 +1979,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Cardboard Box",
 		desc: "If this Pokemon is Snake, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise.",
 		shortDesc: "(Snake only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
+
+		block: "  !",
+		transform: "The Cardboard Box was busted, revealing [POKEMON]!",
 	},
 	armordamage: {
 		name: "Armor Damage",
@@ -2027,6 +2030,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Taxidermy",
 		desc: "If this Pokemon is Chuck Testa, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise.",
 		shortDesc: "(Chuck Testa only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
+
+		block: "  You probably thought this deer was alive...",
+		transform: "Nope! It's just Chuck Testa.",
 	},
 	bloodbond: {
 		name: "Blood Bond",
