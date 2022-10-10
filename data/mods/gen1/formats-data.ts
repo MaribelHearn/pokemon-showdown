@@ -51,31 +51,27 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "NU",
 	},
 	caterpie: {
-		randomBattleMoves: ["stringshot", "tackle"],
 		tier: "LC",
 	},
 	metapod: {
-		randomBattleMoves: ["harden", "stringshot", "tackle"],
 		tier: "NFE",
 	},
 	butterfree: {
 		randomBattleMoves: ["psychic", "sleeppowder", "stunspore"],
 		exclusiveMoves: ["megadrain", "psywave"],
-		tier: "NU",
+		tier: "PU",
 	},
 	weedle: {
-		randomBattleMoves: ["poisonsting", "stringshot"],
 		tier: "LC",
 	},
 	kakuna: {
-		randomBattleMoves: ["poisonsting", "stringshot"],
 		tier: "NFE",
 	},
 	beedrill: {
 		randomBattleMoves: ["megadrain", "swordsdance", "twineedle"],
 		exclusiveMoves: ["doubleedge", "doubleedge", "hyperbeam"],
 		comboMoves: ["agility", "hyperbeam", "swordsdance", "twineedle"],
-		tier: "NU",
+		tier: "PU",
 	},
 	pidgey: {
 		randomBattleMoves: ["agility", "doubleedge", "skyattack"],
@@ -90,7 +86,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	pidgeot: {
 		randomBattleMoves: ["agility", "doubleedge", "hyperbeam"],
 		exclusiveMoves: ["mimic", "mirrormove", "reflect", "sandattack", "skyattack", "skyattack", "substitute", "quickattack", "toxic"],
-		tier: "NU",
+		tier: "PU",
 	},
 	rattata: {
 		randomBattleMoves: ["blizzard", "bodyslam"],
@@ -111,7 +107,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	fearow: {
 		randomBattleMoves: ["agility", "doubleedge", "drillpeck", "hyperbeam"],
-		tier: "NU",
+		tier: "PU",
 	},
 	ekans: {
 		randomBattleMoves: ["bodyslam", "earthquake", "glare", "rockslide"],
@@ -120,7 +116,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	arbok: {
 		randomBattleMoves: ["earthquake", "glare", "hyperbeam"],
 		exclusiveMoves: ["bodyslam", "rockslide"],
-		tier: "NU",
+		tier: "PU",
 	},
 	pikachu: {
 		randomBattleMoves: ["surf", "thunderwave"],
@@ -142,7 +138,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	sandslash: {
 		randomBattleMoves: ["bodyslam", "rockslide", "swordsdance"],
 		essentialMove: "earthquake",
-		tier: "NU",
+		tier: "PU",
 	},
 	nidoranf: {
 		randomBattleMoves: ["blizzard", "bodyslam", "thunderbolt"],
@@ -157,7 +153,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	nidoqueen: {
 		randomBattleMoves: ["blizzard", "bodyslam", "thunderbolt"],
 		essentialMove: "earthquake",
-		tier: "NU",
+		tier: "PU",
 	},
 	nidoranm: {
 		randomBattleMoves: ["blizzard", "bodyslam", "thunderbolt"],
@@ -179,7 +175,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "thunderbolt", "thunderwave"],
 		essentialMove: "blizzard",
 		exclusiveMoves: ["counter", "psychic", "seismictoss", "sing", "sing"],
-		tier: "NFE",
+		tier: "LC",
 	},
 	clefable: {
 		randomBattleMoves: ["bodyslam", "thunderbolt", "thunderwave"],
@@ -213,7 +209,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	golbat: {
 		randomBattleMoves: ["confuseray", "doubleedge", "hyperbeam", "megadrain"],
-		tier: "NU",
+		tier: "PU",
 	},
 	oddish: {
 		randomBattleMoves: ["doubleedge", "sleeppowder"],
@@ -230,7 +226,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	vileplume: {
 		randomBattleMoves: ["bodyslam", "sleeppowder", "stunspore", "swordsdance"],
 		essentialMove: "megadrain",
-		tier: "NU",
+		tier: "PU",
 	},
 	paras: {
 		randomBattleMoves: ["bodyslam", "megadrain"],
@@ -242,7 +238,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "megadrain"],
 		essentialMove: "spore",
 		exclusiveMoves: ["growth", "hyperbeam", "slash", "stunspore", "stunspore", "swordsdance"],
-		tier: "NU",
+		tier: "PU",
 	},
 	venonat: {
 		randomBattleMoves: ["psychic", "sleeppowder", "stunspore"],
@@ -296,7 +292,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	primeape: {
 		randomBattleMoves: ["bodyslam", "rockslide", "submission"],
 		exclusiveMoves: ["counter", "hyperbeam", "hyperbeam"],
-		tier: "NU",
+		tier: "PU",
 	},
 	growlithe: {
 		randomBattleMoves: ["bodyslam", "fireblast", "flamethrower", "reflect"],
@@ -305,7 +301,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	arcanine: {
 		randomBattleMoves: ["bodyslam", "fireblast", "hyperbeam"],
 		exclusiveMoves: ["flamethrower", "reflect"],
-		tier: "NU",
+		tier: "PU",
 	},
 	poliwag: {
 		randomBattleMoves: ["blizzard", "surf"],
@@ -317,7 +313,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["blizzard", "surf"],
 		essentialMove: "amnesia",
 		exclusiveMoves: ["counter", "hypnosis", "hypnosis", "psychic"],
-		tier: "NFE",
+		tier: "NU",
 	},
 	poliwrath: {
 		randomBattleMoves: ["blizzard", "bodyslam", "earthquake", "submission"],
@@ -354,7 +350,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	machamp: {
 		randomBattleMoves: ["bodyslam", "earthquake", "submission"],
 		exclusiveMoves: ["counter", "hyperbeam", "rockslide", "rockslide"],
-		tier: "NU",
+		tier: "PU",
 	},
 	bellsprout: {
 		randomBattleMoves: ["doubleedge", "sleeppowder", "stunspore", "swordsdance"],
@@ -370,7 +366,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "sleeppowder", "stunspore"],
 		essentialMove: "razorleaf",
 		comboMoves: ["hyperbeam", "swordsdance"],
-		tier: "(OU)",
+		tier: "UU",
 	},
 	tentacool: {
 		randomBattleMoves: ["barrier", "hydropump", "surf"],
@@ -402,7 +398,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	rapidash: {
 		randomBattleMoves: ["agility", "bodyslam", "fireblast", "hyperbeam"],
-		tier: "NU",
+		tier: "PU",
 	},
 	slowpoke: {
 		randomBattleMoves: ["earthquake", "surf"],
@@ -424,12 +420,12 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	magneton: {
 		randomBattleMoves: ["thunder", "thunderbolt", "thunderwave"],
 		exclusiveMoves: ["doubleedge", "hyperbeam", "hyperbeam", "mimic", "substitute", "toxic"],
-		tier: "NU",
+		tier: "PU",
 	},
 	farfetchd: {
 		randomBattleMoves: ["agility", "bodyslam", "swordsdance"],
 		essentialMove: "slash",
-		tier: "NU",
+		tier: "PU",
 	},
 	doduo: {
 		randomBattleMoves: ["agility", "bodyslam", "doubleedge", "drillpeck"],
@@ -459,7 +455,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "sludge"],
 		essentialMove: "explosion",
 		exclusiveMoves: ["fireblast", "hyperbeam", "megadrain", "megadrain"],
-		tier: "NU",
+		tier: "PU",
 	},
 	shellder: {
 		randomBattleMoves: ["blizzard", "doubleedge", "explosion", "surf"],
@@ -490,7 +486,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	onix: {
 		randomBattleMoves: ["bodyslam", "earthquake", "explosion", "rockslide"],
-		tier: "NU",
+		tier: "PU",
 	},
 	drowzee: {
 		randomBattleMoves: ["hypnosis", "psychic", "thunderwave"],
@@ -518,13 +514,13 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	electrode: {
 		randomBattleMoves: ["explosion", "thunderbolt", "thunderwave"],
 		exclusiveMoves: ["hyperbeam", "screech", "thunder", "toxic"],
-		tier: "NU",
+		tier: "PU",
 	},
 	exeggcute: {
 		randomBattleMoves: ["sleeppowder", "stunspore"],
 		essentialMove: "psychic",
 		exclusiveMoves: ["doubleedge", "explosion", "explosion"],
-		tier: "LC",
+		tier: "NU",
 	},
 	exeggutor: {
 		randomBattleMoves: ["explosion", "psychic", "sleeppowder"],
@@ -537,23 +533,23 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	marowak: {
 		randomBattleMoves: ["blizzard", "bodyslam", "earthquake", "seismictoss"],
-		tier: "NU",
+		tier: "PU",
 	},
 	hitmonlee: {
 		randomBattleMoves: ["bodyslam", "highjumpkick", "seismictoss"],
 		exclusiveMoves: ["counter", "counter", "meditate"],
-		tier: "NU",
+		tier: "PU",
 	},
 	hitmonchan: {
 		randomBattleMoves: ["bodyslam", "seismictoss", "submission"],
 		exclusiveMoves: ["agility", "counter", "counter"],
-		tier: "NU",
+		tier: "PU",
 	},
 	lickitung: {
 		randomBattleMoves: ["hyperbeam", "swordsdance"],
 		essentialMove: "bodyslam",
 		exclusiveMoves: ["blizzard", "earthquake", "earthquake", "earthquake"],
-		tier: "NU",
+		tier: "PU",
 	},
 	koffing: {
 		randomBattleMoves: ["explosion", "fireblast", "sludge", "thunderbolt"],
@@ -561,7 +557,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	weezing: {
 		randomBattleMoves: ["explosion", "fireblast", "sludge", "thunderbolt"],
-		tier: "NU",
+		tier: "PU",
 	},
 	rhyhorn: {
 		randomBattleMoves: ["bodyslam", "earthquake", "rockslide", "substitute"],
@@ -608,7 +604,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	seaking: {
 		randomBattleMoves: ["blizzard", "doubleedge", "surf"],
 		exclusiveMoves: ["agility", "agility", "hyperbeam"],
-		tier: "NU",
+		tier: "PU",
 	},
 	staryu: {
 		randomBattleMoves: ["blizzard", "thunderbolt", "thunderwave"],
@@ -628,7 +624,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	scyther: {
 		randomBattleMoves: ["agility", "hyperbeam", "slash", "swordsdance"],
-		tier: "NU",
+		tier: "PU",
 	},
 	jynx: {
 		randomBattleMoves: ["blizzard", "lovelykiss", "psychic"],
@@ -642,12 +638,12 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	magmar: {
 		randomBattleMoves: ["bodyslam", "confuseray", "fireblast"],
 		exclusiveMoves: ["hyperbeam", "psychic"],
-		tier: "NU",
+		tier: "PU",
 	},
 	pinsir: {
 		randomBattleMoves: ["bodyslam", "hyperbeam", "swordsdance"],
 		exclusiveMoves: ["seismictoss", "submission", "submission"],
-		tier: "NU",
+		tier: "PU",
 	},
 	tauros: {
 		randomBattleMoves: ["bodyslam", "earthquake", "hyperbeam"],
@@ -655,7 +651,6 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "OU",
 	},
 	magikarp: {
-		randomBattleMoves: ["splash", "tackle"],
 		tier: "LC",
 	},
 	gyarados: {
@@ -667,11 +662,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "confuseray", "rest", "sing", "surf"],
 		essentialMove: "blizzard",
 		exclusiveMoves: ["thunderbolt", "thunderbolt"],
-		tier: "(OU)",
+		tier: "UUBL",
 	},
 	ditto: {
 		randomBattleMoves: ["transform"],
-		tier: "NU",
+		tier: "PU",
 	},
 	eevee: {
 		randomBattleMoves: ["doubleedge", "quickattack", "reflect"],
@@ -692,7 +687,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	flareon: {
 		randomBattleMoves: ["bodyslam", "fireblast", "hyperbeam", "quickattack"],
-		tier: "NU",
+		tier: "PU",
 	},
 	porygon: {
 		randomBattleMoves: ["blizzard", "thunderwave"],

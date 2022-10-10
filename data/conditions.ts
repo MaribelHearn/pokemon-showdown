@@ -57,6 +57,10 @@ export const Conditions: {[k: string]: ConditionData} = {
 			// 1-3 turns
 			this.effectState.startTime = this.random(2, 5);
 			this.effectState.time = this.effectState.startTime;
+
+			if (target.removeVolatile('nightmare')) {
+				this.add('-end', target, 'Nightmare', '[silent]');
+			}
 		},
 		onBeforeMovePriority: 10,
 		onBeforeMove(pokemon, target, move) {
@@ -101,7 +105,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		onModifyMove(move, pokemon) {
 			if (move.flags['defrost']) {
 				this.add('-curestatus', pokemon, 'frz', '[from] move: ' + move);
-				pokemon.setStatus('');
+				pokemon.clearStatus();
 			}
 		},
 		onAfterMoveSecondary(target, source, move) {
@@ -283,7 +287,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			// note that this is not updated for moves called by other moves
 			// i.e. if Dig is called by Metronome, lastMoveTargetLoc will still be the user's location
 			let moveTargetLoc: number = attacker.lastMoveTargetLoc!;
-			if (effect.sourceEffect && this.dex.moves.get(effect.id).target === 'normal') {
+			if (effect.sourceEffect && this.dex.moves.get(effect.id).target !== 'self') {
 				// this move was called by another move such as Metronome
 				// and needs a random target to be determined this turn
 				// it will already have one by now if there is any valid target
@@ -697,8 +701,8 @@ export const Conditions: {[k: string]: ConditionData} = {
 	dynamax: {
 		name: 'Dynamax',
 		noCopy: true,
-		duration: 3,
 		onStart(pokemon) {
+			this.effectState.turns = 0;
 			pokemon.removeVolatile('minimize');
 			pokemon.removeVolatile('substitute');
 			if (pokemon.volatiles['torment']) {
@@ -712,7 +716,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (pokemon.baseSpecies.name === 'Shedinja') return;
 
 			// Changes based on dynamax level, 2 is max (at LVL 10)
-			const ratio = 2; // TODO: Implement Dynamax levels
+			const ratio = 1.5 + (pokemon.dynamaxLevel * 0.05);
 
 			pokemon.maxhp = Math.floor(pokemon.maxhp * ratio);
 			pokemon.hp = Math.floor(pokemon.hp * ratio);
@@ -736,6 +740,9 @@ export const Conditions: {[k: string]: ConditionData} = {
 			return null;
 		},
 		onResidualPriority: -100,
+		onResidual() {
+			this.effectState.turns++;
+		},
 		onEnd(pokemon) {
 			this.add('-end', pokemon, 'Dynamax');
 			if (pokemon.baseSpecies.name === 'Shedinja') return;
