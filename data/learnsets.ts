@@ -83889,6 +83889,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			steelbeam: ["8M"],
 		}
 	},
+	zeekyhbomb: {
+		learnset: {
+			explod: ["8L1"],
+		},
+	},
 	yumemi: {
 		learnset: {
 			workup: ["8M"],
