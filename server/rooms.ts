@@ -409,7 +409,10 @@ export abstract class BasicRoom {
 		const chunks = message.split('|');
 		if (chunks.length > 1 && ["c", "j", "l", "b"].includes(chunks[1])) {
 			console.log(`msg${message}`);
-			ws.send(`msg${message}`);
+
+			if (ws.readyState === 1) {
+				ws.send(`msg${message}`);
+			}
 		}
 
 		this.log.add(message);
