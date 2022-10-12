@@ -41,6 +41,53 @@ import * as crypto from 'crypto';
 import {RoomAuth} from './user-groups';
 import {PartialModlogEntry, mainModlog} from './modlog';
 
+// connect to PO
+const md5 = require("md5");
+const config = require("../config/config");
+const WebSocket = require("websocket").w3cwebsocket;
+const reconnectTimer = 5000;
+let poOnline = false;
+let interval : NodeJS.Timeout;
+let ws : WebSocket;
+
+// connect to PO
+function connect() {
+	ws = new WebSocket(`ws://${config.poserver}`);
+
+	ws.onopen = function () {
+		console.log("[WS] PO server is online");
+		poOnline = true;
+		//app.rooms.lobby.receive("Connection to the Pokemon Online server established!");
+		clearInterval(interval);
+	};
+
+	ws.onclose = function () {
+		console.log("[WS] Connection to PO server lost, attempting reconnection");
+		
+		poOnline = false;
+		interval = setInterval(connect, reconnectTimer);
+	};
+
+	ws.onmessage = function (evt) {
+		console.log(`[WS] Received data from PO: ${evt.data}`);
+		const data = evt.data.split('|');
+		const command = data[0];
+
+		if (command == "challenge") {
+			const challenge = data[1];
+			const hash = md5(`${challenge}@@${config.popasswd}`);
+			ws.send(`auth|${hash}`);
+		}
+	};
+
+	ws.onerror = function (err) {
+		console.log(`[WS] Error: ${err}`);
+		ws.close();
+	};
+}
+
+connect();
+
 /*********************************************************
  * the Room object.
  *********************************************************/
@@ -358,6 +405,13 @@ export abstract class BasicRoom {
 	 * join.
 	 */
 	add(message: string) {
+		// send to PO
+		const chunks = message.split('|');
+		if (chunks.length > 1 && ["c", "j", "l", "b"].includes(chunks[1])) {
+			console.log(`msg${message}`);
+			ws.send(`msg${message}`);
+		}
+
 		this.log.add(message);
 		return this;
 	}
