@@ -83918,6 +83918,24 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			calmmind: ["8M"],
 		},
 	},
+	weepinmeleon: {
+		learnset: {
+			sunnyday: ["8M"],
+			flamethrower: ["8M"],
+			flamecharge: ["8M"],
+			solarbeam: ["8M"],
+		},
+	},
+	venudrio: {
+		learnset: {
+			return: ["8M"],
+			fly: ["8M"],
+			sludgebomb: ["8M"],
+			earthquake: ["8M"],
+			solarbeam: ["8M"],
+			gigadrain: ["8M"],
+		},
+	},
 	microsoftedge: {
 		learnset: {
 			return: ["8M"],
