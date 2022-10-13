@@ -137,7 +137,7 @@ function auth(level: number) {
 
 exports.commands = {
     poonline: function () {
-        if (Object.keys(poPlayers).length === 0) {
+        if (!poPlayers || Object.keys(poPlayers).length === 0) {
             this.sendReply("There are currently no players on the Pokemon Online channel.");
             return;
         }
