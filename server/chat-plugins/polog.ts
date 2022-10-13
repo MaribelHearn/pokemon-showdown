@@ -66,7 +66,7 @@ const PO_BASE64 = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAA
 'r7J4oEAO/eitke7j3a2i4G7Y4MuBamEsPgAQW9uuIM9PIFPUXPqPv5w/vOFV2hmxLR/r4QyULAY8xb0zTc7kuyJwBAAHB3eYN/LfP4wbCbPhKnUS0UUv+5vl2o2OuvPn9fiTuf/jx+fsf/D7rprn0H7JWfAAAAAElFTkSuQmCC">';
 //const INTERVAL = 100; // ms
 //const LOG_PO = FS(`../FC/data/polog.txt`);
-let poPlayers: any,{} = {};
+let poPlayers: any = {};
 
 function formatUsername(string: string) {
     return string.replace(/ /g, '').toLowerCase();
@@ -137,7 +137,7 @@ function auth(level: number) {
 
 exports.commands = {
     poonline: function () {
-        if (!poPlayers || Object.keys(poPlayers).length === 0) {
+        if (Object.keys(poPlayers).length === 0) {
             this.sendReply("There are currently no players on the Pokemon Online channel.");
             return;
         }
