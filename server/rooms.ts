@@ -50,7 +50,6 @@ let poOnline = false;
 let interval : NodeJS.Timeout;
 let ws : WebSocket;
 
-// connect to PO
 function connect() {
 	ws = new WebSocket(`ws://${config.poserver}`);
 
