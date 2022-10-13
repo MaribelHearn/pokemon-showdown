@@ -3,7 +3,7 @@
  */
 
 import {Utils} from '../../lib/utils';
-let cooldown: any,{} = {};
+let cooldown: any = {};
 const CRIT_RATE = 0.0625;
 const DEFAULT_ACC = 95;
 const DELIMITER = '*';
