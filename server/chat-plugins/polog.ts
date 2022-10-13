@@ -66,51 +66,55 @@ const PO_BASE64 = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAA
 'r7J4oEAO/eitke7j3a2i4G7Y4MuBamEsPgAQW9uuIM9PIFPUXPqPv5w/vOFV2hmxLR/r4QyULAY8xb0zTc7kuyJwBAAHB3eYN/LfP4wbCbPhKnUS0UUv+5vl2o2OuvPn9fiTuf/jx+fsf/D7rprn0H7JWfAAAAAElFTkSuQmCC">';
 //const INTERVAL = 100; // ms
 //const LOG_PO = FS(`../FC/data/polog.txt`);
-let poPlayers = {}, poTimestamp;
+let poPlayers: any,{} = {};
 
-function formatUsername(string) {
+function formatUsername(string: string) {
     return string.replace(/ /g, '').toLowerCase();
 }
 
-function escapeHTML(string) {
+function escapeHTML(string: string) {
     return string.replace(/&/g, "&amp;").replace(/\>/g, "&gt;").replace(/</g, "&lt;");
 }
 
-function sendPOLog(message) {
-    let lobby = Rooms.rooms.get('lobby') as BasicRoom;
-    poTimestamp = '[' + Chat.toTimestamp(new Date()).split(' ')[1] + ']';
-    message = message.split('|');
-    //let timestamp = message[0];
-    let type = message[1];
+function sendPOLog(message: string) {
+    const lobby = Rooms.rooms.get('lobby') as BasicRoom;
+    const chunks = message.split('|');
+    //const timestamp = chunks[0];
+    const timestamp = '[' + Chat.toTimestamp(new Date()).split(' ')[1] + ']';
+    const type = chunks[1];
 
     if (type == 'c') {
-        let color = message[2];
-        let name = message[3];
-        message = message[4];
+        let color = chunks[2];
+        let name = chunks[3];
+        let content = chunks[4];
         let symbol = '';
+
         if (name[0] == '+') {
-            symbol = '+';
+            symbol = '<small>+</small>';
             name = name.slice(1);
         }
-        lobby.addRaw('<div class="chat chatmessage-po"><small>' + poTimestamp + ' </small><strong style="color:' + color +
-        ';">' + PO_BASE64 + (symbol == '+' ? '<small>+</small>' : '') + '<span class="username" data-name="' + formatUsername(name) +
-        '">' + name + '</span>:</strong> <em>' + escapeHTML(message));
+
+        lobby.addRaw(`<div class="chat chatmessage-po"><small>${timestamp}</small><strong style="color:${color};">${PO_BASE64 + symbol}` +
+        `<span class="username" data-name="${formatUsername(name)}">${name}</span>:</strong> <em>${escapeHTML(content)}`);
     } else if (type == 'j' || type == 'l') { // join or leave
-        let name = message[3].trim();
-        let symbol = '', level = 0;
+        let name = chunks[3].trim();
+        let symbol = '';
+        let level: any = 0;
+
         if (name[0] == '+') {
             symbol = '+';
             level = name[1];
             name = name.slice(2);
         }
+
         if (type == 'j') {
             poPlayers[name] = {};
-            poPlayers[name].color = message[2];
+            poPlayers[name].color = chunks[2];
             poPlayers[name].auth = (level > 6 ? 0 : level);
         } else {
             delete poPlayers[name];
         }
-        lobby.addRaw('<div class="message"><small style="color: #555555;">' + PO_BASE64 + symbol + name + ' ' + (type == 'j' ? ' joined' : ' left'));
+        lobby.addRaw(`<div class="message"><small style="color: #555555;">${PO_BASE64}${symbol}${name} ${type == 'j' ? ' joined' : ' left'}`);
     }
     if (type == 'c' || type == 'j' || type == 'l') {
         lobby.update();
@@ -137,19 +141,21 @@ exports.commands = {
             this.sendReply("There are currently no players on the Pokemon Online channel.");
             return;
         }
-        var message = "<b>Players on Pokemon Online</b><table style='border:1px solid black'><tr><th>Auth</th><th>Name</th></tr>", i;
-        for (i in poPlayers) {
-            message += "<tr><td>" + auth(poPlayers[i].auth) + "</td><th style='color:" + (poPlayers[i].color) + "'>" + i + "</th></tr>";
+
+        let message = "<b>Players on Pokemon Online</b><table style='border:1px solid black'><tr><th>Auth</th><th>Name</th></tr>";
+
+        for (const i in poPlayers) {
+            message += `<tr><td>${auth(poPlayers[i].auth)}</td><th style='color:${(poPlayers[i].color)}'>${i}</th></tr>`;
         }
+
         this.sendReplyBox(message + "</table>");
     },
     poonlinehelp: ["/poonline - Shows a table of users that are currently on the Pokemon Online channel."]
 };
 
 const port = 8508;
- 
 const server = createServer((req: IncomingMessage, res: ServerResponse) => {
-	if(req.headers["user-agent"] !== config.useragent) {
+	if (req.headers["user-agent"] !== config.useragent) {
 		return;
 	}
 
@@ -164,7 +170,6 @@ const server = createServer((req: IncomingMessage, res: ServerResponse) => {
         res.end("OK");
     });
 });
-
 server.listen(port, () => {
 	console.log(`Listening for PO messages on port ${port}`);
 });
