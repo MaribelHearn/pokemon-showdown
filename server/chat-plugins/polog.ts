@@ -88,13 +88,21 @@ function sendPOLog(message: string) {
         let name = chunks[3];
         let content = chunks[4];
         let symbol = '';
+        let level: any = 0;
 
         if (name[0] == '+') {
             symbol = '<small>+</small>';
-            name = name.slice(1);
+            level = name[1];
+            name = name.slice(2);
         }
 
-        lobby.addRaw(`<div class="chat chatmessage-po"><small>${timestamp}</small><strong style="color:${color};">${PO_BASE64 + symbol}` +
+        if (!poPlayers.hasOwnProperty(name)) {
+            poPlayers[name] = {};
+            poPlayers[name].color = chunks[2];
+            poPlayers[name].auth = (level > 6 ? 0 : level);
+        }
+
+        lobby.addRaw(`<div class="chat chatmessage-po"><small>${timestamp} </small><strong style="color:${color};">${PO_BASE64 + symbol}` +
         `<span class="username" data-name="${formatUsername(name)}">${name}</span>:</strong> <em>${escapeHTML(content)}`);
     } else if (type == 'j' || type == 'l') { // join or leave
         let name = chunks[3].trim();

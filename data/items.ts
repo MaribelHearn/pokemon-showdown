@@ -7074,8 +7074,48 @@ export const Items: {[itemid: string]: ItemData} = {
 		isNonstandard: "Past",
 	},
 
-    // Fundex items
+	// CAP items
 
+	crucibellite: {
+		name: "Crucibellite",
+		spritenum: 577,
+		megaStone: "Crucibelle-Mega",
+		megaEvolves: "Crucibelle",
+		itemUser: ["Crucibelle"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1,
+		gen: 6,
+		isNonstandard: "CAP",
+	},
+	vilevial: {
+		name: "Vile Vial",
+		spritenum: 752,
+		fling: {
+			basePower: 60,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (user.baseSpecies.num === -66 && ['Poison', 'Flying'].includes(move.type)) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onTakeItem(item, pokemon, source) {
+			if (source?.baseSpecies.num === -66 || pokemon.baseSpecies.num === -66) {
+				return false;
+			}
+			return true;
+		},
+		forcedForme: "Venomicon-Epilogue",
+		itemUser: ["Venomicon-Epilogue"],
+		num: -2,
+		gen: 8,
+		isNonstandard: "CAP",
+	},
+
+    // Fundex
     trinitystone: {
         name: "Trinity Stone",
         spritenum: 2000,
@@ -7161,7 +7201,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         onBasePowerPriority: 15,
         onBasePower(basePower, user, target, move) {
-            if (move && user.baseSpecies.num === 'Venudrio') {
+            if (move && user.baseSpecies.name === 'Venudrio') {
                 return this.chainModify(1.5);
             }
         },
@@ -7204,7 +7244,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
 		onModifyDefPriority: 2,
 		onModifyDef(spe, pokemon) {
-            if (pokemon.species.name === 'Dr. Mario' && user.volatiles['bluepill']) {
+            if (pokemon.species.name === 'Dr. Mario' && pokemon.volatiles['bluepill']) {
 				return this.chainModify(1.5);
 			}
 		},
@@ -7230,7 +7270,7 @@ export const Items: {[itemid: string]: ItemData} = {
             basePower: 20,
         },
 		onModifySpe(def, pokemon) {
-            if (pokemon.species.name === 'Dr. Mario' && user.volatiles['yellowpill']) {
+            if (pokemon.species.name === 'Dr. Mario' && pokemon.volatiles['yellowpill']) {
 				return this.chainModify(1.5);
 			}
 		},
@@ -7408,45 +7448,4 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2023,
         gen: 8,
     },
-
-	// CAP items
-
-	crucibellite: {
-		name: "Crucibellite",
-		spritenum: 577,
-		megaStone: "Crucibelle-Mega",
-		megaEvolves: "Crucibelle",
-		itemUser: ["Crucibelle"],
-		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
-		},
-		num: -1,
-		gen: 6,
-		isNonstandard: "CAP",
-	},
-	vilevial: {
-		name: "Vile Vial",
-		spritenum: 752,
-		fling: {
-			basePower: 60,
-		},
-		onBasePowerPriority: 15,
-		onBasePower(basePower, user, target, move) {
-			if (user.baseSpecies.num === -66 && ['Poison', 'Flying'].includes(move.type)) {
-				return this.chainModify([4915, 4096]);
-			}
-		},
-		onTakeItem(item, pokemon, source) {
-			if (source?.baseSpecies.num === -66 || pokemon.baseSpecies.num === -66) {
-				return false;
-			}
-			return true;
-		},
-		forcedForme: "Venomicon-Epilogue",
-		itemUser: ["Venomicon-Epilogue"],
-		num: -2,
-		gen: 8,
-		isNonstandard: "CAP",
-	},
 };
