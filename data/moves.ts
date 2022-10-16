@@ -19894,7 +19894,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Evil-Sealing Circle",
 		pp: 20,
 		priority: 0,
+		ignoreImmunity: true,
 		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Dark') return 1;
+		},
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
@@ -19931,7 +19935,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 95,
 		basePower: 100,
 		category: "Special",
-		name: "The World",
+		name: "Nuke",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, defrost: 1, distance: 1, mirror: 1},
@@ -20089,6 +20093,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		self: {
+			volatileStatus: 'mustrecharge',
+		},
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
@@ -21601,6 +21608,19 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Steel",
     },
 	// [..]
+	laserbeam: {
+		num: 2157,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		name: "Laser Beam",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		recoil: [1, 4],
+		target: "normal",
+		type: "Electric",
+	},
     glitchyterrain: {
         num: 2158,
         accuracy: true,
