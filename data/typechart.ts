@@ -469,7 +469,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Fire: 0,
 			Flying: 0,
 			Ghost: 0,
-			Grass: 1,
+			Grass: 0,
 			Ground: 0,
 			Ice: 0,
 			Normal: 0,
@@ -480,6 +480,5 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Water: 0,
             '???': 0,
 		},
-		HPivs: {},
     }
 };
