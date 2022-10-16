@@ -83817,6 +83817,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             snatch: ["8M"],
         },
     },
+	slenderman: {
+		learnset: {
+
+		},
+	},
     marisa: {
         learnset: {
             thundershock: ["8L8"],
@@ -83825,6 +83830,41 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             charge: ["8L28"],
         },
     },
+	luigi: {
+		learnset: {
+
+		},
+	},
+	luigimrl: {
+		learnset: {
+
+		},
+	},
+	luigiweegee: {
+		learnset: {
+
+		},
+	},
+	giygas: {
+		learnset: {
+
+		},
+	},
+	matrix: {
+		learnset: {
+
+		},
+	},
+	sovietmudkip: {
+		learnset: {
+			sovietreversal: ["8L1"],
+		},
+	},
+	satan: {
+		learnset: {
+
+		},
+	},
 	lilywhite: {
 		learnset: {
 			fairywind: ["8L1"],
@@ -83833,12 +83873,74 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			sweetscent: ["8L1"],
 		},
 	},
+	lolwutpear: {
+		learnset: {
+			lolwut: ["8L1"],
+		},
+	},
+	cirno: {
+		learnset: {
+			diamondblizzard: ["8L1"],
+		},
+	},
+	cirnoachi: {
+		learnset: {
+			diamondblizzard: ["8L1"],
+		},
+	},
+	reimu: {
+		learnset: {
+			evilsealingcircle: ["8L1"],
+			fantasyseal: ["8L1"],
+		},
+	},
+	drrobotnik: {
+		learnset: {
+			pingas: ["8L1"],
+		},
+	},
 	leonidas: {
 		learnset: {
+			highjumpkick: ["8L1"],
 			retaliate: ["8M"],
 			brickbreak: ["8M"],
 			lowsweep: ["8M"],
 			lowkick: ["8M"],
+		},
+	},
+	kingharkinian: {
+		learnset: {
+
+		},
+	},
+	yarrow: {
+		learnset: {
+
+		},
+	},
+	doomsday: {
+		learnset: {
+
+		},
+	},
+	vegeta: {
+		learnset: {
+
+		},
+	},
+	vegetasupersaiyan: {
+		learnset: {
+
+		},
+	},
+	droctogonapus: {
+		learnset: {
+			laserbeam: ["8L1"],
+		},
+	},
+	essej: {
+		learnset: {
+
 		},
 	},
 	daniel: {
@@ -83849,13 +83951,115 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			powdersnow: ["8L1"],
 		}
 	},
+	danielzalgo: {
+		learnset: {
+			tackle: ["8L1"],
+			bubble: ["8L1"],
+			hyperbeam: ["8L1"],
+			powdersnow: ["8L1"],
+		},
+	},
+	utsuho: {
+		learnset: {
+			nuke: ["8L1"],
+		},
+	},
+	yuyuko: {
+		learnset: {
+			ghastlydream: ["8L1"],
+		},
+	},
+	younglink: {
+		learnset: {
+
+		},
+	},
+	link: {
+		learnset: {
+
+		},
+	},
+	linktoon: {
+		learnset: {
+
+		},
+	},
+	youngzelda: {
+		learnset: {
+
+		},
+	},
+	zelda: {
+		learnset: {
+
+		},
+	},
+	zeldasheik: {
+		learnset: {
+
+		},
+	},
+	ganondorf: {
+		learnset: {
+
+		},
+	},
+	ganondorfmega: {
+		learnset: {
+
+		},
+	},
+	suiseiseki: {
+		learnset: {
+
+		},
+	},
+	admiralackbar: {
+		learnset: {
+
+		},
+	},
+	yoda: {
+		learnset: {
+
+		},
+	},
+	darthvader: {
+		learnset: {
+
+		},
+	},
 	longcat: {
 		learnset: {
+			catnarok: ["8L1"],
 			scratch: ["8L1"],
 			tailwhip: ["8L1"],
 			slash: ["8L25"],
 			bodyslam: ["8L31"],
 		}
+	},
+	tacgnol: {
+		learnset: {
+			catnarok: ["8L1"],
+			scratch: ["8L1"],
+			tailwhip: ["8L1"],
+			slash: ["8L25"],
+			bodyslam: ["8L31"],
+		}
+	},
+	olngact: {
+		learnset: {
+			catnarok: ["8L1"],
+			scratch: ["8L1"],
+			tailwhip: ["8L1"],
+			slash: ["8L25"],
+			bodyslam: ["8L31"],
+		}
+	},
+	orlyowl: {
+		learnset: {
+
+		},
 	},
 	cats: {
 		learnset: {
@@ -83865,13 +84069,158 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			fling: ["8M"],
 		},
 	},
+	raptorjesus: {
+		learnset: {
+
+		},
+	},
+	leeroyjenkins: {
+		learnset: {
+
+		},
+	},
+	remilia: {
+		learnset: {
+			spearthegungnir: ["8L1"],
+		},
+	},
+	angrybird: {
+		learnset: {
+
+		},
+	},
+	bigbrother: {
+		learnset: {
+
+		},
+	},
+	giantenemycrab: {
+		learnset: {
+
+		},
+	},
+	achmed: {
+		learnset: {
+			ikeelyou: ["8L1"],
+		},
+	},
+	sakuya: {
+		learnset: {
+			killerdoll: ["8L1"],
+			theworld: ["8L1"],
+			thousandcuts: ["8L1"],
+		},
+	},
+	swadner: {
+		learnset: {
+			study: ["8L1"],
+		},
+	},
+	wriggle: {
+		learnset: {
+			wrigglekick: ["8L1"],
+		},
+	},
+	leonpowalski: {
+		learnset: {
+			barrelroll: ["8L1"],
+		},
+	},
+	trollface: {
+		learnset: {
+			umadbro: ["8L1"],
+		},
+	},
+	eirin: {
+		learnset: {
+			apollo13: ["8L1"],
+		},
+	},
+	kaguya: {
+		learnset: {
+
+		},
+	},
+	tenshi: {
+		learnset: {
+			hisousword: ["8L1"],
+		},
+	},
+	suika: {
+		learnset: {
+			throwingatlas: ["8L1"],
+		},
+	},
+	letty: {
+		learnset: {
+
+		},
+	},
+	keine: {
+		learnset: {
+
+		},
+	},
+	keinehakutaku: {
+		learnset: {
+			
+		},
+	},
+	sapenguin: {
+		learnset: {
+			
+		},
+	},
+	advicegod: {
+		learnset: {
+			apocalypse: ["8L1"],
+		},
+	},
+	missingno: {
+		learnset: {
+			superglitch: ["8L1"],
+		},
+	},
+	missingnoghost: {
+		learnset: {
+			superglitch: ["8L1"],
+		},
+	},
+	missingnoaerodactyl: {
+		learnset: {
+			superglitch: ["8L1"],
+		},
+	},
+	missingnokabutops: {
+		learnset: {
+			superglitch: ["8L1"],
+		},
+	},
+	missingnoyellow: {
+		learnset: {
+			superglitch: ["8L1"],
+		},
+	},
+	kirby: {
+		learnset: {
+
+		},
+	},
+	metaknight: {
+		learnset: {
+			
+		},
+	},
+	kingdedede: {
+		learnset: {
+			
+		},
+	},
 	snake: {
 		learnset: {
 			earthquake: ["8M"],
 			dig: ["8M"],
-			return: ["8M"],
-			strength: ["8M"],
-		}
+		},
 	},
 	samus: {
 		learnset: {
@@ -83879,7 +84228,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			chargebeam: ["8M"],
 			focusblast: ["8M"],
 			steelbeam: ["8M"],
-		}
+		},
 	},
 	samusarmor: {
 		learnset: {
@@ -83887,7 +84236,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			chargebeam: ["8M"],
 			focusblast: ["8M"],
 			steelbeam: ["8M"],
-		}
+		},
 	},
 	zeekyhbomb: {
 		learnset: {
@@ -83902,6 +84251,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			protect: ["8M"],
 		},
 	},
+	engineer: {
+		learnset: {
+			nope: ["8L1"],
+		},
+	},
 	mokou: {
 		learnset: {
 			focusblast: ["8M"],
@@ -83910,12 +84264,360 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			strength: ["8M"],
 		},
 	},
+	yuugi: {
+		learnset: {
+			knockoutin3steps: ["8L1"],
+		},
+	},
+	komachi: {
+		learnset: {
+
+		},
+	},
 	eiki: {
 		learnset: {
 			psychic: ["8M"],
 			steelbeam: ["8M"],
 			judgment: ["8M"],
 			calmmind: ["8M"],
+		},
+	},
+	phoenixwright: {
+		learnset: {
+			objection: ["8L1"],
+		},
+	},
+	rickastley: {
+		learnset: {
+			
+		},
+	},
+	darkmatter: {
+		learnset: {
+			
+		},
+	},
+	zero: {
+		learnset: {
+			
+		},
+	},
+	zerotwo: {
+		learnset: {
+			
+		},
+	},
+	stella: {
+		learnset: {
+			
+		},
+	},
+	stellanorris: {
+		learnset: {
+			
+		},
+	},
+	yukari: {
+		learnset: {
+			trainwreck: ["8L1"],
+		},
+	},
+	yamame: {
+		learnset: {
+			spiderweb: ["8L1"],
+		},
+	},
+	iku: {
+		learnset: {
+			thunderdrumshot: ["8L1"],
+		},
+	},
+	medicine: {
+		learnset: {
+			suzuranpoison: ["8L1"],
+		},
+	},
+	yuuka: {
+		learnset: {
+			masterspark: ["8L1"],
+		},
+	},
+	hibachi: {
+		learnset: {
+			
+		},
+	},
+	hibachi2: {
+		learnset: {
+			
+		},
+	},
+	evaccaniadoom: {
+		learnset: {
+			
+		},
+	},
+	minoriko: {
+		learnset: {
+			
+		},
+	},
+	shizuha: {
+		learnset: {
+			
+		},
+	},
+	alice: {
+		learnset: {
+			lemmingsparade: ["8L1"],
+		},
+	},
+	babybowser: {
+		learnset: {
+			whirlingfortress: ["8L1"],
+		},
+	},
+	bowser: {
+		learnset: {
+			whirlingfortress: ["8L1"],
+		},
+	},
+	bowsergiga: {
+		learnset: {
+			whirlingfortress: ["8L1"],
+		},
+	},
+	genjii: {
+		learnset: {
+			
+		},
+	},
+	vivit: {
+		learnset: {
+			
+		},
+	},
+	vivitmega: {
+		learnset: {
+			
+		},
+	},
+	maribel: {
+		learnset: {
+			borderdistortion: ["8L1"],
+			dreaminduction: ["8L1"],
+		},
+	},
+	maribelmega: {
+		learnset: {
+			borderdistortion: ["8L1"],
+			dreaminduction: ["8L1"],
+			berserk: ["8L1"],
+		},
+	},
+	kogasa: {
+		learnset: {
+			surprise: ["8L1"],
+		},
+	},
+	meiling: {
+		learnset: {
+			
+		},
+	},
+	patchouli: {
+		learnset: {
+			royalflare: ["8L1"],
+			princessundine: ["8L1"],
+			satellitehimawari: ["8L1"],
+			ragetrilithon: ["8L1"],
+			emeraldmegalith: ["8L1"],
+		},
+	},
+	suwako: {
+		learnset: {
+			mishagujisama: ["8L1"],
+		},
+	},
+	tesla: {
+		learnset: {
+			zzzap: ["8L1"],
+		},
+	},
+	shingyoku: {
+		learnset: {
+			
+		},
+	},
+	shingyokupriestess: {
+		learnset: {
+			
+		},
+	},
+	shingyokuorb: {
+		learnset: {
+			
+		},
+	},
+	sariel: {
+		learnset: {
+			
+		},
+	},
+	serpentofchaos: {
+		learnset: {
+			
+		},
+	},
+	winner: {
+		learnset: {
+			swordoflight: ["8L1"],
+			magicaltempest: ["8L1"],
+			lightspeedmovement: ["8L1"],
+		},
+	},
+	satori: {
+		learnset: {
+			recollection: ["8L1"],
+		},
+	},
+	koishi: {
+		learnset: {
+			superego: ["8L1"],
+		},
+	},
+	nitori: {
+		learnset: {
+			megawattlineargun: ["8L1"],
+			monstercucumber: ["8L1"],
+		},
+	},
+	byakuren: {
+		learnset: {
+			superhumanbyakurenhijiri: ["8L1"],
+		},
+	},
+	nue: {
+		learnset: {
+
+		},
+	},
+	ichirin: {
+		learnset: {
+			
+		},
+	},
+	nyancat: {
+		learnset: {
+			nyan: ["8L1"],
+		},
+	},
+	mario: {
+		learnset: {
+			
+		},
+	},
+	mariopaper: {
+		learnset: {
+			
+		},
+	},
+	mariomalleo: {
+		learnset: {
+			
+		},
+	},
+	boo: {
+		learnset: {
+			
+		},
+	},
+	booboolussus: {
+		learnset: {
+			
+		},
+	},
+	kingboo: {
+		learnset: {
+			
+		},
+	},
+	bouldergeist: {
+		learnset: {
+			
+		},
+	},
+	glados: {
+		learnset: {
+			
+		},
+	},
+	badegg: {
+		learnset: {
+			anormalmove: ["8L1"],
+			thunderpunch: ["8L1", "8M"],	
+		},
+	},
+	pearl: {
+		learnset: {
+			
+		},
+	},
+	pearllee: {
+		learnset: {
+			
+		},
+	},
+	sunnymilk: {
+		learnset: {
+			
+		},
+	},
+	lunachild: {
+		learnset: {
+			
+		},
+	},
+	starsapphire: {
+		learnset: {
+			
+		},
+	},
+	sanae: {
+		learnset: {
+			miraclefruit: ["8L1"],
+		},
+	},
+	kanako: {
+		learnset: {
+			virtueofwindgod: ["8L1"],
+			expandedonbashira: ["8L1"],
+		},
+	},
+	ran: {
+		learnset: {
+			foxtanukilaser: ["8L1"],
+			"12generalgods": ["8L1"],
+		},
+	},
+	kanzou: {
+		learnset: {
+
+		},
+	},
+	hagumanoki: {
+		learnset: {
+
+		},
+	},
+	ruscus: {
+		learnset: {
+
+		},
+	},
+	ryuuguu: {
+		learnset: {
+			countdown: ["8L1"],
 		},
 	},
 	weepinmeleon: {
@@ -83936,12 +84638,133 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			gigadrain: ["8M"],
 		},
 	},
-	microsoftedge: {
+	bloodyjitterbug: {
 		learnset: {
+			strengthenjutsu: ["8L1"],
+			darkpulse: ["8M"],
+			bugbuzz: ["8M"],
+			flamethrower: ["8M"],
+		},
+	},
+	bluescreenofdeath: {
+		learnset: {
+			systemcrash: ["8L1"],
+			malfunction: ["8L1"],
+			reboot: ["8L1"],
+			recoveryconsole: ["8L1"],
+		},
+	},
+	internetexplorer: {
+		learnset: {
+			programfreeze: ["8L1"],
 			return: ["8M"],
 			safeguard: ["8M"],
 			naturalgift: ["8M"],
 			endure: ["8M"],
+		},
+	},
+	microsoftedge: {
+		learnset: {
+			programfreeze: ["8L1"],
+			download: ["8L1"],
+			return: ["8M"],
+			safeguard: ["8M"],
+			naturalgift: ["8M"],
+			endure: ["8M"],
+		},
+	},
+	mozillafirefox: {
+		learnset: {
+			datastream: ["8L1"],
+			download: ["8L1"],
+		},
+	},
+	googlechrome: {
+		learnset: {
+			silverlight: ["8L1"],
+			download: ["8L1"],
+		},
+	},
+	recyclebin: {
+		learnset: {
+			delete: ["8L1"],
+		},
+	},
+	hina: {
+		learnset: {
+			painflow: ["8L1"],
+		},
+	},
+	chen: {
+		learnset: {
+			flightofidaten: ["8L1"],
+			phoenixspreadwings: ["8L1"],
+		},
+	},
+	reisen: {
+		learnset: {
+			grandpatriotselixir: ["8L1"],
+			lunaticredeyes: ["8L1"],
+		},
+	},
+	parsee: {
+		learnset: {
+
+		},
+	},
+	rin: {
+		learnset: {
+			catswalk: ["8L1"],
+		},
+	},
+	daiyousei: {
+		learnset: {
+
+		},
+	},
+	konngara: {
+		learnset: {
+
+		},
+	},
+	yumeko: {
+		learnset: {
+			killerdoll: ["8L1"],
+		},
+	},
+	rumia: {
+		learnset: {
+
+		},
+	},
+	koakuma: {
+		learnset: {
+
+		},
+	},
+	youmu: {
+		learnset: {
+			slashofeternity: ["8L1"],
+		},
+	},
+	mystia: {
+		learnset: {
+			mysterioussong: ["8L1"],
+		},
+	},
+	tewi: {
+		learnset: {
+
+		},
+	},
+	aya: {
+		learnset: {
+			peerlesswindgod: ["8L1"],
+		},
+	},
+	kisume: {
+		learnset: {
+
 		},
 	},
 	chucktesta: {
@@ -83950,6 +84773,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			peck: ["8M"],
 			bulkup: ["8M"],
 			counter: ["8M"],
+		},
+	},
+	uncledolan: {
+		learnset: {
+			surf: ["8M"],
 		},
 	},
 };
