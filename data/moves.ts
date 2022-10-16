@@ -26,6 +26,8 @@ sound: Has no effect on Pokemon with the Soundproof Ability.
 
 */
 
+import { pokemonRegex } from "../server/chat-plugins/abuse-monitor";
+
 export const Moves: {[moveid: string]: MoveData} = {
 	"10000000voltthunderbolt": {
 		num: 719,
@@ -548,7 +550,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {},
 		onHit(target) {
 			const noAssist = [
-				'assist', 'banefulbunker', 'beakblast', 'belch', 'bestow', 'bounce', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'destinybond', 'detect', 'dig', 'dive', 'dragontail', 'endure', 'feint', 'fly', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'phantomforce', 'protect', 'ragepowder', 'roar', 'shadowforce', 'shelltrap', 'sketch', 'skydrop', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind', 'falconpunch', 'electricalshield', 'firewall',
+				'assist', 'banefulbunker', 'beakblast', 'belch', 'bestow', 'bounce', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'destinybond', 'detect', 'dig', 'dive', 'dragontail', 'endure', 'feint', 'fly', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'phantomforce', 'protect', 'ragepowder', 'roar', 'shadowforce', 'shelltrap', 'sketch', 'skydrop', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind', 'falconpunch', 'warlockpunch', 'electricalshield', 'firewall',
 			];
 
 			const moves = [];
@@ -2492,7 +2494,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {},
 		onHit(pokemon) {
 			const noCopycat = [
-				'assist', 'banefulbunker', 'beakblast', 'behemothbash', 'behemothblade', 'belch', 'bestow', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'craftyshield', 'destinybond', 'detect', 'dragontail', 'dynamaxcannon', 'endure', 'feint', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'obstruct', 'protect', 'ragepowder', 'roar', 'shelltrap', 'sketch', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind', 'falconpunch',
+				'assist', 'banefulbunker', 'beakblast', 'behemothbash', 'behemothblade', 'belch', 'bestow', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'craftyshield', 'destinybond', 'detect', 'dragontail', 'dynamaxcannon', 'endure', 'feint', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'obstruct', 'protect', 'ragepowder', 'roar', 'shelltrap', 'sketch', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind', 'falconpunch', 'warlockpunch',
 			];
 			let move: Move | ActiveMove | null = this.lastMove;
 			if (!move) return;
@@ -15795,7 +15797,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		onHit(pokemon) {
 			const noSleepTalk = [
-				'assist', 'beakblast', 'belch', 'bide', 'celebrate', 'chatter', 'copycat', 'dynamaxcannon', 'focuspunch', 'mefirst', 'metronome', 'mimic', 'mirrormove', 'naturepower', 'shelltrap', 'sketch', 'sleeptalk', 'uproar', 'falconpunch',
+				'assist', 'beakblast', 'belch', 'bide', 'celebrate', 'chatter', 'copycat', 'dynamaxcannon', 'focuspunch', 'mefirst', 'metronome', 'mimic', 'mirrormove', 'naturepower', 'shelltrap', 'sketch', 'sleeptalk', 'uproar', 'falconpunch', 'warlockpunch',
 			];
 			const moves = [];
 			for (const moveSlot of pokemon.moveSlots) {
@@ -19853,8 +19855,294 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fire",
 	},
-	explod: {
+	diamondblizzard: {
+		num: 2006,
+		accuracy: 90,
+		basePower: 130,
+		category: "Special",
+		name: "Diamond Blizzard",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				spa: -2,
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+	},
+	fantasyseal: {
+		num: 2007,
+		accuracy: 90,
+		basePower: 50,
+		category: "Special",
+		name: "Fantasy Seal",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+	},
+	evilsealingcircle: {
+		num: 2008,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Evil-Sealing Circle",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+	},
+	killerdoll: {
+		num: 2009,
+		accuracy: 90,
+		basePower: 110,
+		category: "Physical",
+		name: "Killer Doll",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+	},
+	theworld: {
+		num: 2010,
+		accuracy: 30,
+		basePower: 100,
+		category: "Special",
+		name: "The World",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+	},
+	nuke: {
+		num: 2011,
+		accuracy: 95,
+		basePower: 100,
+		category: "Special",
+		name: "The World",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, defrost: 1, distance: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type, move) {
+			return typeMod + this.dex.getEffectiveness('Poison', type);
+		},
+		secondary: null,
+		target: "allAdjacent",
+		type: "Fire",
+	},
+	ghastlydream: {
+		num: 2012,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Ghastly Dream",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onHit(target) {
+			let move: Move | ActiveMove | null = target.lastMove;
+			if (!move || move.isZ) return false;
+			if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
+
+			const ppDeducted = target.deductPP(move.id, 4);
+			if (!ppDeducted) return false;
+			this.add("-activate", target, 'move: Spite', move.name, ppDeducted);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+	},
+	spearthegungnir: {
+		num: 2013,
+		accuracy: true,
+		basePower: 90,
+		category: "Physical",
+		name: "Spear the Gungnir",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, distance: 1, mirror: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+	},
+	wrigglekick: {
+		num: 2014,
+		accuracy: 90,
+		basePower: 130,
+		category: "Physical",
+		name: "Wriggle Kick",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		hasCrashDamage: true,
+		onMoveFail(target, source, move) {
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('High Jump Kick'));
+		},
+		secondary: null,
+		target: "normal",
+		type: "Bug",
+	},
+	hisousword: {
+		num: 2015,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Hisou Sword",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Ground",
+	},
+	throwingatlas: {
+		num: 2016,
+		accuracy: 90,
+		basePower: 130,
+		category: "Physical",
+		name: "Throwing Atlas",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				atk: -2,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Ground",
+	},
+	knockoutin3steps: {
+		num: 2017,
+		accuracy: 90,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			return 40 * move.hit;
+		},
+		category: "Physical",
+		name: "Knock Out in 3 Steps",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Fighting",
+	},
+	strawberrycross: {
+		num: 2018,
+		accuracy: 100,
+		basePower: 25,
+		category: "Special",
+		name: "Strawberry Cross",
+		pp: 30,
+		priority: 0,
+		flags: {protect: 1, defrost: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+	},
+	tsukinoiwakasascurse: {
+		num: 2019,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Tsuki no Iwakasa's Curse",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, distance: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			boosts: {
+				atk: -1,
+				spa: -1,
+			},
+		},
+		target: "normal",
+		type: "Flying",
+	},
+	trainwreck: {
+		num: 2020,
+		accuracy: 90,
+		basePower: 200,
+		category: "Special",
+		name: "Train Wreck",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+	},
+	suzuranpoison: {
+		num: 2021,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Suzuran Poison",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			status: 'psn',
+			boosts: {
+				spe: -1,
+			},
+		},
+		target: "normal",
+		type: "Poison",
+	},
+	lemmingsparade: {
+		num: 2022,
+		accuracy: 100,
+		basePower: 10,
+		category: "Special",
+		overrideDefensiveStat: 'def',
+		name: "Lemmings Parade",
+		pp: 30,
+		priority: 0,
+		flags: {protect: 1, defrost: 1, mirror: 1},
+		multihit: [5, 12],
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+	},
+	apollo13: {
 		num: 2023,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		name: "Apollo 13",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		recoil: [25, 100],
+		secondary: null,
+		target: "normal",
+		type: "Poison",
+	},
+	explod: {
+		num: 2024,
 		accuracy: true,
 		basePower: 255,
 		category: "Physical",
@@ -19867,8 +20155,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allAdjacent",
 		type: "???",
 	},
-	corrupt: {
+	study: {
 		num: 2025,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Study",
+		pp: 5,
+		priority: 1,
+		flags: {snatch: 1},
+		boosts: {
+			def: 1,
+			spd: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Psychic",
+		zMove: {boost: {spd: 1}},
+	},
+	corrupt: {
+		num: 2026,
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
@@ -19890,8 +20196,659 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "???",
 		zMove: {boost: {spa: 1}},
 	},
+	sovietreversal: {
+		num: 2027,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target) {
+			const ratio = pokemon.hp * 48 / pokemon.maxhp;
+			if (ratio < 2) {
+				return 200;
+			}
+			if (ratio < 5) {
+				return 150;
+			}
+			if (ratio < 10) {
+				return 100;
+			}
+			if (ratio < 17) {
+				return 80;
+			}
+			if (ratio < 33) {
+				return 40;
+			}
+			return 20;
+		},
+		category: "Physical",
+		name: "Soviet Reversal",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Water",
+		zMove: {basePower: 160},
+	},
+	lolwut: {
+		num: 2028,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "LOL WUT?",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, bypasssub: 1, sound: 1},
+		secondary: {
+			chance: 50,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Poison",
+	},
+	pingas: {
+		num: 2029,
+		accuracy: 100,
+		basePower: 60,
+		basePowerCallback(pokemon, target, move) {
+			if (target.newlySwitched) {
+				this.debug('Pingas damage boost');
+				return move.basePower * 2;
+			}
+			this.debug('Pingas NOT boosted');
+			return move.basePower;
+		},
+		category: "Physical",
+		name: "Pingas",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, bypasssub: 1, sound: 1},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},
+	//mahboi
+	warlockpunch: {
+		num: 2031,
+		accuracy: 100,
+		basePower: 150,
+		category: "Physical",
+		name: "Warlock Punch",
+		pp: 20,
+		priority: -3,
+		flags: {contact: 1, protect: 1, punch: 1, defrost: 1},
+		critRatio: 3,
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+	},
+	catnarok: {
+		num: 2032,
+		accuracy: 100,
+		basePower: 250,
+		category: "Physical",
+		name: "Catnarok",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, defrost: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
+		},
+		onModifyType(move, pokemon) {
+			move.type = pokemon.types[0];
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},
+	ikeelyou: {
+		num: 2032,
+		accuracy: 100,
+		basePower: 250,
+		category: "Physical",
+		name: "I KEEL YOU!",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, defrost: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},
+	barrelroll: {
+		num: 2034,
+		accuracy: 90,
+		basePower: 30,
+		basePowerCallback(pokemon, target, move) {
+			let bp = move.basePower;
+			if (pokemon.volatiles['rollout'] && pokemon.volatiles['rollout'].hitCount) {
+				bp *= Math.pow(2, pokemon.volatiles['rollout'].hitCount);
+			}
+			if (pokemon.status !== 'slp') pokemon.addVolatile('rollout');
+			if (pokemon.volatiles['defensecurl']) {
+				bp *= 2;
+			}
+			this.debug("Barrel Roll bp: " + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Barrel Roll",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		condition: {
+			duration: 2,
+			onLockMove: 'rollout',
+			onStart() {
+				this.effectState.hitCount = 1;
+			},
+			onRestart() {
+				this.effectState.hitCount++;
+				if (this.effectState.hitCount < 5) {
+					this.effectState.duration = 2;
+				}
+			},
+			onResidual(target) {
+				if (target.lastMove && target.lastMove.id === 'struggle') {
+					// don't lock
+					delete target.volatiles['rollout'];
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dragon",
+	},
+	umadbro: {
+		num: 2035,
+		accuracy: 70,
+		basePower: 0,
+		category: "Status",
+		name: "Umadbro?",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
+		volatileStatus: 'confusion',
+		boosts: {
+			atk: 6,
+		},
+		secondary: null,
+		target: "normal",
+		type: "???",
+		zMove: {effect: 'clearnegativeboost'},
+	},
+	zerolaser: {
+		num: 2036,
+		accuracy: 90,
+		basePower: 200,
+		category: "Special",
+		name: "Hyper Beam",
+		pp: 5,
+		priority: 0,
+		flags: {recharge: 1, protect: 1, mirror: 1, beam: 1},
+		self: {
+			volatileStatus: 'mustrecharge',
+		},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+	},
+	// final judgment
+	// objection
+	// stealthy kick
+	thunderdrumshot: {
+		num: 2040,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Thunder Drum Shot",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
+	},
+	needleparade: {
+		num: 2041,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Needle Parade",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+	},
+	finaldanmaku: {
+		num: 2042,
+		accuracy: 85,
+		basePower: 120,
+		category: "Physical",
+		name: "Final Danmaku",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Flying",
+	},
+	//zzzap
+	borderdistortion: {
+		num: 2044,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Border Distortion",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+	},
+	dreaminduction: {
+		num: 2045,
+		accuracy: 80,
+		basePower: 0,
+		category: "Status",
+		name: "Dream Induction",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		status: 'slp',
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		zMove: {effect: 'clearnegativeboost'},
+	},
+	berserk: {
+		num: 2046,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Berserk",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					atk: 1,
+					def: 1,
+					spa: 1,
+					spd: 1,
+					spe: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Dark",
+	},
+	surprise: {
+		num: 2047,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Surprise~!",
+		pp: 10,
+		priority: 3,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onTry(source) {
+			if (source.activeMoveActions > 1) {
+				this.hint("Fake Out only works on your first turn out.");
+				return false;
+			}
+		},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Ghost",
+	},
+	royalflare: {
+		num: 2048,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Royal Flare",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, defrost: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+	},
+	princessundine: {
+		num: 2049,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Princess Undine",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Water",
+	},
+	satellitehimawari: {
+		num: 2050,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Satellite Himawari",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+	},
+	ragetrilithon: {
+		num: 2051,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Rage Trilithon",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Ground",
+	},
+	emeraldmegalith: {
+		num: 2052,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Emerald Megalith",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+	},
+	mishagujisama: {
+		num: 2053,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Mishaguji-sama",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, bullet: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'par'
+		},
+		target: "normal",
+		type: "Ground",
+	},
+	whirlingfortress: {
+		num: 2054,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Whirling Fortress",
+		pp: 40,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onAfterHit(target, pokemon) {
+			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+				this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+			}
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+			}
+			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				pokemon.removeVolatile('partiallytrapped');
+			}
+		},
+		onAfterSubDamage(damage, target, pokemon) {
+			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+				this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+			}
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+			}
+			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				pokemon.removeVolatile('partiallytrapped');
+			}
+		},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Dragon",
+	},
+	drybone: {
+		num: 2055,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Dry Bone",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Rock",
+	},
+	recollection: {
+		num: 2056,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Assist",
+		pp: 20,
+		priority: 0,
+		flags: {},
+		onHit(target) {
+			const noAssist = [
+				'assist', 'banefulbunker', 'beakblast', 'belch', 'bestow', 'bounce', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'destinybond', 'detect', 'dig', 'dive', 'dragontail', 'endure', 'feint', 'fly', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'phantomforce', 'protect', 'ragepowder', 'roar', 'shadowforce', 'shelltrap', 'sketch', 'skydrop', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind', 'falconpunch', 'warlockpunch', 'electricalshield', 'firewall',
+			];
+
+			const moves = [];
+			for (const pokemon of target.side.pokemon) {
+				if (pokemon === target) continue;
+				for (const moveSlot of pokemon.moveSlots) {
+					const moveid = moveSlot.id;
+					if (noAssist.includes(moveid)) continue;
+					const move = this.dex.moves.get(moveid);
+					if (move.isZ || move.isMax) {
+						continue;
+					}
+					moves.push(moveid);
+				}
+			}
+			let randomMove = '';
+			if (moves.length) randomMove = this.sample(moves);
+			if (!randomMove) {
+				return false;
+			}
+			this.actions.useMove(randomMove, target);
+		},
+		secondary: null,
+		target: "self",
+		type: "Psychic",
+	},
+	superego: {
+		num: 2057,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Super-Ego",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		recoil: [10, 100],
+		target: "normal",
+		type: "Normal",
+	},
+	megawattlineargun: {
+		num: 2058,
+		accuracy: 85,
+		basePower: 120,
+		category: "Physical",
+		name: "Megawatt Linear Gun",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Water",
+	},
+	monstercucumber: {
+		num: 2059,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Monster Cucumber",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+	},
+	superhumanbyakurenhijiri: {
+		num: 2060,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Superhuman Byakuren Hijiri",
+		pp: 5,
+		priority: 2,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+	},
+	redufosofrage: {
+		num: 2061,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Red UFOs of Rage",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			atk: 3,
+		},
+		secondary: null,
+		target: "self",
+		type: "Fire",
+		zMove: {effect: 'clearnegativeboost'},
+	},
+	blueufosofgrief: {
+		num: 2062,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Blue UFOs of Grief",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spd: 3,
+		},
+		secondary: null,
+		target: "self",
+		type: "Water",
+		zMove: {effect: 'clearnegativeboost'},
+	},
+	greenufosofloyalty: {
+		num: 2063,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Green UFOs of Loyalty",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [2, 3],
+		secondary: null,
+		target: "self",
+		type: "Grass",
+		zMove: {effect: 'clearnegativeboost'},
+	},
+	nyan: {
+		num: 2064,
+		accuracy: 100,
+		basePower: 50,
+		basePowerCallback() {
+			if (this.field.pseudoWeather.echoedvoice) {
+				return 50 * this.field.pseudoWeather.echoedvoice.multiplier;
+			}
+			return 50;
+		},
+		category: "Special",
+		name: "Nyan",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1},
+		onTry() {
+			this.field.addPseudoWeather('echoedvoice');
+		},
+		condition: {
+			duration: 2,
+			onFieldStart() {
+				this.effectState.multiplier = 1;
+			},
+			onFieldRestart() {
+				if (this.effectState.duration !== 2) {
+					this.effectState.duration = 2;
+					if (this.effectState.multiplier < 5) {
+						this.effectState.multiplier++;
+					}
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},
+	cakelie: {
+		num: 2065,
+		accuracy: 90,
+		basePower: 0,
+		category: "Status",
+		name: "Cake Lie",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		volatileStatus: 'confusion',
+		secondary: null,
+		target: "allAdjacent",
+		type: "Dark",
+		zMove: {boost: {spa: 1}},
+	},
     superglitch: {
-        num: 2067,
+        num: 2066,
         accuracy: 100,
         basePower: 100,
         category: "Physical",
@@ -19903,6 +20860,586 @@ export const Moves: {[moveid: string]: MoveData} = {
         target: "normal",
         type: "???",
     },
+    anormalmove: {
+        num: 2067,
+        accuracy: 100,
+        basePower: 100,
+        category: "Physical",
+        name: "a NORMAL move",
+        pp: 5,
+        priority: 0,
+        flags: {protect: 1, mirror: 1},
+        secondary: null,
+        target: "normal",
+        type: "Normal",
+    },
+	miraclefruit: {
+		num: 2068,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Miracle Fruit",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [1, 4],
+		onHit(target) {
+			const stats: BoostID[] = [];
+			let stat: BoostID;
+			for (stat in target.boosts) {
+				if (target.boosts[stat] < 6) {
+					stats.push(stat);
+				}
+			}
+			if (stats.length) {
+				const randomStat = this.sample(stats);
+				const boost: SparseBoostsTable = {};
+				boost[randomStat] = 2;
+				this.boost(boost);
+			} else {
+				return false;
+			}
+		},
+		secondary: null,
+		target: "self",
+		type: "Grass",
+		zMove: {effect: 'crit2'},
+	},
+	virtueofwindgod: {
+		num: 2069,
+		accuracy: 100,
+		basePower: 95,
+		category: "Special",
+		name: "Virtue of Wind God",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1},
+		secondary: null,
+		target: "allAdjacent",
+		type: "Flying",
+	},
+	expandedonbashira: {
+		num: 2070,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Expanded Onbashira",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+	},
+	foxtanukilaser: {
+		num: 2071,
+		accuracy: 85,
+		basePower: 120,
+		category: "Special",
+		name: "Fox-Tanuki Laser",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, beam: 1},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+	},
+	"12generalgods": {
+		num: 2072,
+		accuracy: 100,
+		basePower: 25,
+		category: "Special",
+		name: "12 General Gods",
+		pp: 30,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Ground",
+	},
+	countdown: {
+		num: 2073,
+		accuracy: 90,
+		basePower: 200,
+		category: "Physical",
+		name: "Count Down",
+		pp: 5,
+		priority: 0,
+		flags: {charge: 1, protect: 1, mirror: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			this.boost({atk: 1}, attacker, attacker, move);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dragon",
+	},
+	systemcrash: {
+		num: 2074,
+		accuracy: 100,
+		basePower: 250,
+		category: "Physical",
+		name: "System Crash",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		selfdestruct: "always",
+		secondary: null,
+		target: "allAdjacent",
+		type: "Bug",
+	},
+	malfunction: {
+		num: 2075,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Malfunction",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		recoil: [1, 3],
+		secondary: null,
+		target: "normal",
+		type: "???",
+	},
+	reboot: {
+		num: 2076,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Reboot",
+		pp: 30,
+		priority: 0,
+		flags: {bypasssub: 1},
+		onHitField() {
+			this.add('-clearallboost');
+			for (const pokemon of this.getAllActive()) {
+				pokemon.clearBoosts();
+			}
+		},
+		secondary: null,
+		target: "all",
+		type: "Normal",
+		zMove: {effect: 'heal'},
+	},
+	recoveryconsole: {
+		num: 2077,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Recovery Console",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [1, 2],
+		secondary: null,
+		target: "self",
+		type: "Normal",
+		zMove: {effect: 'clearnegativeboost'},
+	},
+	strengthenjutsu: {
+		num: 2078,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Strengthen Jutsu",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1},
+		onHit(target) {
+			if (target.hp <= target.maxhp / 2 || target.boosts.atk >= 6 || target.maxhp === 1) { // Shedinja clause
+				return false;
+			}
+			this.directDamage(target.maxhp / 2);
+			this.boost({spa: 12}, target);
+		},
+		secondary: null,
+		target: "self",
+		type: "Dark",
+		zMove: {effect: 'heal'},
+	},
+	washingmachine: {
+		num: 2079,
+		accuracy: 85,
+		basePower: 120,
+		category: "Special",
+		name: "Washing Machine",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, bullet: 1, mirror: 1},
+		secondary: null,
+		target: "allAdjacent",
+		type: "Water",
+	},
+	download: {
+		num: 2080,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Download",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1},
+		drain: [1, 2],
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},
+	programfreeze: {
+		num: 2081,
+		accuracy: 85,
+		basePower: 120,
+		category: "Special",
+		name: "Program Freeze",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+	},
+	datastream: {
+		num: 2082,
+		accuracy: 50,
+		basePower: 150,
+		category: "Special",
+		name: "Data Stream",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+	},
+	silverlight: {
+		num: 2083,
+		accuracy: 70,
+		basePower: 150,
+		category: "Special",
+		name: "Silverlight",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+	},
+	delete: {
+		num: 2084,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Delete",
+		pp: 10,
+		priority: 0,
+		flags: {bypasssub: 1},
+		onHitField() {
+			this.add('-clearallboost');
+			for (const pokemon of this.getAllActive()) {
+				pokemon.clearBoosts();
+			}
+		},
+		secondary: null,
+		target: "all",
+		type: "Normal",
+	},
+	painflow: {
+		num: 2085,
+		accuracy: 80,
+		basePower: 40,
+		category: "Special",
+		name: "Pain Flow",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			onHit(target, source) {
+				const result = this.random(100);
+				if (result < 45) {
+					target.trySetStatus('brn', source);
+				} else if (result < 90) {
+					target.trySetStatus('par', source);
+				} else {
+					target.trySetStatus('frz', source);
+				}
+			},
+		},
+		target: "normal",
+		type: "Poison",
+	},
+	flightofidaten: {
+		num: 2086,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Flight of Idaten",
+		pp: 30,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		target: "normal",
+		type: "Ground",
+	},
+	phoenixspreadwings: {
+		num: 2087,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Phoenix Spread Wings",
+		pp: 15,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		target: "allAdjacentFoes",
+		type: "Flying",
+	},
+	grandpatriotselixir: {
+		num: 2088,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Grand Patriot's Elixir",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spa: 1,
+			spe: 1,
+			accuracy: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Psychic",
+		zMove: {effect: 'clearnegativeboost'},
+	},
+	lunaticredeyes: {
+		num: 2089,
+		accuracy: 70,
+		basePower: 120,
+		category: "Status",
+		name: "Lunatic Red Eyes",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		boosts: {
+			spa: 1,
+			spe: 1,
+			accuracy: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Psychic",
+		zMove: {effect: 'clearnegativeboost'},
+	},
+	catswalk: {
+		num: 2090,
+		accuracy: 100,
+		basePower: 25,
+		category: "Physical",
+		name: "Cat's Walk",
+		pp: 30,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+		zMove: {basePower: 140},
+	},
+	slashofeternity: {
+		num: 2091,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Slash of Eternity",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+		zMove: {basePower: 180},
+	},
+	mysterioussong: {
+		num: 2092,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Mysterious Song",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, sound: 1, bypasssub: 1, mirror: 1},
+		onHit(target, source, move) {
+			return target.addVolatile('trapped', source, move, 'trapper');
+		},
+		volatileStatus: 'confusion',
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		zMove: {boost: {spd: 1}},
+	},
+	illstarreddive: {
+		num: 2093,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Ill-Starred Dive",
+		pp: 30,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Flying",
+	},
+	peerlesswindgod: {
+		num: 2094,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Peerless Wind God",
+		pp: 10,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		selfBoost: {
+			boosts: {
+				spe: 1,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Flying",
+		zMove: {basePower: 180},
+	},
+	nope: {
+		num: 2095,
+		accuracy: 100,
+		basePower: 75,
+		basePowerCallback(pokemon, target, move) {
+			const damagedByTarget = pokemon.attackedBy.some(
+				p => p.source === target && p.damage > 0 && p.thisTurn
+			);
+			if (damagedByTarget) {
+				this.debug('Boosted for getting hit by ' + target);
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Physical",
+		name: "NOPE",
+		pp: 10,
+		priority: -4,
+		flags: {protect: 1, sound: 1, bypasssub: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Rock",
+		zMove: {basePower: 140},
+	},
+	//dolan
+	swordoflight: {
+		num: 2104,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Sword of Light",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "???",
+		zMove: {basePower: 180},
+	},
+	magicaltempest: {
+		num: 2105,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Magical Tempest",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "???",
+		zMove: {basePower: 180},
+	},
+	lightspeedmovement: {
+		num: 2106,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Lightspeed Movement",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1},
+		onHit(target) {
+			if (target.hp <= target.maxhp / 2 || target.boosts.atk >= 6 || target.maxhp === 1) { // Shedinja clause
+				return false;
+			}
+			this.directDamage(target.maxhp / 2);
+			this.boost({spe: 12}, target);
+		},
+		secondary: null,
+		target: "self",
+		type: "Normal",
+		zMove: {effect: 'heal'},
+	},
+	//timestop
+	bearddeflect: {
+		num: 2108,
+		accuracy: 100,
+		basePower: 0,
+		damageCallback(pokemon) {
+			const lastDamagedBy = pokemon.getLastDamagedBy(true);
+			if (lastDamagedBy !== undefined) {
+				return (lastDamagedBy.damage * 1.5) || 1;
+			}
+			return 0;
+		},
+		category: "Physical",
+		name: "Beard Deflect",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onTry(source) {
+			const lastDamagedBy = source.getLastDamagedBy(true);
+			if (lastDamagedBy === undefined || !lastDamagedBy.thisTurn) return false;
+		},
+		onModifyTarget(targetRelayVar, source, target, move) {
+			const lastDamagedBy = source.getLastDamagedBy(true);
+			if (lastDamagedBy) {
+				targetRelayVar.target = this.getAtSlot(lastDamagedBy.slot);
+			}
+		},
+		secondary: null,
+		target: "scripted",
+		type: "???",
+	},
+	matterstorm: {
+		num: 2109,
+		accuracy: 85,
+		basePower: 120,
+		category: "Special",
+		name: "Matter Storm",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Poison",
+	},
+	// killing edge
 	thousandcuts: {
 		num: 2112,
 		accuracy: 100,
@@ -19917,6 +21454,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Steel",
 	},
+	// [..]
     plasmawhip: {
         num: 2119,
         accuracy: 100,
@@ -20003,6 +21541,7 @@ export const Moves: {[moveid: string]: MoveData} = {
         target: "foeSide",
         type: "Fairy",
     },
+	// [..]
     bulletspray: {
 		num: 2128,
 		accuracy: 100,
@@ -20017,6 +21556,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fire",
     },
+	// osmose
     nosferatu: {
         num: 2130,
         accuracy: 100,
@@ -20031,6 +21571,7 @@ export const Moves: {[moveid: string]: MoveData} = {
         target: "normal",
         type: "Dark",
     },
+	// [..]
     shieldbash: {
         num: 2133,
 		accuracy: 100,
@@ -20045,6 +21586,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Steel",
     },
+	// [..]
     remotemissile: {
         num: 2142,
 		accuracy: true,
@@ -20058,6 +21600,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Steel",
     },
+	// [..]
     glitchyterrain: {
         num: 2158,
         accuracy: true,
@@ -20125,4 +21668,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "all",
 		type: "???",
     },
+	// rainbow UFOs
+	// mystery power
+	// enigma attack
 };

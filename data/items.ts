@@ -7347,7 +7347,7 @@ export const Items: {[itemid: string]: ItemData} = {
         gen: 8,
     },*/
     plasmacane: {
-        name: "Triforce",
+        name: "Plasma Cane",
         spritenum: 2013,
         megaStone: "Dennis-Mega",
         megaEvolves: "Dennis",
