@@ -17291,7 +17291,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Ice", "Rock"],
 		gender: "F",
 		baseStats: {hp: 90, atk: 70, def: 100, spa: 90, spd: 115, spe: 60},
-		abilities: {0: "Snow Waring", 1: "Ice Body", H: "Snow Cloak"},
+		abilities: {0: "Snow Warning", 1: "Ice Body", H: "Snow Cloak"},
 		weightkg: 45,
 		color: "White",
 		eggGroups: ["Undiscovered"],
