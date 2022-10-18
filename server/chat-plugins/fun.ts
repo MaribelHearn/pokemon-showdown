@@ -571,6 +571,22 @@ export const commands: Chat.ChatCommands  = {
         `/derp - Derp.`,
     ],
 
+    dividebyzero(target, room: Room | null, user: User, connection, cmd: string) {
+        const name = Utils.escapeHTML(user.name);
+        const number = rand(1338);
+        room?.add(`|c|${user.getIdentity(room)}|${number} / 0 = ...`);
+        room?.addRaw(`${name} divided by zero! OH SHI-`);
+        room?.addRaw(`${name} got killed in the explosion.`);
+
+        if (room != null) {
+            user.leaveRoom(room);
+        }
+        
+    },
+    dividebyzerohelp: [
+        `/dividebyzero - you divide a number by zero. You have been warned...`
+    ],
+
     feedurp: 'durp',
     durp(target, room: Room | null, user: User, connection, cmd: string) {
         this.checkChat();
@@ -593,6 +609,19 @@ export const commands: Chat.ChatCommands  = {
     },
     ferphelp: [
         `/ferp - Ferp.`,
+    ],
+
+    flyaway(target, room: Room | null, user: User, connection, cmd: string) {
+        const name = Utils.escapeHTML(user.name);
+        room?.addRaw(`${name} flew away!`);
+
+        if (room != null) {
+            user.leaveRoom(room);
+        }
+        
+    },
+    flyawayhelp: [
+        `/flyaway - you fly away from the room, leaving it in the process.`
     ],
 
     freeze(target, room: Room | null, user: User, connection, cmd: string) {
@@ -725,6 +754,51 @@ export const commands: Chat.ChatCommands  = {
     russiahelp: [
         `/russia - Send a Russian Reversal joke.`,
 		`/russia [verb]*[noun] - Send a Russian Reversal joke using [verb] and [noun].`,
+    ],
+
+    see(target, room: Room | null, user: User, connection, cmd: string) {
+        const name = Utils.escapeHTML(user.name);
+
+        if (!target) {
+            target = "Dennis";
+        }
+
+        room?.addRaw(`${name} saw ${target} behind them and left the room!`);
+
+        if (room != null) {
+            user.leaveRoom(room);
+        }
+        
+    },
+    seehelp: [
+        `/see = you see Dennis behind you, which scares you into leaving the room.`,
+        `/see [someone] - you are so afraid of [someone] that you leave the room in fear.`,
+    ],
+
+    selfkick(target, room: Room | null, user: User, connection, cmd: string) {
+        const name = Utils.escapeHTML(user.name);
+        room?.addRaw(`${name} has kicked themselves from the server!`);
+
+        if (room != null) {
+            user.leaveRoom(room);
+        }
+        
+    },
+    selfkickhelp: [
+        `/selfkick - kicks yourself from the room.`
+    ],
+
+    selfpunch(target, room: Room | null, user: User, connection, cmd: string) {
+        const name = Utils.escapeHTML(user.name);
+        room?.addRaw(`${name} has punched themselves from the server!`);
+
+        if (room != null) {
+            user.leaveRoom(room);
+        }
+        
+    },
+    selfpunchhelp: [
+        `/selfpunch - punches yourself from the room.`
     ],
 
     sleep(target, room: Room | null, user: User, connection, cmd: string) {
