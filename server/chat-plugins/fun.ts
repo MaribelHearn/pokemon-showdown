@@ -319,7 +319,7 @@ function random(obj: any) {
 }
 
 function timeStamp() {
-    return `[${Chat.toTimestamp(new Date()).split(' ')[1]}`;
+    return `[${Chat.toTimestamp(new Date()).split(' ')[1]}]`;
 }
 
 function rand(min: number, max?: number) {

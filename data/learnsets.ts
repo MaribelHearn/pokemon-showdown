@@ -84001,7 +84001,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	ganondorf: {
 		learnset: {
-
+			warlockpunch: ["8L1"],
 		},
 	},
 	ganondorfmega: {
@@ -84299,12 +84299,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	zero: {
 		learnset: {
-			
+			matterstorm: ["8L1"],
 		},
 	},
 	zerotwo: {
 		learnset: {
-			
+			matterstorm: ["8L1"],
 		},
 	},
 	stella: {
@@ -84549,7 +84549,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	glados: {
 		learnset: {
-			
+			cakelie: ["8L1"],
 		},
 	},
 	badegg: {

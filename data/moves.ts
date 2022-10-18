@@ -20132,7 +20132,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		multihit: [5, 12],
 		secondary: null,
 		target: "normal",
-		type: "Fire",
+		type: "Psychic",
 	},
 	apollo13: {
 		num: 2023,
@@ -20157,6 +20157,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 1,
 		priority: 0,
 		flags: {defrost: 1, bypasssub: 1},
+		critRatio: 3,
 		selfdestruct: "always",
 		secondary: null,
 		target: "allAdjacent",
@@ -20303,14 +20304,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyType(move, pokemon) {
 			move.type = pokemon.types[0];
 		},
+		selfdestruct: "always",
 		secondary: null,
 		target: "normal",
 		type: "Normal",
 	},
 	ikeelyou: {
-		num: 2032,
-		accuracy: 100,
-		basePower: 250,
+		num: 2033,
+		accuracy: 85,
+		basePower: 120,
 		category: "Physical",
 		name: "I KEEL YOU!",
 		pp: 5,
@@ -20318,7 +20320,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, defrost: 1, mirror: 1},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Ghost",
 	},
 	barrelroll: {
 		num: 2034,
@@ -21171,13 +21173,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 100,
 			onHit(target, source) {
-				const result = this.random(100);
-				if (result < 45) {
+				const result = this.random(3);
+				if (result === 0) {
 					target.trySetStatus('brn', source);
-				} else if (result < 90) {
+				} else if (result === 1) {
 					target.trySetStatus('par', source);
 				} else {
-					target.trySetStatus('frz', source);
+					target.trySetStatus('psn', source);
 				}
 			},
 		},
@@ -21203,7 +21205,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		category: "Physical",
 		name: "Phoenix Spread Wings",
 		pp: 15,
-		priority: 1,
+		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		target: "allAdjacentFoes",
 		type: "Flying",
@@ -21313,7 +21315,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		category: "Physical",
 		name: "Peerless Wind God",
 		pp: 10,
-		priority: 1,
+		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		selfBoost: {
 			boosts: {
