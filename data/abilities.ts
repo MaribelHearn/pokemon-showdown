@@ -4580,20 +4580,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 2005,
 	},
-    /*negativezone: {
+    negativezone: {
 		onStart(source) {
+			this.field.addPseudoWeather('magicroom');
 			this.add('-fieldstart', 'move: Magic Room', '[of] ' + source);
 		},
-        onRestart(target, source) {
-            this.field.removePseudoWeather('magicroom');
-        },
-        onEnd() {
-            this.add('-fieldend', 'move: Magic Room');
+        onEnd(source) {
+			this.field.removePseudoWeather('magicroom');
+            this.add('-fieldend', 'move: Magic Room', '[of]' + source);
         },
 		name: "Negative Zone",
 		rating: 4,
         num: 2006,
-    },*/
+    },
 	springfragrance: {
 		onStart(pokemon) {
 			let activated = false;
@@ -4806,20 +4805,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         rating: 4,
         num: 2016,
     },
-    /*wonderland: {
+    wonderland: {
 		onStart(source) {
+			this.field.addPseudoWeather('wonderroom');
 			this.add('-fieldstart', 'move: Wonder Room', '[of] ' + source);
 		},
-        onRestart(target, source) {
-            this.field.removePseudoWeather('wonderroom');
-        },
-        onEnd() {
-            this.add('-fieldend', 'move: Wonder Room');
+        onEnd(source) {
+			this.field.removePseudoWeather('wonderroom');
+            this.add('-fieldend', 'move: Wonder Room', '[of]' + source);
         },
 		name: "Wonderland",
 		rating: 4,
         num: 2017,
-    },*/
+    },
 	papercut: {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {

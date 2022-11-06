@@ -747,9 +747,7 @@ export const commands: Chat.ChatCommands  = {
         } else if (noun.substring(0, 4) == 'the ') {
             russianoun = noun.slice(4);
         }
-        room?.addRaw('<div class="chat"><small>' + timeStamp() + ' </small><b>In America, you ' + verb +
-        ' ' + noun + '. In Soviet Russia, ' + russianoun + ' ' + russiaverb +
-        ' YOU!!</b><small> - ' + user.name + '</small>');
+        room?.addRaw('<div class="chat"><small>' + timeStamp() + ' </small><b>In America, you ' + verb + ' ' + noun + '. In Soviet Russia, ' + russianoun + ' ' + russiaverb + ' YOU!!</b><small> - ' + user.name + '</small>');
     },
     russiahelp: [
         `/russia - Send a Russian Reversal joke.`,
@@ -771,7 +769,7 @@ export const commands: Chat.ChatCommands  = {
         
     },
     seehelp: [
-        `/see = you see Dennis behind you, which scares you into leaving the room.`,
+        `/see - you see Dennis behind you, which scares you into leaving the room.`,
         `/see [someone] - you are so afraid of [someone] that you leave the room in fear.`,
     ],
 
