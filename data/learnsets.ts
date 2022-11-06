@@ -83832,7 +83832,10 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
     },
 	luigi: {
 		learnset: {
-
+			leaftornado: ["8L1"],
+			needlearm: ["8L1"],
+			spark: ["8L1"],
+			dizzypunch: ["8L1"],
 		},
 	},
 	luigimrl: {
@@ -84370,6 +84373,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	alice: {
 		learnset: {
 			lemmingsparade: ["8L1"],
+			icebeam: ["8M"],
+			psychic: ["8M"],
+			calmmind: ["8M"],
 		},
 	},
 	babybowser: {
