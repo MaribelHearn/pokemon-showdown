@@ -32,6 +32,9 @@ Ratings and how they work:
 
 */
 
+import { DexConditions } from "../sim/dex-conditions";
+import { Conditions } from "./conditions";
+
 export const Abilities: {[abilityid: string]: AbilityData} = {
 	noability: {
 		isNonstandard: "Past",
@@ -4582,11 +4585,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
     negativezone: {
 		onStart(source) {
-			this.field.addPseudoWeather('magicroom');
+			if (this.field.pseudoWeather['magicroom']) {
+				this.add('-fieldend', 'move: Magic Room', '[of]' + source);
+				return;
+			}
+
 			this.add('-fieldstart', 'move: Magic Room', '[of] ' + source);
 		},
         onEnd(source) {
-			this.field.removePseudoWeather('magicroom');
             this.add('-fieldend', 'move: Magic Room', '[of]' + source);
         },
 		name: "Negative Zone",
@@ -4807,11 +4813,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
     },
     wonderland: {
 		onStart(source) {
-			this.field.addPseudoWeather('wonderroom');
+			if (this.field.pseudoWeather['wonderroom']) {
+				this.add('-fieldend', 'move: Wonder Room', '[of]' + source);
+				return;
+			}
+
 			this.add('-fieldstart', 'move: Wonder Room', '[of] ' + source);
 		},
         onEnd(source) {
-			this.field.removePseudoWeather('wonderroom');
             this.add('-fieldend', 'move: Wonder Room', '[of]' + source);
         },
 		name: "Wonderland",
