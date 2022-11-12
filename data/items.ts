@@ -7131,7 +7131,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
     natureengine: {
         name: "Nature Engine",
-        spritenum: 2003,
+        spritenum: 754,
         fling: {
             basePower: 100,
         },
@@ -7152,7 +7152,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
     magmaengine: {
         name: "Magma Engine",
-        spritenum: 2004,
+        spritenum: 755,
         fling: {
             basePower: 100,
         },
@@ -7173,7 +7173,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
     basicengine: {
         name: "Basic Engine",
-        spritenum: 2005,
+        spritenum: 756,
         fling: {
             basePower: 100,
         },
@@ -7195,7 +7195,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
     venomengine: {
         name: "Venom Engine",
-        spritenum: 2006,
+        spritenum: 757,
         fling: {
             basePower: 100,
         },
@@ -7348,7 +7348,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },*/
     plasmacane: {
         name: "Plasma Cane",
-        spritenum: 2013,
+        spritenum: 753,
         megaStone: "Dennis-Mega",
         megaEvolves: "Dennis",
         itemUser: ["Dennis"],
