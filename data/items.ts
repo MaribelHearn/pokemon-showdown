@@ -7116,7 +7116,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 
     // Fundex
-    trinitystone: {
+    /*trinitystone: {
         name: "Trinity Stone",
         spritenum: 2000,
         onModifyAtkPriority: 5,
@@ -7128,7 +7128,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
 		num: 2000,
 		gen: 8,
-    },
+    },*/
     natureengine: {
         name: "Nature Engine",
         spritenum: 754,
@@ -7209,7 +7209,7 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2006,
         gen: 8,
     },
-    redpill: {
+    /*redpill: {
         name: "Red Pill",
         spritenum: 2007,
         fling: {
@@ -7288,10 +7288,10 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2009,
         gen: 8,
-    },
+    },*/
     unknowngem: {
         name: "Unknown Gem",
-        spritenum: 2010,
+        spritenum: 758,
         isGem: true,
         onSourceTryPrimaryHit(target, source, move) {
             if (target === source || move.category === 'Status') return;
@@ -7304,7 +7304,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
     mysteryplate: {
         name: "Mystery Plate",
-        spritenum: 2011,
+        spritenum: 760,
         onPlate: '???',
         onBasePowerPriority: 15,
         onBasePower(basePower, user, target, move) {
@@ -7439,7 +7439,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
     unknowniumz: {
         name: "Unknownium Z",
-        spritenum: 2023,
+        spritenum: 759,
         onPlate: '???',
         onTakeItem: false,
         zMove: true,
