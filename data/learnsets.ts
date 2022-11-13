@@ -84525,7 +84525,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	mariopaper: {
 		learnset: {
-			
+			firepunch: ["8M"],
 		},
 	},
 	mariomalleo: {
@@ -84535,7 +84535,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	boo: {
 		learnset: {
-			
+			lick: ["8L1"],
+			astonish: ["8L1"],
+			shadowball: ["8M"],
 		},
 	},
 	booboolussus: {
