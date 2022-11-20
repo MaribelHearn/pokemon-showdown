@@ -19806,11 +19806,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, bullet: 1, mirror: 1},
-		self: {
+		secondary: {
 			chance: 30,
 			volatileStatus: 'flinch',
 		},
-		secondary: null,
 		target: "normal",
 		type: "Psychic",
 	},
@@ -19836,6 +19835,29 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 20,
 		priority: -3,
 		flags: {contact: 1, protect: 1, punch: 1, defrost: 1},
+		priorityChargeCallback(pokemon) {
+			pokemon.addVolatile('focuspunch');
+		},
+		beforeMoveCallback(pokemon) {
+			if (pokemon.volatiles['focuspunch']?.lostFocus) {
+				this.add('cant', pokemon, 'Falcon Punch', 'Falcon Punch');
+				return true;
+			}
+		},
+		condition: {
+			duration: 1,
+			onStart(pokemon) {
+				this.add('-singleturn', pokemon, 'move: Falcon Punch');
+			},
+			onHit(pokemon, source, move) {
+				if (move.category !== 'Status') {
+					this.effectState.lostFocus = true;
+				}
+			},
+			onTryAddVolatile(status, pokemon) {
+				if (status.id === 'flinch') return null;
+			},
+		},
 		critRatio: 3,
 		secondary: null,
 		target: "normal",
@@ -20047,6 +20069,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 3,
+		multiaccuracy: true,
 		secondary: null,
 		target: "normal",
 		type: "Fighting",

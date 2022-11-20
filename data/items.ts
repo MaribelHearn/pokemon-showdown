@@ -7361,7 +7361,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
     triforce: {
         name: "Triforce",
-        spritenum: 2014,
+        spritenum: 761,
         megaStone: "Ganondorf-Mega",
         megaEvolves: "Ganondorf",
         itemUser: ["Ganondorf"],
@@ -7400,7 +7400,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },*/
     smashball: {
         name: "Smash Ball",
-        spritenum: 2017,
+        spritenum: 762,
         megaStone: "Bowser-Giga",
         megaEvolves: "Bowser",
         itemUser: ["Bowser"],
@@ -7413,7 +7413,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
     sabotenbottle: {
         name: "Saboten Bottle",
-        spritenum: 2018,
+        spritenum: 764,
         megaStone: "VIVIT-Mega",
         megaEvolves: "VIVIT",
         itemUser: ["VIVIT"],
@@ -7426,7 +7426,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
     strangegap: {
         name: "Strange Gap",
-        spritenum: 2019,
+        spritenum: 763,
         megaStone: "Maribel-Mega",
         megaEvolves: "Maribel",
         itemUser: ["Maribel"],
