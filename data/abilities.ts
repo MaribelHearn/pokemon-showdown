@@ -4777,7 +4777,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
     research: {
 		onStart(pokemon) {
 			for (const target of pokemon.foes()) {
-				this.add('-ability', pokemon, target.getAbility().name, '[from] ability: Research', '[of] ' + target);
+				this.add('-ability', target, target.getAbility().name, '[from] ability: Research', '[of] ' + pokemon, '[identify]');
 			}
 		},
 		name: "Research",
