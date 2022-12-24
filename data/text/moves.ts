@@ -6969,7 +6969,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	suzuranpoison: {
 		name: "Suzuran Poison",
 		desc: "Poisons the target and lowers the target's Speed by 1 stage.",
-		shortDesc: "Poisons the foe(s) and lowers Speed by 1.",
+		shortDesc: "Lowers the foe(s) Speed by 1 and poisons it.",
 	},
 	lemmingsparade: {
 		name: "Lemmings Parade",
