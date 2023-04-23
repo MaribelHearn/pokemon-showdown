@@ -20182,7 +20182,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 1,
 		priority: 0,
 		flags: {defrost: 1, bypasssub: 1},
-		critRatio: 3,
+		willCrit: true,
 		selfdestruct: "always",
 		secondary: null,
 		target: "allAdjacent",
