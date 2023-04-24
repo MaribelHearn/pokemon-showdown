@@ -7057,574 +7057,762 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
     tentaquil: {
+		isNonstandard: "Fundex",
 		tier: "OU",
     },
     /*tentaquix: {
+		isNonstandard: "Fundex",
 		tier: "OU",
     },*/
 	chucknorris: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	captainfalcon: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	flandre: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	cell: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	dennis: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	dennismega: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	zalgo: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	"2012": {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	roflcopter: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	andross: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	slenderman: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	marisa: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	luigi: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	luigimrl: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	luigiweegee: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	giygas: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	matrix: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     sovietmudkip: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     satan: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     lilywhite: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     lolwutpear: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     cirno: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     cirnoachi: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     reimu: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     drrobotnik: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     leonidas: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     kingharkinian: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     yarrow: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     doomsday: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     vegeta: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     vegetasupersaiyan: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     droctogonapus: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     essej: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     daniel: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     danielzalgo: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     utsuho: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     yuyuko: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     younglink: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     link: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     linktoon: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     youngzelda: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     zelda: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     zeldasheik: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     ganondorf: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     ganondorfmega: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	suiseiseki: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	admiralackbar: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	yoda: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	darthvader: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	longcat: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	tacgnol: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	olngact: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	orlyowl: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	cats: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	raptorjesus: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	leeroyjenkins: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	remilia: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	angrybird: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	bigbrother: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	giantenemycrab: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	achmed: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	sakuya: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	swadner: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	wriggle: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	leonpowalski: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	trollface: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	eirin: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	kaguya: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
 	tenshi: {
+		isNonstandard: "Fundex",
 		tier: "OU",
 	},
     suika: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     letty: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     keine: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     keinehakutaku: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     sapenguin: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     advicegod: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     missingno: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     missingnoghost: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     missingnokabutops: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     missingnoaerodactyl: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     missingnoyellow: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     kirby: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     metaknight: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     kingdedede: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     snake: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
 	snakebusted: {
 		tier: "Illegal"
 	},
     samus: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     samusarmor: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     zeekyhbomb: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     yumemi: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     engineer: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     mokou: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     yuugi: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     komachi: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     eiki: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     phoenixwright: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     rickastley: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     darkmatter: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     zero: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     zerotwo: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     stella: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     stellanorris: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     yukari: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     yamame: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     iku: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     medicine: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     yuuka: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     hibachi: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     hibachi2: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     evaccaniadoom: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     minoriko: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     shizuha: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     alice: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     babybowser: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     bowser: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     bowserdry: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     bowsergiga: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     genjii: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     vivit: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     vivitmega: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     maribel: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     maribelmega: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     kogasa: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     meiling: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     patchouli: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     suwako: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     tesla: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     shingyoku: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     shingyokupriestess: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     shingyokuorb: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     sariel: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     serpentofchaos: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     winner: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     satori: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     koishi: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     nitori: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     byakuren: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     nue: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     ichirin: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     nyancat: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     mario: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     mariopaper: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     mariomalleo: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     boo: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     booboolussus: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     kingboo: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     bouldergeist: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     glados: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     badegg: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     pearl: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     pearllee: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     sunnymilk: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     lunachild: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     starsapphire: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     sanae: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     kanako: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     ran: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     kanzou: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     hagumanoki: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     ruscus: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     ryuuguu: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     weepinmeleon: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     venudrio: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     bloodyjitterbug: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     bluescreenofdeath: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     internetexplorer: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     inoriaizawa: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     microsoftedge: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     mozillafirefox: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     googlechrome: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     recyclebin: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     hina: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     chen: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     reisen: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     parsee: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     rin: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     daiyousei: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     konngara: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     yumeko: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     rumia: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     koakuma: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     youmu: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     mystia: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     tewi: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     aya: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     kisume: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
     chucktesta: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
 	chucktestabusted: {
 		tier: "Illegal",
 	},
     uncledolan: {
-        tier: "OU",
+		isNonstandard: "Fundex",
+		tier: "OU",
     },
 	missingnooriginal: {
 		isNonstandard: "Custom",
