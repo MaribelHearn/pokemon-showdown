@@ -198,6 +198,10 @@ export const Tags: {[id: string]: TagData} = {
 		name: "CAP NFE",
 		speciesFilter: species => species.tier === 'CAP NFE',
 	},
+	fundexou: {
+		name: "Fundex OU",
+		speciesFilter: species => species.isNonstandard === 'Fundex',
+	},
 	ag: {
 		name: "AG",
 		speciesFilter: species => species.tier === 'AG',
@@ -273,6 +277,10 @@ export const Tags: {[id: string]: TagData} = {
 	cap: {
 		name: "CAP",
 		speciesFilter: thing => thing.isNonstandard === 'CAP',
+	},
+	fundex: {
+		name: "Fundex",
+		speciesFilter: thing => thing.isNonstandard === 'Fundex',
 	},
 	custom: {
 		name: "Custom",
