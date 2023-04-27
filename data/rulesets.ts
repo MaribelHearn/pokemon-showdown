@@ -17,14 +17,6 @@ export const Rulesets: {[k: string]: FormatData} = {
 			'Obtainable', 'Team Preview', 'Sleep Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Items Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod',
 		],
 	},
-	standardfundex: {
-		effectType: 'ValidatorRule',
-		name: 'Standard Fundex',
-		desc: "The standard ruleset for all Fundex singles tiers (Ubers, OU, etc.)",
-		ruleset: [
-			'Team Preview', 'Sleep Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod',
-		],
-	},
 	standardnext: {
 		effectType: 'ValidatorRule',
 		name: 'Standard NEXT',
