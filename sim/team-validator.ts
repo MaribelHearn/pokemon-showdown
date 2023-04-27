@@ -1417,7 +1417,7 @@ export class TeamValidator {
 		// +Mythical to unban Shaymin in Gen 1, for instance.
 		let nonexistentCheck = Tags.nonexistent.genericFilter!(tierSpecies) && ruleTable.check('nonexistent');
 
-		const EXISTENCE_TAG = ['past', 'future', 'lgpe', 'unobtainable', 'cap', 'custom', 'nonexistent'];
+		const EXISTENCE_TAG = ['past', 'future', 'lgpe', 'unobtainable', 'cap', 'fundex', 'custom', 'nonexistent'];
 
 		for (const ruleid of ruleTable.tagRules) {
 			if (ruleid.startsWith('*')) continue;
@@ -1448,6 +1448,9 @@ export class TeamValidator {
 			}
 			if (tierSpecies.isNonstandard === 'CAP') {
 				return `${tierSpecies.name} is a CAP and does not exist in this game.`;
+			}
+			if (tierSpecies.isNonstandard === 'Fundex') {
+				return `${tierSpecies.name} is a Fundex Pokémon and does not exist in this game.`;
 			}
 			if (tierSpecies.isNonstandard === 'Unobtainable') {
 				return `${tierSpecies.name} is not possible to obtain in this game.`;

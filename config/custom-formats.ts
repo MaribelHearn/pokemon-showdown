@@ -8,7 +8,7 @@ export const Formats: FormatList = [
     {
 		name: "[Gen 8] Fundex OU",
 		mod: 'gen8',
-		ruleset: ['Standard Fundex', 'Dynamax Clause'],
-        banlist: ['AG', 'Uber'],
+		ruleset: ['[Gen 8] OU', '+Fundex'],
+        banlist: [],
 	},
 ];
