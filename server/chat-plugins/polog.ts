@@ -68,10 +68,6 @@ const PO_BASE64 = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAA
 //const LOG_PO = FS(`../FC/data/polog.txt`);
 let poPlayers: any = {};
 
-function formatUsername(string: string) {
-    return string.replace(/ /g, '').toLowerCase();
-}
-
 function escapeHTML(string: string) {
     return string.replace(/&/g, "&amp;").replace(/\>/g, "&gt;").replace(/</g, "&lt;");
 }
@@ -103,7 +99,7 @@ function sendPOLog(message: string) {
         }
 
         lobby.addRaw(`<div class="chat chatmessage-po"><small>${timestamp} </small><strong style="color:${color};">${PO_BASE64 + symbol}` +
-        `<span class="username" data-name="${formatUsername(name)}">${name}</span>:</strong> <em>${escapeHTML(content)}`);
+        `<span class="username" data-name="po:${name}">${name}</span>:</strong> <em>${escapeHTML(content)}`);
     } else if (type == 'j' || type == 'l') { // join or leave
         let name = chunks[3].trim();
         let symbol = '';
