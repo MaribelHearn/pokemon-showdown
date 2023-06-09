@@ -42,6 +42,7 @@ import {RoomAuth} from './user-groups';
 import {PartialModlogEntry, mainModlog} from './modlog';
 
 // connect to PO
+const psBase64 = "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC";
 const md5 = require("md5");
 const config = require("../config/config");
 const WebSocket = require("websocket").w3cwebsocket;
@@ -68,7 +69,10 @@ function connect() {
 	};
 
 	ws.onmessage = function (evt) {
-		console.log(`[WS] Received data from PO: ${evt.data}`);
+		if (!evt.data.includes(psBase64)) {
+			console.log(`[WS] Received data from PO: ${evt.data}`);
+		}
+
 		const data = evt.data.split('|');
 		const command = data[0];
 
