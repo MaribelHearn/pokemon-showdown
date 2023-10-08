@@ -9,6 +9,6 @@ export const Formats: FormatList = [
 		name: "[Gen 8] Fundex OU",
 		mod: 'gen8',
 		ruleset: ['[Gen 8] OU', '+Fundex'],
-        banlist: ['Crucibellite'],
+	        banlist: ['Crucibellite'],
 	},
 ];
