@@ -260,7 +260,8 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		ruleset: ['[Gen 8] OU', '+Fundex'],
-		banlist: ['Crucibellite'],
+		banlist: ['OU'],
+		unbanlist: ['Fundex'],
 	},
 	{
 		name: "[Gen 8] CAP",

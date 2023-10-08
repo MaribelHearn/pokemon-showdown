@@ -167,9 +167,6 @@ export const Rulesets: {[k: string]: FormatData} = {
 			return [];
 		},
 	},
-	fundex: {
-		
-	},
 	obtainablemoves: {
 		effectType: 'ValidatorRule',
 		name: 'Obtainable Moves',
