@@ -259,7 +259,7 @@ export const Formats: FormatList = [
 		name: "[Gen 8] Fundex",
 
 		mod: 'gen8',
-		ruleset: ['[Gen 8] OU', '+Fundex'],
+		ruleset: ['[Gen 8] OU'],
 		banlist: ['OU'],
 		unbanlist: ['Fundex'],
 	},
