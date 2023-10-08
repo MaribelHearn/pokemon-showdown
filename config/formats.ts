@@ -255,6 +255,13 @@ export const Formats: FormatList = [
 			'Archen', 'Farfetch\u2019d-Galar', 'Scorbunny', 'Shellder', 'Wingull',
 		],
 	},
+    {
+		name: "[Gen 8] Fundex",
+
+		mod: 'gen8',
+		ruleset: ['[Gen 8] OU', '+Fundex'],
+		banlist: ['Crucibellite'],
+	},
 	{
 		name: "[Gen 8] CAP",
 		threads: [
