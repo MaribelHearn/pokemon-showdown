@@ -46,7 +46,7 @@ const psBase64 = "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC"
 const md5 = require("md5");
 const config = require("../config/config");
 const WebSocket = require("websocket").w3cwebsocket;
-const reconnectTimer = 5000;
+//const reconnectTimer = 5000;
 let poOnline = false;
 let interval : NodeJS.Timeout;
 let ws : WebSocket;
@@ -62,10 +62,9 @@ function connect() {
 	};
 
 	ws.onclose = function () {
-		console.log("[WS] Connection to PO server lost, attempting reconnection");
-		
+		console.log("[WS] Connection to PO server lost"); //, attempting reconnection
 		poOnline = false;
-		interval = setInterval(connect, reconnectTimer);
+		//interval = setInterval(connect, reconnectTimer);
 	};
 
 	ws.onmessage = function (evt) {
