@@ -107,22 +107,22 @@ const config = require("../config/config");
 const WebSocket = require("websocket").w3cwebsocket;
 //const reconnectTimer = 5000;
 let poOnline = false;
-//let interval : NodeJS.Timeout;
+let interval : NodeJS.Timeout;
 let ws : WebSocket;
-//let poPlayers: any = {};
+let poPlayers: any = {};
 
-/*function escapeHTML(string: string) {
+function escapeHTML(string: string) {
     return string.replace(/&/g, "&amp;").replace(/\>/g, "&gt;").replace(/</g, "&lt;");
 }
 
 function sendPOLog(message: string) {
 	const lobby = Rooms.rooms.get('lobby') as BasicRoom;
-    const timestamp = chunks[0];
-    //const timestamp = '[' + Chat.toTimestamp(new Date()).split(' ')[1] + ']';
+    //const timestamp = chunks[0];
+    const timestamp = '[' + Chat.toTimestamp(new Date()).split(' ')[1] + ']';
 
-	let color = data[2];
-	let name = data[3];
-	let content = data[4];
+	let name = message.split(':')[0]; //chunks[3];
+	let color = poPlayers[name].color; //chunks[2];
+	//let content = chunks[4];
 	let symbol = '';
 	let level: any = 0;
 
@@ -132,18 +132,11 @@ function sendPOLog(message: string) {
 		name = name.slice(2);
 	}
 
-	if (!poPlayers.hasOwnProperty(name)) {
-		poPlayers[name] = {};
-		poPlayers[name].color = data[2];
-		poPlayers[name].auth = (level > 6 ? 0 : level);
-	}
-
 	lobby.addRaw(`<div class="chat chatmessage-po"><small>${timestamp} </small><strong style="color:${color};">${PO_BASE64 + symbol}` +
-	`<span class="username" data-name="po:${name}">${name}</span>:</strong> <em>${escapeHTML(content)}`);
-	message = message.replace("[#Showdown Lobby] ", "");
-	lobby.addRaw(message);
+	`<span class="username" data-name="po:${name}">${name}</span>:</strong> <em>${escapeHTML(message)}`);
+	//lobby.addRaw(message);
 	lobby.update();
-}*/
+}
 
 function connect() {
 	ws = new WebSocket(`ws://${config.poserver}`);
@@ -152,7 +145,7 @@ function connect() {
 		console.log("[WS] PO server is online");
 		poOnline = true;
 		//app.rooms.lobby.receive("Connection to the Pokemon Online server established!");
-		//clearInterval(interval);
+		clearInterval(interval);
 	};
 
 	ws.onclose = function () {
@@ -175,14 +168,21 @@ function connect() {
 			ws.send(`auth|${hash}`);
 		}
 
-		/*if (command == "chat" || command == "msg") {
+		if (command == "chat" || command == "msg") {
 			data.splice(0, 1);
 			const message = data.join('|');
+
+			if (message.startsWith("join")) {
+				const name = data[1];
+				const auth = data[2];
+				const color = data[3];
+				poPlayers[name] = {"auth": auth, "color": color};
+			}
 
 			if (message.startsWith("[#Showdown Lobby]") && !message.includes(psBase64)) {
 				sendPOLog(message);
 			}
-		}*/
+		}
 	};
 
 	ws.onerror = function (err) {
