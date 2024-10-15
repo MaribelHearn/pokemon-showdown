@@ -119,19 +119,18 @@ function sendPOLog(message: string) {
 	const lobby = Rooms.rooms.get('lobby') as BasicRoom;
     //const timestamp = chunks[0];
     const timestamp = '[' + Chat.toTimestamp(new Date()).split(' ')[1] + ']';
-
+	message = message.replace("[#Showdown Lobby] ", "");
 	let name = message.split(':')[0]; //chunks[3];
-	let color = poPlayers[name].color; //chunks[2];
-	//let content = chunks[4];
-	let symbol = '';
-	let level: any = 0;
+	message = message.split(':')[1];
+	let color = "black";
+	let symbol = "";
 
-	if (name[0] == '+') {
-		symbol = '<small>+</small>';
-		level = name[1];
-		name = name.slice(2);
+	if (poPlayers[name]) {
+		color = poPlayers[name].color; //chunks[2];
+		symbol = poPlayers[name].symbol;
 	}
 
+	//let content = chunks[4];
 	lobby.addRaw(`<div class="chat chatmessage-po"><small>${timestamp} </small><strong style="color:${color};">${PO_BASE64 + symbol}` +
 	`<span class="username" data-name="po:${name}">${name}</span>:</strong> <em>${escapeHTML(message)}`);
 	//lobby.addRaw(message);
@@ -171,15 +170,47 @@ function connect() {
 		if (command == "chat" || command == "msg") {
 			data.splice(0, 1);
 			const message = data.join('|');
+			const lobby = Rooms.rooms.get('lobby') as BasicRoom;
 
-			if (message.startsWith("join")) {
+			if (command == "msg" && message.startsWith("login")) {
 				const name = data[1];
 				const auth = data[2];
 				const color = data[3];
-				poPlayers[name] = {"auth": auth, "color": color};
+				let symbol = '';
+			
+				if (auth % 256 > 0) {
+					symbol = '<small>+</small>';
+				}
+
+				poPlayers[name] = {"symbol": symbol, "color": color};
 			}
 
-			if (message.startsWith("[#Showdown Lobby]") && !message.includes(psBase64)) {
+			if (command == "msg" && message.startsWith("logout")) {
+				const name = data[1];
+				delete poPlayers[name];
+			}
+
+			if (command == "msg" && (message.startsWith("join") || message.startsWith("leave"))) {
+				const name = data[1];
+				let symbol = poPlayers[name].symbol ? poPlayers[name].symbol : '';
+				lobby.addRaw(`<div class="message"><small style="color: #555555;">${PO_BASE64}${symbol}${name} ${message.startsWith("join") ? " joined" : " left"}`);
+				lobby.update();
+			}
+
+			if (command == "msg" && message.startsWith("battle")) {
+				const name1 = data[1];
+				const name2 = data[2];
+				const tier = data[3];
+				const color1 = poPlayers[name1] ? poPlayers[name1].color : "black";
+				const color2 = poPlayers[name2] ? poPlayers[name2].color : "black";
+				const symbol1 = poPlayers[name1] ? poPlayers[name1].symbol : "";
+				const symbol2 = poPlayers[name2] ? poPlayers[name2].symbol : "";
+				lobby.addRaw(`<a href="#" class="ilink">${PO_BASE64}${tier} battle started between <strong style="color:${color1};">${symbol1}${name1}</strong>` +
+						` and <strong style="color:${color2};">${symbol2}${name2}</strong>.</a>`);
+				lobby.update();
+			}
+
+			if (command == "chat" && message.startsWith("[#Showdown Lobby]") && !message.includes(psBase64)) {
 				sendPOLog(message);
 			}
 		}
