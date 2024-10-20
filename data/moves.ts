@@ -21947,7 +21947,7 @@ export const Moves: {[moveid: string]: MoveData} = {
     thunderhand: {
         num: 2120,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 95,
 		category: "Physical",
 		name: "Thunderhand",
 		pp: 10,
@@ -22230,7 +22230,7 @@ export const Moves: {[moveid: string]: MoveData} = {
     firebrand: {
         num: 2134,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 95,
 		category: "Physical",
 		name: "Firebrand",
 		pp: 10,
