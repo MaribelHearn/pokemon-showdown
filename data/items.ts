@@ -7448,4 +7448,27 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2023,
         gen: 8,
     },
+	glitchyseed: {
+		name: "Glitchy Seed",
+		spritenum: 765,
+		fling: {
+			basePower: 10,
+		},
+		onStart(pokemon) {
+			if (!pokemon.ignoringItem() && this.field.isTerrain('glitchyterrain')) {
+				pokemon.useItem();
+			}
+		},
+		onAnyTerrainStart() {
+			const pokemon = this.effectState.target;
+			if (this.field.isTerrain('glitchyterrain')) {
+				pokemon.useItem();
+			}
+		},
+		boosts: {
+			spd: 1,
+		},
+		num: 2024,
+		gen: 7,
+	},
 };

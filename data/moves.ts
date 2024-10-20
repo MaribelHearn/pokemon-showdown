@@ -21778,15 +21778,16 @@ export const Moves: {[moveid: string]: MoveData} = {
 			onSideStart(side) {
 				this.add('-sidestart', side, 'move: Pixie Dust');
 			},
-			onSwitchIn(pokemon) {
+			onEntryHazard(pokemon) {
                 if (pokemon.hasType('Fairy')) {
 					this.add('-sideend', pokemon.side, 'move: Pixie Dust', '[of] ' + pokemon);
 					pokemon.side.removeSideCondition('pixiedust');
 				} else if (pokemon.hasItem('heavydutyboots')) {
                     return;
                 }
-				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('pixiedust')), -6, 6);
-				//this.boost({eva: -1}, pokemon);
+				//const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('pixiedust')), -6, 6);
+				this.add('-activate', pokemon, 'move: Pixie Dust');
+				this.boost({evasion: -1}, pokemon, this.effectState.source, this.dex.getActiveMove('pixiedust'));
 			},
 		},
         secondary: null,
@@ -22419,7 +22420,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Laser Beam",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		recoil: [1, 4],
 		secondary: null,
 		target: "normal",
