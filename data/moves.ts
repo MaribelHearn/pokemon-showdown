@@ -21784,10 +21784,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 					pokemon.side.removeSideCondition('pixiedust');
 				} else if (pokemon.hasItem('heavydutyboots')) {
                     return;
-                }
-				//const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('pixiedust')), -6, 6);
-				this.add('-activate', pokemon, 'move: Pixie Dust');
-				this.boost({evasion: -1}, pokemon, this.effectState.source, this.dex.getActiveMove('pixiedust'));
+                } else {
+					this.add('-activate', pokemon, 'move: Pixie Dust');
+					this.boost({evasion: -1}, pokemon, this.effectState.source, this.dex.getActiveMove('pixiedust'));
+				}
 			},
 		},
         secondary: null,
