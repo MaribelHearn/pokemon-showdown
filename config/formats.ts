@@ -510,6 +510,13 @@ export const Formats: FormatList = [
 		banlist: ['All Pokemon'],
 		unbanlist: ['Fundex'],
 	},
+    {
+		name: "[Gen 8] Fundex Pure Hackmons",
+		mod: 'gen8',
+		ruleset: ['-Nonexistent', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
+		banlist: ['Magikarp'],
+		unbanlist: ['Fundex'],
+	},
 	{
 		name: "[Gen 8] National Dex",
 		threads: [
@@ -1880,13 +1887,6 @@ export const Formats: FormatList = [
 			}
 			pokemon.m.innates = undefined;
 		},
-	},
-    {
-		name: "[Gen 8] Fundex Pure Hackmons",
-		mod: 'gen8',
-		ruleset: ['-Nonexistent', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
-		banlist: ['Magikarp'],
-		unbanlist: ['Fundex'],
 	},
 	{
 		name: "[Gen 8] Pure Hackmons",
