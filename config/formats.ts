@@ -1881,6 +1881,13 @@ export const Formats: FormatList = [
 			pokemon.m.innates = undefined;
 		},
 	},
+    {
+		name: "[Gen 8] Fundex Pure Hackmons",
+		mod: 'gen8',
+		ruleset: ['-Nonexistent', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
+		banlist: ['Magikarp'],
+		unbanlist: ['Fundex'],
+	},
 	{
 		name: "[Gen 8] Pure Hackmons",
 		desc: `Anything that can be hacked in-game and is usable in local battles is allowed.`,
