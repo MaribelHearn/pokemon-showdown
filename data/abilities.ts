@@ -4509,13 +4509,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	insanity: {
 		// This should be applied directly to the stat as opposed to chaining with the others
 		onModifyAtkPriority: 5,
-		onModifySpA(atk) {
-			return this.modify(atk, 1.5);
+		onModifySpA(spa) {
+			return this.modify(spa, 1.5);
 		},
 		onSourceModifyAccuracyPriority: 7,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
 			if (move.category === 'Special' && typeof accuracy === 'number') {
-				return accuracy * 0.8;
+				return this.chainModify([3277, 4096]);
 			}
 		},
 		name: "Insanity",

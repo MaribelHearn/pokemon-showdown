@@ -16700,7 +16700,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     lilywhite: {
 		num: 2017,
 		name: "Lily White",
-		types: ["Normal", "Fairy"],
+		types: ["Fairy"],
 		gender: "F",
 		baseStats: {hp: 120, atk: 60, def: 100, spa: 60, spd: 100, spe: 60},
 		abilities: {0: "Spring Fragrance", H: "Aroma Veil"},
@@ -16848,9 +16848,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
 	},
-    essej: {
+    acetrainer: {
 		num: 2028,
-		name: "Essej",
+		name: "Ace Trainer",
 		types: ["Dark", "Fighting"],
         gender: "M",
 		baseStats: {hp: 95, atk: 125, def: 90, spa: 75, spd: 90, spe: 125},
