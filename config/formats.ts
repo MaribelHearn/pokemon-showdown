@@ -255,14 +255,6 @@ export const Formats: FormatList = [
 			'Archen', 'Farfetch\u2019d-Galar', 'Scorbunny', 'Shellder', 'Wingull',
 		],
 	},
-    {
-		name: "[Gen 8] Fundex",
-
-		mod: 'gen8',
-		ruleset: ['[Gen 8] OU'],
-		banlist: ['OU'],
-		unbanlist: ['Fundex'],
-	},
 	{
 		name: "[Gen 8] CAP",
 		threads: [
@@ -510,6 +502,13 @@ export const Formats: FormatList = [
 
 	{
 		section: "National Dex",
+	},
+    {
+		name: "[Gen 8] Fundex",
+		mod: 'gen8',
+		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		banlist: ['All Pokemon'],
+		unbanlist: ['Fundex'],
 	},
 	{
 		name: "[Gen 8] National Dex",
