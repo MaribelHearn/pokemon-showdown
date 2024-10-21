@@ -513,7 +513,7 @@ export const Formats: FormatList = [
     {
 		name: "[Gen 8] Fundex Pure Hackmons",
 		mod: 'gen8',
-		ruleset: ['-Nonexistent', 'Standard NatDex', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
+		ruleset: ['-Nonexistent', 'Standard NatDex'],
 		banlist: ['Magikarp'],
 		unbanlist: ['Fundex'],
 	},
