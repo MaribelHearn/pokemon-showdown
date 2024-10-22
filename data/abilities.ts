@@ -4604,6 +4604,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
     negativezone: {
 		onStart(source) {
+			this.add('-ability', source, 'Negative Zone');
 			this.field.addPseudoWeather('magicroom');
 		},
 		name: "Negative Zone",
@@ -4824,6 +4825,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
     },
     wonderland: {
 		onStart(source) {
+			this.add('-ability', source, 'Wonderland');
 			this.field.addPseudoWeather('wonderroom');
 		},
 		name: "Wonderland",
