@@ -1699,7 +1699,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Inner Focus', '[of] ' + target);
 			}
 			if (effect.name === 'Imposing') {
-				delete boost.atk;
+				delete boost.spa;
 				this.add('-fail', target, 'unboost', 'Sp. Atk.', '[from] ability: Inner Focus', '[of] ' + target);
 			}
 		},
@@ -2462,7 +2462,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Oblivious', '[of] ' + target);
 			}
 			if (effect.name === 'Imposing') {
-				delete boost.atk;
+				delete boost.spa;
 				this.add('-fail', target, 'unboost', 'Sp. Atk.', '[from] ability: Oblivious', '[of] ' + target);
 			}
 		},
@@ -2527,7 +2527,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Own Tempo', '[of] ' + target);
 			}
 			if (effect.name === 'Imposing') {
-				delete boost.atk;
+				delete boost.spa;
 				this.add('-fail', target, 'unboost', 'Sp. Atk', '[from] ability: Own Tempo', '[of] ' + target);
 			}
 		},
@@ -3240,7 +3240,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Scrappy', '[of] ' + target);
 			}
 			if (effect.name === 'Imposing') {
-				delete boost.atk;
+				delete boost.spa;
 				this.add('-fail', target, 'unboost', 'Sp. Atk.', '[from] ability: Scrappy', '[of] ' + target);
 			}
 		},
