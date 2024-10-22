@@ -1698,6 +1698,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Inner Focus', '[of] ' + target);
 			}
+			if (effect.name === 'Imposing') {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Sp. Atk.', '[from] ability: Inner Focus', '[of] ' + target);
+			}
 		},
 		isBreakable: true,
 		name: "Inner Focus",
@@ -2457,6 +2461,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Oblivious', '[of] ' + target);
 			}
+			if (effect.name === 'Imposing') {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Sp. Atk.', '[from] ability: Oblivious', '[of] ' + target);
+			}
 		},
 		isBreakable: true,
 		name: "Oblivious",
@@ -2517,6 +2525,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (effect.name === 'Intimidate') {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Own Tempo', '[of] ' + target);
+			}
+			if (effect.name === 'Imposing') {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Sp. Atk', '[from] ability: Own Tempo', '[of] ' + target);
 			}
 		},
 		isBreakable: true,
@@ -2942,6 +2954,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (effect && effect.id === 'intimidate') {
 				this.boost({spe: 1});
 			}
+			if (effect && effect.id === 'imposing') {
+				this.boost({spe: 1});
+			}
 		},
 		name: "Rattled",
 		rating: 1.5,
@@ -3223,6 +3238,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (effect.name === 'Intimidate') {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Scrappy', '[of] ' + target);
+			}
+			if (effect.name === 'Imposing') {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Sp. Atk.', '[from] ability: Scrappy', '[of] ' + target);
 			}
 		},
 		name: "Scrappy",
@@ -4593,7 +4612,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.add('-fieldstart', 'move: Magic Room', '[of] ' + source);
 		},
         onEnd(source) {
-            this.add('-fieldend', 'move: Magic Room', '[of]' + source);
+			this.field.removePseudoWeather('magicroom');
         },
 		name: "Negative Zone",
 		rating: 4,
@@ -4821,7 +4840,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.add('-fieldstart', 'move: Wonder Room', '[of] ' + source);
 		},
         onEnd(source) {
-            this.add('-fieldend', 'move: Wonder Room', '[of]' + source);
+			this.add('-fieldend', 'move: Wonder Room', '[of]' + source);
+			this.field.removePseudoWeather('wonderroom');
         },
 		name: "Wonderland",
 		rating: 4,

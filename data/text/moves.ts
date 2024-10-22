@@ -7534,7 +7534,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
     glitchyterrain: {
         name: "Glitchy Terrain",
-		desc: "For 5 turns, the terrain becomes Glitchy Terrain. During the effect, the power of ???-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot fall asleep; Pokemon already asleep do not wake up. Grounded Pokemon cannot become affected by Yawn or fall asleep from its effect. Camouflage transforms the user into a ??? type, Nature Power becomes Super Glitch, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Glitchy Terrain.",
+		desc: "For 5 turns, the terrain becomes Glitchy Terrain. During the effect, the power of ???-type attacks made by grounded Pokemon is multiplied by 1.3. Grounded Pokemon that are not ???-type will take 1/16th of their health in damage every turn. Camouflage transforms the user into a ??? type, Nature Power becomes Super Glitch, and Secret Power has a 30% chance to cause confusion. Fails if the current terrain is Glitchy Terrain.",
 		shortDesc: "5 turns. Grounded: +??? power, damage non-???.",
 	},
 	rainbowufosofterror: {
