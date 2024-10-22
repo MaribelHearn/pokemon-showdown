@@ -4604,16 +4604,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
     negativezone: {
 		onStart(source) {
-			if (this.field.pseudoWeather['magicroom']) {
-				this.add('-fieldend', 'move: Magic Room', '[of]' + source);
-				return;
-			}
-
-			this.add('-fieldstart', 'move: Magic Room', '[of] ' + source);
+			this.field.addPseudoWeather('magicroom');
 		},
-        onEnd(source) {
-			this.field.removePseudoWeather('magicroom');
-        },
 		name: "Negative Zone",
 		rating: 4,
         num: 2006,
@@ -4832,17 +4824,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
     },
     wonderland: {
 		onStart(source) {
-			if (this.field.pseudoWeather['wonderroom']) {
-				this.add('-fieldend', 'move: Wonder Room', '[of]' + source);
-				return;
-			}
-
-			this.add('-fieldstart', 'move: Wonder Room', '[of] ' + source);
+			this.field.addPseudoWeather('wonderroom');
 		},
-        onEnd(source) {
-			this.add('-fieldend', 'move: Wonder Room', '[of]' + source);
-			this.field.removePseudoWeather('wonderroom');
-        },
 		name: "Wonderland",
 		rating: 4,
         num: 2017,
