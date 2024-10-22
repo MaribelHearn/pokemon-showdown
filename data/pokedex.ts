@@ -16464,6 +16464,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 90,
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
+		gen: 8,
 	},
     /*tentaquix: {
 		num: 2000,
