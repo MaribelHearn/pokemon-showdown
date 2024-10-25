@@ -4517,7 +4517,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         onResidualOrder: 26,
 		onResidualSubOrder: 1,
 		onResidual(pokemon) {
-			if (pokemon.activeTurns) {
+			if (pokemon.activeTurns % 2 == 0) {
 				this.boost({atk: 1});
 			}
 		},
@@ -4671,7 +4671,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.boost(boost);
 		},
 		name: "Angsty",
-		rating: 5,
+		rating: 3,
 		num: 2009,
     },
     sharpshooter: {
