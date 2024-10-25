@@ -16577,7 +16577,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Steel", "Flying"],
 		gender: "N",
 		baseStats: {hp: 70, atk: 86, def: 106, spa: 96, spd: 47, spe: 125},
-		abilities: {0: "Full-Metal Body", H: "Heavy Metal"},
+		abilities: {0: "Full Metal Body", H: "Heavy Metal"},
 		weightkg: 150,
 		color: "White",
 		eggGroups: ["Undiscovered"],
