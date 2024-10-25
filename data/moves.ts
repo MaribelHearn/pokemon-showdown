@@ -22444,22 +22444,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 				}
 				return 5;
 			},
-			onTryHitPriority: 4,
-			onTryHit(target, source, effect) {
-				if (effect && (effect.priority <= 0.1 || effect.target === 'self')) {
-					return;
-				}
-				if (target.isSemiInvulnerable() || target.isAlly(source)) return;
-				if (!target.isGrounded()) {
-					const baseMove = this.dex.moves.get(effect.id);
-					if (baseMove.priority > 0) {
-						this.hint("Glitchy Terrain doesn't affect Pokémon immune to Ground.");
-					}
-					return;
-				}
-				this.add('-activate', target, 'move: Glitchy Terrain');
-				return null;
-			},
 			onBasePowerPriority: 6,
 			onBasePower(basePower, attacker, defender, move) {
 				if (move.type === '???' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
