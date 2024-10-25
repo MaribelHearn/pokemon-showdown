@@ -20033,9 +20033,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 255,
 		category: "Physical",
 		name: "explod",
-		pp: 1,
+		pp: 5,
 		priority: 0,
 		flags: {defrost: 1, bypasssub: 1},
+		condition: {
+			onStart(pokemon) {
+				this.add('-activate', pokemon, 'explod');
+			},
+		},
 		willCrit: true,
 		selfdestruct: "always",
 		secondary: null,
