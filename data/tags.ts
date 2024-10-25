@@ -131,6 +131,11 @@ export const Tags: {[id: string]: TagData} = {
 		desc: "Boosted 1.5x by Laser Mouth.",
 		moveFilter: move => 'beam' in move.flags,
 	},
+	elemental: {
+		name: "Elemental",
+		desc: "Boosted 1.2x by Elementalist.",
+		moveFilter: move => move.type == 'Fire' || move.type == 'Water' || move.type == 'Electric' || move.type == 'Ground',
+	},
 
 	// Tiers
 	// -----
