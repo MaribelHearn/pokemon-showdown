@@ -2418,6 +2418,10 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Unknownium Z",
 		desc: "If holder has a ??? move, this item allows it to use a ??? Z-Move.",
     },
+    glitchyseed: {
+        name: "Glitchy Seed",
+		desc: "If the terrain is Glitchy Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+    },
 
 	// CAP items
 
