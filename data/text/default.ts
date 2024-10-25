@@ -333,7 +333,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		block: "  [POKEMON] is protected by the Psychic Terrain!",
 	},
 	glitchyterrain: {
-		start: "  Glitches started occuring in the battlefield!",
+		start: "  Glitches started occurring in the battlefield!",
 		end: "  The glitchy effects disappeared from the battlefield!",
 		block: "  [POKEMON] glitched out and avoided the move!",
 	},
