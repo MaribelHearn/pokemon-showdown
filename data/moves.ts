@@ -20036,10 +20036,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {defrost: 1, bypasssub: 1},
-		condition: {
-			onStart(pokemon) {
-				this.add('-activate', pokemon, 'explod');
-			},
+		onUseMoveMessage(pokemon, target, move) {
+			this.add('-activate', pokemon, 'move: explod');
 		},
 		willCrit: true,
 		selfdestruct: "always",
