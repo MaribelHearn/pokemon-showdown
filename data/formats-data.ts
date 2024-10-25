@@ -7192,15 +7192,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    essej: {
+    acetrainer: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    daniel: {
+    wake: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    danielzalgo: {
+    wakecorrupted: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7655,11 +7655,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    pearl: {
+    wiggler: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    pearllee: {
+    wigglerangry: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
