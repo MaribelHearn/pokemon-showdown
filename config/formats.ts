@@ -19,6 +19,26 @@ The column value will be ignored for repeat sections.
 
 export const Formats: FormatList = [
 
+	// Fundex
+	///////////////////////////////////////////////////////////////////
+	{
+		section: "Fundex",
+	},
+    {
+		name: "[Gen 8] Fundex",
+		mod: 'gen8',
+		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		banlist: ['Magikarp'],
+		unbanlist: ['Fundex'],
+	},
+    {
+		name: "[Gen 8] Fundex Pure Hackmons",
+		mod: 'gen8',
+		ruleset: ['-Nonexistent', 'Standard NatDex'],
+		banlist: ['Magikarp'],
+		unbanlist: ['Fundex'],
+	},
+
 	// Sw/Sh Singles
 	///////////////////////////////////////////////////////////////////
 
@@ -502,20 +522,6 @@ export const Formats: FormatList = [
 
 	{
 		section: "National Dex",
-	},
-    {
-		name: "[Gen 8] Fundex",
-		mod: 'gen8',
-		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
-		banlist: ['Magikarp'],
-		unbanlist: ['Fundex'],
-	},
-    {
-		name: "[Gen 8] Fundex Pure Hackmons",
-		mod: 'gen8',
-		ruleset: ['-Nonexistent', 'Standard NatDex'],
-		banlist: ['Magikarp'],
-		unbanlist: ['Fundex'],
 	},
 	{
 		name: "[Gen 8] National Dex",
