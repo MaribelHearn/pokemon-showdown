@@ -134,7 +134,7 @@ export const Tags: {[id: string]: TagData} = {
 	elemental: {
 		name: "Elemental",
 		desc: "Boosted 1.2x by Elementalist.",
-		moveFilter: move => move.type == 'Fire' || move.type == 'Water' || move.type == 'Electric' || move.type == 'Ground',
+		moveFilter: move => (move.type == 'Fire' || move.type == 'Water' || move.type == 'Electric' || move.type == 'Ground') && move.category !== 'Status',
 	},
 
 	// Tiers

@@ -22394,4 +22394,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "???",
 	},
+	unrealunraveling: {
+		num: 2144,
+		accuracy: true,
+		basePower: 1,
+		category: "Physical",
+		name: "Unreal Unraveling",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "unknowniumz",
+		secondary: null,
+		target: "normal",
+		type: "???",
+	}
 };
