@@ -403,6 +403,8 @@ function generateSSBMoveInfo(sigMove: Move, dex: ModdedDex) {
 		if (sigMove.flags['recharge']) details["&#10003; Has recharge turn"] = "";
 		if (sigMove.flags['gravity']) details["&#10007; Suppressed by Gravity"] = "";
 		if (sigMove.flags['dance']) details["&#10003; Dance move"] = "";
+		if (sigMove.flags['arrow']) details["&#10003; Arrow move"] = "";
+		if (sigMove.flags['beam']) details["&#10003; Beam move"] = "";
 
 		if (sigMove.zMove?.basePower) {
 			details["Z-Power"] = String(sigMove.zMove.basePower);
