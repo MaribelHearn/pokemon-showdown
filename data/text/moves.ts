@@ -7551,4 +7551,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Enigma Attack",
 		shortDesc: "No additional effect.",
 	},
+	unrealunraveling: {
+		name: "Unreal Unraveling",
+		shortDesc: "Power is equal to the base move's Z-Power.",
+	},
 };
