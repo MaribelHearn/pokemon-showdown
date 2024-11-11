@@ -83745,7 +83745,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			perishsong: ["8L1"],
 			relicsong: ["8L1"],
 			sing: ["8L1"],
-			faintattack: ["8L1"],
+			feintattack: ["8L1"],
 			transform: ["8L1"],
 			darkpulse: ["8L1", "8M"],
 			nightmare: ["8L1"],
