@@ -16799,6 +16799,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Battle Armor", H: "Moxie"},
 		weightkg: 250,
 		color: "Brown",
+		evos: ["Doomsday"],
 		eggGroups: ["Undiscovered"],
 	},
     doomsday: {
@@ -16810,6 +16811,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Battle Armor", H: "Moxie"},
 		weightkg: 350,
 		color: "Brown",
+		prevo: "Yarrow",
+		evoType: "trade",
+		evoItem: "Protector",
 		eggGroups: ["Undiscovered"],
 	},
     vegeta: {
@@ -16917,6 +16921,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Justified", H: "Sharpshooter"},
 		weightkg: 45,
 		color: "Green",
+		evos: ["Link"],
 		eggGroups: ["Undiscovered"],
 	},
     link: {
@@ -16928,6 +16933,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Justified", H: "Sharpshooter"},
 		weightkg: 90,
 		color: "Green",
+		prevo: "Young Link",
+		evoLevel: 34,
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Link-Toon"],
 		formeOrder: ["Link", "Link-Toon"],
@@ -16954,6 +16961,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Synchronize", H: "Sharpshooter"},
 		weightkg: 45,
 		color: "Pink",
+		evos: ["Zelda"],
 		eggGroups: ["Undiscovered"],
 	},
     zelda: {
@@ -16965,6 +16973,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Synchronize", H: "Sharpshooter"},
 		weightkg: 45,
 		color: "Pink",
+		prevo: "Young Zelda",
+		evoLevel: 34,
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Zelda-Sheik"],
 		formeOrder: ["Zelda", "Zelda-Sheik"],
@@ -17152,6 +17162,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Anger Point", H: "Big Pecks"},
 		weightkg: 45,
 		color: "Red",
+		evos: ["Big Brother"],
 		eggGroups: ["Undiscovered"],
 	},
 	bigbrother: {
@@ -17163,6 +17174,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Justified", H: "Big Pecks"},
 		weightkg: 45,
 		color: "Red",
+		prevo: "Angry Bird",
+		evoLevel: 30,
 		eggGroups: ["Undiscovered"],
 	},
 	giantenemycrab: {
@@ -17776,6 +17789,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Shell Armor", 1: "Sturdy", H: "Sheer Force"},
 		weightkg: 45,
 		color: "Yellow",
+		evos: ["Bowser"],
 		eggGroups: ["Undiscovered"],
     },
     bowser: {
@@ -17787,6 +17801,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Shell Armor", 1: "Sturdy", H: "Sheer Force"},
 		weightkg: 150,
 		color: "Yellow",
+		prevo: "Baby Bowser",
+		evoLevel: 40,
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Bowser-Dry", "Bowser-Giga"],
 		formeOrder: ["Bowser", "Bowser-Dry", "Bowser-Giga"],
@@ -18130,6 +18146,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Get Together", H: "Get Together"},
 		weightkg: 0.1,
 		color: "White",
+		evos: ["King Boo", "Bouldergeist"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Boo-Boolussus"],
 		formeOrder: ["Boo", "Boo-Boolussus"],
@@ -18156,6 +18173,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Levitate", H: "Levitate"},
 		weightkg: 0.1,
 		color: "White",
+		prevo: "Boo",
+		evoType: "trade",
+		evoItem: "King's Rock",
 		eggGroups: ["Undiscovered"],
     },
     bouldergeist: {
@@ -18167,6 +18187,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Rock Head", H: "Weak Armor"},
 		weightkg: 150,
 		color: "Brown",
+		prevo: "Boo",
+		evoType: "trade",
+		evoItem: "Protector",
 		eggGroups: ["Undiscovered"],
     },
     glados: {
@@ -18379,6 +18402,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Web Browser", 1: "Download", H: "Slow Start"},
 		weightkg: 0.1,
 		color: "Blue",
+		evos: ["Inori Aizawa", "Microsoft Edge"],
 		eggGroups: ["Undiscovered"],
     },
     inoriaizawa: {
@@ -18390,6 +18414,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Web Browser", 1: "Download", H: "Web Browser"},
 		weightkg: 45,
 		color: "Blue",
+		prevo: "Internet Explorer",
+		evoType: "useItem",
+		evoItem: "Dawn Stone",
 		eggGroups: ["Undiscovered"],
     },
     microsoftedge: {
@@ -18401,6 +18428,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Web Browser", 1: "Download", H: "Rough Skin"},
 		weightkg: 0.1,
 		color: "Blue",
+		prevo: "Internet Explorer",
+		evoType: "trade",
+		evoItem: "Up-Grade",
 		eggGroups: ["Undiscovered"],
     },
     mozillafirefox: {
