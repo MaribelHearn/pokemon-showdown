@@ -17612,6 +17612,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Levitate", 1: "Liquid Ooze", H: "Gooey"},
 		weightkg: 15,
 		color: "Black",
+		evos: ["Zero", "Zero-Two"],
 		eggGroups: ["Undiscovered"],
     },
     zero: {
@@ -17622,6 +17623,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Levitate", 1: "Liquid Ooze", H: "Gooey"},
 		weightkg: 150,
 		color: "White",
+		prevo: "Dark Matter",
+		evoType: "useItem",
+		evoItem: "Dusk Stone",
 		eggGroups: ["Undiscovered"],
     },
     zerotwo: {
@@ -17632,6 +17636,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Levitate", 1: "Liquid Ooze", H: "Gooey"},
 		weightkg: 150,
 		color: "White",
+		prevo: "Dark Matter",
+		evoType: "useItem",
+		evoItem: "Shiny Stone",
 		eggGroups: ["Undiscovered"],
     },
     stella: {
