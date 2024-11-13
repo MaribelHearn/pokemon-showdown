@@ -16751,7 +16751,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Reimu",
 		types: ["Normal", "Psychic"],
         gender: "F",
-		baseStats: {hp: 90, atk: 100, def: 95, spa: 85, spd: 90, spe: 80},
+		baseStats: {hp: 90, atk: 100, def: 95, spa: 85, spd: 100, spe: 70},
 		abilities: {0: "Serene Grace", H: "Regenerator"},
 		weightkg: 45,
 		color: "Red",
