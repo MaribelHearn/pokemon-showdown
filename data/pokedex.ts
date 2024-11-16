@@ -16552,7 +16552,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	zalgo: {
 		num: 2006,
 		name: "Zalgo",
-		types: ["Unknown"],
+		types: ["???"],
 		gender: "N",
 		baseStats: {hp: 79, atk: 113, def: 71, spa: 127, spd: 71, spe: 109},
 		abilities: {0: "Intimidate", H: "Corruption"},
