@@ -3558,11 +3558,11 @@ export const PokedexText: {[k: string]: PokedexText} = {
     essej: {
         name: "Essej",
     },
-    daniel: {
-        name: "Daniel",
+    wake: {
+        name: "Wake",
     },
-    danielzalgo: {
-        name: "Officer DanZalgo",
+    wakecorrupted: {
+        name: "Corrupted Wake",
     },
     utsuho: {
         name: "Utsuho",
@@ -3811,13 +3811,13 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "VIVIT",
     },
     vivitmega: {
-        name: "Mega VIVIT",
+        name: "Angel VIVIT",
     },
     maribel: {
         name: "Maribel",
     },
     maribelmega: {
-        name: "Mega Maribel",
+        name: "Berserk Maribel",
     },
     kogasa: {
         name: "Kogasa",
@@ -3900,11 +3900,11 @@ export const PokedexText: {[k: string]: PokedexText} = {
     badegg: {
         name: "Bad EGG",
     },
-    pearl: {
-        name: "Pearl",
+    wiggler: {
+        name: "Wiggler",
     },
-    pearllee: {
-        name: "Pearl Lee",
+    wigglerangry: {
+        name: "Angry Wiggler",
     },
     sunnymilk: {
         name: "Sunny Milk",
