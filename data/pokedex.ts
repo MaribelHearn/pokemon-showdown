@@ -16998,8 +16998,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 150,
 		color: "Black",
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["Ganondorf-Mega"],
-		formeOrder: ["Ganondorf", "Ganondorf-Mega"],
+		otherFormes: ["Ganon"],
+		formeOrder: ["Ganondorf", "Ganon"],
 	},
 	ganondorfmega: {
 		num: 2036,
