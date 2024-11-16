@@ -16467,7 +16467,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["tentaquix"],
 		formeOrder: ["tentaquil", "tentaquix"],
 	},
-	tentaquiltentaquix: {
+	tentaquix: {
 		num: 2000,
 		name: "tentaquix",
 		baseSpecies: "tentaquil",
@@ -16536,7 +16536,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Mega Dennis"],
 		formeOrder: ["Dennis", "Mega Dennis"],
 	},
-	dennismega: {
+	megadennis: {
 		num: 2005,
 		name: "Mega Dennis",
 		baseSpecies: "Dennis",
@@ -16628,7 +16628,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Luigi-Mr. L", "Luigi-Weegee"],
 		formeOrder: ["Luigi", "Luigi-Mr. L","Luigi-Weegee"],
 	},
-	luigimrl: {
+	mrl: {
 		num: 2012,
 		name: "Mr. L",
 		baseSpecies: "Luigi",
@@ -16641,7 +16641,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Green",
 		eggGroups: ["Undiscovered"],
 	},
-	luigiweegee: {
+	weegee: {
 		num: 2012,
 		name: "Weegee",
 		baseSpecies: "Luigi",
@@ -16731,7 +16731,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Cirno-Achi"],
 		formeOrder: ["Cirno", "Cirno-Achi"],
 	},
-	cirnoachi: {
+	achicirno: {
 		num: 2019,
 		name: "Achi Cirno",
 		baseSpecies: "Cirno",
@@ -16825,7 +16825,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Super Saiyan Vegeta"],
 		formeOrder: ["Vegeta", "Super Saiyan Vegeta"],
 	},
-	vegetamega: {
+	supersaiyanvegeta: {
 		num: 2026,
 		name: "Super Saiyan Vegeta",
 		baseSpecies: "Vegeta",
@@ -16873,7 +16873,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Corrupted Wake"],
 		formeOrder: ["Wake", "Corrupted Wake"],
 	},
-	wakecorrupted: {
+	corruptedwake: {
 		num: 2029,
 		name: "Corrupted Wake",
 		baseSpecies: "Wake",
@@ -16935,7 +16935,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Toon Link"],
 		formeOrder: ["Link", "Toon Link"],
 	},
-	linktoon: {
+	toonlink: {
 		num: 2033,
 		name: "Toon Link",
 		baseSpecies: "Link",
@@ -16975,7 +16975,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Sheik"],
 		formeOrder: ["Zelda", "Sheik"],
 	},
-	zeldasheik: {
+	sheik: {
 		num: 2035,
 		name: "Sheik",
 		baseSpecies: "Zelda",
@@ -17001,7 +17001,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Ganon"],
 		formeOrder: ["Ganondorf", "Ganon"],
 	},
-	ganondorfmega: {
+	ganon: {
 		num: 2036,
 		name: "Ganon",
 		baseSpecies: "Ganondorf",
@@ -17482,7 +17482,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
         otherFormes: ["Armored Samus"],
         formeOrder: ["Samus", "Armored Samus"],
     },
-    samusarmor: {
+    armoredsamus: {
         num: 2071,
 		name: "Armored Samus",
         baseSpecies: "Samus",
@@ -17810,7 +17810,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Dry Bowser", "Giga Bowser"],
 		formeOrder: ["Bowser", "Dry Bowser", "Giga Bowser"],
     },
-    bowserdry: {
+    drybowser: {
         num: 2096,
 		name: "Dry Bowser",
         baseSpecies: "Bowser",
@@ -17823,7 +17823,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "White",
 		eggGroups: ["Undiscovered"],
     },
-    bowsermega: {
+    gigabowser: {
         num: 2096,
 		name: "Giga Bowser",
         baseSpecies: "Bowser",
@@ -17860,7 +17860,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Angel VIVIT"],
 		formeOrder: ["VIVIT", "Angel VIVIT"],
     },
-    vivitmega: {
+    angelvivit: {
         num: 2098,
 		name: "Angel VIVIT",
         baseSpecies: "VIVIT",
@@ -17886,7 +17886,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Berserk Maribel"],
 		formeOrder: ["Maribel", "Berserk Maribel"],
     },
-    maribelmega: {
+    berserkmaribel: {
         num: 2099,
 		name: "Berserk Maribel",
         baseSpecies: "Maribel",
@@ -18116,7 +18116,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Paper Mario", "Malleo"],
 		formeOrder: ["Mario", "Paper Mario", "Malleo"],
     },
-    mariopaper: {
+    papermario: {
         num: 2116,
 		name: "Paper Mario",
         baseSpecies: "Mario",
@@ -18129,7 +18129,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Red",
 		eggGroups: ["Undiscovered"],
     },
-    mariomalleo: {
+    malleo: {
         num: 2116,
 		name: "Malleo",
         baseSpecies: "Mario",
@@ -18156,7 +18156,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Boolussus"],
 		formeOrder: ["Boo", "Boolussus"],
     },
-    booboolussus: {
+	boolussus: {
         num: 2117,
 		name: "Boolussus",
         baseSpecies: "Boo",
@@ -18230,7 +18230,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Angry Wiggler"],
 		formeOrder: ["Wiggler", "Angry Wiggler"],
     },
-    wigglerangry: {
+    angrywiggler: {
         num: 2122,
 		name: "Angry Wiggler",
         baseSpecies: "Wiggler",

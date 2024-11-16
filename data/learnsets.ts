@@ -83240,7 +83240,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             superglitch: ["8M"],
         },
     },
-    tentaquiltentaquix: {
+    tentaquix: {
         learnset: {
             tackle: ["8L1"],
             leer: ["8L1"],
@@ -84198,7 +84198,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			playrough: ["8M"],
 		},
 	},
-	luigimrl: {
+	mrl: {
 		learnset: {
 			thunderhand: ["8L1"],
 			leaftornado: ["8L1"],
@@ -84726,7 +84726,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			mistyexplosion: ["8M"],
 		},
 	},
-	cirnoachi: {
+	achicirno: {
 		learnset: {
 			flareblitz: ["8L1"],
 			iciclespear: ["8L1"],
@@ -85147,101 +85147,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			dracometeor: ["8M"],
 		},
 	},
-	vegetamega: {
-		learnset: {
-			pound: ["8L1"],
-			growl: ["8L1"],
-			taunt: ["8L1", "8M"],
-			karatechop: ["8L1"],
-			powertrip: ["8L1"],
-			dualchop: ["8L1", "8M"],
-			dragonpulse: ["8L1", "8M"],
-			dragonenergy: ["8L1"],
-			galickgun: ["8L1"],
-			crosschop: ["8L1"],
-			bulkup: ["8L1", "8M"],
-			aurasphere: ["8L1"],
-			dragondance: ["8L1"],
-			gravity: ["8L1", "8M"],
-			agility: ["8L1"],
-			throatchop: ["8L1"],
-			nastyplot: ["8L1"],
-			focusenergy: ["8L1"],
-			flashcannon: ["8L1", "8M"],
-			meteorbeam: ["8L1"],
-			rage: ["8L1"],
-			workup: ["8M"],
-			roar: ["8M"],
-			hiddenpower: ["8M"],
-			hyperbeam: ["8M"],
-			protect: ["8M"],
-			frustration: ["8M"],
-			return: ["8M"],
-			facade: ["8M"],
-			attract: ["8M"],
-			round: ["8M"],
-			secretpower: ["8M"],
-			explosion: ["8M"],
-			gigaimpact: ["8M"],
-			psychup: ["8M"],
-			substitute: ["8M"],
-			strength: ["8M"],
-			flash: ["8M"],
-			block: ["8M"],
-			retaliate: ["8M"],
-			sleeptalk: ["8M"],
-			naturalgift: ["8M"],
-			endure: ["8M"],
-			brickbreak: ["8M"],
-			poweruppunch: ["8M"],
-			lowsweep: ["8M"],
-			focusblast: ["8M"],
-			drainpunch: ["8M"],
-			rocksmash: ["8M"],
-			focuspunch: ["8M"],
-			superpower: ["8M"],
-			lowkick: ["8M"],
-			vacuumwave: ["8M"],
-			aerialace: ["8M"],
-			skydrop: ["8M"],
-			acrobatics: ["8M"],
-			fly: ["8M"],
-			poisonjab: ["8M"],
-			earthquake: ["8M"],
-			dig: ["8M"],
-			bulldoze: ["8M"],
-			uturn: ["8M"],
-			shadowball: ["8M"],
-			flamethrower: ["8M"],
-			fireblast: ["8M"],
-			overheat: ["8M"],
-			firepunch: ["8M"],
-			bulletspray: ["8M"],
-			solarbeam: ["8M"],
-			thunderbolt: ["8M"],
-			thunder: ["8M"],
-			chargebeam: ["8M"],
-			thunderpunch: ["8M"],
-			psyshock: ["8M"],
-			psychic: ["8M"],
-			rest: ["8M"],
-			zenheadbutt: ["8M"],
-			magiccoat: ["8M"],
-			dragonclaw: ["8M"],
-			outrage: ["8M"],
-			fling: ["8M"],
-			payback: ["8M"],
-			snarl: ["8M"],
-			darkpulse: ["8M"],
-			suckerpunch: ["8M"],
-			foulplay: ["8M"],
-			quash: ["8M"],
-			snatch: ["8M"],
-			knockoff: ["8M"],
-			playrough: ["8M"],
-			dracometeor: ["8M"],
-		},
-	},
 	droctogonapus: {
 		learnset: {
 			laserbeam: ["8L1"],
@@ -85379,7 +85284,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			fling: ["8M"],
 		},
 	},
-	wakecorrupted: {
+	corruptedwake: {
 		learnset: {
 			tackle: ["8L1"],
 			splash: ["8L1"],
@@ -85634,7 +85539,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			steelbeam: ["8M"],
 		},
 	},
-	linktoon: {
+	toonlink: {
 		learnset: {
 			growl: ["8L1"],
 			scratch: ["8L1"],
@@ -85779,7 +85684,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			dazzlinggleam: ["8M"],
 		},
 	},
-	zeldasheik: {
+	sheik: {
 		learnset: {
 			teleport: ["8L1"],
 			confusion: ["8L1"],
@@ -85834,78 +85739,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		},
 	},
 	ganondorf: {
-		learnset: {
-			warlockpunch: ["8L1"],
-			throatchop: ["8L1"],
-			focuspunch: ["8L1", "8M"],
-			suckerpunch: ["8L1", "8M"],
-			forcepalm: ["8L1"],
-			megakick: ["8L1"],
-			lowkick: ["8L1", "8M"],
-			powertrip: ["8L1"],
-			burningjealousy: ["8L1"],
-			darkestlariat: ["8L1"],
-			slash: ["8L1"],
-			nightslash: ["8L1"],
-			overheadslash: ["8L1"],
-			assurance: ["8L1"],
-			payback: ["8L1", "8M"],
-			triattack: ["8L1"],
-			workup: ["8M"],
-			roar: ["8M"],
-			hiddenpower: ["8M"],
-			hyperbeam: ["8M"],
-			protect: ["8M"],
-			frustration: ["8M"],
-			return: ["8M"],
-			facade: ["8M"],
-			attract: ["8M"],
-			round: ["8M"],
-			secretpower: ["8M"],
-			gigaimpact: ["8M"],
-			swordsdance: ["8M"],
-			substitute: ["8M"],
-			cut: ["8M"],
-			strength: ["8M"],
-			block: ["8M"],
-			retaliate: ["8M"],
-			sleeptalk: ["8M"],
-			naturalgift: ["8M"],
-			endure: ["8M"],
-			bulkup: ["8M"],
-			poweruppunch: ["8M"],
-			lowsweep: ["8M"],
-			rocksmash: ["8M"],
-			superpower: ["8M"],
-			vacuumwave: ["8M"],
-			poisonjab: ["8M"],
-			dig: ["8M"],
-			smackdown: ["8M"],
-			stoneedge: ["8M"],
-			rockslide: ["8M"],
-			shadowball: ["8M"],
-			shadowclaw: ["8M"],
-			flamethrower: ["8M"],
-			fireblast: ["8M"],
-			flamecharge: ["8M"],
-			overheat: ["8M"],
-			firepunch: ["8M"],
-			wildcharge: ["8M"],
-			rest: ["8M"],
-			zenheadbutt: ["8M"],
-			dragonclaw: ["8M"],
-			outrage: ["8M"],
-			taunt: ["8M"],
-			thief: ["8M"],
-			fling: ["8M"],
-			embargo: ["8M"],
-			darkpulse: ["8M"],
-			foulplay: ["8M"],
-			quash: ["8M"],
-			knockoff: ["8M"],
-		},
-	},
-	ganondorfmega: {
 		learnset: {
 			warlockpunch: ["8L1"],
 			throatchop: ["8L1"],
@@ -86525,7 +86358,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			steelbeam: ["8M"],
 		},
 	},
-	samusarmor: {
+	armoredsamus: {
 		learnset: {
 			thunderbolt: ["8M"],
 			chargebeam: ["8M"],
@@ -86680,7 +86513,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			whirlingfortress: ["8L1"],
 		},
 	},
-	bowsermega: {
+	drybowser: {
 		learnset: {
 			whirlingfortress: ["8L1"],
 		},
@@ -86695,18 +86528,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			
 		},
 	},
-	vivitmega: {
-		learnset: {
-			
-		},
-	},
 	maribel: {
-		learnset: {
-			borderdistortion: ["8L1"],
-			dreaminduction: ["8L1"],
-		},
-	},
-	maribelmega: {
 		learnset: {
 			borderdistortion: ["8L1"],
 			dreaminduction: ["8L1"],
@@ -86812,17 +86634,17 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	mario: {
 		learnset: {
-			
+			firepunch: ["8M"],
 		},
 	},
-	mariopaper: {
+	papermario: {
 		learnset: {
 			firepunch: ["8M"],
 		},
 	},
-	mariomalleo: {
+	malleo: {
 		learnset: {
-			
+			firepunch: ["8M"],
 		},
 	},
 	boo: {
@@ -86832,7 +86654,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			shadowball: ["8M"],
 		},
 	},
-	booboolussus: {
+	boolussus: {
 		learnset: {
 			
 		},
@@ -86863,7 +86685,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			
 		},
 	},
-	wigglerangry: {
+	angrywiggler: {
 		learnset: {
 			
 		},

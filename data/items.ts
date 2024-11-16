@@ -7225,7 +7225,7 @@ export const Items: {[itemid: string]: ItemData} = {
     plasmacane: {
         name: "Plasma Cane",
         spritenum: 753,
-        megaStone: "Dennis-Mega",
+        megaStone: "Mega Dennis",
         megaEvolves: "Dennis",
         itemUser: ["Dennis"],
         onTakeItem(item, source) {
@@ -7238,7 +7238,7 @@ export const Items: {[itemid: string]: ItemData} = {
     triforce: {
         name: "Triforce",
         spritenum: 761,
-        megaStone: "Ganondorf-Mega",
+        megaStone: "Ganon",
         megaEvolves: "Ganondorf",
         itemUser: ["Ganondorf"],
         onTakeItem(item, source) {
@@ -7251,7 +7251,7 @@ export const Items: {[itemid: string]: ItemData} = {
     vegetite: {
         name: "Vegetite",
         spritenum: 2015,
-        megaStone: "Vegeta-Mega",
+        megaStone: "Super Saiyan Vegeta",
         megaEvolves: "Vegeta",
         itemUser: ["Vegeta"],
         onTakeItem(item, source) {
@@ -7277,7 +7277,7 @@ export const Items: {[itemid: string]: ItemData} = {
     smashball: {
         name: "Smash Ball",
         spritenum: 762,
-        megaStone: "Bowser-Mega",
+        megaStone: "Giga Bowser",
         megaEvolves: "Bowser",
         itemUser: ["Bowser"],
         onTakeItem(item, source) {
@@ -7290,7 +7290,7 @@ export const Items: {[itemid: string]: ItemData} = {
     sabotenbottle: {
         name: "Saboten Bottle",
         spritenum: 764,
-        megaStone: "VIVIT-Mega",
+        megaStone: "Angel VIVIT",
         megaEvolves: "VIVIT",
         itemUser: ["VIVIT"],
         onTakeItem(item, source) {
@@ -7303,7 +7303,7 @@ export const Items: {[itemid: string]: ItemData} = {
     strangegap: {
         name: "Strange Gap",
         spritenum: 763,
-        megaStone: "Maribel-Mega",
+        megaStone: "Berserk Maribel",
         megaEvolves: "Maribel",
         itemUser: ["Maribel"],
         onTakeItem(item, source) {

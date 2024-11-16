@@ -7060,7 +7060,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    tentaquiltentaquix: {
+    tentaquix: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
@@ -7084,7 +7084,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-	dennismega: {
+	megadennis: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7116,11 +7116,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-	luigimrl: {
+	mrl: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-	luigiweegee: {
+	weegee: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7152,7 +7152,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    cirnoachi: {
+    achicirno: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7184,7 +7184,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    vegetamega: {
+    supersaiyanvegeta: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7200,7 +7200,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    wakecorrupted: {
+    corruptedwake: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7220,7 +7220,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    linktoon: {
+    toonlink: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7232,7 +7232,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    zeldasheik: {
+    sheik: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7240,7 +7240,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    ganondorfmega: {
+    ganon: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7407,7 +7407,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    samusarmor: {
+    armoredsamus: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
@@ -7519,11 +7519,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    bowserdry: {
+	drybowser: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    bowsermega: {
+    gigabowser: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
@@ -7535,7 +7535,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    vivitmega: {
+    angelvivit: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
@@ -7543,7 +7543,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    maribelmega: {
+    berserkmaribel: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
@@ -7623,11 +7623,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    mariopaper: {
+    papermario: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    mariomalleo: {
+    malleo: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
@@ -7635,7 +7635,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    booboolussus: {
+    boolussus: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
@@ -7659,7 +7659,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    wigglerangry: {
+    angrywiggler: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },

@@ -3456,7 +3456,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     tentaquil: {
         name: "tentaquil",
     },
-    tentaquiltentaquix: {
+    tentaquix: {
         name: "tentaquix",
     },
     chucknorris: {
@@ -3474,7 +3474,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     dennis: {
         name: "Dennis",
     },
-    dennismega: {
+    megadennis: {
         name: "Mega Dennis",
     },
     zalgo: {
@@ -3498,10 +3498,10 @@ export const PokedexText: {[k: string]: PokedexText} = {
     luigi: {
         name: "Luigi",
     },
-    luigimrl: {
+    mrl: {
         name: "Mr. L",
     },
-    luigiweegee: {
+    weegee: {
         name: "Weegee",
     },
     giygas: {
@@ -3525,7 +3525,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     cirno: {
         name: "Cirno",
     },
-    cirnoachi: {
+    achicirno: {
         name: "Achi Cirno",
     },
     reimu: {
@@ -3549,7 +3549,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     vegeta: {
         name: "Vegeta",
     },
-    vegetamega: {
+    supersaiyanvegeta: {
         name: "Super Saiyan Vegeta",
     },
     droctogonapus: {
@@ -3561,7 +3561,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     wake: {
         name: "Wake",
     },
-    wakecorrupted: {
+    corruptedwake: {
         name: "Corrupted Wake",
     },
     utsuho: {
@@ -3576,7 +3576,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     link: {
         name: "Link",
     },
-    linktoon: {
+    toonlink: {
         name: "Toon Link",
     },
     youngzelda: {
@@ -3585,13 +3585,13 @@ export const PokedexText: {[k: string]: PokedexText} = {
     zelda: {
         name: "Zelda",
     },
-    zeldasheik: {
+    sheik: {
         name: "Sheik",
     },
     ganondorf: {
         name: "Ganondorf",
     },
-    ganondorfmega: {
+    ganon: {
         name: "Ganon",
     },
     suiseiseki: {
@@ -3714,7 +3714,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     samus: {
         name: "Samus",
     },
-    samusarmor: {
+    armoredsamus: {
         name: "Armored Samus",
     },
     zeekyhbomb: {
@@ -3798,10 +3798,10 @@ export const PokedexText: {[k: string]: PokedexText} = {
     bowser: {
         name: "Bowser",
     },
-    bowserdry: {
+    drybowser: {
         name: "Dry Bowser",
     },
-    bowsermega: {
+    gigabowser: {
         name: "Giga Bowser",
     },
     genjii: {
@@ -3810,13 +3810,13 @@ export const PokedexText: {[k: string]: PokedexText} = {
     vivit: {
         name: "VIVIT",
     },
-    vivitmega: {
+    angelvivit: {
         name: "Angel VIVIT",
     },
     maribel: {
         name: "Maribel",
     },
-    maribelmega: {
+    berserkmaribel: {
         name: "Berserk Maribel",
     },
     kogasa: {
@@ -3885,7 +3885,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     boo: {
         name: "Boo",
     },
-    booboolussus: {
+    boolussus: {
         name: "Boolussus",
     },
     kingboo: {
@@ -3903,7 +3903,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     wiggler: {
         name: "Wiggler",
     },
-    wigglerangry: {
+    angrywiggler: {
         name: "Angry Wiggler",
     },
     sunnymilk: {
