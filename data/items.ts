@@ -7225,7 +7225,7 @@ export const Items: {[itemid: string]: ItemData} = {
     plasmacane: {
         name: "Plasma Cane",
         spritenum: 753,
-        megaStone: "Mega Dennis",
+        megaStone: "Dennis-Mega",
         megaEvolves: "Dennis",
         itemUser: ["Dennis"],
         onTakeItem(item, source) {
@@ -7238,7 +7238,7 @@ export const Items: {[itemid: string]: ItemData} = {
     triforce: {
         name: "Triforce",
         spritenum: 761,
-        megaStone: "Ganon",
+        megaStone: "Ganondorf-Mega",
         megaEvolves: "Ganondorf",
         itemUser: ["Ganondorf"],
         onTakeItem(item, source) {
@@ -7251,7 +7251,7 @@ export const Items: {[itemid: string]: ItemData} = {
     vegetite: {
         name: "Vegetite",
         spritenum: 2015,
-        megaStone: "Super Saiyan Vegeta",
+        megaStone: "Vegeta-Mega",
         megaEvolves: "Vegeta",
         itemUser: ["Vegeta"],
         onTakeItem(item, source) {
@@ -7264,7 +7264,7 @@ export const Items: {[itemid: string]: ItemData} = {
     /*gokuite: {
         name: "Gokuite",
         spritenum: 2016,
-        megaStone: "Goku-SuperSaiyan",
+        megaStone: "Goku-Mega",
         megaEvolves: "Goku",
         itemUser: ["Goku"],
         onTakeItem(item, source) {
@@ -7277,7 +7277,7 @@ export const Items: {[itemid: string]: ItemData} = {
     smashball: {
         name: "Smash Ball",
         spritenum: 762,
-        megaStone: "Giga Bowser",
+        megaStone: "Bowser-Mega",
         megaEvolves: "Bowser",
         itemUser: ["Bowser"],
         onTakeItem(item, source) {
@@ -7290,7 +7290,7 @@ export const Items: {[itemid: string]: ItemData} = {
     sabotenbottle: {
         name: "Saboten Bottle",
         spritenum: 764,
-        megaStone: "Angel VIVIT",
+        megaStone: "VIVIT-Mega",
         megaEvolves: "VIVIT",
         itemUser: ["VIVIT"],
         onTakeItem(item, source) {
@@ -7303,7 +7303,7 @@ export const Items: {[itemid: string]: ItemData} = {
     strangegap: {
         name: "Strange Gap",
         spritenum: 763,
-        megaStone: "Berserk Maribel",
+        megaStone: "Maribel-Mega",
         megaEvolves: "Maribel",
         itemUser: ["Maribel"],
         onTakeItem(item, source) {
