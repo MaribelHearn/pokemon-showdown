@@ -16533,8 +16533,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 90,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["Dennis-Mega"],
-		formeOrder: ["Dennis", "Dennis-Mega"],
+		otherFormes: ["Mega Dennis"],
+		formeOrder: ["Dennis", "Mega Dennis"],
 	},
 	dennismega: {
 		num: 2005,
