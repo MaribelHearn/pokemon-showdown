@@ -7251,7 +7251,7 @@ export const Items: {[itemid: string]: ItemData} = {
     vegetite: {
         name: "Vegetite",
         spritenum: 2015,
-        megaStone: "Vegeta-SuperSaiyan",
+        megaStone: "Vegeta-Mega",
         megaEvolves: "Vegeta",
         itemUser: ["Vegeta"],
         onTakeItem(item, source) {
@@ -7277,7 +7277,7 @@ export const Items: {[itemid: string]: ItemData} = {
     smashball: {
         name: "Smash Ball",
         spritenum: 762,
-        megaStone: "Bowser-Giga",
+        megaStone: "Bowser-Mega",
         megaEvolves: "Bowser",
         itemUser: ["Bowser"],
         onTakeItem(item, source) {

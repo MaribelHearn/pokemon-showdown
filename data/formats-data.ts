@@ -7184,7 +7184,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    vegetasupersaiyan: {
+    vegetamega: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7523,7 +7523,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    bowsergiga: {
+    bowsermega: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },

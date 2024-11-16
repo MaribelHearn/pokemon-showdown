@@ -3456,9 +3456,9 @@ export const PokedexText: {[k: string]: PokedexText} = {
     tentaquil: {
         name: "tentaquil",
     },
-    /*tentaquix: {
+    tentaquix: {
         name: "tentaquix",
-    },*/
+    },
     chucknorris: {
         name: "Chuck Norris",
     },
@@ -3475,7 +3475,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Dennis",
     },
     dennismega: {
-        name: "Dennis-Mega",
+        name: "Mega Dennis",
     },
     zalgo: {
         name: "Zalgo",
@@ -3549,7 +3549,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     vegeta: {
         name: "Vegeta",
     },
-    vegetasupersaiyan: {
+    vegetamega: {
         name: "Super Saiyan Vegeta",
     },
     droctogonapus: {
@@ -3801,7 +3801,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     bowserdry: {
         name: "Dry Bowser",
     },
-    bowsergiga: {
+    bowsermega: {
         name: "Giga Bowser",
     },
     genjii: {

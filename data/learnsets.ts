@@ -85147,7 +85147,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			dracometeor: ["8M"],
 		},
 	},
-	vegetasupersaiyan: {
+	vegetamega: {
 		learnset: {
 			pound: ["8L1"],
 			growl: ["8L1"],
@@ -86680,7 +86680,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			whirlingfortress: ["8L1"],
 		},
 	},
-	bowsergiga: {
+	bowsermega: {
 		learnset: {
 			whirlingfortress: ["8L1"],
 		},
