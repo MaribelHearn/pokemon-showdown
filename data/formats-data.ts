@@ -7060,7 +7060,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    tentaquix: {
+    tentaquiltentaquix: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },

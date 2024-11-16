@@ -83240,7 +83240,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             superglitch: ["8M"],
         },
     },
-    tentaquix: {
+    tentaquiltentaquix: {
         learnset: {
             tackle: ["8L1"],
             leer: ["8L1"],
@@ -86855,15 +86855,15 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	badegg: {
 		learnset: {
 			anormalmove: ["8L1"],
-			thunderpunch: ["8L1", "8M"],	
+			thunderpunch: ["8L1", "8M"],
 		},
 	},
-	pearl: {
+	wiggler: {
 		learnset: {
 			
 		},
 	},
-	pearllee: {
+	wigglerangry: {
 		learnset: {
 			
 		},

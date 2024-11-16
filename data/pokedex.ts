@@ -16467,7 +16467,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["tentaquix"],
 		formeOrder: ["tentaquil", "tentaquix"],
 	},
-	tentaquix: {
+	tentaquiltentaquix: {
 		num: 2000,
 		name: "tentaquix",
 		baseSpecies: "tentaquil",
