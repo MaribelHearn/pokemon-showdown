@@ -7196,7 +7196,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    wake: {
+    crasherwake: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},

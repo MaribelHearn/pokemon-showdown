@@ -3558,8 +3558,8 @@ export const PokedexText: {[k: string]: PokedexText} = {
     essej: {
         name: "Essej",
     },
-    wake: {
-        name: "Wake",
+    crasherwake: {
+        name: "Crasher Wake",
     },
     corruptedwake: {
         name: "Corrupted Wake",
