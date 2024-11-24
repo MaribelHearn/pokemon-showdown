@@ -20197,6 +20197,29 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 20,
 		priority: -3,
 		flags: {contact: 1, protect: 1, punch: 1, defrost: 1},
+		priorityChargeCallback(pokemon) {
+			pokemon.addVolatile('focuspunch');
+		},
+		beforeMoveCallback(pokemon) {
+			if (pokemon.volatiles['focuspunch']?.lostFocus) {
+				this.add('cant', pokemon, 'Focus Punch', 'Focus Punch');
+				return true;
+			}
+		},
+		condition: {
+			duration: 1,
+			onStart(pokemon) {
+				this.add('-singleturn', pokemon, 'move: Focus Punch');
+			},
+			onHit(pokemon, source, move) {
+				if (move.category !== 'Status') {
+					this.effectState.lostFocus = true;
+				}
+			},
+			onTryAddVolatile(status, pokemon) {
+				if (status.id === 'flinch') return null;
+			},
+		},
 		critRatio: 3,
 		secondary: null,
 		target: "normal",
@@ -20684,7 +20707,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {},
 		onHit(target) {
 			const noAssist = [
-				'assist', 'banefulbunker', 'beakblast', 'belch', 'bestow', 'bounce', 'celebrate', 'chatter', 'circlethrow', 'copycat', 'counter', 'covet', 'destinybond', 'detect', 'dig', 'dive', 'dragontail', 'endure', 'feint', 'fly', 'focuspunch', 'followme', 'helpinghand', 'holdhands', 'kingsshield', 'matblock', 'mefirst', 'metronome', 'mimic', 'mirrorcoat', 'mirrormove', 'naturepower', 'phantomforce', 'protect', 'ragepowder', 'roar', 'shadowforce', 'shelltrap', 'sketch', 'skydrop', 'sleeptalk', 'snatch', 'spikyshield', 'spotlight', 'struggle', 'switcheroo', 'thief', 'transform', 'trick', 'whirlwind', 'falconpunch', 'warlockpunch', 'electricalshield', 'firewall',
+				'beakblast', 'belch', 'bounce', 'chatter', 'circlethrow', 'counter', 'covet', 'dig', 'dive', 'dragontail', 'feint', 'fly', 'focuspunch', 'mirrorcoat', 'naturepower', 'phantomforce', 'shadowforce', 'shelltrap', 'skydrop', 'struggle', 'thief', 'falconpunch', 'warlockpunch',
 			];
 
 			const moves = [];
@@ -20694,6 +20717,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 					const moveid = moveSlot.id;
 					if (noAssist.includes(moveid)) continue;
 					const move = this.dex.moves.get(moveid);
+					if (move.category === 'Status') continue;
 					if (move.isZ || move.isMax) {
 						continue;
 					}
@@ -20707,22 +20731,46 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 			this.actions.useMove(randomMove, target);
 		},
+		onBasePower(basePower, pokemon) {
+			this.debug('recollection boost');
+			return this.chainModify(1.2);
+		},
 		secondary: null,
 		target: "self",
 		type: "Psychic",
 	},
-	superego: {
+	releaseoftheid: {
 		num: 2056,
-		accuracy: 100,
-		basePower: 80,
-		category: "Special",
-		name: "Super-Ego",
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Release of the Id",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		recoil: [10, 100],
+		flags: {bypasssub: 1},
+		onHit(target, source) {
+			const stats: BoostID[] = [];
+			let stat: BoostID;
+			const action = this.queue.willMove(target);
+			const move = action?.choice === 'move' ? action.move : null;
+			const boost: SparseBoostsTable = {};
+			if (!move || (move.category === 'Status' && move.id !== 'mefirst') || target.volatiles['mustrecharge']) {
+				//const atkSpa: BoostID[] = ['atk', 'spa'];
+				boost['atk'] = 2;
+				boost['spa'] = 2;
+				this.boost(boost);
+			} else {
+				//const defSpd: BoostID[] = ['def', 'spd'];
+				boost['def'] = 2;
+				boost['spd'] = 2;
+				this.boost(boost);
+			}
+		},
+		onTry(source, target) {
+		},
 		target: "normal",
 		type: "Normal",
+		zMove: {effect: 'clearnegativeboost'},
 	},
 	megawattlineargun: {
 		num: 2057,
@@ -20866,13 +20914,16 @@ export const Moves: {[moveid: string]: MoveData} = {
     superglitch: {
         num: 2065,
         accuracy: 100,
-        basePower: 100,
+        basePower: 73,
         category: "Physical",
         name: "Super Glitch",
         pp: 5,
         priority: 0,
         flags: {protect: 1, mirror: 1},
-        secondary: null,
+		secondary: {
+			chance: 100,
+			status: 'brn',
+		},
         target: "normal",
         type: "???",
     },
@@ -21384,12 +21435,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		zMove: {effect: 'crit2'},
 	},
-	swordoflight: {
+	zantetsuken: {
 		num: 2096,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
-		name: "Sword of Light",
+		name: "Zantetsuken",
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
