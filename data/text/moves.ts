@@ -6892,8 +6892,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
     diamondblizzard: {
 		name: "Diamond Blizzard",
-		desc: "Lowers the user's Special Attack by 2 stages.",
-		shortDesc: "Lowers the user's Sp. Atk by 2.",
+		desc: "Lowers the target's Speed by 1 stage.",
+		shortDesc: "Lowers the target's Speed by 1.",
 	},
 	fantasyseal: {
 		name: "Fantasy Seal",
@@ -7021,6 +7021,9 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Warlock Punch",
 		desc: "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move. Has a higher chance for a critical hit.",
 		shortDesc: "Fails if hit beforehand + high crit.",
+
+		start: "  [POKEMON] is tightening its focus!",
+		cant: "[POKEMON] lost its focus and couldn't move!",
 	},
 	catnarok: {
 		name: "Catnarok",

@@ -22488,12 +22488,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 1,
 		priority: 0,
 		flags: {},
-		boosts: {
-			spa: 1,
-			spd: 1,
-			spe: 1,
-		},
 		isZ: "yuyukiumz",
+		zMove: {boost: {spa: 1, spd: 1, spe: 1}},
 		secondary: null,
 		target: "normal",
 		type: "Ghost"
@@ -22537,13 +22533,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 1,
 		priority: 0,
 		flags: {},
-		boosts: {
-			atk: 1,
-			def: 1,
-			spe: 1,
-		},
 		multihit: 3,
 		isZ: "mokiumz",
+		zMove: {boost: {atk: 1, def: 1, spe: 1}},
 		secondary: null,
 		target: "normal",
 		type: "Fire"
