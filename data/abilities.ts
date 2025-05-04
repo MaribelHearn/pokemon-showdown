@@ -4744,39 +4744,39 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	armordamage: {
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.baseSpecies !== 'Samus' || pokemon.transformed) return;
+			if (pokemon.baseSpecies.baseSpecies !== 'Zero Suit Samus' || pokemon.transformed) return;
 			if (pokemon.hp > pokemon.maxhp / 2) {
-				if (pokemon.species.forme !== 'Armor') {
-					pokemon.formeChange('Samus-Armor');
+				if (pokemon.species.forme !== 'Armored') {
+					pokemon.formeChange('Samus');
 				}
 			} else {
-				if (pokemon.species.forme === 'Armor') {
+				if (pokemon.species.forme === 'Armored') {
 					pokemon.formeChange(pokemon.set.species);
 				}
 			}
 		},
 		onResidualOrder: 29,
 		onResidual(pokemon) {
-			if (pokemon.baseSpecies.baseSpecies !== 'Samus' || pokemon.transformed || !pokemon.hp) return;
+			if (pokemon.baseSpecies.baseSpecies !== 'Zero Suit Samus' || pokemon.transformed || !pokemon.hp) return;
 			if (pokemon.hp > pokemon.maxhp / 2) {
-				if (pokemon.species.forme !== 'Armor') {
-					pokemon.formeChange('Samus-Armor');
+				if (pokemon.species.forme !== 'Armored') {
+					pokemon.formeChange('Samus');
 				}
 			} else {
-				if (pokemon.species.forme === 'Armor') {
+				if (pokemon.species.forme === 'Armored') {
 					pokemon.formeChange(pokemon.set.species);
 				}
 			}
 		},
 		onSetStatus(status, target, source, effect) {
-			if (target.species.id !== 'samusarmor' || target.transformed) return;
+			if (target.species.id !== 'samus' || target.transformed) return;
 			if ((effect as Move)?.status) {
 				this.add('-immune', target, '[from] ability: Armor Damage');
 			}
 			return false;
 		},
 		onTryAddVolatile(status, target) {
-			if (target.species.id !== 'samusarmor' || target.transformed) return;
+			if (target.species.id !== 'samus' || target.transformed) return;
 			if (status.id !== 'yawn') return;
 			this.add('-immune', target, '[from] ability: Armor Damage');
 			return null;
@@ -4848,10 +4848,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (pokemon.baseSpecies.baseSpecies !== 'Boo' || pokemon.level < 20 || pokemon.transformed) return;
 			if (pokemon.hp > pokemon.maxhp / 4) {
 				if (pokemon.species.id === 'boo') {
-					pokemon.formeChange('Boolussus');
+					pokemon.formeChange('Boolossus');
 				}
 			} else {
-				if (pokemon.species.id === 'boolussus') {
+				if (pokemon.species.id === 'boolossus') {
 					pokemon.formeChange('Boo');
 				}
 			}
@@ -4864,10 +4864,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			) return;
 			if (pokemon.hp > pokemon.maxhp / 4) {
 				if (pokemon.species.id === 'boo') {
-					pokemon.formeChange('Boolussus');
+					pokemon.formeChange('Boolossus');
 				}
 			} else {
-				if (pokemon.species.id === 'boolussus') {
+				if (pokemon.species.id === 'boolossus') {
 					pokemon.formeChange('Boo');
 				}
 			}

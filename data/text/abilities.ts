@@ -2015,8 +2015,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
     gettogether: {
 		name: "Get Together",
-		desc: "On switch-in, if this Pokemon is a Boo that is level 20 or above and has more than 1/4 of its maximum HP left, it changes to Boolossus. If it is Boolussus and its HP drops to 1/4 of its maximum HP or less, it changes to Boo at the end of the turn. If it is Boo and its HP is greater than 1/4 its maximum HP at the end of the turn, it changes to Boolussus.",
-		shortDesc: "If user is Boo, changes to Boolussus if it has > 1/4 max HP, else Boo.",
+		desc: "On switch-in, if this Pokemon is a Boo that is level 20 or above and has more than 1/4 of its maximum HP left, it changes to Boolossus. If it is Boolossus and its HP drops to 1/4 of its maximum HP or less, it changes to Boo at the end of the turn. If it is Boo and its HP is greater than 1/4 its maximum HP at the end of the turn, it changes to Boolossus.",
+		shortDesc: "If user is Boo, changes to Boolossus if it has > 1/4 max HP, else Boo.",
 
 		transform: "[POKEMON] formed a group!",
 		transformEnd: "[POKEMON] split apart!",
