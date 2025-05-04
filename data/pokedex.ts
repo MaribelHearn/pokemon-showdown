@@ -17141,7 +17141,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Dark", "Flying"],
 		gender: "F",
 		baseStats: {hp: 85, atk: 115, def: 60, spa: 115, spd: 60, spe: 120},
-		abilities: {0: "Frisk", H: "Poison Touch"},
+		abilities: {0: "Frisk", 1: "Super Luck", H: "Poison Touch"},
 		weightkg: 45,
 		color: "Pink",
 		eggGroups: ["Undiscovered"],
@@ -17227,7 +17227,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	leonpowalski: {
 		num: 2056,
 		name: "Leon Powalski",
-		types: ["Dragon", "Bug"],
+		types: ["Dragon", "Poison"],
 		gender: "M",
 		baseStats: {hp: 127, atk: 101, def: 89, spa: 144, spd: 97, spe: 42},
 		abilities: {0: "Filter", H: "Shield Dust"},
