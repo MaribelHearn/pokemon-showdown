@@ -7304,7 +7304,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-	achmed: {
+	tabuu: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
@@ -7312,7 +7312,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-	swadner: {
+	supernerd: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},

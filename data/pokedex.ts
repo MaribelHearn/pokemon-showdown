@@ -16600,7 +16600,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		gender: "M",
 		baseStats: {hp: 50, atk: 104, def: 90, spa: 50, spd: 104, spe: 102},
 		abilities: {0: "Rock Head", 1: "Toxic Boost", H: "Shadow Tag"},
-		weightkg: 0,
+		weightkg: 90,
 		color: "Black",
 		eggGroups: ["Undiscovered"],
 	},
@@ -17181,15 +17181,14 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Brown",
 		eggGroups: ["Undiscovered"],
 	},
-	achmed: {
+	tabuu: {
 		num: 2052,
-		name: "Achmed",
-		types: ["Ghost", "Fighting"],
-		gender: "M",
-		baseStats: {hp: 40, atk: 125, def: 85, spa: 85, spd: 125, spe: 60},
-		abilities: {0: "Rock Head", 1: "Aftermath", H: "Cursed Body"},
-		weightkg: 3,
-		color: "White",
+		name: "Tabuu",
+		types: ["Bug", "Psychic"],
+		baseStats: {hp: 100, atk: 106, def: 100, spa: 154, spd: 120, spe: 100},
+		abilities: {0: "Long Reach", H: "Aura Break"},
+		weightkg: 1,
+		color: "Blue",
 		eggGroups: ["Undiscovered"],
 	},
 	sakuya: {
@@ -17203,9 +17202,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "White",
 		eggGroups: ["Undiscovered"],
 	},
-	swadner: {
+	supernerd: {
 		num: 2054,
-		name: "Swadner",
+		name: "Super Nerd",
 		types: ["Steel", "Ghost"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 50, atk: 70, def: 170, spa: 70, spd: 170, spe: 70},

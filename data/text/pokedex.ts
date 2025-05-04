@@ -3639,14 +3639,14 @@ export const PokedexText: {[k: string]: PokedexText} = {
     giantenemycrab: {
         name: "Giant Enemy Crab",
     },
-    achmed: {
-        name: "Achmed",
+    tabuu: {
+        name: "Tabuu",
     },
     sakuya: {
         name: "Sakuya",
     },
-    swadner: {
-        name: "Swadner",
+    supernerd: {
+        name: "Super Nerd",
     },
     wriggle: {
         name: "Wriggle",
