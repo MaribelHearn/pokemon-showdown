@@ -4788,15 +4788,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
     research: {
 		onStart(pokemon) {
-			for (const target of pokemon.foes()) {
-				this.add('-ability', target, target.getAbility(), '[from] ability: Research', '[of] ' + pokemon);
-			}
+			const possibleTargets = pokemon.adjacentFoes();
+			const target = this.sample(possibleTargets);
+			const ability = target.getAbility();
+			this.add('-ability', pokemon, ability, '[from] ability: Research', '[of] ' + pokemon);
 		},
-		/*onUpdate(pokemon) {
-			if (!pokemon.isStarted || this.effectState.gaveUp) return;
-
-			
-		},*/
 		name: "Research",
 		rating: 1.5,
         num: 2014,
