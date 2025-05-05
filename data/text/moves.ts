@@ -6990,7 +6990,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	study: {
 		name: "Study",
 		desc: "Raises the user's Defense and Special Defense by 1 stage.",
-		shortDesc: "Usually goes first. Raises the user's Defense and Sp. Def by 1.",
+		shortDesc: "Usually goes first. Raises the user's Def and Sp. Def by 1.",
 	},
 	corrupt: {
         name: "Corrupt",
@@ -7561,6 +7561,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Off Waves",
 		desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
 		shortDesc: "OHKOs the target. Fails if user is a lower level.",
+	},
+	maxmystery: {
+		name: "Max Mystery",
+		desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Glitchy Terrain begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
+		shortDesc: "Base move affects power. Starts Glitchy Terrain.",
 	},
 	unrealunraveling: {
 		name: "Unreal Unraveling",

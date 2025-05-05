@@ -88203,6 +88203,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			bounce: ["8L1"],
 			pound: ["8L1"],
 			defensecurl: ["8L1"],
+			grapplebeam: ["8L1"],
 			charge: ["8L1"],
 			hiddenpower: ["8M"],
 			hyperbeam: ["8M"],

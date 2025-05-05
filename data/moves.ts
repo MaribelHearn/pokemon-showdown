@@ -22468,6 +22468,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Psychic",
 	},
+	maxmystery: {
+		num: 2145,
+		accuracy: true,
+		basePower: 10,
+		category: "Physical",
+		name: "Max Mystery",
+		pp: 10,
+		priority: 0,
+		flags: {},
+		isMax: true,
+		self: {
+			onHit(source) {
+				if (!source.volatiles['dynamax']) return;
+				this.field.setTerrain('glitchyterrain');
+			},
+		},
+		target: "adjacentFoe",
+		type: "???",
+	},
 	unrealunraveling: {
 		num: 3000,
 		accuracy: true,
