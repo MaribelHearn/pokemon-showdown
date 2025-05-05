@@ -17468,9 +17468,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		requiredAbility: "Cardboard Box",
 		battleOnly: "Snake",
 	},
-    zerosuitsamus: {
+    samus: {
         num: 2071,
-		name: "Zero Suit Samus",
+		name: "Samus",
 		types: ["Electric"],
 		gender: "F",
 		baseStats: {hp: 60, atk: 100, def: 80, spa: 90, spd: 80, spe: 110},
@@ -17479,12 +17479,12 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
         otherFormes: ["Samus"],
-        formeOrder: ["Zero Suit Samus", "Samus"],
+        formeOrder: ["Samus", "Samus-Armored"],
     },
-    samus: {
+    samusarmored: {
         num: 2071,
-		name: "Samus",
-        baseSpecies: "Zero Suit Samus",
+		name: "Samus-Armored",
+        baseSpecies: "Samus",
         forme: "Armored",
 		types: ["Electric", "Steel"],
 		gender: "F",

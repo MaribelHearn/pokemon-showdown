@@ -7403,13 +7403,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	snakebusted: {
 		tier: "Illegal"
 	},
-    zerosuitsamus: {
-		isNonstandard: "Fundex",
-		tier: "Fundex",
-    },
     samus: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
+    },
+    samusarmored: {
+		isNonstandard: "Fundex",
     },
     zeekyhbomb: {
 		isNonstandard: "Fundex",
