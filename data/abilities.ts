@@ -4788,18 +4788,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
     research: {
 		onStart(pokemon) {
-			// n.b. only affects Hackmons
-			if (pokemon.adjacentFoes().some(foeActive => foeActive.ability === 'noability')) {
-				this.effectState.gaveUp = true;
-			}
-		},
-		onUpdate(pokemon) {
-			if (!pokemon.isStarted || this.effectState.gaveUp) return;
-
 			for (const target of pokemon.foes()) {
 				this.add('-ability', target, target.getAbility(), '[from] ability: Research', '[of] ' + pokemon);
 			}
 		},
+		/*onUpdate(pokemon) {
+			if (!pokemon.isStarted || this.effectState.gaveUp) return;
+
+			
+		},*/
 		name: "Research",
 		rating: 1.5,
         num: 2014,

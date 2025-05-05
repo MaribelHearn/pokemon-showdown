@@ -1992,7 +1992,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Research",
 		shortDesc: "On switch-in, this Pokemon identifies the Abilities of all opposing Pokemon.",
 
-		changeAbility: "  [POKEMON]'s research indicated [SOURCE] has [ABILITY]!",
+		changeAbility: "  [SOURCE]'s research indicated [POKEMON] has [ABILITY]!",
     },
     conflagrate: {
 		name: "Conflagrate",
