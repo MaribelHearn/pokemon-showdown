@@ -4791,7 +4791,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			const possibleTargets = pokemon.adjacentFoes();
 			const target = this.sample(possibleTargets);
 			const ability = target.getAbility();
-			this.add('-ability', pokemon, ability, '[from] ability: Research', '[of] ' + pokemon);
+			this.add('-ability', pokemon, ability, '[from] ability: Research', '[of] ' + target);
 		},
 		name: "Research",
 		rating: 1.5,
