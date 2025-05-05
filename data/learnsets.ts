@@ -86758,6 +86758,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wingattack: ["8L1"],
 			plasmawhip: ["8L1"],
 			growth: ["8L1"],
+			prismaticlaser: ["8L1"],
 			hiddenpower: ["8M"],
 			hyperbeam: ["8M"],
 			protect: ["8M"],

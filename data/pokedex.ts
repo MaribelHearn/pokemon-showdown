@@ -17251,7 +17251,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Water", "Poison"],
 		gender: "F",
 		baseStats: {hp: 150, atk: 95, def: 50, spa: 95, spd: 80, spe: 70},
-		abilities: {0: "Natural Cure", 1: "Healer", H: "Friend Guard"},
+		abilities: {0: "Natural Cure", 1: "Healer", H: "Triage"},
 		weightkg: 45,
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
@@ -17443,7 +17443,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     snake: {
         num: 2070,
 		name: "Snake",
-		types: ["Ground", "Fire"],
+		types: ["Ground"],
 		gender: "M",
 		baseStats: {hp: 84, atk: 105, def: 110, spa: 65, spd: 70, spe: 91},
 		abilities: {0: "Cardboard Box"},
