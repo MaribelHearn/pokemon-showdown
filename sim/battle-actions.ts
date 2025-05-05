@@ -26,6 +26,7 @@ export class BattleActions {
 		Steel: 'Max Steelspike',
 		Normal: 'Max Strike',
 		Dragon: 'Max Wyrmwind',
+		'???': 'Max Mystery',
 	};
 
 	readonly Z_MOVES: {readonly [k: string]: string} = {
@@ -47,6 +48,7 @@ export class BattleActions {
 		Flying: "Supersonic Skystrike",
 		Ground: "Tectonic Rage",
 		Fairy: "Twinkle Tackle",
+		'???': 'Unreal Unraveling',
 	};
 
 	constructor(battle: Battle) {
