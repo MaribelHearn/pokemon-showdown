@@ -973,6 +973,7 @@ export const Aliases: {[alias: string]: string} = {
 	zultranecrozma: "Light That Burns the Sky",
 	zvolttackle: "Catastropika",
 	zwater: "Hydro Vortex",
+	zunknown: "Unreal Unraveling",
 
 	// Max moves
 	maxbug: "Max Flutterby",
@@ -993,6 +994,7 @@ export const Aliases: {[alias: string]: string} = {
 	maxrock: "Max Rockfall",
 	maxsteel: "Max Steelspike",
 	maxwater: "Max Geyser",
+	maxunknown: "Max Mystery",
 	maxstatus: "Max Guard",
 	maxprotect: "Max Guard",
 

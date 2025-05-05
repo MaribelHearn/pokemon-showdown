@@ -22027,7 +22027,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Grapple Beam",
 		pp: 5,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, beam: 1},
 		volatileStatus: 'partiallytrapped',
 		target: "normal",
 		type: "Electric",

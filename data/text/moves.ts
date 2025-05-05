@@ -6863,7 +6863,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	// Fundex
 	apocalypse: {
 		name: "Apocalypse",
-		shortDesc: "No additional effect.",
+		desc: "Has a 30% chance to either burn, paralyze, or freeze the target.",
+		shortDesc: "30% chance to burn or paralyze or freeze target.",
 	},
 	masterspark: {
         name: "Master Spark",
