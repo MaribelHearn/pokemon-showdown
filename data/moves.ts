@@ -22120,7 +22120,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		category: "Physical",
 		name: "HOLD IT!",
 		pp: 10,
-		priority: 0,
+		priority: 3,
 		flags: {protect: 1, mirror: 1},
 		onTry(source) {
 			if (source.activeMoveActions > 1) {
@@ -22639,8 +22639,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 1,
 		priority: 0,
 		flags: {},
+		selfBoost: {
+			boosts: {
+				spa: 1,
+				spd: 1,
+				spe: 1,
+			},
+		},
 		isZ: "yuyukiumz",
-		zMove: {boost: {spa: 1, spd: 1, spe: 1}},
 		secondary: null,
 		target: "normal",
 		type: "Ghost"
@@ -22684,9 +22690,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 1,
 		priority: 0,
 		flags: {},
-		multihit: 3,
+		selfBoost: {
+			boosts: {
+				atk: 1,
+				def: 1,
+				spe: 1,
+			},
+		},
 		isZ: "mokiumz",
-		zMove: {boost: {atk: 1, def: 1, spe: 1}},
+		multihit: 3,
 		secondary: null,
 		target: "normal",
 		type: "Fire"
