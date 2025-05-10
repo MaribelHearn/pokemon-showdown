@@ -6957,15 +6957,15 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
 		shortDesc: "Hits 2-5 times in one turn.",
 	},
-	tsukinoiwakasascurse: {
-		name: "Tsuki no Iwakasa's Curse",
+	iwakasascurse: {
+		name: "Iwakasa's Curse",
 		desc: "Lowers the target's Attack and Special Attack by 1 stage.",
 		shortDesc: "Lowers the foe(s) Attack and Sp. Atk by 1.",
 	},
 	trainwreck: {
 		name: "Train Wreck",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		desc: "If this move is successful and does not KO the target, the user must recharge on the following turn and cannot select a move.",
+		shortDesc: "User cannot move next turn unless KO.",
 	},
 	suzuranpoison: {
 		name: "Suzuran Poison",
@@ -7562,6 +7562,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Off Waves",
 		desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
 		shortDesc: "OHKOs the target. Fails if user is a lower level.",
+	},
+	narrowconfines: {
+		name: "Narrow Confines",
+		desc: "Lowers the target's Attack, Special Attack and Speed by 1 stage.",
+		shortDesc: "Lowers the foe(s) Attack, Sp. Atk, Speed by 1.",
 	},
 	maxmystery: {
 		name: "Max Mystery",

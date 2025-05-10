@@ -19940,24 +19940,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	strawberrycross: {
 		num: 2018,
-		accuracy: 100,
-		basePower: 25,
+		accuracy: 95,
+		basePower: 50,
 		category: "Special",
 		name: "Strawberry Cross",
 		pp: 30,
 		priority: 0,
 		flags: {protect: 1, defrost: 1, mirror: 1},
-		multihit: [2, 5],
-		secondary: null,
+		multihit: 2,
+		secondary: {
+			chance: 10,
+			status: 'par',
+		},
 		target: "normal",
 		type: "Fire",
 	},
-	tsukinoiwakasascurse: {
+	iwakasascurse: {
 		num: 2019,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
-		name: "Tsuki no Iwakasa's Curse",
+		name: "Iwakasa's Curse",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, distance: 1, mirror: 1},
@@ -19974,14 +19977,19 @@ export const Moves: {[moveid: string]: MoveData} = {
 	trainwreck: {
 		num: 2020,
 		accuracy: 90,
-		basePower: 200,
+		basePower: 150,
 		category: "Special",
+		overrideOffensiveStat: 'def',
 		name: "Train Wreck",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (!target || target.fainted || target.hp <= 0) {
+				pokemon.removeVolatile('mustrecharge');
+			} else {
+				pokemon.addVolatile('mustrecharge');
+			}
 		},
 		secondary: null,
 		target: "normal",
@@ -22468,8 +22476,28 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Psychic",
 	},
-	maxmystery: {
+	narrowconfines: {
 		num: 2145,
+		accuracy: 100,
+		basePower: 50,
+		category: "Special",
+		name: "Narrow Confines",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			boosts: {
+				atk: -1,
+				spa: -1,
+				spe: -1,
+			},
+		},
+		target: "normal",
+		type: "Ghost",
+	},
+	maxmystery: {
+		num: 2146,
 		accuracy: true,
 		basePower: 10,
 		category: "Physical",
