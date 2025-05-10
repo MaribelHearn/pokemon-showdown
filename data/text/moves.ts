@@ -7508,8 +7508,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	takethat: {
 		name: "TAKE THAT!",
-		desc: "Power doubles if the user is burned, paralyzed, or poisoned. The physical damage halving effect from the user's burn is ignored.",
-		shortDesc: "Power doubles if user is burn/poison/paralyzed.",
+		desc: "Power doubles if the user was hit by the target this turn. Recovers 1/2 the HP lost by the target.",
+		shortDesc: "Power doubles if user is damaged by the target.",
 	},
     firebrand: {
         name: "Firebrand",
@@ -7567,6 +7567,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Narrow Confines",
 		desc: "Lowers the target's Attack, Special Attack and Speed by 1 stage.",
 		shortDesc: "Lowers the foe(s) Attack, Sp. Atk, Speed by 1.",
+	},
+	finaljudgment: {
+		name: "Final Judgment",
+		desc: "The user prevents all opposing Pokemon from using any moves that the user also knows as long as the user remains active.",
+		shortDesc: "No foe can use any move known by the user.",
 	},
 	maxmystery: {
 		name: "Max Mystery",

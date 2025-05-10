@@ -22138,7 +22138,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	takethat: {
 		num: 2133,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 80,
 		basePowerCallback(pokemon, target, move) {
 			const damagedByTarget = pokemon.attackedBy.some(
 				p => p.source === target && p.damage > 0 && p.thisTurn
@@ -22150,7 +22150,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			return move.basePower;
 		},
 		category: "Physical",
-		name: "Revenge",
+		name: "TAKE THAT!",
 		pp: 10,
 		priority: -4,
 		flags: {contact: 1, protect: 1, mirror: 1},
