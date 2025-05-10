@@ -21846,7 +21846,7 @@ export const Moves: {[moveid: string]: MoveData} = {
         num: 2118,
 		accuracy: 100,
 		basePower: 80,
-		category: "Special",
+		category: "Physical",
 		name: "Barrier Crash",
 		pp: 10,
 		priority: 0,

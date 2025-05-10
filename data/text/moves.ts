@@ -7433,8 +7433,8 @@ export const MovesText: {[k: string]: MoveText} = {
     },
     barriercrash: {
         name: "Barrier Crash",
-		desc: "Damage is calculated using the user's Special Defense stat as its Special Attack, including stat stage changes. Other effects that modify the Special Attack stat are used as normal.",
-		shortDesc: "Uses user's Sp. Def stat as Sp. Atk in damage calculation.",
+		desc: "Damage is calculated using the user's Special Defense stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+		shortDesc: "Uses user's Sp. Def stat as Atk in damage calculation.",
     },
     shieldbash: {
         name: "Shield Bash",
