@@ -19920,7 +19920,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ground",
 	},
-	knockoutin3steps: {
+	koin3steps: {
 		num: 2017,
 		accuracy: 90,
 		basePower: 40,
@@ -19928,7 +19928,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			return 40 * (0.75 * move.hit);
 		},
 		category: "Physical",
-		name: "Knock Out in 3 Steps",
+		name: "KO in 3 Steps",
 		pp: 5,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},

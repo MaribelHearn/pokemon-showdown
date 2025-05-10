@@ -6947,8 +6947,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Lowers the user's Attack by 2 stages.",
 		shortDesc: "Lowers the user's Attack by 2.",
 	},
-	knockoutin3steps: {
-		name: "Knock Out in 3 Steps",
+	koin3steps: {
+		name: "KO in 3 Steps",
 		desc: "Hits three times. Power increases to 60 for the second hit and 90 for the third. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit three times.",
 		shortDesc: "Hits 3 times. Each hit can miss, but power rises.",
 	},
