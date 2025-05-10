@@ -88373,7 +88373,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			sacredfire: ["8L1"],
 			burnup: ["8L1"],
 			lifedew: ["8L1"],
-			recover: ["8L1"],
 			doubleedge: ["8L1"],
 			quickattack: ["8L1"],
 			curse: ["8L1"],

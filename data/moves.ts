@@ -22138,20 +22138,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 	takethat: {
 		num: 2133,
 		accuracy: 100,
-		basePower: 70,
-		category: "Physical",
-		name: "TAKE THAT!",
-		pp: 20,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		onBasePower(basePower, pokemon) {
-			if (pokemon.status && pokemon.status !== 'slp') {
-				return this.chainModify(2);
+		basePower: 60,
+		basePowerCallback(pokemon, target, move) {
+			const damagedByTarget = pokemon.attackedBy.some(
+				p => p.source === target && p.damage > 0 && p.thisTurn
+			);
+			if (damagedByTarget) {
+				this.debug('Boosted for getting hit by ' + target);
+				return move.basePower * 2;
 			}
+			return move.basePower;
 		},
+		category: "Physical",
+		name: "Revenge",
+		pp: 10,
+		priority: -4,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		drain: [1, 2],
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Fighting",
 	},
     firebrand: {
         num: 2134,
