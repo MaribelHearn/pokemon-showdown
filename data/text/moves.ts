@@ -6954,8 +6954,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	strawberrycross: {
 		name: "Strawberry Cross",
-		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
-		shortDesc: "Hits 2-5 times in one turn.",
+		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. Has a 10% chance to paralyze the target.",
+		shortDesc: "Hits 2 times in one turn. 10% chance to paralyze.",
 	},
 	iwakasascurse: {
 		name: "Iwakasa's Curse",
@@ -7040,8 +7040,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	barrelroll: {
 		name: "Barrel Roll",
-		desc: "If this move is successful, the user is locked into this move and cannot make another move until it misses, 5 turns have passed, or the attack cannot be used. Power doubles with each successful hit of this move and doubles again if Defense Curl was used previously by the user. If this move is called by Sleep Talk, the move is used for one turn.",
-		shortDesc: "Power doubles with each hit. Repeats for 5 turns.",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon using a bomb or bullet move has 1/2 their damage deflected back, rounded down. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, Wide Guard, Barrel Roll, Electrical Shield, or Firewall, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from moves. Bomb/bullet: 1/2 damage deflected.",
 	},
 	umadbro: {
 		name: "Umadbro?",
@@ -7050,7 +7050,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	zerolaser: {
 		name: "Zero Laser",
-		shortDesc: "Cannot be used twice in a row.",
+		shortDesc: "Cannot be selected the turn after it's used.",
 	},
 	objection: {
 		name: "OBJECTION!",
@@ -7389,8 +7389,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	acidbomb: {
         name: "Acid Bomb",
-		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
-		shortDesc: "10% chance to lower the foe(s) Sp. Def by 1.",
+		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage. This move's type effectiveness against Steel is changed to be super effective no matter what this move's type is.",
+		shortDesc: "10% chance to lower Sp. Def by 1. Super effective on Steel.",
 	},
     pixiedust: {
         name: "Pixie Dust",

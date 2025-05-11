@@ -1949,11 +1949,13 @@ export class Pokemon {
 	}
 
 	/** Specifically: is protected against a single-target damaging move */
+	// Fundex: add custom protect moves
 	isProtected() {
 		return !!(
 			this.volatiles['protect'] || this.volatiles['detect'] || this.volatiles['maxguard'] ||
 			this.volatiles['kingsshield'] || this.volatiles['spikyshield'] || this.volatiles['banefulbunker'] ||
-			this.volatiles['obstruct']
+			this.volatiles['obstruct'] || this.volatiles['barrelroll'] || this.volatiles['firewall'] ||
+			this.volatiles['electricalshield']
 		);
 	}
 

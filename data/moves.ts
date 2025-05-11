@@ -19686,7 +19686,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 150,
 		category: "Physical",
 		name: "Falcon Punch",
-		pp: 20,
+		pp: 15,
 		priority: -3,
 		flags: {contact: 1, protect: 1, punch: 1, defrost: 1},
 		priorityChargeCallback(pokemon) {
@@ -20202,7 +20202,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 150,
 		category: "Physical",
 		name: "Warlock Punch",
-		pp: 20,
+		pp: 15,
 		priority: -3,
 		flags: {contact: 1, protect: 1, punch: 1, defrost: 1},
 		priorityChargeCallback(pokemon) {
@@ -20269,47 +20269,60 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	barrelroll: {
 		num: 2034,
-		accuracy: 90,
-		basePower: 30,
-		basePowerCallback(pokemon, target, move) {
-			let bp = move.basePower;
-			if (pokemon.volatiles['rollout'] && pokemon.volatiles['rollout'].hitCount) {
-				bp *= Math.pow(2, pokemon.volatiles['rollout'].hitCount);
-			}
-			if (pokemon.status !== 'slp') pokemon.addVolatile('rollout');
-			if (pokemon.volatiles['defensecurl']) {
-				bp *= 2;
-			}
-			this.debug("Barrel Roll bp: " + bp);
-			return bp;
-		},
-		category: "Physical",
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
 		name: "Barrel Roll",
-		pp: 20,
+		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {},
+		stallingMove: true,
+		volatileStatus: 'barrelroll',
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
 		condition: {
-			duration: 2,
-			onLockMove: 'rollout',
-			onStart() {
-				this.effectState.hitCount = 1;
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'move: Protect');
 			},
-			onRestart() {
-				this.effectState.hitCount++;
-				if (this.effectState.hitCount < 5) {
-					this.effectState.duration = 2;
+			onTryHitPriority: 3,
+			onTryHit(target, source, move) {
+				if (!move.flags['protect']) {
+					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+					return;
 				}
+				if (move.smartTarget) {
+					move.smartTarget = false;
+				} else {
+					this.add('-activate', target, 'move: Protect');
+				}
+				const lockedmove = source.getVolatile('lockedmove');
+				if (lockedmove) {
+					// Outrage counter is reset
+					if (source.volatiles['lockedmove'].duration === 2) {
+						delete source.volatiles['lockedmove'];
+					}
+				}
+				if (move.flags['bomb'] || move.flags['bullet']) {
+					this.damage(target.lastDamage / 2 , source, target);
+				}
+				return this.NOT_FAIL;
 			},
-			onResidual(target) {
-				if (target.lastMove && target.lastMove.id === 'struggle') {
-					// don't lock
-					delete target.volatiles['rollout'];
+			onHit(target, source, move) {
+				if (move.flags['bomb'] || move.flags['bullet']) {
+					this.damage(target.lastDamage / 2 , source, target);
 				}
 			},
 		},
 		secondary: null,
-		target: "normal",
+		target: "self",
 		type: "Dragon",
+		zMove: {boost: {spd: 1}},
 	},
 	umadbro: {
 		num: 2035,
@@ -21300,7 +21313,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 2088,
 		accuracy: 70,
 		basePower: 120,
-		category: "Status",
+		category: "Special",
 		name: "Lunatic Red Eyes",
 		pp: 5,
 		priority: 0,

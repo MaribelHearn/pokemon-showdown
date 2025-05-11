@@ -714,7 +714,8 @@ export class BattleActions {
 		if (move.breaksProtect) {
 			for (const target of targets) {
 				let broke = false;
-				for (const effectid of ['banefulbunker', 'kingsshield', 'obstruct', 'protect', 'spikyshield']) {
+				// Fundex: add custom protect moves
+				for (const effectid of ['banefulbunker', 'kingsshield', 'obstruct', 'protect', 'spikyshield', 'barrelroll', 'firewall', 'electricalshield']) {
 					if (target.removeVolatile(effectid)) broke = true;
 				}
 				if (this.battle.gen >= 6 || !target.isAlly(pokemon)) {

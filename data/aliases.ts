@@ -332,6 +332,9 @@ export const Aliases: {[alias: string]: string} = {
 	ufoflying: "Pokestar UFO",
 	vivillonmeadow: "Vivillon",
 
+	// Fundex
+	bsod: "Blue Screen of Death",
+
 	// event formes
 	rockruffdusk: "Rockruff",
 
