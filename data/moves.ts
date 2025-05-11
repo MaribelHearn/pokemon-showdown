@@ -20792,9 +20792,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				this.boost(boost);
 			}
 		},
-		onTry(source, target) {
-		},
-		target: "normal",
+		target: "self",
 		type: "Normal",
 		zMove: {effect: 'clearnegativeboost'},
 	},

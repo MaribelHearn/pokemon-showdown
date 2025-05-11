@@ -89123,7 +89123,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		learnset: {
 			zantetsuken: ["8L1"],
 			magicaltempest: ["8L1"],
-			lightspeedmovement: ["8L1"],
+			handofdestruction: ["8L1"],
 		},
 	},
 	satori: {

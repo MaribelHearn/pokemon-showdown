@@ -7134,10 +7134,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "A random move among those known by the user's party members is selected for use. Does not select Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Bounce, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dig, Dive, Dragon Tail, Endure, Feint, Fly, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Phantom Force, Protect, Rage Powder, Roar, Shadow Force, Shell Trap, Sketch, Sky Drop, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move.",
 		shortDesc: "Uses a random move known by a team member.",
 	},
-	superego: {
-		name: "Super-Ego",
-		desc: "If the target lost HP, the user takes recoil damage equal to 10% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 10% recoil.",
+	releaseoftheid: {
+		name: "Release of the Id",
+		desc: "Changes effect based on the target's intentions. Sharply raises Defense and Sp. Def if the target intends to use an attacking move, and sharply raises Attack and Sp. Atk if the target intends to use a non-damaging move.",
+		shortDesc: "Boosts stats depending on the foe(s) move.",
 	},
 	megawattlineargun: {
 		name: "Megawatt Linear Gun",
@@ -7322,7 +7322,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Raises a random stat by 2 stages as long as the stat is not already at stage 6. The user can choose to use this move on itself or an adjacent ally. Fails if no stat stage can be raised or if used on an ally with a substitute.",
 		shortDesc: "Raises a random stat of the user or an ally by 2.",
 	},
-	swordoflight: {
+	zantetsuken: {
 		name: "Sword of Light",
 		shortDesc: "No additional effect.",
 	},
@@ -7330,12 +7330,9 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Magical Tempest",
 		shortDesc: "No additional effect.",
 	},
-	lightspeedmovement: {
-		name: "Lightspeed Movement",
-		desc: "Raises the user's Speed by 12 stages in exchange for the user losing 1/2 of its maximum HP, rounded down. Fails if the user would faint or if its Attack stat stage is 6.",
-		shortDesc: "User loses 50% max HP. Maximizes Speed.",
-
-		boost: "  [POKEMON] cut its own HP and maximized its Speed!",
+	handofdestruction: {
+		name: "Hand of Destruction",
+		shortDesc: "Deals 1.5x damage if super effective.",
 	},
 	bearddeflect: {
 		name: "Beard Deflect",
