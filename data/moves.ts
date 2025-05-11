@@ -20308,14 +20308,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 						delete source.volatiles['lockedmove'];
 					}
 				}
-				if (move.flags['bomb'] || move.flags['bullet']) {
-					this.damage(this.clampIntRange(source.maxhp / 2, 1, Math.floor(source.maxhp / 2)), target, target, move);
+				if (move.flags['bullet'] || move.flags['pulse']) {
+					this.damage(this.clampIntRange(target.maxhp / 2, 1, Math.floor(target.maxhp / 2)), source, source, move);
 				}
 				return this.NOT_FAIL;
 			},
 			onHit(target, source, move) {
-				if (move.flags['bomb'] || move.flags['bullet']) {
-					this.damage(this.clampIntRange(source.maxhp / 2, 1, Math.floor(source.maxhp / 2)), target, target, move);
+				if (move.flags['bullet'] || move.flags['pulse']) {
+					this.damage(this.clampIntRange(target.maxhp / 2, 1, Math.floor(target.maxhp / 2)), source, source, move);
 				}
 			},
 		},
