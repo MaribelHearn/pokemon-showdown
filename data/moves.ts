@@ -20758,7 +20758,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			this.actions.useMove(randomMove, target);
 		},
 		onBasePower(basePower, pokemon) {
-			this.debug('recollection boost');
+			this.debug('Recollection boost');
 			return this.chainModify(1.2);
 		},
 		secondary: null,
@@ -21489,26 +21489,21 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "???",
 		zMove: {basePower: 180},
 	},
-	lightspeedmovement: {
+	handofdestruction: {
 		num: 2098,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Lightspeed Movement",
-		pp: 10,
+		accuracy: 85,
+		basePower: 120,
+		category: "Physical",
+		name: "Hand of Destruction",
+		pp: 5,
 		priority: 0,
-		flags: {snatch: 1},
-		onHit(target) {
-			if (target.hp <= target.maxhp / 2 || target.boosts.atk >= 6 || target.maxhp === 1) { // Shedinja clause
-				return false;
-			}
-			this.directDamage(target.maxhp / 2);
-			this.boost({spe: 12}, target);
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (typeMod >= 1) return typeMod * 1.5;
 		},
 		secondary: null,
-		target: "self",
-		type: "Normal",
-		zMove: {effect: 'heal'},
+		target: "normal",
+		type: "Dark",
 	},
 	bearddeflect: {
 		num: 2099,

@@ -89121,7 +89121,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	winner: {
 		learnset: {
-			swordoflight: ["8L1"],
+			zantetsuken: ["8L1"],
 			magicaltempest: ["8L1"],
 			lightspeedmovement: ["8L1"],
 		},
@@ -89133,7 +89133,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	koishi: {
 		learnset: {
-			superego: ["8L1"],
+			releaseoftheid: ["8L1"],
 		},
 	},
 	nitori: {
