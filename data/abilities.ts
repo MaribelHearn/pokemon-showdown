@@ -5028,7 +5028,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (move.flags['contact']) {
-				target.formeChange('Wiggler-Angry');
+				target.formeChange('Angry Wiggler');
 			}
 		},
 		name: "Short-Tempered",
