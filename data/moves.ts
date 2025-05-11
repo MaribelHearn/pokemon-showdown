@@ -19823,7 +19823,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Nuke",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, defrost: 1, distance: 1, mirror: 1},
+		flags: {bullet: 1, protect: 1, defrost: 1, distance: 1, mirror: 1},
 		onEffectiveness(typeMod, target, type, move) {
 			return typeMod + this.dex.getEffectiveness('Poison', type);
 		},
@@ -20309,13 +20309,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 					}
 				}
 				if (move.flags['bomb'] || move.flags['bullet']) {
-					this.damage(target.lastDamage / 2 , source, target);
+					this.damage(this.clampIntRange(source.maxhp / 2, 1, Math.floor(source.maxhp / 2)), target, target, move);
 				}
 				return this.NOT_FAIL;
 			},
 			onHit(target, source, move) {
 				if (move.flags['bomb'] || move.flags['bullet']) {
-					this.damage(target.lastDamage / 2 , source, target);
+					this.damage(this.clampIntRange(source.maxhp / 2, 1, Math.floor(source.maxhp / 2)), target, target, move);
 				}
 			},
 		},
