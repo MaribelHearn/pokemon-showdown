@@ -20309,7 +20309,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 					}
 				}
 				if (move.flags['bullet'] || move.flags['pulse']) {
-					this.damage(this.clampIntRange(target.maxhp / 2, 1, Math.floor(source.maxhp / 2)), source, source, move);
+					let damage = this.actions.getDamage(source, target, move, true);
+					if (!damage) damage = target.maxhp;
+					this.damage(this.clampIntRange(damage / 2, 1, Math.floor(source.maxhp / 2)), source, source, move);
 				}
 				return this.NOT_FAIL;
 			},
