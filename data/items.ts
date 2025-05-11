@@ -7261,19 +7261,6 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2015,
         gen: 8,
     },
-    /*gokuite: {
-        name: "Gokuite",
-        spritenum: 2016,
-        megaStone: "Goku-Mega",
-        megaEvolves: "Goku",
-        itemUser: ["Goku"],
-        onTakeItem(item, source) {
-            if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-            return true;
-        },
-        num: 2016,
-        gen: 8,
-    },*/
     smashball: {
         name: "Smash Ball",
         spritenum: 762,

@@ -16548,6 +16548,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 90,
 		color: "Black",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Plasma Cane",
 	},
 	zalgo: {
 		num: 2006,
@@ -16837,6 +16838,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 90,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Vegetite",
 	},
 	droctogonapus: {
 		num: 2027,
@@ -17013,6 +17015,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 250,
 		color: "Black",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Triforce",
 	},
 	suiseiseki: {
 		num: 2037,
@@ -17834,6 +17837,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 350,
 		color: "Green",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Smash Ball",
     },
     genjii: {
         num: 2097,
@@ -17871,6 +17875,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 45,
 		color: "White",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Saboten Bottle",
     },
     maribel: {
         num: 2099,
@@ -17897,6 +17902,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 45,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Strange Gap",
     },
     kogasa: {
         num: 2100,
