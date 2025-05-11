@@ -20772,27 +20772,28 @@ export const Moves: {[moveid: string]: MoveData} = {
 		category: "Status",
 		name: "Release of the Id",
 		pp: 5,
-		priority: 0,
+		priority: 1,
 		flags: {bypasssub: 1},
-		onHit(target, source) {
-			const stats: BoostID[] = [];
-			let stat: BoostID;
+		onTry(source, target) {
 			const action = this.queue.willMove(target);
 			const move = action?.choice === 'move' ? action.move : null;
+			if (!move || target.newlySwitched) {
+				return false;
+			}
 			const boost: SparseBoostsTable = {};
-			if (!move || (move.category === 'Status' && move.id !== 'mefirst') || target.volatiles['mustrecharge']) {
+			if ((move.category === 'Status' && move.id !== 'mefirst') || target.volatiles['mustrecharge']) {
 				//const atkSpa: BoostID[] = ['atk', 'spa'];
 				boost['atk'] = 2;
 				boost['spa'] = 2;
-				this.boost(boost);
+				this.boost(boost, source);
 			} else {
 				//const defSpd: BoostID[] = ['def', 'spd'];
 				boost['def'] = 2;
 				boost['spd'] = 2;
-				this.boost(boost);
+				this.boost(boost, source);
 			}
 		},
-		target: "self",
+		target: "normal",
 		type: "Normal",
 		zMove: {effect: 'clearnegativeboost'},
 	},
