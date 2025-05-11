@@ -20274,7 +20274,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		category: "Status",
 		name: "Barrel Roll",
 		pp: 10,
-		priority: 0,
+		priority: 4,
 		flags: {},
 		stallingMove: true,
 		volatileStatus: 'barrelroll',
