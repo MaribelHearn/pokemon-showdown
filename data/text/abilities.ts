@@ -2113,6 +2113,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Incomprehensible",
 		desc: "In the battle log, this Pokemon does not announce which move it is using. The move animation is always that of Dark Pulse.",
 		shortDesc: "This Pokemon does not announce which move it is using.",
+
+		move: "#darkpulse",
 	},
     dragonvein: {
         name: "Dragon Vein",
