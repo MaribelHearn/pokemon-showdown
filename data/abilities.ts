@@ -5161,6 +5161,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 2035,
     },
 	incomprehensible: {
+		onDamage(damage, target, source, effect) {
+			this.add('-activate', source, 'ability: ' + effect.name);
+		},
         name: "Incomprehensible",
         rating: 3,
         num: 2036,
