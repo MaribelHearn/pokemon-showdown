@@ -2109,6 +2109,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "If this Pokemon is holding an item, its Speed is doubled. This boost is lost if it loses its item or Ability.",
 		shortDesc: "Speed is doubled with a held item; boost is lost if it loses its item/Ability.",
     },
+	incomprehensible: {
+		name: "Incomprehensible",
+		desc: "In the battle log, this Pokemon does not announce which move it is using. The move animation is always that of Dark Pulse.",
+		shortDesc: "This Pokemon does not announce which move it is using.",
+	},
     dragonvein: {
         name: "Dragon Vein",
     }

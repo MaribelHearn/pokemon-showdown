@@ -16661,7 +16661,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Dark", "Ghost"],
 		gender: "M",
 		baseStats: {hp: 100, atk: 80, def: 80, spa: 150, spd: 150, spe: 40},
-		abilities: {0: "Dark Aura", H: "Magic Bounce"},
+		abilities: {0: "Dark Aura", 1: "Incomprehensible", H: "Magic Bounce"},
 		weightkg: 45,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
