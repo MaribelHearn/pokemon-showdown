@@ -5160,9 +5160,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4.5,
 		num: 2035,
     },
+	incomprehensible: {
+        name: "Incomprehensible",
+        rating: 3,
+        num: 2036,
+	},
     dragonvein: {
         name: "Dragon Vein",
         rating: 3,
-        num: 2036,
+        num: 2037,
     }
 };
