@@ -17918,7 +17918,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     meiling: {
         num: 2101,
 		name: "Meiling",
-		types: ["Fighting", "Dragon"],
+		types: ["Fighting", "Grass"],
 		gender: "F",
 		baseStats: {hp: 100, atk: 110, def: 110, spa: 45, spd: 70, spe: 90},
 		abilities: {0: "Guts", H: "Iron Fist"},
