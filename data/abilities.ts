@@ -4594,7 +4594,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	elementalist: {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
-            if (move.type === 'Electric' || move.type === 'Fire' || move.type === 'Ground' || move.type === 'Water') {
+            if (move.type === 'Steel' || move.type === 'Grass' || move.type === 'Fire' || move.type === 'Ground' || move.type === 'Water') {
                 return this.chainModify([0x1333, 0x1000]);
             }
 		},
@@ -5164,10 +5164,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         name: "Incomprehensible",
         rating: 3,
         num: 2036,
+		// Ability activation located in various files
+	},
+	grazeenergy: {
+        name: "Graze Energy",
+        rating: 2,
+        num: 2037,
+		// Ability activation located in battle-actions.ts
 	},
     dragonvein: {
         name: "Dragon Vein",
         rating: 3,
-        num: 2037,
+        num: 2038,
     }
 };

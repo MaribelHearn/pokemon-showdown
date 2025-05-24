@@ -527,7 +527,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 80,
 		},
-		// Item activation located in scripts.js
+		// Item activation located in battle-actions.ts
 		num: 1121,
 		gen: 8,
 	},

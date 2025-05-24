@@ -1946,7 +1946,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	elementalist: {
 		name: "Elementalist",
-		shortDesc: "This Pokemon's Fire-, Water-, Electric- and Ground-type attacks have 1.2x power.",
+		shortDesc: "This Pokemon's Fire-, Water-, Grass-, Steel- and Ground-type attacks have 1.2x power.",
 	},
     negativezone: {
 		name: "Negative Zone",

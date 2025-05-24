@@ -703,6 +703,9 @@ export class BattleActions {
 				if (!move.ohko && pokemon.hasItem('blunderpolicy') && pokemon.useItem()) {
 					this.battle.boost({spe: 2}, pokemon);
 				}
+				if (!move.ohko && pokemon.hasAbility('grazeenergy')) {
+					this.battle.boost({spa: 1}, target);
+				}
 				hitResults[i] = false;
 				continue;
 			}

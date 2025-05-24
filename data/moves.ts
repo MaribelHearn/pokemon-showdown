@@ -20961,6 +20961,19 @@ export const Moves: {[moveid: string]: MoveData} = {
         pp: 5,
         priority: 0,
         flags: {protect: 1, mirror: 1},
+		onTryHit(target) {
+			if (target.getAbility().isPermanent || target.ability === 'normalize' || target.ability === 'truant') {
+				return false;
+			}
+		},
+		onHit(pokemon) {
+			const oldAbility = pokemon.setAbility('normalize');
+			if (oldAbility) {
+				this.add('-ability', pokemon, 'Normalize', '[from] move: a NORMAL move');
+				return;
+			}
+			return false;
+		},
         secondary: null,
         target: "normal",
         type: "Normal",
