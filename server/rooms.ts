@@ -131,7 +131,7 @@ function sendPOLog(message: string) {
 	}
 
 	//let content = chunks[4];
-	lobby.addRaw(`<div class="chat chatmessage-po"><small>${timestamp} </small><strong style="color:${color};">${PO_BASE64 + symbol}` +
+	lobby.addRaw(`<div class="chat chatmessage-po"><small>${timestamp} </small><strong style="color:${color};"><span title="This user is using Pokemon Online">${PO_BASE64 + symbol}</span>` +
 	`<span class="username" data-name="po:${name}">${name}</span>:</strong> <em>${escapeHTML(message)}`);
 	//lobby.addRaw(message);
 	lobby.update();
@@ -144,7 +144,7 @@ function connect() {
 		console.log("[WS] PO server is online");
 		poOnline = true;
 		//app.rooms.lobby.receive("Connection to the Pokemon Online server established!");
-		clearInterval(interval);
+		//clearInterval(interval);
 	};
 
 	ws.onclose = function () {
@@ -193,7 +193,7 @@ function connect() {
 			if (command == "msg" && (message.startsWith("join") || message.startsWith("leave"))) {
 				const name = data[1];
 				let symbol = poPlayers[name].symbol ? poPlayers[name].symbol : '';
-				lobby.addRaw(`<div class="message"><small style="color: #555555;">${PO_BASE64}${symbol}${name} ${message.startsWith("join") ? " joined" : " left"}`);
+				lobby.addRaw(`<div class="message"><small style="color: #555555;"><span title="This user is using Pokemon Online">${PO_BASE64}</span>${symbol}${name} ${message.startsWith("join") ? " joined" : " left"}`);
 				lobby.update();
 			}
 
@@ -205,7 +205,7 @@ function connect() {
 				const color2 = poPlayers[name2] ? poPlayers[name2].color : "black";
 				const symbol1 = poPlayers[name1] ? poPlayers[name1].symbol : "";
 				const symbol2 = poPlayers[name2] ? poPlayers[name2].symbol : "";
-				lobby.addRaw(`<a href="#" class="ilink">${PO_BASE64}${tier} battle started between <strong style="color:${color1};">${symbol1}${name1}</strong>` +
+				lobby.addRaw(`<a href="#" class="ilink"><span title="This user is using Pokemon Online">${PO_BASE64}</span>${tier} battle started between <strong style="color:${color1};">${symbol1}${name1}</strong>` +
 						` and <strong style="color:${color2};">${symbol2}${name2}</strong>.</a>`);
 				lobby.update();
 			}
