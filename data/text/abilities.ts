@@ -2114,6 +2114,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "In the battle log, this Pokemon does not announce which move it is using. The move animation is always that of Dark Pulse.",
 		shortDesc: "This Pokemon does not announce which move it is using.",
 	},
+	grazeenergy: {
+		name: "Graze Energy",
+		desc: "This Pokemon gets a Sp. Atk. boost if the opponent misses against it.",
+		shortDesc: "This Pokemon gets a Sp. Atk. boost if the opponent misses against it.",
+	},
     dragonvein: {
         name: "Dragon Vein",
     }
