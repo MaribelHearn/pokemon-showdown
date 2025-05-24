@@ -22466,31 +22466,61 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "???",
 	},
-	mysterypower: {
+	mysteriouspower: {
 		num: 2142,
 		accuracy: 100,
-		basePower: 70,
-		category: "Physical",
-		name: "Mystery Power",
-		pp: 10,
+		basePower: 60,
+		category: "Special",
+		name: "Mysterious Power",
+		pp: 5,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		secondary: null,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					atk: 1,
+					def: 1,
+					spa: 1,
+					spd: 1,
+					spe: 1,
+				},
+			},
+		},
 		target: "normal",
 		type: "???",
 	},
-	enigmaattack: {
+	finaljudgment: {
 		num: 2143,
-		accuracy: 100,
-		basePower: 70,
+		accuracy: 85,
+		basePower: 120,
 		category: "Special",
-		name: "Enigma Attack",
-		pp: 10,
+		name: "Final Judgment",
+		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		secondary: null,
+		condition: {
+			noCopy: true,
+			onStart(target) {
+				this.add('-start', target, 'move: Imprison');
+			},
+			onFoeDisableMove(pokemon) {
+				for (const moveSlot of this.effectState.source.moveSlots) {
+					if (moveSlot.id === 'struggle') continue;
+					pokemon.disableMove(moveSlot.id, 'hidden');
+				}
+				pokemon.maybeDisabled = true;
+			},
+			onFoeBeforeMovePriority: 4,
+			onFoeBeforeMove(attacker, defender, move) {
+				if (move.id !== 'struggle' && this.effectState.source.hasMove(move.id) && !move.isZ && !move.isMax) {
+					this.add('cant', attacker, 'move: Imprison', move);
+					return false;
+				}
+			},
+		},
 		target: "normal",
-		type: "???",
+		type: "Steel",
 	},
 	offwaves: {
 		num: 2144,
@@ -22526,40 +22556,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ghost",
 	},
-	finaljudgment: {
-		num: 2146,
-		accuracy: 85,
-		basePower: 120,
-		category: "Special",
-		name: "Final Judgment",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		condition: {
-			noCopy: true,
-			onStart(target) {
-				this.add('-start', target, 'move: Imprison');
-			},
-			onFoeDisableMove(pokemon) {
-				for (const moveSlot of this.effectState.source.moveSlots) {
-					if (moveSlot.id === 'struggle') continue;
-					pokemon.disableMove(moveSlot.id, 'hidden');
-				}
-				pokemon.maybeDisabled = true;
-			},
-			onFoeBeforeMovePriority: 4,
-			onFoeBeforeMove(attacker, defender, move) {
-				if (move.id !== 'struggle' && this.effectState.source.hasMove(move.id) && !move.isZ && !move.isMax) {
-					this.add('cant', attacker, 'move: Imprison', move);
-					return false;
-				}
-			},
-		},
-		target: "normal",
-		type: "Steel",
-	},
 	maxmystery: {
-		num: 2147,
+		num: 2146,
 		accuracy: true,
 		basePower: 10,
 		category: "Physical",
