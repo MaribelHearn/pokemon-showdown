@@ -7145,7 +7145,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	monstercucumber: {
 		name: "Monster Cucumber",
-		shortDesc: "No additional effect.",
+		desc: "This move combines Water in its type effectiveness against the target.",
+		shortDesc: "Combines Water in its type effectiveness.",
 	},
 	superhumanbyakurenhijiri: {
 		name: "Superhuman Byakuren Hijiri",
@@ -7547,9 +7548,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "This move's type depends on the user's primary type.",
 		shortDesc: "Type varies based on the user's primary type.",
 	},
-	mysterypower: {
-		name: "Mystery Power",
-		shortDesc: "No additional effect.",
+	mysteriouspower: {
+		name: "Mysterious Power",
+		desc: "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
+		shortDesc: "10% chance to raise all stats by 1 (not acc/eva).",
 	},
 	enigmaattack: {
 		name: "Enigma Attack",

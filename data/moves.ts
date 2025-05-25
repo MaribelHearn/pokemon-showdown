@@ -20800,7 +20800,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	megawattlineargun: {
 		num: 2057,
 		accuracy: 85,
-		basePower: 120,
+		basePower: 110,
 		category: "Physical",
 		name: "Megawatt Linear Gun",
 		pp: 5,
@@ -20812,23 +20812,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	monstercucumber: {
 		num: 2058,
-		accuracy: 100,
+		accuracy: 95,
 		basePower: 100,
 		category: "Physical",
 		name: "Monster Cucumber",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type, move) {
+			return typeMod + this.dex.getEffectiveness('Water', type);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Grass",
 	},
-	superhumanbyakurenhijiri: {
+	superhumanbyakuren: {
 		num: 2059,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
-		name: "Superhuman Byakuren Hijiri",
+		name: "Superhuman Byakuren",
 		pp: 5,
 		priority: 2,
 		flags: {contact: 1, protect: 1, mirror: 1},
