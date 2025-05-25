@@ -36,7 +36,7 @@
     "start": "node pokemon-showdown start",
     "build": "node build",
     "tsc": "tsc",
-    "test": "nodemon pokemon-showdown start"
+    "test": "nodemon -e ts pokemon-showdown start"
   },
   "husky": {
     "hooks": {
