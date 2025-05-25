@@ -32,10 +32,11 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 		mega: "  [POKEMON]'s [ITEM] is reacting to the Key Stone!",
 		megaNoItem: "  [POKEMON] is reacting to [TRAINER]'s Key Stone!",
+		megaBowser: "[POKEMON] used his Final Smash!",
+		megaVIVIT: "[POKEMON] consumed the Saboten Energy from her bottle!",
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
-		transformMega: "[POKEMON] has Mega Evolved into Mega [POKEMON]!",
+		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]!",
 		transformVegeta: "[POKEMON] transformed into Super Saiyan!",
-		transformBowser: "[POKEMON] used his Final Smash!",
 		transformMaribel: "[POKEMON] lost control over her powers and went berserk!",
 		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state!",
 		zPower: "  [POKEMON] surrounded itself with its Z-Power!",

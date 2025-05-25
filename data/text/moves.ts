@@ -7073,8 +7073,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	zzzap: {
 		name: "ZZZAP!",
-		desc: "For 5 turns, the terrain becomes Electric Terrain. During the effect, the power of Electric-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot fall asleep; Pokemon already asleep do not wake up. Grounded Pokemon cannot become affected by Yawn or fall asleep from its effect. Camouflage transforms the user into an Electric type, Nature Power becomes Thunderbolt, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Electric Terrain.",
-		shortDesc: "5 turns. Grounded: +Electric power, can't sleep.",
+		desc: "Deals damage and sets Electric Terrain for 5 turns. During the effect, the power of Electric-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot fall asleep; Pokemon already asleep do not wake up. Grounded Pokemon cannot become affected by Yawn or fall asleep from its effect. Camouflage transforms the user into an Electric type, Nature Power becomes Thunderbolt, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Electric Terrain.",
+		shortDesc: "Deals damage and sets Electric Terrain for 5 turns.",
 	},
 	borderdistortion: {
 		name: "Border Distortion",

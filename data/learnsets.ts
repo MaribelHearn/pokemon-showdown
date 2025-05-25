@@ -90051,6 +90051,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			knockoff: ["8M"],
 			playrough: ["8M"],
 			dracometeor: ["8M"],
+			grassyterrain: ["8M"],
 		},
 	},
 	patchouli: {
