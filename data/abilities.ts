@@ -987,7 +987,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	flareboost: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (attacker.status === 'brn' && move.category === 'Special') {
+			if (['brn', 'tmt'].includes(attacker.status) && move.category === 'Special') {
 				return this.chainModify(1.5);
 			}
 		},
@@ -1423,7 +1423,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onDamage(damage, target, source, effect) {
-			if (effect && effect.id === 'brn') {
+			if (effect && ['brn', 'tmt'].includes(effect.id)) {
 				return damage / 2;
 			}
 		},
@@ -4289,13 +4289,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onUpdate(pokemon) {
-			if (pokemon.status === 'brn') {
+			if (['brn', 'tmt'].includes(pokemon.status)) {
 				this.add('-activate', pokemon, 'ability: Water Bubble');
 				pokemon.cureStatus();
 			}
 		},
 		onSetStatus(status, target, source, effect) {
-			if (status.id !== 'brn') return;
+			if (status.id !== 'brn' && status.id !== 'tmt') return;
 			if ((effect as Move)?.status) {
 				this.add('-immune', target, '[from] ability: Water Bubble');
 			}
@@ -4318,13 +4318,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	waterveil: {
 		onUpdate(pokemon) {
-			if (pokemon.status === 'brn') {
+			if (['brn', 'tmt'].includes(pokemon.status)) {
 				this.add('-activate', pokemon, 'ability: Water Veil');
 				pokemon.cureStatus();
 			}
 		},
 		onSetStatus(status, target, source, effect) {
-			if (status.id !== 'brn') return;
+			if (status.id !== 'brn' && status.id !== 'tmt') return;
 			if ((effect as Move)?.status) {
 				this.add('-immune', target, '[from] ability: Water Veil');
 			}
@@ -5015,7 +5015,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	hotblooded: {
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
-			if (effect.id === 'brn') {
+			if (['brn', 'tmt'].includes(effect.id)) {
 				this.heal(target.baseMaxhp / 8);
 				return false;
 			}

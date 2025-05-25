@@ -4239,12 +4239,12 @@ export const Items: {[itemid: string]: ItemData} = {
 			type: "Grass",
 		},
 		onUpdate(pokemon) {
-			if (pokemon.status === 'brn') {
+			if (['brn', 'tmt'].includes(pokemon.status)) {
 				pokemon.eatItem();
 			}
 		},
 		onEat(pokemon) {
-			if (pokemon.status === 'brn') {
+			if (['brn', 'tmt'].includes(pokemon.status)) {
 				pokemon.cureStatus();
 			}
 		},
@@ -6794,12 +6794,12 @@ export const Items: {[itemid: string]: ItemData} = {
 			type: "Grass",
 		},
 		onUpdate(pokemon) {
-			if (pokemon.status === 'brn') {
+			if (['brn', 'tmt'].includes(pokemon.status)) {
 				pokemon.eatItem();
 			}
 		},
 		onEat(pokemon) {
-			if (pokemon.status === 'brn') {
+			if (['brn', 'tmt'].includes(pokemon.status)) {
 				pokemon.cureStatus();
 			}
 		},

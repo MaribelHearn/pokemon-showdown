@@ -7179,7 +7179,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	superglitch: {
         name: "Super Glitch",
-		shortDesc: "No additional effect.",
+		shortDesc: "Causes the TMTRAINER effect, burning the target.",
     },
     anormalmove: {
         name: "a NORMAL move",

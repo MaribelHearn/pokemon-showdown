@@ -17,6 +17,18 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.damage(pokemon.baseMaxhp / 16);
 		},
 	},
+	tmt: {
+		name: 'tmt',
+		effectType: 'Status',
+		onStart(target, source, sourceEffect) {
+			this.add('-status', target, 'tmt');
+		},
+		// Damage reduction is handled directly in the sim/battle.js damage function
+		onResidualOrder: 10,
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 16);
+		},
+	},
 	par: {
 		name: 'par',
 		effectType: 'Status',

@@ -1221,7 +1221,7 @@ function runMovesearch(target: string, cmd: string, canAll: boolean, message: st
 		'multihit', 'ohko', 'powder', 'protect', 'pulse', 'punch', 'recharge', 'reflectable', 'secondary',
 		'snatch', 'sound', 'zmove', 'maxmove', 'gmaxmove', 'protection', 'arrow', 'beam'
 	];
-	const allStatus = ['psn', 'tox', 'brn', 'par', 'frz', 'slp'];
+	const allStatus = ['psn', 'tox', 'brn', 'tmt', 'par', 'frz', 'slp'];
 	const allVolatileStatus = ['flinch', 'confusion', 'partiallytrapped'];
 	const allBoosts = ['hp', 'atk', 'def', 'spa', 'spd', 'spe', 'accuracy', 'evasion'];
 	const allTargets: {[k: string]: string} = {
@@ -1573,6 +1573,7 @@ function runMovesearch(target: string, cmd: string, canAll: boolean, message: st
 			case 'toxic': target = 'tox'; break;
 			case 'poison': target = 'psn'; break;
 			case 'burn': target = 'brn'; break;
+			case 'tmtrainer': target = 'tmt'; break;
 			case 'paralyze': target = 'par'; break;
 			case 'freeze': target = 'frz'; break;
 			case 'sleep': target = 'slp'; break;
@@ -2073,7 +2074,7 @@ function runItemsearch(target: string, cmd: string, canAll: boolean, message: st
 		for (let word of searchedWords) {
 			let wordEff = "";
 			switch (word) {
-			case 'burn': case 'burns':
+			case 'burn': case 'burns': case 'tmt':
 			case 'brn': wordEff = 'brn'; break;
 			case 'paralyze': case 'paralyzes':
 			case 'par': wordEff = 'par'; break;
