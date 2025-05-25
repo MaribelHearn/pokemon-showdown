@@ -22740,4 +22740,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "self",
 		type: "???"
 	},
+	overflowingunnaturalpower: {
+		num: 3010,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Overflowing Unnatural Power",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		selfBoost: {
+			boosts: {
+				atk: 1,
+				def: 1,
+				spa: 1,
+				spd: 1,
+				spe: 1,
+			},
+		},
+		isZ: "maribiumz",
+		secondary: null,
+		target: "self",
+		type: "???"
+	},
 };

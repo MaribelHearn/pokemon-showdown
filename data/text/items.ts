@@ -2422,6 +2422,46 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Glitchy Seed",
 		desc: "If the terrain is Glitchy Terrain, raises holder's Sp. Def by 1 stage. Single use.",
     },
+    celliumz: {
+        name: "Cellium Z",
+		desc: "If held by Cell with Hyper Beam... IMMA FIRIN' MAH LAZER!!",
+    },
+    cirniumz: {
+        name: "Cirnium Z",
+		desc: "If held by Cirno with Blizzard, she can use Diamond Blizzard.",
+    },
+    leonidiumz: {
+        name: "Leonidium Z",
+		desc: "If held by Leonidas with High Jump Kick, he can use Sparta Kick.",
+    },
+    utsuhoniumz: {
+        name: "Utsuhonium Z",
+		desc: "If held by Utsuho with Nuke, she can use Uncontainable Nuclear Reaction.",
+    },
+    yuyukiumz: {
+        name: "Yuyukium Z",
+		desc: "If held by Yuyuko with Ghastly Dream, she can use Saigyouji Flawless Nirvana.",
+    },
+    crabiumz: {
+        name: "Crabium Z",
+		desc: "If held by Giant Enemy Crab with Earthquake, it can use Massive Damage.",
+    },
+    kagiumz: {
+        name: "Kagium Z",
+		desc: "If held by Cirno with Blizzard, she can use Diamond Blizzard.",
+    },
+    mokiumz: {
+        name: "Mokium Z",
+		desc: "If held by Cirno with Blizzard, she can use Diamond Blizzard.",
+    },
+    winneriumz: {
+        name: "Winnerium Z",
+		desc: "If held by *** WINNER *** with Recover, he can use Medicine of Life.",
+    },
+    maribiumz: {
+        name: "Maribium Z",
+		desc: "If held by Maribel with Cosmic Power, she can use Overflowing Unnatural Power.",
+    },
 
 	// CAP items
 

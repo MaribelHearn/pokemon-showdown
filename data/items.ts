@@ -7424,4 +7424,14 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2033,
 		gen: 8,
 	},
+	maribiumz: {
+		name: "Maribium Z",
+		spritenum: 775,
+		onTakeItem: false,
+		zMove: "Overflowing Unnatural Power",
+		zMoveFrom: "Cosmic Power",
+		itemUser: ["Maribel"],
+		num: 2034,
+		gen: 8,
+	},
 };
