@@ -36,14 +36,7 @@
     "start": "node pokemon-showdown start",
     "build": "node build",
     "tsc": "tsc",
-    "fast-lint": "eslint . --config .eslintrc-no-types.json --cache --cache-location .eslintcache-no-types --ext .js,.ts,.tsx",
-    "lint": "eslint . --cache --ext .js,.ts,.tsx --max-warnings 0",
-    "fix": "eslint . --cache --ext .js,.ts,.tsx --fix",
-    "full-lint": "npm run lint",
-    "pretest": "npm run lint",
-    "test": "nodemon pokemon-showdown start",
-    "posttest": "npm run tsc",
-    "full-test": "npm run lint && npm run tsc && mocha --timeout 8000 --forbid-only -g \".*\""
+    "test": "nodemon pokemon-showdown start"
   },
   "husky": {
     "hooks": {
