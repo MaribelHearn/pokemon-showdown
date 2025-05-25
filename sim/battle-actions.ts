@@ -704,6 +704,7 @@ export class BattleActions {
 					this.battle.boost({spe: 2}, pokemon);
 				}
 				if (!move.ohko && target.hasAbility('grazeenergy')) {
+					this.battle.add('-activate', target, 'ability: Graze Energy');
 					this.battle.boost({spa: 1}, target);
 				}
 				hitResults[i] = false;
