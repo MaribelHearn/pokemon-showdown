@@ -2428,7 +2428,7 @@ export const ItemsText: {[k: string]: ItemText} = {
     },
     cirniumz: {
         name: "Cirnium Z",
-		desc: "If held by Cirno with Blizzard, she can use Diamond Blizzard.",
+		desc: "If held by Cirno with Diamond Blizzard, she can use Perfect Freeze.",
     },
     leonidiumz: {
         name: "Leonidium Z",
