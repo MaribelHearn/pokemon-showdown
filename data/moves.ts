@@ -20391,7 +20391,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				targetRelayVar.target = this.getAtSlot(lastDamagedBy.slot);
 			}
 		},
-		heal: [1, 2],
+		drain: [1, 2],
 		secondary: null,
 		target: "scripted",
 		type: "Steel",
