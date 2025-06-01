@@ -7148,8 +7148,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "This move combines Water in its type effectiveness against the target.",
 		shortDesc: "Combines Water in its type effectiveness.",
 	},
-	superhumanbyakurenhijiri: {
-		name: "Superhuman Byakuren Hijiri",
+	superhuman: {
+		name: "Superhuman",
 		desc: "No additional effect.",
 		shortDesc: "Nearly always goes first.",
 	},

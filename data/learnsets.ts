@@ -90843,7 +90843,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			sacredsword: ["8L1"],
 			zenheadbutt: ["8L1", "8M"],
 			flyingpress: ["8L1"],
-			superhumanbyakuren: ["8L1"],
+			superhuman: ["8L1"],
 			steelroller: ["8L1"],
 			victorydance: ["8L1"],
 			spinout: ["8L1"],

@@ -20826,12 +20826,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Grass",
 	},
-	superhumanbyakuren: {
+	superhuman: {
 		num: 2059,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
-		name: "Superhuman Byakuren",
+		name: "Superhuman",
 		pp: 5,
 		priority: 2,
 		flags: {contact: 1, protect: 1, mirror: 1},
