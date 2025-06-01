@@ -18204,7 +18204,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     glados: {
         num: 2120,
 		name: "GLaDOS",
-		types: ["Steel", "Electric"],
+		types: ["Steel", "Poison"],
 		gender: "F",
 		baseStats: {hp: 90, atk: 70, def: 130, spa: 120, spd: 80, spe: 30},
 		abilities: {0: "Neutralizing Gas", H: "Weak Armor"},
