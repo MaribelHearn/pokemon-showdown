@@ -91738,6 +91738,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		learnset: {
 			systemcrash: ["8L1"],
 			malfunction: ["8L1"],
+			softreset: ["8L1"],
+			hardreset: ["8L1"],
+			firewall: ["8L1"],
 		},
 	},
 	internetexplorer: {
@@ -91747,6 +91750,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			safeguard: ["8M"],
 			naturalgift: ["8M"],
 			endure: ["8M"],
+			firewall: ["8L1"],
 		},
 	},
 	microsoftedge: {
@@ -91757,18 +91761,21 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			safeguard: ["8M"],
 			naturalgift: ["8M"],
 			endure: ["8M"],
+			firewall: ["8L1"],
 		},
 	},
 	mozillafirefox: {
 		learnset: {
 			datastream: ["8L1"],
 			download: ["8L1"],
+			firewall: ["8L1"],
 		},
 	},
 	googlechrome: {
 		learnset: {
 			telemetry: ["8L1"],
 			download: ["8L1"],
+			firewall: ["8L1"],
 		},
 	},
 	recyclebin: {

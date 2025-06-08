@@ -7191,23 +7191,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Raises a random stat by 2 stages as long as the stat is not already at stage 6. The user can choose to use this move on itself or an adjacent ally. Restores 1/4 of maximum HP, rounded half up.",
 		shortDesc: "Raises a random stat by 2 and heals 25% HP.",
 	},
-	virtueofwindgod: {
-		name: "Virtue of Wind God",
-		shortDesc: "No additional effect.",
-	},
-	expandedonbashira: {
-		name: "Expanded Onbashira",
-		shortDesc: "No additional effect.",
-	},
-	foxtanukilaser: {
-		name: "Fox-Tanuki Laser",
-		shortDesc: "No additional effect.",
-	},
-	"12generalgods": {
-		name: "12 General Gods",
-		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
-		shortDesc: "Hits 2-5 times in one turn.",
-	},
 	countdown: {
 		name: "Count Down",
 		desc: "This attack charges on the first turn and executes on the second. Raises the user's Attack by 1 stage on the first turn. If the user is holding a Power Herb, the move completes in one turn.",
@@ -7222,16 +7205,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Malfunction",
 		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
 		shortDesc: "Has 33% recoil.",
-	},
-	reboot: {
-		name: "Reboot",
-		desc: "Resets the stat stages of all active Pokemon to 0.",
-		shortDesc: "Eliminates all stat changes.",
-	},
-	recoveryconsole: {
-		name: "Recovery Console",
-		desc: "The user restores 1/2 of its maximum HP, rounded half up.",
-		shortDesc: "Heals the user by 50% of its max HP.",
 	},
 	strengthenjutsu: {
 		name: "Strengthen Jutsu",
@@ -7257,9 +7230,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Data Stream",
 		shortDesc: "No additional effect.",
 	},
-	silverlight: {
-		name: "Silverlight",
+	telemetry: {
+		name: "Telemetry",
 		shortDesc: "No additional effect.",
+
+		activate: "  [POKEMON]'s Telemetry revealed the opposing Pokemon's move!",
 	},
 	delete: {
 		name: "Delete",

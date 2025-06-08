@@ -18459,7 +18459,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Steel", "Electric"],
 		gender: "N",
 		baseStats: {hp: 70, atk: 65, def: 110, spa: 105, spd: 60, spe: 105},
-		abilities: {0: "Web Browser", 1: "Download", H: "Flter"},
+		abilities: {0: "Web Browser", 1: "Download", H: "Filter"},
 		weightkg: 0.1,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],

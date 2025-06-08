@@ -2989,7 +2989,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, reflectable: 1, mirror: 1},
 		status: 'slp',
 		onTry(source, target, move) {
-			if (source.species.name === 'Darkrai' || move.hasBounced) {
+			if (source.species.name === 'Darkrai' || source.species.name === 'Rumia' || move.hasBounced) {
 				return;
 			}
 			this.add('-fail', source, 'move: Dark Void');
@@ -21219,7 +21219,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 100,
 			onHit(target, source) {
-				source.trySetStatus('frz', source);
+				source.setStatus('frz', source);
 			},
 		},
 		target: "normal",
@@ -21255,7 +21255,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onHit(target) {
 			const moves = target.moves;
 			const result = this.random(moves.length);
-			this.add('-ability', target, 'move: ' + result);
+			this.add('-ability', target, 'move: ' + moves[result]);
 		},
 		secondary: null,
 		target: "normal",
