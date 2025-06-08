@@ -91680,14 +91680,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	kanako: {
 		learnset: {
-			virtueofwindgod: ["8L1"],
-			expandedonbashira: ["8L1"],
+
 		},
 	},
 	ran: {
 		learnset: {
-			foxtanukilaser: ["8L1"],
-			"12generalgods": ["8L1"],
+
 		},
 	},
 	kanzou: {
@@ -91740,8 +91738,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		learnset: {
 			systemcrash: ["8L1"],
 			malfunction: ["8L1"],
-			reboot: ["8L1"],
-			recoveryconsole: ["8L1"],
 		},
 	},
 	internetexplorer: {
@@ -91771,7 +91767,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	googlechrome: {
 		learnset: {
-			silverlight: ["8L1"],
+			telemetry: ["8L1"],
 			download: ["8L1"],
 		},
 	},

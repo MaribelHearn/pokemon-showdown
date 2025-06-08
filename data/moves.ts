@@ -20934,6 +20934,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, mirror: 1},
 		volatileStatus: 'confusion',
+		onHit() {
+			const boost: SparseBoostsTable = {};
+			boost['spa'] = 1;
+			this.boost(boost);
+		},
 		secondary: null,
 		target: "allAdjacent",
 		type: "Dark",
@@ -20969,10 +20974,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return false;
 			}
 		},
-		onHit(pokemon) {
-			const oldAbility = pokemon.setAbility('normalize');
+		onHit(target) {
+			const oldAbility = target.setAbility('normalize');
 			if (oldAbility) {
-				this.add('-ability', pokemon, 'Normalize', '[from] move: a NORMAL move');
+				this.add('-ability', target, 'Normalize', '[from] move: a NORMAL move');
 				return;
 			}
 			return false;
@@ -20991,11 +20996,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {snatch: 1, heal: 1},
 		heal: [1, 4],
-		onHit(target) {
+		onHit(target, source) {
 			const stats: BoostID[] = [];
 			let stat: BoostID;
-			for (stat in target.boosts) {
-				if (target.boosts[stat] < 6) {
+			for (stat in source.boosts) {
+				if (source.boosts[stat] < 6) {
 					stats.push(stat);
 				}
 			}
@@ -21013,7 +21018,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Grass",
 		zMove: {effect: 'crit2'},
 	},
-	virtueofwindgod: {
+	/*virtueofwindgod: {
 		num: 2068,
 		accuracy: 100,
 		basePower: 95,
@@ -21065,7 +21070,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Ground",
-	},
+	},*/
 	countdown: {
 		num: 2072,
 		accuracy: 90,
@@ -21119,7 +21124,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "???",
 	},
-	reboot: {
+	/*reboot: {
 		num: 2075,
 		accuracy: true,
 		basePower: 0,
@@ -21153,7 +21158,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "self",
 		type: "Normal",
 		zMove: {effect: 'clearnegativeboost'},
-	},
+	},*/
 	strengthenjutsu: {
 		num: 2077,
 		accuracy: true,
@@ -21204,14 +21209,19 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	programfreeze: {
 		num: 2080,
-		accuracy: 85,
-		basePower: 120,
+		accuracy: 90,
+		basePower: 250,
 		category: "Special",
 		name: "Program Freeze",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			onHit(target, source) {
+				source.trySetStatus('frz', source);
+			},
+		},
 		target: "normal",
 		type: "Ice",
 	},
@@ -21224,19 +21234,29 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			boosts: {
+				spe: -1,
+			},
+		},
 		target: "normal",
 		type: "Fire",
 	},
-	silverlight: {
+	telemetry: {
 		num: 2082,
 		accuracy: 70,
 		basePower: 120,
 		category: "Special",
-		name: "Silverlight",
+		name: "Telemetry",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onHit(target) {
+			const moves = target.moves;
+			const result = this.random(moves.length);
+			this.add('-ability', target, 'move: ' + result);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Steel",

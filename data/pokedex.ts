@@ -18297,7 +18297,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Kanako",
 		types: ["Grass", "Flying"],
         gender: "F",
-		baseStats: {hp: 80, atk: 65, def: 100, spa: 115, spd: 100, spe: 60},
+		baseStats: {hp: 90, atk: 75, def: 100, spa: 115, spd: 100, spe: 70},
 		abilities: {0: "Pressure", H: "Lightning Rod"},
 		weightkg: 90,
 		color: "Red",
