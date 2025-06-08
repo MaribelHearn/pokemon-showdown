@@ -21257,7 +21257,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			const result = this.random(moves.length);
 			const move = this.dex.moves.get(moves[result]) as ActiveMove;
 			target.moveUsed(move);
-			this.add('-activate', source, 'move: Telemetry', target.lastMove?.name);
+			this.add('-start', source, 'Telemetry', move.name);
 		},
 		secondary: null,
 		target: "normal",
