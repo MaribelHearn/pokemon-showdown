@@ -21252,10 +21252,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onHit(target) {
+		onHit(target, source) {
 			const moves = target.moves;
 			const result = this.random(moves.length);
-			this.add('-ability', target, 'move: ' + moves[result]);
+			const move = this.dex.moves.get(moves[result]) as ActiveMove;
+			target.moveUsed(move);
+			this.add('-activate', source, 'move: Telemetry', target.lastMove?.name);
 		},
 		secondary: null,
 		target: "normal",
