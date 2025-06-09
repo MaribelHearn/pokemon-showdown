@@ -7195,6 +7195,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Count Down",
 		desc: "This attack charges on the first turn and executes on the second. Raises the user's Attack by 1 stage on the first turn. If the user is holding a Power Herb, the move completes in one turn.",
 		shortDesc: "Raises user's Attack by 1 on turn 1. Hits turn 2.",
+
+		prepare: "[POKEMON]'s countdown began!",
 	},
 	systemcrash: {
 		name: "System Crash",
@@ -7234,7 +7236,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Telemetry",
 		shortDesc: "No additional effect.",
 
-		start: "  [POKEMON]'s Telemetry revealed the opposing Pokemon's [MOVE]!",
+		start: "  Telemetry revealed the opposing Pokemon's [MOVE]!",
 	},
 	delete: {
 		name: "Delete",
