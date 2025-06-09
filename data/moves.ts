@@ -21253,10 +21253,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onHit(target, source) {
-			const moves = target.moves;
-			const result = this.random(moves.length);
-			const move = this.dex.moves.get(moves[result]) as ActiveMove;
-			target.moveUsed(move);
+			let unrevealedMoves = [] as ActiveMove[];
+
+			for (const moveName of target.moves) {
+				const move = this.dex.moves.get(moveName) as ActiveMove;
+				const moveSlot = target.getMoveData(move.id);
+				if (moveSlot?.pp === moveSlot?.maxpp) {
+					unrevealedMoves.push(move);
+				}
+			}
+
+			const randInt = this.random(unrevealedMoves.length);
+			const move = unrevealedMoves[randInt];
 			this.add('-start', target, 'Telemetry', move.name);
 		},
 		secondary: null,
