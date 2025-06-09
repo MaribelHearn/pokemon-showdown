@@ -21252,7 +21252,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onHit(target, source) {
+		onTryHit(target, source) {
 			let unrevealedMoves = [] as ActiveMove[];
 
 			for (const moveName of target.moves) {
