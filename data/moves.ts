@@ -21256,7 +21256,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			let unrevealedMoves = [] as ActiveMove[];
 
 			for (const moveName of target.moves) {
-				const move = this.dex.moves.get(moveName) as ActiveMove;
+				const move = this.dex.getActiveMove(moveName);
 				const moveSlot = target.getMoveData(move.id);
 				if (moveSlot?.pp === moveSlot?.maxpp) {
 					unrevealedMoves.push(move);
@@ -21266,6 +21266,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			const randInt = this.random(unrevealedMoves.length);
 			const move = unrevealedMoves[randInt];
 			target.moveUsed(move);
+			target.lastMoveUsed = move;
 			this.add('-start', target, 'Telemetry', move.name);
 		},
 		secondary: null,
