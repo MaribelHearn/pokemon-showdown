@@ -4740,6 +4740,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}
 		},
+		isPermanent: true,
 		name: "Cardboard Box",
 		rating: 3.5,
 		num: 2012,
@@ -4875,6 +4876,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				}
 			}
 		},
+		isPermanent: true,
 		name: "Get Together",
 		rating: 3,
 		num: 2019,
@@ -4932,6 +4934,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}
 		},
+		isPermanent: true,
 		name: "Taxidermy",
 		rating: 3.5,
 		num: 2021,
@@ -5034,6 +5037,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.add('-activate', target, 'ability: Short-Tempered');
 			}
 		},
+		isPermanent: true,
 		name: "Short-Tempered",
 		rating: 4,
 		num: 2027,

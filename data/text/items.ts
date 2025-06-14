@@ -2348,19 +2348,19 @@ export const ItemsText: {[k: string]: ItemText} = {
     },
     natureengine: {
         name: "Nature Engine",
-		desc: "If held by a Grass-type Fusion, boosts its Special Attack and Speed by 1 stage.",
+		desc: "If held by a Grass-type Fusion, boosts its Special Attack and Speed by x1.5.",
     },
     magmaengine: {
         name: "Magma Engine",
-		desc: "If held by a Fire-type Fusion, boosts its Attack and Speed by 1 stage.",
+		desc: "If held by a Fire-type Fusion, boosts its Attack and Speed by x1.5.",
     },
     basicengine: {
         name: "Basic Engine",
-		desc: "If held by a Normal-type Fusion, boosts its Defense and Special Defense by 1 stage.",
+		desc: "If held by a Normal-type Fusion, boosts its Defense and Special Defense by x1.5.",
     },
     venomengine: {
         name: "Venom Engine",
-		desc: "If held by a Poison-type Fusion, boosts its Attack and Special Attack by 1 stage.",
+		desc: "If held by a Poison-type Fusion, boosts its Attack and Special Attack by x1.5.",
     },
     redpill: {
         name: "Red Pill",
