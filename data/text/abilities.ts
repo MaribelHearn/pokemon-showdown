@@ -1956,10 +1956,14 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Spring Fragrance",
 		desc: "On switch-in, this Pokemon lowers the Evasion of adjacent opposing Pokemon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Evasion of adjacent opponents by 1 stage.",
+
+		activate: "  The smell of spring calms [POKEMON]!",
 	},
     laststand: {
         name: "Last Stand",
 		shortDesc: "On switch-in, when no allies remain, this Pokemon's Attack and Defense are raised 1 stage.",
+
+		activate: "  [POKEMON] is staging its Last Stand!",
     },
     angsty: {
 		name: "Angsty",
@@ -1987,6 +1991,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Armor Damage",
 		desc: "If this Pokemon is Samus, she changes to her Zero Suit if it has 1/2 or less of its maximum HP, and changes to Samus if it has more than 1/2 its maximum HP. This check is done on switch-in and at the end of each turn. As Samus, she cannot become affected by non-volatile status conditions. Moongeist Beam, Sunsteel Strike, and the Mold Breaker, Teravolt, and Turboblaze Abilities cannot ignore this Ability.",
 		shortDesc: "If Samus, switch-in/end of turn she changes to Zero Suit Samus at 1/2 max HP or less, else Samus.",
+
+		transform: "[POKEMON] donned her Varia Suit!",
+		transformEnd: "[POKEMON]'s armor fell apart!",
 	},
     research: {
 		name: "Research",
@@ -2011,6 +2018,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Paper Cut",
 		desc: "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down.",
 		shortDesc: "Pokemon making contact with this Pokemon lose 1/8 of their max HP.",
+
+		damage: "  [POKEMON] got a paper cut!",
 	},
     gettogether: {
 		name: "Get Together",
@@ -2031,7 +2040,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "(Chuck Testa only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
 
 		block: "  You probably thought this deer was alive...",
-		transform: "Nope! It's just Chuck Testa.",
+		transform: "Nope! It's just [POKEMON].",
 	},
 	bloodbond: {
 		name: "Blood Bond",
@@ -2064,7 +2073,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "If this Pokemon is Wiggler, it changes to Wiggler-Angry when it is hit by a contact move.",
 		shortDesc: "If Wiggler, changes to Wiggler-Angry on contact.",
 
-		transform: "[POKEMON]] became enraged!",
+		transform: "[POKEMON] became enraged!",
     },
 	squidkid: {
 		name: "Squid Kid",
@@ -2118,6 +2127,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Graze Energy",
 		desc: "This Pokemon gets a Sp. Atk. boost if the opponent misses against it.",
 		shortDesc: "This Pokemon gets a Sp. Atk. boost if the opponent misses against it.",
+
+		activate: "  The narrow miss empowered [POKEMON]!",
 	},
     dragonvein: {
         name: "Dragon Vein",

@@ -4618,6 +4618,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				if (!target || !target.isAdjacent(pokemon)) continue;
 				if (!activated) {
 					this.add('-ability', pokemon, 'Spring Fragrance', 'boost');
+					this.add('-activate', target, 'Ability: Spring Fragrance');
 					activated = true;
 				}
 				if (target.volatiles['substitute']) {
@@ -4634,6 +4635,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
     laststand: {
         onStart(pokemon) {
 			if (pokemon.side.pokemonLeft === 1) {
+				this.add('-activate', pokemon, 'Last Stand');
                 this.boost({atk: 1, def: 1}, pokemon);
             }
         },
@@ -4850,10 +4852,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (pokemon.hp > pokemon.maxhp / 4) {
 				if (pokemon.species.id === 'boo') {
 					pokemon.formeChange('Boolossus');
+					this.add('-activate', pokemon, 'ability: Get Together');
 				}
 			} else {
 				if (pokemon.species.id === 'boolossus') {
 					pokemon.formeChange('Boo');
+					this.add('-activate', pokemon, 'ability: Get Together');
 				}
 			}
 		},
@@ -5029,6 +5033,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onDamagingHit(damage, target, source, move) {
 			if (move.flags['contact']) {
 				target.formeChange('Angry Wiggler');
+				this.add('-transform', target, 'ability: Short-Tempered');
 			}
 		},
 		name: "Short-Tempered",
