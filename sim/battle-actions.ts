@@ -559,7 +559,7 @@ export class BattleActions {
 			this.battle.runEvent('PrepareHit', pokemon, targets[0], move);
 		if (!hitResult) {
 			if (hitResult === false) {
-				this.battle.add('-fail', pokemon);
+				('-fail', pokemon);
 				this.battle.attrLastMove('[still]');
 			}
 			return hitResult === this.battle.NOT_FAIL;
