@@ -2073,7 +2073,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "If this Pokemon is Wiggler, it changes to Wiggler-Angry when it is hit by a contact move.",
 		shortDesc: "If Wiggler, changes to Wiggler-Angry on contact.",
 
-		transform: "[POKEMON] became enraged!",
+		activate: "[POKEMON] became enraged!",
     },
 	squidkid: {
 		name: "Squid Kid",
