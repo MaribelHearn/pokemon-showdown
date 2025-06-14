@@ -5030,7 +5030,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (move.flags['contact'] && target.species.baseSpecies === 'Wiggler' && target.species.forme !== 'Angry') {
-				target.formeChange('Angry Wiggler');
+				target.formeChange('Angry Wiggler', this.effect, false, '[silent]');
 				this.add('-activate', target, 'ability: Short-Tempered');
 			}
 		},

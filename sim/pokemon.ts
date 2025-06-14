@@ -1315,10 +1315,9 @@ export class Pokemon {
 				this.battle.add('-formechange', this, species.name, message);
 			}
 		} else {
-			// Fundex: prevent doubled message for Short-Tempered
-			if (source.effectType === 'Ability' && source.name !== 'Short-Tempered') {
+			if (source.effectType === 'Ability') {
 				this.battle.add('-formechange', this, species.name, message, `[from] ability: ${source.name}`);
-			} else if (source.name !== 'Short-Tempered') {
+			} else {
 				this.battle.add('-formechange', this, this.illusion ? this.illusion.species.name : species.name, message);
 			}
 		}
