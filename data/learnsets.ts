@@ -86647,6 +86647,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			roost: ["8L1", "8M"],
 			doubleedge: ["8L1"],
 			heavyslam: ["8L1"],
+			beakblast: ["8L1"],
 			gigaimpact: ["8L1", "8M"],
 			workup: ["8M"],
 			roar: ["8M"],

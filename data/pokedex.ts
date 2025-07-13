@@ -16463,6 +16463,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Immunity", H: "Own Tempo"},
 		weightkg: 90,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["tentaquix"],
 		formeOrder: ["tentaquil", "tentaquix"],
@@ -16477,6 +16478,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Limber", H: "Propeller Tail"},
 		weightkg: 90,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	chucknorris: {
@@ -16488,6 +16490,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Mold Breaker", H: "Unseen Fist"},
 		weightkg: 90,
 		color: "Brown",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	captainfalcon: {
@@ -16499,6 +16502,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Boost Power", H: "Speed Boost"},
 		weightkg: 90,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	flandre: {
@@ -16510,6 +16514,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Hustle", H: "Insanity"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	cell: {
@@ -16521,6 +16526,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Laser Mouth", H: "Sniper"},
 		weightkg: 1,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	dennis: {
@@ -16532,6 +16538,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Intimidate", 1: "Tinted Lens", H: "Pressure"},
 		weightkg: 90,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Mega Dennis"],
 		formeOrder: ["Dennis", "Mega Dennis"],
@@ -16547,6 +16554,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Imposing", 1: "Imposing", H: "Imposing"},
 		weightkg: 90,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Plasma Cane",
 	},
@@ -16559,6 +16567,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Intimidate", H: "Corruption"},
 		weightkg: 90,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	"2012": {
@@ -16570,6 +16579,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Desolate Land", H: "Mold Breaker"},
 		weightkg: 847,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	roflcopter: {
@@ -16581,6 +16591,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Full Metal Body", H: "Heavy Metal"},
 		weightkg: 150,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	andross: {
@@ -16592,6 +16603,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Levitate", 1: "Iron Fist", H: "Sheer Force"},
 		weightkg: 1155,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	slenderman: {
@@ -16603,6 +16615,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Rock Head", 1: "Toxic Boost", H: "Shadow Tag"},
 		weightkg: 90,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	marisa: {
@@ -16614,6 +16627,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Magician", 1: "Pickpocket", H: "Elementalist"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	luigi: {
@@ -16625,6 +16639,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Negative Zone", 1: "Unaware", H: "Wimp Out"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Luigi-Mr. L", "Luigi-Weegee"],
 		formeOrder: ["Luigi", "Luigi-Mr. L","Luigi-Weegee"],
@@ -16640,6 +16655,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Sniper", 1: "Galvanize", H: "Emergency Exit"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	weegee: {
@@ -16653,6 +16669,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Intimidate", 1: "Cursed Body", H: "Unnerve"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	giygas: {
@@ -16664,6 +16681,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Dark Aura", 1: "Incomprehensible", H: "Magic Bounce"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	matrix: {
@@ -16675,6 +16693,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Clear Body", 1: "Moxie", H: "Grass Pelt"},
 		weightkg: 90,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	sovietmudkip: {
@@ -16685,6 +16704,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Torrent", 1: "Contrary", H: "Drizzle"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	satan: {
@@ -16696,6 +16716,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Moxie", 1: "Flash Fire", H: "Drought"},
 		weightkg: 666,
 		color: "Red",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	lilywhite: {
@@ -16707,6 +16728,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Spring Fragrance", H: "Aroma Veil"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	lolwutpear: {
@@ -16717,6 +16739,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Thick Fat", 1: "Sticky Hold", H: "Stench"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	cirno: {
@@ -16728,6 +16751,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Vital Spirit", 1: "Slush Rush", H: "Ice Body"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Cirno-Achi"],
 		formeOrder: ["Cirno", "Cirno-Achi"],
@@ -16743,6 +16767,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Vital Spirit", 1: "Slush Rush", H: "Flame Body"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	reimu: {
@@ -16754,6 +16779,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Serene Grace", H: "Regenerator"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
     drrobotnik: {
@@ -16765,6 +16791,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Thick Fat", H: "Steelworker"},
 		weightkg: 90,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	leonidas: {
@@ -16776,6 +16803,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Defiant", H: "Last Stand"},
 		weightkg: 90,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	kingharkinian: {
@@ -16787,6 +16815,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Magic Guard", H: "Misty Surge"},
 		weightkg: 90,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	yarrow: {
@@ -16797,6 +16826,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Battle Armor", H: "Moxie"},
 		weightkg: 250,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		evos: ["Doomsday"],
 		eggGroups: ["Undiscovered"],
 	},
@@ -16808,6 +16838,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Battle Armor", H: "Moxie"},
 		weightkg: 350,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Yarrow",
 		evoType: "trade",
 		evoItem: "Protector",
@@ -16822,6 +16853,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Rivalry", 1: "Guts", H: "Tinted Lens"},
 		weightkg: 90,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Super Saiyan Vegeta"],
 		formeOrder: ["Vegeta", "Super Saiyan Vegeta"],
@@ -16837,6 +16869,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "No Guard", 1: "No Guard", H: "No Guard"},
 		weightkg: 90,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Vegetite",
 	},
@@ -16849,6 +16882,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Mega Launcher", 1: "Long Reach", H: "Laser Mouth"},
 		weightkg: 90,
 		color: "Gray",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	acetrainer: {
@@ -16860,6 +16894,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "No Guard", 1: "Immunity", H: "Serene Grace"},
 		weightkg: 90,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	crasherwake: {
@@ -16871,6 +16906,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Truant", H: "Angsty"},
 		weightkg: 90,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Corrupted Wake"],
 		formeOrder: ["Crasher Wake", "Corrupted Wake"],
@@ -16886,6 +16922,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Truant", H: "Corruption"},
 		weightkg: 90,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	utsuho: {
@@ -16897,6 +16934,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Immunity", H: "Solar Power"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	yuyuko: {
@@ -16908,6 +16946,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Gluttony", H: "Flower Gift"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	younglink: {
@@ -16919,6 +16958,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Justified", H: "Sharpshooter"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		evos: ["Link"],
 		eggGroups: ["Undiscovered"],
 	},
@@ -16931,6 +16971,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Justified", H: "Sharpshooter"},
 		weightkg: 90,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Young Link",
 		evoLevel: 34,
 		eggGroups: ["Undiscovered"],
@@ -16948,6 +16989,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Cute Charm", H: "Sharpshooter"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	youngzelda: {
@@ -16959,6 +17001,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Synchronize", H: "Sharpshooter"},
 		weightkg: 45,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		evos: ["Zelda"],
 		eggGroups: ["Undiscovered"],
 	},
@@ -16971,6 +17014,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Synchronize", H: "Sharpshooter"},
 		weightkg: 45,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Young Zelda",
 		evoLevel: 34,
 		eggGroups: ["Undiscovered"],
@@ -16988,6 +17032,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Quick Feet", H: "Skill Link"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	ganondorf: {
@@ -16999,6 +17044,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Iron Fist", H: "Dark Aura"},
 		weightkg: 150,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Ganon"],
 		formeOrder: ["Ganondorf", "Ganon"],
@@ -17014,6 +17060,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Beast Boost", H: "Beast Boost"},
 		weightkg: 250,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Triforce",
 	},
@@ -17026,6 +17073,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Keen Eye", H: "Trace"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	admiralackbar: {
@@ -17037,6 +17085,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Anticipation", 1: "Dry Skin", H: "Arena Trap"},
 		weightkg: 90,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	yoda: {
@@ -17048,6 +17097,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Forewarn", 1: "Oblivious", H: "Justified"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	darthvader: {
@@ -17059,6 +17109,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Rivalry", H: "Infiltrator"},
 		weightkg: 90,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	longcat: {
@@ -17070,6 +17121,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
         heightm: 3048.0,
 		weightkg: 9001,
 		color: "White",
+		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	tacgnol: {
@@ -17081,6 +17133,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
         heightm: 3048.0,
 		weightkg: 9001,
 		color: "Black",
+		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	olngact: {
@@ -17092,6 +17145,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
         heightm: 3048.0,
 		weightkg: 45,
 		color: "Red",
+		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	orlyowl: {
@@ -17103,6 +17157,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Unaware", 1: "Early Bird", H: "Magic Bounce"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	cats: {
@@ -17114,6 +17169,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Imposing", H: "Unnerve"},
 		weightkg: 90,
 		color: "Purple",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	raptorjesus: {
@@ -17125,6 +17181,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Dragon's Maw", 1: "Tangled Feet", H: "Strong Jaw"},
 		weightkg: 90,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	leeroyjenkins: {
@@ -17136,6 +17193,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Reckless", 1: "Scrappy", H: "Iron Fist"},
 		weightkg: 90,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	remilia: {
@@ -17147,6 +17205,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Frisk", 1: "Super Luck", H: "Poison Touch"},
 		weightkg: 45,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	angrybird: {
@@ -17158,6 +17217,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Anger Point", H: "Big Pecks"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		evos: ["Big Brother"],
 		eggGroups: ["Undiscovered"],
 	},
@@ -17169,6 +17229,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Justified", H: "Big Pecks"},
 		weightkg: 90,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Angry Bird",
 		evoLevel: 30,
 		eggGroups: ["Undiscovered"],
@@ -17182,6 +17243,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Sturdy", H: "Sand Stream"},
 		weightkg: 1337,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	tabuu: {
@@ -17192,6 +17254,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Long Reach", H: "Aura Break"},
 		weightkg: 1,
 		color: "Blue",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	sakuya: {
@@ -17203,6 +17266,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Skill Link", H: "Forewarn"},
 		weightkg: 3,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	supernerd: {
@@ -17214,6 +17278,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Battle Armor", 1: "Magnet Pull", H: "Pressure"},
 		weightkg: 45,
 		color: "Gray",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	wriggle: {
@@ -17225,6 +17290,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Swarm", 1: "Illuminate", H: "Sap Sipper"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	leonpowalski: {
@@ -17236,6 +17302,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Filter", H: "Shield Dust"},
 		weightkg: 90,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	trollface: {
@@ -17246,6 +17313,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pressure", H: "Prankster"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	eirin: {
@@ -17257,6 +17325,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Healer", 1: "Curious Medicine", H: "Triage"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	kaguya: {
@@ -17268,6 +17337,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Regenerator", H: "Natural Cure"},
 		weightkg: 45,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	tenshi: {
@@ -17279,6 +17349,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Air Lock", H: "Sturdy"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
     suika: {
@@ -17290,6 +17361,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "White Smoke", H: "Reckless"},
 		weightkg: 45,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     letty: {
@@ -17301,6 +17373,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Snow Warning", 1: "Ice Body", H: "Snow Cloak"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     keine: {
@@ -17312,6 +17385,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Inner Focus", H: "Wonder Skin"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Keine-Hakutaku"],
 		formeOrder: ["Keine", "Keine-Hakutaku"],
@@ -17327,6 +17401,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Inner Focus", H: "Anger Point"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     sapenguin: {
@@ -17337,6 +17412,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Big Pecks", 1: "Tangled Feet", H: "Moody"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     advicegod: {
@@ -17348,6 +17424,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Cloud Nine", H: "Multitype"},
 		weightkg: 90,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     missingno: {
@@ -17358,6 +17435,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Normalize", 1: "Download", H: "Corruption"},
 		weightkg: 1590.8,
 		color: "Gray",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
         otherFormes: ["Missingno.-Ghost", "Missingno.-Kabutops", "Missingno.-Aerodactyl", "Missingno.-Yellow"],
         formeOrder: ["Missingno.", "Missingno.-Ghost", "Missingno.-Kabutops", "Missingno.-Aerodactyl", "Missingno.-Yellow"],
@@ -17372,6 +17450,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Mummy", 1: "Imposing", H: "Corruption"},
 		weightkg: 1590.8,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     missingnokabutops: {
@@ -17384,6 +17463,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Swift Swim", 1: "Solid Rock", H: "Corruption"},
 		weightkg: 1590.8,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     missingnoaerodactyl: {
@@ -17396,6 +17476,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Rock Head", 1: "Early Bird", H: "Corruption"},
 		weightkg: 1590.8,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     missingnoyellow: {
@@ -17408,6 +17489,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Static", 1: "Electric Surge", H: "Corruption"},
 		weightkg: 1590.8,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     kirby: {
@@ -17419,6 +17501,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Cute Charm", 1: "Trace", H: "Protean"},
 		weightkg: 15,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     metaknight: {
@@ -17430,6 +17513,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Battle Armor", 1: "Steadfast", H: "Weak Armor"},
 		weightkg: 15,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     kingdedede: {
@@ -17441,6 +17525,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Thick Fat", H: "Slush Rush"},
 		weightkg: 90,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     snake: {
@@ -17452,6 +17537,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Cardboard Box"},
 		weightkg: 90,
 		color: "Gray",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Snake-Busted"],
 		formeOrder: ["Snakle", "Snake-Busted"],
@@ -17467,6 +17553,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Cardboard Box"},
 		weightkg: 90,
 		color: "Gray",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		requiredAbility: "Cardboard Box",
 		battleOnly: "Snake",
@@ -17480,6 +17567,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Armor Damage", H: "Long Reach"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
         otherFormes: ["Samus"],
         formeOrder: ["Samus", "Samus-Armored"],
@@ -17495,6 +17583,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Armor Damage", H: "Magnet Pull"},
 		weightkg: 90,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     zeekyhbomb: {
@@ -17506,6 +17595,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Huge Power", H: "Innards Out"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     yumemi: {
@@ -17517,6 +17607,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Limber", H: "Research"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     engineer: {
@@ -17528,6 +17619,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Technician", 1: "Sand Rush", H: "Steelworker"},
 		weightkg: 90,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     mokou: {
@@ -17539,6 +17631,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Conflagrate", H: "Regenerator"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     yuugi: {
@@ -17550,6 +17643,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Defiant", H: "Pressure"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     komachi: {
@@ -17561,6 +17655,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Own Tempo", H: "Cursed Body"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     eiki: {
@@ -17572,6 +17667,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pressure", H: "Prosecutor"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     phoenixwright: {
@@ -17583,6 +17679,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Magic Guard", H: "Reckless"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     rickastley: {
@@ -17594,6 +17691,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Dancer", 1: "Soundproof", H: "Illusion"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     darkmatter: {
@@ -17605,6 +17703,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Levitate", 1: "Liquid Ooze", H: "Gooey"},
 		weightkg: 15,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		evos: ["Zero", "Zero-Two"],
 		eggGroups: ["Undiscovered"],
     },
@@ -17617,6 +17716,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Levitate", 1: "Liquid Ooze", H: "Gooey"},
 		weightkg: 150,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Dark Matter",
 		evoType: "useItem",
 		evoItem: "Dusk Stone",
@@ -17631,6 +17731,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Levitate", 1: "Liquid Ooze", H: "Gooey"},
 		weightkg: 150,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Dark Matter",
 		evoType: "useItem",
 		evoItem: "Shiny Stone",
@@ -17644,6 +17745,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseStats: {hp: 80, atk: 130, def: 134, spa: 70, spd: 70, spe: 116},
 		abilities: {0: "Guts", H: "Slow Start"},
 		weightkg: 45,
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Stella Norris"],
 		formeOrder: ["Stella", "Stella Norris"],
@@ -17658,6 +17760,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseStats: {hp: 100, atk: 145, def: 132, spa: 75, spd: 100, spe: 108},
 		abilities: {0: "Guts", H: "Mold Breaker"},
 		weightkg: 90,
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     yukari: {
@@ -17669,6 +17772,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Filter", 1: "Wonder Skin", H: "Psychic Surge"},
 		weightkg: 45,
 		color: "Purple",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     yamame: {
@@ -17680,6 +17784,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Compound Eyes", 1: "Poison Point", H: "Poison Heal"},
 		weightkg: 45,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     iku: {
@@ -17691,6 +17796,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Lightning Rod", 1: "Volt Absorb", H: "Air Lock"},
 		weightkg: 45,
 		color: "Purple",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     medicine: {
@@ -17702,6 +17808,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Poison Touch", H: "Corrosion"},
 		weightkg: 45,
 		color: "Purple",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     yuuka: {
@@ -17713,6 +17820,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Intimidate", 1: "Overcoat", H: "Grassy Surge"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     hibachi: {
@@ -17724,6 +17832,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Flash Fire", H: "Bulletproof"},
 		weightkg: 45,
 		color: "Purple",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Hibachi"],
 		formeOrder: ["Hibachi", "Hibachi 2"],
@@ -17739,6 +17848,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Flash Fire", H: "Bulletproof"},
 		weightkg: 45,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     evaccaniadoom: {
@@ -17750,6 +17860,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Wonder Skin", H: "Bulletproof"},
 		weightkg: 25,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     minoriko: {
@@ -17761,6 +17872,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Natural Cure", H: "Harvest"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     shizuha: {
@@ -17772,6 +17884,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Natural Cure", H: "Harvest"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     alice: {
@@ -17783,6 +17896,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Wonderland", H: "Symbiosis"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     babybowser: {
@@ -17794,6 +17908,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Shell Armor", 1: "Sturdy", H: "Sheer Force"},
 		weightkg: 45,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		evos: ["Bowser"],
 		eggGroups: ["Undiscovered"],
     },
@@ -17806,6 +17921,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Shell Armor", 1: "Sturdy", H: "Sheer Force"},
 		weightkg: 150,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Baby Bowser",
 		evoLevel: 40,
 		eggGroups: ["Undiscovered"],
@@ -17823,6 +17939,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Shell Armor", 1: "Sturdy", H: "Sheer Force"},
 		weightkg: 75,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     gigabowser: {
@@ -17836,6 +17953,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Sheer Force"},
 		weightkg: 350,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Smash Ball",
     },
@@ -17848,6 +17966,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Shell Armor", H: "Contrary"},
 		weightkg: 45,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     vivit: {
@@ -17859,6 +17978,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Blaze", H: "Graze Energy"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Angel VIVIT"],
 		formeOrder: ["VIVIT", "Angel VIVIT"],
@@ -17874,6 +17994,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Turboblaze", H: "Turboblaze"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Saboten Bottle",
     },
@@ -17886,6 +18007,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Comatose", 1: "Friend Guard", H: "Telepathy"},
 		weightkg: 45,
 		color: "Purple",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Berserk Maribel"],
 		formeOrder: ["Maribel", "Berserk Maribel"],
@@ -17901,6 +18023,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Berserk", 1: "Berserk", H: "Berserk"},
 		weightkg: 45,
 		color: "Purple",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Strange Gap",
     },
@@ -17913,6 +18036,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Intimidate", 1: "Dry Skin", H: "Shadow Tag"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     meiling: {
@@ -17924,6 +18048,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Guts", H: "Iron Fist"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     patchouli: {
@@ -17935,6 +18060,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Trace", 1: "Synchronize", H: "Elementalist"},
 		weightkg: 45,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     suwako: {
@@ -17946,6 +18072,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Rain Dish", 1: "Water Absorb", H: "Storm Drain"},
 		weightkg: 45,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     tesla: {
@@ -17957,6 +18084,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Volt Absorb", 1: "Motor Drive", H: "Lightning Rod"},
 		weightkg: 90,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     shingyoku: {
@@ -17968,6 +18096,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pressure", H: "Telepathy"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Shingyoku-Priestess", "Shingyoku-Orb"],
 		formeOrder: ["Shingyoku", "Shingyoku-Priestess", "Shingyoku-Orb"],
@@ -17983,6 +18112,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pressure", H: "Telepathy"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     shingyokuorb: {
@@ -17996,6 +18126,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pressure", H: "Telepathy"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     sariel: {
@@ -18007,6 +18138,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pressure", H: "Magic Bounce"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     serpentofchaos: {
@@ -18018,6 +18150,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Intimidate", H: "Poison Touch"},
 		weightkg: 90,
 		color: "Purple",
+		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     winner: {
@@ -18029,6 +18162,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Victory Star", H: "Super Luck"},
 		weightkg: 150,
 		color: "Yellow",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     satori: {
@@ -18040,6 +18174,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Synchronize", 1: "Analytic", H: "Telepathy"},
 		weightkg: 45,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     koishi: {
@@ -18051,6 +18186,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Infiltrator", 1: "Unaware", H: "Contrary"},
 		weightkg: 45,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     nitori: {
@@ -18062,6 +18198,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Swift Swim",  H: "Torrent"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     byakuren: {
@@ -18073,6 +18210,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Inner Focus", 1: "Justified", H: "Serene Grace"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     nue: {
@@ -18084,6 +18222,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Unburden", H: "Color Change"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     ichirin: {
@@ -18095,6 +18234,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pure Power", H: "Cloud Nine"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     nyancat: {
@@ -18106,6 +18246,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Soundproof", 1: "Cute Charm", H: "Sweet Veil"},
 		weightkg: 15,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     mario: {
@@ -18117,6 +18258,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Vital Spirit", 1: "Competitive", H: "Iron Fist"},
 		weightkg: 90,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Paper Mario", "Malleo"],
 		formeOrder: ["Mario", "Paper Mario", "Malleo"],
@@ -18132,6 +18274,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Paper Cut", 1: "Competitive", H: "Iron Fist"},
 		weightkg: 0.1,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     malleo: {
@@ -18145,6 +18288,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Intimidate", 1: "Cursed Body", H: "Unnerve"},
 		weightkg: 150,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     boo: {
@@ -18156,6 +18300,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Get Together", H: "Get Together"},
 		weightkg: 0.1,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		evos: ["King Boo", "Bouldergeist"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Boolossus"],
@@ -18172,6 +18317,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Get Together", H: "Get Together"},
 		weightkg: 0.1,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     kingboo: {
@@ -18182,6 +18328,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Levitate", H: "Levitate"},
 		weightkg: 0.1,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Boo",
 		evoType: "trade",
 		evoItem: "King's Rock",
@@ -18196,6 +18343,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Rock Head", H: "Weak Armor"},
 		weightkg: 150,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Boo",
 		evoType: "trade",
 		evoItem: "Protector",
@@ -18210,6 +18358,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Neutralizing Gas", H: "Weak Armor"},
 		weightkg: 250,
 		color: "Gray",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     badegg: {
@@ -18220,6 +18369,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Stench", H: "Liquid Ooze"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     wiggler: {
@@ -18231,6 +18381,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Short-Tempered", H: "Short-Tempered"},
 		weightkg: 45,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Angry Wiggler"],
 		formeOrder: ["Wiggler", "Angry Wiggler"],
@@ -18246,6 +18397,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Steadfast", H: "Scrappy"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     sunnymilk: {
@@ -18257,6 +18409,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Prankster", 1: "Flash Fire", H: "Solar Power"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     lunachild: {
@@ -18268,6 +18421,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Prankster", 1: "Surge Surfer", H: "Soundproof"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     starsapphire: {
@@ -18279,6 +18433,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Prankster", 1: "Water Absorb", H: "Storm Drain"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     sanae: {
@@ -18290,6 +18445,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Serene Grace", H: "Super Luck"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     kanako: {
@@ -18301,6 +18457,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pressure", H: "Lightning Rod"},
 		weightkg: 90,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     ran: {
@@ -18312,6 +18469,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Inner Focus", H: "Early Bird"},
 		weightkg: 45,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     kanzou: {
@@ -18323,6 +18481,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Hyper Cutter", H: "Snow Cloak"},
 		weightkg: 90,
 		color: "Blue",
+		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     hagumanoki: {
@@ -18334,6 +18493,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Compound Eyes", 1: "Hyper Cutter", H: "Arena Trap"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     ruscus: {
@@ -18345,6 +18505,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pressure", 1: "Sturdy", H: "Regenerator"},
 		weightkg: 90,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     ryuuguu: {
@@ -18356,6 +18517,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Pressure", 1: "Sturdy", H: "Regenerator"},
 		weightkg: 150,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     weepinmeleon: {
@@ -18367,6 +18529,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Blaze", 1: "Chlorophyll", H: "Solar Power"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     venudrio: {
@@ -18378,6 +18541,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Overgrow", 1: "Early Bird", H: "Chlorophyll"},
 		weightkg: 90,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     bloodyjitterbug: {
@@ -18389,6 +18553,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Clear Body", 1: "Trace", H: "Flare Boost"},
 		weightkg: 90,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     bluescreenofdeath: {
@@ -18400,6 +18565,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Stall", 1: "Analytic", H: "Screen Cleaner"},
 		weightkg: 0.1,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     internetexplorer: {
@@ -18411,6 +18577,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Web Browser", 1: "Download", H: "Slow Start"},
 		weightkg: 0.1,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		evos: ["Inori Aizawa", "Microsoft Edge"],
 		eggGroups: ["Undiscovered"],
     },
@@ -18423,6 +18590,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Web Browser", 1: "Download", H: "Cute Charm"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Internet Explorer",
 		evoType: "useItem",
 		evoItem: "Dawn Stone",
@@ -18437,6 +18605,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Web Browser", 1: "Download", H: "Rough Skin"},
 		weightkg: 0.1,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		prevo: "Internet Explorer",
 		evoType: "trade",
 		evoItem: "Up-Grade",
@@ -18451,6 +18620,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Web Browser", 1: "Download", H: "Conflagrate"},
 		weightkg: 0.1,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     googlechrome: {
@@ -18462,6 +18632,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Web Browser", 1: "Download", H: "Filter"},
 		weightkg: 0.1,
 		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     recyclebin: {
@@ -18473,6 +18644,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Harvest", H: "Gluttony"},
 		weightkg: 0.1,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     hina: {
@@ -18484,6 +18656,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Liquid Ooze", 1: "Corrosion", H: "Merciless"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     chen: {
@@ -18495,6 +18668,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Early Bird", H: "Run Away"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     reisen: {
@@ -18506,6 +18680,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Keen Eye", 1: "Compound Eyes", H: "Own Tempo"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     parsee: {
@@ -18517,6 +18692,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Stench", H: "Anger Point"},
 		weightkg: 45,
 		color: "Purple",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     rin: {
@@ -18528,6 +18704,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Blaze", H: "Technician"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     daiyousei: {
@@ -18539,17 +18716,19 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Serene Grace", H: "Water Veil"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     konngara: {
         num: 2149,
 		name: "Konngara",
 		types: ["Fighting", "Ghost"],
-        gender: "F",
+        gender: "N",
 		baseStats: {hp: 100, atk: 140, def: 120, spa: 100, spd: 120, spe: 100},
 		abilities: {0: "Pressure", H: "Sturdy"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     yumeko: {
@@ -18561,6 +18740,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Keen Eye", 1: "Sturdy", H: "Sniper"},
 		weightkg: 45,
 		color: "Red",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     rumia: {
@@ -18572,6 +18752,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Aftermath", H: "Quick Feet"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     koakuma: {
@@ -18583,6 +18764,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Synchronize", H: "Simple"},
 		weightkg: 45,
 		color: "Black",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     youmu: {
@@ -18594,6 +18776,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Inner Focus", H: "Insomnia"},
 		weightkg: 45,
 		color: "Green",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     mystia: {
@@ -18605,6 +18788,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Insomnia", H: "Tangled Feet"},
 		weightkg: 45,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     tewi: {
@@ -18616,6 +18800,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Serene Grace", H: "Prankster"},
 		weightkg: 45,
 		color: "Pink",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     aya: {
@@ -18627,6 +18812,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Early Bird", H: "Speed Boost"},
 		weightkg: 45,
 		color: "White",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     kisume: {
@@ -18638,6 +18824,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Shell Armor", 1: "Sticky Hold", H: "Overcoat"},
 		weightkg: 45,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
     chucktesta: {
@@ -18649,6 +18836,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Taxidermy"},
 		weightkg: 90,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Chuck Testa-Busted"],
 		formeOrder: ["Chuck Testa", "Chuck Testa-Busted"],
@@ -18664,6 +18852,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Taxidermy"},
 		weightkg: 90,
 		color: "Brown",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 		requiredAbility: "Taxidermy",
 		battleOnly: "Chuck Testa",
@@ -18677,6 +18866,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Illusion", H: "Swift Swim"},
 		weightkg: 45,
 		color: "Blue",
+		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
 	missingnooriginal: {
