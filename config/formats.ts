@@ -32,7 +32,7 @@ export const Formats: FormatList = [
 		unbanlist: ['Fundex'],
 	},
     {
-		name: "[Gen 8] National Fundex",
+		name: "[Gen 8] National Dex Fundex",
 		mod: 'gen8',
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
