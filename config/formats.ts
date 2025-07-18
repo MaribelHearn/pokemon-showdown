@@ -44,6 +44,16 @@ export const Formats: FormatList = [
 		ruleset: ['-Nonexistent', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
 		unbanlist: ['Fundex'],
 	},
+	{
+		name: "[Gen 8] Fundex Random",
+		desc: `Randomized teams of level-balanced Fundex Pok&eacute;mon with absolutely any ability, moves, and item.`,
+
+		mod: 'gen8',
+		team: 'randomHC',
+		ruleset: ['HP Percentage Mod', 'Cancel Mod'],
+		banlist: ['All Pokemon'],
+		unbanlist: ['Fundex'],
+	},
 
 	// Sw/Sh Singles
 	///////////////////////////////////////////////////////////////////
