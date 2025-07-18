@@ -50,9 +50,8 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		team: 'randomHC',
-		ruleset: ['HP Percentage Mod', 'Cancel Mod'],
+		ruleset: ['+Fundex', 'HP Percentage Mod', 'Cancel Mod'],
 		banlist: ['All Pokemon'],
-		unbanlist: ['Fundex'],
 	},
 
 	// Sw/Sh Singles
