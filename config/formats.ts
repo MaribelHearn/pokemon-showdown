@@ -49,8 +49,8 @@ export const Formats: FormatList = [
 		desc: `Randomized teams of level-balanced Fundex Pok&eacute;mon with absolutely any ability, moves, and item.`,
 
 		mod: 'gen8',
-		team: 'randomHC',
-		ruleset: ['+Fundex', 'HP Percentage Mod', 'Cancel Mod'],
+		team: 'randomFC',
+		ruleset: ['HP Percentage Mod', 'Cancel Mod'],
 		banlist: ['All Pokemon'],
 	},
 
