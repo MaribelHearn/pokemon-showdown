@@ -604,7 +604,14 @@ export const commands: Chat.ChatCommands  = {
         this.checkChat();
         checkCooldown(user);
         hasUsedMsg(room, user, cmd);
-        const pokemon = (Math.random() > 0.5 ? Dex.species.get('bidoof') : Dex.species.get('bibarel'));
+        let pokemon = (Math.random() > 0.5 ? Dex.species.get('bidoof') : Dex.species.get('bibarel'));
+
+        if (cmd === 'biferp') {
+            pokemon = Dex.species.get('bidoof');
+        } else if (cmd === 'bibaferp') {
+            pokemon = Dex.species.get('bibarel');
+        }
+
         room?.addRaw(`<img src="https://${Config.routes.client}/sprites/gen5/${pokemon.id}.png" alt="${pokemon.name}" width=96 height=96><b>${desu('Ferpaderp!')}</b>`);
     },
     ferphelp: [
