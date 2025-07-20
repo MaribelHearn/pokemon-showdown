@@ -50,7 +50,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		team: 'randomFC',
-		ruleset: ['HP Percentage Mod', 'Cancel Mod'],
+		ruleset: ['HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause'],
 		banlist: ['All Pokemon'],
 	},
 	{
