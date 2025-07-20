@@ -62,8 +62,7 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		gameType: 'doubles',
 		ruleset: [
-			'Max Team Size = 2',
-			'HP Percentage Mod', 'Cancel Mod',
+			'Max Team Size = 2', 'HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause',
 		],
 		banlist: [
 			'All Pokemon', 'Pokestar Spirit', 'Shedinja + Sturdy', 'Battle Bond', 'Cheek Pouch', 'Cursed Body', 'Dry Skin', 'Fur Coat', 'Gorilla Tactics',
