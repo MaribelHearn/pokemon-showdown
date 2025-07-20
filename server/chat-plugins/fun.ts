@@ -445,7 +445,7 @@ export const commands: Chat.ChatCommands  = {
             targetname = args[0];
 
             if (args[1]) {
-                move = Dex.moves.get(args[1]) ? Dex.moves.get(args[1]) : {'name': args[1], 'accuracy': DEFAULT_ACC, 'critRatio': 1, 'type': '???'};
+                move = Dex.moves.get(args[1]).exists ? Dex.moves.get(args[1]) : {'name': args[1], 'accuracy': DEFAULT_ACC, 'critRatio': 1, 'type': '???'};
             } else {
                 move = Dex.moves.get(random(Object.keys(Dex.data.Moves)));
             }
