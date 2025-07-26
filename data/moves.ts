@@ -21487,12 +21487,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allAdjacentFoes",
 		type: "Flying",
 	},
-	grandpatriotselixir: {
+	patriotselixir: {
 		num: 2087,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Grand Patriot's Elixir",
+		name: "Patriot's Elixir",
 		pp: 20,
 		priority: 0,
 		flags: {snatch: 1},
@@ -21623,37 +21623,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Rock",
 		zMove: {basePower: 140},
 	},
-	aculyhigherstat: {
-		num: 2095,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "aculy higher stat",
-		pp: 30,
-		priority: 0,
-		flags: {},
-		onHit(target) {
-			const stats: BoostID[] = [];
-			let stat: BoostID;
-			for (stat in target.boosts) {
-				if (target.boosts[stat] < 6) {
-					stats.push(stat);
-				}
-			}
-			if (stats.length) {
-				const randomStat = this.sample(stats);
-				const boost: SparseBoostsTable = {};
-				boost[randomStat] = 2;
-				this.boost(boost);
-			} else {
-				return false;
-			}
-		},
-		secondary: null,
-		target: "self",
-		type: "Normal",
-		zMove: {effect: 'crit2'},
-	},
+	// 2095
 	zantetsuken: {
 		num: 2096,
 		accuracy: 100,
@@ -21698,36 +21668,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Dark",
 	},
-	bearddeflect: {
-		num: 2099,
-		accuracy: 100,
-		basePower: 0,
-		damageCallback(pokemon) {
-			const lastDamagedBy = pokemon.getLastDamagedBy(true);
-			if (lastDamagedBy !== undefined) {
-				return (lastDamagedBy.damage * 1.5) || 1;
-			}
-			return 0;
-		},
-		category: "Physical",
-		name: "Beard Deflect",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		onTry(source) {
-			const lastDamagedBy = source.getLastDamagedBy(true);
-			if (lastDamagedBy === undefined || !lastDamagedBy.thisTurn) return false;
-		},
-		onModifyTarget(targetRelayVar, source, target, move) {
-			const lastDamagedBy = source.getLastDamagedBy(true);
-			if (lastDamagedBy) {
-				targetRelayVar.target = this.getAtSlot(lastDamagedBy.slot);
-			}
-		},
-		secondary: null,
-		target: "scripted",
-		type: "???",
-	},
+	// 2099
 	matterstorm: {
 		num: 2100,
 		accuracy: 85,

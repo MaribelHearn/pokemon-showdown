@@ -7257,8 +7257,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Phoenix Spread Wings",
 		shortDesc: "No additional effect.",
 	},
-	grandpatriotselixir: {
-		name: "Grand Patriot's Elixir",
+	patriotselixir: {
+		name: "Patriot's Elixir",
 		desc: "Raises the user's Special Attack, Speed and Accuracy by 1 stage.",
 		shortDesc: "Raises the user's Sp. Atk, Speed, Accuracy by 1.",
 	},
