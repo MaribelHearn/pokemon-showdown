@@ -7458,11 +7458,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    stella: {
-		isNonstandard: "Fundex",
-		tier: "Fundex",
-    },
-    stellanorris: {
+    veteran: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },

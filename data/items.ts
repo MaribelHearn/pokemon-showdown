@@ -7336,7 +7336,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	celliumz: {
 		name: "Cellium Z",
-		spritenum: 767,
+		spritenum: 631,
 		onTakeItem: false,
 		zMove: "IMMA FIRIN' MAH LAZER!!",
 		zMoveFrom: "Hyper Beam",
@@ -7346,7 +7346,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	cirniumz: {
 		name: "Cirnium Z",
-		spritenum: 768,
+		spritenum: 636,
 		onTakeItem: false,
 		zMove: "Perfect Freeze",
 		zMoveFrom: "Diamond Blizzard",
@@ -7356,7 +7356,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	leonidiumz: {
 		name: "Leonidium Z",
-		spritenum: 769,
+		spritenum: 637,
 		onTakeItem: false,
 		zMove: "Sparta Kick",
 		zMoveFrom: "High Jump Kick",
@@ -7366,7 +7366,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	utsuhoniumz: {
 		name: "Utsuhonium Z",
-		spritenum: 770,
+		spritenum: 632,
 		onTakeItem: false,
 		zMove: "Uncontainable Nuclear Reaction",
 		zMoveFrom: "Nuke",
@@ -7376,7 +7376,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	yuyukiumz: {
 		name: "Yuyukium Z",
-		spritenum: 771,
+		spritenum: 644,
 		onTakeItem: false,
 		zMove: "Saigyouji Flawless Nirvana",
 		zMoveFrom: "Ghastly Dream",
@@ -7386,7 +7386,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	crabiumz: {
 		name: "Crabium Z",
-		spritenum: 772,
+		spritenum: 639,
 		onTakeItem: false,
 		zMove: "Massive Damage",
 		zMoveFrom: "Earthquake",
@@ -7396,7 +7396,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	kagiumz: {
 		name: "Kagium Z",
-		spritenum: 773,
+		spritenum: 635,
 		onTakeItem: false,
 		zMove: "Hourai Jewel",
 		zMoveFrom: "Energy Ball",
@@ -7406,7 +7406,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	mokiumz: {
 		name: "Mokium Z",
-		spritenum: 774,
+		spritenum: 632,
 		onTakeItem: false,
 		zMove: "Imperishable Shooting",
 		zMoveFrom: "Sacred Fire",
@@ -7416,7 +7416,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	winneriumz: {
 		name: "Winnerium Z",
-		spritenum: 775,
+		spritenum: 631,
 		onTakeItem: false,
 		zMove: "Medicine of Life",
 		zMoveFrom: "Recover",
@@ -7426,7 +7426,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	maribiumz: {
 		name: "Maribium Z",
-		spritenum: 776,
+		spritenum: 641,
 		onTakeItem: false,
 		zMove: "Overflowing Unnatural Power",
 		zMoveFrom: "Cosmic Power",

@@ -3753,11 +3753,8 @@ export const PokedexText: {[k: string]: PokedexText} = {
     zerotwo: {
         name: "Zero-Two",
     },
-    stella: {
-        name: "Stella",
-    },
-    stellanorris: {
-        name: "Stella Norris",
+    veteran: {
+        name: "Veteran",
     },
     yukari: {
         name: "Yukari",
