@@ -2334,7 +2334,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 
     // Fundex items
 
-    trinitystone: {
+    /*trinitystone: {
         name: "Trinity Stone",
         desc: "If held by Zapmolcuno, boosts Fire/Electric/Ice attacks by x1.5.",
     },
@@ -2345,7 +2345,7 @@ export const ItemsText: {[k: string]: ItemText} = {
     handheldfan: {
         name: "Handheld Fan",
 		desc: "Holder's use of Tailwind lasts 6 turns instead of 3.",
-    },
+    },*/
     natureengine: {
         name: "Nature Engine",
 		desc: "If held by a Grass-type Fusion, boosts its Special Attack and Speed by x1.5.",
@@ -2362,7 +2362,7 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Venom Engine",
 		desc: "If held by a Poison-type Fusion, boosts its Attack and Special Attack by x1.5.",
     },
-    redpill: {
+    /*redpill: {
         name: "Red Pill",
 		desc: "If held by Dr. Mario, restores 1/4 max HP and boosts Attack by 1 stage when at 1/4 max HP or less.",
     },
@@ -2373,7 +2373,7 @@ export const ItemsText: {[k: string]: ItemText} = {
     yellowpill: {
         name: "Yellow Pill",
 		desc: "If held by Dr. Mario, restores 1/4 max HP and boosts Speed by 1 stage when at 1/4 max HP or less.",
-    },
+    },*/
     unknowngem: {
         name: "Unknown Gem",
 		desc: "Holder's first successful ???-type attack will have 1.3x power. Single use.",
@@ -2414,6 +2414,10 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Strange Gap",
 		desc: "If held by Maribel, this item allows her to Mega Evolve in battle.",
     },
+    wrathcookie: {
+        name: "Wrath Cookie",
+		desc: "If held by Grandma, this item allows her to Mega Evolve in battle.",
+    },
     unknowniumz: {
         name: "Unknownium Z",
 		desc: "If holder has a ??? move, this item allows it to use a ??? Z-Move.",
@@ -2448,11 +2452,11 @@ export const ItemsText: {[k: string]: ItemText} = {
     },
     kagiumz: {
         name: "Kagium Z",
-		desc: "If held by Cirno with Blizzard, she can use Diamond Blizzard.",
+		desc: "If held by Kaguya with Energy Ball, she can use Hourai Jewel.",
     },
     mokiumz: {
         name: "Mokium Z",
-		desc: "If held by Cirno with Blizzard, she can use Diamond Blizzard.",
+		desc: "If held by Mokou with Sacred Fire, she can use Imperishable Shooting.",
     },
     winneriumz: {
         name: "Winnerium Z",
