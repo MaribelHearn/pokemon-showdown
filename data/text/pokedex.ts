@@ -4014,8 +4014,11 @@ export const PokedexText: {[k: string]: PokedexText} = {
     chucktesta: {
         name: "Chuck Testa",
     },
-    uncledolan: {
-        name: "Uncle Dolan",
+    grandma: {
+        name: "Grandma",
+    },
+    grandmatriarch: {
+        name: "Grandmatriarch",
     },
 	missingnooriginal: {
 		name: "MissingNo.",

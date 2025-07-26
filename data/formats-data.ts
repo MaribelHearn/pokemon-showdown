@@ -7809,7 +7809,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	chucktestabusted: {
 		tier: "Illegal",
 	},
-    uncledolan: {
+    grandma: {
+		isNonstandard: "Fundex",
+		tier: "Fundex",
+    },
+    grandmatriarch: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
