@@ -21509,10 +21509,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, sound: 1, bypasssub: 1, mirror: 1},
-		onHit(pokemon, target) {
+		onHit(target, source) {
 			if (target.newlySwitched) {
 				target.switchFlag = true;
-				this.add('-activate', pokemon, 'move: nope');
+				this.add('-activate', source, 'move: nope');
 			}
 		},
 		secondary: null,
