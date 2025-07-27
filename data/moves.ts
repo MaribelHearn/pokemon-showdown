@@ -22234,29 +22234,28 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {bypasssub: 1},
 		onHit(target, source, move) {
-			let success = false;
-			if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
+			this.add('-activate', source, 'move: Soft Reset');
+			//if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
 			const removeTarget = [
-				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist',
 			];
 			const removeAll = [
-				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
 			];
 			for (const targetCondition of removeTarget) {
-				if (target.side.removeSideCondition(targetCondition)) {
-					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', target.side, this.dex.conditions.get(targetCondition).name, '[from] move: Soft Reset', '[of] ' + source);
-					success = true;
+				if (target.side.getSideCondition(targetCondition)) {
+					target.side.removeSideCondition(targetCondition);
 				}
 			}
 			for (const sideCondition of removeAll) {
 				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Soft Reset', '[of] ' + source);
-					success = true;
+					source.side.removeSideCondition(sideCondition);
+				}
+				if (target.side.getSideCondition(sideCondition)) {
+					target.side.removeSideCondition(sideCondition);
 				}
 			}
 			this.field.clearTerrain();
-			return success;
 		},
 		secondary: null,
 		target: "all",
@@ -22273,39 +22272,39 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {bypasssub: 1},
 		onHit(target, source, move) {
-			let success = false;
-			if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
+			this.add('-activate', source, 'move: Hard Reset');
+			//if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
 			const removeTarget = [
-				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
+				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist',
 			];
 			const removeAll = [
 				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
 			];
 			for (const targetCondition of removeTarget) {
-				if (target.side.removeSideCondition(targetCondition)) {
-					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', target.side, this.dex.conditions.get(targetCondition).name, '[from] move: Hard Reset', '[of] ' + source);
-					success = true;
+				if (target.side.getSideCondition(targetCondition)) {
+					target.side.removeSideCondition(targetCondition);
 				}
 			}
 			for (const sideCondition of removeAll) {
 				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Hard Reset', '[of] ' + source);
-					success = true;
+					source.side.removeSideCondition(sideCondition);
+				}
+				if (target.side.getSideCondition(sideCondition)) {
+					target.side.removeSideCondition(sideCondition);
 				}
 			}
 			this.field.clearTerrain();
-			this.add('-activate', source, 'move: Hard Reset');
-			let success2 = false;
+			this.field.clearWeather();
 			const allies = [...target.side.pokemon, ...target.side.allySide?.pokemon || []];
 			for (const ally of allies) {
 				if (ally !== source && ((ally.hasAbility('sapsipper')) ||
 						(ally.volatiles['substitute'] && !move.infiltrates))) {
 					continue;
 				}
-				if (ally.cureStatus()) success2 = true;
+				if (ally.cureStatus()) {
+					// do nothing
+				}
 			}
-			return success && success2;
 		},
 		onHitField() {
 			this.add('-clearallboost');

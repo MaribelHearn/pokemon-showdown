@@ -333,7 +333,10 @@ export const Aliases: {[alias: string]: string} = {
 	vivillonmeadow: "Vivillon",
 
 	// Fundex
+	"9": "Cirno",
+	"(9)": "Cirno",
 	bsod: "Blue Screen of Death",
+	cn: "Chuck Norris",
 
 	// event formes
 	rockruffdusk: "Rockruff",

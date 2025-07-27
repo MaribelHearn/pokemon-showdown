@@ -7486,10 +7486,12 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Soft Reset",
 		desc: "Ends the effects of Reflect, Light Screen, and Aurora Veil for the target's side of the field. Clears terrain and hazards on both sides.",
 		shortDesc: "Destroys screens; clears terrain and hazards on both sides.",
+		activate: "  Restarting...",
 	},
 	hardreset: {
 		name: "Hard Reset",
-		shortDesc: "Clears screens, terrain, hazards, statuses and stat changes.",
+		shortDesc: "Clears screens, terrain, weather, hazards, statuses and stat changes.",
+		activate: "  Your PC ran into a problem and needs to restart.",
 	},
 	firewall: {
 		name: "Firewall",
@@ -7520,10 +7522,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Mysterious Power",
 		desc: "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
 		shortDesc: "10% chance to raise all stats by 1 (not acc/eva).",
-	},
-	enigmaattack: {
-		name: "Enigma Attack",
-		shortDesc: "No additional effect.",
 	},
 	offwaves: {
 		name: "Off Waves",
