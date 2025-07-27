@@ -20175,20 +20175,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Psychic",
 	},
-	apollo13: {
-		num: 2023,
-		accuracy: 100,
-		basePower: 120,
-		category: "Special",
-		name: "Apollo 13",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		recoil: [25, 100],
-		secondary: null,
-		target: "normal",
-		type: "Poison",
-	},
+	// 2023
 	explod: {
 		num: 2024,
 		accuracy: true,
@@ -20302,11 +20289,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 60,
 		basePowerCallback(pokemon, target, move) {
-			if (target.newlySwitched) {
+			if (!target.activeTurns) {
 				this.debug('Pingas damage boost');
 				return move.basePower * 2;
 			}
-			this.debug('Pingas NOT boosted');
 			return move.basePower;
 		},
 		category: "Physical",
@@ -20477,8 +20463,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	umadbro: {
 		num: 2035,
 		accuracy: 70,
-		basePower: 0,
-		category: "Status",
+		basePower: 1,
+		category: "Special",
 		name: "Umadbro?",
 		pp: 5,
 		priority: 0,
@@ -20489,7 +20475,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "???",
+		type: "Dark",
 		zMove: {effect: 'clearnegativeboost'},
 	},
 	zerolaser: {
@@ -21520,22 +21506,19 @@ export const Moves: {[moveid: string]: MoveData} = {
 	nope: {
 		num: 2094,
 		accuracy: 100,
-		basePower: 75,
-		basePowerCallback(pokemon, target, move) {
-			const damagedByTarget = pokemon.attackedBy.some(
-				p => p.source === target && p.damage > 0 && p.thisTurn
-			);
-			if (damagedByTarget) {
-				this.debug('Boosted for getting hit by ' + target);
-				return move.basePower * 2;
-			}
-			return move.basePower;
-		},
+		basePower: 80,
 		category: "Physical",
-		name: "NOPE",
+		name: "nope",
 		pp: 10,
-		priority: -4,
+		priority: 0,
 		flags: {protect: 1, sound: 1, bypasssub: 1, mirror: 1},
+		onHit(pokemon, target) {
+			if (!this.canSwitch(target.side) || target.forceSwitchFlag || target.switchFlag) return;
+			if (!target.activeTurns) {
+				target.switchFlag = true;
+				this.add('-activate', pokemon, 'move: nope');
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "Rock",
@@ -21783,19 +21766,19 @@ export const Moves: {[moveid: string]: MoveData} = {
         target: "foeSide",
         type: "Fairy",
     },
-	knifethrow: {
+	needlestorm: {
 		num: 2112,
 		accuracy: 100,
 		basePower: 15,
-		category: "Special",
-		name: "Knife Throw",
+		category: "Physical",
+		name: "Needle Storm",
 		pp: 20,
 		priority: 1,
 		flags: {protect: 1, mirror: 1},
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
-		type: "Steel",
+		type: "Poison",
 	},
 	colorsplash: {
 		num: 2113,
@@ -21937,7 +21920,7 @@ export const Moves: {[moveid: string]: MoveData} = {
     thunderhand: {
         num: 2120,
 		accuracy: 100,
-		basePower: 95,
+		basePower: 100,
 		category: "Physical",
 		name: "Thunderhand",
 		pp: 10,
@@ -22226,7 +22209,7 @@ export const Moves: {[moveid: string]: MoveData} = {
     firebrand: {
         num: 2134,
 		accuracy: 100,
-		basePower: 95,
+		basePower: 100,
 		category: "Physical",
 		name: "Firebrand",
 		pp: 10,
@@ -22415,9 +22398,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Laser Beam",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, beam: 1},
-		recoil: [1, 4],
-		secondary: null,
+		flags: {protect: 1, mirror: 1, beam: 1, defrost: 1},
+		recoil: [33, 100],
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
 		target: "normal",
 		type: "Electric",
 	},

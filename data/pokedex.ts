@@ -17026,7 +17026,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Sheik",
 		baseSpecies: "Zelda",
 		forme: "Sheik",
-		types: ["Poison", "Ground"],
+		types: ["Poison", "Psychic"],
 		gender: "F",
 		baseStats: {hp: 70, atk: 115, def: 85, spa: 50, spd: 105, spe: 105},
 		abilities: {0: "Quick Feet", H: "Skill Link"},

@@ -85582,7 +85582,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			shockingarrow: ["8L1"],
 			icyarrow: ["8L1"],
 			lightarrow: ["8L1"],
-			killingedge: ["8L1"],
 			shieldbash: ["8L1", "8M"],
 			cut: ["8L1", "8M"],
 			milkdrink: ["8L1"],
@@ -86104,7 +86103,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			guillotine: ["8L1"],
 			scratch: ["8L1"],
 			nightslash: ["8L1"],
-			killingedge: ["8L1"],
 			workup: ["8M"],
 			hiddenpower: ["8M"],
 			hyperbeam: ["8M"],
@@ -88012,7 +88010,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		learnset: {
 			twister: ["8L1"],
 			thousandcuts: ["8L1", "8M"],
-			killingedge: ["8L1"],
 			teleport: ["8L1"],
 			slash: ["8L1"],
 			nightslash: ["8L1"],

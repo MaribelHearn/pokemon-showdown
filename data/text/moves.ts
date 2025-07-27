@@ -6977,11 +6977,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Hits 5 to 12 times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. Deals damage to the target based on its Defense instead of Special Defense.",
 		shortDesc: "Hits 5-12 times and targets Defense over Sp. Def.",
 	},
-	apollo13: {
-		name: "Apollo 13",
-		desc: "If the target lost HP, the user takes recoil damage equal to 25% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 25% recoil.",
-	},
 	explod: {
 		name: "explod",
 		desc: "The user faints after using this move, even if this move fails for having no target. Bypasses substitute. Always lands a critical hit.",
@@ -7291,14 +7286,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		shortDesc: "Raises the user's Speed by 1.",
 	},
 	nope: {
-		name: "NOPE",
-		desc: "Power doubles if the user was hit by the target this turn.",
-		shortDesc: "Power doubles if user is damaged by the target.",
-	},
-	aculyhigherstat: {
-		name: "aculy higher stat",
-		desc: "Raises a random stat by 2 stages as long as the stat is not already at stage 6. The user can choose to use this move on itself or an adjacent ally. Fails if no stat stage can be raised or if used on an ally with a substitute.",
-		shortDesc: "Raises a random stat of the user or an ally by 2.",
+		name: "nope",
+		desc: "If the target was switched in this turn, it is forced out.",
+		shortDesc: "If the target was switched in this turn, it is forced out.",
+		activate: "  Nope!",
 	},
 	zantetsuken: {
 		name: "Sword of Light",
@@ -7376,8 +7367,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		end: "  The mystical dust around [TEAM] has dissipated!",
 		activate: "  [POKEMON] was illuminated by the mystical dust!",
     },
-	knifethrow: {
-		name: "Knife Throw",
+	needlestorm: {
+		name: "Needle Storm",
 		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is an Ash-Greninja with the Battle Bond Ability, this move has a power of 20 and always hits three times.",
 		shortDesc: "Usually goes first. Hits 2-5 times in one turn.",
 	},
@@ -7512,8 +7503,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	laserbeam: {
 		name: "Laser Beam",
-		desc: "If the target lost HP, the user takes recoil damage equal to 25% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 25% recoil.",
+		desc: "Has a 10% chance to burn the target. If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. 10% chance to burn. Thaws user.",
 	},
     glitchyterrain: {
         name: "Glitchy Terrain",
