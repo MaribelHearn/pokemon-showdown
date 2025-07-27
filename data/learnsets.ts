@@ -88683,6 +88683,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			chipaway: ["8L1"],
 			assurance: ["8L1"],
 			helpinghand: ["8L1"],
+			courtchange: ["8L1"],
+			mindreader: ["8L1"],
 			workup: ["8M"],
 			roar: ["8M"],
 			hiddenpower: ["8M"],

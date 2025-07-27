@@ -22233,12 +22233,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {bypasssub: 1},
+		onTryHit(target, source) {
+			// will shatter screens through sub, before you hit
+			const removeAll = [
+				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist',
+			];
+			for (const sideCondition of removeAll) {
+				if (source.side.removeSideCondition(sideCondition)) {
+					source.side.removeSideCondition(sideCondition);
+				}
+				if (target.side.getSideCondition(sideCondition)) {
+					target.side.removeSideCondition(sideCondition);
+				}
+			}
+		},
 		onHitField(target, source) {
-			//this.add('-activate', source, 'move: Soft Reset');
-			//if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
+			this.add('-activate', source, 'move: Soft Reset');
 			this.field.clearTerrain();
 			const removeAll = [
-				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
+				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
 			];
 			for (const sideCondition of removeAll) {
 				if (source.side.removeSideCondition(sideCondition)) {
@@ -22263,13 +22276,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {bypasssub: 1},
+		onTryHit(target, source) {
+			// will shatter screens through sub, before you hit
+			const removeAll = [
+				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist',
+			];
+			for (const sideCondition of removeAll) {
+				if (source.side.removeSideCondition(sideCondition)) {
+					source.side.removeSideCondition(sideCondition);
+				}
+				if (target.side.getSideCondition(sideCondition)) {
+					target.side.removeSideCondition(sideCondition);
+				}
+			}
+		},
 		onHitField(target, source) {
 			this.add('-activate', source, 'move: Hard Reset');
-			//if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
 			this.field.clearTerrain();
 			this.field.clearWeather();
 			const removeAll = [
-				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
+				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
 			];
 			for (const sideCondition of removeAll) {
 				if (source.side.removeSideCondition(sideCondition)) {
@@ -22284,7 +22310,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				pokemon.clearBoosts();
 			}
 			let success = false;
-			const allies = [...target.side.pokemon, ...target.side.allySide?.pokemon || []];
+			const allies = [...source.side.pokemon, ...source.side.allySide?.pokemon || [], ...target.side.pokemon, ...target.side.allySide?.pokemon || []];
 			for (const ally of allies) {
 				if (ally !== source && ally.hasAbility('soundproof')) continue;
 				if (ally.cureStatus()) success = true;
