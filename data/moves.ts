@@ -21510,6 +21510,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, sound: 1, bypasssub: 1, mirror: 1},
 		onHit(target, source) {
+			if (!this.canSwitch(target.side) || target.forceSwitchFlag || target.switchFlag) return;
 			if (target.newlySwitched) {
 				target.forceSwitchFlag = true;
 				this.add('-activate', source, 'move: nope');
