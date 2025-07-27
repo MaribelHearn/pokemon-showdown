@@ -22233,7 +22233,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {bypasssub: 1},
-		onHit(target, source, move) {
+		onHitField(target, source) {
 			//this.add('-activate', source, 'move: Soft Reset');
 			//if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
 			this.field.clearTerrain();
@@ -22263,8 +22263,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {bypasssub: 1},
-		onHit(target, source, move) {
-			//this.add('-activate', source, 'move: Hard Reset');
+		onHitField(target, source) {
+			this.add('-activate', source, 'move: Hard Reset');
 			//if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
 			this.field.clearTerrain();
 			this.field.clearWeather();
@@ -22279,6 +22279,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 					target.side.removeSideCondition(sideCondition);
 				}
 			}
+			this.add('-clearallboost');
+			for (const pokemon of this.getAllActive()) {
+				pokemon.clearBoosts();
+			}
 			let success = false;
 			const allies = [...target.side.pokemon, ...target.side.allySide?.pokemon || []];
 			for (const ally of allies) {
@@ -22286,12 +22290,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 				if (ally.cureStatus()) success = true;
 			}
 			return success;
-		},
-		onHitField() {
-			this.add('-clearallboost');
-			for (const pokemon of this.getAllActive()) {
-				pokemon.clearBoosts();
-			}
 		},
 		secondary: null,
 		target: "all",
