@@ -22239,7 +22239,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist',
 			];
 			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
+				if (source.side.getSideCondition(sideCondition)) {
 					source.side.removeSideCondition(sideCondition);
 				}
 				if (target.side.getSideCondition(sideCondition)) {
@@ -22254,7 +22254,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
 			];
 			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
+				if (source.side.getSideCondition(sideCondition)) {
 					source.side.removeSideCondition(sideCondition);
 				}
 				if (target.side.getSideCondition(sideCondition)) {
@@ -22282,7 +22282,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist',
 			];
 			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
+				if (source.side.getSideCondition(sideCondition)) {
 					source.side.removeSideCondition(sideCondition);
 				}
 				if (target.side.getSideCondition(sideCondition)) {
@@ -22298,7 +22298,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
 			];
 			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
+				if (source.side.getSideCondition(sideCondition)) {
 					source.side.removeSideCondition(sideCondition);
 				}
 				if (target.side.getSideCondition(sideCondition)) {
@@ -22312,7 +22312,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 			let success = false;
 			const allies = [...source.side.pokemon, ...source.side.allySide?.pokemon || [], ...target.side.pokemon, ...target.side.allySide?.pokemon || []];
 			for (const ally of allies) {
-				if (ally !== source && ally.hasAbility('soundproof')) continue;
 				if (ally.cureStatus()) success = true;
 			}
 			return success;
