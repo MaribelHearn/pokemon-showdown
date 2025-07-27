@@ -21310,11 +21310,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 				}
 			}
 
-			const randInt = this.random(unrevealedMoves.length);
-			const move = unrevealedMoves[randInt];
-			target.moveUsed(move);
-			target.lastMoveUsed = move;
-			this.add('-start', target, 'Telemetry', move.name);
+			if (unrevealedMoves.length > 0) {
+				const randInt = this.random(unrevealedMoves.length);
+				const move = unrevealedMoves[randInt];
+				target.moveUsed(move);
+				target.lastMoveUsed = move;
+				this.add('-start', target, 'Telemetry', move.name);
+			}
 		},
 		secondary: null,
 		target: "normal",
