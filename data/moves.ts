@@ -22234,19 +22234,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {bypasssub: 1},
 		onHit(target, source, move) {
-			this.add('-activate', source, 'move: Soft Reset');
+			//this.add('-activate', source, 'move: Soft Reset');
 			//if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
-			const removeTarget = [
-				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist',
-			];
+			this.field.clearTerrain();
 			const removeAll = [
-				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
+				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
 			];
-			for (const targetCondition of removeTarget) {
-				if (target.side.getSideCondition(targetCondition)) {
-					target.side.removeSideCondition(targetCondition);
-				}
-			}
 			for (const sideCondition of removeAll) {
 				if (source.side.removeSideCondition(sideCondition)) {
 					source.side.removeSideCondition(sideCondition);
@@ -22255,7 +22248,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 					target.side.removeSideCondition(sideCondition);
 				}
 			}
-			this.field.clearTerrain();
 		},
 		secondary: null,
 		target: "all",
@@ -22272,19 +22264,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {bypasssub: 1},
 		onHit(target, source, move) {
-			this.add('-activate', source, 'move: Hard Reset');
+			//this.add('-activate', source, 'move: Hard Reset');
 			//if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
-			const removeTarget = [
-				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist',
-			];
+			this.field.clearTerrain();
+			this.field.clearWeather();
 			const removeAll = [
-				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
+				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust',
 			];
-			for (const targetCondition of removeTarget) {
-				if (target.side.getSideCondition(targetCondition)) {
-					target.side.removeSideCondition(targetCondition);
-				}
-			}
 			for (const sideCondition of removeAll) {
 				if (source.side.removeSideCondition(sideCondition)) {
 					source.side.removeSideCondition(sideCondition);
@@ -22293,18 +22279,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 					target.side.removeSideCondition(sideCondition);
 				}
 			}
-			this.field.clearTerrain();
-			this.field.clearWeather();
+			let success = false;
 			const allies = [...target.side.pokemon, ...target.side.allySide?.pokemon || []];
 			for (const ally of allies) {
-				if (ally !== source && ((ally.hasAbility('sapsipper')) ||
-						(ally.volatiles['substitute'] && !move.infiltrates))) {
-					continue;
-				}
-				if (ally.cureStatus()) {
-					// do nothing
-				}
+				if (ally !== source && ally.hasAbility('soundproof')) continue;
+				if (ally.cureStatus()) success = true;
 			}
+			return success;
 		},
 		onHitField() {
 			this.add('-clearallboost');
