@@ -20289,7 +20289,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 60,
 		basePowerCallback(pokemon, target, move) {
-			if (!target.activeTurns) {
+			if (target.newlySwitched) {
 				this.debug('Pingas damage boost');
 				return move.basePower * 2;
 			}
@@ -21510,7 +21510,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, sound: 1, bypasssub: 1, mirror: 1},
 		onHit(pokemon, target) {
-			if (!target.activeTurns) {
+			if (target.newlySwitched) {
 				target.switchFlag = true;
 				this.add('-activate', pokemon, 'move: nope');
 			}
