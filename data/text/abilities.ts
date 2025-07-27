@@ -2040,7 +2040,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "(Chuck Testa only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
 
 		block: "  You probably thought this deer was alive...",
-		transform: "Nope! It's just [POKEMON].",
+		transform: "Nope! It's just [SPECIES].",
 	},
 	bloodbond: {
 		name: "Blood Bond",
