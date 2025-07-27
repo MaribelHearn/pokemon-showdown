@@ -38,7 +38,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		megaGrandma1: "**Note: this is a bad idea.**",
 		megaGrandma2: "  We are one. We are many.",
 		megaGrandma3: "  We fuse. We merge. We grow.",
-		megaGrandma4: "  squirm crawl slither writhe\ntoday we rise",
+		megaGrandma4: "  squirm crawl slither writhe\n  today we rise",
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
 		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]!",
 		transformVegeta: "[POKEMON] transformed into Super Saiyan Vegeta!",
