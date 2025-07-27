@@ -21510,7 +21510,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, sound: 1, bypasssub: 1, mirror: 1},
 		onHit(pokemon, target) {
-			if (!this.canSwitch(target.side) || target.forceSwitchFlag || target.switchFlag) return;
 			if (!target.activeTurns) {
 				target.switchFlag = true;
 				this.add('-activate', pokemon, 'move: nope');
