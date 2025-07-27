@@ -21101,16 +21101,13 @@ export const Moves: {[moveid: string]: MoveData} = {
         pp: 5,
         priority: 0,
         flags: {protect: 1, mirror: 1},
-		onTryHit(target) {
-			if (target.getAbility().isPermanent || target.ability === 'normalize' || target.ability === 'truant') {
-				return false;
-			}
-		},
 		onHit(target) {
-			const oldAbility = target.setAbility('normalize');
-			if (oldAbility) {
-				this.add('-ability', target, 'Normalize', '[from] move: a NORMAL move');
-				return;
+			if (target.getAbility().isPermanent || target.ability === 'normalize' || target.ability === 'truant') {
+				const oldAbility = target.setAbility('normalize');
+				if (oldAbility) {
+					this.add('-ability', target, 'Normalize', '[from] move: a NORMAL move');
+					return;
+				}
 			}
 			return false;
 		},
