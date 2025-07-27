@@ -20543,7 +20543,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Steel",
 		contestType: "Cool",
 	},
-	// stealthy kick
+	// 2038
 	thunderdrumshot: {
 		num: 2039,
 		accuracy: 100,
@@ -21164,59 +21164,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Grass",
 		zMove: {effect: 'crit2'},
 	},
-	/*virtueofwindgod: {
-		num: 2068,
-		accuracy: 100,
-		basePower: 95,
-		category: "Special",
-		name: "Virtue of Wind God",
-		pp: 15,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, distance: 1},
-		secondary: null,
-		target: "allAdjacent",
-		type: "Flying",
-	},
-	expandedonbashira: {
-		num: 2069,
-		accuracy: 100,
-		basePower: 100,
-		category: "Physical",
-		name: "Expanded Onbashira",
-		pp: 10,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		secondary: null,
-		target: "normal",
-		type: "Grass",
-	},
-	foxtanukilaser: {
-		num: 2070,
-		accuracy: 85,
-		basePower: 120,
-		category: "Special",
-		name: "Fox-Tanuki Laser",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, beam: 1},
-		secondary: null,
-		target: "normal",
-		type: "Psychic",
-	},
-	"12generalgods": {
-		num: 2071,
-		accuracy: 100,
-		basePower: 25,
-		category: "Special",
-		name: "12 General Gods",
-		pp: 30,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		multihit: [2, 5],
-		secondary: null,
-		target: "normal",
-		type: "Ground",
-	},*/
+	// 2068
+	// 2069
+	// 2070
+	// 2071
 	countdown: {
 		num: 2072,
 		accuracy: 90,
@@ -21270,41 +21221,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "???",
 	},
-	/*reboot: {
-		num: 2075,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Reboot",
-		pp: 30,
-		priority: 0,
-		flags: {bypasssub: 1},
-		onHitField() {
-			this.add('-clearallboost');
-			for (const pokemon of this.getAllActive()) {
-				pokemon.clearBoosts();
-			}
-		},
-		secondary: null,
-		target: "all",
-		type: "Normal",
-		zMove: {effect: 'heal'},
-	},
-	recoveryconsole: {
-		num: 2076,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Recovery Console",
-		pp: 10,
-		priority: 0,
-		flags: {snatch: 1, heal: 1},
-		heal: [1, 2],
-		secondary: null,
-		target: "self",
-		type: "Normal",
-		zMove: {effect: 'clearnegativeboost'},
-	},*/
+	// 2075
+	// 2076
 	strengthenjutsu: {
 		num: 2077,
 		accuracy: true,
@@ -21339,12 +21257,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allAdjacent",
 		type: "Water",
 	},
-	download: {
+	bittorrent: {
 		num: 2079,
 		accuracy: 100,
 		basePower: 75,
 		category: "Special",
-		name: "Download",
+		name: "Bit Torrent",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, heal: 1},
