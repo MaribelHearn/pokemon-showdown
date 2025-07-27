@@ -21511,7 +21511,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, sound: 1, bypasssub: 1, mirror: 1},
 		onHit(target, source) {
 			if (target.newlySwitched) {
-				target.switchFlag = true;
+				target.forceSwitchFlag = true;
 				this.add('-activate', source, 'move: nope');
 			}
 		},
