@@ -7655,8 +7655,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Fundex",
     },
     angrywiggler: {
-		isNonstandard: "Fundex",
-		tier: "Fundex",
+		tier: "Illegal",
     },
     sunnymilk: {
 		isNonstandard: "Fundex",
