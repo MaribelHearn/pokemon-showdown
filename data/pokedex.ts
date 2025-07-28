@@ -18385,6 +18385,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Red",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
+		requiredAbility: "Short-Tempered",
+		battleOnly: "Wiggler",
     },
     sunnymilk: {
         num: 2123,
