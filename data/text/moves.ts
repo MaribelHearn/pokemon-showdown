@@ -7026,13 +7026,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
 		shortDesc: "Special if user's Sp. Atk > Atk. The user faints.",
 	},
-	goldenbracket: {
-		name: "Golden Bracket",
-		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-		shortDesc: "Traps and damages the target for 4-5 turns.",
-
-		start: "  [POKEMON] became trapped in golden brackets!",
-	},
+    psirockin: {
+        name: "PSI Rockin",
+		desc: "Lowers the user's Special Attack by 2 stages.",
+		shortDesc: "Lowers the user's Sp. Atk by 2.",
+    },
 	barrelroll: {
 		name: "Barrel Roll",
 		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon using a bomb or bullet move has 1/2 their damage deflected back, rounded down. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, Wide Guard, Barrel Roll, Electrical Shield, or Firewall, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
@@ -7047,12 +7045,21 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Zero Laser",
 		shortDesc: "Cannot be selected the turn after it's used.",
 	},
+	narrowconfines: {
+		name: "Narrow Confines",
+		desc: "Lowers the target's Attack, Special Attack and Speed by 1 stage.",
+		shortDesc: "Lowers the foe(s) Attack, Sp. Atk, Speed by 1.",
+	},
+	finaljudgment: {
+		name: "Final Judgment",
+		desc: "The user prevents all opposing Pokemon from using any moves that the user also knows as long as the user remains active.",
+		shortDesc: "No foe can use any move known by the user.",
+	},
 	objection: {
 		name: "OBJECTION!",
 		desc: "Deals damage to the last opposing Pokemon to hit the user with a physical or special attack this turn equal to 1.5 times the HP lost by the user from that attack, rounded down. If the user did not lose HP from that attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical or special attack this turn.",
 		shortDesc: "If hit by an attack, returns 1.5x damage.",
 	},
-	// stealthy kick
 	thunderdrumshot: {
 		name: "Thunder Drum Shot",
 		desc: "Has a 30% chance to lower the target's Special Defense by 1 stage.",
@@ -7229,7 +7236,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	telemetry: {
 		name: "Telemetry",
-		shortDesc: "No additional effect.",
+		shortDesc: "Reveals a random unused move from the target's moveset.",
 
 		start: "  Telemetry revealed the opposing Pokemon's [MOVE]!",
 	},
@@ -7247,10 +7254,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Flight of Idaten",
 		desc: "No additional effect.",
 		shortDesc: "Usually goes first.",
-	},
-	phoenixspreadwings: {
-		name: "Phoenix Spread Wings",
-		shortDesc: "No additional effect.",
 	},
 	patriotselixir: {
 		name: "Patriot's Elixir",
@@ -7275,11 +7278,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Prevents the target from switching out and confuses it. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
 		shortDesc: "Prevents target from switching out and confuses it.",
 	},
-	illstarreddive: {
-		name: "Ill-Starred Dive",
-		desc: "No additional effect.",
-		shortDesc: "Usually goes first.",
-	},
 	peerlesswindgod: {
 		name: "Peerless Wind God",
 		desc: "Raises the user's Speed by 1 stage.",
@@ -7303,11 +7301,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Hand of Destruction",
 		shortDesc: "Deals 1.5x damage if super effective.",
 	},
-	bearddeflect: {
-		name: "Beard Deflect",
-		desc: "Deals damage to the last opposing Pokemon to hit the user with a physical or special attack this turn equal to 1.5 times the HP lost by the user from that attack, rounded down. If the user did not lose HP from that attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical or special attack this turn.",
-		shortDesc: "If hit by an attack, returns 1.5x damage.",
-	},
 	matterstorm: {
 		name: "Matter Storm",
 		desc: "Has a 10% chance to poison the target.",
@@ -7322,10 +7315,20 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Overhead Slash",
 		shortDesc: "No additional effect.",
 	},
+    remotemissile: {
+        name: "Remote Missile",
+		desc: "This move does not check accuracy.",
+		shortDesc: "This move does not check accuracy. Hits foes.",
+    },
 	graspinghands: {
 		name: "Grasping Hands",
 		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
 		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	deathsickle: {
+		name: "Death Sickle",
+		desc: "Ignores the target's stat stage changes, including evasiveness.",
+		shortDesc: "Ignores the target's stat stage changes.",
 	},
 	arrowrain: {
 		name: "Arrow Rain",
@@ -7343,6 +7346,16 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Icy Arrow",
 		shortDesc: "No additional effect.",
 	},
+	bullseye: {
+		name: "Bullseye",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		shortDesc: "Always results in a critical hit.",
+	},
+	lightarrow: {
+		name: "Light Arrow",
+		desc: "This move becomes a special attack if the user's Special Attack is greater than its Attack.",
+		shortDesc: "Special if user's Sp. Atk > Atk.",
+	},
     plasmawhip: {
         name: "Plasma Whip",
 		desc: "Lowers the target's Defense by 1 stage.",
@@ -7353,10 +7366,20 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
 		shortDesc: "30% chance to burn the target. Thaws target.",
 	},
+	laserbeam: {
+		name: "Laser Beam",
+		desc: "Has a 10% chance to burn the target. If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. 10% chance to burn. Thaws user.",
+	},	
 	acidbomb: {
         name: "Acid Bomb",
 		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage. This move's type effectiveness against Steel is changed to be super effective no matter what this move's type is.",
 		shortDesc: "10% chance to lower Sp. Def by 1. Super effective on Steel.",
+	},
+	needlestorm: {
+		name: "Needle Storm",
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is an Ash-Greninja with the Battle Bond Ability, this move has a power of 20 and always hits three times.",
+		shortDesc: "Usually goes first. Hits 2-5 times in one turn.",
 	},
     pixiedust: {
         name: "Pixie Dust",
@@ -7367,11 +7390,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		end: "  The mystical dust around [TEAM] has dissipated!",
 		activate: "  [POKEMON] was illuminated by the mystical dust!",
     },
-	needlestorm: {
-		name: "Needle Storm",
-		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is an Ash-Greninja with the Battle Bond Ability, this move has a power of 20 and always hits three times.",
-		shortDesc: "Usually goes first. Hits 2-5 times in one turn.",
-	},
 	colorsplash: {
 		name: "Color Splash",
 		desc: "Has a 10% chance to lower the target's accuracy by 1 stage.",
@@ -7381,11 +7399,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Parasol Twirl",
 		desc: "If this move is successful and the user has not fainted, the effects of Leech Seed and binding moves end for the user, and all hazards are removed from the user's side of the field. Has a 100% chance to raise the user's Speed by 1 stage.",
 		shortDesc: "Free user from hazards/bind/Leech Seed; +1 Spe.",
-	},
-	deathsickle: {
-		name: "Death Sickle",
-		desc: "Ignores the target's stat stage changes, including evasiveness.",
-		shortDesc: "Ignores the target's stat stage changes.",
 	},
     bulletspray: {
         name: "Bullet Spray",
@@ -7407,20 +7420,25 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Damage is calculated using the user's Defense stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
 		shortDesc: "Uses user's Def stat as Atk in damage calculation.",
     },
+	tornadotentacle: {
+		name: "Tornado Tentacle",
+		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
+	},
 	thunderhand: {
 		name: "Thunderhand",
 		desc: "Power doubles if the last move used by any Pokemon this turn was Firebrand.",
 		shortDesc: "Power doubles if used after Firebrand this turn.",
     },
-    psirockin: {
-        name: "PSI Rockin",
-		desc: "Lowers the user's Special Attack by 2 stages.",
-		shortDesc: "Lowers the user's Sp. Atk by 2.",
+    firebrand: {
+        name: "Firebrand",
+		desc: "Power doubles if the last move used by any Pokemon this turn was Thunderhand.",
+		shortDesc: "Power doubles if used after Thunderhand this turn.",
     },
-	tornadotentacle: {
-		name: "Tornado Tentacle",
-		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-		shortDesc: "Traps and damages the target for 4-5 turns.",
+	galickgun: {
+		name: "Galick Gun",
+		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "10% chance to lower the target's Sp. Def by 1.",
 	},
 	deathegg: {
 		name: "Death Egg",
@@ -7432,56 +7450,26 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 10% chance to burn the target.",
 		shortDesc: "10% chance to burn the target.",
 	},
-	galickgun: {
-		name: "Galick Gun",
-		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
-		shortDesc: "10% chance to lower the target's Sp. Def by 1.",
-	},
-	lightarrow: {
-		name: "Light Arrow",
-		desc: "This move becomes a special attack if the user's Special Attack is greater than its Attack.",
-		shortDesc: "Special if user's Sp. Atk > Atk.",
-	},
-	cataclysm: {
-		name: "Cataclysm",
-		desc: "Has a 30% chance to either burn, paralyze, or poison the target.",
-		shortDesc: "30% chance to burn or paralyze or poison target.",
-	},
-    remotemissile: {
-        name: "Remote Missile",
-		desc: "This move does not check accuracy.",
-		shortDesc: "This move does not check accuracy. Hits foes.",
-    },
 	grapplebeam: {
 		name: "Grapple Beam",
 		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
 		shortDesc: "Traps and damages the target for 4-5 turns.",
-	},
-	electricalshield: {
-		name: "Electrical Shield",
-		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user become paralyzed. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-		shortDesc: "Protects from moves. Contact: paralysis.",
 	},
 	paralyzer: {
 		name: "Paralyzer",
 		desc: "Has a 100% chance to paralyze the target.",
 		shortDesc: "100% chance to paralyze the target.",
 	},
-	holdit: {
-		name: "HOLD IT!",
-		desc: "Has a 100% chance to make the target flinch. Fails unless it is the user's first turn on the field.",
-		shortDesc: "Hits first. First turn out only. 100% flinch chance.",
+	electricalshield: {
+		name: "Electrical Shield",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user become paralyzed. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from moves. Contact: paralysis.",
 	},
-	takethat: {
-		name: "TAKE THAT!",
-		desc: "Power doubles if the user was hit by the target this turn. Recovers 1/2 the HP lost by the target.",
-		shortDesc: "Power doubles if user is damaged by the target.",
+	firewall: {
+		name: "Firewall",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user become burned. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from moves. Contact: burn.",
 	},
-    firebrand: {
-        name: "Firebrand",
-		desc: "Power doubles if the last move used by any Pokemon this turn was Thunderhand.",
-		shortDesc: "Power doubles if used after Thunderhand this turn.",
-    },
 	softreset: {
 		name: "Soft Reset",
 		desc: "Ends the effects of Reflect, Light Screen, and Aurora Veil for the target's side of the field. Clears terrain and hazards on both sides.",
@@ -7493,20 +7481,27 @@ export const MovesText: {[k: string]: MoveText} = {
 		shortDesc: "Clears screens, terrain, weather, hazards, statuses and stat changes.",
 		activate: "  Your PC ran into a problem and needs to restart.",
 	},
-	firewall: {
-		name: "Firewall",
-		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user become burned. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-		shortDesc: "Protects from moves. Contact: burn.",
+	holdit: {
+		name: "HOLD IT!",
+		desc: "Has a 100% chance to make the target flinch. Fails unless it is the user's first turn on the field.",
+		shortDesc: "Hits first. First turn out only. 100% flinch chance.",
 	},
-	bullseye: {
-		name: "Bullseye",
-		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
-		shortDesc: "Always results in a critical hit.",
+	takethat: {
+		name: "TAKE THAT!",
+		desc: "Power doubles if the user was hit by the target this turn. Recovers 1/2 the HP lost by the target.",
+		shortDesc: "Power doubles if user is damaged by the target.",
 	},
-	laserbeam: {
-		name: "Laser Beam",
-		desc: "Has a 10% chance to burn the target. If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 33% recoil. 10% chance to burn. Thaws user.",
+	goldenbracket: {
+		name: "Golden Bracket",
+		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
+
+		start: "  [POKEMON] became trapped in golden brackets!",
+	},
+	offwaves: {
+		name: "Off Waves",
+		desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
+		shortDesc: "OHKOs the target. Fails if user is a lower level.",
 	},
     glitchyterrain: {
         name: "Glitchy Terrain",
@@ -7523,28 +7518,67 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
 		shortDesc: "10% chance to raise all stats by 1 (not acc/eva).",
 	},
-	offwaves: {
-		name: "Off Waves",
-		desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
-		shortDesc: "OHKOs the target. Fails if user is a lower level.",
+	cataclysm: {
+		name: "Cataclysm",
+		desc: "Has a 30% chance to either burn, paralyze, or poison the target.",
+		shortDesc: "30% chance to burn or paralyze or poison target.",
 	},
-	narrowconfines: {
-		name: "Narrow Confines",
-		desc: "Lowers the target's Attack, Special Attack and Speed by 1 stage.",
-		shortDesc: "Lowers the foe(s) Attack, Sp. Atk, Speed by 1.",
-	},
-	finaljudgment: {
-		name: "Final Judgment",
-		desc: "The user prevents all opposing Pokemon from using any moves that the user also knows as long as the user remains active.",
-		shortDesc: "No foe can use any move known by the user.",
+	unrealunraveling: {
+		name: "Unreal Unraveling",
+		shortDesc: "Power is equal to the base move's Z-Power.",
 	},
 	maxmystery: {
 		name: "Max Mystery",
 		desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Glitchy Terrain begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
 		shortDesc: "Base move affects power. Starts Glitchy Terrain.",
 	},
-	unrealunraveling: {
-		name: "Unreal Unraveling",
-		shortDesc: "Power is equal to the base move's Z-Power.",
+	immafirinmahlazer: {
+		name: "IMMA FIRIN' MAH LAZER!!",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		shortDesc: "Always results in a critical hit.",
+	},
+	perfectfreeze: {
+		name: "Perfect Freeze",
+		desc: "If this move is successful, the effect of Hail begins.",
+		shortDesc: "Starts Hail.",
+	},
+	spartakick: {
+		name: "Sparta Kick",
+		desc: "If both the user and the target have not fainted, the target is forced to switch out and be replaced with a random unfainted ally. This effect fails if the target is under the effect of Ingrain, has the Suction Cups Ability, or this move hit a substitute.",
+		shortDesc: "Forces the target to switch to a random ally.",
+	},
+	uncontainablenuclearreaction: {
+		name: "Uncontainable Nuclear Reaction",
+		desc: "This move combines Poison in its type effectiveness against the target.",
+		shortDesc: "Combines Poison in its type effectiveness.",
+	},
+	saigyoujiflawlessnirvana: {
+		name: "Saigyouji Flawless Nirvana",
+		desc: "Has a 100% chance to raise the user's Special Attack, Special Defense, and Speed by 1 stage.",
+		shortDesc: "100% chance to raise the user's Sp. Atk, Sp. Def, Speed by 1.",
+	},
+	massivedamage: {
+		name: "Massive Damage",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		shortDesc: "Always results in a critical hit.",
+	},
+	houraijewel: {
+		name: "Hourai Jewel",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		shortDesc: "Always results in a critical hit.",
+	},
+	imperishableshooting: {
+		name: "Imperishable Shooting",
+		desc: "Hits three times. Raises the user's Attack, Defense, and Speed by 1 stage.",
+		shortDesc: "Hits 3 times. Raises the user's Atk, Def, Speed by 1.",
+	},
+	medicineoflife: {
+		name: "Medicine of Life",
+		shortDesc: "Fully restores the user's HP.",
+	},
+	overflowingunnaturalpower: {
+		name: "Overflowing Unnatural Power",
+		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
+		shortDesc: "Raises all stats by 1 (not acc/eva).",
 	},
 };
