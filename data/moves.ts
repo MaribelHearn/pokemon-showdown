@@ -21122,9 +21122,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, reflectable: 1, mirror: 1},
 		volatileStatus: 'confusion',
 		onHit(target, source) {
-			const boost: SparseBoostsTable = {};
-			boost['spa'] = 1;
-			this.boost(boost, source);
+			if (!target.volatiles['confusion'] && !target.hasAbility('Own Tempo')) {
+				const boost: SparseBoostsTable = {};
+				boost['spa'] = 1;
+				this.boost(boost, source);
+			}
 		},
 		secondary: null,
 		target: "allAdjacent",
