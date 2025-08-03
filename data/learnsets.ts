@@ -87113,7 +87113,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			lifedew: ["8L1"],
 			muddywater: ["8L1"],
 			sludgewave: ["8L1"],
-			arrowrain: ["8L1"],
+			bullseye: ["8L1"],
 			flamingarrow: ["8L1"],
 			shockingarrow: ["8L1"],
 			icyarrow: ["8L1"],
