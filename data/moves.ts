@@ -21370,7 +21370,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
 				target.addVolatile('telemetry' + move.id);
-				this.add("-start", target, 'move: Telemetry', move.name);
+				//this.add("-start", target, 'move: Telemetry', move.name);
 			}
 		},
 		secondary: null,
