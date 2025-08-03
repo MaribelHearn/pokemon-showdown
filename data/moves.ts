@@ -21355,7 +21355,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onTryHit(target, source) {
+		onHit(target, source) {
 			let unrevealedMoves = [] as ActiveMove[];
 
 			for (const moveName of target.moves) {
@@ -21376,7 +21376,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				target.volatiles[status.id].sourceSlot = source.getSlot();
 				target.volatiles[status.id].sourceEffect = move;
 				this.singleEvent('Start', status, target.volatiles[status.id], this, source, move);
-				this.add("-activate", target, 'move: Telemetry', move.name);
+				this.add("-start", target, 'move: Telemetry', move.name);
 			}
 		},
 		secondary: null,
