@@ -21370,7 +21370,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
 				target.moveUsed(move);
-				target.lastMoveUsed = move;
+				target.lastMove = move;
 				this.add('-start', target, 'Telemetry', move.name);
 			}
 		},
