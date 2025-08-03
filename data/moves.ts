@@ -21379,7 +21379,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				target.volatiles[statusID].sourceSlot = source.getSlot();
 				target.volatiles[statusID].sourceEffect = move;
 				this.singleEvent('Start', status, target.volatiles[statusID], this, source, move);
-				this.add("-start", target, 'move: Telemetry', move.name);
+				this.add("-start", target, 'move: Telemetry', target.volatiles[statusID].id);
 			}
 		},
 		secondary: null,
