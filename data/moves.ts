@@ -21369,6 +21369,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
+				target.volatiles['telemetry' as ID] = {id: 'telemetry' as ID};
+				target.volatiles['telemetry' as ID].target = target;
 				target.volatiles['telemetry' as ID].source = source;
 				target.volatiles['telemetry' as ID].sourceSlot = source.getSlot();
 				target.volatiles['telemetry' as ID].sourceEffect = move;
