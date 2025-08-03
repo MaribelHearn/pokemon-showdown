@@ -7238,7 +7238,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Telemetry",
 		shortDesc: "Reveals a random unused move from the target's moveset.",
 
-		activate: "  Telemetry revealed the opposing [POKEMON]'s [MOVE]!",
+		activate: "  Telemetry revealed the opposing [TARGET]'s [MOVE]!",
 	},
 	delete: {
 		name: "Delete",
