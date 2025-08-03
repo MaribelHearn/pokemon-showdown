@@ -21369,10 +21369,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
+				target.addVolatile('telemetry', source, move);
 				this.add('-activate', target, 'Telemetry', move.name);
 			}
 		},
-		volatileStatus: 'telemetry',
 		secondary: null,
 		target: "normal",
 		type: "Steel",
