@@ -21369,12 +21369,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
-				target.volatiles['telemetry' as ID] = {id: 'telemetry' as ID};
-				target.volatiles['telemetry' as ID].target = target;
-				target.volatiles['telemetry' as ID].source = source;
-				target.volatiles['telemetry' as ID].sourceSlot = source.getSlot();
-				target.volatiles['telemetry' as ID].sourceEffect = move;
-				this.add('-activate', target, 'Telemetry', move.name);
+				const status = this.dex.conditions.get('telemetry');
+				target.volatiles[status.id] = {id: 'telemetry' as ID};
+				target.volatiles[status.id].target = target;
+				target.volatiles[status.id].source = source;
+				target.volatiles[status.id].sourceSlot = source.getSlot();
+				target.volatiles[status.id].sourceEffect = move;
+				this.singleEvent('Start', status, target.volatiles[status.id], this, source, move);
+				this.add("-activate", target, 'move: Telemetry', move.name);
 			}
 		},
 		secondary: null,
