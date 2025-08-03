@@ -17,6 +17,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.damage(pokemon.baseMaxhp / 16);
 		},
 	},
+	// Fundex addition: TMTRAINER status
 	tmt: {
 		name: 'tmt',
 		effectType: 'Status',
@@ -212,6 +213,11 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.runEvent('Flinch', pokemon);
 			return false;
 		},
+	},
+	// Fundex addition: Telemetry volatile status
+	telemetry: {
+		name: 'telemetry',
+		noCopy: true,
 	},
 	trapped: {
 		name: 'trapped',

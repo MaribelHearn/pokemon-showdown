@@ -21355,8 +21355,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onTryHit(target, source) {
-			/*let unrevealedMoves = [] as ActiveMove[];
+		onHit(target, source) {
+			let unrevealedMoves = [] as ActiveMove[];
 
 			for (const moveName of target.moves) {
 				const move = this.dex.getActiveMove(moveName);
@@ -21369,10 +21369,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
-				target.moveUsed(move);
-				target.lastMove = move;
-				this.add('-start', target, 'Telemetry', move.name);
-			}*/
+				target.addVolatile('telemetry', source, move);
+				this.add('-activate', target, 'Telemetry', move.name);
+			}
 		},
 		secondary: null,
 		target: "normal",
