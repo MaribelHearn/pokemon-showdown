@@ -21369,17 +21369,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
-				const statusName = 'telemetry' + move.id;
-				const status = new this.dex.Condition({name: statusName, exists: false});
-				const statusID = statusName as ID;
-				target.volatiles[statusID] = {};
-				target.volatiles[statusID].id = statusID;
-				target.volatiles[statusID].target = target;
-				target.volatiles[statusID].source = source;
-				target.volatiles[statusID].sourceSlot = source.getSlot();
-				target.volatiles[statusID].sourceEffect = move;
-				this.singleEvent('Start', status, target.volatiles[statusID], this, source, move);
-				this.add("-start", target, 'move: Telemetry', target.volatiles[statusID].id);
+				target.addVolatile('telemetry' + move.id);
+				this.add("-start", target, 'move: Telemetry', move.name);
 			}
 		},
 		secondary: null,

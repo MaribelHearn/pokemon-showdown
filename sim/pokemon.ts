@@ -1763,6 +1763,18 @@ export class Pokemon {
 		status: string | Condition, source: Pokemon | null = null, sourceEffect: Effect | null = null,
 		linkedStatus: string | Condition | null = null
 	): boolean | any {
+		// Fundex addition
+		if (typeof status === 'string' && status.startsWith('telemetry')) {
+			this.volatiles[status] = {id: status};
+			this.volatiles[status].target = this;
+			if (source) {
+				this.volatiles[status].source = source;
+				this.volatiles[status].sourceSlot = source.getSlot();
+			}
+			this.volatiles[status].sourceEffect = sourceEffect;
+			this.battle.singleEvent('Start', {effectType: 'Status', id: status as ID} as Effect, this.volatiles[status], this, source, sourceEffect);
+			return true;
+		}
 		let result;
 		status = this.battle.dex.conditions.get(status);
 		if (!this.hp && !status.affectsFainted) return false;
