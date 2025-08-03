@@ -20007,7 +20007,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Spear the Gungnir",
 		pp: 5,
 		priority: 0,
-		flags: {contact: 1, protect: 1, distance: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, distance: 1, mirror: 1, arrow: 1},
 		critRatio: 2,
 		secondary: null,
 		target: "normal",
@@ -21121,15 +21121,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, mirror: 1},
 		volatileStatus: 'confusion',
-		onHit() {
+		onHit(target, source) {
 			const boost: SparseBoostsTable = {};
 			boost['spa'] = 1;
-			this.boost(boost);
+			this.boost(boost, source);
 		},
 		secondary: null,
 		target: "allAdjacent",
 		type: "Dark",
-		zMove: {boost: {spa: 1}},
+		zMove: {boost: {spd: 1}},
 	},
     superglitch: {
         num: 2066,

@@ -7177,8 +7177,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	cakelie: {
 		name: "Cake Lie",
-		desc: "Causes the target to become confused.",
-		shortDesc: "Confuses the target.",
+		desc: "Causes the target to become confused. Raises the user's Special Attack by 1 stage if successful.",
+		shortDesc: "Confuses target and raises user's Sp. Atk by 1.",
 	},
 	superglitch: {
         name: "Super Glitch",
