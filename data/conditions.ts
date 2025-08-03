@@ -214,11 +214,6 @@ export const Conditions: {[k: string]: ConditionData} = {
 			return false;
 		},
 	},
-	// Fundex addition: Telemetry volatile status
-	telemetry: {
-		name: 'telemetry',
-		noCopy: true,
-	},
 	trapped: {
 		name: 'trapped',
 		noCopy: true,
