@@ -21369,8 +21369,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
-				target.addVolatile('telemetry' + move.id);
-				//this.add("-start", target, 'move: Telemetry', move.name);
+				//target.addVolatile('telemetry' + move.id);
+				this.add("-start", target, 'move: Telemetry', move.name);
 			}
 		},
 		secondary: null,
