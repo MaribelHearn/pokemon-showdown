@@ -21369,6 +21369,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
+				target.moveUsed(move);
 				target.addVolatile('telemetry', source, move);
 				this.add('-activate', target, 'Telemetry', move.name);
 			}
