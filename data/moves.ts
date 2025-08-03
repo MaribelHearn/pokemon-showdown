@@ -21370,9 +21370,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
 				target.moveUsed(move);
-				target.addVolatile('telemetry', source, move);
+				target.lastMove = move;
 				this.add('-activate', target, 'Telemetry', move.name);
 			}
+		},
+		onHit(target, source) {
+			target.addVolatile('telemetry', source, target.lastMove);
 		},
 		secondary: null,
 		target: "normal",
