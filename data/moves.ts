@@ -21355,7 +21355,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onTryHit(target, source) {
+		onPrepareHit(target, source) {
 			let unrevealedMoves = [] as ActiveMove[];
 
 			for (const moveName of target.moves) {
@@ -21374,6 +21374,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 				this.add('-start', target, 'Telemetry', move.name);
 			}
 		},
+		//onTryHit(target, source) {
+			/*
+			let unrevealedMoves = [] as ActiveMove[];
+
+			for (const moveName of target.moves) {
+				const move = this.dex.getActiveMove(moveName);
+				const moveSlot = target.getMoveData(move.id);
+				if (moveSlot?.pp === moveSlot?.maxpp) {
+					unrevealedMoves.push(move);
+				}
+			}
+
+			if (unrevealedMoves.length > 0) {
+				const randInt = this.random(unrevealedMoves.length);
+				const move = unrevealedMoves[randInt];
+				target.moveUsed(move);
+				target.lastMove = move;
+				this.add('-start', target, 'Telemetry', move.name);
+			}
+			*/
+		//},
 		secondary: null,
 		target: "normal",
 		type: "Steel",
