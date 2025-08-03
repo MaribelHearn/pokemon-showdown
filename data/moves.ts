@@ -21369,7 +21369,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
-				const status = this.dex.conditions.get('telemetry');
+				const status = new this.dex.Condition({name: 'telemetry' + move.id, exists: false});
 				const statusID = 'telemetry' + move.id as ID;
 				target.volatiles[statusID] = {};
 				target.volatiles[statusID].id = statusID;
