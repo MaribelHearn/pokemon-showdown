@@ -21369,8 +21369,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
-				const status = new this.dex.Condition({name: 'telemetry' + move.id, exists: false});
-				const statusID = 'telemetry' + move.id as ID;
+				const statusName = 'telemetry' + move.id;
+				const status = new this.dex.Condition({name: statusName, exists: false});
+				const statusID = statusName as ID;
 				target.volatiles[statusID] = {};
 				target.volatiles[statusID].id = statusID;
 				target.volatiles[statusID].target = target;
