@@ -20083,6 +20083,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
+		audio: true,
 	},
 	strawberrycross: {
 		num: 2018,
@@ -20175,7 +20176,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Psychic",
 	},
-	// 2023
 	explod: {
 		num: 2024,
 		accuracy: true,
@@ -20193,6 +20193,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "allAdjacent",
 		type: "???",
+		audio: true,
 	},
 	study: {
 		num: 2025,
