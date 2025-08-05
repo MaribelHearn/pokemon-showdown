@@ -4982,7 +4982,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 2023,
 	},
-	psychopath: {
+	/*psychopath: {
 		onStart(pokemon) {
 			for (const target of pokemon.foes()) {
 				this.add('-ability', target, target.getNature().name, '[from] ability: Psychopath', '[of] ' + pokemon, '[identify]');
@@ -5016,7 +5016,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Pure Heart",
 		rating: 3.5,
 		num: 2025,
-	},
+	},*/
 	hotblooded: {
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
@@ -5042,7 +5042,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 2027,
     },
-	squidkid: {
+	/*squidkid: {
 		onBeforeMovePriority: 0.5,
 		onBeforeMove(attacker, defender, move) {
 			if (attacker.species.baseSpecies !== 'Inkling-Kid' || attacker.transformed) return;
@@ -5096,7 +5096,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Runic",
 		rating: 4,
         num: 2031,
-    },
+    },*/
     trueresistance: {
         onBoost(boost, target, source, effect) {
             //if (source && target === source) return;
@@ -5140,11 +5140,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
         num: 2033,
     },
-    formshift: {
+    /*formshift: {
         name: "Form Shift",
         rating: 3,
         num: 2034,
-    },
+    },*/
     firmcarry: {
 		onAfterUseItem(item, pokemon) {
 			if (pokemon !== this.effectState.target) return;
@@ -5171,6 +5171,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         name: "Incomprehensible",
         rating: 3,
         num: 2036,
+		onStart(pokemon) {
+			this.add('-ability', pokemon, 'Incomprehensible');
+		},
 		// Ability activation located in various files
 	},
 	grazeenergy: {
@@ -5179,9 +5182,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         num: 2037,
 		// Ability activation located in battle-actions.ts
 	},
-    dragonvein: {
+    /*dragonvein: {
         name: "Dragon Vein",
         rating: 3,
         num: 2038,
-    }
+    }*/
 };
