@@ -27,7 +27,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 		zEffect: "  [POKEMON] unleashes its full-force Z-Move!",
 		move: "[POKEMON] used **[MOVE]**!",
-		moveGiygas: "You cannot grasp the true form of Giygas' attack!",
+		moveGiygas: "You cannot grasp the true form of [POKEMON]'s attack!",
 		abilityActivation: "[[POKEMON]'s [ABILITY]]",
 
 		mega: "  [POKEMON]'s [ITEM] is reacting to the Key Stone!",
