@@ -190,11 +190,11 @@ export const DefaultText: {[k: string]: DefaultText} = {
 	},
 	tmt: {
 		start: "  TMTRAINER [POKEMON] was burned!",
-		startFromItem: "  [POKEMON] was burned by the [ITEM]!",
-		alreadyStarted: "  [POKEMON] is already burned!",
-		end: "  [POKEMON]'s burn was healed!",
-		endFromItem: "  [POKEMON]'s [ITEM] healed its burn!",
-		damage: "  [POKEMON] was hurt by its burn!",
+		startFromItem: "#brn",
+		alreadyStarted: "#brn",
+		end: "#brn",
+		endFromItem: "#brn",
+		damage: "#brn",
 	},
 	frz: {
 		start: "  [POKEMON] was frozen solid!",
