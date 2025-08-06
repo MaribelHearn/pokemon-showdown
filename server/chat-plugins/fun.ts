@@ -658,6 +658,7 @@ export const commands: Chat.ChatCommands  = {
         this.checkChat();
         checkCooldown(user);
         hasUsedMsg(room, user, cmd);
+        //let pokemon = (Math.random() > 0.01 ? Dex.species.get('dunsparce') : Dex.species.get('dudunsparce'));
         room?.addRaw(`<img src="https://${Config.routes.client}/sprites/gen5/dunsparce.png" ` +
         `alt="Dunsparce" width=96 height=96><b>${desu('Merpaderp!')}</b>`);
     },

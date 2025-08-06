@@ -32,6 +32,15 @@ export const Formats: FormatList = [
 		unbanlist: ['Fundex'],
 	},
     {
+		name: "[Gen 8] Fundex VGC",
+		mod: 'gen8',
+		gameType: 'doubles',
+		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'VGC Timer', 'Limit Two Restricted'],
+		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		unbanlist: ['Fundex'],
+		restricted: ['Restricted Legendary'],
+	},
+    {
 		name: "[Gen 8] National Fundex",
 		mod: 'gen8',
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
