@@ -21370,7 +21370,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (unrevealedMoves.length > 0) {
 				const randInt = this.random(unrevealedMoves.length);
 				const move = unrevealedMoves[randInt];
-				this.add('-activate', source, 'move: Telemetry', move.name, '[of] ' + target);
+				this.add('-activate', source, 'move: Telemetry', move.name, '[move] ' + target);
 			}
 		},
 		secondary: null,
