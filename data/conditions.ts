@@ -259,6 +259,22 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (this.effectState.source?.isActive || gmaxEffect) pokemon.tryTrap();
 		},
 	},
+	// Fundex addition: Soviet Reversal volatile status
+	sovietreversal: {
+		name: 'sovietreversal',
+		onModifyMove(move, pokemon, target) {
+			if (move.category === 'Status') {
+				return;
+			}
+			else if (move.category === 'Physical') {
+				move.category = 'Special';
+			}
+			else { // move.category === 'Special'
+				move.category = 'Physical';
+			}
+		},
+	},
+
 	lockedmove: {
 		// Outrage, Thrash, Petal Dance...
 		name: 'lockedmove',
