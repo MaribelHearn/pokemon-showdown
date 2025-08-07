@@ -260,8 +260,8 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 	},
 	// Fundex addition: Soviet Reversal volatile status
-	sovietreversal: {
-		name: 'sovietreversal',
+	soviet: {
+		name: 'soviet',
 		onStart(pokemon, source) {
 			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
 		},
