@@ -6913,7 +6913,10 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	theworld: {
 		name: "The World",
-		shortDesc: "No additional effect.",
+		desc: "Raises the user's Speed by 12 stages in exchange for the user losing 1/2 of its maximum HP, rounded down. Fails if the user would faint or if its Speed stat stage is 6.",
+		shortDesc: "User loses 50% max HP. Maximizes Speed.",
+
+		boost: "  [POKEMON] cut its own HP and maximized its Speed!",
 	},
 	nuke: {
 		name: "Nuke",
@@ -7214,7 +7217,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	strengthenjutsu: {
 		name: "Strengthen Jutsu",
-		desc: "Raises the user's Special Attack by 12 stages in exchange for the user losing 1/2 of its maximum HP, rounded down. Fails if the user would faint or if its Attack stat stage is 6.",
+		desc: "Raises the user's Special Attack by 12 stages in exchange for the user losing 1/2 of its maximum HP, rounded down. Fails if the user would faint or if its Special Attack stat stage is 6.",
 		shortDesc: "User loses 50% max HP. Maximizes Sp. Atk.",
 
 		boost: "  [POKEMON] cut its own HP and maximized its Special Attack!",
@@ -7230,11 +7233,13 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	programfreeze: {
 		name: "Program Freeze",
-		shortDesc: "No additional effect.",
+		desc: "Freezes the user, regardless of typing or status immunity.",
+		shortDesc: "Freezes the user.",
 	},
 	datastream: {
 		name: "Data Stream",
-		shortDesc: "No additional effect.",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "100% chance to lower the target's Speed by 1.",
 	},
 	telemetry: {
 		name: "Telemetry",

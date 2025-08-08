@@ -86841,6 +86841,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			scratch: ["8L1"],
 			swift: ["8L1"],
 			leer: ["8L1"],
+			theworld: ["8L1"],
 			//tidyup: ["8L1"],
 			workup: ["8M"],
 			hiddenpower: ["8M"],

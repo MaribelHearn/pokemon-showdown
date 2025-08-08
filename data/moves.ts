@@ -21323,8 +21323,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 100,
-			onHit(target, source) {
-				source.setStatus('frz', source);
+			onHit(target, source, move) {
+				source.setStatus('frz', source, move, true);
 			},
 		},
 		target: "normal",
