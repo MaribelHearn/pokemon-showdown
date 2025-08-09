@@ -18887,6 +18887,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Smithy-Tank Head", "Smithy-Magic Head"],
 		formeOrder: ["Smithy", "Smithy-Tank Head", "Smithy-Magic Head"],
+		battleOnly: "Smithy",
     },
     smithytankhead: {
         num: 2160,
@@ -18903,6 +18904,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Smithy-Tank Head", "Smithy-Magic Head"],
 		formeOrder: ["Smithy", "Smithy-Tank Head", "Smithy-Magic Head"],
+		requiredAbility: "Form Shift",
+		battleOnly: "Smithy",
     },
     smithymagichead: {
         num: 2160,
@@ -18919,6 +18922,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Smithy-Tank Head", "Smithy-Magic Head"],
 		formeOrder: ["Smithy", "Smithy-Tank Head", "Smithy-Magic Head"],
+		requiredAbility: "Form Shift",
+		battleOnly: "Smithy",
     },
 	missingnooriginal: {
 		num: 0,
