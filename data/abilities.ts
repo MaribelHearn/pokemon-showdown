@@ -5140,11 +5140,26 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
         num: 2033,
     },
-    /*formshift: {
+    formshift: {
         name: "Form Shift",
-        rating: 3,
+		onResidual(pokemon) {
+			const turnCount = pokemon.activeTurns;
+
+			if (turnCount) {
+				if (turnCount % 3 === 1) {
+					pokemon.formeChange('Smithy-Tank Head');
+				}
+				else if (turnCount % 3 === 2) {
+					pokemon.formeChange('Smithy-Magic Head');
+				}
+				else {
+					pokemon.formeChange(pokemon.set.species);
+				}
+			}
+		},
+        rating: 0,
         num: 2034,
-    },*/
+    },
     firmcarry: {
 		onAfterUseItem(item, pokemon) {
 			if (pokemon !== this.effectState.target) return;

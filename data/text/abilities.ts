@@ -2112,6 +2112,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
     },
     formshift: {
         name: "Form Shift",
+		desc: "Transforms into the Tank Head form at the end of the turn, the Magic Head at the end of the next turn, then back to the base form, repeating endlessly until fainted or switched out.",
+		shortDesc: "Changes heads at the end of every turn.",
     },
     firmcarry: {
         name: "Firm Carry",

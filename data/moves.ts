@@ -19757,7 +19757,7 @@ export const Moves: {[moveid: string]: MoveData} = {
     apocalypse: {
         num: 2000,
         accuracy: 85,
-        basePower: 100,
+        basePower: 120,
         category: "Physical",
         name: "Apocalypse",
         pp: 5,
@@ -19772,7 +19772,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				} else if (result === 1) {
 					target.trySetStatus('par', source);
 				} else {
-					target.trySetStatus('frz', source);
+					target.trySetStatus('psn', source);
 				}
 			},
         },
@@ -21802,12 +21802,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 	laserbeam: {
 		num: 2105,
 		accuracy: 100,
-		basePower: 120,
+		basePower: 100,
 		category: "Special",
 		name: "Laser Beam",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, beam: 1, defrost: 1},
+		flags: {protect: 1, mirror: 1, beam: 1},
 		recoil: [33, 100],
 		secondary: {
 			chance: 10,
@@ -22535,7 +22535,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	cataclysm: {
 		num: 2135,
 		accuracy: 85,
-		basePower: 100,
+		basePower: 120,
 		category: "Special",
 		name: "Cataclysm",
 		pp: 5,
@@ -22556,6 +22556,65 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "???",
+	},
+	sledge: {
+		num: 2136,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Sledge",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
+		},
+		onModifyType(move, pokemon) {
+			move.type = pokemon.types[0];
+		},
+		target: "normal",
+		type: "Steel",
+		audio: true,
+	},
+	magnum: {
+		num: 2137,
+		accuracy: 85,
+		basePower: 160,
+		category: "Physical",
+		name: "Magnum",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (!target || target.fainted || target.hp <= 0) {
+				pokemon.removeVolatile('mustrecharge');
+			} else {
+				pokemon.addVolatile('mustrecharge');
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+	},
+	darkstar: {
+		num: 2138,
+		accuracy: 85,
+		basePower: 160,
+		category: "Special",
+		name: "Dark Star",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (!target || target.fainted || target.hp <= 0) {
+				pokemon.removeVolatile('mustrecharge');
+			} else {
+				pokemon.addVolatile('mustrecharge');
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
 	},
 	unrealunraveling: {
 		num: 3000,

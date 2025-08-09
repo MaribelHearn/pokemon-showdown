@@ -94196,4 +94196,16 @@ scratch: ["8L1"],
 			knockoff: ["8M"],
 		},
 	},
+	smithy: {
+		learnset: {
+			sledge: ["8L1"],
+			magnum: ["8L1"],
+			darkstar: ["8L1"],
+			hammerarm: ["8L1"],
+			woodhammer: ["8L1"],
+			swordsdance: ["8L1"],
+			nastyplot: ["8L1"],
+			remotemissile: ["8L1"],
+		},
+	},
 };
