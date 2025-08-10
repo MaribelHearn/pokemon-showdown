@@ -7012,6 +7012,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Pingas",
 		desc: "Power doubles if the target switched in this turn.",
 		shortDesc: "Power doubles if target switched in this turn.",
+
+		activate: "  Snoo PINGAS usual, I see?",
 	},
 	mahboi: {
 		name: "Mah Boi",

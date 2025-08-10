@@ -20294,7 +20294,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 60,
 		basePowerCallback(pokemon, target, move) {
 			if (target.newlySwitched) {
-				this.debug('Pingas damage boost');
+				this.add('-activate', target, 'move: Pingas');
 				return move.basePower * 2;
 			}
 			return move.basePower;
