@@ -17547,7 +17547,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Snake-Busted",
 		baseSpecies: "Snake",
 		forme: "Busted",
-		types: ["Ground", "Fire"],
+		types: ["Ground"],
 		gender: "M",
 		baseStats: {hp: 55, atk: 90, def: 80, spa: 50, spd: 105, spe: 96},
 		abilities: {0: "Cardboard Box"},
