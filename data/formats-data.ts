@@ -7816,6 +7816,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
+	smithytankhead: {
+		tier: "Illegal",
+	},
+	smithymagichead: {
+		tier: "Illegal",
+	},
 	missingnooriginal: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
