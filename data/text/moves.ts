@@ -7532,7 +7532,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	sledge: {
 		name: "Sledge",
-		shortDesc: "No additional effect.",
+		desc: "This move becomes a special attack if the user's Special Attack is greater than its Attack.",
+		shortDesc: "Special if user's Sp. Atk > Atk.",
 	},
 	magnum: {
 		name: "Magnum",
