@@ -20307,6 +20307,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Normal",
+		audio: true,
 	},
 	mahboi: {
 		num: 2030,
