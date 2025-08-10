@@ -20309,29 +20309,32 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		audio: true,
 	},
-	mahboi: {
+	dinnerblaster: {
 		num: 2030,
 		accuracy: 100,
-		basePower: 75,
-		basePowerCallback(pokemon, target, move) {
-			const damagedByTarget = pokemon.attackedBy.some(
-				p => p.source === target && p.damage > 0 && p.thisTurn
-			);
-			if (damagedByTarget) {
-				this.debug('Boosted for getting hit by ' + target);
-				return move.basePower * 2;
-			}
-			return move.basePower;
-		},
+		basePower: 90,
 		category: "Physical",
-		name: "Mah Boi",
-		pp: 10,
-		priority: -4,
-		flags: {protect: 1, sound: 1, bypasssub: 1, mirror: 1},
+		name: "Dinner Blaster",
+		pp: 15,
+		priority: 0,
+		flags: {pulse: 1, protect: 1, mirror: 1, allyanim: 1},
+		onTryHit(target, source, move) {
+			if (source.isAlly(target)) {
+				move.basePower = 0;
+				move.infiltrates = true;
+			}
+		},
+		onHit(target, source) {
+			if (source.isAlly(target)) {
+				if (!this.heal(Math.floor(target.baseMaxhp * 0.5))) {
+					this.add('-immune', target);
+					return this.NOT_FAIL;
+				}
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "Fairy",
-		zMove: {basePower: 140},
 	},
 	warlockpunch: {
 		num: 2031,

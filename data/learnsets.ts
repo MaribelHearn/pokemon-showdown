@@ -84984,7 +84984,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	kingharkinian: {
 		learnset: {
-			mahboi: ["8L1"],
 			kingsshield: ["8L1"],
 			playrough: ["8L1", "8M"],
 			dinnerblaster: ["8L1"],

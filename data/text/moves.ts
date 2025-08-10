@@ -7015,10 +7015,10 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		activate: "  Snoo PINGAS usual, I see?",
 	},
-	mahboi: {
-		name: "Mah Boi",
-		desc: "Power doubles if the user was hit by the target this turn.",
-		shortDesc: "Power doubles if user is damaged by the target.",
+	dinnerblaster: {
+		name: "Dinner Blaster",
+		desc: "If the target is an ally, this move restores 1/2 of its maximum HP, rounded down, instead of dealing damage.",
+		shortDesc: "If the target is an ally, heals 50% of its max HP.",
 	},
 	warlockpunch: {
 		name: "Warlock Punch",
