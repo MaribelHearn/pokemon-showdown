@@ -19976,6 +19976,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "allAdjacent",
 		type: "Fire",
+		audio: true,
 	},
 	ghastlydream: {
 		num: 2012,
@@ -20141,6 +20142,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
+		audio: true,
 	},
 	suzuranpoison: {
 		num: 2021,
