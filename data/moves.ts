@@ -20591,7 +20591,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "scripted",
 		type: "Steel",
-		contestType: "Cool",
+		audio: true,
 	},
 	thunderdrumshot: {
 		num: 2040,
@@ -20610,7 +20610,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Electric",
-		contestType: "Cool",
 	},
 	needleparade: {
 		num: 2041,
