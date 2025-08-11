@@ -33,6 +33,13 @@ export const Rulesets: {[k: string]: FormatData} = {
 		ruleset: ['Obtainable', 'Team Preview', 'Species Clause', 'Nickname Clause', 'Item Clause', 'Adjust Level Down = 50', 'Picked Team Size = Auto', 'Cancel Mod'],
 		banlist: ['Mythical', 'Restricted Legendary'],
 	},
+	flatrulesnatdex: {
+		effectType: 'ValidatorRule',
+		name: 'Flat Rules NatDex',
+		desc: "National Dex version of the in-game Flat Rules: Adjust Level Down 50, Species Clause, Item Clause, -Mythical, -Restricted Legendary, Bring 6 Pick 3-6 depending on game type.",
+		ruleset: ['Obtainable', '+Unobtainable', '+Past', 'Team Preview', 'Species Clause', 'Nickname Clause', 'Item Clause', 'Adjust Level Down = 50', 'Picked Team Size = Auto', 'Cancel Mod'],
+		banlist: ['Mythical', 'Restricted Legendary'],
+	},
 	limittworestricted: {
 		effectType: 'ValidatorRule',
 		name: 'Limit Two Restricted',
@@ -733,7 +740,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 				if (!hasOrbeetle && species.name === "Orbeetle-Gmax") hasOrbeetle = true;
 				for (const moveid of set.moves) {
 					const move = this.dex.moves.get(moveid);
-					if (move.status && move.status === 'slp' && move.accuracy < 100) hasSleepMove = true;
+					if (move.status && move.status === 'slp' && (typeof move.accuracy !== 'number' || move.accuracy < 100)) hasSleepMove = true;
 				}
 			}
 			if (hasOrbeetle && hasSleepMove) {
