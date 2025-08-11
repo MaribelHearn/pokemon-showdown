@@ -20121,6 +20121,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Flying",
+		audio: true,
 	},
 	trainwreck: {
 		num: 2020,
