@@ -22574,9 +22574,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
 		},
-		onModifyType(move, pokemon) {
-			move.type = pokemon.types[0];
-		},
+		secondary: null,
 		target: "normal",
 		type: "Steel",
 		audio: true,
