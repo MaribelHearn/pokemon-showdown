@@ -5162,6 +5162,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 
 			if (this.effectState.switchingIn) {
 				pokemon.formeChange('Smithy-Tank Head');
+				pokemon.activeTurns += 1;
 				this.effectState.switchingIn = false;
 			}
 		},
