@@ -5142,6 +5142,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
     },
     formshift: {
         name: "Form Shift",
+		onSwitchIn(pokemon) {
+			this.effectState.switchingIn = true;
+		},
 		onResidual(pokemon) {
 			const turnCount = pokemon.activeTurns;
 
@@ -5155,6 +5158,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				else {
 					pokemon.formeChange(pokemon.set.species);
 				}
+			}
+
+			if (this.effectState.switchingIn) {
+				pokemon.formeChange('Smithy-Tank Head');
+				this.effectState.switchingIn = false;
 			}
 		},
         rating: 0,
