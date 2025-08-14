@@ -21004,6 +21004,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Water",
+		audio: true,
 	},
 	monstercucumber: {
 		num: 2059,
@@ -22825,6 +22826,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		isZ: "maribiumz",
 		secondary: null,
 		target: "self",
-		type: "???"
+		type: "???",
+		audio: true,
 	},
 };

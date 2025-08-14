@@ -90002,7 +90002,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			confuseray: ["8L1"],
 			barriercrash: ["8L1"],
 			dreaminduction: ["8L1"],
-			mysterypower: ["8L1"],
+			mysteriouspower: ["8L1"],
 			amnesia: ["8L1"],
 			dreameater: ["8L1", "8M"],
 			psychicterrain: ["8L1", "8M"],
