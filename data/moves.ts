@@ -20183,7 +20183,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Recover",
+		name: "Hourai Elixir",
 		pp: 5,
 		priority: 0,
 		flags: {snatch: 1, heal: 1},
