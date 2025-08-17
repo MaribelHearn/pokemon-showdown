@@ -6981,9 +6981,9 @@ export const MovesText: {[k: string]: MoveText} = {
 		shortDesc: "Hits 5-12 times and targets Defense over Sp. Def.",
 	},
 	houraielixir: {
-		name: "Lemmings Parade",
-		desc: "The user restores 1/2 of its maximum HP, rounded half up.",
-		shortDesc: "Heals the user by 50% of its max HP.",
+		name: "Hourai Elixir",
+		desc: "The target restores 1/3 of its maximum HP, rounded half up. The target cannot have non-volatile status conditions inflicted on them by other Pokemon. The target cannot become affected by Yawn but can fall asleep from its effect.",
+		shortDesc: "Heals target by 33% max HP and blocks status.",
 	},
 	explod: {
 		name: "explod",
