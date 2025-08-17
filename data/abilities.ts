@@ -5158,9 +5158,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				else {
 					pokemon.formeChange(pokemon.set.species);
 				}
-			}
-
-			if (this.effectState.switchingIn) {
+			} else if (this.effectState.switchingIn) {
 				pokemon.formeChange('Smithy-Tank Head');
 				pokemon.activeTurns += 1;
 				this.effectState.switchingIn = false;
