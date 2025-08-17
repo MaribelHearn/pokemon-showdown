@@ -68,7 +68,6 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		team: 'randomFCup',
-		searchShow: false,
 		ruleset: ['Obtainable', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
