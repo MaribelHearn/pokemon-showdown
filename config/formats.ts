@@ -63,12 +63,21 @@ export const Formats: FormatList = [
 		banlist: ['All Pokemon'],
 	},
 	{
+		name: "[Gen 8] Fundex Cup",
+		desc: `Randomized teams of level-balanced Fundex Pok&eacute;mon with legal sets.`,
+
+		mod: 'gen8',
+		team: 'randomFCup',
+		searchShow: false,
+		ruleset: ['Obtainable', 'HP Percentage Mod', 'Cancel Mod'],
+	},
+	{
 		name: '[Gen 8] Fundex Metronome',
 		desc: `A metagame decided by wagging your finger!`,
 
 		mod: 'gen8',
 		ruleset: ['Standard NatDex', 'Dynamax Clause'],
-		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
 		unbanlist: ['Fundex'],
 		onValidateSet(set) {
             if (set.moves.length !== 1 || this.dex.moves.get(set.moves[0]).id !== 'metronome') {
@@ -83,7 +92,7 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		gameType: 'doubles',
 		ruleset: ['Standard NatDex', 'Dynamax Clause'],
-		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
 		unbanlist: ['Fundex'],
 		onValidateSet(set) {
             if (set.moves.length !== 1 || this.dex.moves.get(set.moves[0]).id !== 'metronome') {
