@@ -68,7 +68,8 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		team: 'randomFCup',
-		ruleset: ['Obtainable', 'HP Percentage Mod', 'Cancel Mod'],
+		ruleset: ['Obtainable', 'HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause'],
+		banlist: ['All Pokemon'],
 	},
 	{
 		name: '[Gen 8] Fundex Metronome',
