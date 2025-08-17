@@ -6980,6 +6980,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Hits 5 to 12 times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. Deals damage to the target based on its Defense instead of Special Defense.",
 		shortDesc: "Hits 5-12 times and targets Defense over Sp. Def.",
 	},
+	houraielixir: {
+		name: "Lemmings Parade",
+		desc: "The user restores 1/2 of its maximum HP, rounded half up.",
+		shortDesc: "Heals the user by 50% of its max HP.",
+	},
 	explod: {
 		name: "explod",
 		desc: "The user faints after using this move, even if this move fails for having no target. Bypasses substitute. Always lands a critical hit.",
@@ -7273,10 +7278,15 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Lunatic Red Eyes",
 		shortDesc: "No additional effect.",
 	},
-	catswalk: {
-		name: "Cat's Walk",
-		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
-		shortDesc: "Hits 2-5 times in one turn.",
+	denialofservice: {
+		name: "Denial of Service",
+		desc: "For 5 turns, the target's held item has no effect. An item's effect of causing forme changes is unaffected, but any other effects from such items are negated. During the effect, Fling and Natural Gift are prevented from being used by the target. Items thrown at the target with Fling will still activate for it. If the target uses Baton Pass, the replacement will remain unable to use items. For 5 turns, the target is prevented from restoring any HP as long as it remains active. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. If an affected Pokemon uses Baton Pass, the replacement will remain unable to restore its HP. Pain Split and the Regenerator Ability are unaffected.",
+		shortDesc: "For 5 turns, target's healing and items have no effect.",
+
+		start: "  [POKEMON] was prevented from healing!",
+		end: "  [POKEMON]'s Denial of Service wore off!",
+		cant: "[POKEMON] can't use [MOVE] because of Denial of Service!",
+		fail: "  But it failed to affect [POKEMON]!",
 	},
 	slashofeternity: {
 		name: "Slash of Eternity",

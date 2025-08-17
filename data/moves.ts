@@ -20179,6 +20179,36 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Psychic",
 	},
+	houraielixir: {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Recover",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		//sideCondition: 'safeguard',
+		condition: {
+			onSetStatus(status, target, source, effect) {
+				if ((effect as Move)?.status) {
+					this.add('-immune', target, '[from] move: Hourai Elixir');
+				}
+			},
+			/*onTryAddVolatile(status, target, source, effect) {
+				if (!effect || !source) return;
+				if (effect.effectType === 'Move' && effect.infiltrates && !target.isAlly(source)) return;
+				if ((status.id === 'confusion' || status.id === 'yawn') && target !== source) {
+					if (effect.effectType === 'Move' && !effect.secondaries) this.add('-activate', target, 'move: Hourai Elixir');
+					return null;
+				}
+			},*/
+		},
+		heal: [1, 3],
+		secondary: null,
+		target: "adjacentAllyOrSelf",
+		type: "Poison",
+		zMove: {effect: 'clearnegativeboost'},
+	},
 	explod: {
 		num: 2024,
 		accuracy: true,
@@ -21474,20 +21504,71 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Psychic",
 		zMove: {effect: 'clearnegativeboost'},
 	},
-	catswalk: {
+	denialofservice: {
 		num: 2083,
-		accuracy: 100,
-		basePower: 25,
-		category: "Physical",
-		name: "Cat's Walk",
-		pp: 30,
+		accuracy: 70,
+		basePower: 80,
+		category: "Special",
+		name: "Denial of Service",
+		pp: 5,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		multihit: [2, 5],
+		flags: {protect: 1, mirror: 1},
+		volatileStatus: 'healblock',
+		condition: {
+			// Item suppression implemented in Pokemon.ignoringItem() within sim/pokemon.js
+			duration: 5,
+			durationCallback(target, source, effect) {
+				if (source?.hasAbility('persistent')) {
+					this.add('-activate', source, 'ability: Persistent', effect);
+					return 7;
+				}
+				return 5;
+			},
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'move: Denial of Service');
+				pokemon.addVolatile('embargo');
+				source.moveThisTurnResult = true;
+			},
+			onDisableMove(pokemon) {
+				for (const moveSlot of pokemon.moveSlots) {
+					if (this.dex.moves.get(moveSlot.id).flags['heal']) {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+			onBeforeMovePriority: 6,
+			onBeforeMove(pokemon, target, move) {
+				if (move.flags['heal'] && !move.isZ && !move.isMax) {
+					this.add('cant', pokemon, 'move: Denial of Service', move);
+					return false;
+				}
+			},
+			onModifyMove(move, pokemon, target) {
+				if (move.flags['heal'] && !move.isZ && !move.isMax) {
+					this.add('cant', pokemon, 'move: Denial of Service', move);
+					return false;
+				}
+			},
+			onResidualOrder: 20,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'move: Denial of Service');
+				pokemon.removeVolatile('embargo');
+			},
+			onTryHeal(damage, target, source, effect) {
+				if ((effect?.id === 'zpower') || this.effectState.isZ) return damage;
+				return false;
+			},
+			onRestart(target, source) {
+				this.add('-fail', target, 'move: Denial of Service'); // Succeeds to supress downstream messages
+				if (!source.moveThisTurnResult) {
+					source.moveThisTurnResult = false;
+				}
+			},
+		},
 		secondary: null,
 		target: "normal",
-		type: "Ghost",
-		zMove: {basePower: 140},
+		type: "Electric",
+		zMove: {basePower: 160},
 	},
 	slashofeternity: {
 		num: 2084,
