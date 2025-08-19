@@ -86,6 +86,14 @@ export const Rulesets: {[k: string]: FormatData} = {
 			'Obtainable', 'Team Preview', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'Dynamax Clause', 'HP Percentage Mod', 'Cancel Mod', 'Overflow Stat Mod',
 		],
 	},
+	fundexoms: {
+		effectType: 'ValidatorRule',
+		name: 'Fundex OMs',
+		desc: "The standard ruleset for all Smogon OMs (Almost Any Ability, STABmons, etc.)",
+		ruleset: [
+			'Obtainable', '+Unobtainable', 'Team Preview', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'Dynamax Clause', 'HP Percentage Mod', 'Cancel Mod', 'Overflow Stat Mod',
+		],
+	},
 	standardnatdex: {
 		effectType: 'ValidatorRule',
 		name: 'Standard NatDex',
