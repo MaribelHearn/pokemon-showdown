@@ -16474,6 +16474,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "tentaquil",
 		forme: "tentaquix",
 		types: ["Bug", "Fairy"],
+		gender: "M",
 		baseStats: {hp: 100, atk: 80, def: 110, spa: 65, spd: 125, spe: 120},
 		abilities: {0: "Limber", H: "Propeller Tail"},
 		weightkg: 90,
