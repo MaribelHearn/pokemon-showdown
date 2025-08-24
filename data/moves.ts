@@ -22923,7 +22923,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		selfSwitch: true,
 		isZ: "youmiumz",
 		secondary: null,
-		target: "self",
+		target: "normal",
 		type: "Ghost",
 	},
 };
