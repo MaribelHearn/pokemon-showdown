@@ -7434,6 +7434,16 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2034,
 		gen: 8,
 	},
+	youmium: {
+		name: "Youmium Z",
+		spritenum: 644,
+		onTakeItem: false,
+		zMove: "200 Yojana in 1 Slash",
+		zMoveFrom: "Slash of Eternity",
+		itemUser: ["Youmu"],
+		num: 2035,
+		gen: 8,
+	},
     wrathcookie: {
         name: "Wrath Cookie",
         spritenum: 765,
@@ -7444,7 +7454,7 @@ export const Items: {[itemid: string]: ItemData} = {
             if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
             return true;
         },
-        num: 2035,
+        num: 2036,
         gen: 8,
     },
 };
