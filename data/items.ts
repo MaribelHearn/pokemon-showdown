@@ -7434,7 +7434,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2034,
 		gen: 8,
 	},
-	youmium: {
+	youmiumz: {
 		name: "Youmium Z",
 		spritenum: 644,
 		onTakeItem: false,
