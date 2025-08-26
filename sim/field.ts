@@ -142,7 +142,7 @@ export class Field {
 			sourceSlot: source.getSlot(),
 			duration: status.duration,
 		};
-		if (this.battle.format.name.includes('Weather Wars')) {
+		if (sourceEffect?.effectType === 'Ability' && this.battle.format.name.includes('Weather Wars')) {
 			this.terrainState.duration = 0;
 		}
 		else if (status.durationCallback) {
