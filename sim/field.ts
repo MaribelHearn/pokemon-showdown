@@ -142,7 +142,10 @@ export class Field {
 			sourceSlot: source.getSlot(),
 			duration: status.duration,
 		};
-		if (status.durationCallback) {
+		if (this.battle.format.name.includes('Weather Wars')) {
+			this.terrainState.duration = 0;
+		}
+		else if (status.durationCallback) {
 			this.terrainState.duration = status.durationCallback.call(this.battle, source, source, sourceEffect);
 		}
 		if (!this.battle.singleEvent('FieldStart', status, this.terrainState, this, source, sourceEffect)) {

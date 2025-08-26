@@ -54,6 +54,15 @@ export const Formats: FormatList = [
 		unbanlist: ['Fundex'],
 	},
 	{
+		name: "[Gen 8] Fundex Weather Wars",
+		desc: `Weather and terrains are permanent until cancelled, like in Generation 5 and older.`,
+
+		mod: 'gen8',
+		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		unbanlist: ['Fundex'],
+	},
+	{
 		name: "[Gen 8] Fundex Random",
 		desc: `Randomized teams of level-balanced Fundex Pok&eacute;mon with absolutely any ability, moves, and item.`,
 
