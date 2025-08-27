@@ -4113,7 +4113,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onFieldStart(field, source, effect) {
 				if (effect?.effectType === 'Ability') {
-					if (this.format.name.includes('Weather Wars')) this.effectState.duration = 0;
+					if (this.format.name.includes('weatherwars')) this.effectState.duration = 0;
 					this.add('-fieldstart', 'move: Electric Terrain', '[from] ability: ' + effect.name, '[of] ' + source);
 				} else {
 					this.add('-fieldstart', 'move: Electric Terrain');
@@ -7217,7 +7217,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onFieldStart(field, source, effect) {
 				if (effect?.effectType === 'Ability') {
-					if (this.format.name.includes('Weather Wars')) this.effectState.duration = 0;
+					if (this.format.name.includes('weatherwars')) this.effectState.duration = 0;
 					this.add('-fieldstart', 'move: Grassy Terrain', '[from] ability: ' + effect.name, '[of] ' + source);
 				} else {
 					this.add('-fieldstart', 'move: Grassy Terrain');
@@ -11474,7 +11474,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onFieldStart(field, source, effect) {
 				if (effect?.effectType === 'Ability') {
-					if (this.format.name.includes('Weather Wars')) this.effectState.duration = 0;
+					if (this.format.name.includes('weatherwars')) this.effectState.duration = 0;
 					this.add('-fieldstart', 'move: Misty Terrain', '[from] ability: ' + effect.name, '[of] ' + source);
 				} else {
 					this.add('-fieldstart', 'move: Misty Terrain');
@@ -13272,7 +13272,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onFieldStart(field, source, effect) {
 				if (effect?.effectType === 'Ability') {
-					if (this.format.name.includes('Weather Wars')) this.effectState.duration = 0;
+					if (this.format.name.includes('weatherwars')) this.effectState.duration = 0;
 					this.add('-fieldstart', 'move: Psychic Terrain', '[from] ability: ' + effect.name, '[of] ' + source);
 				} else {
 					this.add('-fieldstart', 'move: Psychic Terrain');
@@ -20715,7 +20715,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onFieldStart(field, source, effect) {
 				if (effect?.effectType === 'Ability') {
-					if (this.format.name.includes('Weather Wars')) this.effectState.duration = 0;
+					if (this.format.name.includes('weatherwars')) this.effectState.duration = 0;
 					this.add('-fieldstart', 'move: Electric Terrain', '[from] ability: ' + effect.name, '[of] ' + source);
 				} else {
 					this.add('-fieldstart', 'move: Electric Terrain');
@@ -22560,7 +22560,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onFieldStart(field, source, effect) {
 				if (effect?.effectType === 'Ability') {
-					if (this.format.name.includes('Weather Wars')) this.effectState.duration = 0;
+					if (this.format.name.includes('weatherwars')) this.effectState.duration = 0;
 					this.add('-fieldstart', 'move: Glitchy Terrain', '[from] ability: ' + effect.name, '[of] ' + source);
 				} else {
 					this.add('-fieldstart', 'move: Glitchy Terrain');
