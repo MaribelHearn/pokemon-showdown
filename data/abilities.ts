@@ -923,7 +923,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	electricsurge: {
 		onStart(source) {
-			this.field.setTerrain('electricterrain');
+			this.field.setTerrain('electricterrain', source, this.effect);
 		},
 		name: "Electric Surge",
 		rating: 4,
@@ -1329,7 +1329,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	grassysurge: {
 		onStart(source) {
-			this.field.setTerrain('grassyterrain');
+			this.field.setTerrain('grassyterrain', source, this.effect);
 		},
 		name: "Grassy Surge",
 		rating: 4,
@@ -2150,7 +2150,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	mistysurge: {
 		onStart(source) {
-			this.field.setTerrain('mistyterrain');
+			this.field.setTerrain('mistyterrain', source, this.effect);
 		},
 		name: "Misty Surge",
 		rating: 3.5,
@@ -2858,7 +2858,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	psychicsurge: {
 		onStart(source) {
-			this.field.setTerrain('psychicterrain');
+			this.field.setTerrain('psychicterrain', source, this.effect);
 		},
 		name: "Psychic Surge",
 		rating: 4,
