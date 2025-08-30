@@ -4681,7 +4681,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['arrow']) {
 				this.debug('Sharpshooter boost');
-				return this.chainModify([0x1333, 0x1000]);
+				return this.chainModify(1.5);
 			}
 		},
 		name: "Sharpshooter",

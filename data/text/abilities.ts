@@ -1972,8 +1972,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
     },
     sharpshooter: {
 		name: "Sharpshooter",
-		desc: "This Pokemon's arrow-based attacks have their power multiplied by 1.2.",
-		shortDesc: "This Pokemon's arrow-based attacks have 1.2x power.",
+		desc: "This Pokemon's arrow-based attacks have their power multiplied by 1.5.",
+		shortDesc: "This Pokemon's arrow-based attacks have 1.5x power.",
     },
     felinedeity: {
 		name: "Feline Deity",
