@@ -20623,6 +20623,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				targetRelayVar.target = this.getAtSlot(lastDamagedBy.slot);
 			}
 		},
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (!target || target.fainted || target.hp <= 0) this.add('-activate', target, 'move: OBJECTION!');
+		},
 		drain: [1, 2],
 		secondary: null,
 		target: "scripted",
@@ -22456,6 +22459,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return false;
 			}
 		},
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (!target || target.fainted || target.hp <= 0) this.add('-activate', target, 'move: HOLD IT!');
+		},
 		secondary: {
 			chance: 100,
 			volatileStatus: 'flinch',
@@ -22476,6 +22482,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return move.basePower * 2;
 			}
 			return move.basePower;
+		},
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (!target || target.fainted || target.hp <= 0) this.add('-activate', target, 'move: TAKE THAT!');
 		},
 		category: "Physical",
 		name: "TAKE THAT!",
