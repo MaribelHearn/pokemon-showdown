@@ -21430,14 +21430,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {bypasssub: 1},
-		onHitField() {
-			this.add('-clearallboost');
-			for (const pokemon of this.getAllActive()) {
-				pokemon.clearBoosts();
-			}
+		onHit(target, source) {
+			target.clearBoosts();
 		},
 		secondary: null,
-		target: "all",
+		target: "normal",
 		type: "Normal",
 	},
 	painflow: {
