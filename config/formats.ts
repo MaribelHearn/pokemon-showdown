@@ -3071,23 +3071,6 @@ export const Formats: FormatList = [
 		ruleset: ['Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
 	},
 	{
-		name: "[Gen 7] ZU",
-		desc: `The unofficial usage-based tier below PU.`,
-		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3646743/">ZU Metagame Discussion</a>`,
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3643412/">ZU Viability Rankings</a>`,
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3646739/">ZU Sample Teams</a>`,
-		],
-
-		mod: 'gen7',
-		searchShow: false,
-		ruleset: ['[Gen 7] PU'],
-		banlist: [
-			'PU', 'Carracosta', 'Crabominable', 'Exeggutor-Base', 'Gorebyss', 'Jynx', 'Raticate-Alola',
-			'Shiftry', 'Throh', 'Turtonator', 'Type: Null', 'Ursaring', 'Victreebel',
-		],
-	},
-	{
 		name: "[Gen 7] CAP",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3621207/">USUM CAP Metagame Discussion</a>`,
