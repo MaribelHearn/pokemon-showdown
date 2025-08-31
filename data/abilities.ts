@@ -468,8 +468,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (!target.hp) return;
 			const type = move.type;
 			if (
-				target.isActive && move.effectType === 'Move' && move.category !== 'Status' &&
-				type !== '???' && !target.hasType(type)
+				target.isActive && move.effectType === 'Move' && move.category !== 'Status' && !target.hasType(type)
 			) {
 				if (!target.setType(type)) return false;
 				this.add('-start', target, 'typechange', type, '[from] ability: Color Change');
