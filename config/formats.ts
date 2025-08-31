@@ -31,6 +31,9 @@ export const Formats: FormatList = [
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 		unbanlist: ['Fundex'],
 	},
+	{
+		section: "Fundex Doubles",
+	},
     {
 		name: "[Gen 8] Fundex VGC",
 		mod: 'gen8',
@@ -39,6 +42,24 @@ export const Formats: FormatList = [
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 		unbanlist: ['Fundex'],
 		restricted: ['Restricted Legendary'],
+	},
+	{
+		name: '[Gen 8] Fundex Metronome Doubles',
+		desc: `A metagame decided by wagging your finger!`,
+
+		mod: 'gen8',
+		gameType: 'doubles',
+		ruleset: ['Standard NatDex', 'Dynamax Clause'],
+		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
+		unbanlist: ['Fundex'],
+		onValidateSet(set) {
+            if (set.moves.length !== 1 || this.dex.moves.get(set.moves[0]).id !== 'metronome') {
+                return [`${set.name || set.species} has illegal moves.`, `(Pok\u00e9mon can only have one Metronome in their moveset)`];
+            }
+        },
+	},
+	{
+		section: "Fundex Sidegames",
 	},
     {
 		name: "[Gen 8] National Fundex",
@@ -97,21 +118,6 @@ export const Formats: FormatList = [
 		desc: `A metagame decided by wagging your finger!`,
 
 		mod: 'gen8',
-		ruleset: ['Standard NatDex', 'Dynamax Clause'],
-		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
-		unbanlist: ['Fundex'],
-		onValidateSet(set) {
-            if (set.moves.length !== 1 || this.dex.moves.get(set.moves[0]).id !== 'metronome') {
-                return [`${set.name || set.species} has illegal moves.`, `(Pok\u00e9mon can only have one Metronome in their moveset)`];
-            }
-        },
-	},
-	{
-		name: '[Gen 8] Fundex Metronome Doubles',
-		desc: `A metagame decided by wagging your finger!`,
-
-		mod: 'gen8',
-		gameType: 'doubles',
 		ruleset: ['Standard NatDex', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
 		unbanlist: ['Fundex'],
