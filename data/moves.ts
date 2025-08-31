@@ -22942,7 +22942,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {},
 		weather: 'hail',
-		isZ: "cirniumz",
+		isZ: "achirniumz",
 		secondary: null,
 		target: "normal",
 		type: "Fire"
