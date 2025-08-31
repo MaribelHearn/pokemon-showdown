@@ -20624,12 +20624,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 		},
 		onAfterMoveSecondarySelf(pokemon, target, move) {
-			if (!target || target.fainted || target.hp <= 0) this.add('-activate', target, 'move: OBJECTION!');
+			if (!target || target.fainted || target.hp <= 0) this.add('-activate', pokemon, 'move: OBJECTION!');
 		},
 		drain: [1, 2],
 		secondary: null,
 		target: "scripted",
-		type: "Steel",
+		type: "???",
 		audio: true,
 	},
 	thunderdrumshot: {
@@ -22460,7 +22460,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 		},
 		onAfterMoveSecondarySelf(pokemon, target, move) {
-			if (!target || target.fainted || target.hp <= 0) this.add('-activate', target, 'move: HOLD IT!');
+			if (!target || target.fainted || target.hp <= 0) this.add('-activate', pokemon, 'move: HOLD IT!');
 		},
 		secondary: {
 			chance: 100,
@@ -22484,7 +22484,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			return move.basePower;
 		},
 		onAfterMoveSecondarySelf(pokemon, target, move) {
-			if (!target || target.fainted || target.hp <= 0) this.add('-activate', target, 'move: TAKE THAT!');
+			if (!target || target.fainted || target.hp <= 0) this.add('-activate', pokemon, 'move: TAKE THAT!');
 		},
 		category: "Physical",
 		name: "TAKE THAT!",
