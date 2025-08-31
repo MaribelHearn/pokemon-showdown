@@ -2434,6 +2434,10 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Cirnium Z",
 		desc: "If held by Cirno with Diamond Blizzard, she can use Perfect Freeze.",
     },
+    achirniumz: {
+        name: "Achirnium Z",
+		desc: "If held by Achi Cirno with Diamond Blizzard, she can use Perfect Burn.",
+    },
     leonidiumz: {
         name: "Leonidium Z",
 		desc: "If held by Leonidas with High Jump Kick, he can use Sparta Kick.",
