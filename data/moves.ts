@@ -21430,8 +21430,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {bypasssub: 1},
-		onHit(target, source) {
+		onHit(target) {
 			target.clearBoosts();
+			this.add('-clearboost', target);
 		},
 		secondary: null,
 		target: "normal",
