@@ -7350,7 +7350,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onTakeItem: false,
 		zMove: "Perfect Freeze",
 		zMoveFrom: "Diamond Blizzard",
-		itemUser: ["Cirno", "Achi Cirno"],
+		itemUser: ["Cirno"],
 		num: 2026,
 		gen: 8,
 	},
@@ -7457,4 +7457,14 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2036,
         gen: 8,
     },
+	achirniumz: {
+		name: "Achirnium Z",
+		spritenum: 632,
+		onTakeItem: false,
+		zMove: "Perfect Burn",
+		zMoveFrom: "Diamond Blizzard",
+		itemUser: ["Achi Cirno"],
+		num: 2037,
+		gen: 8,
+	},
 };

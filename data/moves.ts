@@ -22932,4 +22932,19 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ghost",
 	},
+	perfectburn: {
+		num: 3013,
+		accuracy: true,
+		basePower: 185,
+		category: "Special",
+		name: "Perfect Burn",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		weather: 'hail',
+		isZ: "cirniumz",
+		secondary: null,
+		target: "normal",
+		type: "Fire"
+	},
 };
