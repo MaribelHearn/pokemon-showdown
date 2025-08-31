@@ -7256,8 +7256,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	delete: {
 		name: "Delete",
-		desc: "Resets the stat stages of all active Pokemon to 0.",
-		shortDesc: "Eliminates all stat changes.",
+		shortDesc: "Resets all of the target's stat stages to 0.",
 	},
 	painflow: {
 		name: "Pain Flow",
