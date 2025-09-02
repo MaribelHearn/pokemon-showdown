@@ -7284,7 +7284,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "For 5 turns, the target's held item has no effect. An item's effect of causing forme changes is unaffected, but any other effects from such items are negated. During the effect, Fling and Natural Gift are prevented from being used by the target. Items thrown at the target with Fling will still activate for it. If the target uses Baton Pass, the replacement will remain unable to use items. For 5 turns, the target is prevented from restoring any HP as long as it remains active. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. If an affected Pokemon uses Baton Pass, the replacement will remain unable to restore its HP. Pain Split and the Regenerator Ability are unaffected.",
 		shortDesc: "For 5 turns, target's healing and items have no effect.",
 
-		start: "  [POKEMON] was prevented from healing!",
+		start: "  [POKEMON] was prevented from healing or using items!",
 		end: "  [POKEMON]'s Denial of Service wore off!",
 		cant: "[POKEMON] can't use [MOVE] because of Denial of Service!",
 		fail: "  But it failed to affect [POKEMON]!",
