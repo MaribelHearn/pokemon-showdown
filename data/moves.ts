@@ -21432,7 +21432,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Delete",
 		pp: 10,
 		priority: 0,
-		flags: {bypasssub: 1},
+		flags: {protect: 1, mirror: 1},
 		onHit(target) {
 			target.clearBoosts();
 			this.add('-clearboost', target);
@@ -21533,7 +21533,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onStart(pokemon, source) {
 				this.add('-start', pokemon, 'move: Denial of Service');
-				pokemon.addVolatile('embargo');
+				this.add('-start', pokemon, 'Embargo');
 				source.moveThisTurnResult = true;
 			},
 			onDisableMove(pokemon) {
@@ -21559,7 +21559,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			onResidualOrder: 20,
 			onEnd(pokemon) {
 				this.add('-end', pokemon, 'move: Denial of Service');
-				pokemon.removeVolatile('embargo');
+				this.add('-end', pokemon, 'Embargo');
 			},
 			onTryHeal(damage, target, source, effect) {
 				if ((effect?.id === 'zpower') || this.effectState.isZ) return damage;
