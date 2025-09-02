@@ -3213,7 +3213,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 10,
 			effect(pokemon) {
-				const conditions = ['attract', 'taunt', 'encore', 'torment', 'disable', 'healblock'];
+				const conditions = ['attract', 'taunt', 'encore', 'torment', 'disable', 'healblock', 'denialofservice'];
 				for (const firstCondition of conditions) {
 					if (pokemon.volatiles[firstCondition]) {
 						for (const secondCondition of conditions) {
@@ -3228,7 +3228,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			},
 		},
 		onUpdate(pokemon) {
-			const conditions = ['attract', 'taunt', 'encore', 'torment', 'disable', 'healblock'];
+			const conditions = ['attract', 'taunt', 'encore', 'torment', 'disable', 'healblock', 'denialofservice'];
 			for (const firstCondition of conditions) {
 				if (pokemon.volatiles[firstCondition]) {
 					if (!pokemon.useItem()) return;

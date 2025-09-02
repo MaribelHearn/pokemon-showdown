@@ -21520,7 +21520,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		volatileStatus: 'healblock',
+		volatileStatus: 'denialofservice',
 		condition: {
 			// Item suppression implemented in Pokemon.ignoringItem() within sim/pokemon.js
 			duration: 5,
