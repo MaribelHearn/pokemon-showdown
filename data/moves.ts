@@ -20075,7 +20075,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	koin3steps: {
 		num: 2017,
 		accuracy: 90,
-		basePower: 40,
+		basePower: 30,
 		basePowerCallback(pokemon, target, move) {
 			return 40 * (0.75 * move.hit);
 		},
