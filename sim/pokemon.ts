@@ -791,7 +791,7 @@ export class Pokemon {
 			this.itemState.knockedOff || // Gen 3-4
 			(this.battle.gen >= 5 && !this.isActive) ||
 			(this.hasAbility('klutz') && !this.getItem().ignoreKlutz) ||
-			this.volatiles['embargo'] || this.battle.field.pseudoWeather['magicroom']
+			this.volatiles['denialofservice'] || this.volatiles['embargo'] || this.battle.field.pseudoWeather['magicroom']
 		);
 	}
 

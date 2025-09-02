@@ -1810,7 +1810,7 @@ export const Formats: FormatList = [
 				const item = this.battle.dex.abilities.get(this.item);
 				return !!((this.battle.gen >= 5 && !this.isActive) ||
 					(this.hasAbility('klutz') && !this.getItem().ignoreKlutz) ||
-					this.volatiles['embargo'] || this.battle.field.pseudoWeather['magicroom'] ||
+					this.volatiles['denialofservice'] || this.volatiles['embargo'] || this.battle.field.pseudoWeather['magicroom'] ||
 					(item.exists && item.id !== 'neutralizinggas' && (nGas || this.volatiles['gastroacid'])));
 			},
 			takeItem(source) {
