@@ -20075,10 +20075,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	koin3steps: {
 		num: 2017,
 		accuracy: 90,
-		basePower: 30,
-		basePowerCallback(pokemon, target, move) {
-			return 30 * move.hit;
-		},
+		basePower: 40,
 		category: "Physical",
 		name: "KO in 3 Steps",
 		pp: 5,
@@ -20090,6 +20087,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fighting",
 		audio: true,
+		zMove: {basePower: 120},
+		maxMove: {basePower: 140},
 	},
 	strawberrycross: {
 		num: 2018,
