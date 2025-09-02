@@ -20077,7 +20077,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 90,
 		basePower: 30,
 		basePowerCallback(pokemon, target, move) {
-			return 40 * (0.75 * move.hit);
+			return 30 * move.hit;
 		},
 		category: "Physical",
 		name: "KO in 3 Steps",
