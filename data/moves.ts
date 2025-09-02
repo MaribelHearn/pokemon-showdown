@@ -21531,8 +21531,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 				}
 				return 5;
 			},
-			onStart(pokemon, source) {
-				this.add('-start', pokemon, 'move: Denial of Service', this.effect);
+			onStart(pokemon, source, effect) {
+				this.add('-start', pokemon, 'move: Denial of Service', effect);
 				this.add('-start', pokemon, 'Embargo');
 				source.moveThisTurnResult = true;
 			},
@@ -21558,7 +21558,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onResidualOrder: 20,
 			onEnd(pokemon) {
-				this.add('-end', pokemon, 'move: Denial of Service', this.effect);
+				this.add('-end', pokemon, 'move: Denial of Service');
 				this.add('-end', pokemon, 'Embargo');
 			},
 			onTryHeal(damage, target, source, effect) {
