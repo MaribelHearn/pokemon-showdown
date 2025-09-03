@@ -7822,6 +7822,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	smithymagichead: {
 		tier: "Illegal",
 	},
+	zapmolcuno: {
+		isNonstandard: "Fundex",
+		tier: "Fundex",
+	},
 	missingnooriginal: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
