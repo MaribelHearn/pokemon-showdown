@@ -94213,4 +94213,14 @@ scratch: ["8L1"],
 			remotemissile: ["8L1"],
 		},
 	},
+	zapmolcuno: {
+		learnset: {
+			agility: ["8L1"],
+			ancientpower: ["8L1"],
+			roost: ["8L1"],
+			icebeam: ["8M"],
+			flamethrower: ["8M"],
+			thunderbolt: ["8M"],
+		}
+	}
 };

@@ -2334,11 +2334,11 @@ export const ItemsText: {[k: string]: ItemText} = {
 
     // Fundex items
 
-    /*trinitystone: {
+    trinitystone: {
         name: "Trinity Stone",
         desc: "If held by Zapmolcuno, boosts Fire/Electric/Ice attacks by x1.5.",
     },
-    warpedmirror: {
+    /*warpedmirror: {
         name: "Warped Mirror",
 		desc: "Holder's use of Trick Room lasts 8 turns instead of 5.",
     },

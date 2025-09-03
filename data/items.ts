@@ -6992,19 +6992,19 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 
     // Fundex
-    /*trinitystone: {
+    trinitystone: {
         name: "Trinity Stone",
-        spritenum: 2000,
+        spritenum: 767,
         onModifyAtkPriority: 5,
-        onModifyAtk(atk, attacker, defender, move) {
-            if (move.type === 'Fire' || move.type === 'Electric' || move.type === 'Ice') {
-                this.debug('Trinity Stone boost');
-                return this.chainModify(1.5);
-            }
+        onModifyAtk(atk, pokemon, defender, move) {
+			if (pokemon.baseSpecies.name === 'Zapmolcuno' && ['Fire', 'Electric', 'Ice'].includes(move.type)) {
+				this.debug('Trinity Stone boost');
+				return this.chainModify(1.5);
+			}
         },
 		num: 2000,
 		gen: 8,
-    },*/
+    },
     natureengine: {
         name: "Nature Engine",
         spritenum: 754,
@@ -7019,8 +7019,8 @@ export const Items: {[itemid: string]: ItemData} = {
         },
 		onModifySpe(spe, pokemon) {
             if (pokemon.baseSpecies.name === 'Weepinmeleon') {
-	             return this.chainModify(1.5);
-             }
+	            return this.chainModify(1.5);
+            }
 		},
         itemUser: ["Weepinmeleon"],
         num: 2003,

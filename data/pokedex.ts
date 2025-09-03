@@ -18922,6 +18922,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		requiredAbility: "Form Shift",
 		battleOnly: "Smithy",
     },
+	zapmolcuno: {
+		num: 2161,
+		name: "Zapmolcuno",
+		types: ["???", "Flying"],
+		gender: "N",
+		baseStats: {hp: 100, atk: 101, def: 102, spa: 125, spd: 110, spe: 102},
+		abilities: {0: "Pressure", H: "Early Bird"},
+		weightkg: 90,
+		color: "Yellow",
+		tags: ["Restricted Legendary"],
+		eggGroups: ["Undiscovered"],
+	},
 	missingnooriginal: {
 		num: 0,
 		name: "MissingNo. (Original)",
