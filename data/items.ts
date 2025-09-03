@@ -7002,6 +7002,7 @@ export const Items: {[itemid: string]: ItemData} = {
 				return this.chainModify(1.5);
 			}
         },
+        itemUser: ["Zapmolcuno"],
 		num: 2000,
 		gen: 8,
     },
