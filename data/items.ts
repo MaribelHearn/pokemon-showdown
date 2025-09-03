@@ -6996,8 +6996,8 @@ export const Items: {[itemid: string]: ItemData} = {
         name: "Trinity Stone",
         spritenum: 767,
         onModifyAtkPriority: 5,
-        onModifyAtk(atk, pokemon, defender, move) {
-			if (pokemon.baseSpecies.name === 'Zapmolcuno' && ['Fire', 'Electric', 'Ice'].includes(move.type)) {
+        onBasePower(basePower, user, target, move) {
+			if (move && ['Fire', 'Electric', 'Ice'].includes(move.type) && user.baseSpecies.name === 'Zapmolcuno') {
 				this.debug('Trinity Stone boost');
 				return this.chainModify(1.5);
 			}
