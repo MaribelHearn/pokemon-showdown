@@ -22754,7 +22754,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "IMMA FIRIN' MAH LAZER!!",
 		pp: 1,
 		priority: 0,
-		flags: {},
+		flags: {beam: 1},
 		willCrit: true,
 		isZ: "celliumz",
 		secondary: null,
