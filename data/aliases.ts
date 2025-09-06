@@ -336,7 +336,7 @@ export const Aliases: {[alias: string]: string} = {
 	"9": "Cirno",
 	"(9)": "Cirno",
 	bsod: "Blue Screen of Death",
-	cn: "Chuck Norris",
+	unknown: "???",
 
 	// event formes
 	rockruffdusk: "Rockruff",
