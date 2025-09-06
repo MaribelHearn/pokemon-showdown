@@ -86134,6 +86134,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			xscissor: ["8M"],
 			rest: ["8M"],
 			fling: ["8M"],
+			reverseneedleattack: ["8L1"],
 		},
 	},
 	longcat: {
