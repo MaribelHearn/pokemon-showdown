@@ -4516,7 +4516,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         onResidualOrder: 26,
 		onResidualSubOrder: 1,
 		onResidual(pokemon) {
-			if (pokemon.activeTurns % 2 == 0) {
+			if (this.effectState.switchingIn) {
+				pokemon.activeTurns += 1;
+			}
+			else if (pokemon.activeTurns % 2 == 0) {
 				this.boost({atk: 1});
 			}
 		},
