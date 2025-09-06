@@ -5,6 +5,7 @@ List of flags and their descriptions:
 bypasssub: Ignores a target's substitute.
 bite: Power is multiplied by 1.5 when used by a Pokemon with the Strong Jaw Ability.
 bullet: Has no effect on Pokemon with the Bulletproof Ability.
+cantusetwice: The user cannot select this move after a previous successful use.
 charge: The user is unable to make a move between turns.
 contact: Makes contact.
 dance: When used by a Pokemon, other Pokemon with the Dancer Ability can attempt to execute the same move.
@@ -20533,13 +20534,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Zero Laser",
 		pp: 5,
 		priority: 0,
-		flags: {recharge: 1, protect: 1, mirror: 1, beam: 1},
-		onTry(source) {
-			if (source.lastMove?.id === 'zerolaser') {
-				this.hint("Cannot use this move two times in a row.");
-				return false;
-			}
-		},
+		flags: {protect: 1, mirror: 1, beam: 1, cantusetwice: 1},
 		secondary: null,
 		target: "normal",
 		type: "Electric",
