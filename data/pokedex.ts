@@ -18547,7 +18547,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     },
     bluescreenofdeath: {
         num: 2136,
-		name: "Blue Screen of Death",
+		name: "Blue Screen",
 		types: ["Bug", "Electric"],
 		gender: "N",
 		baseStats: {hp: 40, atk: 30, def: 190, spa: 10, spd: 190, spe: 5},

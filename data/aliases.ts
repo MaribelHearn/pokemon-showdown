@@ -335,7 +335,7 @@ export const Aliases: {[alias: string]: string} = {
 	// Fundex
 	"9": "Cirno",
 	"(9)": "Cirno",
-	bsod: "Blue Screen of Death",
+	bsod: "Blue Screen",
 	unknown: "???",
 
 	// event formes

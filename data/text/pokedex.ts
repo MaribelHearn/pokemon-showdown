@@ -3943,7 +3943,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
         name: "Bloody Jitterbug",
     },
     bluescreenofdeath: {
-        name: "Blue Screen of Death",
+        name: "Blue Screen",
     },
     internetexplorer: {
         name: "Internet Explorer",
