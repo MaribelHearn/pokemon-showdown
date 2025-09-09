@@ -20623,7 +20623,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		drain: [1, 2],
 		secondary: null,
 		target: "scripted",
-		type: "???",
+		type: "fighting",
 		audio: true,
 	},
 	thunderdrumshot: {
