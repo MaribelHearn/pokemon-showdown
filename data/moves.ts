@@ -19769,6 +19769,11 @@ export const Moves: {[moveid: string]: MoveData} = {
         pp: 5,
         priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
         secondary: {
             chance: 30,
 			onHit(target, source) {
@@ -20223,6 +20228,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {defrost: 1, bypasssub: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		onUseMoveMessage(pokemon, target, move) {
 			this.add('-activate', pokemon, 'move: explod');
 		},
@@ -21189,6 +21199,11 @@ export const Moves: {[moveid: string]: MoveData} = {
         pp: 5,
         priority: 0,
         flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		secondary: {
 			chance: 100,
 			status: 'tmt',
@@ -21299,6 +21314,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		recoil: [1, 3],
 		secondary: null,
 		target: "normal",
@@ -21650,6 +21670,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "???",
@@ -21664,6 +21689,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "???",
@@ -22593,6 +22623,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		onModifyType(move, pokemon) {
 			let type = pokemon.getTypes()[0];
 			if (type === "Bird") type = "???";
@@ -22611,6 +22646,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		secondary: {
 			chance: 10,
 			self: {
@@ -22635,6 +22675,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		secondary: {
 			chance: 30,
 			onHit(target, source) {
@@ -22733,6 +22778,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 1,
 		priority: 0,
 		flags: {},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		isZ: "unknowniumz",
 		secondary: null,
 		target: "normal",
@@ -22747,6 +22797,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {},
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		isMax: true,
 		self: {
 			onHit(source) {
