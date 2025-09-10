@@ -7709,7 +7709,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },
-    bluescreenofdeath: {
+    bluescreen: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
     },

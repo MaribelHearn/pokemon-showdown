@@ -92702,7 +92702,7 @@ scratch: ["8L1"],
 			snatch: ["8M"],
 		},
 	},
-	bluescreenofdeath: {
+	bluescreen: {
 		learnset: {
 			safeguard: ["8L1", "8M"],
 			astonish: ["8L1"],

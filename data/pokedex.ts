@@ -18545,7 +18545,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
     },
-    bluescreenofdeath: {
+    bluescreen: {
         num: 2136,
 		name: "Blue Screen",
 		types: ["Bug", "Electric"],
