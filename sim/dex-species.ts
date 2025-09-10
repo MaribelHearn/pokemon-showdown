@@ -249,7 +249,7 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		this.spriteid = data.spriteid ||
 			(toID(this.baseSpecies) + (this.baseSpecies !== this.name ? `-${toID(this.forme)}` : ''));
 		this.abilities = data.abilities || {0: ""};
-		this.types = data.types || ['???'];
+		this.types = data.types; //  || ['???'];
 		this.addedType = data.addedType || undefined;
 		this.prevo = data.prevo || '';
 		this.tier = data.tier || '';
