@@ -6988,7 +6988,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	explod: {
 		name: "explod",
 		desc: "The user faints after using this move, even if this move fails for having no target. Bypasses substitute. Always lands a critical hit.",
-		shortDesc: "Hits adjacent Pokemon The user faints.",
+		shortDesc: "Hits adjacent Pokemon. The user faints. Will crit.",
 		activate: "  Zeeky boogy doog!",
 	},
 	study: {
