@@ -84649,7 +84649,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	lolwutpear: {
 		learnset: {
-			"lolwut?": ["8L1"],
+			lolwut: ["8L1"],
 			poisonpowder: ["8L1"],
 			stunspore: ["8L1"],
 			sleeppowder: ["8L1"],

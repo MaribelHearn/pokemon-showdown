@@ -20318,12 +20318,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Water",
 		zMove: {basePower: 160},
 	},
-	"lolwut?": {
+	lolwut: {
 		num: 2028,
 		accuracy: 100,
 		basePower: 50,
 		category: "Physical",
-		name: "LOL WUT?",
+		name: "LOL WUT",
 		pp: 20,
 		priority: 0,
 		flags: {protect: 1, bypasssub: 1, sound: 1},

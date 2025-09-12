@@ -7008,8 +7008,8 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		start: "  In Soviet Russia... [POKEMON]'s move categories are reversed!",
 	},
-	"lolwut?": {
-		name: "LOL WUT?",
+	lolwut: {
+		name: "LOL WUT",
 		desc: "Has a 50% chance to confuse the target.",
 		shortDesc: "50% chance to confuse the target.",
 	},
