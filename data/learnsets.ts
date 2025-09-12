@@ -83652,7 +83652,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			bubblebeam: ["8L1"],
 			solarbeam: ["8L1", "8M"],
 			signalbeam: ["8L1"],
-			steelbeam: ["8L1", "8M"],
+			steelbeam: ["8L1"],
 			meteorbeam: ["8L1"],
 			psybeam: ["8L1"],
 			simplebeam: ["8L1"],
@@ -84649,7 +84649,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	lolwutpear: {
 		learnset: {
-			lolwut: ["8L1"],
+			"lolwut?": ["8L1"],
 			poisonpowder: ["8L1"],
 			stunspore: ["8L1"],
 			sleeppowder: ["8L1"],

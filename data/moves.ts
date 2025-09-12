@@ -20318,7 +20318,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Water",
 		zMove: {basePower: 160},
 	},
-	lolwut: {
+	"lolwut?": {
 		num: 2028,
 		accuracy: 100,
 		basePower: 50,
