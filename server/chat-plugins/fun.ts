@@ -410,10 +410,13 @@ export const commands: Chat.ChatCommands  = {
                 `/darp : darp`,
                 `/dennis : DDDDDDDEEEEEEENNNNNNNNNNNNNNIIIIIIISSSSSSS!!!`,
                 `/derp : derp`,
+                `/dividebyzero : disconnects you from the server`,
                 `/durp : durp`,
+                `/explod : disconnects you from the server`,
                 `/ferp : ferp`,
-                `/herp : herp`,
+                `/flyaway : disconnects you from the server`,
                 `/freeze <em>username</em>: freeze a user, or a random user if none given`,
+                `/herp : herp`,
                 `/merp : merp`,
                 `/nuke <em>username</em>: nuke a user, or a random user if none given`,
                 `/paralyze OR /paralyse <em>username</em>: paralyze a user, or a random user if none given`,
@@ -421,6 +424,9 @@ export const commands: Chat.ChatCommands  = {
                 `/random : send random garbage text`,
                 `/randomsupport : ship a random pair of users`,
                 `/russia <em>verb</em>*<em>noun</em>: send a Russian Reversal joke using verb and noun, or random if none given`,
+                `/see : disconnects you from the server`,
+                `/selfkick : disconnects you from the server`,
+                `/selfpunch : disconnects you from the server`,
                 `/sleep <em>username</em>: put a user to sleep, or a random user if none given`,
                 `/wtfboom : WHAT THE FU-`,
 			],
@@ -579,7 +585,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} got killed in the explosion.`);
 
         if (room != null) {
-            user.leaveRoom(room);
+            user.disconnectAll();
         }
         
     },
@@ -596,6 +602,23 @@ export const commands: Chat.ChatCommands  = {
     },
     durphelp: [
         `/durp - Durp.`,
+    ],
+
+    explod(target, room: Room | null, user: User, connection, cmd: string) {
+        const name = Utils.escapeHTML(user.name);
+        const text = BIGTEXTS.wtfboom.text;
+        const size = BIGTEXTS.wtfboom.size;
+        const color = BIGTEXTS.wtfboom.color;
+        room?.addRaw(`<span style="font-size: ${size}px; color: ${color};">${text}</span>`);
+        room?.addRaw(`${name} explod.`);
+
+        if (room != null) {
+            user.disconnectAll();
+        }
+        
+    },
+    explodhelp: [
+        `/explod - you explod.`
     ],
 
     biferp: 'ferp',
@@ -623,7 +646,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} flew away!`);
 
         if (room != null) {
-            user.leaveRoom(room);
+            user.disconnectAll();
         }
         
     },
@@ -772,7 +795,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} saw ${target} behind them and left the room!`);
 
         if (room != null) {
-            user.leaveRoom(room);
+            user.disconnectAll();
         }
         
     },
@@ -786,7 +809,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} has kicked themselves from the server!`);
 
         if (room != null) {
-            user.leaveRoom(room);
+            user.disconnectAll();
         }
         
     },
@@ -799,7 +822,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} has punched themselves from the server!`);
 
         if (room != null) {
-            user.leaveRoom(room);
+            user.disconnectAll();
         }
         
     },
