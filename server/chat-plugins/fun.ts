@@ -773,7 +773,7 @@ export const commands: Chat.ChatCommands  = {
             }
             message += ' ';
         }
-        room?.add(`|c|${user.getIdentity(room)}|${Utils.escapeHTML(message)}`);
+        room?.add(`|c|${user.getIdentity(room)} RANDOM|${message}`);
     },
     randomhelp: [
         `/random - Send random garbage text.`,
