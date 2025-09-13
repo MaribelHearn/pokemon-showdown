@@ -409,6 +409,7 @@ export const commands: Chat.ChatCommands  = {
                 ` - send a big text command, defaults used if nothing given`,
                 `/bulbaderp : bulbaderp`,
                 `/burn <em>username</em>: burn a user, or a random user if none given`,
+                `/capture OR /catch : attempt to capture someone in a Poke Ball`,
                 `/combobreaker OR /cbreak : C-C-C-COMBOBREAKER!!!`,
                 `/confuse <em>username</em>: confuse a user, or a random user if none given`,
                 `/darp : darp`,
@@ -538,6 +539,7 @@ export const commands: Chat.ChatCommands  = {
 		`/burn [username] - Burn [username].`,
     ],
 
+    catch: 'capture',
     capture(target, room: Room | null, user: User, connection, cmd: string) {
         const pokeballs: any = {
             "poke": {"rate": 8, "name": "Poké Ball", "color": "#8b0000"},
