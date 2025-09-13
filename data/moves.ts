@@ -20523,7 +20523,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 70,
 		basePower: 1,
 		category: "Special",
-		name: "Umadbro?",
+		name: "Umadbro",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
@@ -20633,7 +20633,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		drain: [1, 2],
 		secondary: null,
 		target: "scripted",
-		type: "fighting",
+		type: "Fighting",
 		audio: true,
 	},
 	thunderdrumshot: {
