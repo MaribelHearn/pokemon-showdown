@@ -387,6 +387,10 @@ function checkCooldown(user: User | null = null) {
     return true;
 }
 
+function pokeBallImage(ball: string) {
+    return `https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/itemicons/${ball}-ball.png`;
+}
+
 export const commands: Chat.ChatCommands  = {
     funcommands: 'funhelp',
     funhelp(target, room, user) {
@@ -534,6 +538,37 @@ export const commands: Chat.ChatCommands  = {
 		`/burn [username] - Burn [username].`,
     ],
 
+    capture(target, room: Room | null, user: User, connection, cmd: string) {
+        const pokeballs: any = {
+            "poke": {"rate": 8, "name": "Poké Ball", "color": "#8b0000"},
+            "great": {"rate": 6, "name": "Great Ball", "color": "blue"},
+            "ultra": {"rate": 3, "name": "Ultra Ball", "color": "#00008b"},
+            "master": {"rate": -1, "name": "Master Ball", "color": "purple"}
+        };
+        let i;
+        const randInt = rand(11);
+        const args = target.split(DELIMITER);
+        const targetname: any = (args[0] ? Utils.escapeHTML(args[0]) : room?.users[random(Object.keys(room?.users))].name);
+        let ball: string = (args[1] ? args[1] : random(pokeballs));
+        ball = ball.toLowerCase().replace("é", "e").replace("ball", "").replace(/\s+/g, "");
+    
+        if (!Object.keys(pokeballs).includes(ball)) {
+            return this.errorReply('That is not a valid ball type.');
+        }
+    
+        if (randInt > pokeballs[ball].rate) {
+            room?.addRaw(`<b style="color:${pokeballs[ball].color}"><b>${pokeBallImage(ball)} ${targetname} has been caught ` +
+            `in a ${pokeballs[ball].name} by ${user.name}! ${pokeBallImage(ball)}</b>`);
+        } else {
+            room?.addRaw(`<b style="color:${pokeballs[ball].color}">${pokeBallImage(ball)} ${user.name} tried to capture ` +
+            `${targetname} in a ${pokeballs[ball].name}, but ${targetname} escaped! ${pokeBallImage(ball)}</b>`);
+        }
+    },
+    capturehelp: [
+        `/capture - Attempts to capture a random user in this room in a random ball.`,
+		`/capture [username]*[ball] - Attempts to capture [username] in a [ball].`,
+    ],
+
     confuse(target, room: Room | null, user: User, connection, cmd: string) {
         this.checkChat();
         const AT = '<span style="font-size: 20px;">@</span>';
@@ -651,7 +686,7 @@ export const commands: Chat.ChatCommands  = {
         
     },
     flyawayhelp: [
-        `/flyaway - you fly away from the room, leaving it in the process.`
+        `/flyaway - you fly away from the server, leaving it in the process.`
     ],
 
     freeze(target, room: Room | null, user: User, connection, cmd: string) {
@@ -792,7 +827,7 @@ export const commands: Chat.ChatCommands  = {
             target = "Dennis";
         }
 
-        room?.addRaw(`${name} saw ${target} behind them and left the room!`);
+        room?.addRaw(`${name} saw ${target} behind them and left the server!`);
 
         if (room != null) {
             user.disconnectAll();
@@ -800,8 +835,8 @@ export const commands: Chat.ChatCommands  = {
         
     },
     seehelp: [
-        `/see - you see Dennis behind you, which scares you into leaving the room.`,
-        `/see [someone] - you are so afraid of [someone] that you leave the room in fear.`,
+        `/see - you see Dennis behind you, which scares you into leaving the server.`,
+        `/see [someone] - you are so afraid of [someone] that you leave the server in fear.`,
     ],
 
     selfkick(target, room: Room | null, user: User, connection, cmd: string) {
@@ -814,7 +849,7 @@ export const commands: Chat.ChatCommands  = {
         
     },
     selfkickhelp: [
-        `/selfkick - kicks yourself from the room.`
+        `/selfkick - kicks yourself from the server.`
     ],
 
     selfpunch(target, room: Room | null, user: User, connection, cmd: string) {
@@ -827,7 +862,7 @@ export const commands: Chat.ChatCommands  = {
         
     },
     selfpunchhelp: [
-        `/selfpunch - punches yourself from the room.`
+        `/selfpunch - punches yourself from the server.`
     ],
 
     sleep(target, room: Room | null, user: User, connection, cmd: string) {
