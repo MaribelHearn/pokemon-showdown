@@ -555,7 +555,7 @@ export const commands: Chat.ChatCommands  = {
         ball = ball.toLowerCase().replace("é", "e").replace("ball", "").replace(/\s+/g, "");
     
         if (!Object.keys(pokeballs).includes(ball)) {
-            return this.errorReply('That is not a valid ball type.');
+            return this.errorReply(`"${ball}" is not a valid ball type.`);
         }
     
         if (randInt > pokeballs[ball].rate) {
