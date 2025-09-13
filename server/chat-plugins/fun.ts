@@ -622,7 +622,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} got killed in the explosion.`);
 
         if (room != null) {
-            setTimeout(() => { user.disconnectAll(); }, 200);
+            setTimeout(() => { user.disconnectAll(); }, 1000);
         }
         
     },
@@ -650,7 +650,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} explod.`);
 
         if (room != null) {
-            setTimeout(() => { user.disconnectAll(); }, 200);
+            setTimeout(() => { user.disconnectAll(); }, 1000);
         }
         
     },
@@ -683,7 +683,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} flew away!`);
 
         if (room != null) {
-            setTimeout(() => { user.disconnectAll(); }, 200);
+            setTimeout(() => { user.disconnectAll(); }, 1000);
         }
         
     },
@@ -832,7 +832,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} saw ${target} behind them and left the server!`);
 
         if (room != null) {
-            setTimeout(() => { user.disconnectAll(); }, 200);
+            setTimeout(() => { user.disconnectAll(); }, 1000);
         }
         
     },
@@ -846,7 +846,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} has kicked themselves from the server!`);
 
         if (room != null) {
-            setTimeout(() => { user.disconnectAll(); }, 200);
+            setTimeout(() => { user.disconnectAll(); }, 1000);
         }
         
     },
@@ -859,7 +859,7 @@ export const commands: Chat.ChatCommands  = {
         room?.addRaw(`${name} has punched themselves from the server!`);
 
         if (room != null) {
-            setTimeout(() => { user.disconnectAll(); }, 200);
+            setTimeout(() => { user.disconnectAll(); }, 1000);
         }
         
     },
