@@ -388,7 +388,7 @@ function checkCooldown(user: User | null = null) {
 }
 
 function pokeBallImage(ball: string) {
-    return `https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/itemicons/${ball}-ball.png`;
+    return `<img src="https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/itemicons/${ball}-ball.png" alt="${cap(ball)} Ball">`;
 }
 
 export const commands: Chat.ChatCommands  = {
@@ -557,11 +557,11 @@ export const commands: Chat.ChatCommands  = {
         }
     
         if (randInt > pokeballs[ball].rate) {
-            room?.addRaw(`<b style="color:${pokeballs[ball].color}"><b>${pokeBallImage(ball)} ${targetname} has been caught ` +
-            `in a ${pokeballs[ball].name} by ${user.name}! ${pokeBallImage(ball)}</b>`);
+            room?.addRaw(`<div class="chat"><small>${timeStamp()} </small><b style="color:${pokeballs[ball].color}"><b>${pokeBallImage(ball)} ${targetname} has been caught ` +
+            `in a ${pokeballs[ball].name} by ${user.name}! ${pokeBallImage(ball)}</b></div>`);
         } else {
-            room?.addRaw(`<b style="color:${pokeballs[ball].color}">${pokeBallImage(ball)} ${user.name} tried to capture ` +
-            `${targetname} in a ${pokeballs[ball].name}, but ${targetname} escaped! ${pokeBallImage(ball)}</b>`);
+            room?.addRaw(`<div class="chat"><small>${timeStamp()} </small><b style="color:${pokeballs[ball].color}">${pokeBallImage(ball)} ${user.name} tried to capture ` +
+            `${targetname} in a ${pokeballs[ball].name}, but ${targetname} escaped! ${pokeBallImage(ball)}</b></div>`);
         }
     },
     capturehelp: [
