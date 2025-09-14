@@ -7049,7 +7049,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		shortDesc: "Protects from moves. Bomb/bullet: 1/2 damage deflected.",
 	},
 	umadbro: {
-		name: "Umadbro?",
+		name: "Umadbro",
 		desc: "Raises the target's Attack by 6 stages and confuses it.",
 		shortDesc: "Raises the target's Attack by 6 and confuses it.",
 	},
