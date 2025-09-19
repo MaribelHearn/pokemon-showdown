@@ -85671,7 +85671,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			steelbeam: ["8M"],
 		},
 	},
-	toonlink: {
+	/*toonlink: {
 		learnset: {
 			growl: ["8L1"],
 			scratch: ["8L1"],
@@ -85722,7 +85722,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			playrough: ["8M"],
 			mistyexplosion: ["8M"],
 		},
-	},
+	},*/
 	youngzelda: {
 		learnset: {
 			teleport: ["8L1"],

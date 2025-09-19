@@ -16976,10 +16976,10 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Young Link",
 		evoLevel: 34,
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["Toon Link"],
-		formeOrder: ["Link", "Toon Link"],
+		//otherFormes: ["Toon Link"],
+		//formeOrder: ["Link", "Toon Link"],
 	},
-	toonlink: {
+	/*toonlink: {
 		num: 2033,
 		name: "Toon Link",
 		baseSpecies: "Link",
@@ -16992,7 +16992,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Green",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
-	},
+	},*/
 	youngzelda: {
 		num: 2034,
 		name: "Young Zelda",

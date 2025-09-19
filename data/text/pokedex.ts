@@ -3576,9 +3576,9 @@ export const PokedexText: {[k: string]: PokedexText} = {
     link: {
         name: "Link",
     },
-    toonlink: {
+    /*toonlink: {
         name: "Toon Link",
-    },
+    },*/
     youngzelda: {
         name: "Young Zelda",
     },

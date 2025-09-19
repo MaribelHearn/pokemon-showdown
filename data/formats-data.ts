@@ -7220,10 +7220,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
 	},
-    toonlink: {
+    /*toonlink: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
-	},
+	},*/
     youngzelda: {
 		isNonstandard: "Fundex",
 		tier: "Fundex",
