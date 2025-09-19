@@ -1714,7 +1714,7 @@ export class BattleActions {
 			}
 		}
 
-		if (isCrit && !suppressMessages) this.battle.add('-crit', target);
+		if (isCrit && !suppressMessages) this.battle.add('-crit', target, pokemon);
 
 		if ((pokemon.status === 'brn' || pokemon.status === 'tmt') && move.category === 'Physical' && !pokemon.hasAbility('guts')) {
 			if (this.battle.gen < 6 || move.id !== 'facade') {
