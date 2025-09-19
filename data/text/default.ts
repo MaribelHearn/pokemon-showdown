@@ -126,6 +126,8 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		resistedSpread: "  It's not very effective on [POKEMON].",
 		crit: "  A critical hit!",
 		critSpread: "  A critical hit on [POKEMON]!",
+		critTelefang: "  Critical!!",
+		critMother: "  SMAAAASH!!",
 		immune: "  It doesn't affect [POKEMON]...",
 		immuneNoPokemon: "  It had no effect!", // old gens
 		immuneOHKO: "  [POKEMON] is unaffected!",
