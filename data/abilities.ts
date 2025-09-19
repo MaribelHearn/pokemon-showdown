@@ -4941,7 +4941,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 2021,
 	},
-	bloodbond: {
+	/*bloodbond: {
 		onPrepareHit(source, target, move) {
 			if (move.category === 'Status' || move.selfdestruct || move.multihit) return;
 			if (['iceball', 'rollout'].includes(move.id)) return;
@@ -4984,7 +4984,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 2023,
 	},
-	/*psychopath: {
+	psychopath: {
 		onStart(pokemon) {
 			for (const target of pokemon.foes()) {
 				this.add('-ability', target, target.getNature().name, '[from] ability: Psychopath', '[of] ' + pokemon, '[identify]');
@@ -5018,7 +5018,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Pure Heart",
 		rating: 3.5,
 		num: 2025,
-	},*/
+	},
 	hotblooded: {
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
@@ -5030,7 +5030,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Hot Blooded",
 		rating: 4,
 		num: 2026,
-	},
+	},*/
     shorttempered: {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
@@ -5098,7 +5098,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Runic",
 		rating: 4,
         num: 2031,
-    },*/
+    },
     trueresistance: {
         onBoost(boost, target, source, effect) {
             //if (source && target === source) return;
@@ -5190,7 +5190,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Firm Carry",
 		rating: 4.5,
 		num: 2035,
-    },
+    },*/
 	incomprehensible: {
         name: "Incomprehensible",
         rating: 3,

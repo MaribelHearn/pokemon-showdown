@@ -16465,10 +16465,10 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Blue",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["tentaquix"],
-		formeOrder: ["tentaquil", "tentaquix"],
+		/*otherFormes: ["tentaquix"],
+		formeOrder: ["tentaquil", "tentaquix"],*/
 	},
-	tentaquix: {
+	/*tentaquix: {
 		num: 2000,
 		name: "tentaquix",
 		baseSpecies: "tentaquil",
@@ -16481,7 +16481,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Blue",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
-	},
+	},*/
 	chucknorris: {
 		num: 2001,
 		name: "Chuck Norris",
@@ -18875,7 +18875,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Wrath Cookie",
     },
-    smithy: {
+    /*smithy: {
         num: 2160,
 		name: "Smithy",
         gender: "M",
@@ -18933,7 +18933,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Yellow",
 		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
-	},
+	},*/
 	missingnooriginal: {
 		num: 0,
 		name: "MissingNo. (Original)",

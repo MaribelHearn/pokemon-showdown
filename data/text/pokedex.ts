@@ -3456,9 +3456,9 @@ export const PokedexText: {[k: string]: PokedexText} = {
     tentaquil: {
         name: "tentaquil",
     },
-    tentaquix: {
+    /*tentaquix: {
         name: "tentaquix",
-    },
+    },*/
     chucknorris: {
         name: "Chuck Norris",
     },
@@ -4017,6 +4017,18 @@ export const PokedexText: {[k: string]: PokedexText} = {
     grandmatriarch: {
         name: "Grandmatriarch",
     },
+	/*smithy: {
+		name: "Smithy",
+	},
+	smithytankhead: {
+		name: "Smithy-Tank Head",
+	},
+	smithymagichead: {
+		name: "Smithy-Magic Head",
+	},
+	zapmolcuno: {
+		name: "Zapmolcuno",
+	},*/
 	missingnooriginal: {
 		name: "MissingNo.",
 	},

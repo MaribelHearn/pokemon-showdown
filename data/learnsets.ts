@@ -83240,7 +83240,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             superglitch: ["8M"],
         },
     },
-    tentaquix: {
+    /*tentaquix: {
         learnset: {
             tackle: ["8L1"],
             leer: ["8L1"],
@@ -83420,7 +83420,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
             glitchyterrain: ["8M"],
             superglitch: ["8M"],
         },
-    },
+    },*/
     chucknorris: {
 		learnset: {
 			leer: ["8L1"],
@@ -87062,7 +87062,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			toxic: ["8L1", "8M"],
 			meanlook: ["8L1"],
 			glare: ["8L1"],
-			metronome: ["8L1"],
+			metronome: ["8L1", "8M"],
 			snatch: ["8L1"],
 			thief: ["8L1"],
 			foulplay: ["8L1"],
@@ -90857,7 +90857,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			ember: ["8L1"],
 			mimic: ["8L1"],
 			heartstamp: ["8L1"],
-			metronome: ["8L1"],
+			metronome: ["8L1", "8M"],
 			psybeam: ["8L1"],
 			teeterdance: ["8L1"],
 			nightshade: ["8L1"],
@@ -93869,7 +93869,7 @@ scratch: ["8L1"],
 			pound: ["8L1"],
 			leer: ["8L1"],
 			swift: ["8L1"],
-			metronome: ["8L1"],
+			metronome: ["8L1", "8M"],
 			quickattack: ["8L1"],
 			afteryou: ["8L1", "8M"],
 			assist: ["8L1"],
@@ -94202,7 +94202,7 @@ scratch: ["8L1"],
 			knockoff: ["8M"],
 		},
 	},
-	smithy: {
+	/*smithy: {
 		learnset: {
 			sledge: ["8L1"],
 			magnum: ["8L1"],
@@ -94225,5 +94225,5 @@ scratch: ["8L1"],
 			flamethrower: ["8M"],
 			thunderbolt: ["8M"],
 		}
-	}
+	},*/
 };

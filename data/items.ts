@@ -6992,7 +6992,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 
     // Fundex
-    trinitystone: {
+    /*trinitystone: {
         name: "Trinity Stone",
         spritenum: 767,
         onModifyAtkPriority: 5,
@@ -7005,7 +7005,7 @@ export const Items: {[itemid: string]: ItemData} = {
         itemUser: ["Zapmolcuno"],
 		num: 2000,
 		gen: 8,
-    },
+    },*/
     natureengine: {
         name: "Nature Engine",
         spritenum: 754,
