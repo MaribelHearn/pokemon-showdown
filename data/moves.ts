@@ -21221,7 +21221,7 @@ export const Moves: {[moveid: string]: MoveData} = {
         priority: 0,
         flags: {protect: 1, mirror: 1},
 		onHit(target) {
-			if (target.getAbility().isPermanent || target.ability === 'normalize' || target.ability === 'truant') {
+			if (!target.getAbility().isPermanent && target.ability !== 'normalize') {
 				const oldAbility = target.setAbility('normalize');
 				if (oldAbility) {
 					this.add('-ability', target, 'Normalize', '[from] move: a NORMAL move');
