@@ -2428,7 +2428,7 @@ export const ItemsText: {[k: string]: ItemText} = {
     },
     celliumz: {
         name: "Cellium Z",
-		desc: "If held by Cell with Hyper Beam... IMMA FIRIN' MAH LAZER!!",
+		desc: "If held by Cell or Dr. Octogonapus with Hyper Beam... IMMA FIRIN' MAH LAZER!!",
     },
     cirniumz: {
         name: "Cirnium Z",
