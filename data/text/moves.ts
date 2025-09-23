@@ -7234,8 +7234,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	washingmachine: {
 		name: "Washing Machine",
-		desc: "If this move is successful, all hazards are removed from the field.",
-		shortDesc: "Cleans hazards from the field.",
+		desc: "If this move is successful, all hazards are removed from the target's side of the field.",
+		shortDesc: "Cleans hazards from the target's side of the field.",
 	},
 	bittorrent: {
 		name: "Bit Torrent",

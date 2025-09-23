@@ -21347,8 +21347,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	washingmachine: {
 		num: 2073,
-		accuracy: 85,
-		basePower: 120,
+		accuracy: 90,
+		basePower: 140,
 		category: "Special",
 		name: "Washing Machine",
 		pp: 5,
@@ -21357,9 +21357,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onAfterHit(target, pokemon) {
 			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust'];
 			for (const condition of sideConditions) {
-				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Washing Machine', '[of] ' + pokemon);
-				}
 				if (target.side.removeSideCondition(condition)) {
 					this.add('-sideend', target.side, this.dex.conditions.get(condition).name, '[from] move: Washing Machine', '[of] ' + pokemon);
 				}
@@ -21368,9 +21365,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onAfterSubDamage(damage, target, pokemon) {
 			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust'];
 			for (const condition of sideConditions) {
-				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Washing Machine', '[of] ' + pokemon);
-				}
 				if (target.side.removeSideCondition(condition)) {
 					this.add('-sideend', target.side, this.dex.conditions.get(condition).name, '[from] move: Washing Machine', '[of] ' + pokemon);
 				}
