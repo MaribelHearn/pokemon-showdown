@@ -21354,6 +21354,28 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, bullet: 1, mirror: 1},
+		onAfterHit(target, pokemon) {
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust'];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Washing Machine', '[of] ' + pokemon);
+				}
+				if (target.side.removeSideCondition(condition)) {
+					this.add('-sideend', target.side, this.dex.conditions.get(condition).name, '[from] move: Washing Machine', '[of] ' + pokemon);
+				}
+			}
+		},
+		onAfterSubDamage(damage, target, pokemon) {
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust'];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Washing Machine', '[of] ' + pokemon);
+				}
+				if (target.side.removeSideCondition(condition)) {
+					this.add('-sideend', target.side, this.dex.conditions.get(condition).name, '[from] move: Washing Machine', '[of] ' + pokemon);
+				}
+			}
+		},
 		secondary: null,
 		target: "allAdjacent",
 		type: "Water",
