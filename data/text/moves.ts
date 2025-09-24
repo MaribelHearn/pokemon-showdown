@@ -6967,8 +6967,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	trainwreck: {
 		name: "Train Wreck",
-		desc: "If this move is successful and does not KO the target, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn unless KO.",
+		desc: "If this move is successful and does not KO the target, the user must recharge on the following turn and cannot select a move. Deals damage to the target based on its Defense instead of Special Defense.",
+		shortDesc: "User cannot move next turn unless KO. Targets Def.",
 	},
 	suzuranpoison: {
 		name: "Suzuran Poison",
