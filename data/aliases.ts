@@ -335,8 +335,11 @@ export const Aliases: {[alias: string]: string} = {
 	// Fundex
 	"9": "Cirno",
 	"(9)": "Cirno",
+	baka: "Cirno",
 	bsod: "Blue Screen",
 	unknown: "???",
+	eggman: "Dr. Robotnik",
+	dreggman: "Dr. Robotnik",
 
 	// event formes
 	rockruffdusk: "Rockruff",

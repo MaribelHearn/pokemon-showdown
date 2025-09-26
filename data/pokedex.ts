@@ -16791,7 +16791,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Normal", "Steel"],
 		gender: "M",
 		baseStats: {hp: 130, atk: 90, def: 90, spa: 50, spd: 100, spe: 50},
-		abilities: {0: "Thick Fat", H: "Steelworker"},
+		abilities: {0: "Thick Fat", H: "Steely Spirit"},
 		weightkg: 90,
 		color: "Red",
 		tags: ["Fundex Non-Legendary"],
