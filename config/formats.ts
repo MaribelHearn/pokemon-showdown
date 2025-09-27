@@ -134,7 +134,7 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
-		unbanlist: ['Fundex', '+Bad EGG'],
+		unbanlist: ['Fundex'],
 	},
 	{
 		name: "[Gen 8] Fundex Loser's Game",
