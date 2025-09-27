@@ -128,6 +128,15 @@ export const Formats: FormatList = [
         },
 	},
 	{
+		name: '[Gen 8] Fundex Little Cup',
+		desc: `Only pre-evolutions are allowed (and Bad EGG)`,
+
+		mod: 'gen8',
+		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
+		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
+		unbanlist: ['Fundex', '+Bad EGG'],
+	},
+	{
 		name: "[Gen 8] Fundex Loser's Game",
 		desc: `The first player to lose all of their Fundex Pok&eacute;mon wins.`,
 		threads: [
