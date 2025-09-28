@@ -39,6 +39,15 @@ export const Formats: FormatList = [
 		unbanlist: ['Fundex'],
 	},
 	{
+		name: '[Gen 8] Fundex LC',
+		desc: `Only pre-evolutions are allowed (and Bad EGG)`,
+
+		mod: 'gen8',
+		ruleset: ['Little Cup Fundex', 'Standard NatDex', 'Dynamax Clause'],
+		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
+		unbanlist: ['Fundex'],
+	},
+	{
 		section: "Fundex Doubles",
 	},
     {
@@ -133,15 +142,6 @@ export const Formats: FormatList = [
                 return [`${set.name || set.species} has illegal moves.`, `(Pok\u00e9mon can only have one Metronome in their moveset)`];
             }
         },
-	},
-	{
-		name: '[Gen 8] Fundex Little Cup',
-		desc: `Only pre-evolutions are allowed (and Bad EGG)`,
-
-		mod: 'gen8',
-		ruleset: ['Little Cup Fundex', 'Standard NatDex', 'Dynamax Clause'],
-		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
-		unbanlist: ['Fundex'],
 	},
 	{
 		name: "[Gen 8] Fundex Loser's Game",
