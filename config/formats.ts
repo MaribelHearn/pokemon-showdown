@@ -77,7 +77,7 @@ export const Formats: FormatList = [
 		name: "[Gen 8] National Fundex",
 		mod: 'gen8',
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
-		banlist: ['Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		banlist: ['Fundex Uber', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 		unbanlist: ['Fundex'],
 	},
     {
@@ -92,7 +92,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
-		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		banlist: ['Fundex Uber', 'All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 	},
 	{
 		name: "[Gen 8] Fundex Random",
@@ -150,7 +150,7 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		ruleset: ['Fundex OMs', 'Sleep Clause Mod', '!OHKO Clause', 'Picked Team Size = 6', 'Adjust Level = 100'],
 		banlist: [
-			'All Pokemon', 'Zeeky H. Bomb', 'Infiltrator', 'Magic Guard', 'Choice Scarf', 'Explosion', 'Final Gambit', 'Healing Wish', 'Lunar Dance', 'Magic Room', 'Memento', 'Misty Explosion', 'Self-Destruct', 'Catnarok', 'System Crash', 'Negative Zone',
+			'Fundex Uber', 'All Pokemon', 'Zeeky H. Bomb', 'Infiltrator', 'Magic Guard', 'Choice Scarf', 'Explosion', 'Final Gambit', 'Healing Wish', 'Lunar Dance', 'Magic Room', 'Memento', 'Misty Explosion', 'Self-Destruct', 'Catnarok', 'System Crash', 'Negative Zone',
 		],
 		unbanlist: ['Fundex'],
 		onValidateTeam(team) {
