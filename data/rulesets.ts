@@ -528,7 +528,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 	},
 	littlecupfundex: {
 		effectType: 'ValidatorRule',
-		name: 'Fundex Little Cup',
+		name: 'Little Cup Fundex',
 		desc: "Only allows Pok&eacute;mon that can evolve and don't have any prior evolutions (but allows Bad EGG)",
 		ruleset: ['Max Level = 5'],
 		onValidateSet(set) {
