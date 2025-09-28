@@ -209,7 +209,7 @@ export const Tags: {[id: string]: TagData} = {
 	},
 	fundexuber: {
 		name: "Fundex Uber",
-		speciesFilter: species => species.isNonstandard === 'Fundex',
+		speciesFilter: species => species.tier === 'Fundex Uber',
 	},
 	fundexou: {
 		name: "Fundex OU",
