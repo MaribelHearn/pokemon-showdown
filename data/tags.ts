@@ -207,9 +207,17 @@ export const Tags: {[id: string]: TagData} = {
 		name: "CAP NFE",
 		speciesFilter: species => species.tier === 'CAP NFE',
 	},
-	fundextier: {
-		name: "Fundex Tier",
+	fundexuber: {
+		name: "Fundex Uber",
 		speciesFilter: species => species.isNonstandard === 'Fundex',
+	},
+	fundexou: {
+		name: "Fundex OU",
+		speciesFilter: species => species.tier === 'Fundex OU',
+	},
+	fundexlc: {
+		name: "Fundex LC",
+		speciesFilter: species => species.tier === 'Fundex LC',
 	},
 	ag: {
 		name: "AG",
