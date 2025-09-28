@@ -19909,7 +19909,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (this.field.isWeather('hail')) move.accuracy = true;
 		},
 		onModifyType(move, pokemon) {
-			if (pokemon.species.baseSpecies === 'Achi Cirno') {
+			if (pokemon.species.forme === 'Achi') {
 				move.type = 'Fire';
 			}
 		},
