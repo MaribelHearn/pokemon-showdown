@@ -20108,7 +20108,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		multiaccuracy: true,
 		target: "normal",
 		type: "Fighting",
-		audio: true,
 		zMove: {basePower: 120},
 		maxMove: {basePower: 140},
 		secondary: null,
@@ -20627,7 +20626,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		drain: [1, 2],
 		target: "scripted",
 		type: "Fighting",
-		audio: true,
 		secondary: null,
 		damageCallback(pokemon) {
 			const lastDamagedBy = pokemon.getLastDamagedBy(true);
@@ -22990,7 +22988,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		isZ: "maribiumz",
 		target: "self",
 		type: "???",
-		audio: true,
 		secondary: null,
 		selfBoost: {
 			boosts: {

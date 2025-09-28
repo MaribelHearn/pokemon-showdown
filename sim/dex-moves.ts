@@ -259,9 +259,6 @@ export interface MoveData extends EffectData, MoveEventMethods, HitEffect {
 	noSketch?: boolean;
 	stallingMove?: boolean;
 	baseMove?: string;
-	// Fundex
-	// ------
-	audio?: boolean;
 }
 
 export type ModdedMoveData = MoveData | Partial<Omit<MoveData, 'name'>> & {

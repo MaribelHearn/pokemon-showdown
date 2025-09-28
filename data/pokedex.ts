@@ -18463,7 +18463,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Grass", "Flying"],
 		gender: "F",
 		baseStats: {hp: 90, atk: 75, def: 100, spa: 115, spd: 100, spe: 70},
-		abilities: {0: "Pressure", H: "Lightning Rod"},
+		abilities: {0: "Delta Stream", H: "Lightning Rod"},
 		weightkg: 90,
 		color: "Red",
 		tags: ["Fundex Non-Legendary"],

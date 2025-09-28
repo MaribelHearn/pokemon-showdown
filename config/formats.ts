@@ -25,10 +25,17 @@ export const Formats: FormatList = [
 		section: "Fundex",
 	},
     {
-		name: "[Gen 8] Fundex",
+		name: "[Gen 8] Fundex Uber",
 		mod: 'gen8',
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		unbanlist: ['Fundex'],
+	},
+    {
+		name: "[Gen 8] Fundex OU",
+		mod: 'gen8',
+		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		banlist: ['Fundex Uber', 'All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 		unbanlist: ['Fundex'],
 	},
 	{
