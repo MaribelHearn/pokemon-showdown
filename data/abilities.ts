@@ -4512,21 +4512,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: -4,
 	},
     // Fundex
-    boostpower: {
-        onResidualOrder: 26,
-		onResidualSubOrder: 1,
-		onResidual(pokemon) {
-			if (this.effectState.switchingIn) {
-				pokemon.activeTurns += 1;
-			}
-			else if (pokemon.activeTurns % 2 == 0) {
-				this.boost({atk: 1});
-			}
-		},
-		name: "Boost Power",
-		rating: 4.5,
-		num: 2000,
-    },
 	insanity: {
 		// This should be applied directly to the stat as opposed to chaining with the others
 		onModifyAtkPriority: 5,

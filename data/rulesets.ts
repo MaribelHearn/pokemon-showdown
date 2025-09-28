@@ -526,6 +526,21 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 		},
 	},
+	fundexlittlecup: {
+		effectType: 'ValidatorRule',
+		name: 'Fundex Little Cup',
+		desc: "Only allows Pok&eacute;mon that can evolve and don't have any prior evolutions (but allows Bad EGG)",
+		ruleset: ['Max Level = 5'],
+		onValidateSet(set) {
+			const species = this.dex.species.get(set.species || set.name);
+			if (species.prevo && this.dex.species.get(species.prevo).gen <= this.gen) {
+				return [set.species + " isn't the first in its evolution family."];
+			}
+			if (!species.nfe && species.name !== "Bad EGG") {
+				return [set.species + " doesn't have an evolution family."];
+			}
+		},
+	},
 	blitz: {
 		effectType: 'Rule',
 		name: 'Blitz',

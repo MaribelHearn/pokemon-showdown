@@ -1919,11 +1919,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
     // Fundex
-    boostpower: {
-		name: "Boost Power",
-        desc: "This Pokemon's Attack is raised by 1 stage at the end of each full turn it has been on the field.",
-		shortDesc: "This Pokemon's Attack is raised 1 stage at the end of each full turn on the field.",
-    },
 	insanity: {
 		name: "Insanity",
         desc: "This Pokemon's Special Attack is multiplied by 1.5 and the accuracy of its special attacks is multiplied by 0.8.",

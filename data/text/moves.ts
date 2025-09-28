@@ -7014,7 +7014,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		shortDesc: "50% chance to confuse the target.",
 	},
 	pingas: {
-		name: "Pingas",
+		name: "PINGAS",
 		desc: "Power doubles if the target switched in this turn.",
 		shortDesc: "Power doubles if target switched in this turn.",
 

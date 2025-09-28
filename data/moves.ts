@@ -20352,10 +20352,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	pingas: {
 		num: 2029,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Physical",
-		name: "Pingas",
-		pp: 20,
+		name: "PINGAS",
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1, bypasssub: 1, sound: 1},
 		target: "normal",
@@ -20363,7 +20363,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		basePowerCallback(pokemon, target, move) {
 			if (target.newlySwitched) {
-				this.add('-activate', target, 'move: Pingas');
+				this.add('-activate', target, 'move: PINGAS');
 				return move.basePower * 2;
 			}
 			return move.basePower;
@@ -20540,7 +20540,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "u mad bro",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1, sound: 1, bypasssub: 1},
+		flags: {protect: 1, mirror: 1, allyanim: 1, sound: 1, bypasssub: 1},
 		target: "normal",
 		type: "Dark",
 		volatileStatus: 'confusion',
@@ -20905,7 +20905,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Mishaguji-sama",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, bullet: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1},
 		target: "allAdjacent",
 		type: "Ground",
 		secondary: {
@@ -22567,7 +22567,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Off Waves",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, distance: 1},
+		flags: {protect: 1, mirror: 1, pulse: 1},
 		target: "any",
 		type: "Psychic",
 		ohko: true,
