@@ -156,6 +156,12 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 		},
 	},
+	fundex: {
+		effectType: 'ValidatorRule',
+		name: 'Fundex',
+		desc: "Allow Fundex Pokémon to be used in the tier.",
+		unbanlist: ['Fundex'],
+	},
 	obtainable: {
 		effectType: 'ValidatorRule',
 		name: 'Obtainable',
