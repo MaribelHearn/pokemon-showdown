@@ -76,8 +76,9 @@ export const Formats: FormatList = [
     {
 		name: "[Gen 8] National Fundex",
 		mod: 'gen8',
-		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		unbanlist: ['Fundex'],
 	},
     {
 		name: "[Gen 8] Fundex Pure Hackmons",
@@ -131,7 +132,7 @@ export const Formats: FormatList = [
 		desc: `A metagame decided by wagging your finger!`,
 
 		mod: 'gen8',
-		ruleset: ['Standard NatDex', '+Fundex', 'Dynamax Clause'],
+		ruleset: ['Standard Fundex', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
 		onValidateSet(set) {
             if (set.moves.length !== 1 || this.dex.moves.get(set.moves[0]).id !== 'metronome') {
