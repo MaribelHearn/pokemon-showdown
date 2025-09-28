@@ -134,13 +134,10 @@ export const Rulesets: {[k: string]: FormatData} = {
 		name: 'Standard Fundex',
 		desc: "The standard ruleset for all Fundex tiers",
 		ruleset: [
-			'Obtainable', '+Unobtainable', '+Past', 'Sketch Gen 8 Moves', 'Team Preview', 'Nickname Clause', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause',
+			'Obtainable', '+Unobtainable', '+Past', '+Fundex', 'Sketch Gen 8 Moves', 'Team Preview', 'Nickname Clause', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause',
 		],
 		onValidateSet(set) {
 			const species = this.dex.species.get(set.species);
-			if (species.tier.startsWith("Fundex")) {
-				return;
-			}
 			if (species.tier === "Unreleased") {
 				const basePokemon = this.toID(species.baseSpecies);
 				if (this.ruleTable.has(`+pokemon:${species.id}`) || this.ruleTable.has(`+basepokemon:${basePokemon}`)) {
