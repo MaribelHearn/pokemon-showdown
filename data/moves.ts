@@ -22917,7 +22917,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Massive Damage",
 		pp: 1,
 		priority: 0,
-		flags: {},
+		flags: {contact: 1},
 		isZ: "crabiumz",
 		target: "allAdjacent",
 		type: "Ground",

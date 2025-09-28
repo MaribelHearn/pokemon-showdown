@@ -27,25 +27,22 @@ export const Formats: FormatList = [
     {
 		name: "[Gen 8] Fundex Uber",
 		mod: 'gen8',
-		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
-		unbanlist: ['Fundex'],
 	},
     {
 		name: "[Gen 8] Fundex OU",
 		mod: 'gen8',
-		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['Fundex Uber', 'All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
-		unbanlist: ['Fundex OU'],
 	},
 	{
 		name: '[Gen 8] Fundex LC',
 		desc: `Only pre-evolutions are allowed (and Bad EGG)`,
 
 		mod: 'gen8',
-		ruleset: ['Little Cup Fundex', 'Standard NatDex', 'Dynamax Clause'],
+		ruleset: ['Little Cup Fundex', 'Standard Fundex', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
-		unbanlist: ['Fundex'],
 	},
 	{
 		section: "Fundex Doubles",
@@ -65,9 +62,8 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		gameType: 'doubles',
-		ruleset: ['Standard NatDex', 'Dynamax Clause'],
+		ruleset: ['Standard Fundex', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
-		unbanlist: ['Fundex'],
 		onValidateSet(set) {
             if (set.moves.length !== 1 || this.dex.moves.get(set.moves[0]).id !== 'metronome') {
                 return [`${set.name || set.species} has illegal moves.`, `(Pok\u00e9mon can only have one Metronome in their moveset)`];
@@ -80,9 +76,8 @@ export const Formats: FormatList = [
     {
 		name: "[Gen 8] National Fundex",
 		mod: 'gen8',
-		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
-		unbanlist: ['Fundex'],
 	},
     {
 		name: "[Gen 8] Fundex Pure Hackmons",
@@ -95,9 +90,8 @@ export const Formats: FormatList = [
 		desc: `Weather and terrains are permanent until cancelled, like in Generation 5 and older.`,
 
 		mod: 'gen8',
-		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
-		unbanlist: ['Fundex'],
 	},
 	{
 		name: "[Gen 8] Fundex Random",
@@ -107,6 +101,7 @@ export const Formats: FormatList = [
 		team: 'randomFC',
 		ruleset: ['HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause'],
 		banlist: ['All Pokemon'],
+		unbanlist: ['Fundex'],
 	},
 	{
 		name: "[Gen 8] 1v1 Fundex Random",
@@ -119,6 +114,7 @@ export const Formats: FormatList = [
 			'Obtainable', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Accuracy Moves Clause', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause', 'Endless Battle Clause',
 		],
 		banlist: ['All Pokemon'],
+		unbanlist: ['Fundex'],
 	},
 	{
 		name: "[Gen 8] Fundex Cup",
@@ -128,15 +124,15 @@ export const Formats: FormatList = [
 		team: 'randomFCup',
 		ruleset: ['Obtainable', 'HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause'],
 		banlist: ['All Pokemon'],
+		unbanlist: ['Fundex'],
 	},
 	{
 		name: '[Gen 8] Fundex Metronome',
 		desc: `A metagame decided by wagging your finger!`,
 
 		mod: 'gen8',
-		ruleset: ['Standard NatDex', 'Dynamax Clause'],
+		ruleset: ['Standard Fundex', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
-		unbanlist: ['Fundex'],
 		onValidateSet(set) {
             if (set.moves.length !== 1 || this.dex.moves.get(set.moves[0]).id !== 'metronome') {
                 return [`${set.name || set.species} has illegal moves.`, `(Pok\u00e9mon can only have one Metronome in their moveset)`];
