@@ -7585,7 +7585,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     },
     winner: {
 		isNonstandard: "Fundex",
-		tier: "Fundex OU",
+		tier: "Fundex Uber",
     },
     satori: {
 		isNonstandard: "Fundex",
