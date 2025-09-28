@@ -134,11 +134,13 @@ export const Rulesets: {[k: string]: FormatData} = {
 		name: 'Standard Fundex',
 		desc: "The standard ruleset for all Fundex tiers",
 		ruleset: [
-			'Fundex', 'Obtainable', '+Unobtainable', '+Past', 'Sketch Gen 8 Moves', 'Team Preview', 'Nickname Clause', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause',
+			'Obtainable', '+Unobtainable', '+Past', 'Sketch Gen 8 Moves', 'Team Preview', 'Nickname Clause', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause',
 		],
 		onValidateSet(set) {
-			// These Pokemon are still unobtainable
 			const species = this.dex.species.get(set.species);
+			if (species.tier.startsWith("Fundex")) {
+				return;
+			}
 			if (species.tier === "Unreleased") {
 				const basePokemon = this.toID(species.baseSpecies);
 				if (this.ruleTable.has(`+pokemon:${species.id}`) || this.ruleTable.has(`+basepokemon:${basePokemon}`)) {
@@ -155,12 +157,6 @@ export const Rulesets: {[k: string]: FormatData} = {
 				return [`${set.name}'s item ${item.name} does not exist in Gen ${this.dex.gen}.`];
 			}
 		},
-	},
-	fundex: {
-		effectType: 'ValidatorRule',
-		name: 'Fundex',
-		desc: "Allow Fundex Pokémon to be used in the tier.",
-		unbanlist: ['Fundex'],
 	},
 	obtainable: {
 		effectType: 'ValidatorRule',
