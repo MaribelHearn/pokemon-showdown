@@ -132,7 +132,7 @@ export const Formats: FormatList = [
 		desc: `Only pre-evolutions are allowed (and Bad EGG)`,
 
 		mod: 'gen8',
-		ruleset: ['Fundex Little Cup', 'Standard NatDex', 'Dynamax Clause'],
+		ruleset: ['Little Cup Fundex', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
 		unbanlist: ['Fundex'],
 	},
