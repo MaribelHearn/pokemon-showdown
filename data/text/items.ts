@@ -2338,14 +2338,6 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Trinity Stone",
         desc: "If held by Zapmolcuno, boosts Fire/Electric/Ice attacks by x1.5.",
     },
-    /*warpedmirror: {
-        name: "Warped Mirror",
-		desc: "Holder's use of Trick Room lasts 8 turns instead of 5.",
-    },
-    handheldfan: {
-        name: "Handheld Fan",
-		desc: "Holder's use of Tailwind lasts 6 turns instead of 3.",
-    },*/
     natureengine: {
         name: "Nature Engine",
 		desc: "If held by a Grass-type Fusion, boosts its Special Attack and Speed by x1.5.",
@@ -2362,18 +2354,6 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Venom Engine",
 		desc: "If held by a Poison-type Fusion, boosts its Attack and Special Attack by x1.5.",
     },
-    /*redpill: {
-        name: "Red Pill",
-		desc: "If held by Dr. Mario, restores 1/4 max HP and boosts Attack by 1 stage when at 1/4 max HP or less.",
-    },
-    bluepill: {
-        name: "Blue Pill",
-		desc: "If held by Dr. Mario, restores 1/4 max HP and boosts Defense by 1 stage when at 1/4 max HP or less.",
-    },
-    yellowpill: {
-        name: "Yellow Pill",
-		desc: "If held by Dr. Mario, restores 1/4 max HP and boosts Speed by 1 stage when at 1/4 max HP or less.",
-    },*/
     unknowngem: {
         name: "Unknown Gem",
 		desc: "Holder's first successful ???-type attack will have 1.3x power. Single use.",
@@ -2382,10 +2362,6 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Mystery Plate",
 		desc: "Holder's ???-type attacks have 1.2x power. Judgment is ??? type.",
     },
-    /*moodring: {
-        name: "Mood Ring",
-		desc: "On switch-in, boosts and decreases a random stat by 1 stage.",
-    },*/
     plasmacane: {
         name: "Plasma Cane",
 		desc: "If held by Dennis, this item allows him to Mega Evolve in battle.",
@@ -2394,8 +2370,8 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Triforce",
 		desc: "If held by Ganondorf, this item allows him to Mega Evolve in battle.",
     },
-    vegetite: {
-        name: "Vegetite",
+    saiyangene: {
+        name: "Saiyan Gene",
 		desc: "If held by Vegeta, this item allows him to Mega Evolve in battle.",
     },
     gokuite: {

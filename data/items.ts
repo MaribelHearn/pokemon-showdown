@@ -7249,9 +7249,9 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2014,
         gen: 8,
     },
-    vegetite: {
-        name: "Vegetite",
-        spritenum: 2015,
+    saiyangene: {
+        name: "Saiyan Gene",
+        spritenum: 741,
         megaStone: "Super Saiyan Vegeta",
         megaEvolves: "Vegeta",
         itemUser: ["Vegeta"],

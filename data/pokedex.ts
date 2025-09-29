@@ -16876,7 +16876,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Yellow",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Vegetite",
+		requiredItem: "Saiyan Gene",
 	},
 	droctogonapus: {
 		num: 2027,
