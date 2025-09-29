@@ -3837,8 +3837,8 @@ export const PokedexText: {[k: string]: PokedexText} = {
     shingyokupriestess: {
         name: "Shingyoku-Priestess",
     },
-    shingyokuorb: {
-        name: "Shingyoku-Orb",
+    shingyokupriest: {
+        name: "Shingyoku-Priest",
     },
     sariel: {
         name: "Sariel",

@@ -7699,7 +7699,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Fundex Uber",
 		natDexTier: "Fundex Uber",
     },
-    shingyokuorb: {
+    shingyokupriest: {
 		isNonstandard: "Fundex",
 		tier: "Fundex Uber",
 		natDexTier: "Fundex Uber",
