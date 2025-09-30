@@ -87672,6 +87672,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			corrupt: ["8L1"],
 			skyattack: ["8L1"],
 			watergun: ["8L1"],
+			watergun2: ["8L1"],
 			hiddenpower: ["8M"],
 			hyperbeam: ["8M"],
 			protect: ["8M"],
