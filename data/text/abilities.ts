@@ -2037,7 +2037,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		block: "  You probably thought this deer was alive...",
 		transform: "Nope! It's just [SPECIES]",
 	},
-	bloodbond: {
+	/*bloodbond: {
 		name: "Blood Bond",
 		desc: "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",
 		shortDesc: "This Pokemon's damaging moves hit twice. The second hit has its damage quartered.",
@@ -2062,7 +2062,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Hot Blooded",
 		desc: "If this Pokemon is burned, it restores 1/8 of its maximum HP, rounded down, at the end of each turn instead of losing HP.",
 		shortDesc: "This Pokemon is healed by 1/8 of its max HP each turn when burned; no HP loss.",
-	},
+	},*/
     shorttempered: {
 		name: "Short-Tempered",
 		desc: "If this Pokemon is Wiggler, it changes to Wiggler-Angry when it is hit by a contact move.",
@@ -2070,7 +2070,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "[POKEMON] became enraged!",
     },
-	squidkid: {
+	/*squidkid: {
 		name: "Squid Kid",
 		desc: "If this Pokemon is Inkling, it changes to Kid before attempting to use an ink-based move, and changes to Squid before attempting to use a protection move.",
 		shortDesc: "If Inkling, changes to Kid before ink-based attacks and Squid before protection moves.",
@@ -2104,17 +2104,17 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Glacial Force",
 		desc: "This Pokemon's Normal-type moves become Ice-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 		shortDesc: "This Pokemon's Normal-type moves become Ice type and have 1.2x power.",
-    },
+    },*/
     formshift: {
         name: "Form Shift",
 		desc: "Transforms into the Tank Head form at the end of the turn, the Magic Head at the end of the next turn, then back to the base form, repeating endlessly until fainted or switched out.",
 		shortDesc: "Changes heads at the end of every turn.",
     },
-    firmcarry: {
+    /*firmcarry: {
         name: "Firm Carry",
 		desc: "If this Pokemon is holding an item, its Speed is doubled. This boost is lost if it loses its item or Ability.",
 		shortDesc: "Speed is doubled with a held item; boost is lost if it loses its item/Ability.",
-    },
+    },*/
 	incomprehensible: {
 		name: "Incomprehensible",
 		desc: "In the battle log, this Pokemon does not announce which move it is using. The move animation is always that of Dark Pulse.",
@@ -2127,7 +2127,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "  The narrow miss empowered [POKEMON]!",
 	},
-    dragonvein: {
-        name: "Dragon Vein",
-    }
+	glitchcity: {
+		name: "Glitch City",
+		shortDesc: "On switch-in, this Pokemon summons Glitchy Terrain.",
+	}
 };

@@ -17445,7 +17445,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["???", "Normal"],
 		gender: "N",
 		baseStats: {hp: 97, atk: 137, def: 43, spa: 79, spd: 67, spe: 89},
-		abilities: {0: "Normalize", 1: "Download", H: "Corruption"},
+		abilities: {0: "Glitch City", 1: "Normalize", H: "Corruption"},
 		weightkg: 1590.8,
 		color: "Gray",
 		tags: ["Fundex Non-Legendary"],

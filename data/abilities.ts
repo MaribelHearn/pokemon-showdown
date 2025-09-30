@@ -5191,9 +5191,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         num: 2037,
 		// Ability activation located in battle-actions.ts
 	},
-    /*dragonvein: {
-        name: "Dragon Vein",
-        rating: 3,
-        num: 2038,
-    }*/
+	glitchcity: {
+		onStart(source) {
+			this.field.setTerrain('glitchyterrain', source, this.effect);
+		},
+		name: "Glitch City",
+		rating: 4,
+		num: 2038,
+	},
 };
