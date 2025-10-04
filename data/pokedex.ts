@@ -18510,7 +18510,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Ruscus",
 		types: ["Rock", "Dragon"],
 		genderRatio: {M: 0.5, F: 0.5},
-		baseStats: {hp: 90, atk: 100, def: 80, spa: 100, spd: 50, spe: 30},
+		baseStats: {hp: 85, atk: 85, def: 75, spa: 85, spd: 45, spe: 30},
 		abilities: {0: "Pressure", 1: "Sturdy", H: "Regenerator"},
 		weightkg: 90,
 		color: "Blue",
