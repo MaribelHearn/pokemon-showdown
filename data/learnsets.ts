@@ -94984,6 +94984,7 @@ tentaquil: {
 			knockoff: ["8M"],
 		},
 	},
+	/*smithy: {
 		learnset: {
 			sledge: ["8L1"],
 			magnum: ["8L1"],
