@@ -7504,7 +7504,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	hardreset: {
 		name: "Hard Reset",
-		shortDesc: "Clears screens, terrain, weather, hazards, statuses and stat changes.",
+		shortDesc: "Clears field effects, statuses and stat changes.",
 		activate: "  Your PC ran into a problem and needs to restart.",
 	},
 	holdit: {
