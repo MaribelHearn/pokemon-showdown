@@ -17586,7 +17586,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Blue",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["Samus-Armored"],
+		otherFormes: ["Samus"],
 		formeOrder: ["Zero Suit Samus", "Samus"],
 	},
 	samus: {

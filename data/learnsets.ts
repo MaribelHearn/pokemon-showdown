@@ -88201,7 +88201,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			playrough: ["8M"],
 		},
 	},
-	samus: {
+	zerosuitsamus: {
 		learnset: {
 			firelash: ["8L1"],
 			plasmawhip: ["8L1"],
