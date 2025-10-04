@@ -87430,7 +87430,6 @@ tentaquil: {
 			amnesia: ["8L1"],
 			pound: ["8L1"],
 			leaftornado: ["8L1"],
-			flash: ["8L1"],
 			workup: ["8M"],
 			hiddenpower: ["8M"],
 			hyperbeam: ["8M"],
@@ -87525,7 +87524,7 @@ tentaquil: {
 	},
 	trollface: {
 		learnset: {
-			umadbro?: ["8L1"],
+			umadbro: ["8L1"],
 			taunt: ["8L1", "8M"],
 			torment: ["8L1"],
 			swagger: ["8L1"],
@@ -93498,7 +93497,6 @@ tentaquil: {
 			malfunction: ["8L1"],
 			programfreeze: ["8L1"],
 			bittorrent: ["8L1"],
-			programfreeze: ["8L1"],
 			hiddenpower: ["8M"],
 			protect: ["8M"],
 			safeguard: ["8M"],
