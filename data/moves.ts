@@ -22723,7 +22723,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 		},
 	},
-	sledge: {
+	/*sledge: {
 		num: 2136,
 		accuracy: 100,
 		basePower: 100,
@@ -22794,7 +22794,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		overrideOffensiveStat: 'def',
 		overrideDefensiveStat: 'atk',
 		secondary: null,
-	},
+	},*/
 	unrealunraveling: {
 		num: 3000,
 		accuracy: true,
