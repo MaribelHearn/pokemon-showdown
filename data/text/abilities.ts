@@ -2065,8 +2065,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},*/
     shorttempered: {
 		name: "Short-Tempered",
-		desc: "If this Pokemon is Wiggler, it changes to Wiggler-Angry when it is hit by a contact move.",
-		shortDesc: "If Wiggler, changes to Wiggler-Angry on contact.",
+		desc: "If this Pokemon is Wiggler, it changes to Angry Wiggler when it is hit by a contact move.",
+		shortDesc: "If Wiggler, changes to Angry Wiggler on contact.",
 
 		activate: "[POKEMON] became enraged!",
     },
