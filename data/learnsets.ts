@@ -91533,7 +91533,6 @@ tentaquil: {
 			heartswap: ["8L1"],
 			flail: ["8L1"],
 			topsyturvy: ["8L1"],
-			takeheart: ["8L1"],
 			psychic: ["8L1", "8M"],
 			hiddenpower: ["8M"],
 			hyperbeam: ["8M"],
