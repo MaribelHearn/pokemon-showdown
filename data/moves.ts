@@ -21861,7 +21861,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, arrow: 1, distance: 1},
 		target: "any",
 		type: "Fire",
-		secondary: null,
+		critRatio: 2,
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
 	},
 	shockingarrow: {
 		num: 2099,
@@ -21874,7 +21878,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, arrow: 1, distance: 1},
 		target: "any",
 		type: "Electric",
-		secondary: null,
+		critRatio: 2,
+		secondary: {
+			chance: 10,
+			status: 'par',
+		},
 	},
 	icyarrow: {
 		num: 2100,
@@ -21887,7 +21895,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, arrow: 1, distance: 1},
 		target: "any",
 		type: "Ice",
-		secondary: null,
+		critRatio: 2,
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
 	},
 	bullseye: {
 		num: 2101,

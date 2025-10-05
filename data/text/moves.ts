@@ -7358,19 +7358,23 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	arrowrain: {
 		name: "Arrow Rain",
-		shortDesc: "No additional effect.",
+		desc: "Has a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio.",
 	},
 	flamingarrow: {
 		name: "Flaming Arrow",
-		shortDesc: "No additional effect.",
+		desc: "Has a higher chance for a critical hit. Has a 10% chance to burn the target.",
+		shortDesc: "High critical hit ratio. 10% chance to burn.",
 	},
 	shockingarrow: {
 		name: "Shocking Arrow",
-		shortDesc: "No additional effect.",
+		desc: "Has a higher chance for a critical hit. Has a 10% chance to paralyze the target.",
+		shortDesc: "High critical hit ratio. 10% chance to paralyze.",
 	},
 	icyarrow: {
 		name: "Icy Arrow",
-		shortDesc: "No additional effect.",
+		desc: "Has a higher chance for a critical hit. Has a 10% chance to freeze the target.",
+		shortDesc: "High critical hit ratio. 10% chance to freeze.",
 	},
 	bullseye: {
 		name: "Bullseye",
