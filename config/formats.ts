@@ -42,7 +42,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		ruleset: ['Little Cup Fundex', 'Standard Fundex', 'Dynamax Clause'],
-		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
+		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet', 'Dragon Rage', 'Sonic Boom'],
 	},
 	{
 		section: "Fundex Doubles",

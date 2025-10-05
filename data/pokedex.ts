@@ -18515,6 +18515,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 90,
 		color: "Blue",
 		tags: ["Fundex Non-Legendary"],
+		evos: ["Ryuuguu"],
 		eggGroups: ["Undiscovered"],
 	},
 	ryuuguu: {
@@ -18527,6 +18528,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 150,
 		color: "Blue",
 		tags: ["Fundex Non-Legendary"],
+		prevo: "Ryuuguu",
+		evoLevel: 45,
 		eggGroups: ["Undiscovered"],
 	},
 	weepinmeleon: {
