@@ -21931,6 +21931,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, arrow: 1, distance: 1},
 		target: "any",
 		type: "Psychic",
+		ignoreImmunity: true,
 		secondary: null,
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
