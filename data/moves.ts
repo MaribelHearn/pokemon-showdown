@@ -21793,7 +21793,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		target: "allAdjacent",
 		type: "Steel",
-		secondary: null,
+		secondary: {
+			chance: 10,
+			boosts: {
+				def: -1,
+			},
+		},
 	},
     remotemissile: {
         num: 2094,
@@ -21973,7 +21978,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Laser Beam",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, beam: 1, distance: 1},
+		flags: {protect: 1, defrost: 1, mirror: 1, beam: 1, distance: 1},
 		target: "normal",
 		type: "Electric",
 		recoil: [33, 100],
@@ -22235,12 +22240,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, pulse: 1, beam: 1},
 		target: "normal",
 		type: "Dragon",
-		secondary: {
-			chance: 10,
-			boosts: {
-				spd: -1,
-			},
-		},
+		ignoreDefensive: true,
+		ignoreEvasion: true,
 	},
 	deathegg: {
 		num: 2119,
@@ -22525,7 +22526,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "HOLD IT!",
 		pp: 10,
 		priority: 3,
-		flags: {protect: 1, mirror: 1, sound: 1},
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1},
 		target: "normal",
 		type: "Fighting",
 		secondary: {

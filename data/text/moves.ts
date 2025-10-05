@@ -7339,7 +7339,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	overheadslash: {
 		name: "Overhead Slash",
-		shortDesc: "No additional effect.",
+		desc: "Has a 10% chance to lower the target's Defense by 1 stage.",
+		shortDesc: "10% chance to lower the target's Defense by 1.",
 	},
     remotemissile: {
         name: "Remote Missile",
@@ -7394,7 +7395,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	plasmaburst: {
         name: "Plasma Burst",
 		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
-		shortDesc: "30% chance to burn the target. Thaws target.",
+		shortDesc: "30% chance to burn the target. Thaws user.",
 	},
 	laserbeam: {
 		name: "Laser Beam",
@@ -7467,8 +7468,8 @@ export const MovesText: {[k: string]: MoveText} = {
     },
 	galickgun: {
 		name: "Galick Gun",
-		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
-		shortDesc: "10% chance to lower the target's Sp. Def by 1.",
+		desc: "Ignores the target's stat stage changes, including evasiveness.",
+		shortDesc: "Ignores the target's stat stage changes.",
 	},
 	deathegg: {
 		name: "Death Egg",
