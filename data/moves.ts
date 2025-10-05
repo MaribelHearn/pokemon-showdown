@@ -20225,7 +20225,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Hourai Elixir",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, snatch: 1, heal: 1},
+		flags: {protect: 1, mirror: 1, snatch: 1, heal: 1, allyanim: 1},
 		heal: [1, 3],
 		target: "adjacentAllyOrSelf",
 		type: "Poison",
