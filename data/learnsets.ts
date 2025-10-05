@@ -91650,7 +91650,7 @@ tentaquil: {
 			sacredsword: ["8L1"],
 			zenheadbutt: ["8L1", "8M"],
 			flyingpress: ["8L1"],
-			superhumanbyakuren: ["8L1"],
+			superhuman: ["8L1"],
 			steelroller: ["8L1"],
 			workup: ["8M"],
 			hiddenpower: ["8M"],
