@@ -21936,6 +21936,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
 		},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Dark') return 1;
+		},
 	},
     plasmawhip: {
         num: 2103,
