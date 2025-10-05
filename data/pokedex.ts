@@ -18528,7 +18528,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 150,
 		color: "Blue",
 		tags: ["Fundex Non-Legendary"],
-		prevo: "Ryuuguu",
+		prevo: "Ruscus",
 		evoLevel: 45,
 		eggGroups: ["Undiscovered"],
 	},

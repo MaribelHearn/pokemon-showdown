@@ -7384,8 +7384,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	lightarrow: {
 		name: "Light Arrow",
-		desc: "This move becomes a special attack if the user's Special Attack is greater than its Attack.",
-		shortDesc: "Special if user's Sp. Atk > Atk.",
+		desc: "This move becomes a special attack if the user's Special Attack is greater than its Attack. This move's type effectiveness against Dark is changed to be super effective no matter what this move's type is.",
+		shortDesc: "Special if user's Sp. Atk > Atk. Super effective on Dark.",
 	},
     plasmawhip: {
         name: "Plasma Whip",
