@@ -20235,9 +20235,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 5,
 			onSetStatus(status, target, source, effect) {
-				if ((effect as Move)?.status && target === source) {
-					this.add('-immune', source, '[from] move: Hourai Elixir');
+				if (!effect || !source) return;
+				if (effect.id === 'yawn') return;
+				if (effect.effectType === 'Move' && effect.infiltrates && target !== source) return;
+				this.debug('interrupting setStatus');
+				if (effect.id === 'synchronize' || (effect.effectType === 'Move' && !effect.secondaries)) {
+					this.add('-activate', target, 'move: Hourai Elixir');
 				}
+				return null;
 			},
 			onTryAddVolatile(status, target, source, effect) {
 				if (!effect || !source || target !== source) return;
