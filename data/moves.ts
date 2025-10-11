@@ -20233,19 +20233,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 		//sideCondition: 'safeguard',
 		secondary: null,
 		condition: {
+			duration: 5,
 			onSetStatus(status, target, source, effect) {
-				if ((effect as Move)?.status) {
-					this.add('-immune', target, '[from] move: Hourai Elixir');
+				if ((effect as Move)?.status && target === source) {
+					this.add('-immune', source, '[from] move: Hourai Elixir');
 				}
 			},
-			/*onTryAddVolatile(status, target, source, effect) {
-				if (!effect || !source) return;
-				if (effect.effectType === 'Move' && effect.infiltrates && !target.isAlly(source)) return;
-				if ((status.id === 'confusion' || status.id === 'yawn') && target !== source) {
-					if (effect.effectType === 'Move' && !effect.secondaries) this.add('-activate', target, 'move: Hourai Elixir');
+			onTryAddVolatile(status, target, source, effect) {
+				if (!effect || !source || target !== source) return;
+				if (effect.effectType === 'Move' && effect.infiltrates) return;
+				if ((status.id === 'confusion' || status.id === 'yawn')) {
+					if (effect.effectType === 'Move' && !effect.secondaries) this.add('-activate', source, 'move: Hourai Elixir');
 					return null;
 				}
-			},*/
+			},
 		},
 	},
 	explod: {
