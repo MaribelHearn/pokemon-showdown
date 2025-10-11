@@ -6988,6 +6988,9 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Hourai Elixir",
 		desc: "The target restores 1/3 of its maximum HP, rounded half up. The target cannot have non-volatile status conditions inflicted on them by other Pokemon. The target cannot become affected by Yawn but can fall asleep from its effect.",
 		shortDesc: "Heals target by 33% max HP and blocks status.",
+
+		activate: "  The Hourai Elixir prevented the status effect!",
+		end: "  [POKEMON]'s Hourai Elixir wore off!",
 	},
 	explod: {
 		name: "explod",

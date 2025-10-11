@@ -20252,6 +20252,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 					return null;
 				}
 			},
+			onEnd(source) {
+				this.add('-end', source, 'Hourai Elixir');
+			}
 		},
 	},
 	explod: {
