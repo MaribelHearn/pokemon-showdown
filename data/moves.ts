@@ -20230,14 +20230,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "adjacentAllyOrSelf",
 		type: "Poison",
 		zMove: {effect: 'clearnegativeboost'},
-		//sideCondition: 'safeguard',
+		volatileStatus: 'houraielixir',
 		secondary: null,
 		condition: {
 			duration: 5,
 			onSetStatus(status, target, source, effect) {
 				if (!effect || !source) return;
 				if (effect.id === 'yawn') return;
-				if (effect.effectType === 'Move' && effect.infiltrates && target !== source) return;
+				if (effect.effectType === 'Move' && effect.infiltrates) return;
 				this.debug('interrupting setStatus');
 				if (effect.id === 'synchronize' || (effect.effectType === 'Move' && !effect.secondaries)) {
 					this.add('-activate', target, 'move: Hourai Elixir');
@@ -20245,9 +20245,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return null;
 			},
 			onTryAddVolatile(status, target, source, effect) {
-				if (!effect || !source || target !== source) return;
+				if (!effect || !source) return;
 				if (effect.effectType === 'Move' && effect.infiltrates) return;
-				if ((status.id === 'confusion' || status.id === 'yawn')) {
+				if (status.id === 'confusion' || status.id === 'yawn') {
 					if (effect.effectType === 'Move' && !effect.secondaries) this.add('-activate', source, 'move: Hourai Elixir');
 					return null;
 				}
