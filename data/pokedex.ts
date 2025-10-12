@@ -17705,7 +17705,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["???"],
 		gender: "M",
 		baseStats: {hp: 90, atk: 90, def: 90, spa: 90, spd: 90, spe: 90},
-		abilities: {0: "Dancer", 1: "Soundproof", H: "Illusion"},
+		abilities: {0: "Dancer", H: "Illusion"},
 		weightkg: 45,
 		color: "White",
 		tags: ["Fundex Non-Legendary"],
