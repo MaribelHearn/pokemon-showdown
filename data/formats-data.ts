@@ -7126,6 +7126,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Fundex OU",
 		natDexTier: "Fundex OU",
 	},
+	babyluigi: {
+		isNonstandard: "Fundex",
+		tier: "Fundex LC",
+		natDexTier: "Fundex LC",
+	},
 	luigi: {
 		isNonstandard: "Fundex",
 		tier: "Fundex OU",
@@ -7754,6 +7759,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Fundex OU",
 		natDexTier: "Fundex OU",
     },
+	babymario: {
+		isNonstandard: "Fundex",
+		tier: "Fundex LC",
+		natDexTier: "Fundex LC",
+	},
     mario: {
 		isNonstandard: "Fundex",
 		tier: "Fundex OU",

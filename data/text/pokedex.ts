@@ -3495,6 +3495,9 @@ export const PokedexText: {[k: string]: PokedexText} = {
     marisa: {
         name: "Marisa",
     },
+	babyluigi: {
+		name: "Baby Luigi",
+	},
     luigi: {
         name: "Luigi",
     },
@@ -3870,13 +3873,16 @@ export const PokedexText: {[k: string]: PokedexText} = {
     nyancat: {
         name: "Nyan Cat",
     },
+	babymario: {
+		name: "Baby Mario",
+	},
     mario: {
         name: "Mario",
     },
-    mariopaper: {
+    papermario: {
         name: "Paper Mario",
     },
-    mariomalleo: {
+    malleo: {
         name: "Malleo",
     },
     boo: {
