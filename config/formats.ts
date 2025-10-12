@@ -55,6 +55,28 @@ export const Formats: FormatList = [
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 	},
 	{
+		name: "[Gen 8] Fundex Cup Doubles",
+		desc: `Randomized teams of level-balanced Fundex Pok&eacute;mon with legal sets.`,
+
+		mod: 'gen8',
+		gameType: 'doubles',
+		team: 'randomFCup',
+		ruleset: ['Obtainable', 'HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause'],
+		banlist: ['All Pokemon'],
+		unbanlist: ['Fundex'],
+	},
+	{
+		name: "[Gen 8] Fundex Random Doubles",
+		desc: `Randomized teams of level-balanced Fundex Pok&eacute;mon with absolutely any ability, moves, and item.`,
+
+		mod: 'gen8',
+		gameType: 'doubles',
+		team: 'randomFC',
+		ruleset: ['HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause'],
+		banlist: ['All Pokemon'],
+		unbanlist: ['Fundex'],
+	},
+	{
 		name: '[Gen 8] Fundex Metronome Doubles',
 		desc: `A metagame decided by wagging your finger!`,
 
