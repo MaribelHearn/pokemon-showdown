@@ -1558,7 +1558,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 2,
 			onInvulnerability(target, source, move) {
-				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows'].includes(move.id)) {
+				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows', 'explod'].includes(move.id)) {
 					return;
 				}
 				return false;
@@ -3274,7 +3274,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				if (type === 'sandstorm' || type === 'hail') return false;
 			},
 			onInvulnerability(target, source, move) {
-				if (['earthquake', 'magnitude'].includes(move.id)) {
+				if (['earthquake', 'magnitude', 'explod'].includes(move.id)) {
 					return;
 				}
 				return false;
@@ -3421,7 +3421,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				if (type === 'sandstorm' || type === 'hail') return false;
 			},
 			onInvulnerability(target, source, move) {
-				if (['surf', 'whirlpool'].includes(move.id)) {
+				if (['surf', 'whirlpool', 'explod'].includes(move.id)) {
 					return;
 				}
 				return false;
@@ -5411,7 +5411,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 2,
 			onInvulnerability(target, source, move) {
-				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows'].includes(move.id)) {
+				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows', 'explod'].includes(move.id)) {
 					return;
 				}
 				return false;
@@ -12525,7 +12525,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		condition: {
 			duration: 2,
-			onInvulnerability: false,
+			onInvulnerability(target, source, move) {
+				if (['explod'].includes(move.id)) {
+					return;
+				}
+				return false;
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -15056,7 +15061,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		condition: {
 			duration: 2,
-			onInvulnerability: false,
+			onInvulnerability(target, source, move) {
+				if (['explod'].includes(move.id)) {
+					return;
+				}
+				return false;
+			},
 		},
 		secondary: null,
 		target: "normal",

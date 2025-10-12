@@ -51,7 +51,7 @@ export const Formats: FormatList = [
 		name: "[Gen 8] Fundex VGC",
 		mod: 'gen8',
 		gameType: 'doubles',
-		ruleset: ['Flat Rules NatDex', '!! Adjust Level = 50', 'VGC Timer', 'Limit Two Restricted', 'Dynamax Clause'],
+		ruleset: ['Flat Rules NatDex', '!! Adjust Level = 50', 'VGC Timer', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 	},
 	{
