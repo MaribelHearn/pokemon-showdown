@@ -22621,8 +22621,44 @@ export const Moves: {[moveid: string]: MoveData} = {
 		ohko: true,
 		secondary: null,
 	},
+	greenmissile: {
+		num: 2131,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Green Missile",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, bullet: 1, distance: 1},
+		target: "any",
+		type: "Grass",
+		secondary: null,
+		basePowerCallback(pokemon, target, move) {
+			const randInt = this.random(3);
+			if (randInt === 0) {
+				return 180;
+			}
+
+			return 90;
+		},
+	},
+	superjump: {
+		num: 2132,
+		accuracy: 90,
+		basePower: 20,
+		category: "Physical",
+		name: "Super Jump",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		multihit: 10,
+		multiaccuracy: true,
+		target: "randomNormal",
+		type: "Normal",
+		secondary: null,
+	},
     glitchyterrain: {
-        num: 2131,
+        num: 2133,
         accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -22675,7 +22711,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
     },
 	rainbowufosofterror: {
-		num: 2132,
+		num: 2134,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -22701,7 +22737,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 	},
 	mysteriouspower: {
-		num: 2133,
+		num: 2135,
 		accuracy: 100,
 		basePower: 60,
 		category: "Special",
@@ -22730,7 +22766,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 	},
 	cataclysm: {
-		num: 2135,
+		num: 2136,
 		accuracy: 85,
 		basePower: 120,
 		category: "Special",
@@ -22760,7 +22796,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 	},
 	/*sledge: {
-		num: 2136,
+		num: 2137,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -22776,7 +22812,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 	},
 	magnum: {
-		num: 2137,
+		num: 2138,
 		accuracy: 85,
 		basePower: 160,
 		category: "Physical",
@@ -22796,7 +22832,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 	},
 	darkstar: {
-		num: 2138,
+		num: 2139,
 		accuracy: 85,
 		basePower: 160,
 		category: "Special",
@@ -22816,7 +22852,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 	},
 	reverseneedleattack: {
-		num: 2139,
+		num: 2140,
 		accuracy: 100,
 		basePower: 65,
 		category: "Physical",

@@ -7541,6 +7541,18 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
 		shortDesc: "OHKOs the target. Fails if user is a lower level.",
 	},
+	greenmissile: {
+		name: "Green Missile",
+		desc: "Has a 30% chance to misfire, which doubles this move's base power.",
+		shortDesc: "Has a 30% chance to have doubled base power.",
+
+		activate: "  ...but Luigi misfired!",
+	},
+	superjump: {
+		name: "Super Jump",
+		desc: "Hits 5 to 12 times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. This move targets an opposing Pokemon at random on each turn.",
+		shortDesc: "Hits 5-12 times and targets Defense over Sp. Def.",
+	},
     glitchyterrain: {
         name: "Glitchy Terrain",
 		desc: "For 5 turns, the terrain becomes Glitchy Terrain. During the effect, the power of ???-type attacks made by grounded Pokemon is multiplied by 1.3. Grounded Pokemon that are not ???-type will take 1/16th of their health in damage every turn. Camouflage transforms the user into a ??? type, Nature Power becomes Super Glitch, and Secret Power has a 30% chance to cause confusion. Fails if the current terrain is Glitchy Terrain.",
