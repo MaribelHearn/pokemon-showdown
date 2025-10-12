@@ -22636,6 +22636,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePowerCallback(pokemon, target, move) {
 			const randInt = this.random(3);
 			if (randInt === 0) {
+				this.add('-activate', pokemon, 'move: Green Missile');
 				return 180;
 			}
 

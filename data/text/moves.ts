@@ -6981,8 +6981,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	lemmingsparade: {
 		name: "Lemmings Parade",
-		desc: "Hits 5 to 12 times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. Deals damage to the target based on its Defense instead of Special Defense.",
-		shortDesc: "Hits 5-12 times and targets Defense over Sp. Def.",
+		desc: "Hits 10 times. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. Deals damage to the target based on its Defense instead of Special Defense.",
+		shortDesc: "Hits 10 times and targets Defense over Sp. Def.",
 	},
 	houraielixir: {
 		name: "Hourai Elixir",
@@ -7550,8 +7550,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	superjump: {
 		name: "Super Jump",
-		desc: "Hits 5 to 12 times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. This move targets an opposing Pokemon at random on each turn.",
-		shortDesc: "Hits 5-12 times and targets Defense over Sp. Def.",
+		desc: "Hits 10 times. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. This move targets an opposing Pokemon at random on each turn.",
+		shortDesc: "Hits 10 times. Each hit can miss.",
 	},
     glitchyterrain: {
         name: "Glitchy Terrain",
