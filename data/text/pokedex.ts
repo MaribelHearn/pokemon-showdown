@@ -1901,6 +1901,9 @@ export const PokedexText: {[k: string]: PokedexText} = {
 	arceuswater: {
 		name: "Arceus-Water",
 	},
+	"arceus???": {
+		name: "Arceus-???",
+	},
 	victini: {
 		name: "Victini",
 	},

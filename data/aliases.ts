@@ -139,6 +139,8 @@ export const Aliases: {[alias: string]: string} = {
 	rockceus: "Arceus-Rock",
 	steelceus: "Arceus-Steel",
 	waterceus: "Arceus-Water",
+	unknownceus: "Arceus-???",
+	"???ceus": "Arceus-???",
 	arcbug: "Arceus-Bug",
 	arcdark: "Arceus-Dark",
 	arcdragon: "Arceus-Dragon",
@@ -156,6 +158,8 @@ export const Aliases: {[alias: string]: string} = {
 	arcrock: "Arceus-Rock",
 	arcsteel: "Arceus-Steel",
 	arcwater: "Arceus-Water",
+	arcunknown: "Arceus-???",
+	"arc???": "Arceus-???",
 	basculinb: "Basculin-Blue-Striped",
 	basculinblue: "Basculin-Blue-Striped",
 	basculinbluestripe: "Basculin-Blue-Striped",
@@ -333,6 +337,7 @@ export const Aliases: {[alias: string]: string} = {
 	vivillonmeadow: "Vivillon",
 
 	// Fundex
+	"???gem": "Unknown Gem",
 	"9": "Cirno",
 	"(9)": "Cirno",
 	baka: "Cirno",

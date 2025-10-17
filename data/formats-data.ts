@@ -3774,6 +3774,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	arceuswater: {
 		isNonstandard: "Past",
 	},
+	"arceus???": {
+		isNonstandard: "Past",
+	},
 	victini: {
 		randomBattleMoves: ["blueflare", "boltstrike", "energyball", "glaciate", "uturn", "vcreate", "zenheadbutt"],
 		randomBattleLevel: 78,
