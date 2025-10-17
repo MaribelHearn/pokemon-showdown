@@ -2362,6 +2362,10 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Mystery Plate",
 		desc: "Holder's ???-type attacks have 1.2x power. Judgment is ??? type.",
     },
+    questionmark: {
+        name: "Question Mark",
+		desc: "Holder's ???-type attacks have 1.2x power.",
+    },
     plasmacane: {
         name: "Plasma Cane",
 		desc: "If held by Dennis, this item allows him to Mega Evolve in battle.",

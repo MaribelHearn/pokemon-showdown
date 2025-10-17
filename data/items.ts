@@ -7199,30 +7199,21 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2011,
         gen: 8,
     },
-    /*moodring: {
-        name: "Mood Ring",
-        spritenum: 2012,
-        onStart(pokemon) {
-            const stats: BoostID[] = [];
-			let stat: BoostID;
-			for (stat in pokemon.boosts) {
-				if (stat !== 'accuracy' && stat !== 'evasion') {
-					stats.push(stat);
-				}
+    questionmark: {
+        name: "Question Mark",
+        spritenum: 742,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === '???') {
+				return this.chainModify([4915, 4096]);
 			}
-			if (stats.length) {
-				let randomStat = this.sample(stats);
-				const boost: SparseBoostsTable = {};
-				boost[randomStat] = 1;
-				this.boost(boost);
-                randomStat = this.sample(stats);
-                boost[randomStat] = -1;
-                this.boost(boost);
-			}
-        },
+		},
         num: 2012,
         gen: 8,
-    },*/
+    },
     plasmacane: {
         name: "Plasma Cane",
         spritenum: 753,
