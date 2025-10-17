@@ -2130,5 +2130,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	glitchcity: {
 		name: "Glitch City",
 		shortDesc: "On switch-in, this Pokemon summons Glitchy Terrain.",
-	}
+	},
+	reflowering: {
+		name: "Reflowering",
+		desc: "If this Pokemon is Yuyuko and Sunny Day is active, the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If user is Yuyuko and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x.",
+	},
 };

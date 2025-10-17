@@ -273,6 +273,14 @@ export const Tags: {[id: string]: TagData} = {
 		name: "ND RU",
 		speciesFilter: species => species.natDexTier === 'RU',
 	},
+	iuber: {
+		name: "International Uber",
+		speciesFilter: species => species.natDexTier === 'Fundex Uber',
+	},
+	iou: {
+		name: "International OU",
+		speciesFilter: species => species.natDexTier === 'Fundex OU',
+	},
 
 	// Legality tags
 	past: {
