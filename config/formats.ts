@@ -1120,7 +1120,7 @@ export const Formats: FormatList = [
 			if (source || !target?.side) return;
 			const god = target.side.team.find(set => {
 				let godSpecies = this.dex.species.get(set.species);
-				const isNatDex = this.format.ruleTable?.has('standardnatdex');
+				const isNatDex = this.format.ruleTable?.has('standardnatdex') || this.format.ruleTable?.has('flatrulesnatdex');
 				const validator = this.dex.formats.getRuleTable(
 					this.dex.formats.get(`gen${isNatDex && this.gen < 8 ? 8 : this.gen}${isNatDex ? 'nationaldex' : 'ou'}`)
 				);
