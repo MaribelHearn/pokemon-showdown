@@ -103,7 +103,7 @@ export const Formats: FormatList = [
 		name: "[Gen 8] International OU",
 		mod: 'gen8',
 		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
-		banlist: ['Fundex Uber', 'Uber', 'AG', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		banlist: ['Fundex Uber', 'ND Uber', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 	},
     {
 		name: "[Gen 8] Fundex Pure Hackmons",
