@@ -16979,7 +16979,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Ghost", "Grass"],
 		gender: "F",
 		baseStats: {hp: 110, atk: 90, def: 60, spa: 130, spd: 110, spe: 50},
-		abilities: {0: "Gluttony", H: "Flower Gift"},
+		abilities: {0: "Gluttony", H: "Reflowering"},
 		weightkg: 45,
 		color: "Blue",
 		tags: ["Fundex Non-Legendary"],
