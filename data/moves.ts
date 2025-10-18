@@ -9221,6 +9221,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.type = item.onPlate;
 			}
 		},
+		onModifyMove(move, pokemon) {
+			const item = pokemon.getItem();
+			if (item.id && item.onPlate && pokemon.hasType("???")) {
+				move.forceSTAB = true;
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
