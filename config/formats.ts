@@ -94,13 +94,13 @@ export const Formats: FormatList = [
 		section: "Fundex Sidegames",
 	},
     {
-		name: "[Gen 8] International Uber",
+		name: "[Gen 8] International Dex Uber",
 		mod: 'gen8',
 		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 	},
     {
-		name: "[Gen 8] International OU",
+		name: "[Gen 8] International Dex OU",
 		mod: 'gen8',
 		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['Fundex Uber', 'ND Uber', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
