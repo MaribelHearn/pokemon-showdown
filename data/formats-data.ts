@@ -3774,7 +3774,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	arceuswater: {
 		isNonstandard: "Past",
 	},
-	"arceus???": {
+	arceusunknown: {
 		isNonstandard: "Past",
 	},
 	victini: {

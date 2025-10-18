@@ -7195,7 +7195,7 @@ export const Items: {[itemid: string]: ItemData} = {
             }
             return true;
         },
-        forcedForme: "Arceus-???",
+        forcedForme: "Arceus-Unknown",
         num: 2011,
         gen: 8,
     },
@@ -7299,7 +7299,7 @@ export const Items: {[itemid: string]: ItemData} = {
         onTakeItem: false,
         zMove: true,
         zMoveType: "???",
-        forcedForme: "Arceus-???",
+        forcedForme: "Arceus-Unknown",
         num: 2023,
         gen: 8,
     },
