@@ -94,18 +94,6 @@ export const Formats: FormatList = [
 		section: "Fundex Sidegames",
 	},
     {
-		name: "[Gen 8] International Uber",
-		mod: 'gen8',
-		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
-		banlist: ['Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
-	},
-    {
-		name: "[Gen 8] International OU",
-		mod: 'gen8',
-		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
-		banlist: ['Fundex Uber', 'ND Uber', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
-	},
-    {
 		name: "[Gen 8] Fundex Pure Hackmons",
 		mod: 'gen8',
 		ruleset: ['-Nonexistent', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
@@ -298,6 +286,24 @@ export const Formats: FormatList = [
 				return false;
 			},
 		},
+	},
+
+	// International
+	///////////////////////////////////////////////////////////////////
+	{
+		section: "International",
+	},
+    {
+		name: "[Gen 8] International Uber",
+		mod: 'gen8',
+		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		banlist: ['Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+	},
+    {
+		name: "[Gen 8] International OU",
+		mod: 'gen8',
+		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
+		banlist: ['Fundex Uber', 'ND Uber', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 	},
 
 	// Sw/Sh Singles
