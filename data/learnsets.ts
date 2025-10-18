@@ -48373,6 +48373,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	arceussteel: {
 		eventOnly: true,
 	},
+	arceusunknown: {
+		eventOnly: true,
+	},
 	arceuswater: {
 		eventOnly: true,
 	},
