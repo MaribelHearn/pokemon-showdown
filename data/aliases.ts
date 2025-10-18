@@ -160,6 +160,8 @@ export const Aliases: {[alias: string]: string} = {
 	arcwater: "Arceus-Water",
 	arcunknown: "Arceus-Unknown",
 	"arc???": "Arceus-Unknown",
+	"arceus???": "Arceus-Unknown",
+	"arceus-???": "Arceus-Unknown",
 	basculinb: "Basculin-Blue-Striped",
 	basculinblue: "Basculin-Blue-Striped",
 	basculinbluestripe: "Basculin-Blue-Striped",
