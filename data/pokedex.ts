@@ -17581,7 +17581,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Busted",
 		types: ["Ground"],
 		gender: "M",
-		baseStats: {hp: 55, atk: 90, def: 80, spa: 50, spd: 105, spe: 96},
+		baseStats: {hp: 84, atk: 105, def: 110, spa: 65, spd: 70, spe: 91},
 		abilities: {0: "Cardboard Box"},
 		weightkg: 90,
 		color: "Gray",
