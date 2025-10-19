@@ -1976,7 +1976,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
     },
 	cardboardbox: {
 		name: "Cardboard Box",
-		desc: "If this Pokemon is Snake, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise.",
+		desc: "If this Pokemon is Snake, the first hit he takes in battle deals 0 neutral damage. His box is then broken, he changes to Busted Form, and he loses 1/8 of his max HP. Confusion damage also breaks the box.",
 		shortDesc: "(Snake only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
 
 		block: "  !",
@@ -2031,10 +2031,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
     },
 	taxidermy: {
 		name: "Taxidermy",
-		desc: "If this Pokemon is Chuck Testa, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise.",
+		desc: "If this Pokemon is Chuck Testa, the first hit he takes in battle deals 0 neutral damage. His animal is then revealed to have been taxidermied, he changes to Busted Form, and he loses 1/8 of its max HP. Confusion damage also triggers this.",
 		shortDesc: "(Chuck Testa only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
 
 		block: "  You probably thought this deer was alive...",
+		blockCoyote: "  You probably thought this coyote was alive...",
 		transform: "Nope! It's just [SPECIES]",
 	},
 	/*bloodbond: {

@@ -414,6 +414,7 @@ interface Plines {
 	activate?: string;
 	addItem?: string;
 	block?: string;
+	blockCoyote?: string;
 	boost?: string;
 	cant?: string;
 	changeAbility?: string;
