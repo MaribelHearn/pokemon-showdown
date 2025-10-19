@@ -20220,7 +20220,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	lemmingsparade: {
 		num: 2022,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 20,
 		category: "Special",
 		overrideDefensiveStat: 'def',
