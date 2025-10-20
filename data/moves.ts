@@ -13264,6 +13264,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				if (effect && (effect.priority <= 0.1 || effect.target === 'self')) {
 					return;
 				}
+				if (effect.id === 'releaseoftheid') {
+					return; // Fundex: release of the id still works in psychic terrain
+				}
 				if (target.isSemiInvulnerable() || target.isAlly(source)) return;
 				if (!target.isGrounded()) {
 					const baseMove = this.dex.moves.get(effect.id);
@@ -21079,13 +21082,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 				boost['atk'] = 2;
 				boost['spa'] = 2;
 				this.boost(boost, source);
-				return true;
 			} else {
 				//const defSpd: BoostID[] = ['def', 'spd'];
 				boost['def'] = 2;
 				boost['spd'] = 2;
 				this.boost(boost, source);
-				return true;
 			}
 		},
 	},
