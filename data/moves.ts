@@ -21079,11 +21079,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 				boost['atk'] = 2;
 				boost['spa'] = 2;
 				this.boost(boost, source);
+				return true;
 			} else {
 				//const defSpd: BoostID[] = ['def', 'spd'];
 				boost['def'] = 2;
 				boost['spd'] = 2;
 				this.boost(boost, source);
+				return true;
 			}
 		},
 	},
