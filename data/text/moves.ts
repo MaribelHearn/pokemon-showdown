@@ -7560,8 +7560,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	rainbowufosofterror: {
 		name: "Rainbow UFOs of Terror",
-		desc: "This move's type depends on the user's primary type.",
-		shortDesc: "Type varies based on the user's primary type.",
+		desc: "This move's type depends on the user's primary type. Has a 30% chance to make the target flinch.",
+		shortDesc: "Type varies based on the user's primary type. 10% flinch.",
 	},
 	mysteriouspower: {
 		name: "Mysterious Power",

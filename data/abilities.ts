@@ -4601,11 +4601,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	springfragrance: {
 		onStart(pokemon) {
 			let activated = false;
-			for (const target of pokemon.side.foe.active) {
-				if (!target || !target.isAdjacent(pokemon)) continue;
+			for (const target of pokemon.adjacentFoes()) {
 				if (!activated) {
 					this.add('-ability', pokemon, 'Spring Fragrance', 'boost');
-					this.add('-activate', target, 'ability: Spring Fragrance');
 					activated = true;
 				}
 				if (target.volatiles['substitute']) {
