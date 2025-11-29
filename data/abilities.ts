@@ -4680,6 +4680,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(0.5);
 			}
 		},
+		isBreakable: true,
 		name: "Feline Deity",
 		rating: 3.5,
 		num: 2011,
