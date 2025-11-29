@@ -4725,6 +4725,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}
 		},
+		isBreakable: true,
 		isPermanent: true,
 		name: "Cardboard Box",
 		rating: 3.5,
@@ -4919,6 +4920,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}
 		},
+		isBreakable: true,
 		isPermanent: true,
 		name: "Taxidermy",
 		rating: 3.5,
