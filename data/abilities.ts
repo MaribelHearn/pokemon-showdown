@@ -5186,6 +5186,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'Incomprehensible');
 		},
+		isPermanent: true,
 		// Ability activation located in various files
 	},
 	grazeenergy: {

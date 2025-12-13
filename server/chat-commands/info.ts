@@ -605,10 +605,10 @@ export const commands: Chat.ChatCommands = {
 					}
 				}
 				if (!tierDisplay) tierDisplay = 'tiers';
-				const displayedTier = tierDisplay === 'tiers' ? pokemon.tier :
-					tierDisplay === 'doubles tiers' ? pokemon.doublesTier :
-					tierDisplay === 'National Dex tiers' ? pokemon.natDexTier :
-					pokemon.num >= 0 ? String(pokemon.num) : pokemon.tier;
+				const displayedTier = tierDisplay === 'tiers' ? pokemon.tier.replace('Fundex ', '') :
+					tierDisplay === 'doubles tiers' ? pokemon.doublesTier.replace('Fundex ', '') :
+					tierDisplay === 'National Dex tiers' ? pokemon.natDexTier.replace('Fundex ', '') :
+					pokemon.num >= 0 ? String(pokemon.num) : pokemon.tier.replace('Fundex ', '');
 				buffer += `|raw|${Chat.getDataPokemonHTML(pokemon, dex.gen, displayedTier)}\n`;
 				if (showDetails) {
 					let weighthit = 20;
