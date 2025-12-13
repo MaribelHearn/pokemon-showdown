@@ -252,6 +252,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 				for (const moveId of set.moves) {
 					const move = this.dex.moves.get(moveId);
 					const moveid = move.id;
+					if (moveid === 'watergun2') return;
 					if (hasMove[moveid]) return [`${species.baseSpecies} has multiple copies of ${move.name}.`];
 					hasMove[moveid] = true;
 				}
