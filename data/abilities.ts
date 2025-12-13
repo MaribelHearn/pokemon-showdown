@@ -4568,6 +4568,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (move.type === 'Normal' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
 				move.type = '???';
 				move.corruptionBoosted = true;
+				move.forceSTAB = true;
 			}
 		},
 		onBasePowerPriority: 23,
