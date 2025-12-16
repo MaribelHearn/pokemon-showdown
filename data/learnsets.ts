@@ -94504,7 +94504,7 @@ tentaquil: {
 			quickguard: ["8L1"],
 			needlestorm: ["8L1"],
 			leafblade: ["8L1", "8M"],
-			killerdoll: ["8L1"],
+			killingdoll: ["8L1"],
 			workup: ["8M"],
 			hiddenpower: ["8M"],
 			hyperbeam: ["8M"],

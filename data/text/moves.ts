@@ -6956,8 +6956,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	koin3steps: {
 		name: "KO in 3 Steps",
-		desc: "Hits three times. Power increases to 60 for the second hit and 90 for the third. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit three times.",
-		shortDesc: "Hits 3 times. Each hit can miss, but power rises.",
+		desc: "Hits three times. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit three times.",
+		shortDesc: "Hits 3 times. Each hit can miss.",
 	},
 	strawberrycross: {
 		name: "Strawberry Cross",
