@@ -16665,7 +16665,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		gender: "M",
 		baseStats: {hp: 110, atk: 110, def: 70, spa: 60, spd: 70, spe: 100},
 		abilities: {0: "Sniper", 1: "Galvanize", H: "Emergency Exit"},
-		weightkg: 45,
+		weightkg: 0.1,
 		color: "Green",
 		tags: ["Fundex Non-Legendary"],
 		prevo: "Baby Luigi",
