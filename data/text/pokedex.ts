@@ -3537,8 +3537,8 @@ export const PokedexText: {[k: string]: PokedexText} = {
     reimu: {
         name: "Reimu",
     },
-    drrobotnik: {
-        name: "Dr. Robotnik",
+    dreggman: {
+        name: "Dr. Eggman",
     },
     leonidas: {
         name: "Leonidas",

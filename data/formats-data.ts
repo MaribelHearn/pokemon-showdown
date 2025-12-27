@@ -7194,7 +7194,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Fundex OU",
 		natDexTier: "OU",
 	},
-    drrobotnik: {
+    dreggman: {
 		isNonstandard: "Fundex",
 		tier: "Fundex OU",
 		natDexTier: "OU",

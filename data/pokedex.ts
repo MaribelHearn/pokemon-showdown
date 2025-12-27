@@ -16800,9 +16800,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
-	drrobotnik: {
+	dreggman: {
 		num: 2024,
-		name: "Dr. Robotnik",
+		name: "Dr. Eggman",
 		types: ["Normal", "Steel"],
 		gender: "M",
 		baseStats: {hp: 130, atk: 90, def: 90, spa: 50, spd: 100, spe: 50},

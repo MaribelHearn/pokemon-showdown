@@ -85062,7 +85062,7 @@ tentaquil: {
 			dazzlinggleam: ["8M"],
 		},
 	},
-	drrobotnik: {
+	dreggman: {
 		learnset: {
 			tackle: ["8L1"],
 			leer: ["8L1"],
