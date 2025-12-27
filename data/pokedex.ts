@@ -16829,7 +16829,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "King Harkinian",
 		types: ["Fairy"],
 		gender: "M",
-		baseStats: {hp: 160, atk: 110, def: 75, spa: 75, spd: 75, spe: 30},
+		baseStats: {hp: 155, atk: 110, def: 70, spa: 90, spd: 70, spe: 30},
 		abilities: {0: "Pixilate", H: "Misty Surge"},
 		weightkg: 90,
 		color: "Yellow",
