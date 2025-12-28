@@ -486,9 +486,9 @@ export class TeamValidator {
 		if (item.id && !item.exists) {
 			return [`"${set.item}" is an invalid item.`];
 		}
-		if ((format.id.includes('fundex') || format.id.includes('international')) && item.gen === 2) {
+		/*if ((format.id.includes('fundex') || format.id.includes('international')) && item.gen === 2) {
 			return [`"${set.item}" is an invalid item.`];
-		}
+		}*/
 		if (ability.id && !ability.exists) {
 			if (dex.gen < 3) {
 				// gen 1-2 don't have abilities, just silently remove

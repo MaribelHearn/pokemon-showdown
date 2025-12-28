@@ -6698,6 +6698,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 0,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	berry: {
 		name: "Berry",
@@ -6721,6 +6722,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 155,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	bitterberry: {
 		name: "Bitter Berry",
@@ -6740,6 +6742,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 156,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	burntberry: {
 		name: "Burnt Berry",
@@ -6761,6 +6764,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 153,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	goldberry: {
 		name: "Gold Berry",
@@ -6784,6 +6788,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 158,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	iceberry: {
 		name: "Ice Berry",
@@ -6805,6 +6810,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 152,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	mintberry: {
 		name: "Mint Berry",
@@ -6826,6 +6832,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 150,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	miracleberry: {
 		name: "Miracle Berry",
@@ -6846,6 +6853,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 157,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	mysteryberry: {
 		name: "Mystery Berry",
@@ -6884,6 +6892,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 154,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	pinkbow: {
 		name: "Pink Bow",
@@ -6895,6 +6904,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 251,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	polkadotbow: {
 		name: "Polkadot Bow",
@@ -6906,6 +6916,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 251,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	przcureberry: {
 		name: "PRZ Cure Berry",
@@ -6927,6 +6938,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 149,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 	psncureberry: {
 		name: "PSN Cure Berry",
@@ -6948,6 +6960,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 151,
 		gen: 2,
+		isNonstandard: "Past",
 	},
 
 	// CAP items
