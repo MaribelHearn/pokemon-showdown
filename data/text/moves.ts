@@ -7154,7 +7154,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	recollection: {
 		name: "Recollection",
-		desc: "A random move among those known by the user's party members is selected for use. Does not select Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Bounce, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dig, Dive, Dragon Tail, Endure, Feint, Fly, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Phantom Force, Protect, Rage Powder, Roar, Shadow Force, Shell Trap, Sketch, Sky Drop, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move.",
+		desc: "A random damaging attack among those known by the user's party members is selected for use. Does not select Beak Blast, Belch, Bounce, Chatter, Circle Throw, Counter, Covet, Dig, Dive, Dragon Tail, Falcon Punch, Feint, Fly, Focus Punch, Mirror Coat, Nature Power, Phantom Force, Shadow Force, Shell Trap, Sky Drop, Struggle, Thief, Warlock Punch, or any Z-Move.",
 		shortDesc: "Uses a random move known by a team member.",
 	},
 	releaseoftheid: {
