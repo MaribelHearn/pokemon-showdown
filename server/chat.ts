@@ -2397,14 +2397,15 @@ export const Chat = new class {
 	}
 
 	getDataPokemonHTML(species: Species, gen = 8, tier = '') {
+		const small = species.name.length >= 20 ? " small" : "";
 		let buf = '<li class="result">';
 		buf += '<span class="col numcol">' + (tier || species.tier) + '</span> ';
 		buf += `<span class="col iconcol"><psicon pokemon="${species.id}"/></span> `;
-		buf += `<span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://${Config.routes.dex}/pokemon/${species.id}" target="_blank">${species.name}</a></span> `;
+		buf += `<span class="col pokemonnamecol${small}" style="white-space:nowrap"><a href="https://${Config.routes.dex}/pokemon/${species.id}" target="_blank">${species.name}</a></span> `;
 		buf += '<span class="col typecol">';
 		if (species.types) {
 			for (const type of species.types) {
-				buf += `<img src="https://${Config.routes.client}/sprites/types/${type}.png" alt="${type}" height="14" width="32">`;
+				buf += `<img src="https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/types/${encodeURIComponent(type)}.png" alt="${type}" height="14" width="32">`;
 			}
 		}
 		buf += '</span> ';
