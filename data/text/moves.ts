@@ -7154,7 +7154,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	recollection: {
 		name: "Recollection",
-		desc: "A random damaging attack among those known by the user's party members is selected for use. This attack's base power is also multiplied by 1.2. Does not select Beak Blast, Belch, Bounce, Chatter, Circle Throw, Counter, Covet, Dig, Dive, Dragon Tail, Falcon Punch, Feint, Fly, Focus Punch, Mirror Coat, Nature Power, Phantom Force, Shadow Force, Shell Trap, Sky Drop, Struggle, Thief, Warlock Punch, or any Z-Move.",
+		desc: "A random damaging attack among those known by the user's party members is selected for use. This attack's base power is also multiplied by 1.2. Does not select Beak Blast, Belch, Bounce, Chatter, Circle Throw, Counter, Covet, Dig, Dive, Dragon Tail, explod, Falcon Punch, Feint, Fly, Focus Punch, Mirror Coat, Nature Power, Phantom Force, Shadow Force, Shell Trap, Sky Drop, Struggle, Thief, Warlock Punch, or any Z-Move.",
 		shortDesc: "Random damaging attack from your team, 1.2x power.",
 	},
 	releaseoftheid: {

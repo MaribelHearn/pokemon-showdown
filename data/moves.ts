@@ -21028,7 +21028,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		onHit(target) {
 			const noAssist = [
-				'beakblast', 'belch', 'bounce', 'chatter', 'circlethrow', 'counter', 'covet', 'dig', 'dive', 'dragontail', 'feint', 'fly', 'focuspunch', 'mirrorcoat', 'naturepower', 'phantomforce', 'shadowforce', 'shelltrap', 'skydrop', 'struggle', 'thief', 'falconpunch', 'warlockpunch',
+				'beakblast', 'belch', 'bounce', 'chatter', 'circlethrow', 'counter', 'covet', 'dig', 'dive', 'dragontail', 'explod', 'feint', 'fly', 'focuspunch', 'mirrorcoat', 'naturepower', 'phantomforce', 'shadowforce', 'shelltrap', 'skydrop', 'struggle', 'thief', 'falconpunch', 'warlockpunch',
 			];
 
 			const moves = [];
