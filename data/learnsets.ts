@@ -95124,7 +95124,7 @@ tentaquil: {
 			knockoff: ["8M"],
 		},
 	},
-	smithy: {
+	/*smithy: {
 		learnset: {
 			sledge: ["8L1"],
 			magnum: ["8L1"],
@@ -95147,5 +95147,5 @@ tentaquil: {
 			flamethrower: ["8M"],
 			thunderbolt: ["8M"],
 		}
-	},
+	},*/
 };

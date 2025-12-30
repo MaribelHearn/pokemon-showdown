@@ -5129,7 +5129,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Glacial Force",
 		rating: 2,
         num: 2033,
-    },*/
+    },
     formshift: {
         name: "Form Shift",
 		onSwitchIn(pokemon) {
@@ -5156,7 +5156,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
         rating: 0,
         num: 2034,
-    },
+    },*/
     /*firmcarry: {
 		onAfterUseItem(item, pokemon) {
 			if (pokemon !== this.effectState.target) return;
