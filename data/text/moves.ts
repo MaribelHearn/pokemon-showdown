@@ -7573,7 +7573,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 30% chance to either burn, paralyze, or poison the target.",
 		shortDesc: "30% chance to burn or paralyze or poison target.",
 	},
-	/*sledge: {
+	sledge: {
 		name: "Sledge",
 		desc: "This move becomes a special attack if the user's Special Attack is greater than its Attack.",
 		shortDesc: "Special if user's Sp. Atk > Atk.",
@@ -7587,7 +7587,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Dark Star",
 		desc: "If this move is successful and does not KO the target, the user must recharge on the following turn and cannot select a move.",
 		shortDesc: "User cannot move next turn unless KO.",
-	},*/
+	},
 	unrealunraveling: {
 		name: "Unreal Unraveling",
 		shortDesc: "Power is equal to the base move's Z-Power.",

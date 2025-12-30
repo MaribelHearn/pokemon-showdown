@@ -18912,7 +18912,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Wrath Cookie",
 	},
-    /*smithy: {
+    smithy: {
         num: 2160,
 		name: "Smithy",
         gender: "M",
@@ -18970,7 +18970,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Yellow",
 		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
-	},*/
+	},
 	missingnooriginal: {
 		num: 0,
 		name: "MissingNo. (Original)",

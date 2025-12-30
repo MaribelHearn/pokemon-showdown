@@ -4026,7 +4026,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
     grandmatriarch: {
         name: "Grandmatriarch",
     },
-	/*smithy: {
+	smithy: {
 		name: "Smithy",
 	},
 	smithytankhead: {
@@ -4037,7 +4037,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
 	},
 	zapmolcuno: {
 		name: "Zapmolcuno",
-	},*/
+	},
 	missingnooriginal: {
 		name: "MissingNo.",
 	},

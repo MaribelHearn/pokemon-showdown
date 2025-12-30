@@ -7064,11 +7064,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Fundex OU",
 		natDexTier: "OU",
     },
-    /*tentaquix: {
-		isNonstandard: "Fundex",
-		tier: "Fundex OU",
-		natDexTier: "OU",
-    },*/
 	chucknorris: {
 		isNonstandard: "Fundex",
 		tier: "Fundex Uber",
@@ -8013,7 +8008,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Fundex OU",
 		natDexTier: "OU",
     },
-	/*smithy: {
+	smithy: {
 		isNonstandard: "Fundex",
 		tier: "Fundex OU",
 		natDexTier: "OU",
@@ -8028,7 +8023,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Fundex",
 		tier: "Fundex OU",
 		natDexTier: "OU",
-	},*/
+	},
 	missingnooriginal: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
