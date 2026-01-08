@@ -474,7 +474,7 @@ export class RandomTeams {
 
 			let stats = species.baseStats;
 			// If Boo, use the Boolossus forme's much higher stats
-			if (species.baseSpecies === 'Boo') stats = Dex.species.get('boolossus').baseStats;
+			if (species.baseSpecies === 'Boo' && ability === 'Get Together') stats = Dex.species.get('boolossus').baseStats;
 
 			// Modified base stat total assumes 31 IVs, 85 EVs in every stat
 			let mbst = (stats["hp"] * 2 + 31 + 21 + 100) + 10;
