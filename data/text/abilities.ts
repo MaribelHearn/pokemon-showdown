@@ -1972,7 +1972,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
     },
     felinedeity: {
 		name: "Feline Deity",
-		shortDesc: "If this Pokemon is at full HP, damage taken from attacks is halved.",
+		desc: "This Pokemon cannot be forced to switch out by another Pokemon's attack or item. Additionally, its moves cannot be redirected to a different target by any effect.",
+		shortDesc: "Cannot be forced out and its moves cannot be redirected by any effect.",
     },
 	cardboardbox: {
 		name: "Cardboard Box",
@@ -2136,5 +2137,21 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Reflowering",
 		desc: "If this Pokemon is Yuyuko and Sunny Day is active, the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If user is Yuyuko and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x.",
+	},
+	chloroblaze: {
+		name: "Chloroblaze",
+		shortDesc: "Combination of the Chlorophyll and Blaze Abilities.",
+	},
+	solarglutton: {
+		name: "Solar Glutton",
+		shortDesc: "Combination of the Solar Power and Gluttony Abilities.",
+	},
+	tangledgrowth: {
+		name: "Tangled Growth",
+		shortDesc: "Combination of the Tangled Feet and Overgrow Abilities.",
+	},
+	chlorobird: {
+		name: "Chlorobird",
+		shortDesc: "Combination of the Chlorophyll and Early Bird Abilities.",
 	},
 };
