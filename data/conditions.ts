@@ -77,7 +77,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onBeforeMovePriority: 10,
 		onBeforeMove(pokemon, target, move) {
-			if (pokemon.hasAbility('earlybird')) {
+			if (pokemon.hasAbility('earlybird') || pokemon.hasAbility('chlorobird')) {
 				pokemon.statusState.time--;
 			}
 			pokemon.statusState.time--;

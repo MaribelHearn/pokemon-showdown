@@ -4675,15 +4675,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 2010,
     },
     felinedeity: {
-		onSourceModifyDamage(damage, source, target, move) {
-			if (target.hp >= target.maxhp) {
-				this.debug('Feline Deity weaken');
-				return this.chainModify(0.5);
-			}
+		onDragOut(pokemon) {
+			this.add('-activate', pokemon, 'ability: Feline Deity');
+			return null;
 		},
-		isBreakable: true,
+		onModifyMovePriority: 1,
+		onModifyMove(move) {
+			// most of the implementation is in Battle#getTarget
+			move.tracksTarget = move.target !== 'scripted';
+		},
 		name: "Feline Deity",
-		rating: 3.5,
+		rating: 4,
 		num: 2011,
     },
 	cardboardbox: {
@@ -5222,5 +5224,77 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Reflowering",
 		rating: 1,
 		num: 2039,
+	},
+	chloroblaze: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) {
+				this.debug('Blaze boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) {
+				this.debug('Blaze boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpe(spe, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		},
+		name: "Chloroblaze",
+		rating: 4,
+		num: 2040,
+	},
+	solarglutton: {
+		onModifySpe(spe, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		},
+		name: "Solar Glutton",
+		rating: 4,
+		num: 2041,
+	},
+	tangledgrowth: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 3) {
+				this.debug('Overgrow boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 3) {
+				this.debug('Overgrow boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifyAccuracyPriority: -1,
+		onModifyAccuracy(accuracy, target) {
+			if (typeof accuracy !== 'number') return;
+			if (target?.volatiles['confusion']) {
+				this.debug('Tangled Feet - decreasing accuracy');
+				return this.chainModify(0.5);
+			}
+		},
+		isBreakable: true,
+		name: "Tangled Growth",
+		rating: 3,
+		num: 2042,
+	},
+	chlorobird: {
+		onModifySpe(spe, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		},
+		name: "Chlorobird",
+		rating: 3,
+		num: 2043,
 	},
 };

@@ -2182,7 +2182,7 @@ export class Battle {
 		let tracksTarget = move.tracksTarget;
 		// Stalwart sets trackTarget in ModifyMove, but ModifyMove happens after getTarget, so
 		// we need to manually check for Stalwart here
-		if (pokemon.hasAbility(['stalwart', 'propellertail'])) tracksTarget = true;
+		if (pokemon.hasAbility(['stalwart', 'propellertail', 'felinedeity'])) tracksTarget = true;
 		if (tracksTarget && originalTarget && originalTarget.isActive) {
 			// smart-tracking move's original target is on the field: target it
 			return originalTarget;

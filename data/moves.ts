@@ -21247,10 +21247,10 @@ export const Moves: {[moveid: string]: MoveData} = {
     superglitch: {
         num: 2066,
         accuracy: 100,
-        basePower: 73,
+        basePower: 43,
         category: "Physical",
         name: "Super Glitch",
-        pp: 5,
+        pp: 7,
         priority: 0,
         flags: {protect: 1, mirror: 1},
         target: "normal",
@@ -21470,7 +21470,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		target: "normal",
-		type: "Fire",
+		type: "Electric",
 		secondary: {
 			chance: 100,
 			boosts: {
