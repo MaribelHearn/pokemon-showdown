@@ -21004,12 +21004,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 	drybone: {
 		num: 2055,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 120,
 		category: "Physical",
 		name: "Dry Bone",
 		pp: 5,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				def: -1,
+				spd: -1,
+			},
+		},
 		target: "normal",
 		type: "Rock",
 		secondary: null,

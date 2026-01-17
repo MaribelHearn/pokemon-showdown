@@ -7241,8 +7241,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
     corruptedwake: {
 		isNonstandard: "Fundex",
-		tier: "Fundex OU",
-		natDexTier: "OU",
+		tier: "Fundex Uber",
+		natDexTier: "Uber",
 	},
     utsuho: {
 		isNonstandard: "Fundex",
