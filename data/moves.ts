@@ -20298,7 +20298,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onUseMoveMessage(pokemon, target, move) {
 			this.add('-activate', pokemon, 'move: explod');
 		},
-		zMove: {boost: {atk: 1}},
+		zMove: {basePower: 0},
+		maxMove: {basePower: 0},
 	},
 	study: {
 		num: 2025,
