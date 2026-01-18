@@ -740,6 +740,7 @@ export const commands: Chat.ChatCommands = {
 							details["Z-Power"] = String(move.zMove.basePower);
 						} else if (move.zMove?.effect) {
 							const zEffects: {[k: string]: string} = {
+								nothing: "Does nothing",
 								clearnegativeboost: "Restores negative stat stages to 0",
 								crit2: "Crit ratio +2",
 								heal: "Restores HP 100%",

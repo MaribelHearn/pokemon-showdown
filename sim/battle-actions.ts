@@ -1471,6 +1471,9 @@ export class BattleActions {
 			this.battle.boost(move.zMove.boost, pokemon, pokemon, zPower);
 		} else if (move.zMove?.effect) {
 			switch (move.zMove.effect) {
+			// Fundex: add "nothing" Z-effect (Z-explod special case)
+			case 'nothing':
+				break;
 			case 'heal':
 				this.battle.heal(pokemon.maxhp, pokemon, pokemon, zPower);
 				break;

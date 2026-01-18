@@ -23147,5 +23147,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onTryHit(target, source) {
 			this.add('-nothing');
 		},
+		zMove: {effect: 'nothing'},
 	},
 };
