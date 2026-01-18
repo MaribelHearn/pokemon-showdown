@@ -20290,6 +20290,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		selfdestruct: "always",
 		willCrit: true,
 		secondary: null,
+		zMove: {basePower: 0},
 		onModifyMove(move, pokemon) {
 			if (pokemon.hasType("???")) {
 				move.forceSTAB = true;

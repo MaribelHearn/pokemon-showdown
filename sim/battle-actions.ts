@@ -1388,6 +1388,7 @@ export class BattleActions {
 		// Fundex: custom explod Z-move special case
 		if (move.name === 'explod') {
 			zMove = this.dex.getActiveMove(this.dex.moves.get('Z-explod'));
+			return zMove;
 		}
 		zMove.basePower = move.zMove!.basePower!;
 		zMove.category = move.category;
