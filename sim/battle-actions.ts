@@ -1350,9 +1350,14 @@ export class BattleActions {
 			if (!moveData?.pp) return;
 		}
 
-		if (item.zMoveFrom) {
+		// Fundex: custom explod Z-move
+		if (move.name === 'explod') {
+			return 'Z-' + move.name;
+		}
+		else if (item.zMoveFrom) {
 			if (move.name === item.zMoveFrom) return item.zMove as string;
-		} else if (item.zMove === true) {
+		}
+		else if (item.zMove === true) {
 			if (move.type === item.zMoveType) {
 				if (move.category === "Status") {
 					return move.name;

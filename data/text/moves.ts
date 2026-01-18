@@ -7651,4 +7651,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
 		shortDesc: "User switches out after damaging the target.",
 	},
+	zexplod: {
+		name: "Z-explod",
+		shortDesc: "An attempt is made to use explod, but...",
+		
+		activate: "  Zeeky attempted to detonate... but it stopped!",
+	}
 };

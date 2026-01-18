@@ -20298,8 +20298,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onUseMoveMessage(pokemon, target, move) {
 			this.add('-activate', pokemon, 'move: explod');
 		},
-		zMove: {basePower: 1},
-		maxMove: {basePower: 1},
 	},
 	study: {
 		num: 2025,
@@ -23132,5 +23130,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fire",
 		weather: 'hail',
 		secondary: null,
+	},
+	zexplod: {
+		num: 3013,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Z-explod",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "unknowniumz",
+		target: "self",
+		type: "???",
+		secondary: null,
+		onTryHit(target, source) {
+			this.add('-nothing');
+		},
 	},
 };
