@@ -1350,7 +1350,7 @@ export class BattleActions {
 			if (!moveData?.pp) return;
 		}
 
-		// Fundex: custom explod Z-move
+		// Fundex: custom explod Z-move special case
 		if (move.name === 'explod') {
 			return 'Z-' + move.name;
 		}
@@ -1384,7 +1384,11 @@ export class BattleActions {
 			zMove.isZOrMaxPowered = true;
 			return zMove;
 		}
-		const zMove = this.dex.getActiveMove(this.Z_MOVES[move.type]);
+		let zMove = this.dex.getActiveMove(this.Z_MOVES[move.type]);
+		// Fundex: custom explod Z-move special case
+		if (move.name === 'explod') {
+			zMove = this.dex.getActiveMove(this.dex.moves.get('Z-explod'));
+		}
 		zMove.basePower = move.zMove!.basePower!;
 		zMove.category = move.category;
 		// copy the priority for Quick Guard
