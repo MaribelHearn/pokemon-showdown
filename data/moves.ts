@@ -23132,7 +23132,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 	},
 	zexplod: {
-		num: 3013,
+		num: 3014,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23145,7 +23145,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "???",
 		secondary: null,
 		onTryHit(target, source) {
-			this.add('-nothing');
+			this.add('-activate', target, 'move: Z-explod');
 		},
 		zMove: {effect: 'nothing'},
 	},
