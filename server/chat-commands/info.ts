@@ -562,7 +562,7 @@ export const commands: Chat.ChatCommands = {
 		const targetId = toID(target);
 		if (!targetId) return this.parse('/help data');
 		const targetNum = parseInt(target);
-		if (!isNaN(targetNum) && `${targetNum}` === target) {
+		if (targetNum !== 2012 && !isNaN(targetNum) && `${targetNum}` === target) {
 			for (const pokemon of Dex.species.all()) {
 				if (pokemon.num === targetNum) {
 					target = pokemon.baseSpecies;

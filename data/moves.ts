@@ -22667,7 +22667,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Super Jump",
 		pp: 5,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1, gravity: 1},
 		multihit: 10,
 		multiaccuracy: true,
 		target: "randomNormal",
