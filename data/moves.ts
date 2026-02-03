@@ -22082,15 +22082,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 				this.add('-sidestart', side, 'move: Pixie Dust');
 			},
 			onEntryHazard(pokemon) {
-                if (pokemon.hasType('Fairy')) {
-					this.add('-sideend', pokemon.side, 'move: Pixie Dust', '[of] ' + pokemon);
-					pokemon.side.removeSideCondition('pixiedust');
-				} else if (pokemon.hasItem('heavydutyboots')) {
+                if (pokemon.hasItem('heavydutyboots') || pokemon.hasItem('safetygoggles') || pokemon.hasAbility('overcoat')) {
                     return;
-                } else {
-					this.add('-activate', pokemon, 'move: Pixie Dust');
-					this.boost({evasion: -1}, pokemon, this.effectState.source, this.dex.getActiveMove('pixiedust'));
-				}
+                }
+				this.add('-activate', pokemon, 'move: Pixie Dust');
+				this.boost({evasion: -1}, pokemon, this.effectState.source, this.dex.getActiveMove('pixiedust'));
 			},
 		},
     },
