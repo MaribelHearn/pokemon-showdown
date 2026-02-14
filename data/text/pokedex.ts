@@ -4026,6 +4026,9 @@ export const PokedexText: {[k: string]: PokedexText} = {
     grandmatriarch: {
         name: "Grandmatriarch",
     },
+	dummy: {
+		name: "Dummy",
+	},
 	/*smithy: {
 		name: "Smithy",
 	},
