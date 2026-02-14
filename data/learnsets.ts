@@ -95167,7 +95167,7 @@ tentaquil: {
 			zerolaser: ["8L1"],
 			narrowconfines: ["8L1"],
 			finaljudgment: ["8L1"],
-			objection!: ["8L1"],
+			objection: ["8L1"],
 			thunderdrumshot: ["8L1"],
 			needleparade: ["8L1"],
 			finaldanmaku: ["8L1"],
