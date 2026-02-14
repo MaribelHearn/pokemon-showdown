@@ -7043,8 +7043,18 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	catnarok: {
 		name: "Catnarok",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack. This move's type is equal to the user's primary type.",
-		shortDesc: "Faints user. Type = user's first type. Special if SpA > Atk.",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
+		shortDesc: "Hits all adjacent. Faints user. Special if SpA > Atk.",
+	},
+	darkcatnarok: {
+		name: "Dark Catnarok",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
+		shortDesc: "Hits all adjacent. Faints user. Physical if Atk > SpA.",
+	},
+	fierycatnarok: {
+		name: "Fiery Catnarok",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
+		shortDesc: "Hits all adjacent. Faints user. Physical if Atk > SpA.",
 	},
     psirockin: {
         name: "PSI Rockin",
@@ -7103,7 +7113,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	borderdistortion: {
 		name: "Border Distortion",
 		desc: "Has a 50% chance to lower the target's Defense and Special Defense by 1 stage.",
-		shortDesc: "50% chance to lower the target's Defense and Sp. Def by 1.",
+		shortDesc: "50% chance to lower the target's Def and Sp. Def.",
 	},
 	dreaminduction: {
 		name: "Dream Induction",
@@ -7293,7 +7303,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	denialofservice: {
 		name: "Denial of Service",
 		desc: "For 5 turns, the target's held item has no effect. An item's effect of causing forme changes is unaffected, but any other effects from such items are negated. During the effect, Fling and Natural Gift are prevented from being used by the target. Items thrown at the target with Fling will still activate for it. If the target uses Baton Pass, the replacement will remain unable to use items. For 5 turns, the target is prevented from restoring any HP as long as it remains active. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. If an affected Pokemon uses Baton Pass, the replacement will remain unable to restore its HP. Pain Split and the Regenerator Ability are unaffected.",
-		shortDesc: "For 5 turns, target's healing and items have no effect.",
+		shortDesc: "For 5 turns, nullifies target's healing and items.",
 
 		start: "  [POKEMON] was prevented from healing or using items!",
 		end: "  [POKEMON]'s Denial of Service wore off!",

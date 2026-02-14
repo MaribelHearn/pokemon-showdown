@@ -20510,9 +20510,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
 		},
-		onModifyType(move, pokemon) {
-			move.type = pokemon.types[0];
-		},
 	},
     psirockin: {
         num: 2033,
@@ -22826,6 +22823,40 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (pokemon.hasType("???")) {
 				move.forceSTAB = true;
 			}
+		},
+	},
+	darkcatnarok: {
+		num: 2137,
+		accuracy: 100,
+		basePower: 250,
+		category: "Special",
+		name: "Dark Catnarok",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, defrost: 1, mirror: 1},
+		selfdestruct: "always",
+		target: "normal",
+		type: "Dark",
+		secondary: null,
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+		},
+	},
+	fierycatnarok: {
+		num: 2138,
+		accuracy: 100,
+		basePower: 250,
+		category: "Special",
+		name: "Fiery Catnarok",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, defrost: 1, mirror: 1},
+		selfdestruct: "always",
+		target: "normal",
+		type: "Fire",
+		secondary: null,
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 	},
 	/*sledge: {
