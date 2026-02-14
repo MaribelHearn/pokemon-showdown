@@ -11459,7 +11459,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return 5;
 			},
 			onSetStatus(status, target, source, effect) {
-				if (!target.isGrounded() || target.isSemiInvulnerable()) return;
+				if (!target.isGrounded() || target.isSemiInvulnerable() || effect && (effect as Move)?.id === 'programfreeze') return;
 				if (effect && ((effect as Move).status || effect.id === 'yawn')) {
 					this.add('-activate', target, 'move: Misty Terrain');
 				}
@@ -14604,7 +14604,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onSetStatus(status, target, source, effect) {
 				if (!effect || !source) return;
-				if (effect.id === 'yawn') return;
+				// Fundex: Program Freeze bypasses Safeguard
+				if (effect.id === 'yawn' || effect.id === 'programfreeze') return;
 				if (effect.effectType === 'Move' && effect.infiltrates && !target.isAlly(source)) return;
 				if (target !== source) {
 					this.debug('interrupting setStatus');
@@ -20255,7 +20256,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			duration: 5,
 			onSetStatus(status, target, source, effect) {
 				if (!effect || !source) return;
-				if (effect.id === 'yawn') return;
+				if (effect.id === 'yawn' || effect.id === 'programfreeze') return;
 				if (effect.effectType === 'Move' && effect.infiltrates) return;
 				this.debug('interrupting setStatus');
 				if (effect.id === 'synchronize' || (effect.effectType === 'Move' && !effect.secondaries)) {

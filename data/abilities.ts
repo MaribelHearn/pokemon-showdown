@@ -491,6 +491,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.add('-ability', pokemon, 'Comatose');
 		},
 		onSetStatus(status, target, source, effect) {
+			// Fundex: Program Freeze bypasses Comatose
+			if ((effect as Move)?.id === 'programfreeze') {
+				return;
+			}
 			if ((effect as Move)?.status) {
 				this.add('-immune', target, '[from] ability: Comatose');
 			}
