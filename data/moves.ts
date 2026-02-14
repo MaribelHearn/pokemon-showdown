@@ -20037,10 +20037,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
         },
 		onEffectiveness(typeMod, target, type, move) {
-			if (!target?.runImmunity('Poison')) {
-				return;
-			}
 			return typeMod + this.dex.getEffectiveness('Poison', type);
+		},
+		onTryImmunity(pokemon, source) {
+			return pokemon.runImmunity('Poison');
 		},
 	},
 	ghastlydream: {
@@ -20440,10 +20440,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		onHit(target, source) {
 			if (source.isAlly(target)) {
-				if (!this.heal(Math.floor(target.baseMaxhp * 0.5))) {
-					this.add('-immune', target);
+				let success = false;
+				if (source.hasAbility('megalauncher')) {
+					success = !!this.heal(this.modify(target.baseMaxhp, 0.75));
+				} else {
+					success = !!this.heal(Math.ceil(target.baseMaxhp * 0.5));
+				}
+				if (success && !target.isAlly(source)) {
+					target.staleness = 'external';
+				}
+				if (!success) {
+					this.add('-fail', target, 'heal');
 					return this.NOT_FAIL;
 				}
+				return success;
 			}
 		},
 	},
@@ -22993,10 +23003,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		weather: 'sunnyday',
 		secondary: null,
 		onEffectiveness(typeMod, target, type, move) {
-			if (!target?.runImmunity('Poison')) {
-				return;
-			}
 			return typeMod + this.dex.getEffectiveness('Poison', type);
+		},
+		onTryImmunity(pokemon, source) {
+			return pokemon.runImmunity('Poison');
 		},
 	},
 	saigyoujiflawlessnirvana: {
