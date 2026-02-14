@@ -20037,8 +20037,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
         },
 		onEffectiveness(typeMod, target, type, move) {
-			if (target?.hasType('Steel')) {
-				return 0;
+			if (!target?.runImmunity('Poison')) {
+				return;
 			}
 			return typeMod + this.dex.getEffectiveness('Poison', type);
 		},
@@ -22993,8 +22993,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		weather: 'sunnyday',
 		secondary: null,
 		onEffectiveness(typeMod, target, type, move) {
-			if (target?.hasType('Steel')) {
-				return 0;
+			if (!target?.runImmunity('Poison')) {
+				return;
 			}
 			return typeMod + this.dex.getEffectiveness('Poison', type);
 		},
