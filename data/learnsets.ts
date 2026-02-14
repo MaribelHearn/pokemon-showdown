@@ -95266,6 +95266,8 @@ tentaquil: {
 			rainbowufosofterror: ["8L1"],
 			mysteriouspower: ["8L1"],
 			cataclysm: ["8L1"],
+			darkcatnarok: ["8L1"],
+			fierycatnarok: ["8L1"],
 		}
 	},
 	/*smithy: {
