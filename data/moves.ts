@@ -20037,6 +20037,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
         },
 		onEffectiveness(typeMod, target, type, move) {
+			if (target?.runImmunity('Poison')) {
+				return 0;
+			}
 			return typeMod + this.dex.getEffectiveness('Poison', type);
 		},
 	},
@@ -20272,6 +20275,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 					return null;
 				}
 			},
+			onStart(source) {
+				this.add('-start', source, 'Hourai Elixir');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 3,
 			onEnd(source) {
 				this.add('-end', source, 'Hourai Elixir');
 			}
@@ -22985,6 +22993,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		weather: 'sunnyday',
 		secondary: null,
 		onEffectiveness(typeMod, target, type, move) {
+			if (target?.runImmunity('Poison')) {
+				return 0;
+			}
 			return typeMod + this.dex.getEffectiveness('Poison', type);
 		},
 	},
