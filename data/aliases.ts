@@ -357,6 +357,8 @@ export const Aliases: {[alias: string]: string} = {
 	zeeky: "Zeeky H. Bomb",
 	bomb: "Zeeky H. Bomb",
 	theking: "King Harkinian",
+	doom: "Evaccania DOOM",
+	evaccaneerdoom: "Evaccania DOOM",
 	megavegeta: "Super Saiyan Vegeta",
 	megaganondorf: "Ganon",
 	megabowser: "Giga Bowser",
