@@ -1614,7 +1614,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	entrainment: {
 		name: "Entrainment",
-		desc: "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is  As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, or Zen Mode, or the same Ability as the user, or if the user's Ability is Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Flower Gift, Forecast, Get Together, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, Trace, or Zen Mode.",
+		desc: "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, or Zen Mode, or the same Ability as the user, or if the user's Ability is Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Flower Gift, Forecast, Get Together, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, Trace, or Zen Mode.",
 		shortDesc: "The target's Ability changes to match the user's.",
 		gen7: {
 			desc: "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode, or the same Ability as the user, or if the user's Ability is Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, or Zen Mode.",
@@ -7219,7 +7219,7 @@ export const MovesText: {[k: string]: MoveText} = {
     },
     anormalmove: {
         name: "a NORMAL move",
-		desc: "Causes the target's Ability to become Normalize. Fails if the target's Ability is Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Get Together, Gulp Missile, Ice Face, Multitype, Power Construct, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, Truant, or Zen Mode, or the same Ability as the user, or if the user's Ability is As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, or Zen Mode.",
+		desc: "Causes the target's Ability to become Normalize. Fails if the target's Ability is Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Get Together, Gulp Missile, Ice Face, Multitype, Normalize, Power Construct, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, Truant, or Zen Mode.",
 		shortDesc: "The target's Ability changes to Normalize.",
     },
 	miraclefruit: {
