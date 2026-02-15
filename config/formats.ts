@@ -54,6 +54,13 @@ export const Formats: FormatList = [
 		ruleset: ['Flat Rules NatDex', '!! Adjust Level = 50', 'VGC Timer', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Zeeky H. Bomb', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 	},
+    {
+		name: "[Gen 8] Fundex VGC Reg B",
+		mod: 'gen8',
+		gameType: 'doubles',
+		ruleset: ['Flat Rules NatDex', '!! Adjust Level = 50', 'VGC Timer', 'Dynamax Clause'],
+		banlist: ['All Pokemon', 'Zeeky H. Bomb', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+	},
 	{
 		name: "[Gen 8] Fundex Cup Doubles",
 		desc: `Randomized teams of level-balanced Fundex Pok&eacute;mon with legal sets.`,
