@@ -943,7 +943,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	mummy: {
 		name: "Mummy",
-		desc: "Pokemon making contact with this Pokemon have their Ability changed to Mummy. Does not affect Pokemon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Mummy, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode Abilities.",
+		desc: "Pokemon making contact with this Pokemon have their Ability changed to Mummy. Does not affect Pokemon with the Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Get Together, Gulp Missile, Ice Face, Multitype, Mummy, Power Construct, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, Truant, or Zen Mode Abilities.",
 		shortDesc: "Pokemon making contact with this Pokemon have their Ability changed to Mummy.",
 		gen7: {
 			desc: "Pokemon making contact with this Pokemon have their Ability changed to Mummy. Does not affect Pokemon with the Battle Bond, Comatose, Disguise, Multitype, Mummy, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode Abilities.",
@@ -970,7 +970,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	neutralizinggas: {
 		name: "Neutralizing Gas",
-		desc: "While this Pokemon is active, Abilities have no effect. This Ability activates before hazards and other Abilities take effect. Does not affect the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode Abilities.",
+		desc: "While this Pokemon is active, Abilities have no effect. This Ability activates before hazards and other Abilities take effect. Does not affect the Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Get Together, Gulp Missile, Ice Face, Multitype, Power Construct, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, or Zen Mode Abilities.",
 		shortDesc: "While this Pokemon is active, Abilities have no effect.",
 
 		start: "  Neutralizing gas filled the area!",
@@ -1007,8 +1007,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	overcoat: {
 		name: "Overcoat",
-		desc: "This Pokemon is immune to powder moves, damage from Sandstorm or Hail, and the effects of Rage Powder and the Effect Spore Ability.",
-		shortDesc: "This Pokemon is immune to powder moves, Sandstorm or Hail damage, Effect Spore.",
+		desc: "This Pokemon is immune to powder moves, damage from Sandstorm or Hail, the effects of Rage Powder, the Effect Spore Ability, and Pixie Dust.",
+		shortDesc: "This Pokemon is immune to powder moves, Sandstorm or Hail damage, Effect Spore, Pixie Dust.",
 		gen5: {
 			desc: "This Pokemon is immune to damage from Sandstorm or Hail.",
 			shortDesc: "This Pokemon is immune to damage from Sandstorm or Hail.",
@@ -1121,7 +1121,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	powerofalchemy: {
 		name: "Power of Alchemy",
-		desc: "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, and Zen Mode.",
+		desc: "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Flower Gift, Forecast, Get Together, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, Trace, Wonder Guard, or Zen Mode.",
 		shortDesc: "This Pokemon copies the Ability of an ally that faints.",
 		gen7: {
 			desc: "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, and Zen Mode.",
@@ -1228,7 +1228,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	receiver: {
 		name: "Receiver",
-		desc: "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, and Zen Mode.",
+		desc: "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Flower Gift, Forecast, Get Together, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, Trace, Wonder Guard, or Zen Mode.",
 		shortDesc: "This Pokemon copies the Ability of an ally that faints.",
 		gen7: {
 			desc: "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, and Zen Mode.",
@@ -1735,7 +1735,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	trace: {
 		name: "Trace",
-		desc: "On switch-in, this Pokemon copies a random opposing Pokemon's Ability. Abilities that cannot be copied are As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, and Zen Mode. If no opposing Pokemon has an Ability that can be copied, this Ability will activate as soon as one does.",
+		desc: "On switch-in, this Pokemon copies a random opposing Pokemon's Ability. Abilities that cannot be copied are Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Flower Gift, Forecast, Get Together, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, Trace, or Zen Mode. If no opposing Pokemon has an Ability that can be copied, this Ability will activate as soon as one does.",
 		shortDesc: "On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability.",
 		gen7: {
 			desc: "On switch-in, this Pokemon copies a random opposing Pokemon's Ability. Abilities that cannot be copied are Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, and Zen Mode. If no opposing Pokemon has an Ability that can be copied, this Ability will activate as soon as one does.",
@@ -1828,7 +1828,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	wanderingspirit: {
 		name: "Wandering Spirit",
-		desc: "Pokemon making contact with this Pokemon have their Ability swapped with this one. Does not affect Pokemon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode Abilities.",
+		desc: "Pokemon making contact with this Pokemon have their Ability swapped with this one. Does not affect Pokemon with the Armor Damage, As One, Battle Bond, Cardboard Box, Comatose, Disguise, Get Together, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, Reflowering, RKS System, Schooling, Shields Down, Short-Tempered, Stance Change, Taxidermy, Wonder Guard, or Zen Mode Abilities.",
 		shortDesc: "Pokemon making contact with this Pokemon have their Ability swapped with this one.",
 
 		activate: "#skillswap",
