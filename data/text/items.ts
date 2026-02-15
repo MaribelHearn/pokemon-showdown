@@ -1497,7 +1497,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	safetygoggles: {
 		name: "Safety Goggles",
-		desc: "Holder is immune to powder moves and damage from Sandstorm or Hail.",
+		desc: "Holder is immune to powder moves and damage from Sandstorm, Hail, or Pixie Dust.",
 
 		block: "  [POKEMON] is not affected by [MOVE] thanks to its Safety Goggles!",
 	},
