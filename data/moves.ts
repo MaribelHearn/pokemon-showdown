@@ -21550,8 +21550,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	painflow: {
 		num: 2079,
-		accuracy: 80,
-		basePower: 40,
+		accuracy: 100,
+		basePower: 50,
 		category: "Special",
 		name: "Pain Flow",
 		pp: 5,
