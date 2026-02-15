@@ -772,14 +772,15 @@ export const commands: Chat.ChatCommands = {
 						}
 					}
 
-					if (dex.gen >= 8) {
+					// Fundex: Dynamax is not used
+					/*if (dex.gen >= 8) {
 						if (move.isMax) {
 							details["&#10003; Max Move"] = "";
 							if (typeof move.isMax === "string") details["User"] = `${move.isMax}`;
 						} else if (move.maxMove?.basePower) {
 							details["Dynamax Power"] = String(move.maxMove.basePower);
 						}
-					}
+					}*/
 
 					const targetTypes: {[k: string]: string} = {
 						normal: "One Adjacent Pok\u00e9mon",
