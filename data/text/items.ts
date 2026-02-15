@@ -1729,7 +1729,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	terrainextender: {
 		name: "Terrain Extender",
-		desc: "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
+		desc: "Holder's use of Electric/Grassy/Misty/Psychic/Glitchy Terrain lasts 8 turns instead of 5.",
 	},
 	thickclub: {
 		name: "Thick Club",
