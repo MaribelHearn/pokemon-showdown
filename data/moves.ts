@@ -23075,7 +23075,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allAdjacent",
 		type: "Ground",
 		secondary: null,
-		onHitField(target, source) {
+		onHit(target, source) {
 			this.field.clearTerrain();
 		}
 	},

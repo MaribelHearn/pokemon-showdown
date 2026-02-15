@@ -58,7 +58,8 @@ export const Formats: FormatList = [
 		name: "[Gen 8] Fundex VGC Reg B",
 		mod: 'gen8',
 		gameType: 'doubles',
-		ruleset: ['Flat Rules NatDex', '!! Adjust Level = 50', 'VGC Timer', 'Dynamax Clause'],
+		ruleset: ['Flat Rules NatDex', '!! Adjust Level = 50', 'VGC Timer', 'Dynamax Clause', 'Limit One Restricted'],
+		restricted: ['Restricted Legendary'],
 		banlist: ['All Pokemon', 'Zeeky H. Bomb', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
 	},
 	{
