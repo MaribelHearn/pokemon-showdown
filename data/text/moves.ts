@@ -7002,7 +7002,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	study: {
 		name: "Study",
 		desc: "Raises the user's Defense and Special Defense by 1 stage.",
-		shortDesc: "Usually goes first. Raises the user's Def and Sp. Def by 1.",
+		shortDesc: "Usually goes first. +1 Def and Sp. Def.",
 	},
 	corrupt: {
         name: "Corrupt",

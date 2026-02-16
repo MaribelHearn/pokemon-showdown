@@ -94940,6 +94940,7 @@ tentaquil: {
 			eruption: ["8L1"],
 			firespin: ["8L1"],
 			irondefense: ["8L1"],
+			strangesteam: ["8L1"],
 			hiddenpower: ["8M"],
 			hyperbeam: ["8M"],
 			protect: ["8M"],
