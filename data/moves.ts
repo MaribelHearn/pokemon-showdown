@@ -20504,7 +20504,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, defrost: 1, mirror: 1},
 		selfdestruct: "always",
-		target: "normal",
+		target: "allAdjacent",
 		type: "Normal",
 		secondary: null,
 		onModifyMove(move, pokemon) {
@@ -22835,7 +22835,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, defrost: 1, mirror: 1},
 		selfdestruct: "always",
-		target: "normal",
+		target: "allAdjacent",
 		type: "Dark",
 		secondary: null,
 		onModifyMove(move, pokemon) {
@@ -22852,7 +22852,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, defrost: 1, mirror: 1},
 		selfdestruct: "always",
-		target: "normal",
+		target: "allAdjacent",
 		type: "Fire",
 		secondary: null,
 		onModifyMove(move, pokemon) {
