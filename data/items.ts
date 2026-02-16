@@ -7227,6 +7227,30 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2012,
         gen: 8,
     },
+	zzazzberry: {
+		name: "Zzazz Berry",
+		spritenum: 743,
+		isBerry: true,
+		naturalGift: {
+			basePower: 80,
+			type: "???",
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (
+				move.type === '???' &&
+				(!target.volatiles['substitute'] || move.flags['bypasssub'] || (move.infiltrates && this.gen >= 6))
+			) {
+				if (target.eatItem()) {
+					this.debug('-50% reduction');
+					this.add('-enditem', target, this.effect, '[weaken]');
+					return this.chainModify(0.5);
+				}
+			}
+		},
+		onEat() { },
+		num: 2038,
+		gen: 8,
+	},
     plasmacane: {
         name: "Plasma Cane",
         spritenum: 753,
