@@ -7263,7 +7263,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	programfreeze: {
 		name: "Program Freeze",
-		desc: "Freezes the user, regardless of typing or status immunity. This move bypasses Comatose, Misty Terrain, Safeguard and Hourai Elixir.",
+		desc: "Freezes the user, regardless of typing or status immunity. This move bypasses Comatose, Misty Terrain, Safeguard and Hourai Elixir. Overrides any other non-volatile status.",
 		shortDesc: "Freezes the user, bypassing any source of immunity.",
 	},
 	datastream: {
