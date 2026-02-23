@@ -113,7 +113,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		ruleset: ['Standard Fundex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
-		banlist: ['Fundex Uber', 'All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		banlist: ['Fundex Uber', 'All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Shadow Tag', 'Baton Pass'],
 	},
 	{
 		name: "[Gen 8] Fundex Random",
@@ -132,8 +132,8 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		team: 'randomFC',
 		ruleset: [
-			'Picked Team Size = 1', 'Max Team Size = 3',
-			'Obtainable', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Accuracy Moves Clause', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause', 'Endless Battle Clause',
+			'Picked Team Size = 1', 'Max Team Size = 3', 'Obtainable', 'Species Clause', 'Nickname Clause', 'OHKO Clause',
+			'Evasion Moves Clause', 'Accuracy Moves Clause', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause', 'Endless Battle Clause',
 		],
 		banlist: ['All Pokemon'],
 		unbanlist: ['Fundex'],
@@ -154,7 +154,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		ruleset: ['Standard Fundex', 'Dynamax Clause'],
-		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet'],
+		banlist: ['All Pokemon', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Assault Vest', 'Black Sludge', 'Leftovers', 'Rocky Helmet', 'Normalium Z'],
 		onValidateSet(set) {
             if (set.moves.length !== 1 || this.dex.moves.get(set.moves[0]).id !== 'metronome') {
                 return [`${set.name || set.species} has illegal moves.`, `(Pok\u00e9mon can only have one Metronome in their moveset)`];
@@ -171,7 +171,8 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		ruleset: ['Fundex OMs', 'Sleep Clause Mod', '!OHKO Clause', 'Picked Team Size = 6', 'Adjust Level = 100'],
 		banlist: [
-			'All Pokemon', 'Zeeky H. Bomb', 'Infiltrator', 'Magic Guard', 'Negative Zone', 'Choice Scarf', 'Attract', 'Explosion', 'Final Gambit', 'Healing Wish', 'Lunar Dance', 'Magic Room', 'Memento', 'Misty Explosion', 'Self-Destruct', 'Catnarok', 'System Crash',
+			'All Pokemon', 'Zeeky H. Bomb', 'Infiltrator', 'Magic Guard', 'Negative Zone', 'Choice Scarf', 'Attract', 'Explosion', 'Final Gambit',
+			'Healing Wish', 'Lunar Dance', 'Magic Room', 'Memento', 'Misty Explosion', 'Self-Destruct', 'Catnarok', 'Dark Catnarok', 'Fiery Catnarok', 'System Crash',
 		],
 		unbanlist: ['Fundex'],
 		onValidateTeam(team) {
