@@ -7714,8 +7714,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     },
     serpentofchaos: {
 		isNonstandard: "Fundex",
-		tier: "Fundex OU",
-		natDexTier: "OU",
+		tier: "Fundex Uber",
+		natDexTier: "Uber",
     },
     winner: {
 		isNonstandard: "Fundex",
