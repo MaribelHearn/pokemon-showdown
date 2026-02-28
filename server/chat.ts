@@ -2397,7 +2397,7 @@ export const Chat = new class {
 	}
 
 	getDataPokemonHTML(species: Species, gen = 8, tier = '') {
-		const small = species.name.length >= 20 ? " small" : "";
+		const small = species.name.length >= 18 ? " small" : "";
 		let buf = '<li class="result">';
 		buf += '<span class="col numcol">' + (tier || species.tier) + '</span> ';
 		buf += `<span class="col iconcol"><psicon pokemon="${species.id}"/></span> `;
