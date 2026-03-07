@@ -21716,7 +21716,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	peerlesswindgod: {
 		num: 2086,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 0,
 		category: "Physical",
 		name: "Peerless Wind God",
 		pp: 10,
@@ -21725,10 +21725,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Flying",
 		secondary: null,
-		selfBoost: {
-			boosts: {
-				spe: 1,
-			},
+		zMove: {basePower: 160},
+		maxMove: {basePower: 130},
+		basePowerCallback(pokemon, target) {
+			let ratio = Math.floor(pokemon.getStat('spe') / target.getStat('spe'));
+			if (!isFinite(ratio)) ratio = 0;
+			const bp = [60, 60, 80, 120, 150][Math.min(ratio, 4)];
+			this.debug(`${bp} bp`);
+			return bp;
 		},
 	},
 	nope: {
@@ -22128,49 +22132,56 @@ export const Moves: {[moveid: string]: MoveData} = {
 	parasoltwirl: {
 		num: 2110,
 		accuracy: 100,
-		basePower: 50,
-		category: "Physical",
+		basePower: 0,
+		category: "Status",
 		name: "Parasol Twirl",
-		pp: 40,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		target: "normal",
+		pp: 10,
+		priority: 4,
+		flags: {},
+		target: "self",
 		type: "Grass",
-		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					spe: 1,
-				},
+		secondary: null,
+		zMove: {effect: 'clearnegativeboost'},
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'Protect');
 			},
-		},
-		onAfterHit(target, pokemon) {
-			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-				this.add('-end', pokemon, 'Leech Seed', '[from] move: Parasol Twirl', '[of] ' + pokemon);
-			}
-			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust'];
-			for (const condition of sideConditions) {
-				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Parasol Twirl', '[of] ' + pokemon);
+			onTryHitPriority: 3,
+			onTryHit(target, source, move) {
+				if (!move.flags['protect'] || move.category === 'Status') {
+					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+					return;
 				}
-			}
-			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
-				pokemon.removeVolatile('partiallytrapped');
-			}
-		},
-		onAfterSubDamage(damage, target, pokemon) {
-			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-				this.add('-end', pokemon, 'Leech Seed', '[from] move: Parasol Twirl', '[of] ' + pokemon);
-			}
-			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'pixiedust'];
-			for (const condition of sideConditions) {
-				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Parasol Twirl', '[of] ' + pokemon);
+				if (move.smartTarget) {
+					move.smartTarget = false;
+				} else {
+					this.add('-activate', target, 'move: Protect');
 				}
-			}
-			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
-				pokemon.removeVolatile('partiallytrapped');
-			}
+				const lockedmove = source.getVolatile('lockedmove');
+				if (lockedmove) {
+					// Outrage counter is reset
+					if (source.volatiles['lockedmove'].duration === 2) {
+						delete source.volatiles['lockedmove'];
+					}
+				}
+				if (this.checkMoveMakesContact(move, source, target)) {
+					this.boost({spe: 1}, target, target, this.dex.getActiveMove("Parasol Twirl"));
+				}
+				return this.NOT_FAIL;
+			},
+			onHit(target, source, move) {
+				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
+					this.boost({spe: 1}, target, target, this.dex.getActiveMove("Parasol Twirl"));
+				}
+			},
 		},
 	},
     bulletspray: {

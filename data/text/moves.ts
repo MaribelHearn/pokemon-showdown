@@ -7321,8 +7321,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	peerlesswindgod: {
 		name: "Peerless Wind God",
-		desc: "Raises the user's Speed by 1 stage.",
-		shortDesc: "Raises the user's Speed by 1.",
+		desc: "The power of this move depends on (user's current Speed / target's current Speed), rounded down. Power is equal to 150 if the result is 4 or more, 120 if 3, 80 if 2, 60 if 1, 40 if less than 1. If the target's current Speed is 0, this move's power is 40.",
+		shortDesc: "More power the faster the user is than the target.",
 	},
 	nope: {
 		name: "nope",
@@ -7443,8 +7443,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	parasoltwirl: {
 		name: "Parasol Twirl",
-		desc: "If this move is successful and the user has not fainted, the effects of Leech Seed and binding moves end for the user, and all hazards are removed from the user's side of the field. Has a 100% chance to raise the user's Speed by 1 stage.",
-		shortDesc: "Free user from hazards/bind/Leech Seed; +1 Spe.",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user raise the user's Speed by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Electrical Shield, Endure, Firewall, King's Shield, Max Guard, Obstruct, Parasol Twirl, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from damaging attacks. Contact: +1 Spe.",
 	},
     bulletspray: {
         name: "Bullet Spray",
