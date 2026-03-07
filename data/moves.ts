@@ -20710,16 +20710,16 @@ export const Moves: {[moveid: string]: MoveData} = {
 	thunderdrumshot: {
 		num: 2040,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 60,
 		category: "Special",
 		name: "Thunder Drum Shot",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1},
-		target: "normal",
+		target: "allAdjacentFoes",
 		type: "Electric",
 		secondary: {
-			chance: 30,
+			chance: 100,
 			boosts: {
 				spd: -1,
 			},
