@@ -16624,7 +16624,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Marisa",
 		types: ["Electric", "Flying"],
 		gender: "F",
-		baseStats: {hp: 85, atk: 70, def: 70, spa: 125, spd: 90, spe: 100},
+		baseStats: {hp: 85, atk: 60, def: 70, spa: 125, spd: 90, spe: 110},
 		abilities: {0: "Magician", 1: "Pickpocket", H: "Elementalist"},
 		weightkg: 45,
 		color: "Black",
