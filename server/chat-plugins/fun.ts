@@ -405,7 +405,7 @@ export const commands: Chat.ChatCommands  = {
 				`<strong>Anyone</strong> can use:`,
                 `/attack <em>username</em>*<em>move</em>: use a move on a user, or random user and move if none given`,
                 `/attract <em>username</em>: attract a user, or a random user if none given`,
-                `/bigtext <em>text</em>*<em>title</em>*<em>size</em>*<em>color</em>` +
+                `/bigtext <em>title</em>*<em>text</em>*<em>size</em>*<em>color</em>` +
                 ` - send a big text command, defaults used if nothing given`,
                 `/bulbaderp : bulbaderp`,
                 `/burn <em>username</em>: burn a user, or a random user if none given`,
