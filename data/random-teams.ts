@@ -511,7 +511,7 @@ export class RandomTeams {
 			const shiny = this.randomChance(1, 1024);
 
 			team.push({
-				name: species.baseSpecies,
+				name: species.name,
 				species: species.name,
 				gender: species.gender,
 				item,
@@ -1370,7 +1370,7 @@ export class RandomTeams {
 			const shiny = this.randomChance(1, 1024);
 
 			team.push({
-				name: species.baseSpecies,
+				name: species.name,
 				species: species.name,
 				gender: species.gender,
 				item,
