@@ -689,7 +689,7 @@ export class CommandContext extends MessageContext {
 			}
 			Chat.sendPM(message, this.user, this.pmTarget);
 		} else if (this.room) {
-			if (message === 'll' || message.toLowerCase() === 'rr' || message.toLowerCase() === 'zz') {
+			if (message.toLowerCase() === 'll' || message.toLowerCase() === 'rr' || message.toLowerCase() === 'zz') {
 				const timeStamp = `[${Chat.toTimestamp(new Date()).split(' ')[1]}]`;
 				this.room?.addRaw(`<div class="chat"><small>${timeStamp} </small><b style="color:orangered">${this.user.name} just did a barrel roll!</b></div>`);
 			}
