@@ -7300,7 +7300,7 @@ export const Items: {[itemid: string]: ItemData} = {
             if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
             return true;
         },
-        num: 2017,
+        num: 2016,
         gen: 8,
     },
     sabotenbottle: {
@@ -7313,7 +7313,7 @@ export const Items: {[itemid: string]: ItemData} = {
             if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
             return true;
         },
-        num: 2018,
+        num: 2017,
         gen: 8,
     },
     strangegap: {
@@ -7326,7 +7326,7 @@ export const Items: {[itemid: string]: ItemData} = {
             if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
             return true;
         },
-        num: 2019,
+        num: 2018,
         gen: 8,
     },
     unknowniumz: {
@@ -7337,7 +7337,7 @@ export const Items: {[itemid: string]: ItemData} = {
         zMove: true,
         zMoveType: "???",
         forcedForme: "Arceus-Unknown",
-        num: 2023,
+        num: 2019,
         gen: 8,
     },
 	glitchyseed: {
@@ -7360,7 +7360,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		boosts: {
 			spd: 1,
 		},
-		num: 2024,
+		num: 2020,
         gen: 8,
 	},
 	celliumz: {
@@ -7370,7 +7370,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "IMMA FIRIN' MAH LAZER!!",
 		zMoveFrom: "Hyper Beam",
 		itemUser: ["Cell", "Dr. Octogonapus"],
-		num: 2025,
+		num: 2021,
 		gen: 8,
 	},
 	cirniumz: {
@@ -7380,7 +7380,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Perfect Freeze",
 		zMoveFrom: "Diamond Blizzard",
 		itemUser: ["Cirno"],
-		num: 2026,
+		num: 2022,
 		gen: 8,
 	},
 	leonidiumz: {
@@ -7390,7 +7390,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Sparta Kick",
 		zMoveFrom: "High Jump Kick",
 		itemUser: ["Leonidas"],
-		num: 2027,
+		num: 2023,
 		gen: 8,
 	},
 	utsuhoniumz: {
@@ -7400,7 +7400,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Uncontainable Nuclear Reaction",
 		zMoveFrom: "Nuke",
 		itemUser: ["Utsuho"],
-		num: 2028,
+		num: 2024,
 		gen: 8,
 	},
 	yuyukiumz: {
@@ -7410,7 +7410,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Saigyouji Flawless Nirvana",
 		zMoveFrom: "Ghastly Dream",
 		itemUser: ["Yuyuko"],
-		num: 2029,
+		num: 2025,
 		gen: 8,
 	},
 	crabiumz: {
@@ -7420,7 +7420,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Massive Damage",
 		zMoveFrom: "Earthquake",
 		itemUser: ["Giant Enemy Crab"],
-		num: 2030,
+		num: 2026,
 		gen: 8,
 	},
 	kagiumz: {
@@ -7430,7 +7430,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Hourai Jewel",
 		zMoveFrom: "Energy Ball",
 		itemUser: ["Kaguya"],
-		num: 2031,
+		num: 2027,
 		gen: 8,
 	},
 	mokiumz: {
@@ -7440,7 +7440,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Imperishable Shooting",
 		zMoveFrom: "Sacred Fire",
 		itemUser: ["Mokou"],
-		num: 2032,
+		num: 2028,
 		gen: 8,
 	},
 	winneriumz: {
@@ -7450,7 +7450,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Medicine of Life",
 		zMoveFrom: "Recover",
 		itemUser: ["*** WINNER ***"],
-		num: 2033,
+		num: 2029,
 		gen: 8,
 	},
 	maribiumz: {
@@ -7460,7 +7460,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Overflowing Unnatural Power",
 		zMoveFrom: "Cosmic Power",
 		itemUser: ["Maribel"],
-		num: 2034,
+		num: 2030,
 		gen: 8,
 	},
 	youmiumz: {
@@ -7470,7 +7470,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "200 Yojana in 1 Slash",
 		zMoveFrom: "Slash of Eternity",
 		itemUser: ["Youmu"],
-		num: 2035,
+		num: 2031,
 		gen: 8,
 	},
     wrathcookie: {
@@ -7483,7 +7483,7 @@ export const Items: {[itemid: string]: ItemData} = {
             if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
             return true;
         },
-        num: 2036,
+        num: 2032,
         gen: 8,
     },
 	achirniumz: {
@@ -7493,7 +7493,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Perfect Burn",
 		zMoveFrom: "Diamond Blizzard",
 		itemUser: ["Achi Cirno"],
-		num: 2037,
+		num: 2033,
 		gen: 8,
 	},
 };

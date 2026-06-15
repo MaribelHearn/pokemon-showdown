@@ -397,7 +397,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	dubiousdisc: {
 		name: "Dubious Disc",
-		desc: "Evolves Porygon2 into Porygon-Z when traded.",
+		desc: "Evolves certain species of Pokemon when used.",
 	},
 	durinberry: {
 		name: "Durin Berry",
@@ -1332,7 +1332,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	protector: {
 		name: "Protector",
-		desc: "Evolves Rhydon into Rhyperior when traded.",
+		desc: "Evolves certain species of Pokemon when used.",
 	},
 	psychicgem: {
 		name: "Psychic Gem",
@@ -2183,7 +2183,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	upgrade: {
 		name: "Up-Grade",
-		desc: "Evolves Porygon into Porygon2 when traded.",
+		desc: "Evolves certain species of Pokemon when used.",
 	},
 	utilityumbrella: {
 		name: "Utility Umbrella",
