@@ -7473,8 +7473,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2031,
 		gen: 8,
 	},
-    wrathcookie: {
-        name: "Wrath Cookie",
+    ritualrollingpin: {
+        name: "Ritual Rolling Pin",
         spritenum: 765,
         megaStone: "Grandmatriarch",
         megaEvolves: "Grandma",

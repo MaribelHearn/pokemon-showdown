@@ -18910,7 +18910,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Red",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Wrath Cookie",
+		requiredItem: "Ritual Rolling Pin",
 	},
 	dummy: {
 		num: 2163,

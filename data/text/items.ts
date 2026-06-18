@@ -2398,8 +2398,8 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Strange Gap",
 		desc: "If held by Maribel, this item allows her to Mega Evolve in battle.",
     },
-    wrathcookie: {
-        name: "Wrath Cookie",
+    ritualrollingpin: {
+        name: "Ritual Rolling Pin",
 		desc: "If held by Grandma, this item allows her to Mega Evolve in battle.",
     },
     unknowniumz: {

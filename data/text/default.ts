@@ -45,7 +45,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		transformBowser: "[POKEMON] transformed into Giga Bowser!",
 		transformMaribel: "[POKEMON] transformed into Berserk Maribel!",
 		transformVIVIT: "[POKEMON] transformed into Angel VIVIT!",
-		transformGrandma: "[POKEMON] ate the Wrath Cookie and became angered!",
+		transformGrandma: "[POKEMON] became angered!",
 		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state!",
 		zPower: "  [POKEMON] surrounded itself with its Z-Power!",
 		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt!",
