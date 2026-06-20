@@ -800,7 +800,7 @@ export const commands: Chat.ChatCommands  = {
         const nature = Dex.natures.get(random(Dex.data.Natures)).name;
         const item = Dex.items.get(random(Dex.data.Items));
 
-        const itemId = item.name.toLowerCase().replace(' ', '');
+        const itemId = item.name.toLowerCase().replace(' ', '-');
         const article = nature.startsWith('A') || nature.startsWith('I') ? 'an' : 'a';
 
         room?.addRaw(`<div class="chat"><small>${timeStamp()} </small>${user.name} has rolled <b>${pokemon.num}</b>! They obtained ${article} ${nature} ` +
