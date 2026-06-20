@@ -799,11 +799,15 @@ export const commands: Chat.ChatCommands  = {
         const pokemon = Dex.species.get(random(Dex.data.Pokedex));
         const nature = Dex.natures.get(random(Dex.data.Natures)).name;
         const item = Dex.items.get(random(Dex.data.Items));
+
+        const itemId = item.name.toLowerCase().replace(' ', '');
         const article = nature.startsWith('A') || nature.startsWith('I') ? 'an' : 'a';
+
         room?.addRaw(`<div class="chat"><small>${timeStamp()} </small>${user.name} has rolled <b>${pokemon.num}</b>! They obtained ${article} ${nature} ` +
             `<b style="color: ${TYPE_COLORS[pokemon.types[0]]};">${pokemon.name}</b> holding a ${item}!</div>`);
-        room?.addRaw(`<img src="https://${Config.routes.client}/sprites/gen5${isShiny ? '-shiny' : ''}/${pokemon.id}.png" alt="${pokemon.name}" width=96 height=96>` +
-            `<img src="https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/itemicons/${item.id}.png">`);
+
+        room?.addRaw(`<img src="https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/gen5${isShiny ? '-shiny' : ''}/${pokemon.id}.png" alt="${pokemon.name}" width=96 height=96>` +
+            `<img src="https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/itemicons/${itemId}.png">`);
     },
     roulettehelp: [
         `/roulette - Randomly generate a Pokemon.`,
