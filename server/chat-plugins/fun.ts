@@ -435,6 +435,7 @@ export const commands: Chat.ChatCommands  = {
                 `/paralyze OR /paralyse <em>username</em>: paralyze a user, or a random user if none given`,
                 `/poison <em>username</em>: poison a user, or a random user if none given`,
                 `/random : send random garbage text`,
+                `/roulette : randomly generate a Pokemon`,
                 `/randomsupport : ship a random pair of users`,
                 `/russia <em>verb</em>*<em>noun</em>: send a Russian Reversal joke using verb and noun, or random if none given`,
                 `/see : disconnects you from the server`,
