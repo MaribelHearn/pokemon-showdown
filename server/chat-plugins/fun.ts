@@ -8,6 +8,7 @@ const CRIT_RATE = 0.0625;
 const DEFAULT_ACC = 95;
 const DELIMITER = '*';
 const CMD_COLOR = '#008000';
+const RESOURCE_PREFIX = 'https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master';
 const AUTH = ['+', '%', '@', '*', '#', '&'];
 const EFFECTS = ['', '', '', 'It\'s super effective!', 'It\'s not very effective...', 'It had no effect!'];
 const BIGTEXTS: any = {
@@ -388,7 +389,14 @@ function checkCooldown(user: User | null = null) {
 }
 
 function pokeBallImage(ball: string) {
-    return `<img src="https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/itemicons/${ball}-ball.png" alt="${cap(ball)} Ball">`;
+    return `<img src="${RESOURCE_PREFIX}/sprites/itemicons/${ball}-ball.png" alt="${cap(ball)} Ball">`;
+}
+
+function itemImage(item: Item) {
+    let spriteNum = item.spritenum ? item.spritenum : 0;
+    const top = Math.floor(spriteNum / 16) * 24;
+    const left = (spriteNum % 16) * 24;
+    return `background:transparent url(${RESOURCE_PREFIX}/sprites/itemicons-sheet.png?g8) no-repeat scroll -${left}px -${top}px`;
 }
 
 export const commands: Chat.ChatCommands  = {
@@ -794,20 +802,29 @@ export const commands: Chat.ChatCommands  = {
 
     roulette(target, room: Room | null, user: User, connection, cmd: string) {
         this.checkChat();
-        const shinyOdds = 4096;
-        const isShiny = Math.floor(Math.random() * shinyOdds) === 0;
-        const pokemon = Dex.species.get(random(Dex.data.Pokedex));
+        const isShiny = rand(4096) === 0;
+        const filteredPokedex = Object.keys(Dex.data.Pokedex).filter(function notCAP(id) {
+            const species = Dex.species.get(id);
+            return species.isNonstandard !== 'Past' && species.isNonstandard !== 'CAP' && !species.battleOnly;
+        });
+        const pokemon = Dex.species.get(random(filteredPokedex));
         const nature = Dex.natures.get(random(Dex.data.Natures)).name;
         const item = Dex.items.get(random(Dex.data.Items));
 
-        const itemId = item.name.toLowerCase().replace(' ', '-');
-        const article = nature.startsWith('A') || nature.startsWith('I') ? 'an' : 'a';
+        let pokemonId = pokemon.isNonstandard !== 'Fundex' && pokemon.forme.length > 0 ? pokemon.name.toLowerCase() : pokemon.id;
 
-        room?.addRaw(`<div class="chat"><small>${timeStamp()} </small>${user.name} has rolled <b>${pokemon.num}</b>! They obtained ${article} ${nature} ` +
-            `<b style="color: ${TYPE_COLORS[pokemon.types[0]]};">${pokemon.name}</b> holding a ${item}!</div>`);
+        if (pokemon.forme.length > 0) {
+            pokemonId = pokemon.baseSpecies.toLowerCase() + '-' + pokemon.forme.toLowerCase().replace('-', '');
+        }
 
-        room?.addRaw(`<img src="https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/gen5${isShiny ? '-shiny' : ''}/${pokemon.id}.png" alt="${pokemon.name}" width=96 height=96>` +
-            `<img src="https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master/sprites/itemicons/${itemId}.png">`);
+        const article1 = nature.startsWith('A') || nature.startsWith('I') ? 'an' : 'a';
+        const article2 = item.name.startsWith('A') || item.name.startsWith('E') || item.name.startsWith('I') || item.name.startsWith('O') || item.name.startsWith('U') ? 'an' : 'a';
+
+        room?.addRaw(`<div class="chat"><small>${timeStamp()} </small>${user.name} has rolled <b>${pokemon.num}</b>! They obtained ${article1} ${nature} ` +
+            `<b style="color: ${TYPE_COLORS[pokemon.types[0]]};">${pokemon.name}</b> holding ${article2} ${item}!</div>`);
+
+        room?.addRaw(`<img src="${RESOURCE_PREFIX}/sprites/gen5${isShiny ? '-shiny' : ''}/${pokemonId}.png" alt="${pokemon.name}" width=96 height=96>` +
+            `<span class="rouletteitem" style="${itemImage(item)}"></span>`);
     },
     roulettehelp: [
         `/roulette - Randomly generate a Pokemon.`,
