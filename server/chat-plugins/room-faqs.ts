@@ -189,7 +189,7 @@ export const pages: Chat.PageTable = {
 		this.title = `[Room FAQs]`;
 		// allow it for users if they can access the room
 		if (!room.checkModjoin(user)) {
-			throw new Chat.ErrorMessage(`<h2>Access denied.</h2>`);
+			throw new Chat.ErrorMessage(`<h2>Can't let you do that, Star Fox!</h2>`);
 		}
 		let buf = `<div class="pad"><button style="float:right;" class="button" name="send" value="/join view-roomfaqs-${room.roomid}"><i class="fa fa-refresh"></i> Refresh</button>`;
 		if (!roomFaqs[room.roomid]) {

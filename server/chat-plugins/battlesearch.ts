@@ -307,7 +307,7 @@ async function fsBattleSearch(
 ) {
 	userids = userids.map(toID);
 	const user = connection.user;
-	if (!user.can('forcewin')) return connection.popup(`/battlesearch - Access Denied`);
+	if (!user.can('forcewin')) return connection.popup(`/battlesearch - Can't let you do that, Star Fox!`);
 
 	const response = await PM.query({userids, turnLimit, month, tierid});
 	connection.send(buildResults(response, userids as ID[], month, tierid, turnLimit));

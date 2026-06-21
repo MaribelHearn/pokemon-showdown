@@ -140,7 +140,7 @@ export const pages: Chat.PageTable = {
 		this.title = `[Quotes]`;
 		// allow it for users if they can access the room
 		if (!room.checkModjoin(user)) {
-			return this.errorReply(`Access denied.`);
+			return this.errorReply(`Can't let you do that, Star Fox!`);
 		}
 		let buffer = `<div class="pad">`;
 		buffer += `<button style="float:right;" class="button" name="send" value="/join view-quotes-${room.roomid}"><i class="fa fa-refresh"></i> Refresh</button>`;

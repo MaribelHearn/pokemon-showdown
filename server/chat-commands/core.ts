@@ -523,7 +523,7 @@ export const commands: Chat.ChatCommands = {
 	hiderank(target, room, user, connection, cmd) {
 		const userGroup = Users.Auth.getGroup(Users.globalAuth.get(user.id));
 		if (!userGroup['hiderank'] || !user.registered) {
-			return this.errorReply(`/hiderank - Access denied.`);
+			return this.errorReply(`/hiderank - Can't let you do that, Star Fox!`);
 		}
 
 		const isShow = cmd === 'showrank';
@@ -1153,7 +1153,7 @@ export const commands: Chat.ChatCommands = {
 		}
 		const force = user.can('timer', null, room);
 		if (!force && !room.game.playerTable[user.id]) {
-			return this.errorReply(this.tr`Access denied.`);
+			return this.errorReply(this.tr`Can't let you do that, Star Fox!`);
 		}
 		if (this.meansNo(target) || target === 'stop') {
 			if (timer.timerRequesters.size) {

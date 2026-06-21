@@ -151,11 +151,11 @@ async function getModlog(
 	// permission checking
 	if (roomid === 'all' || roomid === 'public') {
 		if (!user.can('modlog')) {
-			return connection.popup("Access denied");
+			return connection.popup("Can't let you do that, Star Fox!");
 		}
 	} else {
 		if (!user.can('modlog', null, targetRoom) && !user.can('modlog')) {
-			return connection.popup("Access denied");
+			return connection.popup("Can't let you do that, Star Fox!");
 		}
 	}
 

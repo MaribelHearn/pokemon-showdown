@@ -1003,7 +1003,7 @@ export class CommandContext extends MessageContext {
 	checkCan(permission: GlobalPermission, target?: User | ID | null): undefined;
 	checkCan(permission: string, target: User | ID | null = null, room: Room | null = null) {
 		if (!Users.Auth.hasPermission(this.user, permission, target, room, this.fullCmd)) {
-			throw new Chat.ErrorMessage(`${this.cmdToken}${this.fullCmd} - Access denied.`);
+			throw new Chat.ErrorMessage(`${this.cmdToken}${this.fullCmd} - Can't let you do that, Star Fox!`);
 		}
 	}
 	privatelyCheckCan(permission: RoomPermission, target: User | ID | null, room: Room): boolean;

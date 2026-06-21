@@ -1335,7 +1335,7 @@ export const pages: Chat.PageTable = {
 			if (room) {
 				this.checkCan('declare', null, room);
 			} else {
-				return this.errorReply(`Access denied.`);
+				return this.errorReply(`Can't let you do that, Star Fox!`);
 			}
 		}
 
@@ -1353,7 +1353,7 @@ export const pages: Chat.PageTable = {
 		}
 		if (room) {
 			if (!user.can('lock') || room.settings.isPrivate === 'hidden' && !room.checkModjoin(user)) {
-				if (!room.persist) return this.errorReply(`Access denied.`);
+				if (!room.persist) return this.errorReply(`Can't let you do that, Star Fox!`);
 				this.checkCan('mute', null, room);
 			}
 		} else {

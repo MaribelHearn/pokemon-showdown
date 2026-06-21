@@ -81,7 +81,7 @@ export const commands: Chat.ChatCommands = {
 			return this.sendReply(`Moderated chat is currently set to: ${modchatSetting}`);
 		}
 		if (user.locked) { // would put this below but it behaves weird if there's no modchat set
-			return this.errorReply(`/modchat - Access denied.`);
+			return this.errorReply(`/modchat - Can't let you do that, Star Fox!`);
 		} else {
 			this.checkCan('modchat', null, room);
 		}
@@ -217,7 +217,7 @@ export const commands: Chat.ChatCommands = {
 
 	inviteonlynext(target, room, user) {
 		const groupConfig = Config.groups[Users.PLAYER_SYMBOL];
-		if (!groupConfig?.editprivacy) return this.errorReply(`/ionext - Access denied.`);
+		if (!groupConfig?.editprivacy) return this.errorReply(`/ionext - Can't let you do that, Star Fox!`);
 		if (this.meansNo(target)) {
 			user.battleSettings.inviteOnly = false;
 			user.update();
@@ -1172,7 +1172,7 @@ export const commands: Chat.ChatCommands = {
 
 	hidenext(target, room, user) {
 		const groupConfig = Config.groups[Users.PLAYER_SYMBOL];
-		if (!groupConfig?.editprivacy) return this.errorReply(`/hidenext - Access denied.`);
+		if (!groupConfig?.editprivacy) return this.errorReply(`/hidenext - Can't let you do that, Star Fox!`);
 		if (this.meansNo(target)) {
 			user.battleSettings.hidden = false;
 			user.update();

@@ -85,7 +85,7 @@ export const commands: Chat.ChatCommands = {
 			return this.errorReply(`User ${target} not found.`);
 		}
 		if (showAll && !user.trusted && targetUser !== user) {
-			return this.errorReply(`/${cmd} - Access denied.`);
+			return this.errorReply(`/${cmd} - Can't let you do that, Star Fox!`);
 		}
 
 		let buf = Utils.html`<strong class="username"><small style="display:none">${targetUser.tempGroup}</small>${targetUser.name}</strong> `;
@@ -325,7 +325,7 @@ export const commands: Chat.ChatCommands = {
 	checkpunishment: 'offlinewhois',
 	offlinewhois(target, room, user) {
 		if (!user.trusted) {
-			return this.errorReply("/offlinewhois - Access denied.");
+			return this.errorReply("/offlinewhois - Can't let you do that, Star Fox!");
 		}
 		const userid = toID(target);
 		if (!userid) return this.errorReply("Please enter a valid username.");
