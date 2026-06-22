@@ -815,7 +815,7 @@ export const commands: Chat.ChatCommands  = {
         let pokemonId = pokemon.isNonstandard !== 'Fundex' && pokemon.forme.length > 0 ? pokemon.name.toLowerCase() : pokemon.id;
 
         if (pokemon.forme.length > 0) {
-            pokemonId = pokemon.baseSpecies.toLowerCase() + '-' + pokemon.forme.toLowerCase().replace('-', '');
+            pokemonId = pokemon.baseSpecies.toLowerCase().replace(/\s/g, '') + '-' + pokemon.forme.toLowerCase().replace('-', '');
         }
 
         const article1 = nature.startsWith('A') || nature.startsWith('I') ? 'an' : 'a';
