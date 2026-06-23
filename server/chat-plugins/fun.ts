@@ -806,7 +806,7 @@ export const commands: Chat.ChatCommands  = {
         const isShiny = rand(4096) === 0;
         const filteredPokedex = Object.keys(Dex.data.Pokedex).filter(function notCAP(id) {
             const species = Dex.species.get(id);
-            return species.isNonstandard !== 'Past' && species.isNonstandard !== 'CAP' && !species.battleOnly;
+            return species.isNonstandard !== 'Past' && species.isNonstandard !== 'CAP' && !species.battleOnly && species.num !== 0;
         });
         const pokemon = Dex.species.get(random(filteredPokedex));
         const nature = Dex.natures.get(random(Dex.data.Natures)).name;
@@ -815,7 +815,7 @@ export const commands: Chat.ChatCommands  = {
         let pokemonId = pokemon.isNonstandard !== 'Fundex' && pokemon.forme.length > 0 ? pokemon.name.toLowerCase() : pokemon.id;
 
         if (pokemon.forme.length > 0) {
-            pokemonId = pokemon.baseSpecies.toLowerCase().replace(/\s/g, '') + '-' + pokemon.forme.toLowerCase().replace('-', '');
+            pokemonId = pokemon.baseSpecies.toLowerCase().replace(/\s|\./g, '') + '-' + pokemon.forme.toLowerCase().replace('-', '');
         }
 
         const article1 = nature.startsWith('A') || nature.startsWith('I') ? 'an' : 'a';
