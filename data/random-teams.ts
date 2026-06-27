@@ -508,7 +508,7 @@ export class RandomTeams {
 			const happiness = this.random(256);
 
 			// Random shininess
-			const shiny = this.randomChance(1, 1024);
+			const shiny = this.randomChance(1, 256);
 
 			team.push({
 				name: species.name,
@@ -1367,7 +1367,7 @@ export class RandomTeams {
 			const happiness = this.random(256);
 
 			// Random shininess
-			const shiny = this.randomChance(1, 1024);
+			const shiny = this.randomChance(1, 256);
 
 			team.push({
 				name: species.name,
