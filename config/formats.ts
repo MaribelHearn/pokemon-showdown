@@ -233,7 +233,7 @@ export const Formats: FormatList = [
 		team: 'randomFC',
 		ruleset: ['HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause'],
 		banlist: ['All Pokemon', 'Max Strike', 'Max Knuckle', 'Max Airstream', 'Max Ooze', 'Max Quake', 'Max Rockfall', 'Max Flutterby', 'Max Phantasm', 'Max Steelspike', 'Max Flare',
-			'Max Geyser', 'Max Overgrowth', 'Max Lightning', 'Max Mindstorm', 'Max Hailstorm', 'Max Wyrmwind', 'Max Darkness', 'Max Starfall', 'Max Guard', 'Max Spirit'],
+			'Max Geyser', 'Max Overgrowth', 'Max Lightning', 'Max Mindstorm', 'Max Hailstorm', 'Max Wyrmwind', 'Max Darkness', 'Max Starfall', 'Max Guard'],
 		unbanlist: ['Fundex'],
 	},
 	{
@@ -247,7 +247,7 @@ export const Formats: FormatList = [
 			'Evasion Moves Clause', 'Accuracy Moves Clause', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause', 'Endless Battle Clause',
 		],
 		banlist: ['All Pokemon', 'Max Strike', 'Max Knuckle', 'Max Airstream', 'Max Ooze', 'Max Quake', 'Max Rockfall', 'Max Flutterby', 'Max Phantasm', 'Max Steelspike', 'Max Flare',
-			'Max Geyser', 'Max Overgrowth', 'Max Lightning', 'Max Mindstorm', 'Max Hailstorm', 'Max Wyrmwind', 'Max Darkness', 'Max Starfall', 'Max Guard', 'Max Spirit'],
+			'Max Geyser', 'Max Overgrowth', 'Max Lightning', 'Max Mindstorm', 'Max Hailstorm', 'Max Wyrmwind', 'Max Darkness', 'Max Starfall', 'Max Guard'],
 		unbanlist: ['Fundex'],
 	},
 	{
