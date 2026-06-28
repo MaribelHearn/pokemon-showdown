@@ -232,7 +232,8 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		team: 'randomFC',
 		ruleset: ['HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause'],
-		banlist: ['All Pokemon'],
+		banlist: ['All Pokemon', 'Max Strike', 'Max Knuckle', 'Max Airstream', 'Max Ooze', 'Max Quake', 'Max Rockfall', 'Max Flutterby', 'Max Phantasm', 'Max Steelspike', 'Max Flare',
+			'Max Geyser', 'Max Overgrowth', 'Max Lightning', 'Max Mindstorm', 'Max Hailstorm', 'Max Wyrmwind', 'Max Darkness', 'Max Starfall', 'Max Guard', 'Max Spirit'],
 		unbanlist: ['Fundex'],
 	},
 	{
@@ -245,7 +246,8 @@ export const Formats: FormatList = [
 			'Picked Team Size = 1', 'Max Team Size = 3', 'Obtainable', 'Species Clause', 'Nickname Clause', 'OHKO Clause',
 			'Evasion Moves Clause', 'Accuracy Moves Clause', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Dynamax Clause', 'Endless Battle Clause',
 		],
-		banlist: ['All Pokemon'],
+		banlist: ['All Pokemon', 'Max Strike', 'Max Knuckle', 'Max Airstream', 'Max Ooze', 'Max Quake', 'Max Rockfall', 'Max Flutterby', 'Max Phantasm', 'Max Steelspike', 'Max Flare',
+			'Max Geyser', 'Max Overgrowth', 'Max Lightning', 'Max Mindstorm', 'Max Hailstorm', 'Max Wyrmwind', 'Max Darkness', 'Max Starfall', 'Max Guard', 'Max Spirit'],
 		unbanlist: ['Fundex'],
 	},
 	{
