@@ -18387,7 +18387,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["???", "Poison"],
 		gender: "N",
 		baseStats: {hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50},
-		abilities: {0: "Stench", H: "Liquid Ooze"},
+		abilities: {0: "Stench", 1: "Liquid Ooze", H: "Egg Watch"},
 		weightkg: 45,
 		color: "Green",
 		tags: ["Fundex Non-Legendary"],

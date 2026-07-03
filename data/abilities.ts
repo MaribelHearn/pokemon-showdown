@@ -5301,4 +5301,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 2043,
 	},
+    eggwatch: {
+		onResidual(pokemon) {
+			const filteredPokedex = Object.keys(Dex.data.Pokedex).filter(function notCAP(id) {
+				const species = Dex.species.get(id);
+				return species.isNonstandard !== 'Past' && species.isNonstandard !== 'CAP' && !species.battleOnly && species.num !== 0;
+			});
+			const rand = filteredPokedex[Math.floor(Math.random() * filteredPokedex.length)];
+			const targetSpecies = Dex.species.get(rand);
+			pokemon.transformIntoSpecies(targetSpecies, this.dex.abilities.get('eggwatch'));
+			this.effectState.switchingIn = false;
+		},
+		name: "Egg Watch",
+		rating: 5,
+		num: 2044,
+    },
 };

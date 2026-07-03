@@ -1127,6 +1127,38 @@ export class Pokemon {
 		}
 	}
 
+	transformIntoSpecies(species: Species, effect?: Effect) {
+		if (this.illusion || (this.transformed && this.battle.gen >= 5)) {
+			return false;
+		}
+
+		if (!this.setSpecies(species, effect, true)) {
+			return false;
+		}
+
+		this.transformed = true;
+		this.weighthg = species.weighthg;
+		this.setType(species.types, true);
+
+		if (this.battle.gen > 2) {
+			const numberOfAbilities = Object.keys(species.abilities).length;
+			const randInt = Math.floor(Math.random() * numberOfAbilities);
+			const speciesAbilities = Object.keys(this.battle.dex.abilities).filter(function belongsToSpecies(id) {
+				console.log(id);
+				return species.abilities[0] === id || species.abilities[1] && species.abilities[1] === id || species.abilities['H'] && species.abilities['H'] === id;
+			});
+			this.setAbility(speciesAbilities[randInt], this, true);
+		}
+
+		if (effect) {
+			this.battle.add('-transform', this, species, '[from] ' + effect.fullname);
+		} else {
+			this.battle.add('-transform', this, species);
+		}
+
+		return true;
+	}
+
 	transformInto(pokemon: Pokemon, effect?: Effect) {
 		const species = pokemon.species;
 		if (pokemon.fainted || this.illusion || pokemon.illusion || (pokemon.volatiles['substitute'] && this.battle.gen >= 5) ||

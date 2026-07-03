@@ -2154,4 +2154,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Chlorobird",
 		shortDesc: "Combination of the Chlorophyll and Early Bird Abilities.",
 	},
+	eggwatch: {
+		name: "Egg Watch",
+		shortDesc: "Hatches into a random species.",
+	},
 };
