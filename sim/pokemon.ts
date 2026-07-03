@@ -1127,6 +1127,40 @@ export class Pokemon {
 		}
 	}
 
+	calcStat(species: Species, stat: StatID) {
+		const supportsEVs = true;
+		const supportsAVs = !supportsEVs;
+		let set = {'level': this.level, 'nature': this.getNature()};
+
+		if (!set.level) {
+			set.level = 100;
+		}
+
+		const baseStat = species.baseStats[stat];
+		const iv = 31;
+		const ev = 85;
+
+		if (stat === 'hp') {
+			if (baseStat === 1) return 1;
+			if (!supportsEVs) return Math.floor(Math.floor(2 * baseStat + iv + 100) * set.level / 100 + 10) + (supportsAVs ? ev : 0);
+			return Math.floor(Math.floor(2 * baseStat + iv + Math.floor(ev / 4) + 100) * set.level / 100 + 10);
+		}
+
+		let val = Math.floor(Math.floor(2 * baseStat + iv + Math.floor(ev / 4)) * set.level / 100 + 5);
+
+		if (!supportsEVs) {
+			val = Math.floor(Math.floor(2 * baseStat + iv) * set.level / 100 + 5);
+		}
+
+		if (set.nature?.plus === stat) {
+			val *= 1.1;
+		} else if (set.nature?.minus === stat) {
+			val *= 0.9;
+		}
+
+		return Math.floor(val);
+	}
+
 	transformIntoSpecies(species: Species, effect?: Effect) {
 		if (this.illusion || (this.transformed && this.battle.gen >= 5)) {
 			return false;
@@ -1140,20 +1174,21 @@ export class Pokemon {
 		this.weighthg = species.weighthg;
 		this.setType(species.types, true);
 
-		this.calculateStat
-
-		this.baseStoredStats = species.baseStats;
-		this.storedStats = species.baseStats;
-		/*for (statName in this.storedStats) {
-			this.storedStats[statName] = this.getStat(statName, true, true);
-		}*/
+		let statName: StatID;
+		for (statName in this.baseStoredStats) {
+			if (statName === 'hp') continue;
+			this.baseStoredStats[statName] = species.baseStats[statName];
+		}
+		for (statName in this.storedStats) {
+			if (statName === 'hp') continue;
+			this.storedStats[statName] = this.calcStat(species, statName);
+		}
 
 		if (this.battle.gen > 2) {
 			const numberOfAbilities = Object.keys(species.abilities).length;
 			const randInt = Math.floor(Math.random() * numberOfAbilities);
 			const speciesAbilities = Object.keys(Dex.data.Abilities).filter(function belongsToSpecies(id) {
 				const ability = Dex.data.Abilities[id];
-				console.log(species.abilities[0] + ' = ' + ability.name);
 				return species.abilities[0] === ability.name || species.abilities[1] && species.abilities[1] === ability.name || species.abilities['H'] && species.abilities['H'] === ability.name;
 			});
 			this.setAbility(speciesAbilities[randInt], this, true);
