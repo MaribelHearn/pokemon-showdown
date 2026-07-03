@@ -5303,7 +5303,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
     eggwatch: {
 		onStart(pokemon) {
-			this.add('-activate', pokemon, 'Ability: Egg Watch');
+			this.add('-ability', pokemon, 'Egg Watch');
 		},
 		onResidual(pokemon) {
 			const fundex = Object.keys(Dex.data.Pokedex).filter(function notCAP(id) {
