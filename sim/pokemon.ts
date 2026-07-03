@@ -1127,9 +1127,31 @@ export class Pokemon {
 		}
 	}
 
+	// not used for HP
+	calcEVFrom(set: any, stat: StatID) {
+		const baseStat = this.baseSpecies.baseStats[stat];
+		const originalVal = this.baseStoredStats[stat];
+		const iv = 31;
+
+		for (let ev = 0; ev <= 252; ev++) {
+			let val = Math.floor(Math.floor(2 * baseStat + iv + Math.floor(ev / 4)) * set.level / 100 + 5);
+
+			if (set.nature?.plus === stat) {
+				val *= 1.1;
+			} else if (set.nature?.minus === stat) {
+				val *= 0.9;
+			}
+
+			if (Math.floor(val) === originalVal) {
+				return ev;
+			}
+		}
+
+		return 0;
+	}
+
+	// not used for HP
 	calcStat(species: Species, stat: StatID) {
-		const supportsEVs = true;
-		const supportsAVs = !supportsEVs;
 		let set = {'level': this.level, 'nature': this.getNature()};
 
 		if (!set.level) {
@@ -1138,19 +1160,9 @@ export class Pokemon {
 
 		const baseStat = species.baseStats[stat];
 		const iv = 31;
-		const ev = 85;
-
-		if (stat === 'hp') {
-			if (baseStat === 1) return 1;
-			if (!supportsEVs) return Math.floor(Math.floor(2 * baseStat + iv + 100) * set.level / 100 + 10) + (supportsAVs ? ev : 0);
-			return Math.floor(Math.floor(2 * baseStat + iv + Math.floor(ev / 4) + 100) * set.level / 100 + 10);
-		}
+		const ev = this.calcEVFrom(set, stat);
 
 		let val = Math.floor(Math.floor(2 * baseStat + iv + Math.floor(ev / 4)) * set.level / 100 + 5);
-
-		if (!supportsEVs) {
-			val = Math.floor(Math.floor(2 * baseStat + iv) * set.level / 100 + 5);
-		}
 
 		if (set.nature?.plus === stat) {
 			val *= 1.1;
@@ -1175,12 +1187,12 @@ export class Pokemon {
 		this.setType(species.types, true);
 
 		let statName: StatID;
-		this.baseStoredStats = species.baseStats;
 		this.storedStats = species.baseStats;
 		for (statName in this.storedStats) {
 			if (statName === 'hp') continue;
 			this.storedStats[statName] = this.calcStat(species, statName);
 		}
+		this.baseStoredStats = species.baseStats;
 
 		if (this.battle.gen > 2) {
 			const numberOfAbilities = Object.keys(species.abilities).length;
