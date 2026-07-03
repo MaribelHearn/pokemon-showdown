@@ -1128,45 +1128,17 @@ export class Pokemon {
 	}
 
 	// not used for HP
-	calcEVFrom(set: any, stat: StatID) {
-		const baseStat = this.baseSpecies.baseStats[stat];
-		const originalVal = this.baseStoredStats[stat];
-		const iv = 31;
-
-		for (let ev = 0; ev <= 252; ev++) {
-			let val = Math.floor(Math.floor(2 * baseStat + iv + Math.floor(ev / 4)) * set.level / 100 + 5);
-
-			if (set.nature?.plus === stat) {
-				val *= 1.1;
-			} else if (set.nature?.minus === stat) {
-				val *= 0.9;
-			}
-
-			if (Math.floor(val) === originalVal) {
-				return ev;
-			}
-		}
-
-		return 0;
-	}
-
-	// not used for HP
 	calcStat(species: Species, stat: StatID) {
-		let set = {'level': this.level, 'nature': this.getNature()};
-
-		if (!set.level) {
-			set.level = 100;
-		}
-
+		const nature = this.getNature();
 		const baseStat = species.baseStats[stat];
-		const iv = 31;
-		const ev = this.calcEVFrom(set, stat);
+		const iv = this.set.ivs[stat];
+		const ev = this.set.evs[stat];
 
-		let val = Math.floor(Math.floor(2 * baseStat + iv + Math.floor(ev / 4)) * set.level / 100 + 5);
+		let val = Math.floor(Math.floor(2 * baseStat + iv + Math.floor(ev / 4)) * this.set.level / 100 + 5);
 
-		if (set.nature?.plus === stat) {
+		if (nature?.plus === stat) {
 			val *= 1.1;
-		} else if (set.nature?.minus === stat) {
+		} else if (nature?.minus === stat) {
 			val *= 0.9;
 		}
 
@@ -1210,6 +1182,7 @@ export class Pokemon {
 			this.battle.add('-transformspecies', this, species);
 		}
 
+		console.log(this);
 		return true;
 	}
 
