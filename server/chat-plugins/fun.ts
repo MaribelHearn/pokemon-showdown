@@ -822,7 +822,7 @@ export const commands: Chat.ChatCommands  = {
         const article2 = item.name.startsWith('A') || item.name.startsWith('E') || item.name.startsWith('I') || item.name.startsWith('O') || item.name.startsWith('U') ? 'an' : 'a';
 
         room?.addRaw(`<div class="chat"><small>${timeStamp()} </small>${user.name} has rolled <b>${pokemon.num}</b>! They obtained ${article1} ${nature} ` +
-            `<b style="color: ${TYPE_COLORS[pokemon.types[0]]};">${pokemon.name}</b> holding ${article2} ${item}!</div>`);
+            `${isShiny ? '<b style="color:#ffa500">Shiny</b> ' : ''}<b style="color:${TYPE_COLORS[pokemon.types[0]]};">${pokemon.name}</b> holding ${article2} ${item}!</div>`);
 
         room?.addRaw(`<img src="${RESOURCE_PREFIX}/sprites/gen5${isShiny ? '-shiny' : ''}/${pokemonId}.png" alt="${pokemon.name}" width=96 height=96>` +
             `<span class="rouletteitem" style="${itemImage(item)}"></span>`);
