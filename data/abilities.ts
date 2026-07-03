@@ -5308,20 +5308,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return species.isNonstandard === 'Fundex' && !species.battleOnly;
 			});
 			const rand = fundex[Math.floor(Math.random() * fundex.length)];
-			const targetSpecies = Dex.species.get(rand);
-			let target: Pokemon = JSON.parse(JSON.stringify(pokemon));
-			target.species = targetSpecies;
-			console.log(target);
-			/*const speciesAbilities = Object.keys(Dex.data.Abilities).filter(function belongsToSpecies(id) {
-				const ability = Dex.data.Abilities[id];
-				console.log(species.abilities[0] + ' = ' + ability.name);
-				return species.abilities[0] === ability.name || species.abilities[1] && species.abilities[1] === ability.name || species.abilities['H'] && species.abilities['H'] === ability.name;
-			});
-			console.log(speciesAbilities);
-			console.log(randInt);
-			console.log(speciesAbilities[randInt]);
-			target.ability = speciesAbilities[randInt];*/
-			pokemon.transformInto(target, this.dex.abilities.get('eggwatch'));
+			const species = Dex.species.get(rand);
+			pokemon.transformIntoSpecies(species, this.dex.abilities.get('eggwatch'));
 		},
 		name: "Egg Watch",
 		rating: 5,
