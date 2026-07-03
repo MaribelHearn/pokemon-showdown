@@ -5303,11 +5303,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
     eggwatch: {
 		onResidual(pokemon) {
-			const filteredPokedex = Object.keys(Dex.data.Pokedex).filter(function notCAP(id) {
+			const fundex = Object.keys(Dex.data.Pokedex).filter(function notCAP(id) {
 				const species = Dex.species.get(id);
-				return species.isNonstandard !== 'Past' && species.isNonstandard !== 'CAP' && !species.battleOnly && species.num !== 0;
+				return species.isNonstandard === 'Fundex' && !species.battleOnly;
 			});
-			const rand = filteredPokedex[Math.floor(Math.random() * filteredPokedex.length)];
+			const rand = fundex[Math.floor(Math.random() * fundex.length)];
 			const targetSpecies = Dex.species.get(rand);
 			pokemon.transformIntoSpecies(targetSpecies, this.dex.abilities.get('eggwatch'));
 			this.effectState.switchingIn = false;

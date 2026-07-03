@@ -6,7 +6,7 @@
  */
 
 import {State} from './state';
-import {toID} from './dex';
+import Dex, {toID} from './dex';
 
 /** A Pokemon's move slot. */
 interface MoveSlot {
@@ -1143,17 +1143,15 @@ export class Pokemon {
 		if (this.battle.gen > 2) {
 			const numberOfAbilities = Object.keys(species.abilities).length;
 			const randInt = Math.floor(Math.random() * numberOfAbilities);
-			const speciesAbilities = Object.keys(this.battle.dex.abilities).filter(function belongsToSpecies(id) {
-				console.log(id);
-				return species.abilities[0] === id || species.abilities[1] && species.abilities[1] === id || species.abilities['H'] && species.abilities['H'] === id;
+			const speciesAbilities = Object.keys(Dex.data.Abilities).filter(function belongsToSpecies(id) {
+				const ability = Dex.data.Abilities[id];
+				console.log(species.abilities[0] + ' = ' + ability.name);
+				return species.abilities[0] === ability.name || species.abilities[1] && species.abilities[1] === ability.name || species.abilities['H'] && species.abilities['H'] === ability.name;
 			});
+			console.log(speciesAbilities);
+			console.log(randInt);
+			console.log(speciesAbilities[randInt]);
 			this.setAbility(speciesAbilities[randInt], this, true);
-		}
-
-		if (effect) {
-			this.battle.add('-transform', this, species, '[from] ' + effect.fullname);
-		} else {
-			this.battle.add('-transform', this, species);
 		}
 
 		return true;
