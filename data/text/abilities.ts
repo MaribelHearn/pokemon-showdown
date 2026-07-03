@@ -2159,6 +2159,5 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "Hatches into a random Fundex species.",
 
 		transform: "[POKEMON] hatched into [SPECIES]!",
-		transformEnd: "[POKEMON] was corrupted!",
 	},
 };
