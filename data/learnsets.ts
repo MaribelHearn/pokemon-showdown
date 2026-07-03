@@ -92569,6 +92569,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			eggbomb: ["8L1"],
 			malfunction: ["8L1"],
 			superglitch: ["8L1", "8M"],
+			glitzerpopping: ["8L1"],
 			hiddenpower: ["8M"],
 			protect: ["8M"],
 			safeguard: ["8M"],

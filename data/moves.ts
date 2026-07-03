@@ -22870,6 +22870,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 	},
+	glitzerpopping: {
+		num: 2139,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Glitzer Popping",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		target: "normal",
+		type: "???",
+		secondary: null,
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
+		},
+		onModifyType(move, pokemon) {
+			move.type = pokemon.types[0];
+		},
+	}
 	/*sledge: {
 		num: 2139,
 		accuracy: 100,

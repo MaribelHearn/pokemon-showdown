@@ -7046,16 +7046,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
 		shortDesc: "Hits all adjacent. Faints user. Special if SpA > Atk.",
 	},
-	darkcatnarok: {
-		name: "Dark Catnarok",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
-		shortDesc: "Hits all adjacent. Faints user. Physical if Atk > SpA.",
-	},
-	fierycatnarok: {
-		name: "Fiery Catnarok",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
-		shortDesc: "Hits all adjacent. Faints user. Physical if Atk > SpA.",
-	},
     psirockin: {
         name: "PSI Rockin",
 		desc: "Lowers the user's Special Attack by 2 stages.",
@@ -7587,6 +7577,21 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Cataclysm",
 		desc: "Has a 30% chance to either burn, paralyze, or poison the target.",
 		shortDesc: "30% chance to burn or paralyze or poison target.",
+	},
+	darkcatnarok: {
+		name: "Dark Catnarok",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
+		shortDesc: "Hits all adjacent. Faints user. Physical if Atk > SpA.",
+	},
+	fierycatnarok: {
+		name: "Fiery Catnarok",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
+		shortDesc: "Hits all adjacent. Faints user. Physical if Atk > SpA.",
+	},
+	glitzerpopping: {
+		name: "Glitzer Popping",
+		desc: "This move becomes a special attack if the user's Special Attack is greater than its Attack. This move's type is equal to the user's primary type.",
+		shortDesc: "Type = user's first type. Special if SpA > Atk.",
 	},
 	sledge: {
 		name: "Sledge",
