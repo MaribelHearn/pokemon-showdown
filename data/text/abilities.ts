@@ -2157,5 +2157,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	eggwatch: {
 		name: "Egg Watch",
 		shortDesc: "Hatches into a random Fundex species.",
+
+		transform: "[POKEMON] hatched into [SPECIES]!",
+		transformEnd: "[POKEMON] was corrupted!",
 	},
 };
