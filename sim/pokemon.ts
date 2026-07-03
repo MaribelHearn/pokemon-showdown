@@ -1175,10 +1175,8 @@ export class Pokemon {
 		this.setType(species.types, true);
 
 		let statName: StatID;
-		for (statName in this.baseStoredStats) {
-			if (statName === 'hp') continue;
-			this.baseStoredStats[statName] = species.baseStats[statName];
-		}
+		this.baseStoredStats = species.baseStats;
+		this.storedStats = species.baseStats;
 		for (statName in this.storedStats) {
 			if (statName === 'hp') continue;
 			this.storedStats[statName] = this.calcStat(species, statName);
