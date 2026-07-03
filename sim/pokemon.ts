@@ -1140,6 +1140,11 @@ export class Pokemon {
 		this.weighthg = species.weighthg;
 		this.setType(species.types, true);
 
+		let statName: StatIDExceptHP;
+		for (statName in this.storedStats) {
+			this.storedStats[statName] = species.baseStats[statName];
+		}
+
 		if (this.battle.gen > 2) {
 			const numberOfAbilities = Object.keys(species.abilities).length;
 			const randInt = Math.floor(Math.random() * numberOfAbilities);
@@ -1152,6 +1157,12 @@ export class Pokemon {
 			console.log(randInt);
 			console.log(speciesAbilities[randInt]);
 			this.setAbility(speciesAbilities[randInt], this, true);
+		}
+
+		if (effect) {
+			this.battle.add('-transformspecies', this, species, '[from] ' + this.ability);
+		} else {
+			this.battle.add('-transformspecies', this, species);
 		}
 
 		return true;
