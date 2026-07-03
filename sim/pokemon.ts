@@ -1166,6 +1166,7 @@ export class Pokemon {
 		}
 		this.baseStoredStats = species.baseStats;
 
+		let abilityName, abilityId;
 		if (this.battle.gen > 2) {
 			const numberOfAbilities = Object.keys(species.abilities).length;
 			const randInt = Math.floor(Math.random() * numberOfAbilities);
@@ -1173,16 +1174,23 @@ export class Pokemon {
 				const ability = Dex.data.Abilities[id];
 				return species.abilities[0] === ability.name || species.abilities[1] && species.abilities[1] === ability.name || species.abilities['H'] && species.abilities['H'] === ability.name;
 			});
-			this.setAbility(speciesAbilities[randInt], this, true);
+			abilityId = speciesAbilities[randInt];
+			abilityName = Dex.abilities.get(abilityId).name;
 		}
 
-		if (effect) {
-			this.battle.add('-transformspecies', this, species, '[from] ' + this.ability);
-		} else {
+		if (abilityId && abilityName) {
+			this.battle.add('-transformspecies', this, species, '[from] ' + abilityName);
+		} 
+		else if (effect) {
+			this.battle.add('-transformspecies', this, species, '[from] ' + effect.name);
+		}
+		else {
 			this.battle.add('-transformspecies', this, species);
 		}
 
-		console.log(this);
+		if (abilityId && abilityName) {
+			this.setAbility(abilityId, this, true);
+		}
 		return true;
 	}
 
