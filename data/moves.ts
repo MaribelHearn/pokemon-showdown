@@ -22888,7 +22888,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyType(move, pokemon) {
 			move.type = pokemon.types[0];
 		},
-	}
+	},
 	/*sledge: {
 		num: 2139,
 		accuracy: 100,
