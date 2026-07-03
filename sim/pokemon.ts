@@ -1140,10 +1140,13 @@ export class Pokemon {
 		this.weighthg = species.weighthg;
 		this.setType(species.types, true);
 
-		let statName: StatIDExceptHP;
-		for (statName in this.storedStats) {
-			this.storedStats[statName] = species.baseStats[statName];
-		}
+		this.calculateStat
+
+		this.baseStoredStats = species.baseStats;
+		this.storedStats = species.baseStats;
+		/*for (statName in this.storedStats) {
+			this.storedStats[statName] = this.getStat(statName, true, true);
+		}*/
 
 		if (this.battle.gen > 2) {
 			const numberOfAbilities = Object.keys(species.abilities).length;
@@ -1153,9 +1156,6 @@ export class Pokemon {
 				console.log(species.abilities[0] + ' = ' + ability.name);
 				return species.abilities[0] === ability.name || species.abilities[1] && species.abilities[1] === ability.name || species.abilities['H'] && species.abilities['H'] === ability.name;
 			});
-			console.log(speciesAbilities);
-			console.log(randInt);
-			console.log(speciesAbilities[randInt]);
 			this.setAbility(speciesAbilities[randInt], this, true);
 		}
 

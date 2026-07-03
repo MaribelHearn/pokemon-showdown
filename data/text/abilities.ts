@@ -2156,6 +2156,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	eggwatch: {
 		name: "Egg Watch",
-		shortDesc: "Hatches into a random species.",
+		shortDesc: "Hatches into a random Fundex species.",
 	},
 };
