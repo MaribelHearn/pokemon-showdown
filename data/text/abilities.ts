@@ -2158,6 +2158,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Egg Watch",
 		shortDesc: "Hatches into a random Fundex species.",
 
+		activate: "  \"The Egg Watch\" Sounds can be heard coming from inside! It will hatch soon!",
 		transform: "[POKEMON] hatched into [SPECIES]!",
 	},
 };
