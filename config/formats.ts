@@ -274,6 +274,20 @@ export const Formats: FormatList = [
         },
 	},
 	{
+		name: '[Gen 8] Bad EGG Hatching',
+		desc: `It all comes down to what your Bad EGG decide to hatch into!`,
+
+		mod: 'gen8',
+		ruleset: ['Dynamax Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
+		banlist: ['All Pokemon', 'Fundex', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw'],
+		unbanlist: ['Bad EGG'],
+		onValidateSet(set) {
+            if (set.ability !== 'Egg Watch') {
+                return [`${set.name || set.species} has an illegal ability.`, `(Pok\u00e9mon must have Egg Watch)`];
+            }
+        },
+	},
+	{
 		name: "[Gen 8] Fundex Loser's Game",
 		desc: `The first player to lose all of their Fundex Pok&eacute;mon wins.`,
 		threads: [
