@@ -356,7 +356,6 @@ export const Aliases: {[alias: string]: string} = {
 	slender: "Slenderman",
 	gec: "Giant Enemy Crab",
 	soc: "Serpent of Chaos",
-	winner: "*** WINNER ***",
 	wake: "Crasher Wake",
 	jitterbug: "Bloody Jitterbug",
 	hakurei: "Reimu",
