@@ -1179,6 +1179,10 @@ export class Pokemon {
 		}
 
 		if (abilityId && abilityName) {
+			this.setAbility(abilityId, this, true);
+		}
+
+		if (abilityId && abilityName) {
 			this.battle.add('-transformspecies', this, species, '[from] ' + abilityName);
 		} 
 		else if (effect) {
@@ -1186,10 +1190,6 @@ export class Pokemon {
 		}
 		else {
 			this.battle.add('-transformspecies', this, species);
-		}
-
-		if (abilityId && abilityName) {
-			this.setAbility(abilityId, this, true);
 		}
 		return true;
 	}

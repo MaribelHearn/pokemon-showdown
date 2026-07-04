@@ -278,7 +278,7 @@ export const Formats: FormatList = [
 		desc: `It all comes down to what your Bad EGG decide to hatch into!`,
 
 		mod: 'gen8',
-		ruleset: ['Dynamax Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', '+Past'],
+		ruleset: ['Dynamax Clause', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', '+Past'],
 		banlist: ['All Pokemon', 'Fundex', 'Bright Powder', 'King\'s Rock', 'Lax Incense', 'Razor Fang', 'Quick Claw', 'Gastro Acid', 'a NORMAL move'],
 		unbanlist: ['Bad EGG'],
 		onValidateSet(set) {
