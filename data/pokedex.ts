@@ -18912,7 +18912,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Ritual Rolling Pin",
 	},
-	dummy: {
+	/*dummy: {
 		num: 2163,
 		name: "Dummy",
 		types: ["???"],
@@ -18923,7 +18923,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "White",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
-	},
+	},*/
     /*smithy: {
         num: 2166,
 		name: "Smithy",

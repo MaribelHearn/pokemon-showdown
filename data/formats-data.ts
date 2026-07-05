@@ -8008,10 +8008,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Fundex OU",
 		natDexTier: "OU",
     },
-	dummy: {
+	/*dummy: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
-	},
+	},*/
 	/*smithy: {
 		isNonstandard: "Fundex",
 		tier: "Fundex OU",

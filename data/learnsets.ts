@@ -95152,7 +95152,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			knockoff: ["8M"],
 		},
 	},
-	dummy: {
+	/*dummy: {
 		learnset: {
 		    apocalypse: ["8L1"],
 			masterspark: ["8L1"],
@@ -95293,8 +95293,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			cataclysm: ["8L1"],
 			darkcatnarok: ["8L1"],
 			fierycatnarok: ["8L1"],
+			glitzerpopping: ["8L1"],
 		}
-	},
+	},*/
 	/*smithy: {
 		learnset: {
 			sledge: ["8L1"],
