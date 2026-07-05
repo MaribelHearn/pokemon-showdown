@@ -191,7 +191,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		damage: "  [POKEMON] was hurt by its burn!",
 	},
 	tmt: {
-		start: "  TMTRAINER [POKEMON] was burned!",
+		start: "  [POKEMON] was burned!",
 		startFromItem: "#brn",
 		alreadyStarted: "#brn",
 		end: "#brn",
