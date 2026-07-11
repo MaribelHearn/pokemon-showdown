@@ -279,6 +279,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 	},
 	frenzy: {
 		name: 'frenzy',
+		duration: 3,
 		onStart(pokemon, source) {
 			this.add('-start', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
 		},

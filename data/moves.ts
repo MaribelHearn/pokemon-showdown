@@ -23393,7 +23393,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		volatileStatus: "frenzy",
 		condition: {
 			duration: 3,
-			onStart(target, source, effect) {
+			onStart() {
 				console.log('Frenzy starts');
 			},
 			onEnd(pokemon) {
