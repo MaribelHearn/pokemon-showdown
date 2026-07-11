@@ -22901,7 +22901,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	goldencookie: {
 		num: 2140,
 		accuracy: true,
-		basePower: 100,
+		basePower: 0,
 		category: "Status",
 		name: "Golden Cookie",
 		pp: 10,
