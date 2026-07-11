@@ -23324,7 +23324,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		basePowerCallback(pokemon, target, move) {
-			if (pokemon.lastMove?.name === 'Ruin' || pokemon.lastMove?.name === 'Clot' || pokemon.lastMove?.name === 'blab') {
+			if (pokemon.lastMove?.name === 'Golden Cookie') {
 				return 25;
 			}
 
@@ -23349,7 +23349,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		basePowerCallback(pokemon, target, move) {
-			if (pokemon.lastMove?.name === 'Ruin' || pokemon.lastMove?.name === 'Clot' || pokemon.lastMove?.name === 'blab') {
+			if (pokemon.lastMove?.name === 'Golden Cookie') {
 				return 25;
 			}
 
