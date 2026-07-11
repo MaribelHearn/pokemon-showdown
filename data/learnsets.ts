@@ -95093,6 +95093,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			rapidspin: ["8L1"],
 			ancientpower: ["8L1"],
 			acidarmor: ["8L1"],
+			goldencookie: ["8L1"],
 			landswrath: ["8L1"],
 			gunkshot: ["8L1", "8M"],
 			fissure: ["8L1"],
