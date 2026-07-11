@@ -11076,7 +11076,16 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {},
 		noMetronome: [
-			"After You", "Apple Acid", "Assist", "Astral Barrage", "Aura Wheel", "Baneful Bunker", "Beak Blast", "Behemoth Bash", "Behemoth Blade", "Belch", "Bestow", "Body Press", "Branch Poke", "Breaking Swipe", "Celebrate", "Chatter", "Clangorous Soul", "Copycat", "Counter", "Covet", "Crafty Shield", "Decorate", "Destiny Bond", "Detect", "Diamond Storm", "Double Iron Bash", "Dragon Ascent", "Dragon Energy", "Dragon Hammer", "Drum Beating", "Dynamax Cannon", "Endure", "Eternabeam", "Falcon Punch", "False Surrender", "Feint", "Fiery Wrath", "Fleur Cannon", "Focus Punch", "Follow Me", "Freeze Shock", "Freezing Glare", "Glacial Lance", "Grav Apple", "Helping Hand", "Hold Hands", "Hyperspace Fury", "Hyperspace Hole", "Ice Burn", "Instruct", "Jungle Healing", "King's Shield", "Life Dew", "Light of Ruin", "Mat Block", "Me First", "Meteor Assault", "Metronome", "Mimic", "Mind Blown", "Mirror Coat", "Mirror Move", "Moongeist Beam", "Nature Power", "Nature's Madness", "Obstruct", "Origin Pulse", "Overdrive", "Photon Geyser", "Plasma Fists", "Precipice Blades", "Protect", "Pyro Ball", "Quash", "Quick Guard", "Rage Powder", "Relic Song", "Secret Sword", "Shell Trap", "Sketch", "Sleep Talk", "Snap Trap", "Snarl", "Snatch", "Snore", "Spectral Thief", "Spiky Shield", "Spirit Break", "Spotlight", "Steam Eruption", "Steel Beam", "Strange Steam", "Struggle", "Sunsteel Strike", "Surging Strikes", "Switcheroo", "Techno Blast", "Thief", "Thousand Arrows", "Thousand Waves", "Thunder Cage", "Thunderous Kick", "Transform", "Trick", "V-create", "Warlock Punch", "Wicked Blow", "Wide Guard",
+			"After You", "Apple Acid", "Assist", "Astral Barrage", "Aura Wheel", "Baneful Bunker", "Beak Blast", "Behemoth Bash", "Behemoth Blade", "Belch", "Bestow", "Body Press",
+			"Branch Poke", "Breaking Swipe", "Celebrate", "Chatter", "Clangorous Soul", "Copycat", "Counter", "Covet", "Crafty Shield", "Decorate", "Destiny Bond", "Detect",
+			"Diamond Storm", "Double Iron Bash", "Dragon Ascent", "Dragon Energy", "Dragon Hammer", "Drum Beating", "Dynamax Cannon", "Endure", "Eternabeam", "Falcon Punch",
+			"False Surrender", "Feint", "Fiery Wrath", "Fleur Cannon", "Focus Punch", "Follow Me", "Freeze Shock", "Freezing Glare", "Glacial Lance", "Grav Apple", "Helping Hand",
+			"Hold Hands", "Hyperspace Fury", "Hyperspace Hole", "Ice Burn", "Instruct", "Jungle Healing", "King's Shield", "Life Dew", "Light of Ruin", "Mat Block", "Me First",
+			"Meteor Assault", "Metronome", "Mimic", "Mind Blown", "Mirror Coat", "Mirror Move", "Moongeist Beam", "Nature Power", "Nature's Madness", "Obstruct", "Origin Pulse",
+			"Overdrive", "Photon Geyser", "Plasma Fists", "Precipice Blades", "Protect", "Pyro Ball", "Quash", "Quick Guard", "Rage Powder", "Relic Song", "Secret Sword", "Shell Trap",
+			"Sketch", "Sleep Talk", "Snap Trap", "Snarl", "Snatch", "Snore", "Spectral Thief", "Spiky Shield", "Spirit Break", "Spotlight", "Steam Eruption", "Steel Beam",
+			"Strange Steam", "Struggle", "Sunsteel Strike", "Surging Strikes", "Switcheroo", "Techno Blast", "Thief", "Thousand Arrows", "Thousand Waves", "Thunder Cage",
+			"Thunderous Kick", "Transform", "Trick", "V-create", "Warlock Punch", "Wicked Blow", "Wide Guard", "Frenzy", "Lucky", "Clot", "Ruin", "blab", "Count Down",
 		],
 		onHit(target, source, effect) {
 			const moves = this.dex.moves.all().filter(move => (
@@ -22901,29 +22910,29 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Normal",
 		secondary: null,
-		onHit(source, target) {
+		onHit(target) {
 			const rng = Math.floor(Math.random() * 101);
 
-			if (source.species.name === 'Grandmatriarch') {
+			if (target.species.name === 'Grandmatriarch') {
 				if (rng < 0.2) {
-					this.actions.useMove('blab', source);
+					this.actions.useMove('blab', target);
 				}
 				else if (rng < 50.1) {
-					this.actions.useMove('Ruin', source);
+					this.actions.useMove('Ruin', target);
 				}
 				else {
-					this.actions.useMove('Clot', source);
+					this.actions.useMove('Clot', target);
 				}
 			}
 			else { // Grandma
 				if (rng < 0.2) {
-					this.actions.useMove('blab', source);
+					this.actions.useMove('blab', target);
 				}
 				else if (rng < 50.1) {
-					this.actions.useMove('Frenzy', source);
+					this.actions.useMove('Frenzy', target);
 				}
 				else {
-					this.actions.useMove('Lucky', source);
+					this.actions.useMove('Lucky', target);
 				}
 			}
 		},
