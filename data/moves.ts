@@ -23304,7 +23304,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onTryHit(target, source) {
 			this.add('-activate', target, 'move: blab');
 		},
-		zMove: {boost: {atk: 3}},
 	},
 	ruin: {
 		num: 3016,
@@ -23412,20 +23411,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 			duration: 2,
 			onStart(pokemon, source, effect) {
 				if (effect && (['imposter', 'psychup', 'transform'].includes(effect.id))) {
-					this.add('-start', pokemon, 'Lucky', '[silent]');
+					this.add('-start', pokemon, 'move: Lucky', '[silent]');
 				} else {
-					this.add('-start', pokemon, 'Lucky');
+					this.add('-start', pokemon, 'move: Lucky');
 				}
 			},
 			onRestart(pokemon) {
 				this.effectState.duration = 2;
-				this.add('-start', pokemon, 'Lucky');
+				this.add('-start', pokemon, 'move: Lucky');
 			},
 			onModifyCritRatio(critRatio) {
 				return 5;
 			},
 			onEnd(pokemon) {
-				this.add('-end', pokemon, 'Lucky', '[silent]');
+				this.add('-end', pokemon, 'move: Lucky', '[silent]');
 			},
 		},
 	}

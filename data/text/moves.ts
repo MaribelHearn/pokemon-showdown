@@ -7715,7 +7715,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Until the end of the next turn, the user's attacks will be critical hits.",
 		shortDesc: "Until the end of the next turn, user's moves crit.",
 
-		activate: "  Lucky! Your next move will score a critical hit.",
-		start: "  Lucky! Your next move will score a critical hit.",
+		start: "  Lucky! [POKEMON]'s next move will score a critical hit.",
 	},
 };
