@@ -7681,5 +7681,35 @@ export const MovesText: {[k: string]: MoveText} = {
 		shortDesc: "An attempt is made to use explod, but...",
 		
 		activate: "  Zeeky attempted to detonate... but it stopped!",
-	}
+	},
+	goldencookie: {
+		name: "Golden Cookie",
+		shortDesc: "Clicks a Golden Cookie for a random positive effect.",
+	},
+	blab: {
+		name: "blab",
+		shortDesc: "Sends a funny chat message.",
+	},
+	ruin: {
+		name: "Ruin",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "100% chance to lower the target's Speed by 1.",
+	},
+	clot: {
+		name: "Clot",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "100% chance to lower the target's Speed by 1.",
+	},
+	frenzy: {
+		name: "Frenzy",
+		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage. Fails if the user's Attack, Defense, Special Attack, Special Defense, and Speed stat stages would not change.",
+		shortDesc: "Raises all stats by 1 stage.",
+	},
+	lucky: {
+		name: "Lucky",
+		desc: "Until the end of the next turn, the user's attacks will be critical hits.",
+		shortDesc: "Until the end of the next turn, user's moves crit.",
+
+		start: "  Lucky! Your next move will score a critical hit.",
+	},
 };

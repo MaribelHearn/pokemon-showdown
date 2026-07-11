@@ -21269,7 +21269,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
     superglitch: {
         num: 2066,
-        accuracy: 100,
+        accuracy: 99.61,
         basePower: 43,
         category: "Physical",
         name: "Super Glitch",
@@ -22889,6 +22889,54 @@ export const Moves: {[moveid: string]: MoveData} = {
 			move.type = pokemon.types[0];
 		},
 	},
+	goldencookie: {
+		num: 2140,
+		accuracy: 100,
+		basePower: 100,
+		category: "Status",
+		name: "Golden Cookie",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		target: "normal",
+		type: "Normal",
+		secondary: null,
+		onTry(source, target) {
+			const rng = Math.floor(Math.random() * 101);
+
+			if (source.species.name === 'Grandmatriarch') {
+				if (rng < 0.2) {
+					this.actions.useMove('blab', source);
+				}
+				else if (rng < 50.1) {
+					this.actions.useMove('Ruin', source);
+				}
+				else if (rng < 50.1) {
+					this.actions.useMove('Clot', source);
+				}
+			}
+			else { // Grandma
+				if (rng < 0.2) {
+					this.actions.useMove('blab', source);
+				}
+				else if (rng < 50.1) {
+					this.actions.useMove('Frenzy', source);
+				}
+				else if (rng < 50.1) {
+					this.actions.useMove('Lucky', source);
+				}
+			}
+		},
+		onModifyType(move, pokemon) {
+			if (pokemon.species.name === 'Grandmatriarch') {
+				move.type = 'Poison';
+				move.category = 'Physical';
+			} else {
+				move.type = 'Normal';
+				move.category = 'Status';
+			}
+		},
+	},
 	/*sledge: {
 		num: 2139,
 		accuracy: 100,
@@ -23232,4 +23280,111 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		zMove: {effect: 'nothing'},
 	},
+	blab: {
+		num: 3015,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "blab",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		target: "self",
+		type: "Normal",
+		secondary: null,
+		onTryHit(target, source) {
+			this.add('-activate', target, 'move: blab');
+		},
+		zMove: {boost: {atk: 3}},
+	},
+	ruin: {
+		num: 3016,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Ruin",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		target: "normal",
+		type: "Poison",
+		secondary: {
+			chance: 100,
+			boosts: {
+				def: -1,
+			},
+		},
+	},
+	clot: {
+		num: 3016,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Clot",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		target: "normal",
+		type: "Poison",
+		secondary: {
+			chance: 100,
+			boosts: {
+				spe: -1,
+			},
+		},
+	},
+	frenzy: {
+		num: 3017,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Frenzy",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		target: "self",
+		type: "Normal",
+		secondary: {},
+		boosts: {
+			atk: 1,
+			def: 1,
+			spa: 1,
+			spd: 1,
+			spe: 1,
+		},
+	},
+	lucky: {
+		num: 3018,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Lucky",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		target: "self",
+		type: "Normal",
+		secondary: {},
+		volatileStatus: 'laserfocus',
+		condition: {
+			duration: 2,
+			onStart(pokemon, source, effect) {
+				if (effect && (['imposter', 'psychup', 'transform'].includes(effect.id))) {
+					this.add('-start', pokemon, 'move: Laser Focus', '[silent]');
+				} else {
+					this.add('-start', pokemon, 'move: Laser Focus');
+				}
+			},
+			onRestart(pokemon) {
+				this.effectState.duration = 2;
+				this.add('-start', pokemon, 'move: Laser Focus');
+			},
+			onModifyCritRatio(critRatio) {
+				return 5;
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'move: Laser Focus', '[silent]');
+			},
+		},
+	}
 };
