@@ -1895,7 +1895,7 @@ export class Battle {
 				break;
 			default:
 				if (effect.effectType === 'Move' || !name) {
-					this.add('-damage', target, target.getHealth);
+					this.add('-damage', target, target.getHealth, '[of] ' + effect);
 				} else if (source && (source !== target || effect.effectType === 'Ability')) {
 					this.add('-damage', target, target.getHealth, '[from] ' + name, '[of] ' + source);
 				} else {
@@ -1993,7 +1993,7 @@ export class Battle {
 			this.add('-damage', target, target.getHealth, '[from] confusion');
 			break;
 		default:
-			this.add('-damage', target, target.getHealth);
+			this.add('-damage', target, target.getHealth, '[of] ' + effect);
 			break;
 		}
 		if (target.fainted) this.faint(target);
