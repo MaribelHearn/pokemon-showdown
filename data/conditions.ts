@@ -280,11 +280,13 @@ export const Conditions: {[k: string]: ConditionData} = {
 	frenzy: {
 		name: 'frenzy',
 		duration: 3,
-		onStart(pokemon, source) {
-			this.add('-start', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
+		onStart(target, source) {
+			this.add('-start', target, 'move: ' + this.effectState.sourceEffect, '[of] ' + target);
+			this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, target);
 		},
 		onEnd(target) {
 			this.add('-end', target, 'move: ' + this.effectState.sourceEffect, '[of] ' + target);
+			this.boost({atk: -1, def: -1, spa: -1, spd: -1, spe: -1}, target);
 		},
 	},
 	lockedmove: {

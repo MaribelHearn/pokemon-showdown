@@ -7690,7 +7690,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "blab",
 		shortDesc: "Sends a funny chat message.",
 
-		activate: "Increased Special by 2 stages!",
+		activate: "  Increased Special by 2 stages!",
 	},
 	ruin: {
 		name: "Ruin",
@@ -7707,8 +7707,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage. Fails if the user's Attack, Defense, Special Attack, Special Defense, and Speed stat stages would not change.",
 		shortDesc: "Raises all stats by 1 stage.",
 
-		start: "  Frenzy! Your stats are temporarily raised.",
-		end: "  The Frenzy has ended.",
+		start: "  Frenzy! [POKEMON]'s stats are temporarily raised.",
+		end: "  [POKEMON]'s Frenzy has ended.",
 	},
 	lucky: {
 		name: "Lucky",

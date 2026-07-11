@@ -23393,26 +23393,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		volatileStatus: "frenzy",
 		condition: {
 			duration: 3,
-			onStart() {
-				console.log('Frenzy starts');
-			},
-			onEnd(pokemon) {
-				console.log('Frenzy ends');
-				this.boost({
-					'atk': -1,
-					'def': -1,
-					'spa': -1,
-					'spd': -1,
-					'spe': -1,
-				}, pokemon);
-			},
-		},
-		boosts: {
-			atk: 1,
-			def: 1,
-			spa: 1,
-			spd: 1,
-			spe: 1,
 		},
 	},
 	lucky: {
