@@ -22918,12 +22918,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 					this.actions.useMove('blab', target);
 				}
 				else if (rng < 50.1) {
-					console.log(move.multihitType);
-					this.actions.useMove(move.multihitType === 'parentalbond' ? 'ruin2' : 'ruin', target);
+					this.actions.useMove(move.hit > 1 ? 'ruin2' : 'ruin', target);
 				}
 				else {
-					console.log(move.multihitType);
-					this.actions.useMove(move.multihitType === 'parentalbond' ? 'clot2' : 'clot', target);
+					this.actions.useMove(move.hit > 1 ? 'clot2' : 'clot', target);
 				}
 			}
 			else { // Grandma
