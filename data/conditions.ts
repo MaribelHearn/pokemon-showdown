@@ -286,7 +286,10 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onEnd(target) {
 			this.add('-end', target, 'move: ' + this.effectState.sourceEffect, '[of] ' + target);
+			const ability = target.ability;
+			target.ability = 'noability' as ID;
 			this.boost({atk: -1, def: -1, spa: -1, spd: -1, spe: -1}, target);
+			target.ability = ability;
 		},
 	},
 	lockedmove: {
