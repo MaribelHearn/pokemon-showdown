@@ -22911,7 +22911,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				else if (rng < 50.1) {
 					this.actions.useMove('Ruin', source);
 				}
-				else if (rng < 50.1) {
+				else {
 					this.actions.useMove('Clot', source);
 				}
 			}
@@ -22922,7 +22922,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				else if (rng < 50.1) {
 					this.actions.useMove('Frenzy', source);
 				}
-				else if (rng < 50.1) {
+				else {
 					this.actions.useMove('Lucky', source);
 				}
 			}
