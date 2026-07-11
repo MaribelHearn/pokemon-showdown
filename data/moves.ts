@@ -23390,15 +23390,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "self",
 		type: "Normal",
 		secondary: {},
+		volatileStatus: "frenzy",
 		condition: {
 			duration: 3,
 			onStart(target, source, effect) {
 				console.log('Frenzy starts');
-				this.add('-start', source, 'move: Frenzy');
 			},
 			onEnd(pokemon) {
 				console.log('Frenzy ends');
-				this.add('-end', pokemon, 'move: Frenzy');
 				this.boost({
 					'atk': -1,
 					'def': -1,

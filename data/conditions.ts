@@ -259,7 +259,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (this.effectState.source?.isActive || gmaxEffect) pokemon.tryTrap();
 		},
 	},
-	// Fundex addition: Soviet Reversal volatile status
+	// Fundex addition: Soviet Reversal volatile status, Frenzy volatile status
 	soviet: {
 		name: 'soviet',
 		onStart(pokemon, source) {
@@ -277,7 +277,15 @@ export const Conditions: {[k: string]: ConditionData} = {
 			}
 		},
 	},
-
+	frenzy: {
+		name: 'frenzy',
+		onStart(pokemon, source) {
+			this.add('-start', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
+		},
+		onEnd(target) {
+			this.add('-end', target, 'move: ' + this.effectState.sourceEffect, '[of] ' + target);
+		},
+	},
 	lockedmove: {
 		// Outrage, Thrash, Petal Dance...
 		name: 'lockedmove',
