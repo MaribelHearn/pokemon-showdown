@@ -1150,7 +1150,7 @@ export class Pokemon {
 			return false;
 		}
 
-		if (!this.setSpecies(species, effect, true)) {
+		if (!this.setSpecies(species, effect, false)) {
 			return false;
 		}
 
