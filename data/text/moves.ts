@@ -7689,6 +7689,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	blab: {
 		name: "blab",
 		shortDesc: "Sends a funny chat message.",
+
+		activate: "Increased Special by 2 stages!",
 	},
 	ruin: {
 		name: "Ruin",

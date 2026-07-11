@@ -22918,10 +22918,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 					this.actions.useMove('blab', target);
 				}
 				else if (rng < 50.1) {
-					this.actions.useMove('Ruin', target);
+					this.actions.useMove('ruin', target);
 				}
 				else {
-					this.actions.useMove('Clot', target);
+					this.actions.useMove('clot', target);
 				}
 			}
 			else { // Grandma
@@ -22929,10 +22929,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 					this.actions.useMove('blab', target);
 				}
 				else if (rng < 50.1) {
-					this.actions.useMove('Frenzy', target);
+					this.actions.useMove('frenzy', target);
 				}
 				else {
-					this.actions.useMove('Lucky', target);
+					this.actions.useMove('lucky', target);
 				}
 			}
 		},
