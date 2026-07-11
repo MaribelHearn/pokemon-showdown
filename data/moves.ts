@@ -23406,7 +23406,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "self",
 		type: "Normal",
 		secondary: {},
-		volatileStatus: 'laserfocus',
+		volatileStatus: 'lucky',
 		condition: {
 			duration: 2,
 			onStart(pokemon, source, effect) {
