@@ -23323,6 +23323,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 				def: -1,
 			},
 		},
+		basePowerCallback(pokemon, target, move) {
+			if (pokemon.lastMove?.name === 'Ruin' || pokemon.lastMove?.name === 'Clot' || pokemon.lastMove?.name === 'blab') {
+				return 25;
+			}
+
+			return 100;
+		},
 	},
 	clot: {
 		num: 3016,
@@ -23340,6 +23347,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 			boosts: {
 				spe: -1,
 			},
+		},
+		basePowerCallback(pokemon, target, move) {
+			if (pokemon.lastMove?.name === 'Ruin' || pokemon.lastMove?.name === 'Clot' || pokemon.lastMove?.name === 'blab') {
+				return 25;
+			}
+
+			return 100;
 		},
 	},
 	frenzy: {
