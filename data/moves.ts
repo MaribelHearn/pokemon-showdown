@@ -11085,7 +11085,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			"Overdrive", "Photon Geyser", "Plasma Fists", "Precipice Blades", "Protect", "Pyro Ball", "Quash", "Quick Guard", "Rage Powder", "Relic Song", "Secret Sword", "Shell Trap",
 			"Sketch", "Sleep Talk", "Snap Trap", "Snarl", "Snatch", "Snore", "Spectral Thief", "Spiky Shield", "Spirit Break", "Spotlight", "Steam Eruption", "Steel Beam",
 			"Strange Steam", "Struggle", "Sunsteel Strike", "Surging Strikes", "Switcheroo", "Techno Blast", "Thief", "Thousand Arrows", "Thousand Waves", "Thunder Cage",
-			"Thunderous Kick", "Transform", "Trick", "V-create", "Warlock Punch", "Wicked Blow", "Wide Guard", "Frenzy", "Lucky", "Clot", "Ruin", "blab", "Count Down",
+			"Thunderous Kick", "Transform", "Trick", "V-create", "Warlock Punch", "Wicked Blow", "Wide Guard", "Frenzy", "Lucky", "Clot", "Ruin", "blab"
 		],
 		onHit(target, source, effect) {
 			const moves = this.dex.moves.all().filter(move => (
@@ -22907,7 +22907,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		target: "normal",
+		target: "self",
 		type: "Normal",
 		secondary: null,
 		onHit(target) {
