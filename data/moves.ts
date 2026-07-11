@@ -22910,7 +22910,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "self",
 		type: "Normal",
 		secondary: null,
-		onHit(target) {
+		onHit(target, source, move) {
 			const rng = Math.floor(Math.random() * 101);
 
 			if (target.species.name === 'Grandmatriarch') {
@@ -22918,10 +22918,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 					this.actions.useMove('blab', target);
 				}
 				else if (rng < 50.1) {
-					this.actions.useMove('ruin', target);
+					console.log(move.multihitType);
+					this.actions.useMove(move.multihitType === 'parentalbond' ? 'ruin2' : 'ruin', target);
 				}
 				else {
-					this.actions.useMove('clot', target);
+					console.log(move.multihitType);
+					this.actions.useMove(move.multihitType === 'parentalbond' ? 'clot2' : 'clot', target);
 				}
 			}
 			else { // Grandma
@@ -23323,16 +23325,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 				def: -1,
 			},
 		},
-		basePowerCallback(pokemon, target, move) {
-			if (Dex.moves.get('goldencookie').multihitType === 'parentalbond') {
-				return 25;
-			}
-
-			return 100;
+	},
+	ruin2: {
+		num: 3017,
+		accuracy: 100,
+		basePower: 25,
+		category: "Physical",
+		name: "Ruin",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		target: "normal",
+		type: "Poison",
+		secondary: {
+			chance: 100,
+			boosts: {
+				def: -1,
+			},
 		},
 	},
 	clot: {
-		num: 3016,
+		num: 3018,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -23348,16 +23361,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 				spe: -1,
 			},
 		},
-		basePowerCallback(pokemon, target, move) {
-			if (Dex.moves.get('goldencookie').multihitType === 'parentalbond') {
-				return 25;
-			}
-
-			return 100;
+	},
+	clot2: {
+		num: 3019,
+		accuracy: 100,
+		basePower: 25,
+		category: "Physical",
+		name: "Clot",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		target: "normal",
+		type: "Poison",
+		secondary: {
+			chance: 100,
+			boosts: {
+				spe: -1,
+			},
 		},
 	},
 	frenzy: {
-		num: 3017,
+		num: 3020,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23377,7 +23401,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 	},
 	lucky: {
-		num: 3018,
+		num: 3021,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
