@@ -23324,7 +23324,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		basePowerCallback(pokemon, target, move) {
-			if (pokemon.lastMove?.name === 'Golden Cookie') {
+			if (Dex.moves.get('goldencookie').multihitType === 'parentalbond') {
 				return 25;
 			}
 
@@ -23349,7 +23349,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		basePowerCallback(pokemon, target, move) {
-			if (pokemon.lastMove?.name === 'Golden Cookie') {
+			if (Dex.moves.get('goldencookie').multihitType === 'parentalbond') {
 				return 25;
 			}
 
@@ -23393,20 +23393,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 			duration: 2,
 			onStart(pokemon, source, effect) {
 				if (effect && (['imposter', 'psychup', 'transform'].includes(effect.id))) {
-					this.add('-start', pokemon, 'move: Laser Focus', '[silent]');
+					this.add('-start', pokemon, 'move: Lucky', '[silent]');
 				} else {
-					this.add('-start', pokemon, 'move: Laser Focus');
+					this.add('-start', pokemon, 'move: Lucky');
 				}
 			},
 			onRestart(pokemon) {
 				this.effectState.duration = 2;
-				this.add('-start', pokemon, 'move: Laser Focus');
+				this.add('-start', pokemon, 'move: Lucky');
 			},
 			onModifyCritRatio(critRatio) {
 				return 5;
 			},
 			onEnd(pokemon) {
-				this.add('-end', pokemon, 'move: Laser Focus', '[silent]');
+				this.add('-end', pokemon, 'move: Lucky', '[silent]');
 			},
 		},
 	}
