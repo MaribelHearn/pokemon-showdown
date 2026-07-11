@@ -23392,30 +23392,28 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: {},
 		condition: {
 			duration: 3,
-			onStart(target, source) {
-				const stats: BoostID[] = [];
-				let stat: BoostID;
-				const boost: SparseBoostsTable = {};
-				for (stat in target.boosts) {
-					if (target.boosts[stat] < 6) {
-						boost[stat] = 1;
-						this.boost(boost);
-					}
-				}
-				this.add('-start', target, 'move: Frenzy');
+			onStart(target, source, effect) {
+				console.log('Frenzy starts');
+				this.add('-start', source, 'move: Frenzy');
 			},
 			onEnd(pokemon) {
-				const stats: BoostID[] = [];
-				let stat: BoostID;
-				const boost: SparseBoostsTable = {};
-				for (stat in pokemon.boosts) {
-					if (pokemon.boosts[stat] < 6) {
-						boost[stat] = -1;
-						this.boost(boost);
-					}
-				}
+				console.log('Frenzy ends');
 				this.add('-end', pokemon, 'move: Frenzy');
+				this.boost({
+					'atk': -1,
+					'def': -1,
+					'spa': -1,
+					'spd': -1,
+					'spe': -1,
+				}, pokemon);
 			},
+		},
+		boosts: {
+			atk: 1,
+			def: 1,
+			spa: 1,
+			spd: 1,
+			spe: 1,
 		},
 	},
 	lucky: {
@@ -23435,20 +23433,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 			duration: 2,
 			onStart(pokemon, source, effect) {
 				if (effect && (['imposter', 'psychup', 'transform'].includes(effect.id))) {
-					this.add('-start', pokemon, 'move: Lucky', '[silent]');
+					this.add('-start', pokemon, 'Lucky', '[silent]');
 				} else {
-					this.add('-start', pokemon, 'move: Lucky');
+					this.add('-start', pokemon, 'Lucky');
 				}
 			},
 			onRestart(pokemon) {
 				this.effectState.duration = 2;
-				this.add('-start', pokemon, 'move: Lucky');
+				this.add('-start', pokemon, 'Lucky');
 			},
 			onModifyCritRatio(critRatio) {
 				return 5;
 			},
 			onEnd(pokemon) {
-				this.add('-end', pokemon, 'move: Lucky', '[silent]');
+				this.add('-end', pokemon, 'Lucky', '[silent]');
 			},
 		},
 	}
