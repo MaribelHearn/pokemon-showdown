@@ -7706,12 +7706,16 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Frenzy",
 		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage. Fails if the user's Attack, Defense, Special Attack, Special Defense, and Speed stat stages would not change.",
 		shortDesc: "Raises all stats by 1 stage.",
+
+		start: "  Frenzy! Your stats are temporarily raised.",
+		end: "  The Frenzy has ended.",
 	},
 	lucky: {
 		name: "Lucky",
 		desc: "Until the end of the next turn, the user's attacks will be critical hits.",
 		shortDesc: "Until the end of the next turn, user's moves crit.",
 
+		activate: "  Lucky! Your next move will score a critical hit.",
 		start: "  Lucky! Your next move will score a critical hit.",
 	},
 };

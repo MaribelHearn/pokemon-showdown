@@ -23390,12 +23390,32 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "self",
 		type: "Normal",
 		secondary: {},
-		boosts: {
-			atk: 1,
-			def: 1,
-			spa: 1,
-			spd: 1,
-			spe: 1,
+		condition: {
+			duration: 3,
+			onStart(target, source) {
+				const stats: BoostID[] = [];
+				let stat: BoostID;
+				const boost: SparseBoostsTable = {};
+				for (stat in target.boosts) {
+					if (target.boosts[stat] < 6) {
+						boost[stat] = 1;
+						this.boost(boost);
+					}
+				}
+				this.add('-start', target, 'move: Frenzy');
+			},
+			onEnd(pokemon) {
+				const stats: BoostID[] = [];
+				let stat: BoostID;
+				const boost: SparseBoostsTable = {};
+				for (stat in pokemon.boosts) {
+					if (pokemon.boosts[stat] < 6) {
+						boost[stat] = -1;
+						this.boost(boost);
+					}
+				}
+				this.add('-end', pokemon, 'move: Frenzy');
+			},
 		},
 	},
 	lucky: {
