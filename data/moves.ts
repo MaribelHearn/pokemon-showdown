@@ -22891,7 +22891,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	goldencookie: {
 		num: 2140,
-		accuracy: 100,
+		accuracy: true,
 		basePower: 100,
 		category: "Status",
 		name: "Golden Cookie",
@@ -22901,7 +22901,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Normal",
 		secondary: null,
-		onTry(source, target) {
+		onHit(source, target) {
 			const rng = Math.floor(Math.random() * 101);
 
 			if (source.species.name === 'Grandmatriarch') {
