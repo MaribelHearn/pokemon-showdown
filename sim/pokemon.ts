@@ -1158,13 +1158,10 @@ export class Pokemon {
 		this.weighthg = species.weighthg;
 		this.setType(species.types, true);
 
-		let statName: StatID;
-		this.storedStats = species.baseStats;
+		let statName: StatIDExceptHP;
 		for (statName in this.storedStats) {
-			if (statName === 'hp') continue;
 			this.storedStats[statName] = this.calcStat(species, statName);
 		}
-		this.baseStoredStats = species.baseStats;
 
 		let abilityName, abilityId;
 		if (this.battle.gen > 2) {
