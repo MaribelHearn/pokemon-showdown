@@ -613,7 +613,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	damp: {
 		onAnyTryMove(target, source, effect) {
-			if (['explosion', 'mindblown', 'mistyexplosion', 'selfdestruct', 'catnarok', 'systemcrash'].includes(effect.id)) {
+			if (['explosion', 'mindblown', 'mistyexplosion', 'selfdestruct', 'lightcatnarok', 'darkcatnarok', 'fierycatnarok', 'systemcrash'].includes(effect.id)) {
 				this.attrLastMove('[still]');
 				this.add('cant', this.effectState.target, 'ability: Damp', effect, '[of] ' + target);
 				return false;
