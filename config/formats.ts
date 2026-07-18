@@ -298,7 +298,7 @@ export const Formats: FormatList = [
 		ruleset: ['Fundex OMs', 'Sleep Clause Mod', '!OHKO Clause', 'Picked Team Size = 6', 'Adjust Level = 100'],
 		banlist: [
 			'All Pokemon', 'Zeeky H. Bomb', 'Infiltrator', 'Magic Guard', 'Negative Zone', 'Choice Scarf', 'Attract', 'Explosion', 'Final Gambit',
-			'Healing Wish', 'Lunar Dance', 'Magic Room', 'Memento', 'Misty Explosion', 'Self-Destruct', 'Catnarok', 'Dark Catnarok', 'Fiery Catnarok', 'System Crash',
+			'Healing Wish', 'Lunar Dance', 'Magic Room', 'Memento', 'Misty Explosion', 'Self-Destruct', 'Light Catnarok', 'Dark Catnarok', 'Fiery Catnarok', 'System Crash',
 		],
 		unbanlist: ['Fundex'],
 		onValidateTeam(team) {
