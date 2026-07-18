@@ -20503,12 +20503,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 		},
 	},
-	catnarok: {
+	lightcatnarok: {
 		num: 2032,
 		accuracy: 100,
 		basePower: 250,
 		category: "Physical",
-		name: "Catnarok",
+		name: "Light Catnarok",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, defrost: 1, mirror: 1},
@@ -20516,9 +20516,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allAdjacent",
 		type: "Normal",
 		secondary: null,
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
-		},
 	},
     psirockin: {
         num: 2033,
@@ -22858,9 +22855,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allAdjacent",
 		type: "Dark",
 		secondary: null,
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
 	},
 	fierycatnarok: {
 		num: 2138,
@@ -22875,9 +22869,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allAdjacent",
 		type: "Fire",
 		secondary: null,
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
 	},
 	glitzerpopping: {
 		num: 2139,

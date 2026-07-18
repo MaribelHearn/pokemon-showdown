@@ -7041,10 +7041,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		start: "  [POKEMON] is tightening its focus!",
 		cant: "[POKEMON] lost its focus and couldn't move!",
 	},
-	catnarok: {
-		name: "Catnarok",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
-		shortDesc: "Hits all adjacent. Faints user. Special if SpA > Atk.",
+	lightcatnarok: {
+		name: "Light Catnarok",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability..",
+		shortDesc: "Hits all adjacent. Faints user.",
 	},
     psirockin: {
         name: "PSI Rockin",
@@ -7580,13 +7580,13 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	darkcatnarok: {
 		name: "Dark Catnarok",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
-		shortDesc: "Hits all adjacent. Faints user. Physical if Atk > SpA.",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		shortDesc: "Hits all adjacent. Faints user.",
 	},
 	fierycatnarok: {
 		name: "Fiery Catnarok",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability. This move becomes a special attack if the user's Special Attack is greater than its Attack.",
-		shortDesc: "Hits all adjacent. Faints user. Physical if Atk > SpA.",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		shortDesc: "Hits all adjacent. Faints user.",
 	},
 	glitzerpopping: {
 		name: "Glitzer Popping",
