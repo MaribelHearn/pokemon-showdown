@@ -217,7 +217,7 @@ export const Formats: FormatList = [
 			'TR95', 'TR96', 'TR97', 'TR98', 'TR99', 'Fast Ball', 'Friend Ball', 'Heavy Ball', 'Level Ball', 'Love Ball', 'Lure Ball', 'Moon Ball', 'Park Ball',
 			'Breakneck Blitz', 'All-Out Pummeling', 'Supersonic Skystrike', 'Acid Downpour', 'Tectonic Rage', 'Continental Crush', 'Savage Spin-Out', 'Never-Ending Nightmare',
 			'Corkscrew Crash', 'Inferno Overdrive', 'Hydro Vortex', 'Bloom Doom', 'Gigavolt Havoc', 'Shattered Psyche', 'Subzero Slammer', 'Devastating Drake',
-			'Black Hole Eclipse', 'Twinkle Tackle', 'Unreal Unraveling'],
+			'Black Hole Eclipse', 'Twinkle Tackle', 'Unreal Unraveling', 'Snake-Busted', 'Chuck Testa-Busted'],
 		unbanlist: ['Fundex'],
 	},
 	{
@@ -284,7 +284,7 @@ export const Formats: FormatList = [
 			'TR95', 'TR96', 'TR97', 'TR98', 'TR99', 'Fast Ball', 'Friend Ball', 'Heavy Ball', 'Level Ball', 'Love Ball', 'Lure Ball', 'Moon Ball', 'Park Ball',
 			'Breakneck Blitz', 'All-Out Pummeling', 'Supersonic Skystrike', 'Acid Downpour', 'Tectonic Rage', 'Continental Crush', 'Savage Spin-Out', 'Never-Ending Nightmare',
 			'Corkscrew Crash', 'Inferno Overdrive', 'Hydro Vortex', 'Bloom Doom', 'Gigavolt Havoc', 'Shattered Psyche', 'Subzero Slammer', 'Devastating Drake',
-			'Black Hole Eclipse', 'Twinkle Tackle', 'Unreal Unraveling'],
+			'Black Hole Eclipse', 'Twinkle Tackle', 'Unreal Unraveling', 'Snake-Busted', 'Chuck Testa-Busted'],
 		unbanlist: ['Fundex'],
 	},
 	{
@@ -323,7 +323,7 @@ export const Formats: FormatList = [
 			'TR95', 'TR96', 'TR97', 'TR98', 'TR99', 'Fast Ball', 'Friend Ball', 'Heavy Ball', 'Level Ball', 'Love Ball', 'Lure Ball', 'Moon Ball', 'Park Ball',
 			'Breakneck Blitz', 'All-Out Pummeling', 'Supersonic Skystrike', 'Acid Downpour', 'Tectonic Rage', 'Continental Crush', 'Savage Spin-Out', 'Never-Ending Nightmare',
 			'Corkscrew Crash', 'Inferno Overdrive', 'Hydro Vortex', 'Bloom Doom', 'Gigavolt Havoc', 'Shattered Psyche', 'Subzero Slammer', 'Devastating Drake',
-			'Black Hole Eclipse', 'Twinkle Tackle', 'Unreal Unraveling'],
+			'Black Hole Eclipse', 'Twinkle Tackle', 'Unreal Unraveling', 'Snake-Busted', 'Chuck Testa-Busted'],
 		unbanlist: ['Fundex'],
 	},
 	{
