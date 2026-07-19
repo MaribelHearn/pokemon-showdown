@@ -1146,7 +1146,7 @@ export class RandomTeams {
 	}
 
 	randomFCTeam(): PokemonSet[] {
-		const hasCustomBans = this.hasDirectCustomBanlistChanges();
+		const hasCustomBans = true;
 		const ruleTable = this.dex.formats.getRuleTable(this.format);
 		const hasNonexistentBan = hasCustomBans && ruleTable.check('nonexistent');
 		const hasNonexistentWhitelist = hasCustomBans && (hasNonexistentBan === '');
@@ -1165,7 +1165,9 @@ export class RandomTeams {
 				const hasAllItemsBan = ruleTable.check('pokemontag:allitems');
 				for (const item of this.dex.items.all()) {
 					let banReason = ruleTable.check('item:' + item.id);
-					if (banReason) continue;
+					if (banReason) {
+						continue;
+					}
 					if (banReason !== '' && item.id) {
 						if (hasAllItemsBan) continue;
 						if (item.isNonstandard) {
@@ -1227,7 +1229,9 @@ export class RandomTeams {
 				// Legality of specific HP types can't be altered in built formats anyway
 				if (move.name.startsWith('Hidden Power ')) continue;
 				let banReason = ruleTable.check('move:' + move.id);
-				if (banReason) continue;
+				if (banReason) {
+					continue;
+				}
 				if (banReason !== '') {
 					if (hasAllMovesBan) continue;
 					if (move.isNonstandard) {
