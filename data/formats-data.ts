@@ -7814,6 +7814,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
     },
     angrywiggler: {
+		isNonstandard: "Fundex",
 		tier: "Illegal",
     },
     sunnymilk: {
