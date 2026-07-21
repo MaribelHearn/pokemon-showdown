@@ -7490,7 +7490,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
     },
 	snakebusted: {
-		isNonstandard: "Fundex",
 		tier: "Illegal",
 	},
     zerosuitsamus: {
@@ -7998,7 +7997,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
     },
 	chucktestabusted: {
-		isNonstandard: "Fundex",
 		tier: "Illegal",
 	},
     grandma: {
