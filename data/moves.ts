@@ -22941,7 +22941,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 2139,
 		accuracy: 100,
 		basePower: 100,
-		category: "Physical",
+		category: "Special",
 		name: "Sledge",
 		pp: 10,
 		priority: 0,
@@ -22950,7 +22950,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Steel",
 		secondary: null,
 		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 	},
 	magnum: {
