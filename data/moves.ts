@@ -21985,7 +21985,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 2102,
 		accuracy: 100,
 		basePower: 70,
-		category: "Physical",
+		category: "Special",
 		name: "Light Arrow",
 		pp: 10,
 		priority: 0,
@@ -21995,7 +21995,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		ignoreImmunity: true,
 		secondary: null,
 		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Dark') return 1;
@@ -22874,7 +22874,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 2139,
 		accuracy: 100,
 		basePower: 100,
-		category: "Physical",
+		category: "Special",
 		name: "Glitzer Popping",
 		pp: 10,
 		priority: 0,
@@ -22883,7 +22883,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "???",
 		secondary: null,
 		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 		onModifyType(move, pokemon) {
 			move.type = pokemon.types[0];
