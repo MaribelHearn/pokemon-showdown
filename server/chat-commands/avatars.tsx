@@ -522,6 +522,9 @@ const OFFICIAL_AVATARS = new Set([
 	'youngcouple-gen3', 'youngcouple-gen3rs', 'youngcouple-gen4dp', 'youngcouple',
 	'youngster-gen1', 'youngster-gen1rb', 'youngster-gen2', 'youngster-gen3', 'youngster-gen3rs', 'youngster-gen4', 'youngster-gen4dp', 'youngster',
 	'zinzolin',
+	// Fundex: Quartz Minus avatars
+	'j-akira', 'ran', 'betti', 'fausto', 'max', 'nieves', 'benito', 'lorenzo', 'danny', 'nadia', 'arturo',
+	'roco', 'perica', 'colombo', 'martha', 'annie', 'band-ambar-grunt', 'ambrosio', 'elektra', 'amber',
 ]);
 
 const OFFICIAL_AVATARS_BELIOT419 = new Set([
