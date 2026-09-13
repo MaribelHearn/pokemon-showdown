@@ -4,7 +4,7 @@
 
 import {Utils} from '../../lib/utils';
 let cooldown: any = {};
-const SHINY_ODDS = 1;
+const SHINY_ODDS = 4096;
 const CRIT_RATE = 0.0625;
 const DEFAULT_ACC = 95;
 const DELIMITER = '*';
