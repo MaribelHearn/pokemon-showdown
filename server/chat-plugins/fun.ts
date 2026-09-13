@@ -4,11 +4,13 @@
 
 import {Utils} from '../../lib/utils';
 let cooldown: any = {};
+const SHINY_ODDS = 1;
 const CRIT_RATE = 0.0625;
 const DEFAULT_ACC = 95;
 const DELIMITER = '*';
 const CMD_COLOR = '#008000';
 const RESOURCE_PREFIX = 'https://raw.githubusercontent.com/MaribelHearn/pokemon-showdown-sprites/master';
+const ROULETTE_FILE = 'config/roulette.json';
 const AUTH = ['+', '%', '@', '*', '#', '&'];
 const EFFECTS = ['', '', '', 'It\'s super effective!', 'It\'s not very effective...', 'It had no effect!'];
 const BIGTEXTS: any = {
@@ -311,6 +313,15 @@ Object.defineProperty(Array.prototype, "contains", {
     }
 });
 
+// Read roulette file
+const fs = require('fs');
+
+if (!fs.existsSync(ROULETTE_FILE)) {
+    fs.writeFileSync(ROULETTE_FILE, '{}');
+}
+
+let rouletteData = JSON.parse(fs.readFileSync(ROULETTE_FILE).toString());
+
 function random(obj: any) {
     if (Array.isArray(obj)) {
         return obj[Math.floor(Math.random() * obj.length)];
@@ -394,6 +405,12 @@ function pokeBallImage(ball: string) {
 
 function itemImage(item: Item) {
     let spriteNum = item.spritenum ? item.spritenum : 0;
+    const top = Math.floor(spriteNum / 16) * 24;
+    const left = (spriteNum % 16) * 24;
+    return `background:transparent url(${RESOURCE_PREFIX}/sprites/itemicons-sheet.png?g8) no-repeat scroll -${left}px -${top}px`;
+}
+
+function itemImageFromNumber(spriteNum: number) {
     const top = Math.floor(spriteNum / 16) * 24;
     const left = (spriteNum % 16) * 24;
     return `background:transparent url(${RESOURCE_PREFIX}/sprites/itemicons-sheet.png?g8) no-repeat scroll -${left}px -${top}px`;
@@ -803,10 +820,10 @@ export const commands: Chat.ChatCommands  = {
 
     roulette(target, room: Room | null, user: User, connection, cmd: string) {
         this.checkChat();
-        const isShiny = rand(4096) === 0;
+        const isShiny = rand(SHINY_ODDS) === 0;
         const filteredPokedex = Object.keys(Dex.data.Pokedex).filter(function notCAP(id) {
             const species = Dex.species.get(id);
-            return species.isNonstandard !== 'Past' && species.isNonstandard !== 'CAP' && !species.battleOnly && species.num !== 0;
+            return species.isNonstandard !== 'Past' && species.isNonstandard !== 'CAP' && !species.battleOnly && species.num !== 0 && species.num > -5000;
         });
         const pokemon = Dex.species.get(random(filteredPokedex));
         const nature = Dex.natures.get(random(Dex.data.Natures)).name;
@@ -826,6 +843,24 @@ export const commands: Chat.ChatCommands  = {
 
         room?.addRaw(`<img src="${RESOURCE_PREFIX}/sprites/gen5${isShiny ? '-shiny' : ''}/${pokemonId}.png" alt="${pokemon.name}" width=96 height=96>` +
             `<span class="rouletteitem" style="${itemImage(item)}"></span>`);
+
+        if (isShiny) {
+            if (!rouletteData.hasOwnProperty(user.name)) {
+                rouletteData[user.name] = [];
+            }
+
+            rouletteData[user.name].push({
+                'pokemon': pokemonId,
+                'name': pokemon.name,
+                'nature': nature,
+                'item': item.spritenum || 0,
+                'itemName': item.name,
+                'type': pokemon.types[0],
+                'time': new Date().getTime(),
+            });
+
+            fs.writeFileSync(ROULETTE_FILE, JSON.stringify(rouletteData));
+        }
     },
     roulettehelp: [
         `/roulette - Randomly generate a Pokemon.`,
@@ -904,6 +939,31 @@ export const commands: Chat.ChatCommands  = {
     },
     selfpunchhelp: [
         `/selfpunch - punches yourself from the server.`
+    ],
+
+    shinies(target, room: Room | null, user: User, connection, cmd: string) {
+        if (!rouletteData.hasOwnProperty(user.name)) {
+            this.sendReply(`|raw|You don't have any Shiny Pokémon.`);
+            return;
+        }
+
+        const shinyCount = rouletteData[user.name].length;
+        let buffer = `|html|Your own ${shinyCount} shin${shinyCount > 1 ? 'ies' : 'y'}:<br>`;
+        let shinySprites = '';
+        let article;
+
+        for (const shiny of rouletteData[user.name]) {
+            article = shiny.itemName.startsWith('A') || shiny.itemName.startsWith('E') || shiny.itemName.startsWith('I') || shiny.itemName.startsWith('O') || shiny.itemName.startsWith('U') ? 'an' : 'a';
+            buffer += `<div class="chat">${shiny.nature} <b style="color:#ffa500">Shiny</b> <b style="color:${TYPE_COLORS[shiny.type]}">${shiny.name}</b> holding ${article} ${shiny.itemName}` +
+                    ` (obtained at ${new Date(shiny.time).toLocaleString('en-GB').split(', ')[1]} server time)</div>`;
+            shinySprites += `<img src="${RESOURCE_PREFIX}/sprites/gen5-shiny/${shiny.pokemon}.png" alt="${shiny.name}" width=96 height=96>` +
+                    `<span class="rouletteitem" style="${itemImageFromNumber(shiny.item)}"></span>`;
+        }
+
+        this.sendReply(buffer + shinySprites);
+    },
+    shinieshelp: [
+        `/shinies - Check shinies you've obtained in /roulette.`,
     ],
 
     sleep(target, room: Room | null, user: User, connection, cmd: string) {
