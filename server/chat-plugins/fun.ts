@@ -458,6 +458,7 @@ export const commands: Chat.ChatCommands  = {
                 `/see : disconnects you from the server`,
                 `/selfkick : disconnects you from the server`,
                 `/selfpunch : disconnects you from the server`,
+                `/shinies : check shinies you've obtained in /roulette`,
                 `/sleep <em>username</em>: put a user to sleep, or a random user if none given`,
                 `/wtfboom : WHAT THE FU-`,
 			],
