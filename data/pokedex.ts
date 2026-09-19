@@ -17284,7 +17284,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Steel", "Ghost"],
 		gender: "M",
 		baseStats: {hp: 60, atk: 80, def: 120, spa: 90, spd: 120, spe: 55},
-		abilities: {0: "Analytic", 1: "Magnet Pull", H: "Pressure"},
+		abilities: {0: "Analytic", H: "Research"},
 		weightkg: 45,
 		color: "Gray",
 		tags: ["Fundex Non-Legendary"],

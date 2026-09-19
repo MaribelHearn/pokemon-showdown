@@ -20320,20 +20320,30 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	study: {
 		num: 2025,
-		accuracy: true,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		name: "Study",
 		pp: 5,
-		priority: 1,
-		flags: {snatch: 1},
-		target: "self",
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		target: "normal",
 		type: "Psychic",
-		zMove: {boost: {spd: 1}},
+		zMove: {effect: 'clearnegativeboost'},
 		secondary: null,
-		boosts: {
-			def: 1,
-			spd: 1,
+		onHit(target, source) {
+			const nature = target.getNature();
+			if (!nature.plus || !nature.minus) {
+				return;
+			}
+			const boostedStat = nature.minus;
+			const loweredStat = nature.plus;
+			let statBoost: SparseBoostsTable = {};
+			statBoost[boostedStat] = 2;
+			this.boost(statBoost, source);
+			statBoost = {};
+			statBoost[loweredStat] = -2;
+			this.boost(statBoost, target);
 		},
 	},
 	corrupt: {
