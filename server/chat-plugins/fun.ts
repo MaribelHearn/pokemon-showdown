@@ -830,7 +830,7 @@ export const commands: Chat.ChatCommands  = {
 
         // Choose a forme if possible
         if (pokemon.otherFormes && pokemon.otherFormes.length > 0) {
-            pokemon = Dex.species.get(random(pokemon.otherFormes.concat([pokemon.name])));
+            pokemon = Dex.species.get(random(pokemon.otherFormes.filter(form => !form.endsWith("Hisui") && !form.endsWith("Totem")).concat([pokemon.name])));
         }
 
         const nature = Dex.natures.get(random(Dex.data.Natures)).name;
