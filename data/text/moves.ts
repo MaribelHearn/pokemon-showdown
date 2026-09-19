@@ -7001,8 +7001,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	study: {
 		name: "Study",
-		desc: "Raises the user's Defense and Special Defense by 1 stage.",
-		shortDesc: "Usually goes first. +1 Def and Sp. Def.",
+		desc: "Identifies the opposing Pokemon's Nature; The user gains 2 stages in the stat lowered by the Nature, while the opponent loses 2 stages in the stat boosted by the Nature. If the Nature does not boost or lower a stat, nothing happens.",
+		shortDesc: "Learn Nature. User: +2 to - stat. Foe: -2 to + stat.",
 	},
 	corrupt: {
         name: "Corrupt",

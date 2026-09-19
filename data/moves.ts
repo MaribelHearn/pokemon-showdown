@@ -20334,6 +20334,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onHit(target, source) {
 			const nature = target.getNature();
 			if (!nature.plus || !nature.minus) {
+				this.add('-nothing');
 				return;
 			}
 			const boostedStat = nature.minus;
