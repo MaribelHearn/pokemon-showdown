@@ -824,7 +824,7 @@ export const commands: Chat.ChatCommands  = {
         const isShiny = rand(SHINY_ODDS) === 0;
         const filteredPokedex = Object.keys(Dex.data.Pokedex).filter(function notCAP(id) {
             const species = Dex.species.get(id);
-            return species.isNonstandard !== 'Past' && species.isNonstandard !== 'CAP' && !species.battleOnly && species.num !== 0 && species.num > -5000;
+            return species.isNonstandard !== 'Past' && species.isNonstandard !== 'CAP' && !species.battleOnly && species.num !== 0 && species.num > -5000 && species.forme !== 'Gmax';
         });
         const pokemon = Dex.species.get(random(filteredPokedex));
         const nature = Dex.natures.get(random(Dex.data.Natures)).name;
