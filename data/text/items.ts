@@ -2394,10 +2394,10 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Saboten Bottle",
 		desc: "If held by VIVIT, this item allows her to Mega Evolve in battle.",
     },
-    strangegap: {
+    /*strangegap: {
         name: "Strange Gap",
 		desc: "If held by Maribel, this item allows her to Mega Evolve in battle.",
-    },
+    },*/
     ritualrollingpin: {
         name: "Ritual Rolling Pin",
 		desc: "If held by Grandma, this item allows her to Mega Evolve in battle.",

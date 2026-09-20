@@ -392,6 +392,7 @@ export const Aliases: {[alias: string]: string} = {
 	patchy: "Patchouli",
 	pache: "Patchouli",
 	merry: "Maribel",
+	maribelb: "Berserk Maribel",
 	egg: "Bad EGG",
 	bin: "Recycle Bin",
 	ie: "Internet Explorer",
@@ -417,7 +418,6 @@ export const Aliases: {[alias: string]: string} = {
 	megaganondorf: "Ganon",
 	megabowser: "Giga Bowser",
 	megavivit: "Angel VIVIT",
-	megamaribel: "Berserk Maribel",
 	megagrandma: "Grandmatriarch",
 
 	// event formes

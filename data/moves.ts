@@ -20837,12 +20837,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		target: "normal",
 		type: "Psychic",
-		secondary: {
-			chance: 20,
-			boosts: {
-				def: -1,
-				spd: -1,
-			},
+		onTryHit(pokemon) {
+			// will shatter screens through sub, before you hit
+			pokemon.side.removeSideCondition('reflect');
+			pokemon.side.removeSideCondition('lightscreen');
+			pokemon.side.removeSideCondition('auroraveil');
 		},
 	},
 	dreaminduction: {
@@ -20863,25 +20862,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 	berserk: {
 		num: 2046,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 120,
 		category: "Special",
 		name: "Berserk",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		target: "normal",
 		type: "Dark",
-		secondary: {
-			chance: 10,
-			self: {
-				boosts: {
-					atk: 1,
-					def: 1,
-					spa: 1,
-					spd: 1,
-					spe: 1,
-				},
-			},
+		secondary: null,
+		self: {
+			volatileStatus: 'lockedmove',
+		},
+		onAfterMove(pokemon) {
+			if (pokemon.volatiles['lockedmove'] && pokemon.volatiles['lockedmove'].duration === 1) {
+				pokemon.removeVolatile('lockedmove');
+			}
 		},
 	},
 	surprise: {

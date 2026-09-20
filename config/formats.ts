@@ -272,7 +272,7 @@ export const Formats: FormatList = [
 			'Engineer', 'Phoenix Wright', 'Rick Astley', 'Dark Matter', 'Zero', 'Zero-Two', 'Veteran', 'Hibachi', 'Hibachi 2', 'Evaccania DOOM', 'Baby Bowser', 'Bowser',
 			'Dry Bowser', 'Tesla', 'Nyan Cat', 'Baby Mario', 'Mario', 'Paper Mario', 'Malleo', 'Boo', 'Boolossus', 'King Boo', 'Bouldergeist', 'GLaDOS', 'Bad EGG', 'Wiggler', 'Kanzou',
 			'Hagumanoki', 'Ruscus', 'Ryuuguu', 'Weepinmeleon', 'Venudrio', 'Bloody Jitterbug', 'Blue Screen', 'Internet Explorer', 'Inori Aizawa', 'Microsoft Edge', 'Mozilla Firefox',
-			'Google Chrome', 'Recycle Bin', 'Chuck Testa', 'Grandma', 'Plasma Cane', 'Ritual Rolling Pin', 'Saboten Bottle', 'Saiyan Gene', 'Smash Ball', 'Strange Gap', 'Triforce'],
+			'Google Chrome', 'Recycle Bin', 'Chuck Testa', 'Grandma', 'Plasma Cane', 'Ritual Rolling Pin', 'Saboten Bottle', 'Saiyan Gene', 'Smash Ball', 'Triforce'],
 	},
     {
 		name: "[Gen 8] Fundex Pure Hackmons",

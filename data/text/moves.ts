@@ -7102,8 +7102,10 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	borderdistortion: {
 		name: "Border Distortion",
-		desc: "Has a 50% chance to lower the target's Defense and Special Defense by 1 stage.",
-		shortDesc: "50% chance to lower the target's Def and Sp. Def.",
+		desc: "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
+		shortDesc: "Destroys screens, unless the target is immune.",
+
+		activate: "  [POKEMON] shattered [TEAM]'s protections!",
 	},
 	dreaminduction: {
 		name: "Dream Induction",

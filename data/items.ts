@@ -7316,7 +7316,7 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2017,
         gen: 8,
     },
-    strangegap: {
+    /*strangegap: {
         name: "Strange Gap",
         spritenum: 763,
         megaStone: "Berserk Maribel",
@@ -7328,7 +7328,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 2018,
         gen: 8,
-    },
+    },*/
     unknowniumz: {
         name: "Unknownium Z",
         spritenum: 759,
