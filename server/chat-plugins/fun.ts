@@ -962,7 +962,7 @@ export const commands: Chat.ChatCommands  = {
         for (const shiny of rouletteData[user.name]) {
             article = shiny.itemName.startsWith('A') || shiny.itemName.startsWith('E') || shiny.itemName.startsWith('I') || shiny.itemName.startsWith('O') || shiny.itemName.startsWith('U') ? 'an' : 'a';
             buffer += `<div class="chat">${shiny.nature} <b style="color:#ffa500">Shiny</b> <b style="color:${TYPE_COLORS[shiny.type]}">${shiny.name}</b> holding ${article} ${shiny.itemName}` +
-                    ` (obtained at ${new Date(shiny.time).toLocaleString('en-GB').split(', ')[1]} server time)</div>`;
+                    ` (obtained at ${new Date(shiny.time).toLocaleString('en-GB', {'dateStyle': 'long', 'timeStyle': 'long'}).replace(' at ', ', ').replace('CEST', '')} server time)</div>`;
             shinySprites += `<img src="${RESOURCE_PREFIX}/sprites/gen5-shiny/${shiny.pokemon}.png" alt="${shiny.name}" width=96 height=96>` +
                     `<span class="rouletteitem" style="${itemImageFromNumber(shiny.item)}"></span>`;
         }
