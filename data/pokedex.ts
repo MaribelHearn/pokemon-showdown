@@ -18021,7 +18021,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Berserk",
 		types: ["Psychic", "Dark"],
 		gender: "F",
-		baseStats: {hp: 60, atk: 90, def: 100, spa: 140, spd: 160, spe: 70},
+		baseStats: {hp: 60, atk: 90, def: 140, spa: 150, spd: 170, spe: 70},
 		abilities: {0: "Berserk"},
 		weightkg: 45,
 		color: "Purple",
