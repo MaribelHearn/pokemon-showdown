@@ -23222,21 +23222,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 0,
 		category: "Status",
 		name: "Overflowing Unnatural Power",
-		pp: 1,
+		pp: 5,
 		priority: 0,
-		flags: {},
-		isZ: "maribiumz",
+		flags: {snatch: 1},
 		target: "self",
 		type: "???",
 		secondary: null,
-		selfBoost: {
-			boosts: {
-				atk: 1,
-				def: 1,
-				spa: 1,
-				spd: 1,
-				spe: 1,
-			},
+		onHit(target) {
+			if (target.hp <= target.maxhp / 3 || target.boosts.atk >= 6 && target.boosts.def >= 6 && target.boosts.spa >= 6 && target.boosts.spd >= 6 && target.boosts.spe >= 6 || target.maxhp === 1) { // Shedinja clause
+				return false;
+			}
+			this.directDamage(target.maxhp / 3);
+			this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, target);
 		},
 	},
 	"200yojanain1slash": {

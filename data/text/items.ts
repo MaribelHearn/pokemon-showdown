@@ -2450,10 +2450,10 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Winnerium Z",
 		desc: "If held by *** WINNER *** with Recover, he can use Medicine of Life.",
     },
-    maribiumz: {
+    /*maribiumz: {
         name: "Maribium Z",
 		desc: "If held by Maribel with Cosmic Power, she can use Overflowing Unnatural Power.",
-    },
+    },*/
     youmiumz: {
         name: "Youmium Z",
 		desc: "If held by Youmu with Slash of Eternity, she can use 200 Yojana in 1 Slash.",

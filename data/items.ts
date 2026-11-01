@@ -7453,7 +7453,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2029,
 		gen: 8,
 	},
-	maribiumz: {
+	/*maribiumz: {
 		name: "Maribium Z",
 		spritenum: 641,
 		onTakeItem: false,
@@ -7462,7 +7462,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Maribel"],
 		num: 2030,
 		gen: 8,
-	},
+	},*/
 	youmiumz: {
 		name: "Youmium Z",
 		spritenum: 644,

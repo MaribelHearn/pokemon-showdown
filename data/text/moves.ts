@@ -7665,8 +7665,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	overflowingunnaturalpower: {
 		name: "Overflowing Unnatural Power",
-		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
-		shortDesc: "Raises all stats by 1 (not acc/eva).",
+		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage in exchange for the user losing 1/3 of its maximum HP, rounded down. Fails if the user would faint or if all stat stages are 6.",
+		shortDesc: "User loses 33% max HP. +1 all stats.",
 	},
 	"200yojanain1slash": {
 		name: "200 Yojana in 1 Slash",
