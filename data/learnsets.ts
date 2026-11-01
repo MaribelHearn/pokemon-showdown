@@ -90720,6 +90720,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	maribel: {
 		learnset: {
+			overflowingunnaturalpower: ["8L1"],
 			teleport: ["8L1"],
 			confusion: ["8L1"],
 			miracleeye: ["8L1"],
@@ -90770,6 +90771,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	berserkmaribel: {
 		learnset: {
+			overflowingunnaturalpower: ["8L1"],
 			berserk: ["8L1"],
 			borderdistortion: ["8L1"],
 			petalblizzard: ["8L1"],
