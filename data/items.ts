@@ -7318,7 +7318,7 @@ export const Items: {[itemid: string]: ItemData} = {
     },
 	dededehammer: {
         name: "Dedede Hammer",
-        spritenum: 764,
+        spritenum: 744,
         megaStone: "Masked Dedede",
         megaEvolves: "King Dedede",
         itemUser: ["King Dedede"],
