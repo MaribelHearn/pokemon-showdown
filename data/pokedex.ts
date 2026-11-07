@@ -17543,10 +17543,13 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Yellow",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
+		otherFormes: ["Masked Dedede"],
+		formeOrder: ["King Dedede", "Masked Dedede"],
 	},
 	maskeddedede: {
 		num: 2072,
 		name: "Masked Dedede",
+		baseSpecies: "King Dedede",
 		types: ["Water", "Steel"],
 		gender: "M",
 		baseStats: {hp: 120, atk: 135, def: 140, spa: 55, spd: 100, spe: 70},
@@ -17555,6 +17558,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Yellow",
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
+		requiredItem: "Dedede Hammer",
 	},
 	snake: {
 		num: 2073,
