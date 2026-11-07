@@ -2394,10 +2394,10 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Saboten Bottle",
 		desc: "If held by VIVIT, this item allows her to Mega Evolve in battle.",
     },
-    /*strangegap: {
-        name: "Strange Gap",
-		desc: "If held by Maribel, this item allows her to Mega Evolve in battle.",
-    },*/
+    dededehammer: {
+        name: "Dedede Hammer",
+		desc: "If held by King Dedede, this item allows him to Mega Evolve in battle.",
+    },
     ritualrollingpin: {
         name: "Ritual Rolling Pin",
 		desc: "If held by Grandma, this item allows her to Mega Evolve in battle.",
@@ -2450,10 +2450,6 @@ export const ItemsText: {[k: string]: ItemText} = {
         name: "Winnerium Z",
 		desc: "If held by *** WINNER *** with Recover, he can use Medicine of Life.",
     },
-    /*maribiumz: {
-        name: "Maribium Z",
-		desc: "If held by Maribel with Cosmic Power, she can use Overflowing Unnatural Power.",
-    },*/
     youmiumz: {
         name: "Youmium Z",
 		desc: "If held by Youmu with Slash of Eternity, she can use 200 Yojana in 1 Slash.",

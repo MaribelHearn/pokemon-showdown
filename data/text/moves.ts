@@ -7663,8 +7663,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Medicine of Life",
 		shortDesc: "Fully restores the user's HP.",
 	},
-	overflowingunnaturalpower: {
-		name: "Overflowing Unnatural Power",
+	overflowingpower: {
+		name: "Overflowing Power",
 		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage in exchange for the user losing 1/3 of its maximum HP, rounded down. Fails if the user would faint or if all stat stages are 6.",
 		shortDesc: "User loses 33% max HP. +1 all stats.",
 	},

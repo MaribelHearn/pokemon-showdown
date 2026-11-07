@@ -3714,6 +3714,9 @@ export const PokedexText: {[k: string]: PokedexText} = {
     kingdedede: {
         name: "King Dedede",
     },
+    maskeddedede: {
+        name: "Masked Dedede",
+    },
     snake: {
         name: "Snake",
     },

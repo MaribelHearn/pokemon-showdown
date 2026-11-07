@@ -7316,19 +7316,19 @@ export const Items: {[itemid: string]: ItemData} = {
         num: 2017,
         gen: 8,
     },
-    /*strangegap: {
-        name: "Strange Gap",
-        spritenum: 763,
-        megaStone: "Berserk Maribel",
-        megaEvolves: "Maribel",
-        itemUser: ["Maribel"],
+	dededehammer: {
+        name: "Dedede Hammer",
+        spritenum: 764,
+        megaStone: "Masked Dedede",
+        megaEvolves: "King Dedede",
+        itemUser: ["King Dedede"],
         onTakeItem(item, source) {
             if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
             return true;
         },
         num: 2018,
         gen: 8,
-    },*/
+	},
     unknowniumz: {
         name: "Unknownium Z",
         spritenum: 759,

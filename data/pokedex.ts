@@ -17544,6 +17544,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		tags: ["Fundex Non-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
+	maskeddedede: {
+		num: 2072,
+		name: "Masked Dedede",
+		types: ["Water", "Steel"],
+		gender: "M",
+		baseStats: {hp: 120, atk: 135, def: 140, spa: 55, spd: 100, spe: 70},
+		abilities: {0: "Battle Armor"},
+		weightkg: 250,
+		color: "Yellow",
+		tags: ["Fundex Non-Legendary"],
+		eggGroups: ["Undiscovered"],
+	},
 	snake: {
 		num: 2073,
 		name: "Snake",

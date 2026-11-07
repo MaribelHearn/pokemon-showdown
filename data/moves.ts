@@ -23216,12 +23216,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		heal: [1, 1],
 		secondary: null,
 	},
-	overflowingunnaturalpower: {
+	overflowingpower: {
 		num: 3011,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Overflowing Unnatural Power",
+		name: "Overflowing Power",
 		pp: 5,
 		priority: 0,
 		flags: {snatch: 1},

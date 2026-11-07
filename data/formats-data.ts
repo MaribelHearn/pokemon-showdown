@@ -7484,6 +7484,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Fundex OU",
 		natDexTier: "OU",
     },
+    maskeddedede: {
+		isNonstandard: "Fundex",
+		tier: "Fundex OU",
+		natDexTier: "OU",
+    },
     snake: {
 		isNonstandard: "Fundex",
 		tier: "Fundex OU",
@@ -7664,8 +7669,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     },
     berserkmaribel: {
 		isNonstandard: "Fundex",
-		tier: "Fundex OU",
-		natDexTier: "OU",
+		tier: "Fundex Uber",
+		natDexTier: "Uber",
     },
     kogasa: {
 		isNonstandard: "Fundex",
