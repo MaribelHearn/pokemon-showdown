@@ -17550,6 +17550,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 2072,
 		name: "Masked Dedede",
 		baseSpecies: "King Dedede",
+		forme: "Mega",
 		types: ["Water", "Steel"],
 		gender: "M",
 		baseStats: {hp: 120, atk: 135, def: 140, spa: 55, spd: 100, spe: 70},
